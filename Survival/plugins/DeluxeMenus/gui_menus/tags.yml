@@ -1,0 +1,1281 @@
+#  A DeluxeMenus advanced configuration guide
+#=========================================================
+menu_title: 'Coin Shop | Tags'
+open_command:
+  - tagsshop
+open_commands: []
+size: 54
+# as always, only cool people can open this menu :)
+items:
+
+  'USA_unlocked':
+    material: NAME_TAG
+    slot: 11
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.usa
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#be0b31&lU&f&lS&#002768&lA&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'USA_2':
+    material: NAME_TAG
+    slot: 11
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#be0b31&lU&f&lS&#002768&lA&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.usa true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#be0b31&lU&f&lS&#002768&lA&f!'
+  
+  'USA_3':
+    material: NAME_TAG
+    slot: 11
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#be0b31&lU&f&lS&#002768&lA&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+  
+  'star_unlocked':
+    material: NAME_TAG
+    slot: 12
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.star
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fbf100&lS&#fce200&lT&#fcd400&lA&#fdc500&lR&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'star_2':
+    material: NAME_TAG
+    slot: 12
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fbf100&lS&#fce200&lT&#fcd400&lA&#fdc500&lR&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.star true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#fbf100&lS&#fce200&lT&#fcd400&lA&#fdc500&lR&f!'
+  
+  'star_3':
+    material: NAME_TAG
+    slot: 12
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fbf100&lS&#fce200&lT&#fcd400&lA&#fdc500&lR&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+
+  'love_unlocked':
+    material: NAME_TAG
+    slot: 13
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.love
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fb4545&lL&#fc3838&lO&#fc2a2a&lV&#fd1d1d&lE&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'love_2':
+    material: NAME_TAG
+    slot: 13
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fb4545&lL&#fc3838&lO&#fc2a2a&lV&#fd1d1d&lE&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.love true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#fb4545&lL&#fc3838&lO&#fc2a2a&lV&#fd1d1d&lE&f!'
+  
+  'love_3':
+    material: NAME_TAG
+    slot: 13
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fb4545&lL&#fc3838&lO&#fc2a2a&lV&#fd1d1d&lE&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+
+  'dollar_unlocked':
+    material: NAME_TAG
+    slot: 14
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.dollar
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#8dfb00&l$&#49fc00&l$&#05fd00&l$&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'dollar_2':
+    material: NAME_TAG
+    slot: 14
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#8dfb00&l$&#49fc00&l$&#05fd00&l$&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.dollar true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#8dfb00&l$&#49fc00&l$&#05fd00&l$&f!'
+  
+  'dollar_3':
+    material: NAME_TAG
+    slot: 14
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#8dfb00&l$&#49fc00&l$&#05fd00&l$&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+  
+  'number1_unlocked':
+    material: NAME_TAG
+    slot: 15
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.number1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fbf100&l#&#fbf100&l1&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'number1_2':
+    material: NAME_TAG
+    slot: 15
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fbf100&l#&#fbf100&l1&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.number1 true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#fbf100&l#&#fbf100&l1&f!'
+  
+  'number1_3':
+    material: NAME_TAG
+    slot: 15
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fbf100&l#&#fbf100&l1&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+  
+  'overlord_unlocked':
+    material: NAME_TAG
+    slot: 20
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.overlord
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#c900fb&lO&#d000ef&lV&#d800e3&lE&#df00d7&lR&#e700cb&lL&#ee00bf&lO&#f600b3&lR&#fd00a7&lD&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'overlord_2':
+    material: NAME_TAG
+    slot: 20
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#c900fb&lO&#d000ef&lV&#d800e3&lE&#df00d7&lR&#e700cb&lL&#ee00bf&lO&#f600b3&lR&#fd00a7&lD&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.overlord true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#c900fb&lO&#d000ef&lV&#d800e3&lE&#df00d7&lR&#e700cb&lL&#ee00bf&lO&#f600b3&lR&#fd00a7&lD&f!'
+  
+  'overlord_3':
+    material: NAME_TAG
+    slot: 20
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#c900fb&lO&#d000ef&lV&#d800e3&lE&#df00d7&lR&#e700cb&lL&#ee00bf&lO&#f600b3&lR&#fd00a7&lD&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+  
+  'titan_unlocked':
+    material: NAME_TAG
+    slot: 21
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.titan
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#0092fb&lT&#0087fc&lI&#007cfc&lT&#0070fd&lA&#0065fd&lN&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'titan_2':
+    material: NAME_TAG
+    slot: 21
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#0092fb&lT&#0087fc&lI&#007cfc&lT&#0070fd&lA&#0065fd&lN&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.titan true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#0092fb&lT&#0087fc&lI&#007cfc&lT&#0070fd&lA&#0065fd&lN&f!'
+  
+  'titan_3':
+    material: NAME_TAG
+    slot: 21
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#0092fb&lT&#0087fc&lI&#007cfc&lT&#0070fd&lA&#0065fd&lN&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+  
+
+  'hero_unlocked':
+    material: NAME_TAG
+    slot: 22
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.hero
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#56ddfb&lH&#3be8de&lE&#21f2c1&lR&#06fda4&lO&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'hero_2':
+    material: NAME_TAG
+    slot: 22
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#56ddfb&lH&#3be8de&lE&#21f2c1&lR&#06fda4&lO&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.hero true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#56ddfb&lH&#3be8de&lE&#21f2c1&lR&#06fda4&lO&f!'
+  
+  'hero_3':
+    material: NAME_TAG
+    slot: 22
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#56ddfb&lH&#3be8de&lE&#21f2c1&lR&#06fda4&lO&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+  
+  'immortal_unlocked':
+    material: NAME_TAG
+    slot: 23
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.immortal
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#272b53&lI&#2b2551&lM&#301f4f&lM&#34194d&lO&#39144a&lR&#3d0e48&lT&#420846&lA&#460244&lL&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'immortal_2':
+    material: NAME_TAG
+    slot: 23
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#272b53&lI&#2b2551&lM&#301f4f&lM&#34194d&lO&#39144a&lR&#3d0e48&lT&#420846&lA&#460244&lL&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.immortal true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#272b53&lI&#2b2551&lM&#301f4f&lM&#34194d&lO&#39144a&lR&#3d0e48&lT&#420846&lA&#460244&lL&f!'
+  
+  'immortal_3':
+    material: NAME_TAG
+    slot: 23
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#272b53&lI&#2b2551&lM&#301f4f&lM&#34194d&lO&#39144a&lR&#3d0e48&lT&#420846&lA&#460244&lL&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+
+  'legend_unlocked':
+    material: NAME_TAG
+    slot: 24
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.legend
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#ff000f&lL&#ff001e&lE&#ff002e&lG&#ff003d&lE&#ff004d&lN&#ff005c&lD&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'legend_2':
+    material: NAME_TAG
+    slot: 24
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#ff000f&lL&#ff001e&lE&#ff002e&lG&#ff003d&lE&#ff004d&lN&#ff005c&lD&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.legend true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#ff000f&lL&#ff001e&lE&#ff002e&lG&#ff003d&lE&#ff004d&lN&#ff005c&lD&f!'
+  
+  'legend_3':
+    material: NAME_TAG
+    slot: 24
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#ff000f&lL&#ff001e&lE&#ff002e&lG&#ff003d&lE&#ff004d&lN&#ff005c&lD&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+  
+  'duke_unlocked':
+    material: NAME_TAG
+    slot: 29
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.duke
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#56ff53&lD&#3ad837&lU&#1fb21c&lK&#038b00&lE&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'duke_2':
+    material: NAME_TAG
+    slot: 29
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#56ff53&lD&#3ad837&lU&#1fb21c&lK&#038b00&lE&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.duke true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#56ff53&lD&#3ad837&lU&#1fb21c&lK&#038b00&lE&f!'
+  
+  'duke_3':
+    material: NAME_TAG
+    slot: 29
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#56ff53&lD&#3ad837&lU&#1fb21c&lK&#038b00&lE&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+
+  'music_unlocked':
+    material: NAME_TAG
+    slot: 30
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.music
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#eb00ff&lM&#b03cff&lU&#7678ff&lS&#3bb4ff&lI&#00f0ff&lC&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'music_2':
+    material: NAME_TAG
+    slot: 30
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#eb00ff&lM&#b03cff&lU&#7678ff&lS&#3bb4ff&lI&#00f0ff&lC&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.music true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#eb00ff&lM&#b03cff&lU&#7678ff&lS&#3bb4ff&lI&#00f0ff&lC&f!'
+  
+  'music_3':
+    material: NAME_TAG
+    slot: 30
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#eb00ff&lM&#b03cff&lU&#7678ff&lS&#3bb4ff&lI&#00f0ff&lC&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+
+  'og_unlocked':
+    material: NAME_TAG
+    slot: 31
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.og
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#0057ff&lO&#0057ff&lG&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'og_2':
+    material: NAME_TAG
+    slot: 31
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#0057ff&lO&#0057ff&lG&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.og true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#0057ff&lO&#0057ff&lG&f!'
+  
+  'og_3':
+    material: NAME_TAG
+    slot: 31
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#0057ff&lO&#0057ff&lG&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+
+  'mvp_unlocked':
+    material: NAME_TAG
+    slot: 32
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.mvp
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00c2ff&lM&#0094ff&lV&#0066ff&lP&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'mvp_2':
+    material: NAME_TAG
+    slot: 32
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00c2ff&lM&#0094ff&lV&#0066ff&lP&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.mvp true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#00c2ff&lM&#0094ff&lV&#0066ff&lP&f!'
+  
+  'mvp_3':
+    material: NAME_TAG
+    slot: 32
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00c2ff&lM&#0094ff&lV&#0066ff&lP&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+
+  'rainbow_unlocked':
+    material: NAME_TAG
+    slot: 33
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: tags.rainbow
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#ff4b4b&lR&#ff7519&lA&#ffae00&lI&#fff500&lN&#a4f000&lB&#4fe036&lO&#00c6a2&lW&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&6→ &eYou have already unlocked this tag!'
+
+  'rainbow_2':
+    material: NAME_TAG
+    slot: 33
+    priority: 1
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1000"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#ff4b4b&lR&#ff7519&lA&#ffae00&lI&#fff500&lN&#a4f000&lB&#4fe036&lO&#00c6a2&lW&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set tags.rainbow true'
+      - '[console] coins remove %player_name% 1000'
+      - '[message] &eCoins &8| &fYou purchased &#ff4b4b&lR&#ff7519&lA&#ffae00&lI&#fff500&lN&#a4f000&lB&#4fe036&lO&#00c6a2&lW&f!'
+  
+  'rainbow_3':
+    material: NAME_TAG
+    slot: 33
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#ff4b4b&lR&#ff7519&lA&#ffae00&lI&#fff500&lN&#a4f000&lB&#4fe036&lO&#00c6a2&lW&r'
+    lore:
+      - '&8Chat Tag'
+      - '&r'
+      - '&eDescription:'
+      - '&fThis tag will be visible in tab, above your'
+      - '&fplayer, and in chat!'
+      - '&r'
+      - '&e◆ &fPrice: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&r'
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+
+
+  'back':
+    material: flower_banner_pattern
+    slot: 49
+    hide_effects: true
+    display_name: '&cGo Back'
+    lore:
+      - '&fClick to return to the main menu'
+    left_click_commands:
+      - '[openguimenu] coinshop'

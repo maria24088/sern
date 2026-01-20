@@ -1,0 +1,4 @@
+EquiparCasco:
+  Skills:
+  - message{m="<green>DEBUG: La habilidad se activó"} @Self
+  - command{c="sudo <caster.name> hat"} @Self

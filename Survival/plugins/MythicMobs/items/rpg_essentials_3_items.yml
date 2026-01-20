@@ -1,0 +1,137 @@
+######## created by samus2002 #########
+
+elixir_earth:
+  Id: feather
+  Display: "&aEarth Elixir"
+  Model: 2045
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=elixir_earth} @self ~onUse
+  
+elixir_fire:
+  Id: feather
+  Display: "&cFire Elixir"
+  Model: 2046
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=elixir_fire} @self ~onUse
+  
+elixir_water:
+  Id: feather
+  Display: "&bWater Elixir"
+  Model: 2047
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=elixir_water} @self ~onUse
+  
+elixir_wind:
+  Id: feather
+  Display: "&fWind Elixir"
+  Model: 2048
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=elixir_wind} @self ~onUse
+  
+mana_potion_eternal:
+  Id: feather
+  Display: "&fEternal Mana Potion"
+  Model: 2049
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=mana_potion_eternal} @self ~onUse
+  
+mana_potion_large:
+  Id: feather
+  Display: "&fLarge Mana Potion"
+  Model: 2050
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=mana_potion_large} @self ~onUse
+  
+mana_potion_minor:
+  Id: feather
+  Display: "&fMinor Mana Potion"
+  Model: 2051
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=mana_potion_minor} @self ~onUse
+
+mana_potion_small:
+  Id: feather
+  Display: "&fSmall Mana Potion"
+  Model: 2052
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=mana_potion_small} @self ~onUse
+  
+mana_potion_superior:
+  Id: feather
+  Display: "&fSuperior Mana Potion"
+  Model: 2053
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=mana_potion_superior} @self ~onUse
+  
+scroll_common:
+  Id: feather
+  Display: "&fCommon EXP Scroll"
+  Model: 2054
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=scroll_common} @self ~onUse
+  
+scroll_epic:
+  Id: feather
+  Display: "&5Epic EXP Scroll"
+  Model: 2055
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=scroll_epic} @self ~onUse
+  
+scroll_rare:
+  Id: feather
+  Display: "&eRare EXP Scroll"
+  Model: 2056
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=scroll_rare} @self ~onUse
+    
+scroll_common_MMO:
+  Id: feather
+  Display: "&fCommon EXP Scroll"
+  Model: 2054
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=scroll_common_MMO} @self ~onUse
+  
+scroll_epic_MMO:
+  Id: feather
+  Display: "&5Epic EXP Scroll"
+  Model: 2055
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=scroll_epic_MMO} @self ~onUse
+  
+scroll_rare_MMO:
+  Id: feather
+  Display: "&eRare EXP Scroll"
+  Model: 2056
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=scroll_rare_MMO} @self ~onUse
+  

@@ -1,0 +1,35 @@
+26ed0e51-3dbb-3950-b9ae-1b7db8ac61c6:
+  name: Bruno240707
+  glass-color: WHITE_STAINED_GLASS_PANE
+  alert-options: []
+  vanish-type: NONE
+  staff-mode: false
+  night-vision: VANISH,false;STAFF_MODE,false
+0d45db84-9179-4b23-93b7-38a90642b372:
+  name: Bruno240707
+  glass-color: WHITE_STAINED_GLASS_PANE
+  alert-options: []
+  vanish-type: NONE
+  staff-mode: false
+  night-vision: ''
+c832f10d-3fc3-3b4e-bff6-a86f8c5759e0:
+  name: Fran
+  glass-color: WHITE_STAINED_GLASS_PANE
+  alert-options: []
+  vanish-type: NONE
+  staff-mode: false
+  night-vision: ''
+bb2ede77-c3c4-3323-877e-8931495ef075:
+  name: Prueba
+  glass-color: WHITE_STAINED_GLASS_PANE
+  alert-options: []
+  vanish-type: NONE
+  staff-mode: false
+  night-vision: ''
+67b2c2c8-0934-346a-87ad-58d94cbb6c09:
+  name: GrayVzf
+  glass-color: WHITE_STAINED_GLASS_PANE
+  alert-options: []
+  vanish-type: NONE
+  staff-mode: false
+  night-vision: ''

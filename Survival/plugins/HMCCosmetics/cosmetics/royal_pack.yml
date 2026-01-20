@@ -1,0 +1,56 @@
+royal_hat:
+  height: 0
+  permission: cosmetics.royal_hat
+  dyeable: false
+  slot: HELMET
+  item:
+    material: POTION
+    model-data: 400091
+    color: '#ffffff'
+    amount: 1
+    unbreakable: true
+    item-flags:
+    - HIDE_ATTRIBUTES
+royal_wings:
+  height: 4
+  permission: cosmetics.royal_wings
+  dyeable: false
+  slot: BACKPACK
+  item:
+    material: POTION
+    model-data: 400094
+    color: '#ffffff'
+    unbreakable: true
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+  firstperson-item:
+    material: POTION
+    model-data: 400096
+    color: '#ffffff'
+    unbreakable: true
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+royal_cape:
+  height: 4
+  permission: cosmetics.royal_cape
+  dyeable: false
+  slot: BACKPACK
+  item:
+    material: POTION
+    model-data: 400099
+    color: '#ffffff'
+    unbreakable: true
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+  firstperson-item:
+    material: POTION
+    model-data: 400101
+    color: '#ffffff'
+    unbreakable: true
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+#397d09e0135d4ad502f934e3c4a5fd0b

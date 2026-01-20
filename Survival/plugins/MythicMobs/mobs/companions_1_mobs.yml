@@ -1,0 +1,988 @@
+Pet_Fire_Dragon_Fire:
+  Type: wolf
+  Display: '&fFire Dragon'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_fire_dragon_fire;usm=true;step=1} @self ~onSpawn
+  - effect:sound{s=entity.fox.ambient;volume=0.8;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Fire_Dragon_Fire_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Fire_Dragon_Fire} ~onInteract
+  - skill{s=Pet_Fire_Dragon_Fire_FX} ~onTimer:20
+
+VFX_Flame_Shot_Fire:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_flame_shot_fire} @self ~onSpawn
+  - brightness{mid=vfx_flame_shot_fire;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - effect:particles{particle=small_flame;amount=5;hS=0.05;vS=0.05;speed=0.03;forwardOffset=0;sideOffset=0;y=0} @modelpart{mid=vfx_flame_shot_fire;pid=body;em=true} ~onTimer:2
+  - effect:particles{particle=smoke;amount=5;hS=0.05;vS=0.05;speed=0.03;forwardOffset=0;sideOffset=0;y=0} @modelpart{mid=vfx_flame_shot_fire;pid=body;em=true} ~onTimer:2
+  
+Pet_Fire_Dragon_Soulfire:
+  Type: wolf
+  Display: '&fSoulfire Dragon'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_fire_dragon_soulfire;usm=true;step=1} @self ~onSpawn
+  - effect:sound{s=entity.fox.ambient;volume=0.8;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Fire_Dragon_Soulfire_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Fire_Dragon_Soulfire} ~onInteract
+  - skill{s=Pet_Fire_Dragon_Soulfire_FX} ~onTimer:20
+  
+VFX_Flame_Shot_Soulfire:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_flame_shot_soulfire} @self ~onSpawn
+  - brightness{mid=vfx_flame_shot_soulfire;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - effect:particles{particle=soul_fire_flame;amount=3;hS=0.05;vS=0.05;speed=0.03;forwardOffset=0;sideOffset=0;y=0} @modelpart{mid=vfx_flame_shot_fire;pid=body;em=true} ~onTimer:2
+  - effect:particles{particle=smoke;amount=5;hS=0.05;vS=0.05;speed=0.03;forwardOffset=0;sideOffset=0;y=0} @modelpart{mid=vfx_flame_shot_fire;pid=body;em=true} ~onTimer:2
+  
+Pet_Fire_Dragon_Holyfire:
+  Type: wolf
+  Display: '&fHolyfire Dragon'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_fire_dragon_holyfire;usm=true;step=1} @self ~onSpawn
+  - effect:sound{s=entity.fox.ambient;volume=0.8;pitch=1.2} @self ~onTimer:220 0.35
+  - brightness{m=pet_fire_dragon_holyfire;block=9;sky=9;em=true} @self ~onSpawn
+  - skill{s=Pet_Fire_Dragon_Holyfire_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Fire_Dragon_Holyfire} ~onInteract
+  - skill{s=Pet_Fire_Dragon_Holyfire_FX} ~onTimer:20
+  
+VFX_Flame_Shot_Holyfire:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_flame_shot_holyfire} @self ~onSpawn
+  - brightness{mid=vfx_flame_shot_holyfire;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - effect:particles{particle=end_rod;amount=5;hS=0.05;vS=0.05;speed=0.03;forwardOffset=0;sideOffset=0;y=0} @modelpart{mid=vfx_flame_shot_fire;pid=body;em=true} ~onTimer:2
+  - effect:particles{particle=smoke;amount=5;hS=0.05;vS=0.05;speed=0.03;forwardOffset=0;sideOffset=0;y=0} @modelpart{mid=vfx_flame_shot_fire;pid=body;em=true} ~onTimer:2
+  
+Pet_Fire_Dragon_Shadowflame:
+  Type: wolf
+  Display: '&fShadowflame Dragon'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_fire_dragon_shadowflame;usm=true;step=1} @self ~onSpawn
+  - effect:sound{s=entity.fox.ambient;volume=0.8;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Fire_Dragon_Shadowflame_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Fire_Dragon_Shadowflame} ~onInteract
+  - skill{s=Pet_Fire_Dragon_Shadowflame_FX} ~onTimer:20
+  
+VFX_Flame_Shot_Shadowflame:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_flame_shot_shadowflame} @self ~onSpawn
+  - brightness{mid=vfx_flame_shot_shadowflame;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - effect:particles{particle=portal;amount=5;hS=0.05;vS=0.05;speed=0.03;forwardOffset=0;sideOffset=0;y=0} @modelpart{mid=vfx_flame_shot_fire;pid=body;em=true} ~onTimer:2
+  - effect:particles{particle=smoke;amount=5;hS=0.05;vS=0.05;speed=0.03;forwardOffset=0;sideOffset=0;y=0} @modelpart{mid=vfx_flame_shot_fire;pid=body;em=true} ~onTimer:2
+  
+  
+  
+  
+  
+Pet_Unicorn_Heavenly:
+  Type: wolf
+  Display: '&fHeavenly Unicorn'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_unicorn_heavenly;usm=true;step=1} @self ~onSpawn
+  - brightness{m=pet_unicorn_heavenly;block=9;sky=9;em=true} @self ~onSpawn
+  - effect:sound{s=entity.allay.ambient_without_item;volume=1;pitch=1.6} @self ~onTimer:220 0.35
+  - skill{s=Pet_Unicorn_Heavenly_Skill} ~onTimer:10
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - look{headOnly=false;immediately=true} @PetOwner ~onTimer:1
+  - skill{s=Pet_Interact_Unicorn_Heavenly} ~onInteract
+  - skill{s=Pet_Unicorn_Heavenly_FX} ~onTimer:10
+  
+Pet_Unicorn_Nature:
+  Type: wolf
+  Display: '&fNature Unicorn'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_unicorn_nature;usm=true;step=1} @self ~onSpawn
+  - brightness{m=pet_unicorn_heavenly;block=5;sky=5;em=true} @self ~onSpawn
+  - effect:sound{s=entity.allay.ambient_without_item;volume=1;pitch=1.6} @self ~onTimer:220 0.35
+  - skill{s=Pet_Unicorn_Nature_Skill} ~onTimer:10
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - look{headOnly=false;immediately=true} @PetOwner ~onTimer:1
+  - skill{s=Pet_Interact_Unicorn_Nature} ~onInteract
+  - skill{s=Pet_Unicorn_Nature_FX} ~onTimer:10
+  
+Pet_Unicorn_Rainbow:
+  Type: wolf
+  Display: '&fRainbow Unicorn'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_unicorn_rainbow;usm=true;step=1} @self ~onSpawn
+  - brightness{m=pet_unicorn_heavenly;block=9;sky=9;em=true} @self ~onSpawn
+  - effect:sound{s=entity.allay.ambient_without_item;volume=1;pitch=1.6} @self ~onTimer:220 0.35
+  - skill{s=Pet_Unicorn_Rainbow_Skill} ~onTimer:10
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - look{headOnly=false;immediately=true} @PetOwner ~onTimer:1
+  - skill{s=Pet_Interact_Unicorn_Rainbow} ~onInteract
+  - skill{s=Pet_Unicorn_Rainbow_FX} ~onTimer:10
+  
+Pet_Unicorn_Undead:
+  Type: wolf
+  Display: '&fUndead Unicorn'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_unicorn_undead;usm=true;step=1} @self ~onSpawn
+  - effect:sound{s=entity.allay.ambient_without_item;volume=1;pitch=0.4} @self ~onTimer:220 0.35
+  - skill{s=Pet_Unicorn_Undead_Skill} ~onTimer:10
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - look{headOnly=false;immediately=true} @PetOwner ~onTimer:1
+  - skill{s=Pet_Interact_Unicorn_Undead} ~onInteract
+  - skill{s=Pet_Unicorn_Undead_FX} ~onTimer:10
+  
+  
+  
+  
+Pet_Frog_Green:
+  Type: wolf
+  Display: '&fGreen Frog'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_frog_green;usm=true;step=1} @self ~onSpawn
+  - partvis{m=pet_frog_green;p=fly;v=false;em=true;child=true;delay=1} @self ~onSpawn
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Frog_Green_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Frog_Green} ~onInteract
+Pet_Frog_Mushroom:
+  Type: wolf
+  Display: '&fMushroom Frog'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_frog_mushroom;usm=true;step=1} @self ~onSpawn
+  - partvis{m=pet_frog_mushroom;p=fly;v=false;em=true;child=true;delay=1} @self ~onSpawn
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Frog_Mushroom_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Frog_Mushroom} ~onInteract
+Pet_Frog_Stone:
+  Type: wolf
+  Display: '&fStone Frog'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_frog_stone;usm=true;step=1} @self ~onSpawn
+  - partvis{m=pet_frog_stone;p=fly;v=false;em=true;child=true;delay=1} @self ~onSpawn
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Frog_Stone_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Frog_Stone} ~onInteract
+Pet_Frog_Golden:
+  Type: wolf
+  Display: '&fGolden Frog'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_frog_golden;usm=true;step=1} @self ~onSpawn
+  - brightness{m=pet_unicorn_heavenly;block=9;sky=9;em=true} @self ~onSpawn
+  - partvis{m=pet_frog_golden;p=fly;v=false;em=true;child=true;delay=1} @self ~onSpawn
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Frog_Golden_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Frog_Golden} ~onInteract
+  - skill{s=Pet_Frog_Golden_FX} ~onTimer:20
+Pet_Frog_Nether:
+  Type: wolf
+  Display: '&fNether Frog'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_frog_nether;usm=true;step=1} @self ~onSpawn
+  - brightness{m=pet_unicorn_heavenly;block=4;sky=4;em=true} @self ~onSpawn
+  - partvis{m=pet_frog_nether;p=fly;v=false;em=true;child=true;delay=1} @self ~onSpawn
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Frog_Nether_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Frog_Nether} ~onInteract
+  - skill{s=Pet_Frog_Nether_FX} ~onTimer:20
+  
+  
+  
+Pet_Cacti_Desert:
+  Type: wolf
+  Display: '&fDesert Cacti'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_cacti_desert;usm=true;step=1} @self ~onSpawn
+  - effect:sound{s=entity.fox.ambient;volume=0.8;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Cacti_Desert_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Cacti_Desert} ~onInteract
+VFX_Spike_Armor_Desert:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_spike_shield_desert} @self ~onSpawn
+  - brightness{mid=vfx_spike_shield_desert;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+Pet_Cacti_Sculk:
+  Type: wolf
+  Display: '&fSculk Cacti'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_cacti_sculk;usm=true;step=1} @self ~onSpawn
+  - effect:sound{s=entity.fox.ambient;volume=0.8;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Cacti_Sculk_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Cacti_Sculk} ~onInteract
+  - skill{s=Pet_Cacti_Sculk_FX} ~onTimer:40
+VFX_Spike_Armor_Sculk:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_spike_shield_sculk} @self ~onSpawn
+  - brightness{mid=vfx_spike_shield_sculk;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+Pet_Cacti_Frozen:
+  Type: wolf
+  Display: '&fFrozen Cacti'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_cacti_frozen;usm=true;step=1} @self ~onSpawn
+  - brightness{m=pet_unicorn_heavenly;block=7;sky=7;em=true} @self ~onSpawn
+  - effect:sound{s=entity.fox.ambient;volume=0.8;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Cacti_Frozen_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Cacti_Frozen} ~onInteract
+  - skill{s=Pet_Cacti_Frozen_FX} ~onTimer:40
+VFX_Spike_Armor_Frozen:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_spike_shield_frozen} @self ~onSpawn
+  - brightness{mid=vfx_spike_shield_frozen;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  
+  
+  
+Pet_Knight_Castle:
+  Type: wolf
+  Display: '&fCastle Knight'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_knight_castle;usm=true;step=1} @self ~onSpawn
+  - effect:sound{s=entity.pillager.ambient;volume=0.8;pitch=1.6} @self ~onTimer:220 0.35
+  - skill{s=Pet_Knight_Castle_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Knight_Castle} ~onInteract
+VFX_Knight_Thrust_Castle:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_pet_pierce_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - brightness{mid=vfx_pet_pierce_1;b=15;s=15} @self ~onSpawn
+
+  - tint{m=vfx_pet_pierce_1;c=FFFFFF} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_2;np=bone;delay=2} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_3;np=bone;delay=3} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_4;np=bone;delay=4} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_5;np=bone;delay=5} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_6;np=bone;delay=6} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_7;np=bone;delay=7} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_8;np=bone;delay=8} @self ~onSpawn
+  
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_2;np=bone2;delay=2} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_3;np=bone2;delay=3} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_4;np=bone2;delay=4} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_5;np=bone2;delay=5} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_6;np=bone2;delay=6} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_7;np=bone2;delay=7} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_8;np=bone2;delay=8} @self ~onSpawn
+  
+  - remove{delay=9} @self ~onSpawn
+  
+Pet_Knight_Glacial:
+  Type: wolf
+  Display: '&fGlacial Knight'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_knight_glacial;usm=true;step=1} @self ~onSpawn
+  - brightness{m=pet_unicorn_heavenly;block=7;sky=7;em=true} @self ~onSpawn
+  - effect:sound{s=entity.pillager.ambient;volume=0.8;pitch=1.6} @self ~onTimer:220 0.35
+  - skill{s=Pet_Knight_Glacial_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Knight_Glacial} ~onInteract
+  - skill{s=Pet_Knight_Glacial_FX} ~onTimer:40
+VFX_Knight_Thrust_Glacial:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_pet_pierce_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - brightness{mid=vfx_pet_pierce_1;b=15;s=15} @self ~onSpawn
+
+  - tint{m=vfx_pet_pierce_1;c=A1FCFF} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_2;np=bone;delay=2} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_3;np=bone;delay=3} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_4;np=bone;delay=4} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_5;np=bone;delay=5} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_6;np=bone;delay=6} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_7;np=bone;delay=7} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_8;np=bone;delay=8} @self ~onSpawn
+  
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_2;np=bone2;delay=2} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_3;np=bone2;delay=3} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_4;np=bone2;delay=4} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_5;np=bone2;delay=5} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_6;np=bone2;delay=6} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_7;np=bone2;delay=7} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_8;np=bone2;delay=8} @self ~onSpawn
+  
+  - remove{delay=9} @self ~onSpawn
+  
+Pet_Knight_Holy:
+  Type: wolf
+  Display: '&fHoly Knight'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_knight_holy;usm=true;step=1} @self ~onSpawn
+  - brightness{m=pet_unicorn_heavenly;block=9;sky=9;em=true} @self ~onSpawn
+  - effect:sound{s=entity.pillager.ambient;volume=0.8;pitch=1.6} @self ~onTimer:220 0.35
+  - skill{s=Pet_Knight_Holy_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Knight_Holy} ~onInteract
+  - skill{s=Pet_Knight_Holy_FX} ~onTimer:40
+VFX_Knight_Thrust_Holy:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_pet_pierce_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - brightness{mid=vfx_pet_pierce_1;b=15;s=15} @self ~onSpawn
+
+  - tint{m=vfx_pet_pierce_1;c=FEF79D} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_2;np=bone;delay=2} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_3;np=bone;delay=3} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_4;np=bone;delay=4} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_5;np=bone;delay=5} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_6;np=bone;delay=6} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_7;np=bone;delay=7} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_8;np=bone;delay=8} @self ~onSpawn
+  
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_2;np=bone2;delay=2} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_3;np=bone2;delay=3} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_4;np=bone2;delay=4} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_5;np=bone2;delay=5} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_6;np=bone2;delay=6} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_7;np=bone2;delay=7} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_8;np=bone2;delay=8} @self ~onSpawn
+  
+  - remove{delay=9} @self ~onSpawn
+  
+Pet_Knight_Ender:
+  Type: wolf
+  Display: '&fEnder Knight'
+  Health: 60
+  Damage: 2
+  Options:
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=pet_knight_ender;usm=true;step=1} @self ~onSpawn
+  - effect:sound{s=entity.pillager.ambient;volume=0.8;pitch=1.6} @self ~onTimer:220 0.35
+  - skill{s=Pet_Knight_Ender_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Knight_Ender} ~onInteract
+  - skill{s=Pet_Knight_Ender_FX} ~onTimer:40
+VFX_Knight_Thrust_Ender:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_pet_pierce_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - brightness{mid=vfx_pet_pierce_1;b=15;s=15} @self ~onSpawn
+
+  - tint{m=vfx_pet_pierce_1;c=6E42FE} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_2;np=bone;delay=2} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_3;np=bone;delay=3} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_4;np=bone;delay=4} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_5;np=bone;delay=5} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_6;np=bone;delay=6} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_7;np=bone;delay=7} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone;nm=vfx_pet_pierce_8;np=bone;delay=8} @self ~onSpawn
+  
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_2;np=bone2;delay=2} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_3;np=bone2;delay=3} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_4;np=bone2;delay=4} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_5;np=bone2;delay=5} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_6;np=bone2;delay=6} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_7;np=bone2;delay=7} @self ~onSpawn
+  - changepart{m=vfx_pet_pierce_1;p=bone2;nm=vfx_pet_pierce_8;np=bone2;delay=8} @self ~onSpawn
+  
+  - remove{delay=9} @self ~onSpawn

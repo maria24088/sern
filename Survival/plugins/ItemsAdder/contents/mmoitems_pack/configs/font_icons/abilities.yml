@@ -1,0 +1,591 @@
+info:
+  namespace: mmoitems_pack
+font_images:
+  
+  doomslayer:
+    path: hyronic_pack/abilities/doomslayer.png
+    y_position: 9
+    scale_ratio: 12
+    show_in_gui: true
+    symbol: ｦ
+  tradeoff:
+    path: hyronic_pack/abilities/tradeoff.png
+    y_position: 9
+    scale_ratio: 12
+    symbol: ｧ
+  reposition:
+    path: hyronic_pack/abilities/reposition.png
+    y_position: 9
+    scale_ratio: 12
+    symbol: ｨ
+  frail_hex:
+    path: hyronic_pack/abilities/frail_hex.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.frail_hex
+    symbol: ｩ
+  warden_blessing:
+    path: hyronic_pack/abilities/warden_blessing.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.warden_blessing
+    symbol: ｪ
+  firelord:
+    path: hyronic_pack/abilities/firelord.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.firelord
+    symbol: ｫ
+  mystic_burst:
+    path: hyronic_pack/abilities/mystic_burst.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.mystic_burst
+    symbol: ロ
+  banish:
+    path: hyronic_pack/abilities/banish.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.banish
+    symbol: ｭ
+  living_flames:
+    path: hyronic_pack/abilities/living_flames.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.living_flames
+    symbol: ｮ
+  evade:
+    path: hyronic_pack/abilities/evade.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.evade
+    symbol: ｯ
+  focus:
+    path: hyronic_pack/abilities/focus.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.focus
+    symbol: ｰ
+  necromancy:
+    path: hyronic_pack/abilities/necromancy.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.necromancy
+    symbol: ｱ
+  deep_wound:
+    path: hyronic_pack/abilities/deep_wound.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.deep_wound
+    symbol: ヅ
+  cosmic_ally:
+    path: hyronic_pack/abilities/cosmic_ally.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.cosmic_ally
+    symbol: テ
+  ice_spikes:
+    path: hyronic_pack/abilities/ice_spikes.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.ice_spikes
+    symbol: ぁ
+  frosty_trusty:
+    path: hyronic_pack/abilities/frosty_trusty.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.frosty_trusty
+    symbol: ト
+  doppelganger:
+    path: hyronic_pack/abilities/doppelganger.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.doppelganger
+    symbol: デ
+  adaptive:
+    path: hyronic_pack/abilities/adaptive.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.adaptive
+    symbol: ヱ
+  calamitous_ray:
+    path: hyronic_pack/abilities/calamitous_ray.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.calamitous_ray
+    symbol: ヰ
+  retribution:
+    path: hyronic_pack/abilities/retribution.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.retribution
+    symbol: レ
+  voidborne:
+    path: hyronic_pack/abilities/voidborne.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.voidborne
+    symbol: ポ
+  ritual_of_the_end:
+    path: hyronic_pack/abilities/ritual_of_the_end.png
+    y_position: 9
+    scale_ratio: 12
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ヷ
+  matching_attires:
+    path: hyronic_pack/abilities/matching_attires.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ヸ
+  radiation:
+    path: hyronic_pack/abilities/radiation.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ヹ
+  toxic_fumes:
+    path: hyronic_pack/abilities/toxic_fumes.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ఖ
+  bloodthirst:
+    path: hyronic_pack/abilities/bloodthirst.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: వ
+  celestial_aid:
+    path: hyronic_pack/abilities/celestial_aid.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: శ
+  chance_dictator:
+    path: hyronic_pack/abilities/chance_dictator.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ష
+  cobra_curse:
+    path: hyronic_pack/abilities/cobra_curse.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: స
+  essence_theft:
+    path: hyronic_pack/abilities/essence_theft.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: హ
+  grasp:
+    path: hyronic_pack/abilities/grasp.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ఺
+  starborne_conversion:
+    path: hyronic_pack/abilities/starborne_conversion.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ఻
+  ice_reaper:
+    path: hyronic_pack/abilities/ice_reaper.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ఽ
+  frosty_fury:
+    path: hyronic_pack/abilities/frosty_fury.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ꐑ
+  stardust:
+    path: hyronic_pack/abilities/stardust.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ꐲ
+  tread:
+    path: hyronic_pack/abilities/tread.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ా
+  undead_slayer:
+    path: hyronic_pack/abilities/undead_slayer.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ి
+  slash:
+    path: hyronic_pack/abilities/slash.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ీ
+  smash:
+    path: hyronic_pack/abilities/smash.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ు
+  blood_for_blood:
+    path: hyronic_pack/abilities/blood_for_blood.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ూ
+  intimidate:
+    path: hyronic_pack/abilities/intimidate.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౄ
+  death_mark:
+    path: hyronic_pack/abilities/death_mark.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౅
+  execute:
+    path: hyronic_pack/abilities/execute.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ె
+  sudden_strike:
+    path: hyronic_pack/abilities/sudden_strike.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ే
+  muscle_memory:
+    path: hyronic_pack/abilities/muscle_memory.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ై
+  respite:
+    path: hyronic_pack/abilities/respite.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౉
+  frozen_tomb:
+    path: hyronic_pack/abilities/frozen_tomb.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ొ
+  all_for_us:
+    path: hyronic_pack/abilities/all_for_us.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ో
+  leap_of_faith:
+    path: hyronic_pack/abilities/leap_of_faith.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౌ
+  hemmorhage:
+    path: hyronic_pack/abilities/hemmorhage.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ్
+  justice_served:
+    path: hyronic_pack/abilities/justice_served.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౎
+
+  nurture:
+    path: hyronic_pack/abilities/nurture.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౏
+  nature_force:
+    path: hyronic_pack/abilities/nature_force.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౐
+  backstab:
+    path: hyronic_pack/abilities/backstab.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౑
+  greed:
+    path: hyronic_pack/abilities/greed.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౒
+  divineintervention:
+    path: hyronic_pack/abilities/divine_intervention.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౓
+  berserk:
+    path: hyronic_pack/abilities/berserk.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౔
+  lord_of_the_night:
+    path: hyronic_pack/abilities/lord_of_the_night.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౕ
+  blazing:
+    path: hyronic_pack/abilities/blazing.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౖ
+  howl:
+    path: hyronic_pack/abilities/howl.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౗
+  frostburn:
+    path: hyronic_pack/abilities/frostburn.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౘ
+  arcanic_adapt:
+    path: hyronic_pack/abilities/arcanic_adapt.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౙ
+  soul_harvester:
+    path: hyronic_pack/abilities/soul_harvester.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: ౚ
+
+  dark_spikes:
+    path: hyronic_pack/abilities/dark_spikes.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 丠
+  spacetime_rift:
+    path: hyronic_pack/abilities/spacetime_rift.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 両
+  heavenbane:
+    path: hyronic_pack/abilities/heavenbane.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 丢
+  void_zapper:
+    path: hyronic_pack/abilities/void_zapper.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 丣
+  unstable_sphere:
+    path: hyronic_pack/abilities/unstable_sphere.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 两
+  bloodburst:
+    path: hyronic_pack/abilities/bloodburst.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 严
+  skyfall:
+    path: hyronic_pack/abilities/skyfall.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 並
+  theskydescends:
+    path: hyronic_pack/abilities/theskydescends.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 丧
+
+  hunter_mark:
+    path: hyronic_pack/abilities/hunter_mark.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 丨
+  predator_mark:
+    path: hyronic_pack/abilities/predator_mark.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 丩
+
+  starfire_burst:
+    path: hyronic_pack/abilities/starfire_burst.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 丫
+  sight_of_the_sniper:
+    path: hyronic_pack/abilities/sight_of_the_sniper.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 丬
+  hexified:
+    path: hyronic_pack/abilities/hexified.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 中
+  wirlwind:
+    path: hyronic_pack/abilities/wirlwind.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 丮
+  ultimatum:
+    path: hyronic_pack/abilities/ultimatum.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 丯
+  simultaneous:
+    path: hyronic_pack/abilities/simultaneous.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 丰
+  wither_slayer:
+    path: hyronic_pack/abilities/wither_slayer.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 丱
+  stellar_strike:
+    path: hyronic_pack/abilities/stellar_strike.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 串
+  close_call:
+    path: hyronic_pack/abilities/close_call.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 丳
+  dark_matter:
+    path: hyronic_pack/abilities/dark_matter.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 临
+  dark_ritual:
+    path: hyronic_pack/abilities/dark_ritual.png
+    y_position: 9
+    scale_ratio: 10
+    chat:
+      permission: oraxen.emoji.hs.ritual_of_the_end
+    symbol: 丵

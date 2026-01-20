@@ -1,0 +1,20 @@
+location: SpawnRPG:19.500:93.000:130.500
+enabled: false
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:ENDER_PEARL'
+    height: 0.6
+  - content: '&#0073FB&lTienda del Alma'
+    height: 0.3
+  - content: '&f¡Compra artículos exclusivos!'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&7Haz clic para Abrir'
+    height: 0.3
+  actions: {}

@@ -1,0 +1,14 @@
+Id: cubee-candy_corn_crab
+MythicMob: cubee-candy_corn_crab
+Permission: mcpet.cubee-candy_corn_crab
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §b Candy Corn Crab Cubee
+  Description:
+  - §7"I'm not just a candy corn. I'm a cute and sweet crab!" §8§o- Candy Corn Crab
+    Cubee
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191315

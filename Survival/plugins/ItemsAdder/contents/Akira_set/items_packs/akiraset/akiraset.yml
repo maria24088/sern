@@ -1,0 +1,152 @@
+info:
+  namespace: akiraset
+items:
+  akira_axe:
+    display_name: Akira Axe
+    permission: permission_model
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: axe
+  akira_bow:
+    display_name: Akira Bow
+    permission: permission_model
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+  akira_chest:
+    display_name: Akira Chest
+    permission: permission_model
+    resource:
+      material: SEA_LANTERN
+      generate: false
+      model_path: chest
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        solid: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+  akira_chest_opening:
+    display_name: Akira Chest Opening
+    permission: permission_model
+    resource:
+      material: SEA_LANTERN
+      generate: false
+      model_path: chest_opening
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        solid: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 2
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+  akira_helmet:
+    display_name: Akira Helmet
+    permission: permission_model
+    resource:
+      material: PAPER
+      generate: false
+      model_path: helmet
+  akira_hoe:
+    display_name: Akira Hoe
+    permission: permission_model
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: hoe
+  akira_key:
+    display_name: Akira Key
+    permission: permission_model
+    resource:
+      material: PAPER
+      generate: false
+      model_path: key
+  akira_pickaxe:
+    display_name: Akira Pickaxe
+    permission: permission_model
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: pickaxe
+  akira_scythe:
+    display_name: Akira Scythe
+    permission: permission_model
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: scythe
+  akira_shield:
+    display_name: Akira Shield
+    permission: permission_model
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+  akira_shovel:
+    display_name: Akira Shovel
+    permission: permission_model
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: shovel
+  akira_spear:
+    display_name: Akira Spear
+    permission: permission_model
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: spear
+  akira_staff:
+    display_name: Akira Staff
+    permission: permission_model
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: staff
+  akira_sword:
+    display_name: Akira Sword
+    permission: permission_model
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: sword
+  akira_greatsword:
+    display_name: Akira Great Sword
+    permission: permission_model
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: greatsword
+  akira_fishing_rod:
+    display_name: Akira Fishing Rod
+    permission: permission_model
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+  akira_wings:
+    display_name: Akira Wings
+    permission: permission_model
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wings

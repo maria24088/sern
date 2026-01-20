@@ -1,0 +1,42 @@
+info:
+  namespace: customcrops
+  dictionary-lang: "tr"
+dictionary:
+  display-category-customcrops_basics: Temel Eşyalar
+  display-category-customcrops_sprinklers: Fıskiyeler
+  display-category-customcrops_fertilizers: Gübreler
+  display-category-customcrops_wateringcans: Sulama Kapları
+  display-name-dry_pot: Saksı
+  display-name-wet_pot: Saksı
+  display-name-scarecrow: Korkuluk
+  display-name-greenhouse_glass: Sera Camı
+  display-name-speed_grow_1: Hızlı Büyütücü
+  display-name-speed_grow_2: Orta Hızlı Büyütücü
+  display-name-speed_grow_3: Hiper Hızlı Büyütücü
+  display-name-soil_retain_1: Temel Toprak Sulayıcı (şansa bağlı)
+  display-name-soil_retain_2: Kaliteli Toprak Sulayıcı (şansa bağlı)
+  display-name-soil_retain_3: Lüks Toprak Sulayıcı (şansa bağlı)
+  display-name-quality_1: Temel Gübre
+  display-name-quality_2: Kaliteli Gübre
+  display-name-quality_3: Lüks Gübre
+  display-name-yield_increase_1: Temel Verim Yükseltici
+  display-name-yield_increase_2: Kaliteli Verim Yükseltici
+  display-name-yield_increase_3: Lüks Verim Yükseltici
+  display-name-variation_1: Temel Büyülü Şişe
+  display-name-variation_2: Orta Büyülü Şişe
+  display-name-variation_3: Gelişmiş Büyülü Şişe
+  display-name-watering_can_1: Bakır Sulama Kabı
+  display-name-watering_can_2: Çelik Sulama Kabı
+  display-name-watering_can_3: Altın Sulama Kabı
+  display-name-watering_can_4: İridyum Sulama Kabı
+  display-name-sprinkler_1_item: İlkel Fıskiye
+  display-name-sprinkler_2_item: Kaliteli Fıskiye
+  display-name-sprinkler_3_item: Modern Fıskiye
+  # Tomato
+  display-name-tomato: Domates
+  display-name-tomato_silver_star: Domates (Gümüş Yıldız)
+  display-name-tomato_golden_star: Domates (Altın Yıldız)
+  display-name-tomato_seeds: Domates Tohumu
+  display-name-gigantic_tomato: Devasa Domates
+  display-name-golden_tomato: Altın Domates
+  display-name-soil_surveyor: Toprak araştırması

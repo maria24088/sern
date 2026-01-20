@@ -1,0 +1,75 @@
+Cubees-v20_Dragons-Crouch_To_Face_Owner: 'true' #true/false
+Cubees-v20_Dragons-Invincible: 'true' #true/false
+
+Cubee-air_dragon-HelpsOwnerCombat: 'true' #true/false
+Cubee-air_dragon-Skill_AutoActivate: 'true' #true/false
+Cubee-air_dragon-Skill_MaximumTargetDistance: '15' #Blocks 
+Cubee-air_dragon-Skill_Cooldown: '25' #Seconds
+Cubee-air_dragon-Skill_Cooldown_PowerScale: '0.2' #Seconds, decrease per level 
+Cubee-air_dragon-Skill_Damage: '25' #Unit / 1 Cast
+Cubee-air_dragon-Skill_Damage_PowerScale: '2.5' #Unit, increase per level 
+Cubee-air_dragon-EXP_Receive: '2' #EXP-Point everytume the skill is activated
+
+Cubee-darkness_dragon-HelpsOwnerCombat: 'true' #true/false
+Cubee-darkness_dragon-Skill_AutoActivate: 'true' #true/false
+Cubee-darkness_dragon-Skill_MaximumTargetDistance: '25' #Blocks 
+Cubee-darkness_dragon-Skill_Cooldown: '25' #Seconds
+Cubee-darkness_dragon-Skill_Cooldown_PowerScale: '0.2' #Seconds, decrease per level 
+Cubee-darkness_dragon-Skill_Damage: '30' #Unit / 1 Cast
+Cubee-darkness_dragon-Skill_Damage_PowerScale: '3' #Unit, increase per level 
+Cubee-darkness_dragon-EXP_Receive: '2' #EXP-Point everytume the skill is activated
+
+Cubee-earth_dragon-HelpsOwnerCombat: 'true' #true/false
+Cubee-earth_dragon-Skill_AutoActivate: 'true' #true/false
+Cubee-earth_dragon-Skill_MaximumTargetDistance: '12' #Blocks 
+Cubee-earth_dragon-Skill_Cooldown: '25' #Seconds
+Cubee-earth_dragon-Skill_Cooldown_PowerScale: '0.2' #Seconds, decrease per level 
+Cubee-earth_dragon-Skill_Damage: '30' #Unit / 1 Cast
+Cubee-earth_dragon-Skill_Damage_PowerScale: '3.2' #Unit, increase per level 
+Cubee-earth_dragon-EXP_Receive: '2' #EXP-Point everytume the skill is activated
+
+Cubee-fire_dragon-HelpsOwnerCombat: 'true' #true/false
+Cubee-fire_dragon-Skill_AutoActivate: 'true' #true/false
+Cubee-fire_dragon-Skill_MaximumTargetDistance: '25' #Blocks 
+Cubee-fire_dragon-Skill_Cooldown: '25' #Seconds
+Cubee-fire_dragon-Skill_Cooldown_PowerScale: '0.2' #Seconds, decrease per level 
+Cubee-fire_dragon-Skill_Damage: '20' #Unit / 1 Cast
+Cubee-fire_dragon-Skill_Damage_PowerScale: '2' #Unit, increase per level 
+Cubee-fire_dragon-EXP_Receive: '2' #EXP-Point everytume the skill is activated
+
+Cubee-galaxy_dragon-HelpsOwnerCombat: 'true' #true/false
+Cubee-galaxy_dragon-Skill_AutoActivate: 'true' #true/false
+Cubee-galaxy_dragon-Skill_MaximumTargetDistance: '15' #Blocks 
+Cubee-galaxy_dragon-Skill_Cooldown: '25' #Seconds
+Cubee-galaxy_dragon-Skill_Cooldown_PowerScale: '0.2' #Seconds, decrease per level 
+Cubee-galaxy_dragon-Skill_Damage: '1' #Unit / 1 Cast
+Cubee-galaxy_dragon-Skill_Damage_PowerScale: '2.5' #Unit, increase per level 
+Cubee-galaxy_dragon-EXP_Receive: '2' #EXP-Point everytume the skill is activated
+
+Cubee-ice_dragon-HelpsOwnerCombat: 'true' #true/false
+Cubee-ice_dragon-Skill_AutoActivate: 'true' #true/false
+Cubee-ice_dragon-Skill_MaximumTargetDistance: '25  ' #Blocks 
+Cubee-ice_dragon-Skill_Cooldown: '25' #Seconds
+Cubee-ice_dragon-Skill_Cooldown_PowerScale: '0.2' #Seconds, decrease per level 
+Cubee-ice_dragon-Skill_Damage: '30' #Unit / 1 Cast
+Cubee-ice_dragon-Skill_Damage_PowerScale: '3' #Unit, increase per level 
+Cubee-ice_dragon-EXP_Receive: '2' #EXP-Point everytume the skill is activated
+
+
+Cubee-light_dragon-HelpsOwnerCombat: 'true' #true/false
+Cubee-light_dragon-Skill_AutoActivate: 'true' #true/false
+Cubee-light_dragon-Skill_MaximumTargetDistance: '15' #Blocks 
+Cubee-light_dragon-Skill_Cooldown: '25' #Seconds
+Cubee-light_dragon-Skill_Cooldown_PowerScale: '0.2' #Seconds, decrease per level 
+Cubee-light_dragon-Skill_Damage: '30' #Unit / 1 Cast
+Cubee-light_dragon-Skill_Damage_PowerScale: '3' #Unit, increase per level 
+Cubee-light_dragon-EXP_Receive: '2' #EXP-Point everytume the skill is activated
+
+Cubee-nature_dragon-HelpsOwnerCombat: 'true' #true/false
+Cubee-nature_dragon-Skill_AutoActivate: 'true' #true/false
+Cubee-nature_dragon-Skill_MaximumTargetDistance: '12' #Blocks 
+Cubee-nature_dragon-Skill_Cooldown: '25' #Seconds
+Cubee-nature_dragon-Skill_Cooldown_PowerScale: '0.2' #Seconds, decrease per level 
+Cubee-nature_dragon-Skill_Damage: '40' #Unit / 1 Cast
+Cubee-nature_dragon-Skill_Damage_PowerScale: '4' #Unit, increase per level 
+Cubee-nature_dragon-EXP_Receive: '2' #EXP-Point everytume the skill is activated

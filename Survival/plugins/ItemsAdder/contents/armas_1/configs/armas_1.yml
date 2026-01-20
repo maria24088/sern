@@ -1,0 +1,231 @@
+
+# ~Written by RopeFire~
+
+info:
+  namespace: armas_1
+items:
+  breaker_blade:
+    display_name: Breaker Blade
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: breaker_blade
+  debugstick:
+    display_name: Debugstick
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: debugstick
+  double_waraxe:
+    display_name: Double Waraxe
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: double_waraxe
+  dragonfang_glaive:
+    display_name: Dragonfang Glaive
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: dragonfang_glaive
+  egyptian_fan_axe:
+    display_name: Egyptian Fan Axe
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: egyptian_fan_axe
+  fanged_katana:
+    display_name: Fanged Katana
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: fanged_katana
+  flayer_spear:
+    display_name: Flayer Spear
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: flayer_spear
+  gilded_greathammer:
+    display_name: Gilded Greathammer
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: gilded_greathammer
+  glass_rapier:
+    display_name: Glass Rapier
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: glass_rapier
+  golden_trident:
+    display_name: Golden Trident
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: golden_trident
+  hammer_of_light:
+    display_name: Hammer of Light
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: hammer_of_light    
+  heavy_staff_cleaver:
+    display_name: Heavy Staff Cleaver
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: heavy_staff_cleaver
+  ice_hammer:
+    display_name: Ice Hammer
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: ice_hammer
+  jade_hammer:
+    display_name: Jade Hammer
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: jade_hammer  
+  lunar_crescent_dagger:
+    display_name: Lunar Crescent Dagger
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: lunar_crescent_dagger
+  magnet_hammer:
+    display_name: Magnet Hammer
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: magnet_hammer
+  molten_obsidian_hammer:
+    display_name: Molten Obsidian Hammer
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: molten_obsidian_hammer   
+  ruined_zweihander:
+    display_name: Ruined Zweihander
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: ruined_zweihander
+  sakura_ghostkatana:
+    display_name: Sakura Ghostkatana
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: sakura_ghostkatana
+  shadowfang_blade:
+    display_name: Shadowfang Blade
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: shadowfang_blade      
+  solar_spear:
+    display_name: Solar Spear
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: solar_spear
+  spoon_of_death:
+    display_name: Spoon of Death
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: spoon_of_death
+  tempest_scimitar:
+    display_name: Tempest Scimitar
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: tempest_scimitar  
+  the_spatula:
+    display_name: The Spatula
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: the_spatula
+  vampiric_claymore:
+    display_name: Vampiric Claymore
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: vampiric_claymore

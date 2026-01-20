@@ -1,0 +1,239 @@
+COIN:
+  base:
+    material: PAPER
+    custom-model-data: 50000
+    name: 'Coin'
+    ability:
+      ability1:
+        type: ITEM_COIN_DEPOSIT_1
+        mode: RIGHT_CLICK
+    lore:
+    - '&7A single coin.'
+    - '&7Exchangeable to &fStacked Coin &7from Banker.'
+    - ""
+    - "&f⏵ &c&lRight-click&r&7 to deposit &a$1 &7into your bank!"
+        
+STACKED_COIN:
+  base:
+    material: PAPER
+    custom-model-data: 50001
+    name: 'Stacked Coin'
+    ability:
+      ability1:
+        type: ITEM_COIN_DEPOSIT_2
+        mode: RIGHT_CLICK
+    lore:
+    - '&7A coin stack worth 64 coins.'
+    - '&7Exchangeable to &fCoin &7or &fCoin Bundle &7from Banker.'
+    - ""
+    - "&f⏵ &c&lRight-click&r&7 to deposit &a$64 &7into your bank!"
+        
+COIN_BUNDLE:
+  base:
+    material: PAPER
+    custom-model-data: 50002
+    name: 'Coin Bundle'
+    ability:
+      ability1:
+        type: ITEM_COIN_DEPOSIT_3
+        mode: RIGHT_CLICK
+    lore:
+    - '&7A coin bundle worth 4,096 coins.'
+    - '&7Exchangeable to &fStacked Coin &7from Banker.'
+    - ""
+    - "&f⏵ &c&lRight-click&r&7 to deposit &a$4096 &7into your bank!"
+
+MINOR_HEALING_POTION:
+  base:
+    material: FEATHER
+    custom-model-data: 2038.0
+    name: '&fMinor Healing Potion'
+    ability:
+      ability1:
+        type: POTION_MINOR
+        mode: RIGHT_CLICK
+        
+SMALL_HEALING_POTION:
+  base:
+    material: FEATHER
+    custom-model-data: 2039.0
+    name: '&fSmall Healing Potion'
+    ability:
+      ability1:
+        type: POTION_SMALL
+        mode: RIGHT_CLICK
+        
+LARGE_HEALING_POTION:
+  base:
+    material: FEATHER
+    custom-model-data: 2037.0
+    name: '&fLarge Healing Potion'
+    ability:
+      ability1:
+        type: POTION_LARGE
+        mode: RIGHT_CLICK
+        
+SUPERIOR_HEALING_POTION:
+  base:
+    material: FEATHER
+    custom-model-data: 2040.0
+    name: '&fSuperior Healing Potion'
+    ability:
+      ability1:
+        type: POTION_SUPERIOR
+        mode: RIGHT_CLICK
+        
+ETERNAL_HEALING_POTION:
+  base:
+    material: FEATHER
+    custom-model-data: 2036.0
+    name: '&fEternal Healing Potion'
+    ability:
+      ability1:
+        type: POTION_ETERNAL
+        mode: RIGHT_CLICK
+        
+SCROLL_RETURN:
+  base:
+    material: FEATHER
+    custom-model-data: 2041.0
+    name: '&fReturn Scroll'
+    ability:
+      ability1:
+        type: SCROLL_RETURN
+        mode: RIGHT_CLICK
+        
+SCROLL_TELEPORT:
+  base:
+    material: FEATHER
+    custom-model-data: 2042.0
+    name: '&fTeleport Scroll'
+    ability:
+      ability1:
+        type: SCROLL_TELEPORT
+        mode: RIGHT_CLICK
+
+MINOR_MANA_POTION:
+  base:
+    material: FEATHER
+    custom-model-data: 2051.0
+    name: '&fMinor Mana Potion'
+    ability:
+      ability1:
+        type: MANA_POTION_MINOR
+        mode: RIGHT_CLICK
+        
+SMALL_MANA_POTION:
+  base:
+    material: FEATHER
+    custom-model-data: 2052.0
+    name: '&fSmall Mana Potion'
+    ability:
+      ability1:
+        type: MANA_POTION_SMALL
+        mode: RIGHT_CLICK
+        
+LARGE_MANA_POTION:
+  base:
+    material: FEATHER
+    custom-model-data: 2050.0
+    name: '&fLarge Mana Potion'
+    ability:
+      ability1:
+        type: MANA_POTION_LARGE
+        mode: RIGHT_CLICK
+        
+SUPERIOR_MANA_POTION:
+  base:
+    material: FEATHER
+    custom-model-data: 2053.0
+    name: '&fSuperior Mana Potion'
+    ability:
+      ability1:
+        type: MANA_POTION_SUPERIOR
+        mode: RIGHT_CLICK
+        
+ETERNAL_MANA_POTION:
+  base:
+    material: FEATHER
+    custom-model-data: 2049.0
+    name: '&fEternal Mana Potion'
+    ability:
+      ability1:
+        type: MANA_POTION_ETERNAL
+        mode: RIGHT_CLICK
+        
+SCROLL_COMMON:
+  base:
+    material: FEATHER
+    custom-model-data: 2054.0
+    name: '&fCommon EXP Scroll'
+    ability:
+      ability1:
+        type: SCROLL_COMMON
+        mode: RIGHT_CLICK
+        
+SCROLL_RARE:
+  base:
+    material: FEATHER
+    custom-model-data: 2056.0
+    name: '&eRare EXP Scroll'
+    ability:
+      ability1:
+        type: SCROLL_RARE
+        mode: RIGHT_CLICK
+        
+SCROLL_EPIC:
+  base:
+    material: FEATHER
+    custom-model-data: 2055.0
+    name: '&5Epic EXP Scroll'
+    ability:
+      ability1:
+        type: SCROLL_EPIC
+        mode: RIGHT_CLICK
+        
+        
+        
+        
+ELIXIR_WIND:
+  base:
+    material: FEATHER
+    custom-model-data: 2048.0
+    name: '&fWind Elixir'
+    ability:
+      ability1:
+        type: ELIXIR_WIND
+        mode: RIGHT_CLICK
+        
+ELIXIR_WATER:
+  base:
+    material: FEATHER
+    custom-model-data: 2047.0
+    name: '&bWater Elixir'
+    ability:
+      ability1:
+        type: ELIXIR_WATER
+        mode: RIGHT_CLICK
+        
+ELIXIR_FIRE:
+  base:
+    material: FEATHER
+    custom-model-data: 2046.0
+    name: '&cFire Elixir'
+    ability:
+      ability1:
+        type: ELIXIR_FIRE
+        mode: RIGHT_CLICK
+        
+ELIXIR_EARTH:
+  base:
+    material: FEATHER
+    custom-model-data: 2045.0
+    name: '&aEarth Elixir'
+    ability:
+      ability1:
+        type: ELIXIR_EARTH
+        mode: RIGHT_CLICK
+
+#24f35df792b6ddcf3baf6e41e84f2dde

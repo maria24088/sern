@@ -1,0 +1,1078 @@
+tomato:
+  type: FURNITURE
+  pot-whitelist:
+    - default
+  seed: redstone_labs:tomato_seeds
+  random-rotation: false
+  requirements:
+    break: {}
+    plant: {}
+  events:
+    plant:
+      swing_hand_action:
+        type: swing-hand
+        value: true
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:item.hoe.till
+          volume: 1
+          pitch: 1
+    break:
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:block.crop.break
+          volume: 1
+          pitch: 1
+  max-points: 2
+  points:
+    0:
+      model: redstone_labs:tomato_stage_1
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: tomato_seeds
+              min: 1
+              max: 1
+            chance: 0.3
+    1:
+      model: redstone_labs:tomato_stage_2
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: tomato_seeds
+              min: 1
+              max: 1
+            chance: 0.5
+    2:
+      model: redstone_labs:tomato_stage_3
+      hologram-offset-correction: 0.2
+      events:
+        grow:
+          action_1:
+            type: variation
+            value:
+              overgrown:
+                item: redstone_labs:overgrown_tomato
+                type: BLOCK
+                chance: 0.01
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:tomato_seeds
+              min: 1
+              max: 2
+            chance: 1
+          action_2:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:tomato
+              min: 1
+              max: 2
+            chance: 1
+          command_action:
+            type: command
+            value:
+              - 'svar add harvested_crops 1 {player}'
+  grow-conditions:
+    default:
+      point: 1
+      conditions:
+        moisture_condition:
+          type: moisture-more-than
+          value: 0
+    crow_attack:
+      conditions:
+        condition_1:
+          type: crow-attack
+          value:
+            chance: 0.005
+            fly-model: redstone_labs:crow_fly
+            stand-model: redstone_labs:crow_stand
+      delay: 150
+pineapple:
+  type: FURNITURE
+  pot-whitelist:
+    - default
+  seed: redstone_labs:pineapple_seeds
+  random-rotation: false
+  requirements:
+    break: {}
+    plant: {}
+  events:
+    plant:
+      swing_hand_action:
+        type: swing-hand
+        value: true
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:item.hoe.till
+          volume: 1
+          pitch: 1
+    break:
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:block.crop.break
+          volume: 1
+          pitch: 1
+  max-points: 4
+  points:
+    0:
+      model: redstone_labs:pineapple_stage_1
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:pineapple_seeds
+              min: 1
+              max: 1
+            chance: 0.3
+    1:
+      model: redstone_labs:pineapple_stage_2
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:pineapple_seeds
+              min: 1
+              max: 1
+            chance: 0.5
+    2:
+      model: redstone_labs:pineapple_stage_3
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:pineapple_seeds
+              min: 1
+              max: 2
+            chance: 0.7
+    3:
+      model: redstone_labs:pineapple_stage_4
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:pineapple_seeds
+              min: 1
+              max: 2
+            chance: 1
+    4:
+      model: redstone_labs:pineapple_stage_5
+      hologram-offset-correction: 0.2
+      events:
+        grow:
+          action_1:
+            type: variation
+            value:
+              overgrown:
+                item: redstone_labs:overgrown_pineapple
+                type: BLOCK
+                chance: 0.01
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:pineapple_seeds
+              min: 1
+              max: 2
+            chance: 1
+          action_2:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:pineapple
+              min: 1
+              max: 2
+            chance: 1
+          command_action:
+            type: command
+            value:
+              - 'svar add harvested_crops 1 {player}'
+  grow-conditions:
+    default:
+      point: 1
+      conditions:
+        moisture_condition:
+          type: moisture-more-than
+          value: 0
+    crow_attack:
+      conditions:
+        condition_1:
+          type: crow-attack
+          value:
+            chance: 0.005
+            fly-model: redstone_labs:crow_fly
+            stand-model: redstone_labs:crow_stand
+      delay: 150
+corn:
+  type: FURNITURE
+  pot-whitelist:
+    - default
+  seed: redstone_labs:corn_kernels
+  random-rotation: false
+  requirements:
+    break: {}
+    plant: {}
+  events:
+    plant:
+      swing_hand_action:
+        type: swing-hand
+        value: true
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:item.hoe.till
+          volume: 1
+          pitch: 1
+    break:
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:block.crop.break
+          volume: 1
+          pitch: 1
+  max-points: 4
+  points:
+    0:
+      model: redstone_labs:corn_stage_1
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:corn_kernels
+              min: 1
+              max: 1
+            chance: 0.3
+    1:
+      model: redstone_labs:corn_stage_2
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:corn_kernels
+              min: 1
+              max: 1
+            chance: 0.5
+    2:
+      model: redstone_labs:corn_stage_3
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:corn_kernels
+              min: 1
+              max: 2
+            chance: 0.7
+    3:
+      model: redstone_labs:corn_stage_4
+      hologram-offset-correction: 0.2
+      events:
+        grow:
+          action_1:
+            type: variation
+            value:
+              overgrown:
+                item: redstone_labs:overgrown_corn
+                type: BLOCK
+                chance: 0.01
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:corn_kernels
+              min: 1
+              max: 2
+            chance: 1
+          action_2:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:corn
+              min: 1
+              max: 2
+            chance: 1
+          command_action:
+            type: command
+            value:
+              - 'svar add harvested_crops 1 {player}'
+  grow-conditions:
+    default:
+      point: 1
+      conditions:
+        moisture_condition:
+          type: moisture-more-than
+          value: 0
+    crow_attack:
+      conditions:
+        condition_1:
+          type: crow-attack
+          value:
+            chance: 0.005
+            fly-model: redstone_labs:crow_fly
+            stand-model: redstone_labs:crow_stand
+      delay: 150
+
+eggplant:
+  type: FURNITURE
+  pot-whitelist:
+    - default
+  seed: redstone_labs:eggplant_seeds
+  random-rotation: false
+  requirements:
+    break: {}
+    plant: {}
+  events:
+    plant:
+      swing_hand_action:
+        type: swing-hand
+        value: true
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:item.hoe.till
+          volume: 1
+          pitch: 1
+    break:
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:block.crop.break
+          volume: 1
+          pitch: 1
+  max-points: 4
+  points:
+    0:
+      model: redstone_labs:eggplant_stage_1
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:eggplant_seeds
+              min: 1
+              max: 1
+            chance: 0.3
+    1:
+      model: redstone_labs:eggplant_stage_2
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:eggplant_seeds
+              min: 1
+              max: 1
+            chance: 0.5
+    2:
+      model: redstone_labs:eggplant_stage_3
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:eggplant_seeds
+              min: 1
+              max: 2
+            chance: 0.7
+    3:
+      model: redstone_labs:eggplant_stage_4
+      hologram-offset-correction: 0.2
+      events:
+        grow:
+          action_1:
+            type: variation
+            value:
+              overgrown:
+                item: redstone_labs:overgrown_eggplant
+                type: BLOCK
+                chance: 0.01
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:eggplant_seeds
+              min: 1
+              max: 2
+            chance: 1
+          action_2:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:eggplant
+              min: 1
+              max: 2
+            chance: 1
+          command_action:
+            type: command
+            value:
+              - 'svar add harvested_crops 1 {player}'
+  grow-conditions:
+    default:
+      point: 1
+      conditions:
+        moisture_condition:
+          type: moisture-more-than
+          value: 0
+    crow_attack:
+      conditions:
+        condition_1:
+          type: crow-attack
+          value:
+            chance: 0.005
+            fly-model: redstone_labs:crow_fly
+            stand-model: redstone_labs:crow_stand
+      delay: 150
+
+chilli:
+  type: FURNITURE
+  pot-whitelist:
+    - default
+  seed: redstone_labs:chilli_seeds
+  random-rotation: false
+  requirements:
+    break: {}
+    plant: {}
+  events:
+    plant:
+      swing_hand_action:
+        type: swing-hand
+        value: true
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:item.hoe.till
+          volume: 1
+          pitch: 1
+    break:
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:block.crop.break
+          volume: 1
+          pitch: 1
+  max-points: 4
+  points:
+    0:
+      model: redstone_labs:chilli_stage_1
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:chilli_seeds
+              min: 1
+              max: 1
+            chance: 0.3
+    1:
+      model: redstone_labs:chilli_stage_2
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:chilli_seeds
+              min: 1
+              max: 1
+            chance: 0.5
+    2:
+      model: chilli_stage_3
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:chilli_seeds
+              min: 1
+              max: 2
+            chance: 0.7
+    3:
+      model: redstone_labs:chilli_stage_4
+      hologram-offset-correction: 0.2
+      events:
+        grow:
+          action_1:
+            type: variation
+            value:
+              overgrown:
+                item: redstone_labs:overgrown_chilli
+                type: BLOCK
+                chance: 0.01
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:chilli_seeds
+              min: 1
+              max: 2
+            chance: 1
+          action_2:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:chilli
+              min: 1
+              max: 2
+            chance: 1
+          command_action:
+            type: command
+            value:
+              - 'svar add harvested_crops 1 {player}'
+  grow-conditions:
+    default:
+      point: 1
+      conditions:
+        moisture_condition:
+          type: moisture-more-than
+          value: 0
+    crow_attack:
+      conditions:
+        condition_1:
+          type: crow-attack
+          value:
+            chance: 0.005
+            fly-model: redstone_labs:crow_fly
+            stand-model: redstone_labs:crow_stand
+      delay: 150
+
+lettuce:
+  type: FURNITURE
+  pot-whitelist:
+    - default
+  seed: redstone_labs:lettuce_seeds
+  random-rotation: false
+  requirements:
+    break: {}
+    plant: {}
+  events:
+    plant:
+      swing_hand_action:
+        type: swing-hand
+        value: true
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:item.hoe.till
+          volume: 1
+          pitch: 1
+    break:
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:block.crop.break
+          volume: 1
+          pitch: 1
+  max-points: 3
+  points:
+    0:
+      model: redstone_labs:lettuce_stage_1
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:lettuce_seeds
+              min: 1
+              max: 1
+            chance: 0.3
+    1:
+      model: redstone_labs:lettuce_stage_2
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:lettuce_seeds
+              min: 1
+              max: 1
+            chance: 0.5
+    2:
+      model: redstone_labs:lettuce_stage_3
+      hologram-offset-correction: 0.2
+      events:
+        grow:
+          action_1:
+            type: variation
+            value:
+              overgrown:
+                item: redstone_labs:overgrown_lettuce
+                type: BLOCK
+                chance: 0.01
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:lettuce_seeds
+              min: 1
+              max: 2
+            chance: 1
+          action_2:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:lettuce
+              min: 1
+              max: 2
+            chance: 1
+          command_action:
+            type: command
+            value:
+              - 'svar add harvested_crops 1 {player}'
+  grow-conditions:
+    default:
+      point: 1
+      conditions:
+        moisture_condition:
+          type: moisture-more-than
+          value: 0
+    crow_attack:
+      conditions:
+        condition_1:
+          type: crow-attack
+          value:
+            chance: 0.005
+            fly-model: redstone_labs:crow_fly
+            stand-model: redstone_labs:crow_stand
+      delay: 150
+
+onion:
+  type: FURNITURE
+  pot-whitelist:
+    - default
+  seed: redstone_labs:onion_seeds
+  random-rotation: false
+  requirements:
+    break: {}
+    plant: {}
+  events:
+    plant:
+      swing_hand_action:
+        type: swing-hand
+        value: true
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:item.hoe.till
+          volume: 1
+          pitch: 1
+    break:
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:block.crop.break
+          volume: 1
+          pitch: 1
+  max-points: 3
+  points:
+    0:
+      model: redstone_labs:onion_stage_1
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:onion_seeds
+              min: 1
+              max: 1
+            chance: 0.3
+    1:
+      model: redstone_labs:onion_stage_2
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:onion_seeds
+              min: 1
+              max: 1
+            chance: 0.5
+    2:
+      model: redstone_labs:onion_stage_3
+      hologram-offset-correction: 0.2
+      events:
+        grow:
+          action_1:
+            type: variation
+            value:
+              overgrown:
+                item: redstone_labs:overgrown_onion
+                type: BLOCK
+                chance: 0.01
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:onion_seeds
+              min: 1
+              max: 2
+            chance: 1
+          action_2:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:onion
+              min: 1
+              max: 2
+            chance: 1
+          command_action:
+            type: command
+            value:
+              - 'svar add harvested_crops 1 {player}'
+  grow-conditions:
+    default:
+      point: 1
+      conditions:
+        moisture_condition:
+          type: moisture-more-than
+          value: 0
+    crow_attack:
+      conditions:
+        condition_1:
+          type: crow-attack
+          value:
+            chance: 0.005
+            fly-model: redstone_labs:crow_fly
+            stand-model: redstone_labs:crow_stand
+      delay: 150
+
+banana:
+  type: FURNITURE
+  pot-whitelist:
+    - default
+  seed: redstone_labs:banana_seeds
+  random-rotation: false
+  requirements:
+    break: {}
+    plant: {}
+  events:
+    plant:
+      swing_hand_action:
+        type: swing-hand
+        value: true
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:item.hoe.till
+          volume: 1
+          pitch: 1
+    break:
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:block.crop.break
+          volume: 1
+          pitch: 1
+  max-points: 5
+  points:
+    0:
+      model: redstone_labs:banana_tree_stage_1
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:banana_seeds
+              min: 1
+              max: 1
+            chance: 0.3
+    1:
+      model: redstone_labs:banana_tree_stage_2
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:banana_seeds
+              min: 1
+              max: 1
+            chance: 0.5
+    2:
+      model: redstone_labs:banana_tree_stage_3
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:banana_seeds
+              min: 1
+              max: 2
+            chance: 0.7
+    3:
+      model: redstone_labs:banana_tree_stage_4
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:banana_seeds
+              min: 1
+              max: 2
+            chance: 0.7
+    4:
+      model: redstone_labs:banana_tree_stage_5
+      hologram-offset-correction: 0.2
+      events:
+        grow:
+          action_1:
+            type: variation
+            value:
+              overgrown:
+                item: redstone_labs:overgrown_banana
+                type: BLOCK
+                chance: 0.01
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:banana_seeds
+              min: 1
+              max: 2
+            chance: 1
+          action_2:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:banana
+              min: 1
+              max: 2
+            chance: 1
+          command_action:
+            type: command
+            value:
+              - 'svar add harvested_crops 1 {player}'
+  grow-conditions:
+    default:
+      point: 1
+      conditions:
+        moisture_condition:
+          type: moisture-more-than
+          value: 0
+    crow_attack:
+      conditions:
+        condition_1:
+          type: crow-attack
+          value:
+            chance: 0.005
+            fly-model: redstone_labs:crow_fly
+            stand-model: redstone_labs:crow_stand
+      delay: 150
+
+orange:
+  type: FURNITURE
+  pot-whitelist:
+    - default
+  seed: redstone_labs:orange_seeds
+  random-rotation: false
+  requirements:
+    break: {}
+    plant: {}
+  events:
+    plant:
+      swing_hand_action:
+        type: swing-hand
+        value: true
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:item.hoe.till
+          volume: 1
+          pitch: 1
+    break:
+      sound_action:
+        type: sound
+        value:
+          source: player
+          key: minecraft:block.crop.break
+          volume: 1
+          pitch: 1
+  max-points: 5
+  points:
+    0:
+      model: redstone_labs:orange_tree_stage_1
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:orange_seeds
+              min: 1
+              max: 1
+            chance: 0.3
+    1:
+      model: redstone_labs:orange_tree_stage_2
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:orange_seeds
+              min: 1
+              max: 1
+            chance: 0.5
+    2:
+      model: redstone_labs:orange_tree_stage_3
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:orange_seeds
+              min: 1
+              max: 2
+            chance: 0.7
+    3:
+      model: redstone_labs:orange_tree_stage_4
+      hologram-offset-correction: 0.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:orange_seeds
+              min: 1
+              max: 2
+            chance: 0.7
+    4:
+      model: redstone_labs:orange_tree_stage_5
+      hologram-offset-correction: 0.2
+      events:
+        grow:
+          action_1:
+            type: variation
+            value:
+              overgrown:
+                item: redstone_labs:overgrown_orange
+                type: BLOCK
+                chance: 0.01
+        break:
+          action_1:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:orange_seeds
+              min: 1
+              max: 2
+            chance: 1
+          action_2:
+            type: drop-item
+            value:
+              ignore-fertilizer: true
+              item: redstone_labs:orange
+              min: 1
+              max: 2
+            chance: 1
+          command_action:
+            type: command
+            value:
+              - 'svar add harvested_crops 1 {player}'
+  grow-conditions:
+    default:
+      point: 1
+      conditions:
+        moisture_condition:
+          type: moisture-more-than
+          value: 0
+    crow_attack:
+      conditions:
+        condition_1:
+          type: crow-attack
+          value:
+            chance: 0.005
+            fly-model: redstone_labs:crow_fly
+            stand-model: redstone_labs:crow_stand
+      delay: 150
+

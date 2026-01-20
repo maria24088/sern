@@ -1,0 +1,36 @@
+info:
+  namespace: ufoset
+categories:
+  ufoset:
+    enabled: true
+    skip_if_already: false
+    icon: "ufoset:ufo_sword"
+    name: UFO Weapons & Tools Set
+    permission: ufoset.menu
+    items:
+      - "ufoset:ufo_sword"
+      - "ufoset:ufo_greatsword"
+      - "ufoset:ufo_spear"
+      - "ufoset:ufo_trident"
+      - "ufoset:ufo_hammer"
+      - "ufoset:ufo_scythe"
+      - "ufoset:ufo_staff"
+      - "ufoset:ufo_bow"
+      - "ufoset:ufo_crossbow"
+      - "ufoset:ufo_axe"
+      - "ufoset:ufo_hoe"
+      - "ufoset:ufo_pickaxe"
+      - "ufoset:ufo_shovel"
+      - "ufoset:ufo_fishing_rod"
+      - "ufoset:ufo_shield"
+      - "ufoset:ufo_chest"
+      - "ufoset:ufo_chest_opening"
+      - "ufoset:ufo_key"
+      - "ufoset:ufochestplate"
+      - "ufoset:ufoleggings"
+      - "ufoset:ufoboots"
+      - "ufoset:ufohelmet"
+      - "ufoset:ufo_head"
+      - "ufoset:ufo_backpack1"
+      - "ufoset:ufo_backpack2"
+    

@@ -1,0 +1,1152 @@
+info:
+  namespace: redstone_labs
+categories:
+  farming_expansion:
+    enabled: true
+    icon: redstone_labs:tomato
+    name: Farming Expansion
+    items:
+    - redstone_labs:scarecrow
+    - redstone_labs:invisible_item
+    - redstone_labs:crow_fly
+    - redstone_labs:crow_stand
+    - redstone_labs:speed_grow_fertilizer
+    - redstone_labs:yield_increase_fertilizer
+    - redstone_labs:overgrown_fertilizer
+    - redstone_labs:pineapple_seeds
+    - redstone_labs:pineapple
+    - redstone_labs:overgrown_pineapple
+    - redstone_labs:pineapple_stage_1
+    - redstone_labs:pineapple_stage_2
+    - redstone_labs:pineapple_stage_3
+    - redstone_labs:pineapple_stage_4
+    - redstone_labs:pineapple_stage_5
+    - redstone_labs:corn_kernels
+    - redstone_labs:corn
+    - redstone_labs:overgrown_corn
+    - redstone_labs:corn_stage_1
+    - redstone_labs:corn_stage_2
+    - redstone_labs:corn_stage_3
+    - redstone_labs:corn_stage_4
+    - redstone_labs:eggplant_seeds
+    - redstone_labs:eggplant
+    - redstone_labs:overgrown_eggplant
+    - redstone_labs:eggplant_stage_1
+    - redstone_labs:eggplant_stage_2
+    - redstone_labs:eggplant_stage_3
+    - redstone_labs:eggplant_stage_4
+    - redstone_labs:chilli_seeds
+    - redstone_labs:chilli
+    - redstone_labs:overgrown_chilli
+    - redstone_labs:chilli_stage_1
+    - redstone_labs:chilli_stage_2
+    - redstone_labs:chilli_stage_3
+    - redstone_labs:chilli_stage_4
+    - redstone_labs:lettuce_seeds
+    - redstone_labs:lettuce
+    - redstone_labs:overgrown_lettuce
+    - redstone_labs:lettuce_stage_1
+    - redstone_labs:lettuce_stage_2
+    - redstone_labs:lettuce_stage_3
+    - redstone_labs:tomato_seeds
+    - redstone_labs:tomato
+    - redstone_labs:overgrown_tomato
+    - redstone_labs:tomato_stage_1
+    - redstone_labs:tomato_stage_2
+    - redstone_labs:tomato_stage_3
+    - redstone_labs:onion_seeds
+    - redstone_labs:onion
+    - redstone_labs:overgrown_onion
+    - redstone_labs:onion_stage_1
+    - redstone_labs:onion_stage_2
+    - redstone_labs:onion_stage_3
+    - redstone_labs:banana_seeds
+    - redstone_labs:banana
+    - redstone_labs:overgrown_banana
+    - redstone_labs:banana_tree_stage_1
+    - redstone_labs:banana_tree_stage_2
+    - redstone_labs:banana_tree_stage_3
+    - redstone_labs:banana_tree_stage_4
+    - redstone_labs:banana_tree_stage_5
+    - redstone_labs:orange_seeds
+    - redstone_labs:orange
+    - redstone_labs:overgrown_orange
+    - redstone_labs:orange_tree_stage_1
+    - redstone_labs:orange_tree_stage_2
+    - redstone_labs:orange_tree_stage_3
+    - redstone_labs:orange_tree_stage_4
+    - redstone_labs:orange_tree_stage_5
+font_images:
+  submenu_dimensions:
+    path: "farming_expansion/marketplace/submenu_dimensions"
+    scale_ratio: 256
+    y_position: 14
+  main_marketplace:
+    path: "farming_expansion/marketplace/main_marketplace"
+    scale_ratio: 256
+    y_position: 14
+  submenu_leaderboard_rewards:
+    path: "farming_expansion/marketplace/submenu_leaderboard_rewards"
+    scale_ratio: 256
+    y_position: 14
+
+  submenu_daily_deals:
+    path: "farming_expansion/marketplace/submenu_daily_deals"
+    scale_ratio: 256
+    y_position: 14
+  submenu_categories_misc_fertilizers:
+    path: "farming_expansion/marketplace/submenu_categories_misc_fertilizers"
+    scale_ratio: 256
+    y_position: 14
+  submenu_categories_misc_gears:
+    path: "farming_expansion/marketplace/submenu_categories_misc_gears"
+    scale_ratio: 256
+    y_position: 14
+  submenu_categories_fruits:
+    path: "farming_expansion/marketplace/submenu_categories_fruits"
+    scale_ratio: 256
+    y_position: 14
+  submenu_categories_vegetables:
+    path: "redstone_labs:farming_expansion/marketplace/submenu_categories_vegetables"
+    scale_ratio: 256
+    y_position: 14
+  submenu_categories_cereals:
+    path: "redstone_labs:farming_expansion/marketplace/submenu_categories_cereals"
+    scale_ratio: 256
+    y_position: 14
+  submenu_categories_bushes:
+    path: "redstone_labs:farming_expansion/marketplace/submenu_categories_bushes"
+    scale_ratio: 256
+    y_position: 14
+  submenu_categories_trees:
+    path: "redstone_labs:farming_expansion/marketplace/submenu_categories_trees"
+    scale_ratio: 256
+    y_position: 14
+  submenu_categories_flowers:
+    path: "redstone_labs:farming_expansion/marketplace/submenu_categories_flowers"
+    scale_ratio: 256
+    y_position: 14
+  indicator_gray_row_1:
+    path: "redstone_labs:farming_expansion/marketplace/indicator_gray"
+    scale_ratio: 18
+    y_position: -58
+  indicator_gray_row_2:
+    path: "redstone_labs:farming_expansion/marketplace/indicator_gray"
+    scale_ratio: 18
+    y_position: -66
+  indicator_red_row_1:
+    path: "redstone_labs:farming_expansion/marketplace/indicator_red"
+    scale_ratio: 18
+    y_position: -58
+  indicator_red_row_2:
+    path: "redstone_labs:farming_expansion/marketplace/indicator_red"
+    scale_ratio: 18
+    y_position: -66
+  left_click_icon:
+    path: "redstone_labs:farming_expansion/marketplace/left-click_icon"
+    scale_ratio: 6
+    y_position: 6
+  shift_left_click_icon:
+    path: "redstone_labs:farming_expansion/marketplace/shift_left-click_icon"
+    scale_ratio: 6
+    y_position: 6
+  shift_right_click_icon:
+    path: "redstone_labs:farming_expansion/marketplace/shift_right-click_icon"
+    scale_ratio: 6
+    y_position: 6
+  shift_icon:
+    path: "redstone_labs:farming_expansion/marketplace/shift_icon"
+    scale_ratio: 7
+    y_position: 7
+items:
+  scarecrow:
+    display_name: "Scarecrow"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/scarecrow
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  invisible_item:
+    display_name: "Invisible Item"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - farming_expansion/marketplace/invisible_item.png
+  crow_fly:
+    display_name: "Crow Fly"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crow_fly
+  crow_stand:
+    display_name: "Crow Stand"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crow_stand
+  speed_grow_fertilizer:
+    display_name: "Speed Grow Fertilizer"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - farming_expansion/overworld/speed_grow_fertilizer.png
+  yield_increase_fertilizer:
+    display_name: "Yield Increase Fertilizer"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - farming_expansion/overworld/yield_increase_fertilizer.png
+  overgrown_fertilizer:
+    display_name: "Overgrown Fertilizer"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - farming_expansion/overworld/overgrown_fertilizer.png
+  pineapple_seeds:
+    display_name: "Pineapple Seeds"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - farming_expansion/overworld/pineapple_seeds.png
+  pineapple:
+    display_name: "Pineapple"
+    resource:
+      material: APPLE
+      generate: true
+      model_id: 20000
+      textures:
+        - farming_expansion/overworld/pineapple.png
+  overgrown_pineapple:
+    display_name: "Overgrown Pineapple"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 21000
+      textures:
+        - farming_expansion/overworld/overgrown_crops/pineapple_block_bottom
+        - farming_expansion/overworld/overgrown_crops/pineapple_block_side
+        - farming_expansion/overworld/overgrown_crops/pineapple_block_side
+        - farming_expansion/overworld/overgrown_crops/pineapple_block_side
+        - farming_expansion/overworld/overgrown_crops/pineapple_block_top
+        - farming_expansion/overworld/overgrown_crops/pineapple_block_side
+    specific_properties:
+      block:
+        hardness: 1
+        placed_model:
+          type: REAL_NOTE
+        drop_when_mined: true
+        sound:
+          break:
+            name: BLOCK_GRASS_BREAK
+            volume: 1
+            pitch: 0.9
+          place:
+            name: BLOCK_GRASS_PLACE
+            volume: 1
+            pitch: 0.9
+  pineapple_stage_1:
+    display_name: "Pineapple Stage 1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/pineapple_0
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pineapple_stage_2:
+    display_name: "Pineapple Stage 2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/pineapple_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pineapple_stage_3:
+    display_name: "Pineapple Stage 3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/pineapple_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pineapple_stage_4:
+    display_name: "Pineapple Stage 4"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/pineapple_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pineapple_stage_5:
+    display_name: "Pineapple Stage 5"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/pineapple_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  corn_kernels:
+    display_name: "Corn Kernels"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - farming_expansion/overworld/corn_kernels.png
+  corn:
+    display_name: "Corn"
+    resource:
+      material: APPLE
+      generate: true
+      model_id: 20001
+      textures:
+        - farming_expansion/overworld/corn.png
+
+  overgrown_corn:
+    display_name: "Overgrown Corn"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 21001
+      textures:
+        - farming_expansion/overworld/overgrown_crops/corn_block_bottom
+        - farming_expansion/overworld/overgrown_crops/corn_block_side
+        - farming_expansion/overworld/overgrown_crops/corn_block_side
+        - farming_expansion/overworld/overgrown_crops/corn_block_side
+        - farming_expansion/overworld/overgrown_crops/corn_block_top
+        - farming_expansion/overworld/overgrown_crops/corn_block_side
+    specific_properties:
+      block:
+        hardness: 1
+        placed_model:
+          type: REAL_NOTE
+        drop_when_mined: true
+        sound:
+          break:
+            name: BLOCK_GRASS_BREAK
+            volume: 1
+            pitch: 0.9
+          place:
+            name: BLOCK_GRASS_PLACE
+            volume: 1
+            pitch: 0.9
+
+  corn_stage_1:
+    display_name: "Corn Stage 1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/corn_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  corn_stage_2:
+    display_name: "Corn Stage 2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/corn_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  corn_stage_3:
+    display_name: "Corn Stage 3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/corn_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  corn_stage_4:
+    display_name: "Corn Stage 4"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/corn_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  chilli_seeds:
+    display_name: "Chilli Seeds"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - farming_expansion/overworld/chilli_seeds.png
+  chilli:
+    display_name: "Chilli"
+    resource:
+      material: APPLE
+      generate: true
+      model_id: 20002
+      textures:
+        - farming_expansion/overworld/chilli.png
+
+  overgrown_chilli:
+    display_name: "Overgrown Chilli"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 21002
+      textures:
+        - farming_expansion/overworld/overgrown_crops/chilli_block_bottom
+        - farming_expansion/overworld/overgrown_crops/chilli_block_side
+        - farming_expansion/overworld/overgrown_crops/chilli_block_side
+        - farming_expansion/overworld/overgrown_crops/chilli_block_side
+        - farming_expansion/overworld/overgrown_crops/chilli_block_top
+        - farming_expansion/overworld/overgrown_crops/chilli_block_side
+    specific_properties:
+      block:
+        hardness: 1
+        placed_model:
+          type: REAL_NOTE
+        drop_when_mined: true
+        sound:
+          break:
+            name: BLOCK_GRASS_BREAK
+            volume: 1
+            pitch: 0.9
+          place:
+            name: BLOCK_GRASS_PLACE
+            volume: 1
+            pitch: 0.9
+
+  chilli_stage_1:
+    display_name: "Chilli Stage 1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/chilli_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  chilli_stage_2:
+    display_name: "Chilli Stage 2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/chilli_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  chilli_stage_3:
+    display_name: "Chilli Stage 3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/chilli_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  chilli_stage_4:
+    display_name: "Chilli Stage 4"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/chilli_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  eggplant_seeds:
+    display_name: "Eggplant Seeds"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - farming_expansion/overworld/eggplant_seeds.png
+
+  eggplant:
+    display_name: "Eggplant"
+    resource:
+      material: APPLE
+      generate: true
+      model_id: 20003
+      textures:
+        - farming_expansion/overworld/eggplant.png
+
+  overgrown_eggplant:
+    display_name: "Overgrown Eggplant"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 21003
+      textures:
+        - farming_expansion/overworld/overgrown_crops/eggplant_block_bottom
+        - farming_expansion/overworld/overgrown_crops/eggplant_block_side
+        - farming_expansion/overworld/overgrown_crops/eggplant_block_side
+        - farming_expansion/overworld/overgrown_crops/eggplant_block_side
+        - farming_expansion/overworld/overgrown_crops/eggplant_block_top
+        - farming_expansion/overworld/overgrown_crops/eggplant_block_side
+    specific_properties:
+      block:
+        hardness: 1
+        placed_model:
+          type: REAL_NOTE
+        drop_when_mined: true
+        sound:
+          break:
+            name: BLOCK_GRASS_BREAK
+            volume: 1
+            pitch: 0.9
+          place:
+            name: BLOCK_GRASS_PLACE
+            volume: 1
+            pitch: 0.9
+
+  eggplant_stage_1:
+    display_name: "Eggplant Stage 1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/eggplant_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  eggplant_stage_2:
+    display_name: "Eggplant Stage 2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/eggplant_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  eggplant_stage_3:
+    display_name: "Eggplant Stage 3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/eggplant_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  eggplant_stage_4:
+    display_name: "Eggplant Stage 4"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/eggplant_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  lettuce_seeds:
+    display_name: "Lettuce Seeds"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - farming_expansion/overworld/lettuce_seeds.png
+
+  lettuce:
+    display_name: "Lettuce"
+    resource:
+      material: APPLE
+      generate: true
+      model_id: 20004
+      textures:
+        - farming_expansion/overworld/lettuce.png
+
+  overgrown_lettuce:
+    display_name: "Overgrown Lettuce"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 21004
+      textures:
+        - farming_expansion/overworld/overgrown_crops/lettuce_block_bottom
+        - farming_expansion/overworld/overgrown_crops/lettuce_block_side
+        - farming_expansion/overworld/overgrown_crops/lettuce_block_side
+        - farming_expansion/overworld/overgrown_crops/lettuce_block_side
+        - farming_expansion/overworld/overgrown_crops/lettuce_block_top
+        - farming_expansion/overworld/overgrown_crops/lettuce_block_side
+    specific_properties:
+      block:
+        hardness: 1
+        placed_model:
+          type: REAL_NOTE
+        drop_when_mined: true
+        sound:
+          break:
+            name: BLOCK_GRASS_BREAK
+            volume: 1
+            pitch: 0.9
+          place:
+            name: BLOCK_GRASS_PLACE
+            volume: 1
+            pitch: 0.9
+
+  lettuce_stage_1:
+    display_name: "Lettuce Stage 1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/lettuce_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  lettuce_stage_2:
+    display_name: "Lettuce Stage 2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/lettuce_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  lettuce_stage_3:
+    display_name: "Lettuce Stage 3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/lettuce_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  tomato_seeds:
+    display_name: "Tomato Seeds"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - farming_expansion/overworld/tomato_seeds.png
+
+  tomato:
+    display_name: "Tomato"
+    resource:
+      material: APPLE
+      generate: true
+      model_id: 20005
+      textures:
+        - farming_expansion/overworld/tomato.png
+
+  overgrown_tomato:
+    display_name: "Overgrown Tomato"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 21005
+      textures:
+        - farming_expansion/overworld/overgrown_crops/tomato_block_bottom
+        - farming_expansion/overworld/overgrown_crops/tomato_block_side
+        - farming_expansion/overworld/overgrown_crops/tomato_block_side
+        - farming_expansion/overworld/overgrown_crops/tomato_block_side
+        - farming_expansion/overworld/overgrown_crops/tomato_block_top
+        - farming_expansion/overworld/overgrown_crops/tomato_block_side
+    specific_properties:
+      block:
+        hardness: 1
+        placed_model:
+          type: REAL_NOTE
+        drop_when_mined: true
+        sound:
+          break:
+            name: BLOCK_GRASS_BREAK
+            volume: 1
+            pitch: 0.9
+          place:
+            name: BLOCK_GRASS_PLACE
+            volume: 1
+            pitch: 0.9
+
+  tomato_stage_1:
+    display_name: "Tomato Stage 1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/tomato_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  tomato_stage_2:
+    display_name: "Tomato Stage 2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/tomato_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  tomato_stage_3:
+    display_name: "Tomato Stage 3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/tomato_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  onion_seeds:
+    display_name: "Onion Seeds"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - farming_expansion/overworld/onion_seeds.png
+
+  onion:
+    display_name: "Onion"
+    resource:
+      material: APPLE
+      generate: true
+      model_id: 20006
+      textures:
+        - farming_expansion/overworld/onion.png
+
+  overgrown_onion:
+    display_name: "Overgrown Onion"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 21006
+      textures:
+        - farming_expansion/overworld/overgrown_crops/onion_block_bottom
+        - farming_expansion/overworld/overgrown_crops/onion_block_side
+        - farming_expansion/overworld/overgrown_crops/onion_block_side
+        - farming_expansion/overworld/overgrown_crops/onion_block_side
+        - farming_expansion/overworld/overgrown_crops/onion_block_top
+        - farming_expansion/overworld/overgrown_crops/onion_block_side
+    specific_properties:
+      block:
+        hardness: 1
+        placed_model:
+          type: REAL_NOTE
+        drop_when_mined: true
+        sound:
+          break:
+            name: BLOCK_GRASS_BREAK
+            volume: 1
+            pitch: 0.9
+          place:
+            name: BLOCK_GRASS_PLACE
+            volume: 1
+            pitch: 0.9
+
+  onion_stage_1:
+    display_name: "Onion Stage 1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/onion_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  onion_stage_2:
+    display_name: "Onion Stage 2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/onion_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  onion_stage_3:
+    display_name: "Onion Stage 3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/onion_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  banana_seeds:
+    display_name: "Banana Seeds"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - farming_expansion/overworld/banana_seeds.png
+
+  banana:
+    display_name: "Banana"
+    resource:
+      material: APPLE
+      generate: true
+      model_id: 20007
+      textures:
+        - farming_expansion/overworld/banana.png
+
+  overgrown_banana:
+    display_name: "Overgrown Banana"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 21007
+      textures:
+        - farming_expansion/overworld/overgrown_crops/banana_block_bottom
+        - farming_expansion/overworld/overgrown_crops/banana_block_side
+        - farming_expansion/overworld/overgrown_crops/banana_block_side
+        - farming_expansion/overworld/overgrown_crops/banana_block_side
+        - farming_expansion/overworld/overgrown_crops/banana_block_top
+        - farming_expansion/overworld/overgrown_crops/banana_block_side
+    specific_properties:
+      block:
+        hardness: 1
+        placed_model:
+          type: REAL_NOTE
+        drop_when_mined: true
+        sound:
+          break:
+            name: BLOCK_GRASS_BREAK
+            volume: 1
+            pitch: 0.9
+          place:
+            name: BLOCK_GRASS_PLACE
+            volume: 1
+            pitch: 0.9
+
+  banana_tree_stage_1:
+    display_name: "Banana Stage 1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/banana_tree_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  banana_tree_stage_2:
+    display_name: "Banana Stage 2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/banana_tree_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  banana_tree_stage_3:
+    display_name: "Banana Stage 3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/banana_tree_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  banana_tree_stage_4:
+    display_name: "Banana Stage 4"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/banana_tree_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  banana_tree_stage_5:
+    display_name: "Banana Stage 5"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/banana_tree_5
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  orange_seeds:
+    display_name: "Orange Seeds"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - farming_expansion/overworld/orange_seeds.png
+  orange:
+    display_name: "Orange"
+    resource:
+      material: APPLE
+      generate: true
+      model_id: 20008
+      textures:
+        - farming_expansion/overworld/orange.png
+
+  overgrown_orange:
+    display_name: "Overgrown Orange"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 21008
+      textures:
+        - farming_expansion/overworld/overgrown_crops/orange_block_bottom
+        - farming_expansion/overworld/overgrown_crops/orange_block_side
+        - farming_expansion/overworld/overgrown_crops/orange_block_side
+        - farming_expansion/overworld/overgrown_crops/orange_block_side
+        - farming_expansion/overworld/overgrown_crops/orange_block_top
+        - farming_expansion/overworld/overgrown_crops/orange_block_side
+    specific_properties:
+      block:
+        hardness: 1
+        placed_model:
+          type: REAL_NOTE
+        drop_when_mined: true
+        sound:
+          break:
+            name: BLOCK_GRASS_BREAK
+            volume: 1
+            pitch: 0.9
+          place:
+            name: BLOCK_GRASS_PLACE
+            volume: 1
+            pitch: 0.9
+
+  orange_tree_stage_1:
+    display_name: "Orange Stage 1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/orange_tree_0
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  orange_tree_stage_2:
+    display_name: "Orange Stage 2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/orange_tree_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  orange_tree_stage_3:
+    display_name: "Orange Stage 3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/orange_tree_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  orange_tree_stage_4:
+    display_name: "Orange Stage 4"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/orange_tree_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+
+  orange_tree_stage_5:
+    display_name: "Orange Stage 5"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: farming_expansion/overworld/crops/orange_tree_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+

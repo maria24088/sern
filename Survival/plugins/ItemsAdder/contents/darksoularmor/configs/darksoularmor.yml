@@ -1,0 +1,64 @@
+info:
+  namespace: darksoularmor
+armors_rendering:
+  darksoul:
+    color: '#aaaaac'
+    layer_1: armor/darksoul/layer_1
+    layer_2: armor/darksoul/layer_2
+    animation:
+      speed: 30
+      interpolation: true
+items:
+  helmet:
+    display_name: '&#6432C3&lD&#6658B0&lü&#677E9D&lş &#95AFB6&lK&#8993AD&la&#7D77A3&ls&#715B9A&lk'
+    permission: darksoul
+    resource:
+      generate: true
+      textures:
+      - item/darksoul/helmet
+    durability:
+      unbreakable: true
+    specific_properties:
+      armor:
+        slot: head
+        custom_armor: darksoul
+
+  chestplate:
+    display_name: '&#6432C3&lD&#654BB6&lü&#6665AA&lş &#768EA5&lG&#869FAE&lö&#95AFB6&lğ&#8E9EB0&lü&#878DAB&ls&#7F7DA5&ll&#786CA0&lü&#715B9A&lk'
+    permission: darksoul
+    resource:
+      generate: true
+      textures:
+      - item/darksoul/chestplate
+    durability:
+      unbreakable: true
+    specific_properties:
+      armor:
+        slot: chest
+        custom_armor: darksoul
+  leggings:
+    display_name: '&#6432C3&lD&#654BB6&lü&#6665AA&lş &#768EA5&lP&#869FAE&la&#95AFB6&ln&#8E9EB0&lt&#878DAB&lo&#7F7DA5&ll&#786CA0&lo&#715B9A&ln'
+    permission: darksoul
+    resource:
+      generate: true
+      textures:
+      - item/darksoul/leggings
+    durability:
+      unbreakable: true
+    specific_properties:
+      armor:
+        slot: legs
+        custom_armor: darksoul
+  boots:
+    display_name: '&#6432C3&lD&#6658B0&lü&#677E9D&lş &#8993AD&lB&#7D77A3&lo&#715B9A&lt'
+    permission: darksoul
+    resource:
+      generate: true
+      textures:
+      - item/darksoul/boots
+    durability:
+      unbreakable: true
+    specific_properties:
+      armor:
+        slot: FEET
+        custom_armor: darksoul

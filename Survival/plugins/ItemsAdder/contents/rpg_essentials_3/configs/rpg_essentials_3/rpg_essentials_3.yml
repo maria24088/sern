@@ -1,0 +1,100 @@
+info:
+  namespace: rpg_essentials_3
+items:
+  elixir_earth:
+    display_name: "elixir_earth"
+    permission: elixir_earth
+    resource:
+      material: FEATHER
+      model_id: 2045
+      generate: false
+      model_path: rpg_essentials_3_model/elixir_earth
+  elixir_fire:
+    display_name: "elixir_fire"
+    permission: elixir_fire
+    resource:
+      material: FEATHER
+      model_id: 2046
+      generate: false
+      model_path: rpg_essentials_3_model/elixir_fire
+  elixir_water:
+    display_name: "elixir_water"
+    permission: elixir_water
+    resource:
+      material: FEATHER
+      model_id: 2047
+      generate: false
+      model_path: rpg_essentials_3_model/elixir_water
+  elixir_wind:
+    display_name: "elixir_wind"
+    permission: elixir_wind
+    resource:
+      material: FEATHER
+      model_id: 2048
+      generate: false
+      model_path: rpg_essentials_3_model/elixir_wind
+  mana_potion_eternal:
+    display_name: "mana_potion_eternal"
+    permission: mana_potion_eternal
+    resource:
+      material: FEATHER
+      model_id: 2049
+      generate: false
+      model_path: rpg_essentials_3_model/mana_potion_eternal
+  mana_potion_large:
+    display_name: "mana_potion_large"
+    permission: mana_potion_large
+    resource:
+      material: FEATHER
+      model_id: 2050
+      generate: false
+      model_path: rpg_essentials_3_model/mana_potion_large
+  mana_potion_minor:
+    display_name: "mana_potion_minor"
+    permission: mana_potion_minor
+    resource:
+      material: FEATHER
+      model_id: 2051
+      generate: false
+      model_path: rpg_essentials_3_model/mana_potion_minor
+  mana_potion_small:
+    display_name: "mana_potion_small"
+    permission: mana_potion_small
+    resource:
+      material: FEATHER
+      model_id: 2052
+      generate: false
+      model_path: rpg_essentials_3_model/mana_potion_small
+  mana_potion_superior:
+    display_name: "mana_potion_superior"
+    permission: mana_potion_superior
+    resource:
+      material: FEATHER
+      model_id: 2053
+      generate: false
+      model_path: rpg_essentials_3_model/mana_potion_superior
+  scroll_common:
+    display_name: "scroll_common"
+    permission: scroll_common
+    resource:
+      material: FEATHER
+      model_id: 2054
+      generate: false
+      model_path: rpg_essentials_3_model/scroll_common
+  scroll_epic:
+    display_name: "scroll_epic"
+    permission: scroll_epic
+    resource:
+      material: FEATHER
+      model_id: 2055
+      generate: false
+      model_path: rpg_essentials_3_model/scroll_epic
+  scroll_rare:
+    display_name: "scroll_rare"
+    permission: scroll_rare
+    resource:
+      material: FEATHER
+      model_id: 2056
+      generate: false
+      model_path: rpg_essentials_3_model/scroll_rare
+  

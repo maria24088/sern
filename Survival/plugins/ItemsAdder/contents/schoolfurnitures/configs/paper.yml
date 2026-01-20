@@ -1,0 +1,14 @@
+info:
+  namespace: schoolfurnitures
+items:
+  paper:
+    display_name: "Paper"
+    permission: schoolfurnitures.paper
+    resource:
+      material: PAPER
+      generate: false
+      model_path: paper
+    behaviours:
+      furniture:
+        light_level: 13
+#MzNEBnZpFWdRBTTlRzUNJUYzVVU6BDMS9mRu5UVSZkVXZkbjJUVxBjM300MXZFV5hmNHFHN

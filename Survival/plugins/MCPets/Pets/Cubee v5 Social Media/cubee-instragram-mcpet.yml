@@ -1,0 +1,15 @@
+Id: cubee-instragram
+MythicMob: cubee-instragram
+Permission: mcpet.cubee-instragram
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §dInstragram §6Cubee
+  Description:
+  - §fThis cubee will capture the best angle of you!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191035
+
+# c1d8afcb98ec728e8f78149f12543142

@@ -1,0 +1,22 @@
+location: SpawnRPG:-42.500:93.000:124.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:RED_DYE'
+    height: 0.6
+  - content: '&c&lArena PvP'
+    height: 0.3
+  - content: '&r¡Pelea contra otros jugadores!'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&7Haz clic para Teletransportarte'
+    height: 0.3
+  actions: {}
+
+

@@ -1,0 +1,9 @@
+info:
+  namespace: hyronic_utils
+font_images:
+  hu_gui_shift:
+    symbol: "᪄"
+    suggest_in_command: false
+    path: "null_texture"
+    scale_ratio: -10
+    y_position: -32768

@@ -1,0 +1,71 @@
+COBRA_CURSE:
+  mythicmobs-skill-id: Cobra_Curse
+  modifiers: []
+
+COSMIC_ALLY:
+  mythicmobs-skill-id: Cosmic_Ally
+  modifiers: []
+
+STELLAR_STRIKE:
+  mythicmobs-skill-id: Stellar_Strike
+  modifiers: []
+
+UNDEAD_SLAYER:
+  mythicmobs-skill-id: Undead_Slayer
+  modifiers: []
+
+BLOOD_FOR_BLOOD:
+  mythicmobs-skill-id: Blood_For_Blood
+  modifiers: []
+
+EXECUTE:
+  mythicmobs-skill-id: Execute
+  modifiers: []
+
+SUDDEN_STRIKE:
+  mythicmobs-skill-id: Sudden_Strike
+  modifiers: []
+
+TREAD:
+  mythicmobs-skill-id: Tread
+  modifiers: []
+
+INTIMIDATE:
+  mythicmobs-skill-id: Intimidate
+  modifiers: []
+
+MUSCLE_MEMORY:
+  mythicmobs-skill-id: Muscle_Memory
+  modifiers: []
+
+RESPITE:
+  mythicmobs-skill-id: Respite
+  modifiers: []
+
+FROZEN_TOMB:
+  mythicmobs-skill-id: Frozen_Tomb
+  modifiers: []
+
+LEAP_OF_FAITH:
+  mythicmobs-skill-id: Leap_Of_Faith
+  modifiers: []
+  
+ULTIMATUM:
+  mythicmobs-skill-id: Ultimatum
+  modifiers: []
+
+HEMMORHAGE:
+  mythicmobs-skill-id: Hemmorhage
+  modifiers: []
+
+JUSTICE_SERVED:
+  mythicmobs-skill-id: Justice_Served
+  modifiers: []
+
+SIMULTANEOUS:
+  mythicmobs-skill-id: Simultaneous
+  modifiers: []
+
+WITHER_SLAYER:
+  mythicmobs-skill-id: Wither_Slayer
+  modifiers: []

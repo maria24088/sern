@@ -1,0 +1,221 @@
+info:
+  namespace: frostveil_genesis
+items:
+  frostveil_genesis_axe:
+    display_name: Frostveil_genesis Axe
+    permission: pack.frostveil_genesis
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: axe
+      model_id: 21228
+  frostveil_genesis_bow:
+    display_name: Frostveil_genesis Bow
+    permission: pack.frostveil_genesis
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+      model_id: 23930
+  frostveil_genesis_chest:
+    display_name: Frostveil_genesis Chest
+    permission: pack.frostveil_genesis
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: chest
+      model_id: 24649
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+  frostveil_genesis_crossbow:
+    display_name: Frostveil_genesis Crossbow
+    permission: pack.frostveil_genesis
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow
+      model_id: 17310
+  frostveil_genesis_dagger:
+    display_name: Frostveil_genesis Dagger
+    permission: pack.frostveil_genesis
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: dagger
+      model_id: 24612
+  frostveil_genesis_fishing_rod:
+    display_name: Frostveil_genesis Fishing Rod
+    permission: pack.frostveil_genesis
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+      model_id: 21420
+  frostveil_genesis_hammer:
+    display_name: Frostveil_genesis Hammer
+    permission: pack.frostveil_genesis
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: hammer
+      model_id: 20448
+  frostveil_genesis_hat:
+    display_name: Frostveil_genesis Hat
+    permission: pack.frostveil_genesis
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hat
+      model_id: 19206
+    behaviours:
+      hat: true
+  frostveil_genesis_hoe:
+    display_name: Frostveil_genesis Hoe
+    permission: pack.frostveil_genesis
+    resource:
+      material: DIAMOND_HOE
+      generate: false
+      model_path: hoe
+      model_id: 24514
+  frostveil_genesis_key:
+    display_name: Frostveil_genesis Key
+    permission: pack.frostveil_genesis
+    resource:
+      material: PAPER
+      generate: false
+      model_path: key
+      model_id: 22926
+  frostveil_genesis_pickaxe:
+    display_name: Frostveil_genesis Pickaxe
+    permission: pack.frostveil_genesis
+    resource:
+      material: DIAMOND_PICKAXE
+      generate: false
+      model_path: pickaxe
+      model_id: 23578
+  frostveil_genesis_rapier_sword:
+    display_name: Frostveil_genesis Rapier Sword
+    permission: pack.frostveil_genesis
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: rapier_sword
+      model_id: 20858
+  frostveil_genesis_scythe:
+    display_name: Frostveil_genesis Scythe
+    permission: pack.frostveil_genesis
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: scythe
+      model_id: 24915
+  frostveil_genesis_shield:
+    display_name: Frostveil_genesis Shield
+    permission: pack.frostveil_genesis
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+      model_id: 21721
+  frostveil_genesis_shovel:
+    display_name: Frostveil_genesis Shovel
+    permission: pack.frostveil_genesis
+    resource:
+      material: DIAMOND_SHOVEL
+      generate: false
+      model_path: shovel
+      model_id: 17170
+  frostveil_genesis_spear:
+    display_name: Frostveil_genesis Spear
+    permission: pack.frostveil_genesis
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: spear
+      model_id: 19981
+  frostveil_genesis_staff:
+    display_name: Frostveil_genesis Staff
+    permission: pack.frostveil_genesis
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: staff
+      model_id: 23385
+  frostveil_genesis_sword:
+    display_name: Frostveil_genesis Sword
+    permission: pack.frostveil_genesis
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: sword
+      model_id: 18306
+  frostveil_genesis_trident:
+    display_name: Frostveil_genesis Trident
+    permission: pack.frostveil_genesis
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: trident
+      model_id: 22530
+  frostveil_genesis_wing_1:
+    display_name: Frostveil_genesis Wing 1
+    permission: pack.frostveil_genesis
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wing_1
+      model_id: 20670
+  frostveil_genesis_wing_2:
+    display_name: Frostveil_genesis Wing 2
+    permission: pack.frostveil_genesis
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wing_2
+      model_id: 21987
+categories:
+  frostveil_genesis:
+    enabled: true
+    skip_if_already: false
+    icon: frostveil_genesis:frostveil_genesis_chest
+    name: frostveil_genesis set
+    permission: ia.menu
+    items:
+    - frostveil_genesis:frostveil_genesis_axe
+    - frostveil_genesis:frostveil_genesis_bow
+    - frostveil_genesis:frostveil_genesis_chest
+    - frostveil_genesis:frostveil_genesis_crossbow
+    - frostveil_genesis:frostveil_genesis_dagger
+    - frostveil_genesis:frostveil_genesis_fishing_rod
+    - frostveil_genesis:frostveil_genesis_hammer
+    - frostveil_genesis:frostveil_genesis_hat
+    - frostveil_genesis:frostveil_genesis_hoe
+    - frostveil_genesis:frostveil_genesis_key
+    - frostveil_genesis:frostveil_genesis_pickaxe
+    - frostveil_genesis:frostveil_genesis_rapier_sword
+    - frostveil_genesis:frostveil_genesis_scythe
+    - frostveil_genesis:frostveil_genesis_shield
+    - frostveil_genesis:frostveil_genesis_shovel
+    - frostveil_genesis:frostveil_genesis_spear
+    - frostveil_genesis:frostveil_genesis_staff
+    - frostveil_genesis:frostveil_genesis_sword
+    - frostveil_genesis:frostveil_genesis_trident
+    - frostveil_genesis:frostveil_genesis_wing_1
+    - frostveil_genesis:frostveil_genesis_wing_2
+    - frostveil_genesis:frostveil_genesisboots
+    - frostveil_genesis:frostveil_genesischestplate
+    - frostveil_genesis:frostveil_genesisleggings
+    - frostveil_genesis:frostveil_genesishelmet

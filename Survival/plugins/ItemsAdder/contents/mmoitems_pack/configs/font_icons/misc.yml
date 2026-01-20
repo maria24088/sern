@@ -1,0 +1,267 @@
+info:
+  namespace: mmoitems_pack
+font_images:
+  
+  attack_damage:
+    path: hyronic_pack/font_icons/stats/attack_damage.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎈ
+  ability_haste:
+    path: hyronic_pack/font_icons/stats/ability_haste.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎉ
+  attack_speed:
+    path: hyronic_pack/font_icons/stats/attack_speed.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎊ
+  crit_chance:
+    path: hyronic_pack/font_icons/stats/crit_chance.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎋ
+  crit_damage:
+    path: hyronic_pack/font_icons/stats/crit_damage.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎌ
+  damage_reduction:
+    path: hyronic_pack/font_icons/stats/damage_reduction.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎍ
+  defense:
+    path: hyronic_pack/font_icons/stats/defense.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎎ
+  health:
+    path: hyronic_pack/font_icons/stats/health.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎏ
+  life_steal:
+    path: hyronic_pack/font_icons/stats/life_steal.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎐
+  movement_speed:
+    path: hyronic_pack/font_icons/stats/movement_speed.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎒
+  physical_damage:
+    path: hyronic_pack/font_icons/stats/physical_damage.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎓
+  projectile_damage:
+    path: hyronic_pack/font_icons/stats/projectile_damage.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎔
+  skill_damage:
+    path: hyronic_pack/font_icons/stats/skill_damage.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎕
+  spell_vamp:
+    path: hyronic_pack/font_icons/stats/spell_vamp.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎖
+  tenacity:
+    path: hyronic_pack/font_icons/stats/tenacity.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎗
+  rune:
+    path: hyronic_pack/font_icons/stats/rune.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎟
+  left_click:
+    path: hyronic_pack/font_icons/lore/left-click.png
+    y_position: 7
+    scale_ratio: 7
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎘
+  right_click:
+    path: hyronic_pack/font_icons/lore/right-click.png
+    y_position: 7
+    scale_ratio: 7
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎙
+  shift:
+    path: hyronic_pack/font_icons/lore/shift.png
+    y_position: 7
+    scale_ratio: 9
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎚
+  arrow_velocity:
+    path: hyronic_pack/font_icons/stats/arrow_velocity.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: Ꭰ
+  block:
+    path: hyronic_pack/font_icons/stats/block.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: Ꭱ
+  dodge:
+    path: hyronic_pack/font_icons/stats/dodge.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: Ꭲ
+  food:
+    path: hyronic_pack/font_icons/stats/food.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: Ꭳ
+  mana:
+    path: hyronic_pack/font_icons/stats/mana.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: Ꭴ
+  mob_damage:
+    path: hyronic_pack/font_icons/stats/mob_damage.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: Ꭵ
+  parry:
+    path: hyronic_pack/font_icons/stats/parry.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: Ꭶ
+  potion_cooldown:
+    path: hyronic_pack/font_icons/stats/potion_cooldown.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: Ꭷ
+  potion_use:
+    path: hyronic_pack/font_icons/stats/potion_use.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: Ꭸ
+  pvp_damage:
+    path: hyronic_pack/font_icons/stats/pvp_damage.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: Ꭹ
+  range:
+    path: hyronic_pack/font_icons/stats/range.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: Ꭺ
+  skill_crit_damage:
+    path: hyronic_pack/font_icons/stats/skill_crit_damage.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: Ꭻ
+  skill_crit_chance:
+    path: hyronic_pack/font_icons/stats/skill_crit_chance.png
+    y_position: 7
+    scale_ratio: 8
+    chat:
+      permission: hyronic.itempack
+    symbol: Ꭼ
+
+  # Status Effects
+  invulnerability:
+    path: hyronic_pack/status_effects/invulnerability.png
+    y_position: 7
+    scale_ratio: 9
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎛
+  stun:
+    path: hyronic_pack/status_effects/stun.png
+    y_position: 7
+    scale_ratio: 9
+    chat:
+      permission: hyronic.itempack
+    symbol: ᎜
+
+
+  success:
+    symbol: 楸
+    path: hyronic_pack/font_icons/system/success.png
+    y_position: 7
+    scale_ratio: 7
+    chat:
+      permission: hyronic.itempack
+  fail:
+    symbol: 楹
+    path: hyronic_pack/font_icons/system/fail.png
+    y_position: 7
+    scale_ratio: 7
+    chat:
+      permission: hyronic.itempack
+
+
+  the_forge:
+    symbol: 楻
+    path: hyronic_pack/gui/the_forge.png
+    y_position: 19
+    scale_ratio: 256

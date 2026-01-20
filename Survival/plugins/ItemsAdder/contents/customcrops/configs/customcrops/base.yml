@@ -1,0 +1,138 @@
+info:
+  namespace: customcrops
+items:
+  dry_pot:
+    display_name: display-name-dry_pot
+    resource:
+      material: PAPER
+      generate: false
+      model_path: 'item/basics/dry_pot'
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        break_tools_whitelist:
+        - AXE
+  wet_pot:
+    display_name: display-name-wet_pot
+    resource:
+      material: PAPER
+      generate: false
+      model_path: 'item/basics/wet_pot'
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        break_tools_whitelist:
+        - AXE
+  crow_stand:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/basics/crow_stand
+  crow_fly:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/basics/crow_fly
+  scarecrow:
+    display_name: display-name-scarecrow
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/basics/scarecrow
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 2
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  greenhouse_glass:
+    display_name: display-name-greenhouse_glass
+    resource:
+      material: PAPER
+      generate: false
+      model_path: 'item/basics/greenhouse_glass'
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_TRANSPARENT
+          break_particles: ITEM
+        sound:
+          place:
+            name: block.glass.place
+          break:
+            name: block.glass.break
+  crop_stage_death:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: 'item/basics/dead_crop'
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  soil_surveyor:
+    display_name: display-name-soil_surveyor
+    resource:
+      generate: false
+      material: PAPER
+      model_path: 'item/basics/soil_surveyor'
+loots:
+  blocks:
+    wet_pot:
+      type: customcrops:wet_pot
+      items:
+        result_1:
+          item: customcrops:dry_pot
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+categories:
+  customcrops_basics:
+    enabled: true
+    icon: customcrops:dry_pot
+    name: 'display-category-customcrops_basics'
+    items:
+      - customcrops:dry_pot
+      - customcrops:wet_pot
+      - customcrops:crow_stand
+      - customcrops:crow_fly
+      - customcrops:greenhouse_glass
+      - customcrops:crop_stage_death
+      - customcrops:scarecrow
+      - customcrops:soil_surveyor

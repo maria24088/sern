@@ -1,0 +1,50 @@
+info:
+  namespace: voxelspawns_staffs
+items:
+  voxelspawns_staff_adept:
+    display_name: Adept Staff
+    permission: vs_staff_adept
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: item/vs_staff_adept
+
+  voxelspawns_staff_aquatic:
+    display_name: Aquatic Staff
+    permission: vs_staff_aquatic
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: item/vs_staff_aquatic
+
+  voxelspawns_staff_arcana:
+    display_name: Arcana Staff
+    permission: vs_staff_arcana
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: item/vs_staff_arcana
+
+  voxelspawns_staff_bamboo:
+    display_name: Bamboo Staff
+    permission: vs_staff_bamboo
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: item/vs_staff_bamboo
+
+  voxelspawns_staff_druid:
+    display_name: Druid Staff
+    permission: vs_staff_druid
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: item/vs_staff_druid
+
+  voxelspawns_staff_eagle:
+    display_name: Eagle Staff
+    permission: vs_staff_eagle
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: item/vs_staff_eagle

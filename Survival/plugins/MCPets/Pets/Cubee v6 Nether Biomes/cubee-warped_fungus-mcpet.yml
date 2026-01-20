@@ -1,0 +1,18 @@
+Id: cubee-warped_fungus
+MythicMob: cubee-warped_fungus
+Permission: mcpet.cubee-warped_fungus
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §x§1§2§8§A§7§7W§x§2§3§7§3§6§9a§x§3§4§5§B§5§Br§x§4§5§4§4§4§Cp§x§5§6§2§C§3§Ee§x§8§0§4§C§3§Ed
+    §x§A§B§6§D§3§EF§x§D§5§8§D§3§Du§x§F§F§A§D§3§Dn§x§D§5§8§D§3§Dg§x§A§B§6§D§3§Eu§x§8§0§4§C§3§Es
+    §x§5§6§2§C§3§EC§x§4§5§4§4§4§Cu§x§3§4§5§B§5§Bb§x§2§3§7§3§6§9e§x§1§2§8§A§7§7e
+  Description:
+  - §fHiding in bushes inside Warped Forest,
+  - §fThis cubee is just too scared to say hi.
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191051
+
+# 4c55fedd7b128b210d38f1779cf09ee2

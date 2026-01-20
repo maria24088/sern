@@ -1,0 +1,715 @@
+info:
+  namespace: shizuart_furnitures
+
+items:  
+  assiette:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Plate"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: false
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/assiette
+      model_id: 2100051
+
+  bocal:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Jar"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: false
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/bocal
+      model_id: 2100052
+
+  bocaux:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Jars"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: false
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/bocaux
+      model_id: 2100053
+
+  lot_assiettes:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Pile of plates"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: false
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/lot_assiettes
+      model_id: 2100054
+
+  pot_ustensils:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Utensils pot"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: false
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/pot_ustensils
+      model_id: 2100055
+
+  pots_epices:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Spice jars"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: false
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/pots_epices
+      model_id: 2100056
+
+  blender:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Blender"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: false
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/blender
+      model_id: 2100057
+
+  cuisiniere:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Stove"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : true
+        fixed_rotation: true
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/cuisiniere
+      model_id: 2100058
+
+  placard_cuisine:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Kitchen cabinet"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : true
+        fixed_rotation: true
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/placard_cuisine
+      model_id: 2100059
+
+  tiroirs_cuisine:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Kitchen cabinet with drawers"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : true
+        fixed_rotation: true
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/tiroirs_cuisine
+      model_id: 2100060
+
+  evier_cuisine:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Sink"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : true
+        fixed_rotation: true
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/evier_cuisine
+      model_id: 2100061
+
+  placard_haut_cuisine:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Kitchen wall cabinet"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : true
+        fixed_rotation: true
+        placeable_on :
+          floor: false
+          ceiling: false
+          walls: true
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/placard_haut_cuisine
+      model_id: 2100062
+
+  frigo_cuisine:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Fridge"
+    behaviours:
+      furniture:
+        entity: armor_stand
+        small: false
+        solid : true
+        fixed_rotation: true
+        hitbox:
+          height: 2
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/frigo_cuisine
+      model_id: 2100063
+
+  placard_haut_verre_cuisine:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Kitchen wall glass cabinet"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : true
+        fixed_rotation: true
+        placeable_on :
+          floor: false
+          ceiling: false
+          walls: true
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/placard_haut_verre_cuisine
+      model_id: 2100064
+
+  trio_bouteilles:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Trio of bottles"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: false
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/trio_bouteilles
+      model_id: 2100065
+
+  bocal_miel:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Honey jars"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: false
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/bocal_miel
+      model_id: 2100066
+
+  pot_confiture:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Jam pot"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: false
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/pot_confiture
+      model_id: 2100067
+
+  conserves:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Tin cans"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: false
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/conserves
+      model_id: 2100068
+
+  microondes:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Microwave"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: false
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/microondes
+      model_id: 2100069
+
+  casserole:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Pan"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: false
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/casserole
+      model_id: 2100070
+
+  etagere:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Shelf"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: false
+        placeable_on :
+          floor: false
+          ceiling: false
+          walls: true
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/etagere
+      model_id: 2100071
+
+  meuble_angle:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Kitchen corner cabinet"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : true
+        fixed_rotation: true
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/meuble_angle
+      model_id: 2100072
+
+  etageres:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Shelves"
+    behaviours:
+      furniture:
+        entity: armor_stand
+        small: false
+        solid : true
+        fixed_rotation: true
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: true
+        hitbox:
+          width: 2
+          length: 1
+          height: 2
+          width_offset: 0.5
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/etageres
+      model_id: 2100073
+
+  tabouret_cuisine:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Stool"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : true
+        fixed_rotation: true
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false
+      furniture_sit:
+        sit_height: 0.8        
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/tabouret_cuisine
+      model_id: 2100074
+
+  poubelle_cuisine:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Trash can"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : true
+        fixed_rotation: true
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false      
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/poubelle_cuisine
+      model_id: 2100075
+
+  cuisine_lampe:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Lamp"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : true
+        fixed_rotation: true
+        placeable_on :
+          floor: false
+          ceiling: true
+          walls: false
+        opposite_direction: false      
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        light_level: 15
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/cuisine_lampe
+      model_id: 2100076
+
+  egouttoir:
+    enabled : true
+    permission: ""
+    display_name: "<#cba57d>Draining rack"
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: false
+        solid : false
+        fixed_rotation: true
+        placeable_on :
+          floor: true
+          ceiling: false
+          walls: false
+        opposite_direction: false      
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cuisine/egouttoir
+      model_id: 2100077

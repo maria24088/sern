@@ -1,0 +1,882 @@
+# Here you can choose to be able to convert from other plugins that PlayerWarps supports.
+# MAKE SURE TO DISABLE THESE AFTER THE CONVERSION!
+converters:
+  welcomewarpsigns:
+    # if this is enabled, this will convert data from Welcome Warp Signs (https://www.spigotmc.org/resources/12256/) to PlayerWarps.
+    # Please restart the server for this conversion to happen.
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+  pwarp:
+    # if this is enabled, this will convert data from PWarp (https://www.spigotmc.org/resources/64542/) to PlayerWarps.
+    # Please restart the server for this conversion to happen.
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+  playerwarps:
+    # if this is enabled, this will convert data from PLAYERWARPS (https://www.spigotmc.org/resources/79089/) to PlayerWarps.
+    # Due to some conflicts, you will need make sure the PLAYERWARPS folder (plugins/PlayerWarps) is named "PlayerWarp"
+    # You will also need to change the name of the plugin, if you have winrar, open the jar up open the plugin.yml and change
+    # the name to "PlayerWarp" without the speech marks.
+    # Please restart the server for this conversion to happen.
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+
+# Here you can choose to be able to hook into expansions that supports PlayerWarps and configure them to your liking.
+expansions:
+  # Do you want to enable ProtocolLib support? This is used mainly for the sign searching feature.
+  protocollib:
+    enabled: true
+    # What version of this expansion do you want to download/use?
+    version: 0
+
+  # Do you want to enable PacketEvents support? This is used mainly for the sign searching feature.
+  packetevents:
+    enabled: true
+    # What version of this expansion do you want to download/use?
+    version: 0
+
+  essentials:
+    # Do you want to enable essentials expansion?
+    # This expansion sets their last location before they teleport to a warp.
+    # You need Essentials installed for this to work!
+    enabled: true
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+  huskhomes:
+    # Do you want to enable huskhomes expansion?
+    # This expansion sets their last location before they teleport to a warp.
+    # You need HuskHomes installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+  patches:
+    # This includes quick patches for other plugins that may conflict with PlayerWarps.
+    enabled: true
+    # What version of this expansion do you want to download/use?
+    version: 0
+
+  # This is used for sending notifications to your discord server using webhooks.
+  # You can read https://docs.olziedev.com/projects/playerwarps/features#discord-alerts on how to set it up.
+  warpdiscord:
+    # Do you want to enable warp discord?
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    webhook:
+      # The url of your Webhook from the discord channel of your choice.
+      url: ""
+      # The username of the embed that appears in the message.
+      username: "Warp Notifications"
+      # The avatar URL of the embed.
+      avatar: "https://cdn.olziedev.com/playerwarps/images/PlayerWarpsIcon.png"
+      # Normal content in a message, leave blank if you just want the embed.
+      content: ""
+
+      # The item thumbnail that appears in embeds.
+      thumbnail:
+        enabled: true
+        # Here you can put custom thumbnail links the plugin will use if a plugin has a specific custom model data.
+        custom-thumbnails:
+          # If my item has a custom model data of 101, this image will show up instead.
+          101: "https://cdn.olziedev.com/playerwarps/images/PlayerWarpsIcon.png"
+
+    embeds:
+      set:
+        enabled: true
+        author: "[owner] created a warp called [warp_display]"
+        color: "#4287f5"
+        title: "Warp Information"
+        footer: "Warp ID: [id]"
+        fields:
+          Owner:
+            name: "Owner"
+            value: "[owner]"
+            inline: true
+          blank:
+            name: ""
+            value: ""
+            inline: true
+          Name:
+            name: "Name"
+            value: "[warp_display]"
+            inline: true
+          Date:
+            name: "Creation Date"
+            value: "[date]"
+            inline: true
+          blank1:
+            name: ""
+            value: ""
+            inline: true
+          Location:
+            name: "Location"
+            value: "[world], [location]"
+            inline: true
+        # If you're using offline mode you can always use [name] to grab the players name instead.
+      tp:
+        enabled: true
+        author: "[teleporter] has visited [warp_display]"
+        color: "#c90076"
+        title: "Warp Information"
+        footer: "Warp ID: [id]"
+        fields:
+          Owner:
+            name: "Owner"
+            value: "[owner]"
+            inline: true
+          blank:
+            name: ""
+            value: ""
+            inline: true
+          Location:
+            name: "Location"
+            value: "[world], [location]"
+            inline: true
+          Date:
+            name: "Creation Date"
+            value: "[date]"
+            inline: true
+          blank1:
+            name: ""
+            value: ""
+            inline: true
+          Description:
+            name: "Description"
+            value: "[desc]"
+            inline: true
+        # If you're using offline mode you can always use [name] to grab the players name instead.
+
+      remove:
+        enabled: true
+        author: "[warp_display] has been removed!"
+        color: "#bf2a2a"
+        title: "Warp Information"
+        footer: "Warp ID: [id]"
+        fields:
+          Owner:
+            name: "Owner"
+            value: "[owner]"
+            inline: true
+          blank:
+            name: ""
+            value: ""
+            inline: true
+          Location:
+            name: "Location"
+            value: "[world], [location]"
+            inline: true
+          Date:
+            name: "Creation Date"
+            value: "[date]"
+            inline: true
+          blank1:
+            name: ""
+            value: ""
+            inline: true
+          Description:
+            name: "Description"
+            value: "[desc]"
+            inline: true
+        # If you're using offline mode you can always use [name] to grab the players name instead.
+
+# Here you can choose to be able to hook into addons that restricts player warp creation/web-based maps and configure them to your liking.
+addons:
+  # Do you want the addon checker to check for all addons to be in land, or to just allow any land if they're in it?
+  check-all-land: true
+  plotsquared:
+    # Do you want to enable plotsquared support?
+    # You need plotsquared installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should plot members be treated like the owner of the plot?
+    plot-members: true
+    # Should the warp be created when a plot is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player%
+    warp-name-creation: "%player%"
+    # Should the warp get deleted once the plot is deleted?
+    delete: true
+    # Should they only be able to set warps in plots? If disabled, they can set warps in their plot or wilderness.
+    only-land: true
+    lang:
+      not-in-plot: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a plot!"
+      dont-own-plot: "%prefix% &cSorry you can't set a warp here, because you dont own this plot!"
+
+  worldguard:
+    # Do you want to enable worldguard support? (This will only work if you have a recent version of worldguard)
+    # You need worldguard installed for this to work!
+    # The plugin will automatically create a worldguard flag "set-pwarp".
+    # If this is your first time enabling this, you will need to restart your server for the flag to be created.
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # If this flag is set, it allows players to set warps. If a region hasn't set this flag already, what is the default value?
+    # If this value is false, then a player cannot set warps in the region. This includes __global__ regions! So make sure to enable it for that region (Also remember that the __global__ region is per world)
+    # If this value is true, then a player can set a warp in the region if its not set.
+    # If the value is force, then a player has to set warps in a region - When the value is force, IT WILL IGNORE THE REGION FLAG and will only let players set warps in regions.
+    default: true
+    # Should the warp get deleted once the region is deleted?
+    # Due to limitations of WorldGuard, this setting will only work if you have ProtectionStones OR AdvancedRegionMarket enabled on your server.
+    delete: false
+    lang:
+      not-in-region: "%prefix% &cSorry you can't set a warp here, &cMake sure you're not in a region!"
+      in-region: "%prefix% &cSorry you can't set a warp here in this region!"
+
+  askyblock:
+    # Do you want to enable askyblock support?
+    # You need askyblock installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should island members be treated like the owner of the island?
+    island-members: true
+    # Should the warp be created when an island is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player%
+    warp-name-creation: "%player%"
+    # Should the warp get deleted once the island is deleted?
+    delete: true
+    # Should they only be able to set warps in islands? If disabled, they can set warps on their island or wilderness.
+    only-land: true
+    lang:
+      not-in-island: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a island!"
+      dont-own-island: "%prefix% &cSorry you can't set a warp here, because you don't own this island."
+
+  bentobox:
+    # Do you want to enable bentobox support?
+    # You need bentobox installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should island members be treated like the owner of the island?
+    island-members: true
+    # Should the warp be created when an island is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player%
+    warp-name-creation: "%player%"
+    # Should the warp get deleted once the island is deleted?
+    delete: true
+    # Should they only be able to set warps in islands? If disabled, they can set warps on their island or wilderness.
+    only-land: true
+    lang:
+      not-in-island: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a island!"
+      dont-own-island: "%prefix% &cSorry you can't set a warp here, because you don't own this island."
+
+  griefprevention:
+    # Do you want to enable griefprevention support?
+    # You need griefprevention installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should trusted players be treated like the owner of the claim?
+    trusted-players: true
+    # Should the warp be created when a claim is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player%
+    warp-name-creation: "%player%"
+    # Should the warp get deleted once the claim is deleted?
+    delete: true
+    # Should they only be able to set warps in claim? If disabled, they can set warps in their claim or wilderness.
+    only-land: true
+    # These are the allowed worlds for griefprevention where players will be able to set warps no matter what.
+    allowed-worlds: []
+    lang:
+      not-in-claim: "%prefix% &cSorry you can't set a warp here, &cYou aren't in a claim!"
+      dont-own-claim: "%prefix% &cSorry you can't set a warp here, because you don't own this claim."
+
+  griefdefender:
+    # Do you want to enable griefdefender support?
+    # You need griefdefender installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should trusted players be treated like the owner of the claim?
+    trusted-players: true
+    # Should the warp be created when a claim is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player%
+    warp-name-creation: "%player%"
+    # Should the warp get deleted once the claim is deleted?
+    delete: true
+    # Should they only be able to set warps in claim? If disabled, they can set warps in their claim or wilderness.
+    only-land: true
+    lang:
+      not-in-claim: "%prefix% &cSorry you can't set a warp here, &cYou aren't in a claim!"
+      dont-own-claim: "%prefix% &cSorry you can't set a warp here, because you don't own this claim."
+
+  fabledskyblock:
+    # Do you want to enable fabledskyblock support?
+    # You need fabledskyblock installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should island members be treated like the owner of the island?
+    island-members: true
+    # Should the warp be created when an island is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player%
+    warp-name-creation: "%player%"
+    # Should the warp get deleted once the island is deleted?
+    delete: true
+    # Should they only be able to set warps in islands? If disabled, they can set warps on their island or wilderness.
+    only-land: true
+    lang:
+      not-in-island: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a island!"
+      dont-own-island: "%prefix% &cSorry you can't set a warp here, because you don't own this island."
+
+  iridiumskyblock:
+    # Do you want to enable iridiumskyblock support?
+    # You need iridiumskyblock installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should trusted members be treated like the owner of the island?
+    trusted-members: true
+    # Should the warp be created when an island is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player%
+    warp-name-creation: "%player%"
+    # Should the warp get deleted once the island is deleted?
+    delete: true
+    # Should they only be able to set warps in islands? If disabled, they can set warps on their island or wilderness.
+    only-land: true
+    lang:
+      not-in-island: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a island!"
+      dont-own-island: "%prefix% &cSorry you can't set a warp here, because you don't own this island."
+
+  lands:
+    # Do you want to enable lands support?
+    # You need lands installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # With this setting, you can limit the number of pwarps within a single land.
+    # Set this to -1 to disable the limit.
+    limit-per-lands: -1
+    # Should trusted players be treated like the owner of the land?
+    trusted-players: true
+    # Should the warp be created when a land is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player% or %land%
+    warp-name-creation: "%player%"
+    # Should the warp be created when a land spawn is set? (Only works if create is disabled)
+    spawn-create: false
+    # Should the warp get deleted once the land is deleted?
+    delete: true
+    # Should the warp get deleted once the land spawn is deleted? (Only works if spawn-create is enabled)
+    spawn-delete: false
+    # Should they only be able to set warps in lands? If disabled, they can set warps in their land or wilderness.
+    only-land: true
+    # Force PlayerWarps to allow warps to bypass land restrictions
+    force: false
+    lang:
+      not-in-land: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a land"
+      dont-own-land: "%prefix% &cSorry you can't set a warp here, because you don't own this land."
+      limit-reached: "%prefix% &cSorry you can't set a warp here, &cYou've reached the limit of warps in this land."
+
+  landlord:
+    # Do you want to enable landlord support?
+    # You need landlord installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should trusted friends be treated like the owner of the claim?
+    trusted-friends: true
+    # Should the warp be created when a land is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player%
+    warp-name-creation: "%player%"
+    # Should the warp get deleted once the land is deleted?
+    delete: true
+    # Should they only be able to set warps in lands? If disabled, they can set warps in their land or wilderness.
+    only-land: true
+    lang:
+      not-in-land: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a land"
+      dont-own-land: "%prefix% &cSorry you can't set a warp here, because you don't own this land."
+
+  kindomsx:
+    # Do you want to enable kingdomsx support?
+    # You need kingdomsx installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should trusted members be treated like the owner of the claim?
+    trusted-members: true
+    # Should the warp be created when a land is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player%
+    warp-name-creation: "%player%"
+    # Should the warp get deleted once the land is deleted?
+    delete: true
+    # Should they only be able to set warps in lands? If disabled, they can set warps in their land or wilderness.
+    only-land: true
+    lang:
+      not-in-land: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a land"
+      dont-own-land: "%prefix% &cSorry you can't set a warp here, because you don't own this land."
+
+  residence:
+    # Do you want to enable residence support?
+    # You need Residence installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should the warp be created when a land is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player%
+    warp-name-creation: "%player%"
+    # Should the warp get deleted once the land is deleted?
+    delete: true
+    # Should they only be able to set warps in lands? If disabled, they can set warps in their land or wilderness.
+    only-land: true
+    lang:
+      not-in-land: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a land"
+      dont-own-land: "%prefix% &cSorry you can't set a warp here, because you don't own this land."
+      not-allowed-to-tp: "%prefix% &cSorry you can't teleport to this warp, &cYou don't have permission to teleport there."
+
+  ultimateclaims:
+    # Do you want to enable ultimateclaims support?
+    # You need ultimateclaims installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should trusted players be treated like the owner of the claim?
+    trusted-players: true
+    # Should the warp be created when a claim is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player%
+    warp-name-creation: "%player%"
+    # Should the warp get deleted once the claim is deleted?
+    delete: true
+    # Should they only be able to set warps in lands? If disabled, they can set warps in their land or wilderness.
+    only-land: true
+    lang:
+      not-in-claim: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a claim"
+      dont-own-claim: "%prefix% &cSorry you can't set a warp here, because you don't own this claim."
+      
+  claimchunk:
+    # Do you want to enable claimchunk support?
+    # You need claimchunk installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should trusted players be treated like the owner of the claim?
+    trusted-players: true
+    # Should the warp be created when a claim is created?
+    # Should they only be able to set warps in lands? If disabled, they can set warps in their land or wilderness.
+    only-land: true
+    lang:
+      not-in-claim: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a claim"
+      dont-own-claim: "%prefix% &cSorry you can't set a warp here, because you don't own this claim."
+
+  xclaim:
+    # Do you want to enable xclaim support?
+    # You need xclaim installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should trusted players be treated like the owner of the claim?
+    trusted-players: true
+    # Should the warp be created when a claim is created?
+    # Should they only be able to set warps in lands? If disabled, they can set warps in their land or wilderness.
+    only-land: true
+    lang:
+      not-in-claim: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a claim"
+      dont-own-claim: "%prefix% &cSorry you can't set a warp here, because you don't own this claim."
+
+  crashclaims:
+    # Do you want to enable crashclaims support?
+    # You need crashclaims installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should trusted players be treated like the owner of the claim?
+    trusted-players: true
+    # Should they only be able to set warps in lands? If disabled, they can set warps in their land or wilderness.
+    only-land: true
+    lang:
+      not-in-claim: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a claim"
+      dont-own-claim: "%prefix% &cSorry you can't set a warp here, because you don't own this claim."
+
+  simpleskyblock:
+    # Do you want to enable simpleskyblock support?
+    # You need simpleskyblock installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should island members be treated like the owner of the island?
+    island-members: true
+    # Should they only be able to set warps in islands? If disabled, they can set warps on their island or wilderness.
+    only-land: true
+    lang:
+      not-in-island: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a island!"
+      dont-own-island: "%prefix% &cSorry you can't set a warp here, because you don't own this island."
+
+  superiorskyblock:
+    # Do you want to enable superiorskyblock support?
+    # You need superiorskyblock installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should island members be treated like the owner of the island?
+    island-members: true
+    # Should the warp be created when a claim is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player%
+    warp-name-creation: "%player%"
+    # Should the warp get deleted once the faction is deleted?
+    delete: true
+    # Should they only be able to set warps in islands? If disabled, they can set warps on their island or wilderness.
+    only-land: true
+    lang:
+      not-in-island: "%prefix% &cSorry you can't set a warp here, &cYou aren't on a island!"
+      dont-own-island: "%prefix% &cSorry you can't set a warp here, because you don't own this island."
+      island-banned: "%prefix% &cSorry you can't teleport here, because you're banned from this island!"
+      island-locked: "%prefix% &cSorry you can't teleport here, because this island is locked!"
+
+  factions:
+    # Do you want to enable factions support?
+    # You need factions installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should trusted players be treated like the owner of the faction?
+    trusted-players: true
+    # Should the warp get deleted once the faction is deleted?
+    delete: true
+    # Should they only be able to set warps in claims? If disabled, they can set warps in their claim or wilderness.
+    only-land: true
+    lang:
+      not-in-claim: "%prefix% &cSorry you can't set a warp here, &cYou aren't in a claim!"
+      dont-own-claim: "%prefix% &cSorry you can't set a warp here, because you don't own this claim."
+
+  saberfactions:
+    # Do you want to enable saberfactions support?
+    # You need saberfactions installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should trusted players be treated like the owner of the faction?
+    trusted-players: true
+    # Should the warp get deleted once the faction is deleted?
+    delete: true
+    # Should they only be able to set warps in claims? If disabled, they can set warps in their claim or wilderness.
+    only-land: true
+    lang:
+      not-in-claim: "%prefix% &cSorry you can't set a warp here, &cYou aren't in a claim!"
+      dont-own-claim: "%prefix% &cSorry you can't set a warp here, because you don't own this claim."
+
+  factionsx:
+    # Do you want to enable factionsx support?
+    # You need factionsx installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should faction members be treated like the owner of the faction?
+    faction-members: true
+    # Should the warp get deleted once the faction is deleted?
+    delete: true
+    # Should they only be able to set warps in claims? If disabled, they can set warps in their claim or wilderness.
+    only-land: true
+    lang:
+      not-in-claim: "%prefix% &cSorry you can't set a warp here, &cYou aren't in a claim!"
+      dont-own-claim: "%prefix% &cSorry you can't set a warp here, because you don't own this claim."
+
+  factionsuuid:
+    # Do you want to enable factionsuuid support?
+    # You need factionsuuid installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should faction members be treated like the owner of the faction?
+    faction-members: true
+    # Should the warp get deleted once the faction is deleted?
+    delete: true
+    # Should they only be able to set warps in claims? If disabled, they can set warps in their claim or wilderness.
+    only-land: true
+    lang:
+      not-in-claim: "%prefix% &cSorry you can't set a warp here, &cYou aren't in a claim!"
+      dont-own-claim: "%prefix% &cSorry you can't set a warp here, because you don't own this claim."
+
+  towny:
+    # Do you want to enable towny support?
+    # You need towny installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should town residents be treated like the owner of the town?
+    town-residents: true
+    # Should the warp get deleted once the town is deleted?
+    delete: true
+    # Should they only be able to set warps in towns? If disabled, they can set warps in their town or wilderness.
+    only-land: true
+    # Should the plugin cancel the warp teleportation if the warp they're teleporting to is enemey land?
+    cancel-enemy-teleport: false
+    lang:
+      not-in-town: "%prefix% &cSorry you can't set a warp here, &cYou aren't in a town!"
+      dont-own-town: "%prefix% &cSorry you can't set a warp here, because you don't own this town."
+      town-teleport-enemy: "%prefix% &cSorry you can't teleport to this warp as its in enemy land."
+
+  civs:
+    # Do you want to enable civs support?
+    # You need towny installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should trusted people be treated like the owner of the town?
+    trusted-people: true
+    # Should the warp get deleted once the town is deleted?
+    delete: true
+    # Should they only be able to set warps in towns? If disabled, they can set warps in their town or wilderness.
+    only-land: true
+    lang:
+      not-in-town: "%prefix% &cSorry you can't set a warp here, &cYou aren't in a town!"
+      dont-own-town: "%prefix% &cSorry you can't set a warp here, because you don't own this town."
+
+  husktowns:
+    # Do you want to enable husktowns support?
+    # You need husktowns installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should trusted members be treated like the owner of the town?
+    trusted-members: true
+    # Should the warp be created when a town is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player%
+    warp-name-creation: "%player%"
+    # Should the warp get deleted once the town is deleted?
+    delete: true
+    # Should they only be able to set warps in towns? If disabled, they can set warps in their town or wilderness.
+    only-land: true
+    # What is the required level for a town to set a warp?
+    required-level: 0
+    lang:
+      not-in-town: "%prefix% &cSorry you can't set a warp here, &cYou aren't in a town!"
+      dont-own-town: "%prefix% &cSorry you can't set a warp here, because you don't own this town."
+      not-required-level: "%prefix% &cSorry your town doesn't meet the level requirements"
+
+  huskclaims:
+    # Do you want to enable huskclaims support?
+    # You need huskclaims installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # Should trusted members be treated like the owner of the town?
+    trusted-members: true
+    # Should the warp be created when a town is created?
+    create: false
+    # What should the warp name be called when its created? Only as of right now you can use %player%
+    warp-name-creation: "%player%"
+    # Should the warp get deleted once the town is deleted?
+    delete: true
+    # Should they only be able to set warps in towns? If disabled, they can set warps in their town or wilderness.
+    only-land: true
+    lang:
+      not-in-town: "%prefix% &cSorry you can't set a warp here, &cYou aren't in a claim!"
+      dont-own-town: "%prefix% &cSorry you can't set a warp here, because you don't own this claim."
+
+  dynmap:
+    # Do you want to enable dynmap support?
+    # You need dynmap installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # What is the marker icon?
+    marker-icon: "star"
+    # What is the layer name?
+    layer-name: "PlayerWarps"
+    # What is the description of the marker?
+    description:
+    - "Owner: [owner]"
+    - "Visits: [visits]"
+    - "Description: [desc]"
+    - "Time Created: [date]"
+    - "Category: [category]"
+    - "Rates: [rates]"
+    - "Rates Average: [rates_average] ([rates_stars])"
+    # To prevent warps from appearing in the map, you can use a placeholder condition.
+    # This will only work if you have the PlaceholderAPI plugin installed.
+    # In this example, this will only make warps appear if the warp is not locked.
+    placeholder-condition:
+      # Should the condition be checked?
+      enabled: false
+      # The placeholder to check
+      placeholder: "%pw_warp_name_%warp%_locked%"
+      # Condition can only be: ==, >, <
+      condition: "=="
+      # The value that the condition needs to be.
+      value: "false"
+  bluemap:
+    # Do you want to enable bluemap support?
+    # You need bluemap installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # What is the layer name?
+    layer-name: "PlayerWarps"
+    # Should the layer be hidden by default?
+    default-hidden: false
+    # To prevent warps from appearing in the map, you can use a placeholder condition.
+    # This will only work if you have the PlaceholderAPI plugin installed.
+    # In this example, this will only make warps appear if the warp is not locked.
+    placeholder-condition:
+      # Should the condition be checked?
+      enabled: false
+      # The placeholder to check
+      placeholder: "%pw_warp_name_%warp%_locked%"
+      # Condition can only be: ==, >, <
+      condition: "=="
+      # The value that the condition needs to be.
+      value: "false"
+
+  pl3xmap:
+    # Do you want to enable pl3xmap/squaremap support?
+    # You need pl3xmap/squaremap installed for this to work!
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # What is the layer name?
+    layer-name: "PlayerWarps"
+    # What is the tooltip for the marker?
+    description:
+    - "[warp_display]"
+    - " "
+    - "Owner: [owner]"
+    - "Visits: [visits]"
+    - "Description: [desc]"
+    - "Time Created: [date]"
+    - "Category: [category]"
+    - "Rates: [rates]"
+    - "Rates Average: [rates_average] ([rates_stars])"
+    # What is the icon size?
+    icon-size: 16
+    # What is the anchor x?
+    icon-x: 8
+    # What is the anchor z?
+    icon-z: 16
+    # What is the icon image/link?
+    icon-link: "https://cdn.olziedev.com/playerwarps/images/warp_icon.png"
+    # Should the layer be hidden by default?
+    default-hidden: false
+    # To prevent warps from appearing in the map, you can use a placeholder condition.
+    # This will only work if you have the PlaceholderAPI plugin installed.
+    # In this example, this will only make warps appear if the warp is not locked.
+    placeholder-condition:
+      # Should the condition be checked?
+      enabled: false
+      # The placeholder to check
+      placeholder: "%pw_warp_name_%warp%_locked%"
+      # Condition can only be: ==, >, <
+      condition: "=="
+      # The value that the condition needs to be.
+      value: "false"
+
+# Here you can choose to be able to hook into other economy's and configure them to your liking.
+currencies:
+  vault:
+    # Do you want to enable the vault currency?
+    enabled: true
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # The prefix of the price variable, this is how you want the variable to show when using the vault currency.
+    name: "vault"
+    # The prefix of the price variable, this is how you want the variable to show when using the money currency.
+    prefix: "$%price%"
+    # How should the plugin interact with vault, by default the plugin uses player names due to some limitations with economy plugins.
+    # If you're having issues with this expansion, changing this to use false may resolve this problem.
+    use-name: true
+    # The banks expansions support for this currency, if you want to enable expansions for this currency, then set this to true.
+    # This is used to be able to take money from the bank account of the player if they dont have any money in the main currency.
+    banks:
+      bankplus:
+        # Do you want to enable the bankplus expansion for this currency?
+        enabled: true
+        # What is the default bank player auctions should use? If this is not set, it will use the default bank.
+        bank: ""
+
+  tokenmanager:
+    # Do you want to enable the TokenManager currency?
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # The prefix of the price variable, this is how you want the variable to show when using the token manager currency.
+    prefix: "%price% tokens"
+  playerpoints:
+    # Do you want to enable the PlayerPoints currency?
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # The prefix of the price variable, this is how you want the variable to show when using the player points currency.
+    prefix: "%price% points"
+  beasttoken:
+    # Do you want to enable the BeastToken currency?
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # The prefix of the price variable, this is how you want the variable to show when using the beast token currency.
+    prefix: "%price% tokens"
+  gemseconomy:
+    # Do you want to enable the GemsEconomy currency?
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # The prefix of the price variable, this is how you want the variable to show when using the gemseconomy currency.
+    prefixes:
+      currency_name: "%price% gems"
+  ultraeconomy:
+    # Do you want to enable the UltraEconomy currency?
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # The prefix of the price variable, this is how you want the variable to show when using the ultraeconomy currency.
+    prefixes:
+      currency_name: "%price% gems"
+  ecobits:
+    # Do you want to enable the EcoBits currency?
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # The prefix of the price variable, this is how you want the variable to show when using the eco bits currency.
+    prefixes:
+      currency_name: "%price% bits"
+  coinsengine:
+    # Do you want to enable the CoinsEngine currency?
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # The prefix of the price variable, this is how you want the variable to show when using the coins engine currency.
+    prefixes:
+      currency_name: "%price% coins"
+  rivalcredits:
+    # Do you want to enable the RivalCredits currency?
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # The prefix of the price variable, this is how you want the variable to show when using the rival credits currency.
+    prefix: "%price% credits"
+  rivalharvesterhoes:
+    # Do you want to enable the RivalHarvesterHoes currency?
+    enabled: false
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # The prefix of the price variable, this is how you want the variable to show when using the rival harvester hoes currency.
+    prefix: "%price% credits"
+  item:
+    # Do you want to enable the Item currency?
+    enabled: true
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # The prefix of the price variable, this is how you want the variable to show when using the item currency.
+    prefix: "%price% %item%"
+  xp:
+    # Do you want to enable the XP currency?
+    enabled: true
+    # What version of this expansion do you want to download/use?
+    version: "latest"
+    # The prefix of the price variable, this is how you want the variable to show when using the xp currency.
+    prefix: "%price% XP"
+    # Should the plugin take levels or xp points?
+    strictly-use-levels: false

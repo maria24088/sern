@@ -1,0 +1,31 @@
+info:
+  namespace: dragonstone_guardians
+categories:
+  dragonstone_guardians:
+    enabled: true
+    skip_if_already: false
+    icon: "dragonstone_guardians:dragonstone_sword"
+    name: Dragonstone Guardians Weapons & Tools Set
+    permission: ia.menu
+    items:
+      - dragonstone_guardians:dragonstonehelmet
+      - dragonstone_guardians:dragonstonechestplate
+      - dragonstone_guardians:dragonstoneleggings
+      - dragonstone_guardians:dragonstoneboots
+      - dragonstone_guardians:dragonstone_axe
+      - dragonstone_guardians:dragonstone_battle_axe
+      - dragonstone_guardians:dragonstone_blade
+      - dragonstone_guardians:dragonstone_bow
+      - dragonstone_guardians:dragonstone_chest
+      - dragonstone_guardians:dragonstone_dagger
+      - dragonstone_guardians:dragonstone_fishing_rod
+      - dragonstone_guardians:dragonstone_halberd
+      - dragonstone_guardians:dragonstone_hoe
+      - dragonstone_guardians:dragonstone_key
+      - dragonstone_guardians:dragonstone_pickaxe
+      - dragonstone_guardians:dragonstone_shield
+      - dragonstone_guardians:dragonstone_shovel
+      - dragonstone_guardians:dragonstone_spear
+      - dragonstone_guardians:dragonstone_staff
+      - dragonstone_guardians:dragonstone_sword
+      - dragonstone_guardians:dragonstone_wings

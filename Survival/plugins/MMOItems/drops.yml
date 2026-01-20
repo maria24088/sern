@@ -1,0 +1,1306 @@
+monsters:
+  COW:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          ANIMAL_FAT: 10,1-1,0
+
+  PIG:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          PIG_BRISTLE: 10,1-1,0
+          PIG_SNOUT: 5,1-1,0
+          PIG_LEATHER: 5,1-1,0
+
+  SHEEP:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          THICK_FUR: 10,1-1,0
+          ANIMAL_FAT: 8,1-1,0
+
+  GOAT:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          GOAT_HAIR: 10,1-1,0
+          HOOF: 8,1-1,0
+          WOOL_BALL: 5,1-1,0
+
+  LLAMA:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          WOOL_BALL: 5,1-1,0
+
+  CAMEL:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          CAMEL_HAIR: 10,1-1,0
+
+  HORSE:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          HOOF: 10,1-1,0
+          KERATIN: 8,1-1,0
+
+  DONKEY:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          KERATIN: 10,1-1,0
+
+  MULE:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          HOOF: 10,1-1,0
+
+  RABBIT:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          FLUFFY_TAIL: 10,1-1,0
+          SMALL_TOOTH: 8,1-1,0
+
+  FOX:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          FOX_PELT: 10,1-1,0
+          SHARP_TOOTH: 8,1-1,0
+
+  WOLF:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          SHARP_TOOTH: 10,1-1,0
+          THICK_FUR: 8,1-1,0
+          WOLF_CANINE: 5,1-1,0
+          WOLF_TAIL: 5,1-1,0
+          WOLF_FANG: 4,1-1,0
+
+  CAT:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          HAIRBALL: 10,1-1,0
+          SMALL_TOOTH: 8,1-1,0
+
+  OCELOT:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          OCELOT_PELT: 10,1-1,0
+
+  PARROT:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          EXOTIC_FEATHER: 5,1-1,0
+          PARROT_FEATHER: 3,1-1,0
+
+  CHICKEN:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          EGGSHELL_POWDER: 10,1-1,0
+          EXOTIC_FEATHER: 5,1-1,0
+
+  BEE:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          ROYAL_JELLY: 5,1-1,0
+          HONEY_CRYSTAL: 4,1-1,0
+
+  BAT:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          BAT_WING_LOOT: 10,1-1,0
+
+  POLAR_BEAR:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          BEAR_PELT: 10,1-1,0
+          MARROW: 8,1-1,0
+          ICE_SHARDS: 5,1-1,0
+
+  PANDA:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          CLAWS: 10,1-1,0
+
+  MOOSHROOM:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          FUNGI_TUFT: 10,1-1,0
+          ANIMAL_FAT: 8,1-1,0
+          MUSHROOM_SPORES: 4,1-1,0
+
+  SNIFFER:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          SNIFFER_FUR: 10,1-1,0
+
+  STRIDER:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          STRIDER_SKIN: 10,1-1,0
+
+  FROG:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          SWAMPY_OIL: 10,1-1,0
+          FROG_LEG: 5,1-1,0
+
+  AXOLOTL:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          FISH_SCALES: 10,1-1,0
+          AXOLOTL_MUCUS: 3,1-1,0
+
+  TURTLE:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          KERATIN: 10,1-1,0
+          MARROW: 8,1-1,0
+
+  SQUID:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          SWAMPY_OIL: 10,1-1,0
+          SQUID_TENTACLE: 5,1-1,0
+
+  GLOW_SQUID:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          FAIRY_DUST: 5,1-1,0
+          GLOW_SQUID_TENTACLE: 4,1-1,0
+
+  COD:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          FISH_SCALES: 10,1-1,0
+          FISH_OIL: 5,1-1,0
+
+  SALMON:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          FISH_SCALES: 10,1-1,0
+          FISH_OIL: 5,1-1,0
+
+  PUFFERFISH:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          FISH_SCALES: 10,1-1,0
+
+  TROPICAL_FISH:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          FISH_SCALES: 10,1-1,0
+
+  DOLPHIN:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          JAWBONE: 5,1-1,0
+          DOLPHIN_FIN: 2,1-1,0
+
+  TADPOLE:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          SWAMPY_OIL: 10,1-1,0
+
+  ALLAY:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          FAIRY_DUST: 5,1-1,0
+          ECTOPLASM: 2,1-1,0
+
+  VILLAGER:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          VILLAGER_BRAIN: 5,1-1,0
+
+  WITHER_SKELETON:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          WITHERED_BONE: 5,1-1,0
+          WITHERED_RIB: 5,1-1,0
+          WITHER_DUST: 3,1-1,0
+
+  ZOMBIE:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          ZOMBIE_FLESH: 10,1-1,0
+
+  ZOMBIFIED_PIGLIN:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          ZOMBIE_PIGLIN_FLESH: 5,1-1,0
+
+  SLIME:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          GEL: 5,1-1,0
+
+  VEX:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          ECTOPLASM: 2,1-1,0
+
+  WITCH:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          MAGIC_CRYSTALS: 2,1-1,0
+
+  HUSK:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          DESERT_CLOTH: 5,1-1,0
+
+  WITHER:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          WITHER_DUST: 5,1-1,0
+
+  WARDEN:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          WARDEN_HEART_MAT: 1,1-1,0
+
+  ENDERMITE:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          ENDER_POWDER: 5,1-1,0
+
+  ENDERMAN:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          ENDER_POWDER: 4,1-1,0
+
+  SNOWMAN:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          ICE_SHARDS: 5,1-1,0
+
+  GUARDIAN:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          GUARDIAN_SPIKE: 3,1-1,0
+
+  CAVE_SPIDER:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          POISON_SAC: 4,1-1,0
+
+  PHANTOM:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          PHANTOM_SCALE: 3,1-1,0
+
+  GHAST:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          GHAST_EYE: 2,1-1,0
+
+  MAGMA_CUBE:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          MAGMA_GEL: 5,1-1,0
+
+  DROWNED:
+    main-drops:
+      coef: 1
+      items:
+        DROPS:
+          AQUA_ESSENCE: 4,1-1,0
+
+customblocks:
+# ====================================================
+# GRUPO 1: BCOP (IDs 1-4)
+# ====================================================
+  1:
+    bcop_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          1: 100,1,0
+  2:
+    bcop_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          BCOP_RAW: 100,1,0
+  3:
+    bcop_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          BCOP_RAW: 100,1,0
+  4:
+    bcop_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          4: 100,1,0
+
+# ====================================================
+# GRUPO 2: BLUE (IDs 5-8)
+# ====================================================
+  5:
+    blue_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          5: 100,1,0
+  6:
+    blue_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          BLUE_RAW: 100,1,0
+  7:
+    blue_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          BLUE_RAW: 100,1,0
+  8:
+    blue_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          8: 100,1,0
+
+# ====================================================
+# GRUPO 3: BUBBLE (IDs 9-12)
+# ====================================================
+  9:
+    bubble_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          9: 100,1,0
+  10:
+    bubble_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          BUBBLE_RAW: 100,1,0
+  11:
+    bubble_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          BUBBLE_RAW: 100,1,0
+  12:
+    bubble_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          12: 100,1,0
+
+# ====================================================
+# GRUPO 4: CGOLD (IDs 13-16)
+# ====================================================
+  13:
+    cgold_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          13: 100,1,0
+  14:
+    cgold_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          CGOLD_RAW: 100,1,0
+  15:
+    cgold_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          CGOLD_RAW: 100,1,0
+  16:
+    cgold_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          16: 100,1,0
+
+# ====================================================
+# GRUPO 5: CIRON (IDs 17-20)
+# ====================================================
+  17:
+    ciron_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          17: 100,1,0
+  18:
+    ciron_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          CIRON_RAW: 100,1,0
+  19:
+    ciron_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          CIRON_RAW: 100,1,0
+  20:
+    ciron_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          20: 100,1,0
+
+# ====================================================
+# GRUPO 6: CRYSTAL (IDs 21-24)
+# ====================================================
+  21:
+    crystal_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          21: 100,1,0
+  22:
+    crystal_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          CRYSTAL_RAW: 100,1,0
+  23:
+    crystal_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          CRYSTAL_RAW: 100,1,0
+  24:
+    crystal_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          24: 100,1,0
+
+# ====================================================
+# GRUPO 7: CYAN (IDs 25-28)
+# ====================================================
+  25:
+    cyan_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          25: 100,1,0
+  26:
+    cyan_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          CYAN_RAW: 100,1,0
+  27:
+    cyan_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          CYAN_RAW: 100,1,0
+  28:
+    cyan_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          28: 100,1,0
+
+# ====================================================
+# GRUPO 8: DGOLD (IDs 29-32)
+# ====================================================
+  29:
+    dgold_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          29: 100,1,0
+  30:
+    dgold_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          DGOLD_RAW: 100,1,0
+  31:
+    dgold_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          DGOLD_RAW: 100,1,0
+  32:
+    dgold_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          32: 100,1,0
+
+# ====================================================
+# GRUPO 9: DRAGON (IDs 33-36)
+# ====================================================
+  33:
+    dragon_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          33: 100,1,0
+  34:
+    dragon_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          DRAGON_RAW: 100,1,0
+  35:
+    dragon_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          DRAGON_RAW: 100,1,0
+  36:
+    dragon_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          36: 100,1,0
+
+# ====================================================
+# GRUPO 10: GREEN (IDs 37-40)
+# ====================================================
+  37:
+    green_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          37: 100,1,0
+  38:
+    green_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          GREEN_RAW: 100,1,0
+  39:
+    green_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          GREEN_RAW: 100,1,0
+  40:
+    green_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          40: 100,1,0
+
+# ====================================================
+# GRUPO 11: HEART (IDs 41-44)
+# ====================================================
+  41:
+    heart_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          41: 100,1,0
+  42:
+    heart_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          HEART_RAW: 100,1,0
+  43:
+    heart_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          HEART_RAW: 100,1,0
+  44:
+    heart_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          44: 100,1,0
+
+# ====================================================
+# GRUPO 12: INFECT (IDs 45-48)
+# ====================================================
+  45:
+    infect_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          45: 100,1,0
+  46:
+    infect_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          INFECT_RAW: 100,1,0
+  47:
+    infect_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          INFECT_RAW: 100,1,0
+  48:
+    infect_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          48: 100,1,0
+
+# ====================================================
+# GRUPO 13: JAG (IDs 49-52)
+# ====================================================
+  49:
+    jag_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          49: 100,1,0
+  50:
+    jag_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          JAG_RAW: 100,1,0
+  51:
+    jag_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          JAG_RAW: 100,1,0
+  52:
+    jag_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          52: 100,1,0
+
+# ====================================================
+# GRUPO 14: LCOP (IDs 53-56)
+# ====================================================
+  53:
+    lcop_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          53: 100,1,0
+  54:
+    lcop_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          LCOP_RAW: 100,1,0
+  55:
+    lcop_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          LCOP_RAW: 100,1,0
+  56:
+    lcop_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          56: 100,1,0
+
+# ====================================================
+# GRUPO 15: LCYAN (IDs 57-60)
+# ====================================================
+  57:
+    lcyan_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          57: 100,1,0
+  58:
+    lcyan_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          LCYAN_RAW: 100,1,0
+  59:
+    lcyan_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          LCYAN_RAW: 100,1,0
+  60:
+    lcyan_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          60: 100,1,0
+
+# ====================================================
+# GRUPO 16: MAGIC (IDs 61-64)
+# ====================================================
+  61:
+    magic_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          61: 100,1,0
+  62:
+    magic_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          MAGIC_RAW: 100,1,0
+  63:
+    magic_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          MAGIC_RAW: 100,1,0
+  64:
+    magic_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          64: 100,1,0
+
+# ====================================================
+# GRUPO 17: MATRIX (IDs 65-68)
+# ====================================================
+  65:
+    matrix_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          65: 100,1,0
+  66:
+    matrix_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          MATRIX_RAW: 100,1,0
+  67:
+    matrix_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          MATRIX_RAW: 100,1,0
+  68:
+    matrix_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          68: 100,1,0
+
+# ====================================================
+# GRUPO 18: NEBULA (IDs 69-72)
+# ====================================================
+  69:
+    nebula_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          69: 100,1,0
+  70:
+    nebula_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          NEBULA_RAW: 100,1,0
+  71:
+    nebula_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          NEBULA_RAW: 100,1,0
+  72:
+    nebula_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          72: 100,1,0
+
+# ====================================================
+# GRUPO 19: OBSI (IDs 73-76)
+# ====================================================
+  73:
+    obsi_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          73: 100,1,0
+  74:
+    obsi_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          OBSI_RAW: 100,1,0
+  75:
+    obsi_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          OBSI_RAW: 100,1,0
+  76:
+    obsi_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          76: 100,1,0
+
+# ====================================================
+# GRUPO 20: OCOP (IDs 77-80)
+# ====================================================
+  77:
+    ocop_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          77: 100,1,0
+  78:
+    ocop_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          OCOP_RAW: 100,1,0
+  79:
+    ocop_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          OCOP_RAW: 100,1,0
+  80:
+    ocop_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          80: 100,1,0
+
+# ====================================================
+# GRUPO 21: PCOP (IDs 81-84)
+# ====================================================
+  81:
+    pcop_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          81: 100,1,0
+  82:
+    pcop_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          PCOP_RAW: 100,1,0
+  83:
+    pcop_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          PCOP_RAW: 100,1,0
+  84:
+    pcop_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          84: 100,1,0
+
+# ====================================================
+# GRUPO 22: PINK (IDs 85-88)
+# ====================================================
+  85:
+    pink_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          85: 100,1,0
+  86:
+    pink_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          PINK_RAW: 100,1,0
+  87:
+    pink_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          PINK_RAW: 100,1,0
+  88:
+    pink_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          88: 100,1,0
+
+# ====================================================
+# GRUPO 23: PURPLE (IDs 89-92)
+# ====================================================
+  89:
+    purple_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          89: 100,1,0
+  90:
+    purple_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          PURPLE_RAW: 100,1,0
+  91:
+    purple_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          PURPLE_RAW: 100,1,0
+  92:
+    purple_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          92: 100,1,0
+
+# ====================================================
+# GRUPO 24: REDDISH (IDs 93-96)
+# ====================================================
+  93:
+    reddish_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          93: 100,1,0
+  94:
+    reddish_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          REDDISH_RAW: 100,1,0
+  95:
+    reddish_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          REDDISH_RAW: 100,1,0
+  96:
+    reddish_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          96: 100,1,0
+
+# ====================================================
+# GRUPO 25: SILVER (IDs 97-100)
+# ====================================================
+  97:
+    silver_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          97: 100,1,0
+  98:
+    silver_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          SILVER_RAW: 100,1,0
+  99:
+    silver_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          SILVER_RAW: 100,1,0
+  100:
+    silver_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          100: 100,1,0
+
+# ====================================================
+# GRUPO 26: SPIKE (IDs 101-104)
+# ====================================================
+  101:
+    spike_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          101: 100,1,0
+  102:
+    spike_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          SPIKE_RAW: 100,1,0
+  103:
+    spike_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          SPIKE_RAW: 100,1,0
+  104:
+    spike_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          104: 100,1,0
+
+# ====================================================
+# GRUPO 27: TAXIS (IDs 105-108)
+# ====================================================
+  105:
+    taxis_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          105: 100,1,0
+  106:
+    taxis_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          TAXIS_RAW: 100,1,0
+  107:
+    taxis_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          TAXIS_RAW: 100,1,0
+  108:
+    taxis_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          108: 100,1,0
+
+# ====================================================
+# GRUPO 28: TECH (IDs 109-112)
+# ====================================================
+  109:
+    tech_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          109: 100,1,0
+  110:
+    tech_ore_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          TECH_RAW: 100,1,0
+  111:
+    tech_slate_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        MINERAL:
+          TECH_RAW: 100,1,0
+  112:
+    tech_raw_block_drop:
+      coef: 1
+      disable-silk-touch: true
+      items:
+        BLOCK:
+          112: 100,1,0

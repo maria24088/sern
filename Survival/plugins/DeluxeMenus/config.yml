@@ -1,0 +1,196 @@
+# DeluxeMenus 1.14.1-Release main configuration file
+#
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/helpchat-plugins/deluxemenus
+
+use_admin_commands_in_menus_list: false
+menus_list_page_size: 10
+metas_list_page_size: 15
+debug: HIGHEST
+check_updates: true
+gui_menus:
+  
+  Tienda_Cañas:
+    file: tienda_cañas.yml
+  
+  serverwarps:
+    file: serverwarps.yml
+  
+  help:
+    file: help.yml
+  
+  coinshop:
+    file: coinshop.yml
+  
+  souls_shop:
+    file: souls_shop.yml
+  
+  mobs_list:
+    file: mobs_list.yml
+  
+  playerlevels:
+    file: playerlevels.yml
+  
+  vote:
+    file: vote.yml
+  
+  flight_time:
+    file: flight_time.yml
+  
+  claimblocks:
+    file: claimblocks.yml
+  
+  tags:
+    file: tags.yml
+  
+  jobs-information:
+    file: jobs-information.yml
+  
+  vaults:
+    file: vaults.yml
+  
+  ranks:
+    file: ranks.yml
+  
+  kits:
+    file: kits.yml
+  
+  randomtp:
+    file: randomtp.yml
+  
+  quest_leaderboard:
+    file: quest_leaderboard.yml
+  quest_badges:
+    file: quest_badges.yml
+  quest_badges_2:
+    file: quest_badges_2.yml
+  
+  # RPG CORE
+  admin:
+    file: admin.yml
+  admin_core:
+    file: admin_core.yml
+  
+  waypoints:
+    file: waypoints.yml
+  
+  portal_basic:
+    file: portal_basic.yml
+  portal_sanctuary:
+    file: portal_sanctuary.yml
+  portal_dungeon:
+    file: portal_dungeon.yml
+  portal_unstable:
+    file: portal_unstable.yml
+  
+  bank:
+    file: bank.yml
+  
+  merchant_basic:
+    file: merchant_basic.yml
+  merchant_weapon:
+    file: merchant_weapon.yml
+  merchant_armor:
+    file: merchant_armor.yml
+  merchant_jewelry:
+    file: merchant_jewelry.yml
+  merchant_pet:
+    file: merchant_pet.yml
+  merchant_potion:
+    file: merchant_potion.yml
+  merchant_forbidden:
+    file: merchant_forbidden.yml
+  merchant_wandering:
+    file: merchant_wandering.yml
+  buy_arcane_satchel:
+    file: ae_config/buy_arcane_satchel.yml
+  buy_random_enchantrcbook:
+    file: ae_config/buy_random_enchantrcbook.yml
+  
+  # CustomCrops
+  marketplace:
+    file: marketplace.yml
+  submenu_daily_deals_1:
+    file: submenu_daily_deals_1.yml
+  submenu_daily_deals_2:
+    file: submenu_daily_deals_2.yml
+  submenu_daily_deals_3:
+    file: submenu_daily_deals_3.yml
+  submenu_daily_deals_4:
+    file: submenu_daily_deals_4.yml
+  submenu_daily_deals_5:
+    file: submenu_daily_deals_5.yml
+  submenu_categories_misc_fertilizers:
+    file: submenu_categories_misc_fertilizers.yml
+  submenu_categories_misc_gears:
+    file: submenu_categories_misc_gears.yml
+  submenu_categories_fruits_seeds:
+    file: submenu_categories_fruits_seeds.yml
+  submenu_categories_vegetables_seeds:
+    file: submenu_categories_vegetables_seeds.yml
+  submenu_categories_cereals_seeds:
+    file: submenu_categories_cereals_seeds.yml
+  submenu_categories_trees_seeds:
+    file: submenu_categories_trees_seeds.yml
+  submenu_categories_bushes_seeds:
+    file: submenu_categories_bushes_seeds.yml
+  submenu_categories_flowers_seeds:
+    file: submenu_categories_flowers_seeds.yml
+  # ###########################################################
+  submenu_categories_fruits_sell:
+    file: submenu_categories_fruits_sell.yml
+  submenu_categories_vegetables_sell:
+    file: submenu_categories_vegetables_sell.yml
+  submenu_categories_cereals_sell:
+    file: submenu_categories_cereals_sell.yml
+  submenu_categories_trees_sell:
+    file: submenu_categories_trees_sell.yml
+  submenu_categories_bushes_sell:
+    file: submenu_categories_bushes_sell.yml
+  submenu_categories_flowers_sell:
+    file: submenu_categories_flowers_sell.yml
+  submenu_categories_overgrown_fruits_sell:
+    file: submenu_categories_overgrown_fruits_sell.yml
+  submenu_categories_overgrown_vegetables_sell:
+    file: submenu_categories_overgrown_vegetables_sell.yml
+  submenu_categories_overgrown_cereals_sell:
+    file: submenu_categories_overgrown_cereals_sell.yml
+  submenu_categories_overgrown_trees_sell:
+    file: submenu_categories_overgrown_trees_sell.yml
+  submenu_categories_overgrown_bushes_sell:
+    file: submenu_categories_overgrown_bushes_sell.yml
+  submenu_categories_overgrown_flowers_sell:
+    file: submenu_categories_overgrown_flowers_sell.yml
+  
+  # JOBS
+  alchemist:
+    file: alchemist.yml
+  assassin:
+    file: assassin.yml
+  blacksmith:
+    file: blacksmith.yml
+  builder:
+    file: builder.yml
+  crafter:
+    file: crafter.yml
+  digger:
+    file: digger.yml
+  enchanter:
+    file: enchanter.yml
+  farmer:
+    file: farmer.yml
+  fisherman:
+    file: fisherman.yml
+  hunter:
+    file: hunter.yml
+  lumberjack:
+    file: lumberjack.yml
+  miner:
+    file: miner.yml
+  smelter:
+    file: smelter.yml
+
+
+# f2e0e0ea605cea6828e78971c675916f
+
+command-aliases: true

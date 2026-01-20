@@ -1,0 +1,18 @@
+location: SpawnRPG:0.525:62.775:-179.073
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&4&k|&r &4&l☠ &c&lMUNDO DUNGEONS &4&l☠ &4&k|&r'
+    height: 0.5
+  - content: '&7&o¿Tienes el nivel suficiente?'
+    height: 0.3
+  - content: ''
+    height: 0.1
+  - content: '&c⚠ &nPELIGRO EXTREMO&r &c⚠'
+    height: 0.4
+  actions: {}

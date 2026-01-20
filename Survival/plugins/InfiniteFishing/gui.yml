@@ -1,0 +1,137 @@
+market:
+  title: "&1Fishing Market" # Title when custom fishing market is false
+  SELL_FOR: # Appears when the player has fish to sell
+    material: GREEN_STAINED_GLASS_PANE
+    amount: 1
+    name: "&aSell for &f$%price%"
+    lore:
+      - "&7Click to sell this fish"
+  NOTHING: # Appears when the player has no fish to sell
+    material: RED_STAINED_GLASS_PANE
+    amount: 1
+    name: "&cYou don't have anything to sell!"
+    lore:
+      - "&7Go fishing to catch some fish"
+fish-top:
+  title: "&1FishTop - Page %page%" # Title of the fish top GUI
+  player-lore: # Lore of the player item
+    - " "
+    - "&7Caught this week: &b%caught%"
+    # Available placeholders:
+    # %caught% - Total caught fish
+  NEXT_PAGE: # Appears when there is a next page
+    material: ARROW
+    amount: 1
+    name: "&aNext Page"
+    lore:
+      - "&7Click to go to the next page"
+  PREVIOUS_PAGE: # Appears when there is a previous page
+    material: ARROW
+    amount: 1
+    name: "&aPrevious Page"
+    lore:
+      - "&7Click to go to the previous page"
+leaderboard:
+  title: "&1Leaderboard - Page %page%" # Title of the leaderboard GUI
+  sort-name:
+    MOST_FISH: "&bMost Fish"
+    MOST_RARE_FISH: "&bRarest Fish"
+    TOTAL_RATING: "&bTotal Rating"
+  player-lore:
+    - " "
+    - "&7Total caught: &b%caught%"
+    - "&7Total rating: &b%rating%"
+    - "&7Rarest fish: &b%rarest%"
+    # Available placeholders:
+    # %caught% - Total caught fish
+    # %rating% - Total rating of the player
+    # %rarest% - Rarest fish caught
+    # %size% - Largest fish caught
+    # %weight% - Heaviest fish caught
+  NEXT_PAGE: # Appears when there is a next page
+    material: ARROW
+    amount: 1
+    name: "&aNext Page"
+    lore:
+      - "&7Click to go to the next page"
+  PREVIOUS_PAGE: # Appears when there is a previous page
+    material: ARROW
+    amount: 1
+    name: "&aPrevious Page"
+    lore:
+      - "&7Click to go to the previous page"
+  SORT:
+    material: COMPARATOR
+    amount: 1
+    name: "&aSort by %sort%"
+    lore:
+      - "&7Click to sort the leaderboard"
+tournament-leaderboard:
+  title: "&1Tournament - Page %page%"
+  lore:
+    COUNT: "&bTotal Caught: %count%"
+    SCORE: "&bTotal rating: %score%"
+    SIZE: "&bLargest fish: %size%"
+    WEIGHT: "&bHeaviest fish: %weight%"
+    TOTAL_SIZE: "&bTotal size: %totalsize%"
+    SMALLEST: "&bSmallest fish: %smallestfish%"
+  NEXT_PAGE: # Appears when there is a next page
+    material: ARROW
+    amount: 1
+    name: "&aNext Page"
+    lore:
+      - "&7Click to go to the next page"
+  PREVIOUS_PAGE: # Appears when there is a previous page
+    material: ARROW
+    amount: 1
+    name: "&aPrevious Page"
+    lore:
+      - "&7Click to go to the previous page"
+catalog:
+  title: "&1Catalog - Page %page%" # Title of the catalog GUI
+  fish-lore: # Lore of the fish item
+    - " "
+    - "&7Total caught: &b%caught%"
+    - "&7Max Weight: &b%maxweight%"
+    - "&7Max Size: &b%maxsize%"
+  # Available placeholders:
+  # %caught% - Total caught fish
+  # %maxweight% - Max weight of the fish
+  # %maxsize% - Max size of the fish
+  # %minweight% - Min weight of the fish
+  # %minsize% - Min size of the fish
+  LOCKED:
+    material: STRUCTURE_VOID
+    amount: 1
+    name: "&cLocked"
+    lore:
+      - "&7You need to catch this fish"
+      - "&7to unlock this item"
+  NEXT_PAGE: # Appears when there is a next page
+    material: ARROW
+    amount: 1
+    name: "&aNext Page"
+    lore:
+      - "&7Click to go to the next page"
+  PREVIOUS_PAGE: # Appears when there is a previous page
+    material: ARROW
+    amount: 1
+    name: "&aPrevious Page"
+    lore:
+      - "&7Click to go to the previous page"
+fish-finder:
+  title: "&1Fish Finder - Page %page%" # Title of the fish finder GUI
+  NEXT_PAGE: # Appears when there is a next page
+    material: ARROW
+    amount: 1
+    name: "&aNext Page"
+    lore:
+      - "&7Click to go to the next page"
+  PREVIOUS_PAGE: # Appears when there is a previous page
+    material: ARROW
+    amount: 1
+    name: "&aPrevious Page"
+    lore:
+      - "&7Click to go to the previous page"
+evaluator:
+  title: "&1Evaluador" # Title of the fish evaluator GUI

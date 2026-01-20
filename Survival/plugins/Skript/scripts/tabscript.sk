@@ -1,0 +1,56 @@
+# REGISTRO DEL PLACEHOLDER
+on join:
+    # 1. Esperamos a que el Resource Pack cargue.
+    # 60 ticks = 3 segundos. Si tus jugadores tienen PCs lentas o el pack es pesado, subelo a 100 ticks (5s).
+    wait 80 ticks
+    
+    # 2. Activamos la bossbar forzando el comando de toggle desde la consola.
+    # Como configuramos "hidden-by-default: true", al ejecutar esto se pondrá en visible (ON).
+    
+    # OPCIÓN A (Recomendada - Ejecuta como el jugador):
+    # Requiere que el jugador tenga permiso para usar el comando /bossbar (tab.bossbar.toggle o similar)
+    make player execute command "/bossbar"
+
+placeholderapi placeholder with the prefix "skriptplaceholders":
+    if the identifier is "world":
+        if {worldname::%player%} is set:
+            set the result to {worldname::%player%}
+        else:
+            set the result to "Cargando..."
+
+# FUNCIÓN CENTRAL (Para no repetir código)
+function updateWorldName(p: player):
+    # Guardamos el mundo en una variable temporal para comparar más fácil
+    set {_w} to "%world of {_p}%" 
+    
+    # COMPARACIONES (Usa los nombres exactos que te dio /vermundo)
+    if {_w} is "world":
+        set {worldname::%{_p}%} to "The Jungle"
+    
+    else if {_w} is "world_nether":
+        set {worldname::%{_p}%} to "The Hell"
+    
+    else if {_w} is "world_the_end":
+        set {worldname::%{_p}%} to "The End"
+    
+    # AQUI AGREGAMOS TU SPAWN
+    else if {_w} is "SpawnRPG": 
+        set {worldname::%{_p}%} to "&6Spawn Principal"
+        
+    else:
+        # Esto nos ayuda a detectar errores.
+        # Si sale esto, verás el nombre real en el scoreboard y podrás corregirlo en el script.
+        set {worldname::%{_p}%} to "Mundo: %{_w}%"
+
+# EVENTOS
+on world change:
+    wait 1 tick
+    updateWorldName(player)
+
+on join:
+    wait 5 ticks
+    updateWorldName(player)
+    
+on script load:
+    loop all players:
+        updateWorldName(loop-player)

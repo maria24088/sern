@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  curtainpink:
+    display_name: "Curtain Pink"
+    permission: livingroom.curtainpink
+    resource:
+      material: PAPER
+      generate: false
+      model_path: curtainpink
+    behaviours:
+      furniture:
+        light_level: 13

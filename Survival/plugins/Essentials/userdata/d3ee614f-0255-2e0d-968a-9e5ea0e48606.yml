@@ -1,0 +1,30 @@
+npc: true
+last-account-name: TopBalance
+money: '0'
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: ''
+afk: false
+socialspy: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1765908066847
+  login: 0
+logoutlocation:
+  world: 0c52527c-f895-4989-828f-80caa9f6e8b5
+  world-name: Spawn
+  x: 32.49430234354048
+  y: 89.0
+  z: 33.50313777954658
+  yaw: -11.714706420898438
+  pitch: 0.0

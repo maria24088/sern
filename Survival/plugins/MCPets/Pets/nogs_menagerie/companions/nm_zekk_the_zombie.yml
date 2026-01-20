@@ -1,0 +1,13 @@
+Id: nm_zekk_the_zombie
+MythicMob: nm_zekk_the_zombie
+Permission: pet.zekk_the_zombie
+Mountable: false
+Distance: 6
+SpawnRange: 1
+ComingBackRange: 4
+Icon:
+  Name: §cZekk the Zombie
+  Material: PAPER
+  CustomModelData: 435024
+
+# IWNxEmaulUUFp1YypGMjdlQvhVW1UkMVNDbU9EcspHZ2ETRiZVZ1IFdQF2UEpXOxkWbHdXN

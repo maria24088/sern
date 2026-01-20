@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  bookshelfdark:
+    display_name: "Bookshelf Dark"
+    permission: livingroom.bookshelfdark
+    resource:
+      material: PAPER
+      generate: false
+      model_path: bookshelfdark
+    behaviours:
+      furniture:
+        light_level: 13

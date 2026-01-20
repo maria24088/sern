@@ -1,0 +1,175 @@
+info:
+  namespace: mmoitems_pack
+font_images:
+    
+  tooltip_middle:
+    path: hyronic_pack/tooltip/tooltip_middle.png
+    y_position: 8
+    scale_ratio: 10
+    symbol: 뀁
+  tooltip_buffs:
+    path: hyronic_pack/tooltip/tooltip_buffs.png
+    y_position: 8
+    scale_ratio: 10
+    symbol: 뀓
+  tooltip_craft:
+    path: hyronic_pack/tooltip/tooltip_craft.png
+    y_position: 16
+    scale_ratio: 21
+    symbol: 뀔
+  tooltip_normal:
+    path: hyronic_pack/tooltip/tooltip_normal.png
+    y_position: 16
+    scale_ratio: 21
+    symbol: 뀕
+
+  godlike_tooltip_top:
+    path: hyronic_pack/tooltip/godlike/tooltip_top.png
+    y_position: 19
+    scale_ratio: 23
+    symbol: 뀐
+
+  godlike_tooltip_middle:
+    path: hyronic_pack/tooltip/godlike/tooltip_middle.png
+    y_position: 8
+    scale_ratio: 10
+    symbol: ㈹
+
+  godlike_tooltip_bottom:
+    path: hyronic_pack/tooltip/godlike/tooltip_bottom.png
+    y_position: 14
+    scale_ratio: 21
+    symbol: 뀑
+
+  godlike_tooltip_ability:
+    path: hyronic_pack/tooltip/godlike/tooltip_ability.png
+    y_position: 8
+    scale_ratio: 10
+    symbol: 뀒
+
+
+
+  mythic_tooltip_top:
+    path: hyronic_pack/tooltip/mythic/tooltip_top.png
+    y_position: 19
+    scale_ratio: 23
+    symbol: 뀀
+
+  mythic_tooltip_middle:
+    path: hyronic_pack/tooltip/mythic/tooltip_middle.png
+    y_position: 8
+    scale_ratio: 10
+    symbol: ㈺
+
+  mythic_tooltip_bottom:
+    path: hyronic_pack/tooltip/mythic/tooltip_bottom.png
+    y_position: 14
+    scale_ratio: 21
+    symbol: 뀂
+
+  mythic_tooltip_ability:
+    path: hyronic_pack/tooltip/mythic/tooltip_ability.png
+    y_position: 8
+    scale_ratio: 10
+    symbol: 뀃
+
+
+
+  legendary_tooltip_top:
+    path: hyronic_pack/tooltip/legendary/tooltip_top.png
+    y_position: 19
+    scale_ratio: 23
+    symbol: 뀄
+
+  legendary_tooltip_middle:
+    path: hyronic_pack/tooltip/legendary/tooltip_middle.png
+    y_position: 8
+    scale_ratio: 10
+    symbol: ㈻
+
+  legendary_tooltip_bottom:
+    path: hyronic_pack/tooltip/legendary/tooltip_bottom.png
+    y_position: 14
+    scale_ratio: 21
+    symbol: 뀅
+
+  legendary_tooltip_ability:
+    path: hyronic_pack/tooltip/legendary/tooltip_ability.png
+    y_position: 8
+    scale_ratio: 10
+    symbol: 뀆
+
+
+  epic_tooltip_top:
+    path: hyronic_pack/tooltip/epic/tooltip_top.png
+    y_position: 19
+    scale_ratio: 23
+    symbol: 뀇
+
+  epic_tooltip_middle:
+    path: hyronic_pack/tooltip/epic/tooltip_middle.png
+    y_position: 8
+    scale_ratio: 10
+    symbol: ㈼
+
+  epic_tooltip_bottom:
+    path: hyronic_pack/tooltip/epic/tooltip_bottom.png
+    y_position: 14
+    scale_ratio: 21
+    symbol: 뀈
+
+  epic_tooltip_ability:
+    path: hyronic_pack/tooltip/epic/tooltip_ability.png
+    y_position: 8
+    scale_ratio: 10
+    symbol: 뀉
+
+
+  rare_tooltip_top:
+    path: hyronic_pack/tooltip/rare/tooltip_top.png
+    y_position: 19
+    scale_ratio: 23
+    symbol: 뀊
+
+  rare_tooltip_middle:
+    path: hyronic_pack/tooltip/rare/tooltip_middle.png
+    y_position: 8
+    scale_ratio: 10
+    symbol: ㈽
+
+  rare_tooltip_bottom:
+    path: hyronic_pack/tooltip/rare/tooltip_bottom.png
+    y_position: 14
+    scale_ratio: 21
+    symbol: 뀋
+
+  rare_tooltip_ability:
+    path: hyronic_pack/tooltip/rare/tooltip_ability.png
+    y_position: 8
+    scale_ratio: 10
+    symbol: 뀌
+
+
+  common_tooltip_top:
+    path: hyronic_pack/tooltip/common/tooltip_top.png
+    y_position: 19
+    scale_ratio: 23
+    symbol: 뀍
+
+  common_tooltip_middle:
+    path: hyronic_pack/tooltip/common/tooltip_middle.png
+    y_position: 8
+    scale_ratio: 10
+    symbol: ㈾
+
+  common_tooltip_bottom:
+    path: hyronic_pack/tooltip/common/tooltip_bottom.png
+    y_position: 14
+    scale_ratio: 21
+    symbol: 뀎
+
+  common_tooltip_ability:
+    path: hyronic_pack/tooltip/common/tooltip_ability.png
+    y_position: 8
+    scale_ratio: 10
+    symbol: ꑽ

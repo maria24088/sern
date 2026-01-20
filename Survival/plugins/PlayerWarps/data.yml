@@ -1,0 +1,28 @@
+warps:
+  1b8cf102-11ff-4f1b-87ca-54e308e12813:
+    ==: dev.revivalo.playerwarps.warp.Warp
+    loc:
+      ==: org.bukkit.Location
+      world: world
+      x: 1215.4001497329057
+      y: 73.0
+      z: -305.6267806581123
+      pitch: 1.1031997
+      yaw: 175.3743
+    item: null
+    lore: null
+    admission: 0
+    last-activity: 0
+    uuid: 1b8cf102-11ff-4f1b-87ca-54e308e12813
+    reviewers: []
+    visits: 0
+    password: 'null'
+    display-name: Prueba
+    owner-id: 0d45db84-9179-4b23-93b7-38a90642b372
+    ratings: 0
+    blocked-players: []
+    name: prueba
+    need-verification: false
+    category: event
+    status: OPENED
+    date-created: 1766188984510

@@ -1,0 +1,124 @@
+Id: Pet_Frog_Green
+MythicMob: Pet_Frog_Green
+Permission: mcpet.Pet_Frog_Green
+Mountable: false
+Distance: 6
+DismountOnDamaged: false
+SpawnRange: 3
+ComingBackRange: 5
+Icon:
+  Name: §bGreen Frog
+  Material: BRICK
+  CustomModelData: 12008
+  Description:
+  - §fGet your pet Green Frog!
+  - ''
+  - §f[§cSticky Tongue§f]
+  - §fYour Frog shoots out its tongue to
+  - §fpull and slow an enemy.
+  - ''
+  - '§7Level up: §a+Damage, +Duration'
+Skins:
+  Pet_Frog_Green:
+    MythicMob: Pet_Frog_Green
+    Permission: skin.Pet_Frog_Green
+    Icon:
+      Material: BRICK
+      CustomModelData: 12008
+      DisplayName: §bGreen Frog
+      Lore:
+      - §fGet your pet Green Frog!
+  Pet_Frog_Mushroom:
+    MythicMob: Pet_Frog_Mushroom
+    Permission: skin.Pet_Frog_Mushroom
+    Icon:
+      Material: BRICK
+      CustomModelData: 12009
+      DisplayName: §bMushroom Frog
+      Lore:
+      - §fGet your pet Mushroom Frog!
+  Pet_Frog_Stone:
+    MythicMob: Pet_Frog_Stone
+    Permission: skin.Pet_Frog_Stone
+    Icon:
+      Material: BRICK
+      CustomModelData: 12011
+      DisplayName: §bStone Frog
+      Lore:
+      - §fGet your pet Stone Frog!
+  Pet_Frog_Golden:
+    MythicMob: Pet_Frog_Golden
+    Permission: skin.Pet_Frog_Golden
+    Icon:
+      Material: BRICK
+      CustomModelData: 12007
+      DisplayName: §bGolden Frog
+      Lore:
+      - §fGet your pet Golden Frog!
+  Pet_Frog_Nether:
+    MythicMob: Pet_Frog_Nether
+    Permission: skin.Pet_Frog_Nether
+    Icon:
+      Material: BRICK
+      CustomModelData: 12010
+      DisplayName: §bNether Frog
+      Lore:
+      - §fGet your pet Nether Frog!
+Levels:
+  Lvl_Common:
+    Name: §fCommon
+    ExperienceThreshold: 0
+    MaxHealth: 100
+    Regeneration: 0.1
+    ResistanceModifier: 1
+    DamageModifier: 2
+    Power: 2
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+  Lvl_Rare:
+    Name: §aRare
+    ExperienceThreshold: 500
+    MaxHealth: 150
+    Regeneration: 0.12
+    ResistanceModifier: 1
+    DamageModifier: 4
+    Power: 2.5
+    Cooldowns:
+      Respawn: 14
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &aRare &6level!'
+      Type: CHAT
+  Lvl_Epic:
+    Name: §dEpic
+    ExperienceThreshold: 2000
+    MaxHealth: 200
+    Regeneration: 0.14
+    ResistanceModifier: 1
+    DamageModifier: 6
+    Power: 3
+    Cooldowns:
+      Respawn: 13
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &dEpic &6level!'
+      Type: CHAT
+  Lvl_Legendary:
+    Name: §eLegendary
+    ExperienceThreshold: 5000
+    MaxHealth: 300
+    Regeneration: 0.2
+    ResistanceModifier: 1
+    DamageModifier: 9
+    Power: 3.5
+    Cooldowns:
+      Respawn: 12
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &eLegendary &6level!'
+      Type: CHAT

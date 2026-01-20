@@ -1,0 +1,18 @@
+info:
+  namespace: angel_weapon_set
+categories:
+  angel_weapon_set:
+    enabled: true
+    skip_if_already: false
+    icon: "angel_weapon_set:angel_scepter"
+    name: angel Set & Weapon
+    permission: ia.menu
+    items:
+      - "angel_weapon_set:angel_cape"
+      - "angel_weapon_set:angel_scepter"
+      - "angel_weapon_set:angelchestplate"
+      - "angel_weapon_set:angelleggings"
+      - "angel_weapon_set:angelboots"
+      - "angel_weapon_set:angel_helmet"
+
+# 2122414448588391688183765

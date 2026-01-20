@@ -1,0 +1,36 @@
+info:
+  namespace: mob_loots_expansion
+categories:
+  mob_loots_expansion:
+    enabled: true
+    name: "&3Mob Loots Expansion"
+    title: ""
+    icon: mob_loots_expansion:honey_crystal
+    items:
+      - mob_loots_expansion:wool_ball
+      - mob_loots_expansion:mushroom_spores
+      - mob_loots_expansion:gel
+      - mob_loots_expansion:ectoplasm
+      - mob_loots_expansion:frog_leg
+      - mob_loots_expansion:magic_crystals
+      - mob_loots_expansion:desert_cloth
+      - mob_loots_expansion:wither_dust
+      - mob_loots_expansion:glow_squid_tentacle
+      - mob_loots_expansion:warden_heart
+      - mob_loots_expansion:honey_crystal
+      - mob_loots_expansion:ender_powder
+      - mob_loots_expansion:wolf_fang
+      - mob_loots_expansion:fish_oil
+      - mob_loots_expansion:ice_shards
+      - mob_loots_expansion:bat_wing
+      - mob_loots_expansion:guardian_spike
+      - mob_loots_expansion:pig_leather
+      - mob_loots_expansion:poison_sac
+      - mob_loots_expansion:axolotl_mucus
+      - mob_loots_expansion:dolphin_fin
+      - mob_loots_expansion:phantom_scale
+      - mob_loots_expansion:squid_tentacle
+      - mob_loots_expansion:ghast_eye
+      - mob_loots_expansion:parrot_feather
+      - mob_loots_expansion:magma_gel
+      - mob_loots_expansion:aqua_essence

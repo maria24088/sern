@@ -1,0 +1,685 @@
+Hellfire:
+    name: 'Hellfire'
+    bonuses:
+        '4':
+            ability-1:
+                type: HELLFIRE
+                cooldown: 3
+                mode: ATTACK
+            ability-2:
+                type: HELLFIRE_ATTACK
+                mode: ATTACK
+            fire-damage-reduction: 100
+    lore-tag:
+    - '&fｫ ꜱᴇÑᴏʀ ᴅᴇʟ ꜰᴜᴇɢᴏ'
+    - '&8+ &7Inmune al &6fuego y lava&7.'
+    - '&8+ &7Emite un aura ardiente cada'
+    - '&7vez que atacas, quemando a'
+    - '&7enemigos cercanos con&6 fuego&7.'
+    - '&8+ &7Inflige &6+20%&7 de daño a todo'
+    - '&7enemigo en llamas.'
+
+Inferno:
+    name: 'Inferno'
+    bonuses:
+        '4':
+            ability-1:
+                type: HELLFIRE
+                cooldown: 3
+                mode: ATTACK
+            ability-2:
+                type: HELLFIRE_ATTACK_UPGRADED
+                mode: ATTACK
+            fire-damage-reduction: 100
+            ability-3:
+                type: FIRELORD_U
+                mode: RIGHT_CLICK 
+                cooldown: 30.0
+    lore-tag:
+    - '&fｫ ꜱᴇÑᴏʀ ᴅᴇʟ ꜰᴜᴇɢᴏ <#9F2B68>&l⟰'
+    - '&8+ &7Inmune al &6fuego y lava&7.'
+    - '&8+ &7Emite un aura ardiente cada'
+    - '&7vez que atacas, quemando a'
+    - '&7enemigos cercanos con&6 fuego&7.'
+    - '&8+ &7Inflige &6+50%&7 de daño a todo'
+    - '&7enemigo en llamas.'
+    - ''
+    - '<#9F2B68>ʙᴏɴᴏ ᴇɴᴅᴇʀᴄᴏʀᴇ: &8Click-Der.'
+    - '&7para incinerar objetivos &6ardiendo'
+    - '&7cercanos, causando &c200❤&7 y'
+    - '<#9F2B68>aturdiéndolos&7 por <#9F2B68>3s'
+
+Warden:
+    name: 'Warden'
+    bonuses:
+        '4':
+            ability-1:
+                type: GRAND_HEAL
+                mode: TIMER
+                timer: 15.0
+                heal: 30.0
+                radius: 3.0
+    lore-tag: 
+    - '&fｪ ʙᴇɴᴅɪᴄɪᴏɴ ᴅᴇʟ ᴡᴀʀᴅᴇɴ'
+    - '&7Cada <#1a748c>20s&7, emites un aura'
+    - '&7que te cura a ti y a aliados'
+    - '&7cercanos por &c10❤&7.'
+
+Overseer:
+    name: 'Overseer'
+    bonuses:
+        '4':
+            ability-1:
+                type: GRAND_HEAL
+                mode: TIMER
+                timer: 15.0
+                heal: 50.0
+                radius: 4.0
+            ability-2:
+                type: WARDEN_BLESSING_UPGRADED
+                mode: ATTACK 
+                cooldown: 10.0
+    lore-tag: 
+    - '&fｪ ʙᴇɴᴅɪᴄɪᴏɴ ᴅᴇʟ ᴡᴀʀᴅᴇɴ <#9F2B68>&l⟰'
+    - '&7Cada <#1a748c>20s&7, emites un aura'
+    - '&7que te cura a ti y a aliados'
+    - '&7cercanos por &c10❤&7.'
+    - ''
+    - '<#9F2B68>ʙᴏɴᴏ ᴇɴᴅᴇʀᴄᴏʀᴇ: &7Atacar'
+    - '&apurifica &7todo &cefecto negativo'
+
+Apollo:
+    name: 'Apollo'
+    bonuses:
+        '4':
+            ability-1:
+                type: BANISH
+                mode: DAMAGED_BY_ENTITY
+                cooldown: 10
+    lore-tag: 
+    - '&fｭ ᴅᴇꜱᴛɪᴇʀʀᴏ'
+    - '&7Ser atacado desata una'
+    - '&7explosión sagrada, empujando'
+    - '&7a los enemigos cercanos.'
+    - '&8 | &f<#AEC6CF>⌚10s &8|'
+
+Nirvana:
+    name: 'Nirvana'
+    bonuses:
+        '4':
+            ability-1:
+                type: BANISH_U
+                mode: DAMAGED_BY_ENTITY
+                cooldown: 10
+    lore-tag:
+    - '&fｭ ᴅᴇꜱᴛɪᴇʀʀᴏ <#9F2B68>&l⟰'
+    - '&7Ser atacado desata una'
+    - '&7explosión sagrada, empujando'
+    - '&7a los enemigos cercanos.'
+    - '&8 | &f<#AEC6CF>⌚10s &8|'
+    - ''
+    - '<#9F2B68>ʙᴏɴᴏ ᴇɴᴅᴇʀᴄᴏʀᴇ: &7También'
+    - '<#9F2B68>aturde &7a los enemigos por <#9F2B68>2s'
+    - '&7y otorga <#ADD8E6>+150 ☁Velocidad'
+
+Apocalypse:
+    name: 'Apocalypse'
+    bonuses:
+        '4':
+            ability-1:
+                type: DOOMSLAYER
+                mode: KILL_ENTITY
+                cooldown: 2.0
+    lore-tag: 
+    - '&fｦ ᴀɴɪQᴜɪʟᴀᴅᴏʀ'
+    - '&7Matar a un enemigo arranca su'
+    - '&7alma, que persiste por &c3s&7.'
+    - '&7Luego explota causando &c50'
+    - '&7de daño a enemigos cercanos.'
+    - '&7También aplica &b❆ Lento I&7 a'
+    - '&7los objetivos golpeados.'
+    - '&8 | &f<#AEC6CF>⌚3s &8|'
+
+Quinerus:
+    name: 'Quinerus'
+    bonuses:
+        '4':
+            ability-1:
+                type: DOOMSLAYER
+                mode: KILL_ENTITY
+                cooldown: 2.0
+            ability-2:
+                type: TRADEOFF
+                mode: ATTACK
+                cooldown: 5.0
+    lore-tag: 
+    - '&fｦ ᴀɴɪQᴜɪʟᴀᴅᴏʀ'
+    - '&7Matar a un enemigo arranca su'
+    - '&7alma, que persiste por &c3s&7.'
+    - '&7Luego explota causando &c50'
+    - '&7de daño a enemigos cercanos.'
+    - '&7También aplica &b❆ Lento I&7 a'
+    - '&7los objetivos golpeados.'
+    - '&8 | &f<#AEC6CF>⌚3s &8|'
+    - ''
+    - '&fｧ ɪɴᴛʀᴇᴘɪᴅᴏ'
+    - '&7Entrar en combate mejora todas'
+    - '&7tus stats ofensivas un &c'
+    - '&c20%&7, pero pierdes todas las'
+    - '&7stats defensivas un &c10%&7.'
+    - '&8La mejora dura 5s.'
+
+Caeletus:
+    name: 'Caeletus'
+    bonuses:
+        '4':
+            ability-1:
+                type: DOOMSLAYER
+                mode: KILL_ENTITY
+                cooldown: 2.0
+            ability-2:
+                type: REPOSITION
+                mode: ARROW_LAND
+                cooldown: 10.0
+    lore-tag: 
+    - '&fｦ ᴀɴɪQᴜɪʟᴀᴅᴏʀ'
+    - '&7Matar a un enemigo arranca su'
+    - '&7alma, que persiste por &c3s&7.'
+    - '&7Luego explota causando &c50'
+    - '&7de daño a enemigos cercanos.'
+    - '&7También aplica &b❆ Lento I&7 a'
+    - '&7los objetivos golpeados.'
+    - '&8 | &f<#AEC6CF>⌚3s &8|'
+    - ''
+    - '&fｨ ᴛᴀᴄᴛɪᴄᴏ'
+    - '&7Al agacharse, las flechas que'
+    - '&7aterrizan en el suelo te'
+    - '&cteletransportan&7 a ese lugar.'
+    - '&8 | &f<#AEC6CF>⌚10s &8|'
+
+Mortos:
+    name: 'Mortos'
+    bonuses:
+        '4':
+            ability-1:
+                type: DOOMSLAYER
+                mode: KILL_ENTITY
+                cooldown: 2.0
+            ability-2:
+                type: WEAKEN
+                mode: SHIFT_RIGHT_CLICK
+                duration: 5.0
+                ratio: 25.0
+                cooldown: 5.0
+    lore-tag: 
+    - '&fｦ ᴀɴɪQᴜɪʟᴀᴅᴏʀ'
+    - '&7Matar a un enemigo arranca su'
+    - '&7alma, que persiste por &c3s&7.'
+    - '&7Luego explota causando &c50'
+    - '&7de daño a enemigos cercanos.'
+    - '&7También aplica &b❆ Lento I&7 a'
+    - '&7los objetivos golpeados.'
+    - '&8 | &f<#AEC6CF>⌚3s &8|'
+    - ''
+    - '&fｩ ᴍᴀʟᴇꜰɪᴄɪᴏ ꜰʀᴀɢɪʟ'
+    - '&7Shift+Click Der coloca un maleficio'
+    - '&7en un enemigo, aumentando todo'
+    - '&7el daño que recibe un &c25%'
+    - '&7durante &c5s'
+    - '&8 | &f<#AEC6CF>⌚20s &8|'
+
+Hexim:
+    name: 'Hexim'
+    bonuses:
+        '4':
+            ability-1:
+                type: DOOMSLAYER
+                mode: KILL_ENTITY
+                cooldown: 2.0
+            ability-2:
+                type: NECROMANCY
+                mode: KILL_ENTITY
+                cooldown: 5.0
+    lore-tag: 
+    - '&fｦ ᴀɴɪQᴜɪʟᴀᴅᴏʀ'
+    - '&7Matar a un enemigo arranca su'
+    - '&7alma, que persiste por &c3s&7.'
+    - '&7Luego explota causando &c50'
+    - '&7de daño a enemigos cercanos.'
+    - '&7También aplica &b❆ Lento I&7 a'
+    - '&7los objetivos golpeados.'
+    - '&8 | &f<#AEC6CF>⌚3s &8|'
+    - ''
+    - '&fｱ ɴᴇᴄʀᴏᴍᴀɴᴄɪᴀ'
+    - '&7Matar un enemigo lo levanta como'
+    - '&7un &dRenacido Hex&7, que muerde'
+    - '&7a enemigos cercanos. No pueden'
+    - '&7ser dañados y existen solo por'
+    - '&c10s&7 antes de volver al infierno.'
+    - '&7Renacidos causan &c35&7 de daño y'
+    - '&7atacan al enemigo que tú atacas.'
+    - '&8 | &f<#AEC6CF>⌚5s &8|'
+
+Mythril:
+    name: 'Mythril'
+    bonuses:
+        '4':
+            ability-1:
+                type: ADAPTIVE_FIRST
+                mode: ATTACK
+            ability-2:
+                type: ADAPTIVE_SECOND
+                mode: ATTACK
+            ability-3:
+                type: ADAPTIVE_THIRD
+                mode: ATTACK
+    lore-tag: 
+    - '&fヱ ᴀᴅᴀᴘᴛᴀʙʟᴇ'
+    - '&7Tus ataques tienen diferentes'
+    - '&7efectos según tu &c❤ Salud'
+    - '&7actual:'
+    - '&8+ &c100% &8→ &c75%❤&7 Bono &6+15%'
+    - '&7de daño.'
+    - '&8+ &c75% &8→ &c30%❤&7 &6+10% &7daño'
+    - '&7y cura un &e1%❤'
+    - '&8+ &c30% &8→ &c1%❤&7 Cura un &62%❤&7'
+    
+Orichalcum:
+    name: 'Orichalcum'
+    bonuses:
+        '4':
+            ability-1:
+                type: ORICHALCUM
+                mode: ATTACK
+                cooldown: 10.0
+    lore-tag: 
+    - '&fロ ᴇꜱᴛᴀʟʟɪᴅᴏ ᴍɪꜱᴛɪᴄᴏ'
+    - '&7Hacer daño de habilidad causa'
+    - '&7que el objetivo reciba &c50&7 daño extra.'
+    - '&8 | &f<#AEC6CF>⌚5s &8|'
+
+Titanium:
+    name: 'Titanium'
+    bonuses:
+        '4':
+            ability-1:
+                type: TITANIUM
+                mode: DAMAGED_BY_ENTITY
+                cooldown: 2.0
+    lore-tag: 
+    - '&fレ ʀᴇᴛʀɪʙᴜᴄɪᴏɴ'
+    - '&7Recibir golpes aumenta tu &f🛡'
+    - '&7un&c 20%&7 e inflige daño igual'
+    - '&7al &f5% 🛡&7 a todos los objetivos'
+    - '&7cercanos. &8(2s cooldown)'
+
+Permafrost:
+    name: 'Permafrost'
+    bonuses:
+        '4':
+            ability-1:
+                type: ICE_REAPER
+                mode: KILL_ENTITY
+                cooldown: 4.0
+    lore-tag: 
+    - '&fఽ ꜱᴇɢᴀᴅᴏʀ ᴅᴇ ʜɪᴇʟᴏ'
+    - '&7Matar un mob lo levanta como'
+    - '&7un <#d3fafb>Renacido de Hielo&7, el cual'
+    - '&7camina lento hacia monstruos'
+    - '&7cercanos, &bralentizándolos&7 e'
+    - '&7infligiendo &c20&7 daño por seg.'
+    - '&7Tras 5 segundos se rompe,'
+    - '<#d3fafb>congelando&7 a enemigos cercanos.'
+    - ''
+    - '&f临 &8¡Exclusivo Navidad 2022!'
+
+Starborn:
+    name: 'Starborn'
+    bonuses:
+        '4':
+            ability-1:
+                type: STARBORN_INITIATE
+                mode: ATTACK
+            ability-2:
+                type: STARBORN
+                mode: ATTACK
+                cooldown: 15.0
+            ability-3:
+                type: STARBORN_CONVERT
+                mode: ATTACK
+                cooldown: 3.0
+    lore-tag: 
+    - '&f఻ ᴄᴏɴᴠᴇʀꜱɪᴏɴ ᴇꜱᴛᴇʟᴀʀ'
+    - '&7Cada <#F8C8DC>15s&7, atacar otorga 1'
+    - '&7carga de <#FDFD96>Poder Estelar&7 &8(máx 3)'
+    - '&3Shift + Atacar&7 consumirá'
+    - '<#FDFD96>1 Poder Estelar&7 para convertir'
+    - '&7un monstruo en <#F8C8DC>Nacido Estelar&7.'
+
+Crimson:
+    name: 'Crimson'
+    bonuses:
+        '4':
+            ability-1:
+                type: BLOODTHIRST_INITIATE
+                mode: ATTACK
+            ability-2:
+                type: BLOODTHIRST
+                mode: ATTACK
+                cooldown: 15.0
+            ability-3:
+                type: BLOODTHIRST_ACTIVATE
+                mode: ATTACK
+                cooldown: 3.0
+    lore-tag: 
+    - '&fవ ꜱᴇᴅ ᴅᴇ ꜱᴀɴɢʀᴇ'
+    - '&7Atacar otorga 1 carga de'
+    - '<#dc143c>Sed de Sangre&7. Al llegar a 15'
+    - '&7te vuelves <#880808>Sediento &7y ganas'
+    - '&7un bono de <#800000>10%&f᎐'
+
+Death:
+    name: 'Death'
+    bonuses:
+        '4':
+            ability-1:
+                type: ESSENCE_THEFT
+                mode: KILL_ENTITY
+                cooldown: 2.0
+    lore-tag: 
+    - '&fహ ʀᴏʙᴏ ᴅᴇ ᴇꜱᴇɴᴄɪᴀ'
+    - '&7Matar a un enemigo roba su'
+    - '&7esencia, curando &c5% ❤ máx'
+    - '&7y &b10% maná. &8(2s cooldown)'
+
+Reaper:
+    name: 'Reaper'
+    bonuses:
+        '4':
+            ability-1:
+                type: ESSENCE_THEFT_UPGRADED
+                mode: KILL_ENTITY
+                cooldown: 2.0
+    lore-tag: 
+    - '&fహ ʀᴏʙᴏ ᴅᴇ ᴇꜱᴇɴᴄɪᴀ <#9F2B68>&l⟰'
+    - '&7Matar a un enemigo roba su'
+    - '&7esencia, curando'
+    - '&c10% ❤ máx &7y &b20% maná'
+    - '&8(2s cooldown)'
+    - ''
+    - '<#9F2B68>ʙᴏɴᴏ ᴇɴᴅᴇʀᴄᴏʀᴇ: &7La esencia'
+    - '&7también otorga <#9966cc>+10% ۞Daño de'
+    - '&7Habilidad &7y <#ADD8E6>+5 ☁Velocidad'
+
+Uranium:
+    name: 'Uranium'
+    bonuses:
+        '1':
+            defense: 10.0
+            weapon-damage: 5.0
+            skill-damage: 5.0
+        '2':
+            defense: 10.0
+            weapon-damage: 5.0
+            skill-damage: 5.0
+        '3':
+            defense: 10.0
+            weapon-damage: 5.0
+            skill-damage: 5.0
+        '4':
+            ability-1:
+                type: Radiation
+                mode: ATTACK
+            defense: 10.0
+            weapon-damage: 5.0
+            skill-damage: 5.0
+        '5':
+            defense: 10.0
+            weapon-damage: 5.0
+            skill-damage: 5.0
+        '6':
+            defense: 10.0
+            weapon-damage: 5.0
+            skill-damage: 5.0
+        '7':
+            defense: 10.0
+            weapon-damage: 5.0
+            skill-damage: 5.0
+    lore-tag: 
+    - '&fヸ ᴄᴏɴᴊᴜɴᴛᴏ ᴄᴏᴍʙɪɴᴀᴅᴏ'
+    - '&7Por cada <#7D8F69>Equipo de Uranio&7'
+    - '&7que equipes, gana &f+5🛡 Defensa'
+    - '&7y &c+5% Daño&7.'
+    - ''
+    - '&fヹ ʀᴀᴅɪᴀᴄɪᴏɴ'
+    - '&7Atacar enemigos les inflige'
+    - '&fヹ&7 acumulable hasta &c15'
+    - '&7&cveces&7, momento en el que'
+    - '&7ocurre un estallido de <#7D8F69>radiación'
+    - '&7infligiendo &c1000&7 de daño a'
+    - '&7enemigos cercanos.'
+
+Nurse:
+    name: 'Nurse'
+    bonuses:
+        '4':
+            ability-1:
+                type: NURTURE
+                mode: ATTACK
+                cooldown: 2.0
+    lore-tag: 
+    - '&f౏ ᴄᴜɪᴅᴀᴅᴏꜱ'
+    - '&7Atacar emite un aura mágica,'
+    - '&7curando aliados cercanos'
+    - 'por &c5❤'
+    - '&8 | &f<#AEC6CF>⌚3s &8|'
+
+Dryad:
+    name: 'Dryad'
+    bonuses:
+        '4':
+            ability-1:
+                type: NATURE_FORCE
+                mode: ATTACK
+                cooldown: 3.0
+    lore-tag: 
+    - '&f౐ ꜰᴜᴇʀᴢᴀ ɴᴀᴛᴜʀᴀʟ'
+    - '&7Atacar &2inmoviliza &7al enemigo'
+    - '&7mientras &2cura&7 aliados por'
+    - '&c2%❤'
+    - '&8 | &f<#AEC6CF>⌚3s &8|'
+
+Assassin:
+    name: 'Assassin'
+    bonuses:
+        '4':
+            ability-1:
+                type: BACKSTAB
+                mode: ATTACK
+                extra: 30.0
+    lore-tag: 
+    - '&f౑ ᴘᴜÑᴀʟᴀᴅᴀ '
+    - '&7Ataques por la espalda causan'
+    - '&c30%&7 de daño extra.'
+
+Angel:
+    name: 'Angel'
+    bonuses:
+        '4':
+            ability-1:
+                type: DIVINE_INTERVENTION
+                mode: DAMAGED
+                cooldown: 120.0
+    lore-tag: 
+    - '&f౓ ɪɴᴛᴇʀᴠᴇɴᴄɪᴏɴ ᴅɪᴠɪɴᴀ'
+    - '&7Caer bajo &c40%❤ &7te cura'
+    - '&c10%❤&7, y activa un escudo'
+    - '&7de absorción de &c20%❤&7.'
+    - '&8 | &f<#AEC6CF>⌚120s &8|'
+
+Insanity:
+    name: 'Insanity'
+    bonuses:
+        '4':
+            ability-1:
+                type: BERSERK
+                mode: ATTACK
+                cooldown: 1.0
+    lore-tag: 
+    - '&f౔ ꜰʀᴇɴᴇꜱɪ'
+    - '&7Atacar mejora tu &f᎓ &7un'
+    - '&c1% &7y &f᎐ &7un &c0.1% &8(acumulable)'
+    - '&8 | &f<#AEC6CF>⌚1s &8|'
+
+Nocturnal:
+    name: 'Nocturnal'
+    bonuses:
+        '4':
+            ability-1:
+                type: LORD_OF_THE_NIGHT
+                mode: ATTACK
+    lore-tag: 
+    - '&fౕ ꜱᴇÑᴏʀ ᴅᴇ ʟᴀ ɴᴏᴄʜᴇ'
+    - '&7Gana &9Visión Nocturna &7permanente'
+    - '&7Te &cempoderas&7 por la &9noche&7,'
+    - '&7aumentando tu daño un &c150%&7.'
+
+Blaze:
+    name: 'Blaze'
+    bonuses:
+        '4':
+            ability-1:
+                type: BLAZING
+                mode: TIMER
+                timer: 100.0
+    lore-tag: 
+    - '&fౖ ᴀʀᴅɪᴇɴᴛᴇ'
+    - '&7Emites constantemente un aura'
+    - '&7ardiente, infligiendo &c125&7 daño'
+    - '&7habilidad a enemigos cada &c3s&7.'
+
+FrostyBlaze:
+    name: 'FrostyBlaze'
+    bonuses:
+        '4':
+            ability-1:
+                type: FROSTBURN
+                mode: TIMER
+                timer: 100.0
+    lore-tag: 
+    - '&fౘ Qᴜᴇᴍᴀᴅᴜʀᴀ ɢᴇʟɪᴅᴀ'
+    - '&7Emites un aura ardiente, causando'
+    - '&c300&7 daño habilidad a enemigos'
+    - '&7cada &c3s&7, ralentizándolos y'
+    - '&7aplicando <#a5f9fa>Frágil&7, aumentando'
+    - '&7el daño que reciben un &c15%&7.'
+
+Werewolf:
+    name: 'Werewolf'
+    bonuses:
+        '4':
+            ability-1:
+                type: HOWL
+                mode: SHIFT_RIGHT_CLICK
+                cooldown: 60.0
+    lore-tag: 
+    - '&f౗ ᴀᴜʟʟɪᴅᴏ ᎚ &8+ &f᎙'
+    - '&7Aumenta tu &f᎓ + ᎍ &7y el de'
+    - '&7jugadores cercanos un &c25%'
+
+Arcane:
+    name: 'Arcane'
+    bonuses:
+        '4':
+            ability-1:
+                type: ARCANIC_ADAPT
+                mode: SHIFT_RIGHT_CLICK
+            ability-2:
+                type: ARCANIC_ADAPT_ON_HIT
+                mode: ATTACK
+                cooldown: 1.0
+            ability-3:
+                type: ARCANIC_ADAPT_ON_DAMAGED
+                mode: DAMAGED_BY_ENTITY
+                cooldown: 5.0
+    lore-tag: 
+    - '&fౙ ᴀᴅᴀᴘᴛᴀᴄɪᴏɴ ᴀʀᴄᴀɴᴀ ᎚ &8+ &f᎙'
+    - '&7Cambia entre 3 estados,'
+    - '&7cada uno con diferentes'
+    - '&7efectos:'
+    - '&7'
+    - '&7&8[<#B12E21>&lARCANO&8] &7Tu daño de habilidad'
+    - '&7se <#b5564c>empodera&7 para infligir &c200&7'
+    - '&7de daño en área.'
+    - '&7'
+    - '&7&8[<#7853A8>&lEMBRUJO&8] &7Gana Daño de'
+    - '&7&f᎕ <#7853A8>Habilidad &7acumulativo al'
+    - '&7infligir daño con habilidades.'
+    - '&7'
+    - '&7&8[<#00A36C>&lGUARDIA&8] &7Recibir daño'
+    - '<#00A36C>empuja&7 a enemigos cercanos'
+    - '&7y los <#00A36C>ralentiza&7.'
+
+Damned:
+    name: 'Damned'
+    bonuses:
+        '4':
+            ability-1:
+                type: SOUL_HARVESTER_ON_HIT
+                mode: ATTACK
+            ability-2:
+                type: SOUL_HARVESTER
+                mode: KILL_ENTITY
+    lore-tag: 
+    - '&fౚ ᴄᴏꜱᴇᴄʜᴀᴅᴏʀ ᴅᴇ ᴀʟᴍᴀꜱ '
+    - '&7Matar un enemigo cosecha su'
+    - '<#8fdaff>alma&7. Las almas residen en ti'
+    - '&7y se acumulan <#1f67ff>indefinidamente&7.'
+    - '&7'
+    - '&7Tus ataques se modifican para'
+    - '&7hacer daño extra igual al'
+    - '&7<#8fdaff>0.001% de almas&7.'
+    - '&7'
+    - '&7A las <#8fdaff>1.000 almas&7, te curas'
+    - '&c5%❤&7 por muerte.'
+    - '&7'
+    - '&7A las <#8fdaff>10.000 almas&7, te vuelves'
+    - '&f᎛ <#eca42c>invulnerable&7 por 3s tras'
+    - '&7matar un mob.'
+
+Cosmic:
+    name: 'Cosmic'
+    bonuses:
+        '4':
+            ability-1:
+                type: DARK_MATTER
+                mode: KILL_ENTITY
+    lore-tag: 
+    - '&f临 ᴍᴀᴛᴇʀɪᴀ ᴏꜱᴄᴜʀᴀ'
+    - '&7Dañar a un enemigo otorga'
+    - '&7una carga de &f临 <##9f45b0>Materia Oscura&7'
+    - '&7máx 100 cargas.'
+    - '&8Usado en Habilidades Cósmicas'
+    - '&8 | &f<#AEC6CF>⌚2s &8|'
+
+Midas:
+    name: 'Midas'
+    bonuses:
+        '4':
+            ability-1:
+                type: GREED
+                mode: ATTACK
+    lore-tag: 
+    - '&f౒ ᴄᴏᴅɪᴄɪᴀ'
+    - '&7Tu ataque inflige daño extra'
+    - '&7igual al &60.01% del Oro'
+    - '&7que tienes.'
+
+
+Lost:
+    name: 'Lost'
+    bonuses:
+        '3':
+            damage-reduction: 5.0
+            weapon-damage: 10.0
+    lore-tag: []

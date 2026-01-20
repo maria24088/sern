@@ -1,0 +1,12 @@
+sign:
+  lines:
+    '1': '&a[KitPreview]'
+    '2': '&e{kitname}'
+    '3': ''
+    '4': ''
+gui:
+  title: 'Kit Preview'
+  items:
+    balance: GOLD_NUGGET
+    commands: COMMAND_BLOCK
+version: 2.0

@@ -1,0 +1,26 @@
+wraith_dynasty_wing:
+  slot: BACKPACK
+  permission: hmccosmetics.wing
+  dyeable: true
+  item:
+    material: PAPER
+    model-data: 36623
+    name: <gradient:#FFB6C1:#87CEEB>Wraith_dynasty Wing</gradient>
+    lore:
+    - ''
+    - <gray>Wraith_dynasty Wing!
+    amount: 1
+wraith_dynasty_hat:
+  slot: HELMET
+  permission: hmccosmetics.hat
+  dyeable: true
+  item:
+    material: PAPER
+    model-data: 33914
+    name: <rainbow>Wraith_dynasty Hat</rainbow>
+    lore:
+    - ''
+    - <gray>Wraith_dynasty Hat!
+    amount: 1
+
+#Q0TwUGOiNmMQpkYJdWS5F1cFREZykUbXlGaE9UNrV1U0ZFMhR3QZtGUQZTbi5WSalTczhDO

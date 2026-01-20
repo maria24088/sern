@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.19.211.102
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1765487011961
+  login: 1765487007557
+money: '0'
+last-account-name: Jesus
+lastlocation:
+  world: 84574fde-df87-47b2-b7b6-fba349c79632
+  world-name: world
+  x: 64.5
+  y: 51.0
+  z: -47.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: f9f42665-d084-4921-862b-ce7d2039b3ff
+  world-name: spawnImportar
+  x: -315.3325834832773
+  y: 64.0
+  z: -339.8994259753193
+  yaw: 69.33180236816406
+  pitch: -12.137776374816895

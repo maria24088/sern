@@ -1,0 +1,27 @@
+info:
+  namespace: angel_weapon_set
+items:
+  angel_cape:
+    display_name: angel wings
+    permission: permission_model
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: angel_set_wings
+  angel_scepter:
+    display_name: angel shield
+    permission: permission_model
+    resource:
+      material: shield
+      generate: false
+      model_path: angel_set_shield
+  angel_helmet:
+    display_name: angel Helmet
+    permission: permission_model
+    resource:
+      material: PAPER
+      generate: false
+      model_path: angel_armor_helmet
+    behaviours:
+      hat: true
+# 2122414448588391688183765

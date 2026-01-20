@@ -1,0 +1,354 @@
+title: '<white>:offset_-12: %img_progress_menu%'
+size: 6
+fill:
+  enabled: false
+  material: black_stained_glass_pane
+  amount: 1
+  glow: false
+items:
+  rank:
+    pos: 5,3
+    material: BRICK
+    nbt:
+      CustomModelData: 40058
+    display_name: <white>{{your_ranking}}
+    lore:
+    - ' '
+    - text: '{{rank_out_of}}'
+      styles:
+        1: <white>
+        2: <gold>
+      wrap: false
+      smart_wrap: true
+      wrap_indent: ''
+    - text: '{{rank_percent}}'
+      styles:
+        1: <white>
+        2: <gold>
+      wrap: false
+      smart_wrap: true
+      wrap_indent: ''
+    - ' '
+    - <gray> %tinify_{{leaderboard_click}}%
+    amount: 1
+    glow: false
+  back:
+    pos: 0,0
+    material: BRICK
+    nbt:
+      CustomModelData: 40047
+    display_name: <white>{{back}}
+    amount: 1
+    glow: false
+  next_page:
+    pos: 3,8
+    material: BRICK
+    nbt:
+      CustomModelData: 40054
+    display_name: <white>{{next_page}}
+    amount: 1
+    glow: false
+  previous_page:
+    pos: 3,0
+    material: BRICK
+    nbt:
+      CustomModelData: 40055
+    display_name: <white>{{previous_page}}
+    amount: 1
+    glow: false
+  sources:
+    pos: 5,4
+    material: BRICK
+    nbt:
+      CustomModelData: 40057
+    display_name: <white>{{sources}}
+    lore:
+    - text: '{{sources_desc}}'
+      wrap: true
+      style: <gray>
+      smart_wrap: true
+      wrap_indent: ''
+    - ' '
+    - <gray> → %tinify_{{sources_click}}%
+    amount: 1
+    glow: false
+  abilities:
+    pos: 5,5
+    material: BRICK
+    nbt:
+      CustomModelData: 40056
+    display_name: <white>{{abilities}}
+    lore:
+    - ''
+    - text: '{{abilities_desc}} \n{{mana_abilities_desc}}'
+      wrap: true
+      wrap_style: 1
+      styles:
+        1: <gray>
+        2: <aqua>
+        3: <light_purple>
+      smart_wrap: true
+      wrap_indent: ''
+    - ' '
+    - <gray> → %tinify_{{abilities_click}}%
+    amount: 1
+    glow: false
+  deco_1:
+    pos: 2,0
+    material: BRICK
+    nbt:
+      CustomModelData: 40077
+    display_name: ''
+    amount: 1
+    glow: false
+  deco_2:
+    pos: 0,6
+    material: BRICK
+    nbt:
+      CustomModelData: 40074
+    display_name: ''
+    amount: 1
+    glow: false
+  deco_3:
+    pos: 4,4
+    material: BRICK
+    nbt:
+      CustomModelData: 40076
+    display_name: ''
+    amount: 1
+    glow: false
+  deco_4:
+    pos: 5,6
+    material: BRICK
+    nbt:
+      CustomModelData: 40075
+    display_name: ''
+    amount: 1
+    glow: false
+  deco_5:
+    pos: 1,8
+    material: BRICK
+    nbt:
+      CustomModelData: 40078
+    display_name: ''
+    amount: 1
+    glow: false
+  job:
+    view_conditions:
+    - placeholder: '%auraskills_jobs_active_{skill}%'
+      value: 'true'
+    pos: 0,8
+    material: BRICK
+    nbt:
+      CustomModelData: 40083
+    display_name: <#FFD738>{{job}}
+    lore:
+    - ''
+    - text: <gray> ▪ {{job_desc}}
+      wrap: true
+      style: <gray>
+    - ' '
+    - component: job_select
+    - component: job_active
+    - component: job_limit
+  job(1):
+    view_conditions:
+    - placeholder: '%auraskills_jobs_active_{skill}%'
+      value: 'false'
+    pos: 0,8
+    material: BRICK
+    nbt:
+      CustomModelData: 40084
+    display_name: <#FFD738>{{job}}
+    lore:
+    - ''
+    - text: <gray> ▪ {{job_desc}}
+      wrap: true
+      style: <gray>
+    - ' '
+    - component: job_select
+    - component: job_active
+    - component: job_limit
+templates:
+  unlocked:
+    material: BRICK
+    nbt:
+      CustomModelData: 40068
+    display_name: <#82CD47>{{level}} {level}
+    lore:
+    - component: rewards
+    - component: ability_unlock
+    - component: ability_level
+    - component: mana_ability_unlock
+    - component: mana_ability_level
+    - ' '
+    - <#82CD47> ▸ {{unlocked}}
+  in_progress:
+    material: BRICK
+    nbt:
+      CustomModelData: 40070
+    display_name: <#FFD738>{{level}} {level}
+    lore:
+    - component: rewards
+    - component: ability_unlock
+    - component: ability_level
+    - component: mana_ability_unlock
+    - component: mana_ability_level
+    - ' '
+    - '<gray> ▪ {{progress}}: <#FFD738>{percent}%'
+    - '  {bar}'
+    - <gray>  {current_xp}/{level_xp} {xp_unit}
+    - ' '
+    - <#FFD738> ▸ {{in_progress}}
+    amount: 1
+    glow: false
+  locked:
+    material: BRICK
+    nbt:
+      CustomModelData: 40069
+    display_name: <#cf3932>{{level}} {level}
+    lore:
+    - component: rewards
+    - component: ability_unlock
+    - component: ability_level
+    - component: mana_ability_unlock
+    - component: mana_ability_level
+    - ' '
+    - <#cf3932> ▸ {{locked}}
+    amount: 1
+    glow: false
+components:
+  stats_leveled:
+    context: Skill
+    lore:
+    - ' '
+    - '<gray>{{stats_leveled}}: {entries[<gray>, ]}'
+  ability_levels:
+    context: Skill
+    lore:
+    - ' '
+    - '<gray>{{ability_levels}}: {entries[]}'
+  mana_ability_info:
+    context: Skill
+    lore:
+    - ' '
+    - <light_purple><bold>{{mana_ability}}</bold> <blue>{name} {level}
+    - '  {entries[\n  ](3)}'
+  progress:
+    context: Skill
+    lore:
+    - '<gray>{{progress_to_level}} {next_level}: <yellow>{percent}%'
+    - '{bar}'
+    - <gray>{current_xp}/{level_xp} {xp_unit}
+  max_level:
+    context: Skill
+    lore:
+    - <gold>{{max_level}}
+  rewards:
+    context: Integer
+    lore:
+    - '<gray> ▪ {{rewards}}: {entries[]}'
+  ability_unlock:
+    context: Integer
+    lore:
+    - ' '
+    - <gray> {{ability_unlock}} \n  <white>{name}
+    - text: '{desc}'
+      wrap: true
+      wrap_indent: '  '
+      style: <gray>
+      smart_wrap: true
+  ability_level:
+    context: Integer
+    lore:
+    - ' '
+    - <gray> ▪ <white>{name} {level}
+    - text: '{desc}'
+      wrap: true
+      wrap_indent: '  '
+      style: <gray>
+      smart_wrap: true
+  mana_ability_unlock:
+    context: Integer
+    lore:
+    - ' '
+    - <gray> {{mana_ability_unlock}} \n  <blue>{name}
+    - text: '{desc}'
+      wrap: true
+      wrap_indent: '  '
+      styles:
+        0: <gray>
+        1: <yellow>
+      smart_wrap: true
+  mana_ability_level:
+    context: Integer
+    lore:
+    - ' '
+    - ' <white>▪ ᴍᴀɴᴀ ᴀʙɪʟɪᴛɪᴇѕ'
+    - <#86A7FC> + {name} {level}
+    - text: '{desc}'
+      wrap: true
+      wrap_indent: '  '
+      styles:
+        0: <gray>
+        1: <yellow>
+      smart_wrap: true
+  job_select:
+    lore:
+    - <#FFD738> → %tinify_{{job_select}}%
+  job_active:
+    lore:
+    - <gray> ▸ <#82CD47>%tinify_{{job_active}}%
+    - ' '
+    - <#cf3932> → %tinify_{{job_quit}}%
+  job_limit:
+    lore:
+    - text: <#cf3932>❗ {{job_limit}}
+      wrap: true
+      style: <#cf3932>
+      wrap_indent: ' '
+  job_cooldown:
+    lore:
+    - text: '{{job_cooldown}}'
+      wrap: true
+      style: <red>
+formats:
+  stat_leveled_entry: '{color}{stat}<gray>'
+  unlocked_ability_entry: \n  <white>{name} {level} <dark_gray>({info})
+  locked_ability_entry: \n  <dark_gray><strikethrough>{name}
+  duration_entry: '<gray>{{duration}}: <green>{duration}s '
+  mana_cost_entry: '<gray>{{mana_cost}}: <aqua>{mana_cost} '
+  cooldown_entry: '<gray>{{cooldown}}: <#86A7FC>{cooldown}s '
+  damage_entry: '<gray>{{damage}}: <red>{value} '
+  damage_per_mana_entry: '<gray>{{damage}}: <red>+{value}% / Mana '
+  max_mana_cost_entry: '<gray>{{max_mana_cost}}: <aqua>{mana_cost} '
+  attack_speed_entry: '<gray>{{attack_speed}}: <red>+{value}% '
+  stat_reward_entry: \n  {color}+{num} {symbol} {stat}
+  money_reward_entry: \n  <green>${amount}
+options:
+  use_level_as_amount: false
+  over_max_stack_amount: 1
+  items_per_page: 19
+  start_level: 1
+  use_track: true
+  track:
+  - 10
+  - 19
+  - 28
+  - 37
+  - 38
+  - 39
+  - 30
+  - 21
+  - 12
+  - 13
+  - 14
+  - 23
+  - 32
+  - 41
+  - 42
+  - 43
+  - 34
+  - 25
+  - 16
+file_version: 2

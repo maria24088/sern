@@ -1,0 +1,13 @@
+info:
+  namespace: cafe
+items:
+  coffeemachinewhite:
+    display_name: "Coffee Machine White"
+    permission: cafe.coffeemachinewhite
+    resource:
+      material: PAPER
+      generate: false
+      model_path: coffeemachinewhite
+    behaviours:
+      furniture:
+        light_level: 13

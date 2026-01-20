@@ -1,0 +1,18 @@
+flower_garden_animated_weapon_set_hat:
+  slot: HELMET
+  permission: "elitecreatures.hat"
+  dyeable: false
+  item:
+    material: itemsadder:flower_garden_animated_weapon_set_hat
+    name: "[Flower Garden] Hat"
+    amount: 1
+flower_garden_animated_weapon_set_wing:
+  slot: BACKPACK
+  permission: "elitecreatures.wing"
+  item:
+    material: itemsadder:flower_garden_animated_weapon_set_wing
+    name: "[Flower Garden] Wing"
+    amount: 1
+  firstperson-item:
+    material: itemsadder:flower_garden_animated_weapon_set_wing
+    amount: 1

@@ -1,0 +1,37 @@
+nanoedge_cosmetics_wings:
+  height: 4
+  permission: cosmetics.nanoedge_cosmetics_wings
+  dyeable: false
+  slot: BACKPACK
+  item:
+    material: POTION
+    model-data: 9923361
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+  firstperson-item:
+    material: POTION
+    model-data: 9923360
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+nanoedge_cosmetics_helmet:
+  height: 0
+  permission: cosmetics.nanoedge_cosmetics_helmet
+  dyeable: false
+  slot: HELMET
+  item:
+    material: POTION
+    model-data: 9923357
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES

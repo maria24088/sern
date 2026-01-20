@@ -1,0 +1,16 @@
+Id: cubee-x
+MythicMob: cubee-x
+Permission: mcpet.cubee-x
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §fX §7Cubee
+  Description:
+  - §fThis mysterious cubee seemed to have something hidden
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191042
+
+
+# c1d8afcb98ec728e8f78149f12543142

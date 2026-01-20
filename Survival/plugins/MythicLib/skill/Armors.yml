@@ -1,0 +1,127 @@
+BANISH:
+  mythicmobs-skill-id: Banish
+  modifiers: []
+
+EQUIPAR_CASCO:
+  mythicmobs-skill-id: EquiparCasco
+  modifiers: []
+  
+BANISH_U:
+  mythicmobs-skill-id: Banish_U
+  modifiers: []
+
+DOOMSLAYER:
+  mythicmobs-skill-id: Doomslayer
+  modifiers: []
+
+FIRELORD_U:
+  mythicmobs-skill-id: Firelord_U
+  modifiers: []
+
+ICE_REAPER:
+  mythicmobs-skill-id: Ice_Reaper
+  modifiers: []
+
+NECROMANCY:
+  mythicmobs-skill-id: Necromancy
+  modifiers: []
+
+REPOSITION:
+  mythicmobs-skill-id: Reposition
+  modifiers: []
+
+STARBORN_INITIATE:
+  mythicmobs-skill-id: Starborn_Initiate
+  modifiers: []
+STARBORN:
+  mythicmobs-skill-id: Starborn
+  modifiers: []
+STARBORN_CONVERT:
+  mythicmobs-skill-id: Starborn_Convert
+  modifiers: []
+
+BLOODTHIRST_INITIATE:
+  mythicmobs-skill-id: Bloodthirst_Initiate
+  modifiers: []
+BLOODTHIRST:
+  mythicmobs-skill-id: Bloodthirst
+  modifiers: []
+BLOODTHIRST_ACTIVATE:
+  mythicmobs-skill-id: Bloodthirst_Activate
+  modifiers: []
+
+TRADEOFF:
+  mythicmobs-skill-id: Tradeoff
+  modifiers: []
+
+WARDEN_BLESSING_UPGRADED:
+  mythicmobs-skill-id: Warden_Blessing_Upgraded
+  modifiers: []
+
+RADIATION:
+  mythicmobs-skill-id: Radiation
+  modifiers: []
+
+SOUL_HARVESTER:
+  mythicmobs-skill-id: Soul_Harvester
+  modifiers: []
+
+SOUL_HARVESTER_ON_HIT:
+  mythicmobs-skill-id: Soul_Harvester-On_Hit
+  modifiers: []
+
+ARCANIC_ADAPT:
+  mythicmobs-skill-id: Arcanic_Adapt
+  modifiers: []
+
+ARCANIC_ADAPT_ON_HIT:
+  mythicmobs-skill-id: Arcanic_Adapt-On_Hit
+  modifiers: []
+
+ARCANIC_ADAPT_ON_DAMAGED:
+  mythicmobs-skill-id: Arcanic_Adapt-On_Damaged
+  modifiers: []
+
+LORD_OF_THE_NIGHT:
+  mythicmobs-skill-id: Lord_Of_The_Night
+  modifiers: []
+
+BERSERK:
+  mythicmobs-skill-id: Berserk
+  modifiers: []
+
+NURTURE:
+  mythicmobs-skill-id: Nurture
+  modifiers: []
+
+NATURE_FORCE:
+  mythicmobs-skill-id: Nature_Force
+  modifiers: []
+
+BERSERK:
+  mythicmobs-skill-id: Berserk
+  modifiers: []
+
+GREED:
+  mythicmobs-skill-id: Greed
+  modifiers: []
+
+DIVINE_INTERVENTION:
+  mythicmobs-skill-id: Divine_Intervention
+  modifiers: []
+
+BLAZING:
+  mythicmobs-skill-id: Blazing
+  modifiers: []
+
+HOWL:
+  mythicmobs-skill-id: Howl
+  modifiers: []
+
+FROSTBURN:
+  mythicmobs-skill-id: Frostburn
+  modifiers: []
+
+DARK_MATTER:
+  mythicmobs-skill-id: Dark_Matter
+  modifiers: []

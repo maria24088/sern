@@ -1,0 +1,45 @@
+  
+info:
+  namespace: infernoset
+items:
+  inferno_cosmetics_wing:
+    display_name: Inferno Wing Cosmetics
+    permission: inferno.wing_cosmetics
+    resource:
+      generate: false
+      material: POTION
+      model_path: wings_cosmetics
+      model_id: 3400001
+  inferno_cosmetics_wing_self:
+    display_name: Inferno Wing Cosmetics Self
+    permission: inferno.wing_cosmetics_self
+    resource:
+      generate: false
+      material: POTION
+      model_path: wings_cosmetics_self
+      model_id: 3400002
+  inferno_cosmetics_head:
+    display_name: Inferno Head Cosmetics
+    permission: inferno.head_cosmetics
+    resource:
+      generate: false
+      material: POTION
+      model_path: helmet
+      model_id: 3400003
+  inferno_cosmetics_backpack:
+    display_name: Inferno Backpack Cosmetics
+    permission: inferno.backpack_cosmetics
+    resource:
+      generate: false
+      material: POTION
+      model_path: backpack_cosmetics
+      model_id: 3400004
+  inferno_cosmetics_backpack_self:
+    display_name: Inferno Wing Cosmetics Self
+    permission: inferno.backpack_cosmetics_self
+    resource:
+      generate: false
+      material: POTION
+      model_path: backpack_cosmetics_self
+      model_id: 3400005      
+

@@ -1,0 +1,35 @@
+info:
+    namespace: demon_edgeset
+categories:
+    demon_edgeset:
+        name: Demon Edge Animated Weapons Tools Set Pack
+        enabled: true
+        icon: demon_edgeset:demon_edge_wings
+        permission: ia.menu.demon_edgeset
+        items:
+        - demon_edgeset:demon_edgehelmet
+        - demon_edgeset:demon_edgechestplate
+        - demon_edgeset:demon_edgeleggings
+        - demon_edgeset:demon_edgeboots
+        - demon_edgeset:demon_edge_helmet
+        - demon_edgeset:demon_edge_axe
+        - demon_edgeset:demon_edge_pickaxe
+        - demon_edgeset:demon_edge_shovel
+        - demon_edgeset:demon_edge_hoe
+        - demon_edgeset:demon_edge_fishing_rod
+        - demon_edgeset:demon_edge_greatsword
+        - demon_edgeset:demon_edge_sword
+        - demon_edgeset:demon_edge_shield
+        - demon_edgeset:demon_edge_crossbow
+        - demon_edgeset:demon_edge_bow
+        - demon_edgeset:demon_edge_staff
+        - demon_edgeset:demon_edge_trident
+        - demon_edgeset:demon_edge_hammer
+        - demon_edgeset:demon_edge_spear
+        - demon_edgeset:demon_edge_scythe
+        - demon_edgeset:demon_edge_chest
+        - demon_edgeset:demon_edge_key
+        - demon_edgeset:demon_edge_backpack
+        - demon_edgeset:demon_edge_wings
+
+#IUc400Yv1WVP1mRppUaGVnaFhVUwkEVOVTSU5UMNRUT5NGblZ1ZCNjZHxUNkVUZ1N3byxGN

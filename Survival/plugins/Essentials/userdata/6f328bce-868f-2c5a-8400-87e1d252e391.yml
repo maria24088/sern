@@ -1,0 +1,30 @@
+npc: true
+last-account-name: MobDropShop
+money: '0'
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: ''
+afk: false
+socialspy: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1765907407794
+  login: 0
+logoutlocation:
+  world: 0c52527c-f895-4989-828f-80caa9f6e8b5
+  world-name: Spawn
+  x: 6.497157102834019
+  y: 87.0
+  z: 90.4825388155968
+  yaw: -86.7489013671875
+  pitch: -23.564584732055664

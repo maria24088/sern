@@ -1,0 +1,33 @@
+info:
+  namespace: elitecreatures
+categories:
+  flower_garden_animated_weapon_set:
+    enabled: true
+    icon: "elitecreatures:flower_garden_animated_weapon_set_dagger"
+    name: "Flower Garden Animated Weapon Set"
+    permission: "ia.menu.flower_garden_animated_weapon_set"
+    items:
+      - "elitecreatures:flower_garden_animated_weapon_set_axe"
+      - "elitecreatures:flower_garden_animated_weapon_set_bow"
+      - "elitecreatures:flower_garden_animated_weapon_set_chest"
+      - "elitecreatures:flower_garden_animated_weapon_set_crossbow"
+      - "elitecreatures:flower_garden_animated_weapon_set_dagger"
+      - "elitecreatures:flower_garden_animated_weapon_set_fishing_rod"
+      - "elitecreatures:flower_garden_animated_weapon_set_glove"
+      - "elitecreatures:flower_garden_animated_weapon_set_hammer"
+      - "elitecreatures:flower_garden_animated_weapon_set_hat"
+      - "elitecreatures:flower_garden_animated_weapon_set_hoe"
+      - "elitecreatures:flower_garden_animated_weapon_set_key"
+      - "elitecreatures:flower_garden_animated_weapon_set_pickaxe"
+      - "elitecreatures:flower_garden_animated_weapon_set_scythe"
+      - "elitecreatures:flower_garden_animated_weapon_set_shield"
+      - "elitecreatures:flower_garden_animated_weapon_set_shovel"
+      - "elitecreatures:flower_garden_animated_weapon_set_spear"
+      - "elitecreatures:flower_garden_animated_weapon_set_staff"
+      - "elitecreatures:flower_garden_animated_weapon_set_sword"
+      - "elitecreatures:flower_garden_animated_weapon_set_trident"
+      - "elitecreatures:flower_garden_animated_weapon_set_wing"
+      - "elitecreatures:flower_garden_animated_weapon_set_helmet"
+      - "elitecreatures:flower_garden_animated_weapon_set_chestplate"
+      - "elitecreatures:flower_garden_animated_weapon_set_leggings"
+      - "elitecreatures:flower_garden_animated_weapon_set_boots"

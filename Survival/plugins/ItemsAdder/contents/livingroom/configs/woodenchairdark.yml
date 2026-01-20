@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  woodenchairdark:
+    display_name: "Wooden Chair Dark"
+    permission: livingroom.woodenchairdark
+    resource:
+      material: PAPER
+      generate: false
+      model_path: woodenchairdark
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.2

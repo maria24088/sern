@@ -1,0 +1,73 @@
+armors_rendering:
+  plny_aceruin_setarmor:
+    color: '#0f9970'
+    layer_1: armor/plny_aceruin_set_armor_layer_1
+    layer_2: armor/plny_aceruin_set_armor_layer_2
+    use_color: false
+    emissive_1: armor/plny_aceruin_set_armor_layer_1_e
+    emissive_2: armor/plny_aceruin_set_armor_layer_2_e
+info:
+  namespace: plny_aceruin_set
+items:
+  plny_aceruin_sethelmet:
+    display_name: Aceruin Helmet
+    permission: plny_aceruin_set.helmet
+    resource:
+      generate: true
+      textures:
+      - armor/plny_aceruin_set_helmet_icon.png
+    specific_properties:
+      armor:
+        custom_armor: plny_aceruin_setarmor
+        slot: head
+    durability:
+      max_custom_durability: 165
+    attribute_modifiers:
+      head:
+        armor: 2
+  plny_aceruin_setchestplate:
+    display_name: Aceruin Chestplate
+    permission: plny_aceruin_set.chestplate
+    resource:
+      generate: true
+      textures:
+      - armor/plny_aceruin_set_chestplate_icon.png
+    specific_properties:
+      armor:
+        custom_armor: plny_aceruin_setarmor
+        slot: chest
+    durability:
+      max_custom_durability: 240
+    attribute_modifiers:
+      chest:
+        armor: 6
+  plny_aceruin_setleggings:
+    display_name: Aceruin Leggings
+    permission: plny_aceruin_set.leggings
+    resource:
+      generate: true
+      textures:
+      - armor/plny_aceruin_set_leggings_icon.png
+    specific_properties:
+      armor:
+        custom_armor: plny_aceruin_setarmor
+        slot: legs
+    attribute_modifiers:
+      legs:
+        armor: 5
+  plny_aceruin_setboots:
+    display_name: Aceruin Boots
+    permission: plny_aceruin_set.boots
+    resource:
+      generate: true
+      textures:
+      - armor/plny_aceruin_set_boots_icon.png
+    specific_properties:
+      armor:
+        custom_armor: plny_aceruin_setarmor
+        slot: feet
+    durability:
+      max_custom_durability: 165
+    attribute_modifiers:
+      feet:
+        armor: 2

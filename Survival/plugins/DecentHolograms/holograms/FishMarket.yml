@@ -1,0 +1,20 @@
+location: SpawnRPG:275.471:67.000:-426.532
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:COD'
+    height: 0.6
+  - content: '&#85ff52§lVenta de Peces'
+    height: 0.3
+  - content: §f¡Cambia tu pesca por dinero!
+    height: 0.3
+  - content: §r
+    height: 0.3
+  - content: §7Haz clic para Vender
+    height: 0.3
+  actions: {}

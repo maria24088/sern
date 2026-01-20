@@ -1,0 +1,45 @@
+info:
+  namespace: nanoedge_set
+items:
+  nanoedge_cosmetics_helmet:
+    display_name: §fNano Edge Helmet Cosmetics
+    permission: nanoedge_set.nanoedge_cosmetics_helmet
+    resource:
+      generate: false
+      model_path: helmet
+      material: POTION
+      model_id: 9923357
+  nanoedge_cosmetics_wings:
+    display_name: §fNano Edge Wings Cosmetics
+    permission: nanoedge_set.nanoedge_cosmetics_wings
+    resource:
+      generate: false
+      model_path: wings_cosmetic
+      material: POTION
+      model_id: 9923358
+  nanoedge_cosmetics_wings_self:
+    display_name: §fNano Edge Wings Cosmetics Self
+    permission: nanoedge_set.nanoedge_cosmetics_wings_self
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self
+      material: POTION
+      model_id: 9923359
+  nanoedge_cosmetics_wings_self_2:
+    display_name: §fNano Edge Wings Cosmetics Self 2
+    permission: nanoedge_set.nanoedge_cosmetics_wings_self_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self_2
+      material: POTION
+      model_id: 9923360
+  nanoedge_cosmetics_wings_normal_2:
+    display_name: §fNano Edge Wings Cosmetics Normal 2
+    permission: nanoedge_set.nanoedge_cosmetics_wings_normal_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_normal_2
+      material: POTION
+      model_id: 9923361
+
+#0WSHN0RrNlRid2QNl3NxF2QJFjY3FFVPBTQq5UMNRUT51kbThXUwomchBTZzBnexUTcOdFN

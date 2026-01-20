@@ -1,0 +1,142 @@
+info:
+  namespace: customcrops
+items:
+  corn_stage_1:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/corn/stage_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  corn_stage_2:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/corn/stage_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  corn_stage_3:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/corn/stage_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  corn_stage_4:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/corn/stage_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  corn_seeds:
+    display_name: "Corn Seeds"
+    #display_name: 玉米种子
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/corn/corn_seeds
+  corn:
+    display_name: "Corn"
+    #display_name: 玉米
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/corn/corn
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  corn_silver_star:
+    display_name: "Corn (Silver Star)"
+    #display_name: 玉米(银星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/corn/corn_silver_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  corn_golden_star:
+    display_name: "Corn (Golden Star)"
+    #display_name: 玉米(金星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/corn/corn_golden_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+categories:
+  customcrops_corn:
+    enabled: true
+    icon: corn
+    name: 'Corn'
+    items:
+      - customcrops:corn_seeds
+      - customcrops:corn
+      - customcrops:corn_silver_star
+      - customcrops:corn_golden_star
+      - customcrops:corn_stage_1
+      - customcrops:corn_stage_2
+      - customcrops:corn_stage_3
+      - customcrops:corn_stage_4
+      - customcrops:corn_stage_5
+      - customcrops:corn_stage_6

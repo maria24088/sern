@@ -1,0 +1,13 @@
+info:
+  namespace: schoolfurnitures
+items:
+  bookshelf:
+    display_name: "Bookshelf"
+    permission: schoolfurnitures.bookshelf
+    resource:
+      material: PAPER
+      generate: false
+      model_path: bookshelf
+    behaviours:
+      furniture:
+        light_level: 13

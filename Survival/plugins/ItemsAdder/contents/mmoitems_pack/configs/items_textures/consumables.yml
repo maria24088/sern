@@ -1,0 +1,22 @@
+# For textures only!!!
+info:
+  namespace: mmoitems_pack
+items:
+  
+  grimoire_of_the_damned:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1001
+      material: GRAY_DYE
+      textures:
+      - hyronic_pack/items/consumables/grimoire_of_the_damned
+
+  grimoire_of_the_loyal:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1002
+      material: GRAY_DYE
+      textures:
+      - hyronic_pack/items/consumables/grimoire_of_the_loyal

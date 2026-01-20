@@ -1,0 +1,1272 @@
+# ====================================================
+# TIER 1: COMMON (Blue, Spike, Silver, Green, Pink, Reddish)
+# ====================================================
+
+BLUE_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Blue Crudo'
+    custom-model-data: 10847
+    lore-format: materiales
+    tier: COMMON
+
+BLUE_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Blue'
+    custom-model-data: 10848
+    lore-format: materiales
+    tier: COMMON
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL BLUE_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL BLUE_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+BLUE_ALLOY:
+  base:
+    material: PAPER
+    name: '&fBlue Reforzado'
+    custom-model-data: 10842
+    lore-format: materiales
+    tier: COMMON
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL BLUE_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+SPIKE_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Spike Crudo'
+    custom-model-data: 10850
+    lore-format: materiales
+    tier: COMMON
+
+SPIKE_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Spike'
+    custom-model-data: 10851
+    lore-format: materiales
+    tier: COMMON
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL SPIKE_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL SPIKE_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+SPIKE_ALLOY:
+  base:
+    material: PAPER
+    name: '&fSpike Reforzado'
+    custom-model-data: 10849
+    lore-format: materiales
+    tier: COMMON
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL SPIKE_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+SILVER_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Plata Crudo'
+    custom-model-data: 10871
+    lore-format: materiales
+    tier: COMMON
+
+SILVER_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Plata'
+    custom-model-data: 10872
+    lore-format: materiales
+    tier: COMMON
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL SILVER_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL SILVER_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+SILVER_ALLOY:
+  base:
+    material: PAPER
+    name: '&fPlata Reforzada'
+    custom-model-data: 10870
+    lore-format: materiales
+    tier: COMMON
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL SILVER_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+GREEN_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral Verde Crudo'
+    custom-model-data: 10941
+    lore-format: materiales
+    tier: COMMON
+
+GREEN_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote Verde'
+    custom-model-data: 10942
+    lore-format: materiales
+    tier: COMMON
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL GREEN_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL GREEN_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+GREEN_ALLOY:
+  base:
+    material: PAPER
+    name: '&fVerde Reforzado'
+    custom-model-data: 10940
+    lore-format: materiales
+    tier: COMMON
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL GREEN_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+PINK_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral Rosa Crudo'
+    custom-model-data: 11011
+    lore-format: materiales
+    tier: COMMON
+
+PINK_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote Rosa'
+    custom-model-data: 11012
+    lore-format: materiales
+    tier: COMMON
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL PINK_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL PINK_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+PINK_ALLOY:
+  base:
+    material: PAPER
+    name: '&fRosa Reforzado'
+    custom-model-data: 11010
+    lore-format: materiales
+    tier: COMMON
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL PINK_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+REDDISH_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral Rojizo Crudo'
+    custom-model-data: 11018
+    lore-format: materiales
+    tier: COMMON
+
+REDDISH_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote Rojizo'
+    custom-model-data: 11019
+    lore-format: materiales
+    tier: COMMON
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL REDDISH_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL REDDISH_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+REDDISH_ALLOY:
+  base:
+    material: PAPER
+    name: '&fRojizo Reforzado'
+    custom-model-data: 11017
+    lore-format: materiales
+    tier: COMMON
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL REDDISH_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+# ====================================================
+# TIER 2: RARE (Magic, Purple, Bubble, Crystal, LCyan, Cyan)
+# ====================================================
+
+MAGIC_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Magic Crudo'
+    custom-model-data: 10857
+    lore-format: materiales
+    tier: RARE
+
+MAGIC_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Magic'
+    custom-model-data: 10858
+    lore-format: materiales
+    tier: RARE
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL MAGIC_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL MAGIC_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+MAGIC_ALLOY:
+  base:
+    material: PAPER
+    name: '&fMagic Reforzado'
+    custom-model-data: 10856
+    lore-format: materiales
+    tier: RARE
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL MAGIC_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+PURPLE_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Purple Crudo'
+    custom-model-data: 10864
+    lore-format: materiales
+    tier: RARE
+
+PURPLE_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Purple'
+    custom-model-data: 10865
+    lore-format: materiales
+    tier: RARE
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL PURPLE_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL PURPLE_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+PURPLE_ALLOY:
+  base:
+    material: PAPER
+    name: '&fPurple Reforzado'
+    custom-model-data: 10863
+    lore-format: materiales
+    tier: RARE
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL PURPLE_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+BUBBLE_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral Burbuja Crudo'
+    custom-model-data: 10878
+    lore-format: materiales
+    tier: RARE
+
+BUBBLE_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote Burbuja'
+    custom-model-data: 10879
+    lore-format: materiales
+    tier: RARE
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL BUBBLE_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL BUBBLE_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+BUBBLE_ALLOY:
+  base:
+    material: PAPER
+    name: '&fBurbuja Reforzado'
+    custom-model-data: 10877
+    lore-format: materiales
+    tier: RARE
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL BUBBLE_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+CRYSTAL_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Cristal Crudo'
+    custom-model-data: 10885
+    lore-format: materiales
+    tier: RARE
+
+CRYSTAL_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Cristal'
+    custom-model-data: 10886
+    lore-format: materiales
+    tier: RARE
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL CRYSTAL_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL CRYSTAL_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+CRYSTAL_ALLOY:
+  base:
+    material: PAPER
+    name: '&fCristal Reforzado'
+    custom-model-data: 10884
+    lore-format: materiales
+    tier: RARE
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL CRYSTAL_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+LCYAN_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral Cian Claro Crudo'
+    custom-model-data: 10892
+    lore-format: materiales
+    tier: RARE
+
+LCYAN_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote Cian Claro'
+    custom-model-data: 10893
+    lore-format: materiales
+    tier: RARE
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL LCYAN_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL LCYAN_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+LCYAN_ALLOY:
+  base:
+    material: PAPER
+    name: '&fCian Claro Reforzado'
+    custom-model-data: 10891
+    lore-format: materiales
+    tier: RARE
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL LCYAN_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+CYAN_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral Cian Crudo'
+    custom-model-data: 10899
+    lore-format: materiales
+    tier: RARE
+
+CYAN_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote Cian'
+    custom-model-data: 10900
+    lore-format: materiales
+    tier: RARE
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL CYAN_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL CYAN_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+CYAN_ALLOY:
+  base:
+    material: PAPER
+    name: '&fCian Reforzado'
+    custom-model-data: 10898
+    lore-format: materiales
+    tier: RARE
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL CYAN_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+# ====================================================
+# TIER 3: LEGENDARY (Obsi, Pcop, Jag, Taxis, Bcop, Lcop, Ocop, Cgold, Ciron)
+# ====================================================
+
+OBSI_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Obsidiana Crudo'
+    custom-model-data: 10906
+    lore-format: materiales
+    tier: LEGENDARY
+
+OBSI_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Obsidiana'
+    custom-model-data: 10907
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL OBSI_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL OBSI_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+OBSI_ALLOY:
+  base:
+    material: PAPER
+    name: '&fObsidiana Reforzada'
+    custom-model-data: 10905
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL OBSI_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+PCOP_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Pcop Crudo'
+    custom-model-data: 10913
+    lore-format: materiales
+    tier: LEGENDARY
+
+PCOP_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Pcop'
+    custom-model-data: 10914
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL PCOP_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL PCOP_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+PCOP_ALLOY:
+  base:
+    material: PAPER
+    name: '&fPcop Reforzado'
+    custom-model-data: 10912
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL PCOP_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+JAG_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Jag Crudo'
+    custom-model-data: 10927
+    lore-format: materiales
+    tier: LEGENDARY
+
+JAG_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Jag'
+    custom-model-data: 10928
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL JAG_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL JAG_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+JAG_ALLOY:
+  base:
+    material: PAPER
+    name: '&fJag Reforzado'
+    custom-model-data: 10926
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL JAG_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+TAXIS_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Taxis Crudo'
+    custom-model-data: 10934
+    lore-format: materiales
+    tier: LEGENDARY
+
+TAXIS_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Taxis'
+    custom-model-data: 10935
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL TAXIS_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL TAXIS_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+TAXIS_ALLOY:
+  base:
+    material: PAPER
+    name: '&fTaxis Reforzado'
+    custom-model-data: 10933
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL TAXIS_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+BCOP_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Bcop Crudo'
+    custom-model-data: 10969
+    lore-format: materiales
+    tier: LEGENDARY
+
+BCOP_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Bcop'
+    custom-model-data: 10970
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL BCOP_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL BCOP_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+BCOP_ALLOY:
+  base:
+    material: PAPER
+    name: '&fBcop Reforzado'
+    custom-model-data: 10968
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL BCOP_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+LCOP_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Lcop Crudo'
+    custom-model-data: 10983
+    lore-format: materiales
+    tier: LEGENDARY
+
+LCOP_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Lcop'
+    custom-model-data: 10984
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL LCOP_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL LCOP_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+LCOP_ALLOY:
+  base:
+    material: PAPER
+    name: '&fLcop Reforzado'
+    custom-model-data: 10982
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL LCOP_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+OCOP_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Ocop Crudo'
+    custom-model-data: 10990
+    lore-format: materiales
+    tier: LEGENDARY
+
+OCOP_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Ocop'
+    custom-model-data: 10991
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL OCOP_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL OCOP_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+OCOP_ALLOY:
+  base:
+    material: PAPER
+    name: '&fOcop Reforzado'
+    custom-model-data: 10989
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL OCOP_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+CGOLD_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Cgold Crudo'
+    custom-model-data: 11025
+    lore-format: materiales
+    tier: LEGENDARY
+
+CGOLD_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Cgold'
+    custom-model-data: 11026
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL CGOLD_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL CGOLD_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+CGOLD_ALLOY:
+  base:
+    material: PAPER
+    name: '&fCgold Reforzado'
+    custom-model-data: 11024
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL CGOLD_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+CIRON_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Ciron Crudo'
+    custom-model-data: 11032
+    lore-format: materiales
+    tier: LEGENDARY
+
+CIRON_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Ciron'
+    custom-model-data: 11033
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL CIRON_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL CIRON_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+CIRON_ALLOY:
+  base:
+    material: PAPER
+    name: '&fCiron Reforzado'
+    custom-model-data: 11031
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL CIRON_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+# ====================================================
+# TIER 4: MYTHIC (Dragon, Tech, Infect, Matrix, Nebula, Heart, Dgold)
+# ====================================================
+
+DRAGON_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral Dragón Crudo'
+    custom-model-data: 10920
+    lore-format: materiales
+    tier: MYTHIC
+
+DRAGON_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote Dragón'
+    custom-model-data: 10921
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL DRAGON_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL DRAGON_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+DRAGON_ALLOY:
+  base:
+    material: PAPER
+    name: '&fDragón Reforzado'
+    custom-model-data: 10919
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL DRAGON_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+TECH_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral Tech Crudo'
+    custom-model-data: 10948
+    lore-format: materiales
+    tier: MYTHIC
+
+TECH_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote Tech'
+    custom-model-data: 10949
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL TECH_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL TECH_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+TECH_ALLOY:
+  base:
+    material: PAPER
+    name: '&fTech Reforzado'
+    custom-model-data: 10947
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL TECH_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+INFECT_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral Infectado Crudo'
+    custom-model-data: 10955
+    lore-format: materiales
+    tier: MYTHIC
+
+INFECT_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote Infectado'
+    custom-model-data: 10956
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL INFECT_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL INFECT_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+INFECT_ALLOY:
+  base:
+    material: PAPER
+    name: '&fInfectado Reforzado'
+    custom-model-data: 10954
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL INFECT_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+MATRIX_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral Matrix Crudo'
+    custom-model-data: 10962
+    lore-format: materiales
+    tier: MYTHIC
+
+MATRIX_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote Matrix'
+    custom-model-data: 10963
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL MATRIX_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL MATRIX_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+MATRIX_ALLOY:
+  base:
+    material: PAPER
+    name: '&fMatrix Reforzado'
+    custom-model-data: 10961
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL MATRIX_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+NEBULA_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral Nébula Crudo'
+    custom-model-data: 10976
+    lore-format: materiales
+    tier: MYTHIC
+
+NEBULA_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote Nébula'
+    custom-model-data: 10977
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL NEBULA_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL NEBULA_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+NEBULA_ALLOY:
+  base:
+    material: PAPER
+    name: '&fNébula Reforzado'
+    custom-model-data: 10975
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL NEBULA_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+HEART_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral Corazón Crudo'
+    custom-model-data: 10997
+    lore-format: materiales
+    tier: MYTHIC
+
+HEART_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote Corazón'
+    custom-model-data: 10998
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL HEART_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL HEART_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+HEART_ALLOY:
+  base:
+    material: PAPER
+    name: '&fCorazón Reforzado'
+    custom-model-data: 10996
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL HEART_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+DGOLD_RAW:
+  base:
+    material: PAPER
+    name: '&fMineral de Dgold Crudo'
+    custom-model-data: 11004
+    lore-format: materiales
+    tier: MYTHIC
+
+DGOLD_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Dgold'
+    custom-model-data: 11005
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      furnace:
+        '1':
+          item: m MINERAL DGOLD_RAW 1..
+          exp: 1.0
+          time: 1000.0
+      blast:
+        '1':
+          item: m MINERAL DGOLD_RAW 1..
+          exp: 1.0
+          time: 700.0
+
+DGOLD_ALLOY:
+  base:
+    material: PAPER
+    name: '&fDgold Reforzado'
+    custom-model-data: 11003
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL DGOLD_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+# ====================================================
+# EXTRAS (Nether, Aurellium, GNether)
+# ====================================================
+
+NETHER_ALLOY:
+  base:
+    material: PAPER
+    name: '&fNether Reforzado'
+    custom-model-data: 11038
+    lore-format: materiales
+    tier: LEGENDARY
+
+NETHER_DRAGON_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote Nether Dragón'
+    custom-model-data: 11039
+    lore-format: materiales
+    tier: MYTHIC
+
+NETHER_DRAGON_ALLOY:
+  base:
+    material: PAPER
+    name: '&fNether Dragón Reforzado'
+    custom-model-data: 11040
+    lore-format: materiales
+    tier: MYTHIC
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL NETHER_DRAGON_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+AURELLIUM_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote de Aurellium'
+    custom-model-data: 11041
+    lore-format: materiales
+    tier: LEGENDARY
+
+AURELLIUM_ALLOY:
+  base:
+    material: PAPER
+    name: '&fAurellium Reforzado'
+    custom-model-data: 11042
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL AURELLIUM_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+
+GNETHER_INGOT:
+  base:
+    material: PAPER
+    name: '&fLingote GNether'
+    custom-model-data: 11043
+    lore-format: materiales
+    tier: LEGENDARY
+
+GNETHER_ALLOY:
+  base:
+    material: PAPER
+    name: '&fGNether Reforzado'
+    custom-model-data: 11044
+    lore-format: materiales
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|m MINERAL GNETHER_INGOT 1.0..|v netherite_ingot - 1.0..
+          - v netherite_ingot - 1.0..|v netherite_ingot - 1.0..|v netherite_ingot - 1.0..

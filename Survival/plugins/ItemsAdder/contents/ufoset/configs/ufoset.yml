@@ -1,0 +1,169 @@
+info:
+  namespace: ufoset
+items:
+  ufo_axe:
+    display_name: UFO Axe
+    permission: ufo.axe
+    resource:
+      generate: false
+      material: IRON_AXE
+      model_path: axe
+  ufo_bow:
+    display_name: UFO Bow
+    permission: ufo.bow
+    resource:
+      generate: false
+      material: BOW
+      model_path: bow
+  ufo_chest:
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+    display_name: UFO Chest
+    permission: ufo.chest
+    resource:
+      generate: false
+      material: SEA_LANTERN
+      model_path: chest
+
+  ufo_crossbow:
+    display_name: UFO Crossbow
+    permission: ufo.crossbow
+    resource:
+      generate: false
+      material: CROSSBOW
+      model_path: crossbow
+  ufo_fishing_rod:
+    display_name: UFO Fishing Rod
+    permission: ufo.fishing_rod
+    resource:
+      generate: false
+      material: FISHING_ROD
+      model_path: fishing_rod
+  ufo_greatsword:
+    display_name: UFO Greatsword
+    permission: ufo.greatsword
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: greatsword
+  ufo_hammer:
+    display_name: UFO Hammer
+    permission: ufo.hammer
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: hammer
+  ufo_hoe:
+    display_name: UFO Hoe
+    permission: ufo.hoe
+    resource:
+      generate: false
+      material: IRON_HOE
+      model_path: hoe
+  ufo_key:
+    display_name: UFO Key
+    permission: ufo.key
+    resource:
+      generate: false
+      material: PAPER
+      model_path: key
+  ufo_pickaxe:
+    display_name: UFO Pickaxe
+    permission: ufo.pickaxe
+    resource:
+      generate: false
+      material: IRON_PICKAXE
+      model_path: pickaxe
+  ufo_scythe:
+    display_name: UFO Scythe
+    permission: ufo.scythe
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: scythe
+  ufo_shield:
+    display_name: UFO Shield
+    permission: ufo.shield
+    resource:
+      generate: false
+      material: SHIELD
+      model_path: shield
+  ufo_shovel:
+    display_name: UFO Shovel
+    permission: ufo.shovel
+    resource:
+      generate: false
+      material: IRON_SHOVEL
+      model_path: shovel
+  ufo_spear:
+    display_name: UFO Spear
+    permission: ufo.spear
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: spear
+  ufo_staff:
+    display_name: UFO Staff
+    permission: ufo.staff
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: staff
+  ufo_sword:
+    display_name: UFO Sword
+    permission: ufo.sword
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: sword
+  ufo_trident:
+    display_name: UFO Trident
+    permission: ufo.trident
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: trident
+  ufo_backpack:
+    display_name: UFO Backpack
+    permission: ufo.backpack
+    resource:
+      generate: false
+      material: PAPER
+      model_path: backpack
+
+  ufo_head:
+    behaviours:
+      hat: true
+    display_name: UFO Helmet
+    permission: ufo.head
+    resource:
+      generate: false
+      material: PAPER
+      model_path: helmet
+  ufo_backpack1:
+    display_name: UFO Backpack 1
+    permission: ufo.backpack1
+    resource:
+      generate: false
+      material: PAPER
+      model_path: backpack
+  ufo_backpack2:
+    display_name: UFO Backpack 2
+    permission: ufo.backpack2
+    resource:
+      generate: false
+      material: PAPER
+      model_path: ufo_cosmetics

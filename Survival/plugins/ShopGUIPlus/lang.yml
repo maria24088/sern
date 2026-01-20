@@ -1,0 +1,168 @@
+PREFIX: '&aTienda > &f'
+LANG:
+  CONSOLE: Consola
+MSG:
+  AND: ' y '
+  ERROR: Ha ocurrido un error, por favor contacta al dueño del servidor.
+  INGAMEONLY: Este comando solo puede ser usado dentro del juego.
+  NOACCESS: No tienes acceso para hacer esto.
+  NOTLOADED: Las tiendas no se han cargado aún, por favor intenta de nuevo más tarde.
+  RELOADED: ¡Configuración recargada!
+  USAGE:
+    SUBCOMMAND: 'Uso de comando inválido. Uso correcto: %usage%'
+  CMD:
+    SHOP:
+      ADDMODIFIER:
+        ITEM:
+          USAGE: /shop addmodifier item <jugador> <tienda> <objeto> <valor> [buy|sell]
+          ADDED: Estableciste el modificador de precio de %type% de &c%player%&f para
+            el objeto %item% en la tienda %shop% a &c%modifier%&f.
+          ADDEDBY: Tu modificador de precio de %type% para el objeto %item% en la
+            tienda %shop% fue establecido a &c%modifier%&f por &c%player%&f.
+        SHOP:
+          USAGE: /shop addmodifier shop <jugador> <tienda> <valor> [buy|sell]
+          ADDED: Estableciste el modificador de precio de %type% de &c%player%&f para
+            todos los objetos en la tienda %shop% a &c%modifier%&f.
+          ADDEDBY: Tu modificador de precio de %type% para todos los objetos en la
+            tienda %shop% fue establecido a &c%modifier%&f por &c%player%&f.
+        GLOBAL:
+          USAGE: /shop addmodifier global <jugador> <valor> [buy|sell]
+          ADDED: Estableciste el modificador de precio global de %type% de &c%player%&f
+            a &c%modifier%&f.
+          ADDEDBY: Tu modificador de precio global de %type% fue establecido a &c%modifier%&f
+            por &c%player%&f.
+      CHECK:
+        ITEM: El tipo de este objeto es &c%material%&f con daño &c%damage%&f.
+        NOITEM: Tienes que sostener un objeto en tu mano para verificar su tipo.
+      CHECKMODIFIERS:
+        VIEW:
+          VIEW: |-
+            Modificadores de comando de &c%player%&f:
+            Modificadores globales:
+            %global%
+            Modificadores de tienda:
+            %shop%
+            Modificadores de objeto:
+            %item%
+          VIEWPERMISSIONMODIFIERS: |-
+            Modificadores de permiso de &c%player%&f:
+            Modificadores globales:
+            %global%Modificadores de tienda:
+            %shop%
+            Modificadores de objeto:
+            %item%
+          ENTRY:
+            ITEM: 'Objeto: &c%item%&f, tienda: &c%shop%&f, compra: &c%buy%&f, venta:
+              &c%sell%&f'
+            SHOP: 'Tienda: &c%shop%&f, compra: &c%buy%&f, venta: &c%sell%&f'
+            GLOBAL: 'Compra: &c%buy%&f, Venta: &c%sell%&f'
+      RESETMODIFIER:
+        ITEM:
+          USAGE: /shop resetmodifier item <jugador> <tienda> <objeto> [buy|sell]
+          RESET: Restableciste el modificador de precio de %type% de &c%player%&f
+            para el objeto %item% en la tienda %shop%.
+          RESETBY: Tu modificador de precio de %type% para el objeto %item% en la
+            tienda %shop% fue restablecido por &c%player%&f.
+        SHOP:
+          USAGE: /shop resetmodifier shop <jugador> <tienda> [buy|sell]
+          RESET: Restableciste el modificador de precio de %type% de &c%player%&f
+            para todos los objetos en la tienda %shop%.
+          RESETBY: Tu modificador de precio de %type% para todos los objetos en la
+            tienda %shop% fue restablecido por &c%player%&f.
+        GLOBAL:
+          USAGE: /shop resetmodifier global <jugador> [buy|sell]
+          RESET: Restableciste el modificador de precio de %type% de &c%player%&f.
+          RESETBY: Tu modificador de precio de %type% fue restablecido por &c%player%&f.
+  MODIFIER:
+    INVALIDAMOUNT: Valor de modificador inválido. Valores válidos son por ejemplo
+      0.50 que es 50%, 2.0 que es 200%, etc.
+    INVALIDTYPE: Tipo de modificador inválido. Valores válidos son buy, sell y both.
+    BUY: compra
+    SELL: venta
+    BOTH: compra y venta
+  INVALIDPLAYER: Nombre de jugador inválido.
+  INVALIDSHOP: Tienda con ID &c%shop%&f no encontrada.
+  INVALIDPAGE: Tienda &c%shop%&f con página &c%page%&f no encontrada.
+  INVALIDITEM: Objeto con ID &c%item%&f no encontrado en &c%shop%&f.
+  NOACCESSTOSHOP: No tienes acceso a la tienda &c%shop%&f.
+  NODIRECTACCESSTOSHOP: No puedes acceder directamente a la tienda &c%shop%&f.
+  MAINMENUDISABLED: No puedes usar este comando. Por favor usa /shop <id> en su lugar.
+  WORLDBLACKLISTED: No puedes acceder a %shop% en este mundo.
+  WORLDBANNED: No puedes acceder a la tienda en este mundo.
+  WORLDBANNEDTARGET: '%player% no puede acceder a la tienda en ese mundo.'
+  GAMEMODEBANNED: No puedes acceder a la tienda estando en modo de juego %gamemode%.
+  GAMEMODEBANNEDTARGET: '%player% no puede acceder a la tienda estando en modo de
+    juego %gamemode%.'
+  ITEM:
+    FULLINVENTORY: No tienes suficiente espacio libre en tu inventario.
+    CANNOTAFFORD: Necesitas &c%price%&f para comprar &c%amount% x %item%&f.
+    CANNOTBUY: No puedes comprar este objeto.
+    CANNOTSELL: No puedes vender este objeto.
+    BOUGHT: Compraste &c%amount% por &c%price%&f.
+    BOUGHTFREE: Recibiste &c%amount% x %item%&f.
+    NOTENOUGH: No tienes &c%amount% x %item%&f para vender.
+    SOLD: Vendiste &a%amount% x %item%&f por &a%price%&f.
+    SOLDFREE: Regalaste &a%amount% x %item%&f.
+    SOLDALL: Vendiste todo &a%item%&f (&a%amount% x %item%&f) por &a%price%&f.
+    SOLDALLFREE: Regalaste todo &a%item%&f (&a%amount% x %item%&f).
+    NOACCESS: No tienes acceso a este objeto.
+  ENCHANT:
+    CANNOTAPPLY: El encantamiento &c%enchantment%&f no puede ser aplicado al objeto
+      que estás sosteniendo.
+    ALREADYAPPLIED: Este objeto ya tiene aplicado &c%enchantment%&f.
+    LEVELDIFF: Necesitas un objeto con al menos &c%enchantment% %level%&f aplicado.
+    CANNOTAFFORD: Necesitas &c%price%&f para comprar el encantamiento &c%enchantment%&f.
+    MAX: Este objeto ya tiene la cantidad máxima de encantamientos (%amount%).
+    TOOMANY: No puedes encantar más de %amount% objetos a la vez.
+    BOUGHT: Compraste el encantamiento &c%enchantment%&f por &c%price%&f.
+    BOUGHTFREE: Recibiste &c%enchantment%&f.
+  PERMISSION:
+    PERMISSIONSDISABLED: Los permisos están deshabilitados, por favor contacta al
+      dueño del servidor.
+    ALREADYHAVE: Ya tienes el permiso &c%permission%&f.
+    CANNOTAFFORD: Necesitas &c%price%&f para comprar el permiso &c%permission%&f.
+    BOUGHT: Compraste el permiso &c%permission%&f por &c%price%&f.
+    BOUGHTFREE: Recibiste el permiso &c%permission%&f.
+  COMMAND:
+    BOUGHT: Compraste el comando &c%command%&f por &c%price%&f.
+    BOUGHTFREE: Recibiste &c%command%&f.
+    CANNOTAFFORD: Necesitas &c%price%&f para comprar el comando &c%command%&f.
+  SELLHAND:
+    NOITEM: Tienes que sostener un objeto en tu mano para venderlo.
+    INVALIDQUANTITY: Cantidad inválida. Debe ser entre 1 y %max%.
+    CANNOTSELL: No puedes vender este objeto.
+    MULTIPLEQUANTITYONLY: No puedes vender esa cantidad. Solo se permiten múltiplos
+      de %quantity% para este objeto.
+  SELLHANDALL:
+    SOLD: Vendiste &a%quantity% x %item%&f por un total de &a%price%&f.
+  SELLALL:
+    NOITEMS: No tienes ningún objeto que puedas vender.
+    SOLD: Vendiste &a%quantity% objetos&f por un total de &a%price%&f.
+    INVALIDSHOP: Tienda especificada inválida.
+  NUMBERFORMAT:
+    SHORTSCALE:
+      THOUSAND: ' Mil'
+      MILLION: ' Millones'
+      BILLION: ' Billones'
+      TRILLION: ' Trillones'
+      QUADRILLION: ' Cuatrillones'
+      QUINTILLION: ' Quintillones'
+      SEXTILLION: ' Sextillones'
+      SEPTILLION: ' Septillones'
+      OCTILLION: ' Octillones'
+      NONILLION: ' Nonillones'
+      DECILLION: ' Decillones'
+DIALOG:
+  AMOUNTSELECTION:
+    BUY:
+      NAME: '&2Comprando'
+    SELL:
+      NAME: '&cVendiendo'
+    BULKBUY:
+      NAME: '&cComprando stacks'
+    BULKSELL:
+      NAME: '&cVendiendo stacks'
+SHOP:
+  PERMISSION:
+    ALREADYOWNED: '&4(Ya adquirido)'
+    NOTOWNED: '&a(No adquirido)'

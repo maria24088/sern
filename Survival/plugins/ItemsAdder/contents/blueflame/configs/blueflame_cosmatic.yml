@@ -1,0 +1,38 @@
+info:
+  namespace: blueflame
+items:
+  blueflame_cosmetics_wings:
+    display_name: Blueflame Wings Cosmetics
+    permission: blueflame.blueflame_cosmetics_wings
+    resource:
+      generate: false
+      model_path: wings_cosmetic
+      material: POTION
+      model_id: 9924667
+  blueflame_cosmetics_wings_self:
+    display_name: Blueflame Wings Cosmetics Self
+    permission: blueflame.blueflame_cosmetics_wings_self
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self
+      material: POTION
+      model_id: 9924668
+  blueflame_cosmetics_wings_self_2:
+    display_name: Blueflame Wings Cosmetics Self 2
+    permission: blueflame.blueflame_cosmetics_wings_self_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self_2
+      material: POTION
+      model_id: 9924669
+  blueflame_cosmetics_wings_normal_2:
+    display_name: Blueflame Wings Cosmetics Normal 2
+    permission: blueflame.blueflame_cosmetics_wings_normal_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_normal_2
+      material: POTION
+      model_id: 9924670
+
+#6d6a89f17823566d406a05035b07c188
+#IUYXV1cC5EaYpldnxWak1WVw02VykERNBTUE5UNjRlTwQjMVhnQ1AXUqZjTUt0QVFmVjxUO

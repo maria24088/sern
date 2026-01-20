@@ -1,0 +1,36 @@
+info:
+  namespace: infernoset
+categories:
+  infernoset:
+    enabled: true
+    skip_if_already: false
+    icon: "infernoset:inferno_sword"
+    name: Inferno Weapons & Tools Set
+    permission: infernoset.menu
+    items:
+      - "infernoset:inferno_sword"
+      - "infernoset:inferno_knife"
+      - "infernoset:inferno_spear"
+      - "infernoset:inferno_trident"
+      - "infernoset:inferno_hammer"
+      - "infernoset:inferno_scythe"
+      - "infernoset:inferno_staff"
+      - "infernoset:inferno_bow"
+      - "infernoset:inferno_crossbow"
+      - "infernoset:inferno_axe"
+      - "infernoset:inferno_hoe"
+      - "infernoset:inferno_pickaxe"
+      - "infernoset:inferno_shovel"
+      - "infernoset:inferno_fishing_rod"
+      - "infernoset:inferno_shield"
+      - "infernoset:inferno_chest"
+      - "infernoset:inferno_chest_opening"
+      - "infernoset:inferno_key"
+      - "infernoset:infernochestplate"
+      - "infernoset:infernoleggings"
+      - "infernoset:infernoboots"
+      - "infernoset:infernohelmet"
+      - "infernoset:inferno_head"
+      - "infernoset:inferno_wings"
+      - "infernoset:inferno_backpack"
+    

@@ -1,0 +1,84 @@
+# Made by samus2002
+
+menu_title: '&8&lWandering Merchant Shop'
+open_command:
+  - shop_wandering_merchant
+size: 45
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: shop_wandering_merchant.open
+      deny_commands:
+        - "[message] &cYou can't access the Wandering Merchant Shop yet!"
+items:
+  'IRON_HORSE_ARMOR':
+    material: IRON_HORSE_ARMOR
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lIron Horse Armor'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to buy!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$50"
+      - ""
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lRight-click&7 to sell for &a$25!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a1x Iron Horse Armor"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_WANDERING_BUY_1";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    right_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_WANDERING_SELL_1";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+  'ENDER_EYE':
+    material: ENDER_EYE
+    slot: 11
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lEye of Ender'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to buy!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$70"
+      - ""
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lRight-click&7 to sell for &a$35!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a1x Eye of Ender"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_WANDERING_BUY_2";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    right_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_WANDERING_SELL_2";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+
+  'PLAYER':
+    material: ENDER_PEARL
+    slot: 4
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lBalance'
+    lore:
+      - "&a$%vault_eco_balance%"
+#24f35df792b6ddcf3baf6e41e84f2dde

@@ -1,0 +1,125 @@
+menu_title: '&fṭṞ'
+open_command: builder
+size: 54
+items:
+  'left':
+    material: PAPER
+    model_data: 7822
+    slot: 36
+    display_name: "&e&lᴀɴᴛᴇʀɪᴏʀ"
+    click_commands:
+       - '[openguimenu] blacksmith'
+  'alchemist':
+    material: PAPER
+    model_data: 7812
+    slot: 37
+    display_name: "&fṯ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] alchemist'
+  'assassin':
+    material: PAPER
+    model_data: 7813
+    slot: 38
+    display_name: "&fṰ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] assassin'
+  'blacksmith':
+    material: PAPER
+    model_data: 7814
+    slot: 39
+    display_name: "&fṱ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] blacksmith'
+  'jobjoin':
+    material: PAPER
+    model_data: 7815
+    slot: 40
+    priority: 1
+    display_name: "&f Ṳ"
+    lore:
+       - " "
+       - " &8• &#249fdeGana dinero"
+       - "  &#249fdeconstruyendo estructuras"
+       - " "
+       - " &8• &7Trabajadores&8: &f%jobsr_totalplayers_builder%"
+       - " &8• &7Nivel&8: &f%jobsr_user_jlevel_builder%/%jobsr_maxlvl_builder%"
+       - " &8• &7EXP&8: &f%jobsr_user_jexp_builder%/%jobsr_user_jmaxexp_builder% &8(&#59c135+%jobsr_user_jmexp_builder%&fṩ&8)"
+       - " "
+       - " &8• &7Progreso&8: &f"
+       - "%progress_bar_{jobsr_user_jexp_builder}_c:&fṪ_p:&fṪ_r:&fṨ_l:10_m:{jobsr_user_jmaxexp_builder}_fullbar:&fṨṨṨṨṨṨṨṨṨṨ%"
+       - " "
+       - " &fṫ &eᴘᴀʀᴀ ᴜɴɪʀᴛᴇ ᴀʟ ᴛʀᴀʙᴀᴊᴏ"
+       - " "
+    left_click_commands:
+       - '[player] jobs join builder'
+       - '[refresh]'
+  'jobleave':
+    material: PAPER
+    model_data: 7815
+    slot: 40
+    priority: 0
+    display_name: "&f Ṳ"
+    lore:
+       - " "
+       - " &8• &#249fdeGana dinero"
+       - "  &#249fdeconstruyendo estructuras"
+       - " "
+       - " &8• &7Rango&8: &f%jobsr_user_title_builder%"
+       - " &8• &7Trabajadores&8: &f%jobsr_totalplayers_builder%"
+       - " &8• &7Nivel&8: &f%jobsr_user_jlevel_builder%/%jobsr_maxlvl_builder%"
+       - " &8• &7EXP&8: &f%jobsr_user_jexp_builder%/%jobsr_user_jmaxexp_builder% &8(&#59c135+%jobsr_user_jmexp_builder%&fṩ&8)"
+       - " "
+       - " &8• &7Progreso&8: &f"
+       - "%progress_bar_{jobsr_user_jexp_builder}_c:&fṪ_p:&fṪ_r:&fṨ_l:10_m:{jobsr_user_jmaxexp_builder}_fullbar:&fṨṨṨṨṨṨṨṨṨṨ%"
+       - " "
+       - " &fṬ &eᴘᴀʀᴀ ᴅᴇᴊᴀʀ ᴇʟ ᴛʀᴀʙᴀᴊᴏ"
+       - " "
+    view_requirement:
+      requirements:
+        jobs_requirement:
+          type: string contains
+          input: "%jobsr_user_isin_builder%"
+          output: 'True'
+    right_click_commands:
+       - '[player] jobs leave builder'
+       - '[refresh]'
+  'crafter':
+    material: PAPER
+    model_data: 7816
+    slot: 41
+    display_name: "&fṳ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] crafter'
+  'digger':
+    material: PAPER
+    model_data: 7817
+    slot: 42
+    display_name: "&fṴ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] digger'
+  'enchanter':
+    material: PAPER
+    model_data: 7818
+    slot: 43
+    display_name: "&fṵ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] enchanter'
+  'right':
+    material: PAPER
+    model_data: 7825
+    slot: 44
+    display_name: "&e&lsɪɢᴜɪᴇɴᴛᴇ"
+    click_commands:
+       - '[openguimenu] crafter'

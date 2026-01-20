@@ -1,0 +1,41 @@
+menu_title: '&8Tienda de Pesca'
+open_command:
+- tiendapesca
+size: 9
+items:
+  'cana_item':
+    material: FISHING_ROD
+    slot: 4
+    priority: 1
+    display_name: '&b&lCaña Profesional'
+    lore:
+    - '&7Caña especial para usar cebos.'
+    - ''
+    - '&fPrecio: &a$20,000'
+    - ''
+    - '&a✔ &fClick para comprar'
+    left_click_commands:
+    - '[console] if giverod %player_name% vanilla'
+    - '[message] &a¡Has comprado la caña profesional!'
+    - '[takemoney] 20000'
+    - '[close]'
+    left_click_requirement:
+      requirements:
+        dinero_check:
+          type: has money
+          amount: 20000
+      deny_commands:
+      - '[message] &cNo tienes suficiente dinero ($20,000)'
+      - '[sound] BLOCK_NOTE_BLOCK_BASS'
+  'cristal_adorno':
+    material: black_STAINED_GLASS_PANE
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 5
+    - 6
+    - 7
+    - 8
+    display_name: '&f '

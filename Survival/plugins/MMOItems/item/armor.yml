@@ -1,0 +1,2737 @@
+# RARE SETS
+
+NURSE_HELMET:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmJlNDRiNDQ5NTA0ZDdmNWM5ZmI0MzUxY2Y5MTk4NzIyOTE5M2FjOWRlMTA1MmRmNzg3ZmVlMzNiMzI4MjI3NiJ9fX0=
+      uuid: 49c9f9e4-55ee-4304-b133-2ffa77612fb3
+    weapon-damage: 5.0
+    skill-damage: 5.0
+    max-health: 10.0
+    defense: 15.0
+    set: Nurse
+    tooltip-style: rare
+    name: <#AEC6CF>Casco de Enfermera
+    max-durability: 2000
+NURSE_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    weapon-damage: 15.0
+    skill-damage: 15.0
+    max-health: 15.0
+    defense: 25.0
+    set: Nurse
+    tooltip-style: rare
+    name: <#AEC6CF>Pechera de Enfermera
+    dye-color: 133 99 97
+    hide-dye: true
+    max-durability: 2000
+NURSE_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    weapon-damage: 12.5
+    skill-damage: 12.5
+    max-health: 15.0
+    defense: 20.0
+    set: Nurse
+    tooltip-style: rare
+    name: <#AEC6CF>Pantalones de Enfermera
+    dye-color: 133 99 97
+    hide-dye: true
+    max-durability: 2000
+NURSE_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    movement-speed: 0.01
+    weapon-damage: 15.0
+    skill-damage: 15.0
+    max-health: 15.0
+    defense: 25.0
+    set: Nurse
+    tooltip-style: rare
+    name: <#AEC6CF>Botas de Enfermera
+    dye-color: 133 99 97
+    hide-dye: true
+    max-durability: 2000
+# EPIC SETS
+
+HELLFIRE_HELMET:
+  base:
+    material: LEATHER_HELMET
+    name: <#FFC0CB>Casco de Fuego Infernal
+    tooltip-style: epic
+    critical-strike-chance: 7.5
+    critical-strike-power: 15.0
+    custom-model-data: 10005
+    set: Hellfire
+    dye-color: 246 203 55
+    hide-dye: true
+    sounds:
+      on-craft:
+        sound: BLOCK_SMITHING_TABLE_USE
+        volume: 1.0
+        pitch: 1.0
+    crafting:
+      smithing:
+        '1':
+          input: m armor netherite_helmet 1.0..|m material IGNETTO_ALLOY 1.0..
+          amount: 1
+    defense: 25.0
+    max-health: 20.0
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+HELLFIRE_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#FFC0CB>Pechera de Fuego Infernal
+    custom-model-data: 10006
+    tooltip-style: epic
+    critical-strike-chance: 12.5
+    critical-strike-power: 35.0
+    set: Hellfire
+    weapon-damage: 5.0
+    max-health: 20.0
+    defense: 55.0
+    hide-dye: true
+    dye-color: 246 203 55
+    crafting:
+      smithing:
+        '1':
+          input: m armor netherite_chestplate 1.0..|m material IGNETTO_ALLOY 1.0..
+          amount: 1
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+HELLFIRE_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#FFC0CB>Pantalones de Fuego Infernal
+    custom-model-data: 10006
+    tooltip-style: epic
+    critical-strike-chance: 7.5
+    critical-strike-power: 20.0
+    set: Hellfire
+    defense: 40.0
+    max-health: 20.0
+    hide-dye: true
+    dye-color: 246 203 55
+    crafting:
+      smithing:
+        '1':
+          input: m armor netherite_leggings 1.0..|m material IGNETTO_ALLOY 1.0..
+          amount: 1
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+HELLFIRE_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#FFC0CB>Botas de Fuego Infernal
+    custom-model-data: 10006
+    tooltip-style: epic
+    critical-strike-chance: 5.0
+    critical-strike-power: 12.5
+    set: Hellfire
+    movement-speed: 0.03
+    defense: 25.0
+    max-health: 20.0
+    hide-dye: true
+    dye-color: 246 203 55
+    crafting:
+      smithing:
+        '1':
+          input: m armor netherite_boots 1.0..|m material IGNETTO_ALLOY 1.0..
+          amount: 1
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+
+WARDEN_HELMET:
+  base:
+    material: LEATHER_HELMET
+    name: <#FFC0CB>Casco del Warden
+    tooltip-style: epic
+    disable-interaction: true
+    custom-model-data: 10017
+    dye-color: 254 130 41
+    critical-strike-chance: 7.5
+    critical-strike-power: 10.0
+    crafting:
+      smithing:
+        '1':
+          input: m armor netherite_helmet 1.0..|m material warden_heart 1.0..
+          amount: 1
+    defense: 40.0
+    max-health: 30.0
+    damage-reduction: 1.0
+    unstackable: true
+    knockback-resistance: 0.15
+    set: Warden
+    gem-sockets:
+    - '&cVitality'
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+WARDEN_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#FFC0CB>Pechera del Warden
+    tooltip-style: epic
+    critical-strike-chance: 10.0
+    critical-strike-power: 22.5
+    defense: 70.0
+    max-health: 40.0
+    damage-reduction: 2.0
+    unstackable: true
+    knockback-resistance: 0.15
+    hide-dye: true
+    custom-model-data: 10018
+    dye-color: 254 130 41
+    set: Warden
+    crafting:
+      smithing:
+        '1':
+          input: m armor netherite_chestplate 1.0..|m material warden_heart 1.0..
+          amount: 1
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+WARDEN_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#FFC0CB>Pantalones del Warden
+    tooltip-style: epic
+    critical-strike-chance: 7.5
+    critical-strike-power: 12.5
+    defense: 55.0
+    max-health: 35.0
+    damage-reduction: 1.0
+    unstackable: true
+    knockback-resistance: 0.15
+    hide-dye: true
+    custom-model-data: 10018
+    dye-color: 254 130 41
+    set: Warden
+    crafting:
+      smithing:
+        '1':
+          input: m armor netherite_leggings 1.0..|m material warden_heart 1.0..
+          amount: 1
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+WARDEN_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#FFC0CB>Botas del Warden
+    tooltip-style: epic
+    critical-strike-chance: 5.0
+    critical-strike-power: 7.5
+    defense: 40.0
+    max-health: 30.0
+    damage-reduction: 1.0
+    unstackable: true
+    durability-bar: true
+    knockback-resistance: 0.15
+    hide-dye: true
+    custom-model-data: 10018
+    dye-color: 254 130 41
+    movement-speed: 0.03
+    set: Warden
+    crafting:
+      smithing:
+        '1':
+          input: m armor netherite_boots 1.0..|m material warden_heart 1.0..
+          amount: 1
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+
+APOLLO_HELMET:
+  base:
+    material: PLAYER_HEAD
+    name: <#FFC0CB>Casco de Apolo
+    tooltip-style: epic
+    disable-interaction: true
+    critical-strike-chance: 5.0
+    critical-strike-power: 10.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzRhYzVjNTA5MjM3Mzc3NTNlYThiNjMwYTQyZjg5ZjVkOThjMTcyNDQ4MmJjM2ZmYzE0ZjllZDFmYmZlZWEifX19
+      uuid: f14f97c3-926a-4b98-ac1c-946507593452
+    set: Apollo
+    defense: 15.0
+    max-health: 15.0
+    projectile-damage: 7.5
+    crafting:
+      smithing:
+        '1':
+          input: m armor NETHERITE_HELMET 1.0..|m MATERIAL DIVINE_GEODE 1.0..
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+APOLLO_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#FFC0CB>Pechera de Apolo
+    tooltip-style: epic
+    critical-strike-chance: 10.0
+    critical-strike-power: 20.0
+    defense: 45.0
+    max-health: 25.0
+    projectile-damage: 10
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    dye-color: 252 252 252
+    set: Apollo
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR NETHERITE_CHESTPLATE 1.0..|m MATERIAL DIVINE_GEODE 1.0..
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+APOLLO_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#FFC0CB>Pantalones de Apolo
+    tooltip-style: epic
+    critical-strike-chance: 7.5
+    critical-strike-power: 10.0
+    defense: 35.0
+    max-health: 20.0
+    projectile-damage: 10
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    dye-color: 126 209 195
+    set: Apollo
+    crafting:
+      smithing:
+        '1':
+          input: m armor netherite_leggings 1.0..|m MATERIAL DIVINE_GEODE 1.0..
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+APOLLO_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#FFC0CB>Botas de Apolo
+    tooltip-style: epic
+    critical-strike-chance: 5.0
+    critical-strike-power: 5.0
+    defense: 15.0
+    max-health: 10.0
+    projectile-damage: 7.5
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    movement-speed: 0.04
+    dye-color: 245 171 5
+    set: Apollo
+    crafting:
+      smithing:
+        '1':
+          input: m armor netherite_boots 1.0..|m MATERIAL DIVINE_GEODE 1.0..
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+
+DEATH_HELMET:
+  base:
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGE1MGE4MmM1ODgwNjZjN2IyZTVjNDUyNGIzYzQwZmNlNWZjYTViYjg1Zjk0ZGE2NDY2MDNhNmFiN2FkMzlhMyJ9fX0=
+      uuid: 49c9f9e4-55ee-4304-b133-2ffa77612fb3
+    material: PLAYER_HEAD
+    skill-damage: 15.0
+    cooldown-reduction: 2.5
+    defense: 25.0
+    max-health: 30.0
+    set: Death
+    name: <#FFC0CB>Casco de la Muerte
+    tooltip-style: epic
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR NETHERITE_HELMET 1.0..|m MATERIAL WITHERED_ROSE 1.0..
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+DEATH_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    skill-damage: 20.0
+    cooldown-reduction: 5.0
+    defense: 30.0
+    max-health: 35.0
+    hide-dye: true
+    dye-color: 128 128 128
+    set: Death
+    name: <#FFC0CB>Pechera de la Muerte
+    tooltip-style: epic
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR NETHERITE_CHESTPLATE 1.0..|m MATERIAL WITHERED_ROSE 1.0..
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+DEATH_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    skill-damage: 15.0
+    cooldown-reduction: 5.0
+    defense: 30.0
+    max-health: 30.0
+    hide-dye: true
+    dye-color: 128 128 128
+    set: Death
+    name: <#FFC0CB>Pantalones de la Muerte
+    tooltip-style: epic
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR NETHERITE_LEGGINGS 1.0..|m MATERIAL WITHERED_ROSE 1.0..
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+DEATH_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    skill-damage: 15.0
+    cooldown-reduction: 2.5
+    defense: 25.0
+    max-health: 20.0
+    hide-dye: true
+    dye-color: 54 69 79
+    movement-speed: 0.02
+    tooltip-style: epic
+    set: Death
+    name: <#FFC0CB>Botas de la Muerte
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR NETHERITE_BOOTS 1.0..|m MATERIAL WITHERED_ROSE 1.0..
+    upgrade:
+      reference: loyal
+      max: 5
+      template: loyal
+    max-durability: 2000
+
+DRYAD_HELMET:
+  base:
+    material: LEATHER_HELMET
+    critical-strike-chance: 7.5
+    custom-model-data: 10021
+    critical-strike-power: 10.0
+    defense: 40.0
+    max-health: 30.0
+    set: Dryad
+    dye-color: 140 25 104
+    tooltip-style: epic
+    name: <#FFC0CB>Casco de Dríada
+    hide-dye: true
+    max-durability: 2000
+DRYAD_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    custom-model-data: 10022
+    critical-strike-chance: 10.0
+    critical-strike-power: 22.5
+    defense: 70.0
+    max-health: 40.0
+    set: Dryad
+    hide-dye: true
+    dye-color: 140 25 104
+    tooltip-style: epic
+    name: <#FFC0CB>Pechera de Dríada
+    max-durability: 2000
+DRYAD_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    custom-model-data: 10022
+    critical-strike-chance: 7.5
+    critical-strike-power: 12.5
+    defense: 55.0
+    max-health: 35.0
+    dye-color: 140 25 104
+    set: Dryad
+    tooltip-style: epic
+    name: <#FFC0CB>Pantalones de Dríada
+    hide-dye: true
+    max-durability: 2000
+DRYAD_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    custom-model-data: 10022
+    movement-speed: 0.03
+    critical-strike-chance: 5.0
+    critical-strike-power: 7.5
+    defense: 40.0
+    max-health: 30.0
+    dye-color: 140 25 104
+    set: Dryad
+    tooltip-style: epic
+    name: <#FFC0CB>Botas de Dríada
+    hide-dye: true
+    max-durability: 2000
+
+MYTHRIL_HELMET:
+  base:
+    material: LEATHER_HELMET
+    name: <#FFC0CB>Casco de Mithril
+    disable-interaction: true
+    critical-strike-chance: 7.0
+    critical-strike-power: 12.5
+    custom-model-data: 10014
+    dye-color: 0 19 137
+    defense: 25.0
+    max-health: 15.0
+    unstackable: true
+    set: Mythril
+    tooltip-style: epic
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL MYTHRIL_INGOT 1.0..|m MATERIAL MYTHRIL_INGOT 1.0..|m MATERIAL
+            MYTHRIL_INGOT 1.0..
+          - m MATERIAL MYTHRIL_INGOT 1.0..|v AIR 0 1..|m MATERIAL MYTHRIL_INGOT 1.0..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+    max-durability: 2000
+MYTHRIL_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#FFC0CB>Pechera de Mithril
+    critical-strike-chance: 12.5
+    critical-strike-power: 22.5
+    defense: 50.0
+    max-health: 25.0
+    damage-reduction: 2
+    set: Mythril
+    tooltip-style: epic
+    custom-model-data: 10015
+    dye-color: 0 19 137
+    hide-dye: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL MYTHRIL_INGOT 1.0..|v AIR 0 1..|m MATERIAL MYTHRIL_INGOT 1.0..
+          - m MATERIAL MYTHRIL_INGOT 1.0..|m MATERIAL MYTHRIL_INGOT 1.0..|m MATERIAL
+            MYTHRIL_INGOT 1.0..
+          - m MATERIAL MYTHRIL_INGOT 1.0..|m MATERIAL MYTHRIL_INGOT 1.0..|m MATERIAL
+            MYTHRIL_INGOT 1.0..
+    max-durability: 2000
+MYTHRIL_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#FFC0CB>Pantalones de Mithril
+    critical-strike-chance: 7.0
+    critical-strike-power: 15.0
+    defense: 35.0
+    max-health: 17.0
+    set: Mythril
+    tooltip-style: epic
+    custom-model-data: 10015
+    dye-color: 0 19 137
+    hide-dye: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL MYTHRIL_INGOT 1.0..|m MATERIAL MYTHRIL_INGOT 1.0..|m MATERIAL
+            MYTHRIL_INGOT 1.0..
+          - m MATERIAL MYTHRIL_INGOT 1.0..|v AIR 0 1..|m MATERIAL MYTHRIL_INGOT 1.0..
+          - m MATERIAL MYTHRIL_INGOT 1.0..|v AIR 0 1..|m MATERIAL MYTHRIL_INGOT 1.0..
+    max-durability: 2000
+MYTHRIL_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#FFC0CB>Botas de Mithril
+    critical-strike-chance: 5.0
+    critical-strike-power: 10.0
+    defense: 25.0
+    max-health: 20.0
+    movement-speed: 0.01
+    set: Mythril
+    tooltip-style: epic
+    custom-model-data: 10015
+    dye-color: 0 19 137
+    hide-dye: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          - m MATERIAL MYTHRIL_INGOT 1.0..|v AIR 0 1..|m MATERIAL MYTHRIL_INGOT 1.0..
+          - m MATERIAL MYTHRIL_INGOT 1.0..|v AIR 0 1..|m MATERIAL MYTHRIL_INGOT 1.0..
+    max-durability: 2000
+
+ORICHALCUM_MASK:
+  base:
+    material: LEATHER_HELMET
+    name: <#FFC0CB>Máscara de Oricalco
+    disable-interaction: true
+    defense: 30.0
+    max-health: 20.0
+    unstackable: true
+    tooltip-style: epic
+    custom-model-data: 10023
+    dye-color: 143 158 191
+    skill-damage: 15.0
+    set: Orichalcum
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL ORICHALCUM_INGOT 1.0..|m MATERIAL ORICHALCUM_INGOT 1.0..|m
+            MATERIAL ORICHALCUM_INGOT 1.0..
+          - m MATERIAL ORICHALCUM_INGOT 1.0..|v AIR 0 1..|m MATERIAL ORICHALCUM_INGOT
+            1.0..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+    max-durability: 2000
+ORICHALCUM_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#FFC0CB>Pechera de Oricalco
+    skill-damage: 30.0
+    defense: 55.0
+    max-health: 30.0
+    cooldown-reduction: 10
+    set: Orichalcum
+    tooltip-style: epic
+    custom-model-data: 10025
+    dye-color: 143 158 191
+    hide-dye: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL ORICHALCUM_INGOT 1.0..|v AIR 0 1..|m MATERIAL ORICHALCUM_INGOT
+            1.0..
+          - m MATERIAL ORICHALCUM_INGOT 1.0..|m MATERIAL ORICHALCUM_INGOT 1.0..|m
+            MATERIAL ORICHALCUM_INGOT 1.0..
+          - m MATERIAL ORICHALCUM_INGOT 1.0..|m MATERIAL ORICHALCUM_INGOT 1.0..|m
+            MATERIAL ORICHALCUM_INGOT 1.0..
+    max-durability: 2000
+ORICHALCUM_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#FFC0CB>Pantalones de Oricalco
+    skill-damage: 15.0
+    defense: 40.0
+    max-health: 20.0
+    cooldown-reduction: 5
+    set: Orichalcum
+    tooltip-style: epic
+    custom-model-data: 10025
+    dye-color: 143 158 191
+    hide-dye: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL ORICHALCUM_INGOT 1.0..|m MATERIAL ORICHALCUM_INGOT 1.0..|m
+            MATERIAL ORICHALCUM_INGOT 1.0..
+          - m MATERIAL ORICHALCUM_INGOT 1.0..|v AIR 0 1..|m MATERIAL ORICHALCUM_INGOT
+            1.0..
+          - m MATERIAL ORICHALCUM_INGOT 1.0..|v AIR 0 1..|m MATERIAL ORICHALCUM_INGOT
+            1.0..
+    max-durability: 2000
+ORICHALCUM_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#FFC0CB>Botas de Oricalco
+    skill-damage: 10.0
+    defense: 30.0
+    max-health: 25.0
+    movement-speed: 0.02
+    set: Orichalcum
+    tooltip-style: epic
+    custom-model-data: 10025
+    dye-color: 143 158 191
+    hide-dye: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          - m MATERIAL ORICHALCUM_INGOT 1.0..|v AIR 0 1..|m MATERIAL ORICHALCUM_INGOT
+            1.0..
+          - m MATERIAL ORICHALCUM_INGOT 1.0..|v AIR 0 1..|m MATERIAL ORICHALCUM_INGOT
+            1.0..
+    max-durability: 2000
+
+# LEGENDARY SETS
+
+REAPER_HELMET:
+  base:
+    material: LEATHER_HELMET
+    custom-model-data: 10027
+    dye-color: 0 153 219
+    skill-damage: 20.0
+    cooldown-reduction: 3.0
+    defense: 30.0
+    max-health: 35.0
+    name: <#E7D27C>Casco de Segador
+    set: Reaper
+    tooltip-style: legendary
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR DEATH_HELMET 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+    max-durability: 3000
+REAPER_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    skill-damage: 25.0
+    cooldown-reduction: 5.0
+    defense: 35.0
+    max-health: 40.0
+    hide-dye: true
+    custom-model-data: 10028
+    dye-color: 0 153 219
+    set: Reaper
+    name: <#E7D27C>Pechera de Segador
+    tooltip-style: legendary
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR DEATH_CHESTPLATE 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+    max-durability: 3000
+REAPER_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    skill-damage: 20.0
+    cooldown-reduction: 5.0
+    defense: 35.0
+    max-health: 35.0
+    hide-dye: true
+    custom-model-data: 10028
+    dye-color: 0 153 219
+    set: Reaper
+    name: <#E7D27C>Pantalones de Segador
+    tooltip-style: legendary
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR DEATH_LEGGINGS 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+    max-durability: 3000
+REAPER_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    skill-damage: 20.0
+    cooldown-reduction: 2.5
+    defense: 30.0
+    max-health: 25.0
+    hide-dye: true
+    custom-model-data: 10028
+    dye-color: 0 153 219
+    set: Reaper
+    movement-speed: 0.02
+    name: <#E7D27C>Botas de Segador
+    tooltip-style: legendary
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR DEATH_BOOTS 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+    max-durability: 3000
+
+INFERNO_HELMET:
+  base:
+    material: LEATHER_HELMET
+    name: <#E7D27C>Casco Infernal
+    hide-dye: true
+    dye-color: 52 235 137
+    custom-model-data: 10024
+    tooltip-style: legendary
+    disable-interaction: true
+    critical-strike-chance: 10.0
+    critical-strike-power: 20.0
+    defense: 30.0
+    set: Inferno
+    max-health: 25.0
+    sounds:
+      on-craft:
+        sound: BLOCK_SMITHING_TABLE_USE
+        volume: 1.0
+        pitch: 1.0
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR INFERNO_HELMET 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+    max-durability: 3000
+INFERNO_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#E7D27C>Pechera Infernal
+    custom-model-data: 10026
+    tooltip-style: legendary
+    critical-strike-chance: 15.0
+    critical-strike-power: 45.0
+    set: Inferno
+    weapon-damage: 7.5
+    max-health: 25.0
+    defense: 70.0
+    hide-dye: true
+    dye-color: 52 235 137
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR INFERNO_CHESTPLATE 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+    max-durability: 3000
+INFERNO_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#E7D27C>Pantalones Infernales
+    custom-model-data: 10026
+    tooltip-style: legendary
+    critical-strike-chance: 10.0
+    critical-strike-power: 25.0
+    set: Inferno
+    max-durability: 3000.0
+    defense: 50.0
+    max-health: 25.0
+    hide-dye: true
+    dye-color: 52 235 137
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR INFERNO_LEGGINGS 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+INFERNO_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#E7D27C>Botas Infernales
+    tooltip-style: legendary
+    custom-model-data: 10026
+    critical-strike-chance: 6.5
+    critical-strike-power: 15.0
+    set: Inferno
+    movement-speed: 0.03
+    defense: 30.0
+    max-health: 25.0
+    hide-dye: true
+    dye-color: 52 235 137
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR INFERNO_BOOTS 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+    max-durability: 3000
+
+NIRVANA_HELMET:
+  base:
+    material: PLAYER_HEAD
+    name: <#E7D27C>Casco Nirvana
+    tooltip-style: legendary
+    disable-interaction: true
+    critical-strike-chance: 7.5
+    critical-strike-power: 12.5
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWNhYWY2OTUzZTc5Y2UxYTE5MGQ5YjUzZDFlYWQ4OGExMTBmMjQxMTY5YmI1OThhMTdhMzhjNmQ5NzJlZmEyOSJ9fX0=
+      uuid: f14f97c3-926a-4b98-ac1c-946507593452
+    set: Nirvana
+    defense: 20.0
+    max-health: 20.0
+    projectile-damage: 10.0
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOLLO_HELMET 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+    max-durability: 3000
+NIRVANA_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#E7D27C>Pechera Nirvana
+    tooltip-style: legendary
+    critical-strike-chance: 12.5
+    critical-strike-power: 25.0
+    defense: 60.0
+    max-health: 30.0
+    projectile-damage: 12.5
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    dye-color: 72 50 72
+    set: Nirvana
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOLLO_CHESTPLATE 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+    max-durability: 3000
+NIRVANA_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#E7D27C>Pantalones Nirvana
+    tooltip-style: legendary
+    critical-strike-chance: 10.0
+    critical-strike-power: 12.5
+    max-durability: 3000.0
+    defense: 45.0
+    max-health: 25.0
+    projectile-damage: 10
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    dye-color: 231 210 124
+    set: Nirvana
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOLLO_LEGGINGS 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+NIRVANA_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#E7D27C>Botas Nirvana
+    tooltip-style: legendary
+    critical-strike-chance: 7.5
+    critical-strike-power: 7.5
+    defense: 20.0
+    max-health: 15.0
+    projectile-damage: 7.5
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    movement-speed: 0.04
+    dye-color: 72 50 72
+    set: Nirvana
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOLLO_BOOTS 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+    max-durability: 3000
+
+OVERSEER_HELMET:
+  base:
+    material: PLAYER_HEAD
+    name: <#E7D27C>Casco del Supervisor
+    tooltip-style: legendary
+    disable-interaction: true
+    critical-strike-chance: 10.0
+    critical-strike-power: 10.0
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjEzN2VkMjVmYmVhOGY5YTA0MTc2YTEyNzBkM2ZhMWZhMDE5MWJlNzIyOTdhYjZjNDk5NWMwNjMxYjU3N2YxMyJ9fX0=
+      uuid: 52270001-ed05-4261-9682-1129a4fbae8d
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR WARDEN_HELMET 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+    defense: 55.0
+    max-health: 35.0
+    damage-reduction: 2.0
+    unstackable: true
+    knockback-resistance: 0.15
+    set: Overseer
+    max-durability: 3000
+OVERSEER_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#E7D27C>Pechera del Supervisor
+    tooltip-style: legendary
+    critical-strike-chance: 12.5
+    critical-strike-power: 25.0
+    defense: 85.0
+    max-health: 50.0
+    damage-reduction: 2.5
+    unstackable: true
+    knockback-resistance: 0.2
+    hide-dye: true
+    dye-color: 0 128 128
+    set: Overseer
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR WARDEN_CHESTPLATE 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+    max-durability: 3000
+OVERSEER_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#E7D27C>Pantalones del Supervisor
+    tooltip-style: legendary
+    critical-strike-chance: 10.0
+    critical-strike-power: 15.0
+    max-durability: 3000.0
+    defense: 70.0
+    max-health: 50.0
+    damage-reduction: 1.5
+    unstackable: true
+    knockback-resistance: 0.15
+    hide-dye: true
+    dye-color: 0 128 128
+    set: Overseer
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR WARDEN_LEGGINGS 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+OVERSEER_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#E7D27C>Botas del Supervisor
+    tooltip-style: legendary
+    critical-strike-chance: 7.5
+    critical-strike-power: 10.0
+    defense: 55.0
+    max-health: 35.0
+    damage-reduction: 1.5
+    unstackable: true
+    durability-bar: true
+    knockback-resistance: 0.15
+    hide-dye: true
+    dye-color: 0 128 128
+    movement-speed: 0.03
+    set: Overseer
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR WARDEN_BOOTS 1.0..|m MATERIAL ENDERCORE 1.0..
+          amount: 1
+    max-durability: 3000
+TITANIUM_HELMET:
+  base:
+    material: LEATHER_HELMET
+    name: <#E7D27C>Casco de Titanio
+    disable-interaction: true
+    critical-strike-chance: 5.0
+    critical-strike-power: 10.0
+    defense: 60.0
+    max-health: 20.0
+    custom-model-data: 10013
+    dye-color: 166 166 191
+    unstackable: true
+    hide-dye: true
+    tooltip-style: legendary
+    set: Titanium
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL TITANIUM_INGOT 1.0..|m MATERIAL TITANIUM_INGOT 1.0..|m MATERIAL
+            TITANIUM_INGOT 1.0..
+          - m MATERIAL TITANIUM_INGOT 1.0..|v AIR 0 1..|m MATERIAL TITANIUM_INGOT
+            1.0..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+    max-durability: 3000
+TITANIUM_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#E7D27C>Pechera de Titanio
+    critical-strike-chance: 10.0
+    critical-strike-power: 22.5
+    defense: 50.0
+    max-health: 35.0
+    tooltip-style: legendary
+    set: Titanium
+    custom-model-data: 10014
+    dye-color: 166 166 191
+    hide-dye: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL TITANIUM_INGOT 1.0..|v AIR 0 1..|m MATERIAL TITANIUM_INGOT
+            1.0..
+          - m MATERIAL TITANIUM_INGOT 1.0..|m MATERIAL TITANIUM_INGOT 1.0..|m MATERIAL
+            TITANIUM_INGOT 1.0..
+          - m MATERIAL TITANIUM_INGOT 1.0..|m MATERIAL TITANIUM_INGOT 1.0..|m MATERIAL
+            TITANIUM_INGOT 1.0..
+    max-durability: 3000
+TITANIUM_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#E7D27C>Pantalones de Titanio
+    critical-strike-chance: 6.0
+    critical-strike-power: 17.5
+    defense: 40.0
+    max-health: 30.0
+    tooltip-style: legendary
+    set: Titanium
+    custom-model-data: 10014
+    dye-color: 166 166 191
+    hide-dye: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL TITANIUM_INGOT 1.0..|m MATERIAL TITANIUM_INGOT 1.0..|m MATERIAL
+            TITANIUM_INGOT 1.0..
+          - m MATERIAL TITANIUM_INGOT 1.0..|v AIR 0 1..|m MATERIAL TITANIUM_INGOT
+            1.0..
+          - m MATERIAL TITANIUM_INGOT 1.0..|v AIR 0 1..|m MATERIAL TITANIUM_INGOT
+            1.0..
+    max-durability: 3000
+TITANIUM_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#E7D27C>Botas de Titanio
+    critical-strike-chance: 5.0
+    critical-strike-power: 12.5
+    defense: 35.0
+    max-health: 25.0
+    movement-speed: 0.03
+    tooltip-style: legendary
+    set: Titanium
+    custom-model-data: 10014
+    dye-color: 166 166 191
+    hide-dye: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          - m MATERIAL TITANIUM_INGOT 1.0..|v AIR 0 1..|m MATERIAL TITANIUM_INGOT
+            1.0..
+          - m MATERIAL TITANIUM_INGOT 1.0..|v AIR 0 1..|m MATERIAL TITANIUM_INGOT
+            1.0..
+    max-durability: 3000
+
+PERMAFROST_HELMET:
+  base:
+    material: LEATHER_HELMET
+    name: <#E7D27C>Casco de Permafrost
+    hide-dye: true
+    dye-color: 28 185 233
+    disable-interaction: true
+    custom-model-data: 10003
+    critical-strike-chance: 5.0
+    critical-strike-power: 5.0
+    skill-damage: 25
+    defense: 45.0
+    max-health: 15.0
+    unstackable: true
+    tooltip-style: legendary
+    set: Permafrost
+    max-durability: 3000
+PERMAFROST_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#E7D27C>Pechera de Permafrost
+    custom-model-data: 10003
+    critical-strike-chance: 7.5
+    critical-strike-power: 17.5
+    knockback-resistance: 0.2
+    defense: 65.0
+    max-health: 30.0
+    tooltip-style: legendary
+    set: Permafrost
+    dye-color: 28 185 233
+    hide-dye: true
+    max-durability: 3000
+PERMAFROST_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#E7D27C>Pantalones de Permafrost
+    custom-model-data: 10003
+    critical-strike-chance: 10.0
+    critical-strike-power: 25.0
+    weapon-damage: 10
+    defense: 30.0
+    max-health: 30.0
+    tooltip-style: legendary
+    set: Permafrost
+    dye-color: 28 185 233
+    hide-dye: true
+    max-durability: 3000
+PERMAFROST_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#E7D27C>Botas de Permafrost
+    custom-model-data: 10003
+    critical-strike-chance: 10.0
+    critical-strike-power: 22.5
+    defense: 50.0
+    max-health: 35.0
+    tooltip-style: legendary
+    set: Permafrost
+    dye-color: 28 185 233
+    hide-dye: true
+    fall-damage-reduction: 35.0
+    movement-speed: 0.03
+    max-durability: 3000
+
+ASSASSIN_HELMET:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhiMDEwNWI3MjhiYjc0ODE1OTM2MTI1OWRmYWQ0OWUwMDE3NGQ4NTQyMmYyNmI1MWU0YTRiZjFjNWM3OWJiMyJ9fX0=
+      uuid: 49c9f9e4-55ee-4304-b133-2ffa77612fb3
+    critical-strike-chance: 5.0
+    critical-strike-power: 25.0
+    defense: 25.0
+    max-health: 20.0
+    movement-speed: 0.01
+    set: Assassin
+    tooltip-style: legendary
+    name: <#E7D27C>Casco de 
+    max-durability: 3000
+ASSASSIN_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    critical-strike-chance: 7.5
+    critical-strike-power: 65.0
+    defense: 50.0
+    max-health: 35.0
+    movement-speed: 0.02
+    set: Assassin
+    tooltip-style: legendary
+    name: <#E7D27C>Pechera de Asesino
+    dye-color: 214 214 120
+    hide-dye: true
+    max-durability: 3000
+ASSASSIN_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    critical-strike-chance: 5.0
+    critical-strike-power: 45.0
+    defense: 35.0
+    max-health: 30.0
+    movement-speed: 0.02
+    set: Assassin
+    tooltip-style: legendary
+    name: <#E7D27C>Pantalones de Asesino
+    dye-color: 214 214 120
+    hide-dye: true
+    max-durability: 3000
+ASSASSIN_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    critical-strike-chance: 2.5
+    critical-strike-power: 30.0
+    defense: 25.0
+    max-health: 20.0
+    movement-speed: 0.04
+    set: Assassin
+    tooltip-style: legendary
+    name: <#E7D27C>Botas de Asesino
+    dye-color: 214 214 120
+    hide-dye: true
+    max-durability: 3000
+
+MIDAS_HELMET:
+  base:
+    material: LEATHER_HELMET
+    critical-strike-chance: 7.5
+    critical-strike-power: 17.5
+    max-health: 20.
+    custom-model-data: 10020
+    dye-color: 140 25 112
+    defense: 25.0
+    set: Midas
+    tooltip-style: legendary
+    name: <#E7D27C>Casco de Midas
+    max-durability: 3000
+MIDAS_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    critical-strike-chance: 12.5
+    critical-strike-power: 40.0
+    max-health: 20.0
+    defense: 45.0
+    set: Midas
+    tooltip-style: legendary
+    name: <#E7D27C>Pechera de Midas
+    custom-model-data: 10021
+    dye-color: 140 25 112
+    hide-dye: true
+    max-durability: 3000
+MIDAS_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    critical-strike-chance: 10.0
+    critical-strike-power: 20.0
+    max-health: 15.0
+    defense: 35.0
+    set: Midas
+    tooltip-style: legendary
+    name: <#E7D27C>Pantalones de Midas
+    custom-model-data: 10021
+    dye-color: 140 25 112
+    hide-dye: true
+    max-durability: 3000
+MIDAS_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    movement-speed: 0.04
+    critical-strike-chance: 5.0
+    critical-strike-power: 15.0
+    max-health: 25.0
+    defense: 20.0
+    set: Midas
+    tooltip-style: legendary
+    name: <#E7D27C>Botas de Midas
+    custom-model-data: 10021
+    dye-color: 140 25 112
+    hide-dye: true
+    max-durability: 3000
+
+
+ANGEL_HELMET:
+  base:
+    material: LEATHER_HELMET
+    critical-strike-power: 10
+    critical-strike-chance: 7.5
+    custom-model-data: 10028
+    dye-color: 174 117 44
+    max-health: 30.0
+    defense: 50.0
+    set: Angel
+    tooltip-style: legendary
+    name: <#E7D27C>Casco de Ángel
+    max-durability: 3000
+ANGEL_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    critical-strike-power: 10
+    critical-strike-chance: 22.5
+    max-health: 50.0
+    defense: 85.0
+    set: Angel
+    tooltip-style: legendary
+    custom-model-data: 10029
+    dye-color: 174 117 44
+    hide-dye: true
+    name: <#E7D27C>Pechera de Ángel
+    max-durability: 3000
+ANGEL_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    critical-strike-power: 7.5
+    critical-strike-chance: 12.5
+    max-health: 40.0
+    defense: 65.0
+    set: Angel
+    tooltip-style: legendary
+    custom-model-data: 10029
+    dye-color: 174 117 44
+    hide-dye: true
+    name: <#E7D27C>Pantalones de 
+    max-durability: 3000
+ANGEL_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    critical-strike-power: 5.0
+    critical-strike-chance: 7.5
+    movement-speed: 0.03
+    max-health: 35.0
+    defense: 50.0
+    set: Angel
+    tooltip-style: legendary
+    custom-model-data: 10029
+    dye-color: 174 117 44
+    hide-dye: true
+    name: <#E7D27C>Botas de Ángel
+    max-durability: 3000
+
+
+INSANITY_HELMET:
+  base:
+    material: LEATHER_HELMET
+    critical-strike-chance: 7.5
+    dye-color: 140 25 106
+    custom-model-data: 10002
+    critical-strike-power: 17.5
+    skill-damage: -5
+    max-health: 20.0
+    defense: 25.0
+    set: Insanity
+    tooltip-style: legendary
+    name: <#E7D27C>Casco de la Locura
+    hide-dye: true
+    max-durability: 3000
+INSANITY_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    custom-model-data: 10002
+    critical-strike-chance: 10.0
+    critical-strike-power: 35.0
+    skill-damage: -10
+    max-health: 30.0
+    defense: 40.0
+    set: Insanity
+    tooltip-style: legendary
+    name: <#E7D27C>Pechera de la Locura
+    dye-color: 140 25 106
+    hide-dye: true
+    max-durability: 3000
+INSANITY_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    critical-strike-chance: 5.0
+    custom-model-data: 10002
+    critical-strike-power: 20.0
+    skill-damage: -10
+    max-health: 25.0
+    defense: 35.0
+    set: Insanity
+    tooltip-style: legendary
+    name: <#E7D27C>Pantalones de la Locura
+    dye-color: 140 25 106
+    hide-dye: true
+    max-durability: 3000
+INSANITY_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    movement-speed: 0.03
+    custom-model-data: 10002
+    critical-strike-chance: 5.0
+    critical-strike-power: 15.0
+    skill-damage: -5
+    max-health: 20.0
+    defense: 25.0
+    set: Insanity
+    tooltip-style: legendary
+    name: <#E7D27C>Botas de la Locura
+    dye-color: 140 25 106
+    hide-dye: true
+    max-durability: 3000
+
+NOCTURNAL_HELMET:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2I2OWIyOTVmOTJkOWJhMzQ4Nzk1ZTlkZThhNzY1NDA3MzZjYzU5ZGVhNzhlZDM3NzRhZTg3MGJjY2U4OTBmZSJ9fX0=
+      uuid: 49c9f9e4-55ee-4304-b133-2ffa77612fb3
+    critical-strike-chance: 10.0
+    critical-strike-power: 17.5
+    defense: 25.0
+    max-health: 20.0
+    set: Nocturnal
+    tooltip-style: legendary
+    name: <#E7D27C>Casco Nocturno
+    max-durability: 3000
+NOCTURNAL_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    critical-strike-chance: 15.0
+    critical-strike-power: 40.0
+    defense: 50.0
+    max-health: 20.0
+    set: Nocturnal
+    tooltip-style: legendary
+    name: <#E7D27C>Pechera Nocturna
+    dye-color: 69 63 63
+    hide-dye: true
+    max-durability: 3000
+NOCTURNAL_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    critical-strike-chance: 10.0
+    critical-strike-power: 20.0
+    defense: 35.0
+    max-health: 20.0
+    set: Nocturnal
+    tooltip-style: legendary
+    name: <#E7D27C>Pantalones Nocturnos
+    dye-color: 69 63 63
+    hide-dye: true
+    max-durability: 3000
+
+NOCTURNAL_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    movement-speed: 0.04
+    critical-strike-chance: 5.0
+    critical-strike-power: 15.0
+    defense: 25.0
+    max-health: 20.0
+    set: Nocturnal
+    tooltip-style: legendary
+    name: <#E7D27C>Botas Nocturnas
+    dye-color: 69 63 63
+    hide-dye: true
+    max-durability: 3000
+
+BLAZE_HELMET:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIwNjU3ZTI0YjU2ZTFiMmY4ZmMyMTlkYTFkZTc4OGMwYzI0ZjM2Mzg4YjFhNDA5ZDBjZDJkOGRiYTQ0YWEzYiJ9fX0=
+      uuid: 49c9f9e4-55ee-4304-b133-2ffa77612fb3
+    critical-strike-chance: 10.0
+    critical-strike-power: 30.0
+    defense: 25.0
+    max-health: 20.0
+    set: Blaze
+    tooltip-style: legendary
+    name: <#E7D27C>Casco de Blaze
+    max-durability: 3000
+BLAZE_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    critical-strike-chance: 15.0
+    critical-strike-power: 55.0
+    fire-damage-reduction: 50.0
+    defense: 50.0
+    max-health: 25.0
+    set: Blaze
+    tooltip-style: legendary
+    name: <#E7D27C>Pechera de Blaze
+    dye-color: 252 247 104
+    hide-dye: true
+    max-durability: 3000
+BLAZE_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    critical-strike-chance: 7.5
+    critical-strike-power: 25.0
+    fire-damage-reduction: 50.0
+    defense: 40.0
+    max-health: 20.0
+    set: Blaze
+    tooltip-style: legendary
+    name: <#E7D27C>Pantalones de Blaze
+    dye-color: 252 247 104
+    hide-dye: true
+    max-durability: 3000
+BLAZE_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    movement-speed: 0.04
+    critical-strike-chance: 5.0
+    critical-strike-power: 20.0
+    defense: 25.0
+    max-health: 20.0
+    set: Blaze
+    tooltip-style: legendary
+    name: <#E7D27C>Botas de Blaze
+    dye-color: 252 247 104
+    hide-dye: true
+    max-durability: 3000
+
+
+# MYTHIC SETS
+
+
+APOCALYPSE_HELMET:
+  base:
+    material: PLAYER_HEAD
+    name: <#915ace>Casco de Apocalipsis
+    tooltip-style: mythic
+    disable-interaction: true
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTVjMmVmYTQyMTgzMDAwODA2MjkwNjI4NGYwMzNmOTA1ZGVkNGVhMmM3ZWQ5YjZlMDk3YWMxZGUyNDI3ZTcwOCJ9fX0=
+      uuid: f14f97c3-926a-4b98-ac1c-946507593452
+    max-durability: 5000.0
+    set: Apocalypse
+    defense: 45.0
+    max-health: 40.0
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    crafting:
+      shaped: {}
+APOCALYPSE_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#915ace>Pechera de Apocalipsis
+    tooltip-style: mythic
+    max-durability: 5000.0
+    defense: 95.0
+    max-health: 70.0
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    dye-color: 0 0 0
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    set: Apocalypse
+APOCALYPSE_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#915ace>Pantalones de Apocalipsis
+    tooltip-style: mythic
+    max-durability: 5000.0
+    defense: 70.0
+    max-health: 55.0
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    dye-color: 10 10 9
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    set: Apocalypse
+APOCALYPSE_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#915ace>Botas de Apocalipsis
+    tooltip-style: mythic
+    max-durability: 5000.0
+    defense: 55.0
+    max-health: 50.0
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    movement-speed: 0.04
+    dye-color: 0 0 0
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    set: Apocalypse
+
+QUINERUS_BATTLEHELM:
+  base:
+    material: LEATHER_HELMET
+    name: <#915ace>Yelmo de Batalla Quinerus
+    custom-model-data: 10026
+    dye-color: 114 27 56
+    tooltip-style: mythic
+    disable-interaction: false
+    critical-strike-chance: 12.5
+    critical-strike-power: 25.0
+    max-durability: 5000.0
+    set: Quinerus
+    defense: 35.0
+    max-health: 30.0
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_HELMET 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR CAELETUS_SALLET 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR HEXIM_JUDENHAT 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR MORTOS_ARMET 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+
+QUINERUS_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#915ace>Pechera Quinerus
+    tooltip-style: mythic
+    custom-model-data: 10027
+    dye-color: 114 27 56
+    critical-strike-chance: 20.0
+    critical-strike-power: 45.0
+    max-durability: 5000.0
+    defense: 70.0
+    max-health: 35.0
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    set: Quinerus
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_CHESTPLATE 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR CAELETUS_CHESTPLATE 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR HEXIM_CHESTPLATE 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR MORTOS_CHESTPLATE 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+QUINERUS_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#915ace>Pantalones Quinerus
+    custom-model-data: 10027
+    dye-color: 114 27 56
+    tooltip-style: mythic
+    critical-strike-chance: 12.5
+    critical-strike-power: 32.5
+    max-durability: 5000.0
+    defense: 55.0
+    max-health: 35.0
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    set: Quinerus
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_LEGGINGS 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR CAELETUS_LEGGINGS 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR HEXIM_LEGGINGS 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR MORTOS_LEGGINGS 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+QUINERUS_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#915ace>Botas Quinerus
+    custom-model-data: 10027
+    dye-color: 114 27 56
+    tooltip-style: mythic
+    critical-strike-chance: 10.0
+    critical-strike-power: 20.0
+    max-durability: 5000.0
+    defense: 45.0
+    max-health: 40.0
+    unstackable: true
+    hide-dye: true
+    movement-speed: 0.04
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    set: Quinerus
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_BOOTS 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR CAELETUS_BOOTS 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR HEXIM_BOOTS 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR MORTOS_BOOTS 1.0..|m MATERIAL QUINERUS_CLOAK 1.0..
+          drop-gems: true
+
+CAELETUS_SALLET:
+  base:
+    material: LEATHER_HELMET
+    name: <#915ace>Casco Caeletus
+    custom-model-data: 10031
+    dye-color: 35 102 218
+    tooltip-style: mythic
+    disable-interaction: true
+    critical-strike-power: 10.0
+    projectile-damage: 10
+    max-durability: 5000.0
+    defense: 30.0
+    max-health: 30.0
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    set: Caeletus
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_HELMET 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR QUINERUS_BATTLEHELM 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR HEXIM_JUDENHAT 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR MORTOS_ARMET 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+CAELETUS_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#915ace>Pechera Caeletus
+    tooltip-style: mythic
+    critical-strike-chance: 15.0
+    critical-strike-power: 35.0
+    projectile-damage: 15
+    max-durability: 5000.0
+    defense: 55.0
+    max-health: 35.0
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    custom-model-data: 10032
+    dye-color: 35 102 218
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    set: Caeletus
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_CHESTPLATE 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR QUINERUS_CHESTPLATE 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR HEXIM_CHESTPLATE 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR MORTOS_CHESTPLATE 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+CAELETUS_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#915ace>Pantalones Caeletus
+    tooltip-style: mythic
+    critical-strike-chance: 10.0
+    critical-strike-power: 15.0
+    projectile-damage: 15
+    max-durability: 5000.0
+    defense: 45.0
+    max-health: 30.0
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    custom-model-data: 10032
+    dye-color: 35 102 218
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    set: Caeletus
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_LEGGINGS 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR QUINERUS_LEGGINGS 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR HEXIM_LEGGINGS 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR MORTOS_LEGGINGS 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+CAELETUS_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#915ace>Botas Caeletus
+    tooltip-style: mythic
+    critical-strike-chance: 10.0
+    critical-strike-power: 10.0
+    projectile-damage: 10
+    max-durability: 5000.0
+    defense: 30.0
+    max-health: 20.0
+    unstackable: true
+    hide-dye: true
+    movement-speed: 0.06
+    custom-model-data: 10032
+    dye-color: 35 102 218
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    set: Caeletus
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_BOOTS 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR QUINERUS_BOOTS 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR HEXIM_BOOTS 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR MORTOS_BOOTS 1.0..|m MATERIAL CAELETUS_RING 1.0..
+          drop-gems: true
+
+MORTOS_ARMET:
+  base:
+    material: LEATHER_HELMET
+    name: <#915ace>Armete Mortos
+    tooltip-style: mythic
+    disable-interaction: true
+    critical-strike-chance: 10.0
+    critical-strike-power: 25.0
+    custom-model-data: 10032
+    dye-color: 166 177 225
+    max-durability: 5000.0
+    set: Mortos
+    defense: 55.0
+    max-health: 35.0
+    damage-reduction: 2.5
+    knockback-resistance: 0.25
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_HELMET 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR QUINERUS_BATTLEHELM 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR HEXIM_JUDENHAT 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR CAELETUS_SALLET 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+MORTOS_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#915ace>Pechera Mortos
+    tooltip-style: mythic
+    critical-strike-chance: 15.0
+    critical-strike-power: 30.0
+    max-durability: 5000.0
+    defense: 90.0
+    max-health: 55.0
+    knockback-resistance: 0.25
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    custom-model-data: 10034
+    dye-color: 166 177 225
+    damage-reduction: 2.5
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    set: Mortos
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_CHESTPLATE 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR QUINERUS_CHESTPLATE 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR HEXIM_CHESTPLATE 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR CAELETUS_CHESTPLATE 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+MORTOS_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#915ace>Pantalones Mortos
+    tooltip-style: mythic
+    critical-strike-chance: 10.0
+    critical-strike-power: 17.5
+    max-durability: 5000.0
+    defense: 70.0
+    max-health: 50.0
+    unstackable: true
+    durability-bar: true
+    hide-dye: true
+    knockback-resistance: 0.25
+    custom-model-data: 10034
+    dye-color: 166 177 225
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    damage-reduction: 2.5
+    set: Mortos
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_LEGGINGS 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR QUINERUS_LEGGINGS 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR HEXIM_LEGGINGS 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR CAELETUS_LEGGINGS 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+MORTOS_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#915ace>Botas Mortos
+    tooltip-style: mythic
+    critical-strike-chance: 10.0
+    critical-strike-power: 12.5
+    max-durability: 5000.0
+    defense: 55.0
+    max-health: 45.0
+    unstackable: true
+    durability-bar: true
+    damage-reduction: 2.5
+    movement-speed: 0.04
+    knockback-resistance: 0.25
+    hide-dye: true
+    custom-model-data: 10034
+    dye-color: 166 177 225
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    set: Mortos
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_BOOTS 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR QUINERUS_BOOTS 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR HEXIM_BOOTS 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR CAELETUS_BOOTS 1.0..|m MATERIAL MORTOS_BELT 1.0..
+          drop-gems: true
+
+HEXIM_JUDENHAT:
+  base:
+    material: LEATHER_HELMET
+    name: <#915ace>Sombrero Hexim
+    tooltip-style: mythic
+    disable-interaction: true
+    skill-damage: 25
+    cooldown-reduction: 5
+    custom-model-data: 10030
+    dye-color: 78 45 56
+    max-durability: 5000.0
+    set: Hexim
+    defense: 35.0
+    max-health: 35.0
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_HELMET 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR QUINERUS_BATTLEHELM 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR MORTOS_ARMET 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR CAELETUS_SALLET 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+HEXIM_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: <#915ace>Pechera Hexim
+    tooltip-style: mythic
+    skill-damage: 35
+    cooldown-reduction: 5
+    max-durability: 5000.0
+    set: Hexim
+    defense: 60.0
+    max-health: 35.0
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    custom-model-data: 10031
+    dye-color: 78 45 56
+    hide-dye: true
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_CHESTPLATE 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR QUINERUS_CHESTPLATE 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR MORTOS_CHESTPLATE 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR CAELETUS_CHESTPLATE 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+HEXIM_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    name: <#915ace>Pantalones Hexim
+    tooltip-style: mythic
+    skill-damage: 30
+    cooldown-reduction: 5
+    max-durability: 5000.0
+    set: Hexim
+    defense: 55.0
+    max-health: 40.0
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    custom-model-data: 10031
+    dye-color: 78 45 56
+    hide-dye: true
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_LEGGINGS 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR QUINERUS_LEGGINGS 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR MORTOS_LEGGINGS 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR CAELETUS_LEGGINGS 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+HEXIM_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    name: <#915ace>Botas Hexim
+    tooltip-style: mythic
+    skill-damage: 25
+    cooldown-reduction: 5
+    max-durability: 5000.0
+    set: Hexim
+    defense: 40.0
+    max-health: 30.0
+    upgrade:
+      reference: damned
+      max: 5
+      template: damned
+    custom-model-data: 10031
+    dye-color: 78 45 56
+    hide-dye: true
+    movement-speed: 0.05
+    crafting:
+      smithing:
+        '1':
+          input: m ARMOR APOCALYPSE_BOOTS 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+        '2':
+          input: m ARMOR QUINERUS_BOOTS 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+        '3':
+          input: m ARMOR MORTOS_BOOTS 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+        '4':
+          input: m ARMOR CAELETUS_BOOTS 1.0..|m MATERIAL HEXIM_NECKLACE 1.0..
+          drop-gems: true
+
+STARBORN_HELMET:
+  base:
+    material: LEATHER_HELMET
+    critical-strike-power: 35.0
+    defense: 35.0
+    max-health: 35.0
+    custom-model-data: 10006
+    dye-color: 66 245 239
+    name: <#915ace>Casco Nacido de las Estrellas
+    set: Starborn
+    tooltip-style: mythic
+    hide-dye: true
+    max-durability: 5000.0
+STARBORN_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    critical-strike-power: 60.0
+    defense: 60.0
+    max-health: 35.0
+    name: <#915ace>Pechera Nacido de las Estrellas
+    set: Starborn
+    tooltip-style: mythic
+    custom-model-data: 10007
+    dye-color: 66 245 239
+    hide-dye: true
+    max-durability: 5000.0
+STARBORN_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    critical-strike-power: 50.0
+    defense: 55.0
+    max-health: 40.0
+    name: <#915ace>Pantalones Nacido de las Estrellas
+    set: Starborn
+    tooltip-style: mythic
+    custom-model-data: 10007
+    dye-color: 66 245 239
+    hide-dye: true
+    max-durability: 5000.0
+STARBORN_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    critical-strike-power: 40.0
+    defense: 40.0
+    max-health: 35.0
+    movement-speed: 0.03
+    name: <#915ace>Botas Nacido de las Estrellas
+    set: Starborn
+    tooltip-style: mythic
+    custom-model-data: 10007
+    dye-color: 66 245 239
+    hide-dye: true
+    max-durability: 5000.0
+
+CRIMSON_HELMET:
+  base:
+    material: LEATHER_HELMET
+    weapon-damage: 35.0
+    skill-damage: 50.0
+    defense: 30.0
+    max-health: 30.0
+    set: Crimson
+    custom-model-data: 10015
+    dye-color: 235 52 52
+    name: <#915ace>Casco Carmesí
+    tooltip-style: mythic
+    max-durability: 5000.0
+CRIMSON_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    weapon-damage: 75.0
+    skill-damage: 100.0
+    defense: 50.0
+    max-health: 35.0
+    custom-model-data: 10016
+    dye-color: 235 52 52
+    set: Crimson
+    name: <#915ace>Pechera Carmesí
+    tooltip-style: mythic
+    hide-dye: true
+    max-durability: 5000.0
+CRIMSON_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    weapon-damage: 50.0
+    skill-damage: 70.0
+    defense: 45.0
+    max-health: 30.0
+    set: Crimson
+    custom-model-data: 10016
+    dye-color: 235 52 52
+    name: <#915ace>Pantalones Carmesí
+    tooltip-style: mythic
+    hide-dye: true
+    max-durability: 5000.0
+CRIMSON_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    weapon-damage: 40.0
+    skill-damage: 50.0
+    movement-speed: 0.05
+    damage-reduction: 5
+    defense: 40.0
+    max-health: 25.0
+    set: Crimson
+    custom-model-data: 10016
+    dye-color: 235 52 52
+    name: <#915ace>Botas Carmesí
+    tooltip-style: mythic
+    hide-dye: true
+    max-durability: 5000.0
+
+COSMIC_HELMET:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7ImlkIjoiZGNkZmRmNDA0NzZiNDVjMTkyMWQ4NzVjOGE3ZjkzYjkiLCJ0eXBlIjoiU0tJTiIsInVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVlMjU1NzMyMDIyMDA5MTZjMjQwMzJkODM0ZGQ0N2Y0YzNkNjIzMGJhNTgxZGQxNDc2YmM1NTI5MWY2NWIxNyIsInByb2ZpbGVJZCI6ImU0NWE5NzNiOThjZDRlNTNiYWI2M2MxMTMzZTI4YzRiIiwidGV4dHVyZUlkIjoiMmVlMjU1NzMyMDIyMDA5MTZjMjQwMzJkODM0ZGQ0N2Y0YzNkNjIzMGJhNTgxZGQxNDc2YmM1NTI5MWY2NWIxNyJ9fSwic2tpbiI6eyJpZCI6ImRjZGZkZjQwNDc2YjQ1YzE5MjFkODc1YzhhN2Y5M2I5IiwidHlwZSI6IlNLSU4iLCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJlZTI1NTczMjAyMjAwOTE2YzI0MDMyZDgzNGRkNDdmNGMzZDYyMzBiYTU4MWRkMTQ3NmJjNTUyOTFmNjViMTciLCJwcm9maWxlSWQiOiJlNDVhOTczYjk4Y2Q0ZTUzYmFiNjNjMTEzM2UyOGM0YiIsInRleHR1cmVJZCI6IjJlZTI1NTczMjAyMjAwOTE2YzI0MDMyZDgzNGRkNDdmNGMzZDYyMzBiYTU4MWRkMTQ3NmJjNTUyOTFmNjViMTciLCJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifX0sImNhcGUiOm51bGx9
+      uuid: 49c9f9e4-55ee-4304-b133-2ffa77612fb3
+    weapon-damage: -10
+    skill-damage: 60
+    max-health: 40.0
+    defense: 45.0
+    set: Cosmic
+    tooltip-style: mythic
+    name: <#915ace>Casco Cósmico
+    max-durability: 5000.0
+COSMIC_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    weapon-damage: -20
+    skill-damage: 100
+    max-health: 45.0
+    cooldown-reduction: 15
+    defense: 70.0
+    set: Cosmic
+    tooltip-style: mythic
+    name: <#915ace>Pechera Cósmica
+    dye-color: 165 71 191
+    hide-dye: true
+    max-durability: 5000.0
+COSMIC_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    weapon-damage: -15
+    skill-damage: 90
+    max-health: 45.0
+    defense: 50.0
+    set: Cosmic
+    tooltip-style: mythic
+    name: <#915ace>Pantalones Cósmicos
+    dye-color: 165 71 191
+    hide-dye: 
+    max-durability: 5000.0
+COSMIC_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    weapon-damage: -5
+    skill-damage: 75
+    movement-speed: 0.07
+    max-health: 35.0
+    defense: 50.0
+    set: Cosmic
+    tooltip-style: mythic
+    name: <#915ace>Botas Cósmicas
+    dye-color: 165 71 191
+    hide-dye: true
+    max-durability: 5000.0
+
+WEREWOLF_HELMET:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2RlMWQxODQ1OGMzNDNiYzZhNDlhNjQ2NGM0NTVlZDhjZDJhYTI2ZmMwMjAxNTRhYjEzZWUzZDU3NzJlYyJ9fX0=
+      uuid: 49c9f9e4-55ee-4304-b133-2ffa77612fb3
+    critical-strike-chance: 10.0
+    critical-strike-power: 17.5
+    defense: 25.0
+    max-health: 20.0
+    cooldown-reduction: 10.0
+    set: Werewolf
+    tooltip-style: mythic
+    name: <#915ace>Casco de Hombre Lobo
+    max-durability: 5000.0
+WEREWOLF_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    critical-strike-chance: 15.0
+    critical-strike-power: 40.0
+    defense: 50.0
+    max-health: 20.0
+    cooldown-reduction: 25.0
+    set: Werewolf
+    tooltip-style: mythic
+    name: <#915ace>Pechera de Hombre Lobo
+    dye-color: 99 95 77
+    max-durability: 5000.0
+    hide-dye: true
+WEREWOLF_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    critical-strike-chance: 10.0
+    critical-strike-power: 20.0
+    defense: 35.0
+    max-health: 20.0
+    cooldown-reduction: 15.0
+    set: Werewolf
+    tooltip-style: mythic
+    name: <#915ace>Pantalones de Hombre Lobo
+    dye-color: 99 95 77
+    hide-dye: true
+    max-durability: 5000.0
+WEREWOLF_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    movement-speed: 0.04
+    critical-strike-chance: 5.0
+    critical-strike-power: 15.0
+    defense: 25.0
+    max-health: 20.0
+    cooldown-reduction: 10.0
+    set: Werewolf
+    tooltip-style: mythic
+    name: <#915ace>Botas de Hombre Lobo
+    dye-color: 99 95 77
+    hide-dye: true
+    max-durability: 5000.0
+
+FROSTY_BLAZE_HELMET:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzBmYWRiNzg5MzkxMDlkNGFlMzAyMWY2NTY5OTI2MWFmOTVmYzYzOWY3YWVmMTE0NzAxZTRmNmZlY2Y1MmM5OSJ9fX0=
+      uuid: 49c9f9e4-55ee-4304-b133-2ffa77612fb3
+    critical-strike-chance: 10.0
+    critical-strike-power: 30.0
+    defense: 55.0
+    max-health: 35.0
+    set: FrostyBlaze
+    tooltip-style: mythic
+    name: <#915ace>Casco de Blaze Helado
+    max-durability: 5000.0
+FROSTY_BLAZE_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    critical-strike-chance: 10.0
+    critical-strike-power: 30.0
+    movement-speed: 0.03
+    defense: 80.0
+    max-health: 50.0
+    set: FrostyBlaze
+    tooltip-style: mythic
+    name: <#915ace>Pechera de Blaze Helado
+    dye-color: 165 249 250
+    hide-dye: true
+    max-durability: 5000.0
+FROSTY_BLAZE_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    critical-strike-chance: 10.0
+    critical-strike-power: 30.0
+    defense: 60.0
+    max-health: 45.0
+    set: FrostyBlaze
+    tooltip-style: mythic
+    name: <#915ace>Pantalones de Blaze Helado
+    dye-color: 165 249 250
+    hide-dye: true
+    max-durability: 5000.0
+FROSTY_BLAZE_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    movement-speed: 0.04
+    critical-strike-chance: 10.0
+    critical-strike-power: 30.0
+    defense: 50.0
+    max-health: 40.0
+    set: FrostyBlaze
+    tooltip-style: mythic
+    name: <#915ace>Botas de Blaze Helado
+    dye-color: 250 231 167
+    hide-dye: true
+    max-durability: 5000.0
+
+# GODLIKE SETS 
+
+
+URANIUM_HELMET:
+  base:
+    material: LEATHER_HELMET
+    custom-model-data: 10004
+    dye-color: 15 153 112
+    critical-strike-chance: 15.0
+    critical-strike-power: 35.0
+    defense: 60.0
+    max-health: 45.0
+    hide-dye: true
+    set: Uranium
+    name: <#cb8592>Casco de Uranio
+    tooltip-style: godlike
+    max-durability: 5000.0
+URANIUM_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    custom-model-data: 10004
+    dye-color: 15 153 112
+    critical-strike-chance: 20.0
+    critical-strike-power: 50.0
+    defense: 75.0
+    max-health: 70.0
+    hide-dye: true
+    set: Uranium
+    name: <#cb8592>Pechera de Uranio
+    tooltip-style: godlike
+    max-durability: 5000.0
+URANIUM_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    custom-model-data: 10004
+    dye-color: 15 153 112
+    critical-strike-chance: 15.0
+    critical-strike-power: 40.0
+    defense: 55.0
+    max-health: 55.0
+    hide-dye: true
+    set: Uranium
+    name: <#cb8592>Pantalones de Uranio
+    tooltip-style: godlike
+    max-durability: 5000.0
+URANIUM_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    custom-model-data: 10004
+    dye-color: 15 153 112
+    critical-strike-chance: 12.5
+    critical-strike-power: 25.0
+    defense: 45.0
+    max-health: 50.0
+    movement-speed: 0.05
+    hide-dye: true
+    set: Uranium
+    name: <#cb8592>Botas de Uranio
+    tooltip-style: godlike
+    max-durability: 5000.0
+
+ARCANE_HELMET:
+  base:
+    material: PLAYER_HEAD
+    skull-texture:
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTYzMzVlMTRmNDNmMjFmNjgxMmNkOWNhY2Q1MDJmN2JiYzA2NzUzMjVhZDYwMTM5YTg4MzY3NDU2NzI4ZmRlNSJ9fX0=
+      uuid: 49c9f9e4-55ee-4304-b133-2ffa77612fb3
+    skill-damage: 120.0
+    cooldown-reduction: 10.0
+    weapon-damage: -20.0
+    defense: 55.0
+    max-health: 40.0
+    set: Arcane
+    tooltip-style: godlike
+    name: <#cb8592>Casco Arcano
+    max-durability: 5000.0
+ARCANE_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    skill-damage: 200.0
+    cooldown-reduction: 15.0
+    weapon-damage: -40.0
+    defense: 70.0
+    max-health: 60.0
+    set: Arcane
+    tooltip-style: godlike
+    name: <#cb8592>Pechera Arcana
+    dye-color: 122 90 143
+    hide-dye: 
+    max-durability: 5000.0
+ARCANE_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    skill-damage: 165.0
+    cooldown-reduction: 15.0
+    weapon-damage: -30.0
+    defense: 50.0
+    max-health: 50.0
+    set: Arcane
+    tooltip-style: godlike
+    name: <#cb8592>Pantalones Arcanos
+    dye-color: 156 125 176
+    hide-dye: true
+    max-durability: 5000.0
+ARCANE_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    movement-speed: 0.08
+    skill-damage: 135.0
+    cooldown-reduction: 10.0
+    weapon-damage: -10.0
+    defense: 40.0
+    max-health: 45.0
+    set: Arcane
+    tooltip-style: godlike
+    name: <#cb8592>Botas Arcanas
+    dye-color: 202 175 219
+    hide-dye: true
+    max-durability: 5000.0
+
+DAMNED_HELMET:
+  base:
+    material: LEATHER_HELMET
+    custom-model-data: 1.0
+    dye-color: 0 0 1
+    hide-dye: true
+    critical-strike-chance: 5.0
+    critical-strike-power: 100.0
+    weapon-damage: 2.5
+    defense: 50.0
+    max-health: 40.0
+    set: Damned
+    tooltip-style: godlike
+    name: <#cb8592>Casco de los 
+    max-durability: 5000.0
+DAMNED_CHESTPLATE:
+  base:
+    material: LEATHER_CHESTPLATE
+    custom-model-data: 1.0
+    critical-strike-chance: 10.0
+    critical-strike-power: 150.0
+    weapon-damage: 10.0
+    defense: 65.0
+    max-health: 55.0
+    set: Damned
+    tooltip-style: godlike
+    name: <#cb8592>Pechera de los Condenados
+    dye-color: 0 0 1
+    hide-dye: true
+    max-durability: 5000.0
+DAMNED_LEGGINGS:
+  base:
+    material: LEATHER_LEGGINGS
+    custom-model-data: 1.0
+    critical-strike-chance: 10.0
+    critical-strike-power: 125.0
+    weapon-damage: 5.0
+    defense: 50.0
+    max-health: 50.0
+    set: Damned
+    tooltip-style: godlike
+    name: <#cb8592>Pantalones de los Condenados
+    dye-color: 0 0 1
+    hide-dye: true
+    max-durability: 5000.0
+DAMNED_BOOTS:
+  base:
+    material: LEATHER_BOOTS
+    custom-model-data: 1.0
+    movement-speed: 0.08
+    critical-strike-chance: 5.0
+    critical-strike-power: 80.0
+    weapon-damage: 2.5
+    defense: 40.0
+    max-health: 45.0
+    set: Damned
+    tooltip-style: godlike
+    name: <#cb8592>Botas de los Condenados
+    dye-color: 0 0 1
+    hide-dye: true
+    max-durability: 5000.0
+
+COMMON_HELMET:
+  base:
+    material: NETHERITE_HELMET
+    # Un poco mas de durabilidad que la netherite normal
+    max-durability: 500.0
+    defense: 4.0
+    max-health: 4.0
+    tooltip-style: common
+    # Usamos aqua (celeste) y bold (negrita)
+    name: '     <aqua><bold>CASCO COMUN'
+    lore:
+      - "&7Una protección básica"
+      - "&7pero confiable."
+
+COMMON_CHESTPLATE:
+  base:
+    material: NETHERITE_CHESTPLATE
+    max-durability: 700.0
+    defense: 10.0
+    max-health: 8.0
+    tooltip-style: common
+    name: '   <aqua><bold>PECHERA COMUN'
+    lore:
+      - "&7Una protección básica"
+      - "&7pero confiable."
+
+COMMON_LEGGINS:
+  base:
+    material: NETHERITE_LEGGINGS
+    max-durability: 650.0
+    defense: 8.0
+    max-health: 6.0
+    tooltip-style: common
+    name: ' <aqua><bold>PANTALONES COMUNES'
+    lore:
+      - "&7Una protección básica"
+      - "&7pero confiable."
+
+COMMON_BOOTS:
+  base:
+    material: NETHERITE_BOOTS
+    max-durability: 500.0
+    defense: 4.0
+    max-health: 4.0
+    tooltip-style: common
+    name: '   <aqua><bold>BOTAS COMUNES'
+    lore:
+      - "&7Una protección básica"
+      - "&7pero confiable."
+  
+RARE_HELMET:
+  base:
+    material: NETHERITE_HELMET
+    max-durability: 800.0
+    defense: 6.0
+    max-health: 8.0
+    critical-strike-chance: 2.0
+    tooltip-style: rare
+    # Color Verde y Negrita
+    name: '     <green><bold>CASCO RARO'
+    lore:
+      - "&7Equipo forjado con"
+      - "&7materiales inusuales."
+
+RARE_CHESTPLATE:
+  base:
+    material: NETHERITE_CHESTPLATE
+    max-durability: 1200.0
+    defense: 14.0
+    max-health: 15.0
+    critical-strike-chance: 3.0
+    tooltip-style: rare
+    name: '   <green><bold>PECHERA RARA'
+    lore:
+      - "&7Equipo forjado con"
+      - "&7materiales inusuales."
+
+RARE_LEGGINS:
+  base:
+    material: NETHERITE_LEGGINGS
+    max-durability: 1000.0
+    defense: 11.0
+    max-health: 12.0
+    critical-strike-chance: 2.5
+    tooltip-style: rare
+    name: ' <green><bold>PANTALONES RAROS'
+    lore:
+      - "&7Equipo forjado con"
+      - "&7materiales inusuales."
+
+RARE_BOOTS:
+  base:
+    material: NETHERITE_BOOTS
+    max-durability: 800.0
+    defense: 6.0
+    max-health: 8.0
+    critical-strike-chance: 2.0
+    tooltip-style: rare
+    name: '    <green><bold>BOTAS RARAS'
+    lore:
+      - "&7Equipo forjado con"
+      - "&7materiales inusuales."

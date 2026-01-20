@@ -1,0 +1,30 @@
+info:
+    namespace: cryocore
+categories:
+    cryocore:
+        name: Cryocore Animated Weapons And Tools Set
+        enabled: true
+        icon: cryocore:cryocore_wings
+        permission: ia.menu.cryocore
+        items:
+        - cryocore:cryocorehelmet
+        - cryocore:cryocorechestplate
+        - cryocore:cryocoreleggings
+        - cryocore:cryocoreboots
+        - cryocore:cryocore_axe
+        - cryocore:cryocore_pickaxe
+        - cryocore:cryocore_shovel
+        - cryocore:cryocore_hoe
+        - cryocore:cryocore_sword
+        - cryocore:cryocore_shield
+        - cryocore:cryocore_crossbow
+        - cryocore:cryocore_bow
+        - cryocore:cryocore_staff
+        - cryocore:cryocore_spear
+        - cryocore:cryocore_chest
+        - cryocore:cryocore_key
+        - cryocore:cryocore_battle_axe
+        - cryocore:cryocore_blade
+        - cryocore:cryocore_fishingrod
+        - cryocore:cryocore_sickle
+        - cryocore:cryocore_wings

@@ -1,0 +1,117 @@
+VANILLA:
+  DEFAULT:
+    MAX: 2
+    MIN: 1
+    CHANCE: 18.9
+  CHICKEN:
+    MAX: 2
+    MIN: 1
+    CHANCE: 10.0
+  PIG:
+    MAX: 2
+    MIN: 1
+    CHANCE: 20.0
+  SHEEP:
+    MAX: 2
+    MIN: 1
+    CHANCE: 20.0
+  COW:
+    MAX: 2
+    MIN: 1
+    CHANCE: 20.0
+  HORSE:
+    MAX: 2
+    MIN: 1
+    CHANCE: 20.0
+  BEE:
+    MAX: 3
+    MIN: 2
+    CHANCE: 20.0
+  TURTLE:
+    MAX: 3
+    MIN: 2
+    CHANCE: 20.0
+  WITCH:
+    MAX: 4
+    MIN: 3
+    CHANCE: 40.0
+  PIGLIN:
+    MAX: 4
+    MIN: 3
+    CHANCE: 40.0
+  ZOMBIE:
+    MAX: 4
+    MIN: 3
+    CHANCE: 40.0
+  SKELETON:
+    MAX: 4
+    MIN: 3
+    CHANCE: 40.0
+  CREEPER:
+    MAX: 4
+    MIN: 3
+    CHANCE: 40.0
+  HOGLIN:
+    MAX: 5
+    MIN: 4
+    CHANCE: 50.0
+  PIGLIN_BRUTE:
+    MAX: 5
+    MIN: 4
+    CHANCE: 50.0
+  ENDERMAN:
+    MAX: 5
+    MIN: 4
+    CHANCE: 60.0
+  GUARDIAN:
+    MAX: 5
+    MIN: 4
+    CHANCE: 60.0
+  BLAZE:
+    MAX: 5
+    MIN: 4
+    CHANCE: 60.0
+  FROG:
+    MAX: 6
+    MIN: 5
+    CHANCE: 70.0
+  ALLAY:
+    MAX: 6
+    MIN: 5
+    CHANCE: 70.0
+  IRON_GOLEM:
+    MAX: 6
+    MIN: 5
+    CHANCE: 70.0
+  AXOLOTL:
+    MAX: 6
+    MIN: 5
+    CHANCE: 70.0
+  HUSK:
+    MAX: 4
+    MIN: 3
+    CHANCE: 40.0
+  GHAST:
+    MAX: 4
+    MIN: 3
+    CHANCE: 60.0
+  SPIDER:
+    MAX: 4
+    MIN: 3
+    CHANCE: 30.0
+  CAVE_SPIDER:
+    MAX: 4
+    MIN: 3
+    CHANCE: 30.0
+  MAGMA_CUBE:
+    MAX: 4
+    MIN: 3
+    CHANCE: 60.0
+  PILLAGER:
+    MAX: 5
+    MIN: 4
+    CHANCE: 70.0
+  WITHER_SKELETON:
+    MAX: 6
+    MIN: 5
+    CHANCE: 75.0

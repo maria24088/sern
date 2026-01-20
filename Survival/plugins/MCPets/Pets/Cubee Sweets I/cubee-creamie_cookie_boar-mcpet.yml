@@ -1,0 +1,16 @@
+Id: cubee-creamie_cookie_boar
+MythicMob: cubee-creamie_cookie_boar
+Permission: mcpet.cubee-creamie_cookie_boar
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §e Creamie Cookie Boar Cubee
+  Description:
+  - §7"My inside is full of deliciousness, and I'm as strong as a wild boar!" §8§o-
+    Creamie Cookie Boar Cubee
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191322
+
+# UTVRRHO5Y0au1UUFVkYXNFS4IzUWBXbh5UMVZFNWtmU1ZkVS50Q3c2Y2BVVNpWRmhnduZ0N

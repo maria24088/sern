@@ -1,0 +1,30 @@
+npc: true
+last-account-name: --nameplate
+money: '0'
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: ''
+afk: false
+socialspy: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1766422256390
+  login: 0
+logoutlocation:
+  world: 0c52527c-f895-4989-828f-80caa9f6e8b5
+  world-name: Spawn
+  x: 282.5248140085669
+  y: 95.0
+  z: 565.1715065315406
+  yaw: 8.595603942871094
+  pitch: -28.141164779663086

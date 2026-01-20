@@ -1,0 +1,49 @@
+Events:
+  daily_deals_cmd:
+    type: console_command
+    conditions:
+    - '%command% == resetdeal'
+    actions:
+      default:
+      - 'console_command: svar set current_deal %random_1_5%'
+      - 'console_command: svar set deal_1_stock %random_50_150%'
+      - 'console_command: svar set deal_1_discount %random_1_40%'
+      - 'console_command: svar set deal_2_stock %random_50_150%'
+      - 'console_command: svar set deal_2_discount %random_1_40%'
+      - 'console_command: svar set deal_3_stock %random_50_150%'
+      - 'console_command: svar set deal_3_discount %random_1_40%'
+  daily_deals_player_cmd:
+    type: player_command
+    conditions:
+    - '%main_command% == /resetdeal'
+    - '%player_is_op% == yes'
+    actions:
+      default:
+      - 'console_command: svar set current_deal %random_1_5%'
+      - 'console_command: svar set deal_1_stock %random_50_150%'
+      - 'console_command: svar set deal_1_discount %random_1_40%'
+      - 'console_command: svar set deal_2_stock %random_50_150%'
+      - 'console_command: svar set deal_2_discount %random_1_40%'
+      - 'console_command: svar set deal_3_stock %random_50_150%'
+      - 'console_command: svar set deal_3_discount %random_1_40%'
+      - 'message: &fYou successfully changed the marketplace deals'
+  daily_deals:
+    type: repetitive_server
+    repetitive_time: 500
+    conditions:
+    - '%server_time_H% == 0'
+    - '%server_time_m% == 0'
+    - '%server_time_s% <= 60'
+    actions:
+      default:
+      - 'console_command: svar set current_deal %random_1_5%'
+      - 'console_command: svar set deal_1_stock %random_50_150%'
+      - 'console_command: svar set deal_1_discount %random_1_40%'
+      - 'console_command: svar set deal_2_stock %random_50_150%'
+      - 'console_command: svar set deal_2_discount %random_1_40%'
+      - 'console_command: svar set deal_3_stock %random_50_150%'
+      - 'console_command: svar set deal_3_discount %random_1_40%'
+      - 'console_command: ce disable daily_deals'
+      - 'wait: 60'
+      - 'console_command: ce enable daily_deals'
+    enabled: true

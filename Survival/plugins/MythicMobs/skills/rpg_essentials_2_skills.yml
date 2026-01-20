@@ -1,0 +1,744 @@
+
+CancelEventSkill:
+  Skills:
+  - CancelEvent
+  
+Object_Look:
+  TriggerConditions:
+  - crouching true
+  - haspermission{p=*} true
+  Skills:
+  - look{headOnly=false;immediately=false;repeat=5;repeatinterval=2}
+  
+
+
+Mushroom_Red_Hit:
+  Conditions:
+  - damagecause{cause=ENTITY_ATTACK} true
+  TriggerConditions:
+  - holding{m=WOODEN_HOE} castinstead Mushroom_Red_Hit_1
+  - holding{m=STONE_HOE} castinstead Mushroom_Red_Hit_2
+  - holding{m=IRON_HOE} castinstead Mushroom_Red_Hit_3
+  - holding{m=GOLDEN_HOE} castinstead Mushroom_Red_Hit_4
+  - holding{m=DIAMOND_HOE} castinstead Mushroom_Red_Hit_5
+  - holding{m=NETHERITE_HOE} castinstead Mushroom_Red_Hit_6
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - sendtitle{title="";subtitle="&cCan't gather with this tool!";d=20;fi=10;fo=10} @trigger
+  
+Mushroom_Red_Hit_1: #5
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=20} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Mushroom_Red_Hit_2: #4
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=25} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Mushroom_Red_Hit_3: #3
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=34} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Mushroom_Red_Hit_4: #2
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=50} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Mushroom_Red_Hit_5: #1
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=100} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Mushroom_Red_Hit_6: #1
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=100} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Mushroom_Red_Death:
+  Cooldown: 1
+  Skills:
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.grass.break;volume=1;pitch=1.2} @self
+  - skill{s=Mushroom_Red_Drop_Random}
+  
+Mushroom_Red_Drop_Random:
+  Skills:
+  - randomskill{skills=Mushroom_Red_Drop_1 7.5,Mushroom_Red_Drop_2 2.5}
+  
+Mushroom_Red_Drop_1:
+  Skills:
+  - dropitem{i=mushroom_red} @selflocation
+  
+Mushroom_Red_Drop_2:
+  Skills:
+  - dropitem{i=mushroom_red} @selflocation
+  - dropitem{i=mushroom_red} @selflocation
+  
+
+Wild_Berry_Hit:
+  Conditions:
+  - damagecause{cause=ENTITY_ATTACK} true
+  TriggerConditions:
+  - holding{m=STONE_HOE} castinstead Wild_Berry_Hit_2
+  - holding{m=IRON_HOE} castinstead Wild_Berry_Hit_3
+  - holding{m=GOLDEN_HOE} castinstead Wild_Berry_Hit_4
+  - holding{m=DIAMOND_HOE} castinstead Wild_Berry_Hit_5
+  - holding{m=NETHERITE_HOE} castinstead Wild_Berry_Hit_6
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - sendtitle{title="";subtitle="&cCan't gather with this tool!";d=20;fi=10;fo=10} @trigger
+
+Wild_Berry_Hit_2: #5
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=20} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Wild_Berry_Hit_3: #4
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=25} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Wild_Berry_Hit_4: #3
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=34} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Wild_Berry_Hit_5: #2
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=50} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Wild_Berry_Hit_6: #1
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=100} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Wild_Berry_Death:
+  Cooldown: 1
+  Skills:
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.grass.break;volume=1;pitch=1.2} @self
+  - skill{s=Wild_Berry_Drop_Random}
+  
+Wild_Berry_Drop_Random:
+  Skills:
+  - randomskill{skills=Wild_Berry_Drop_1 7.5,Wild_Berry_Drop_2 2.5}
+  
+Wild_Berry_Drop_1:
+  Skills:
+  - dropitem{i=wild_berry} @selflocation
+  
+Wild_Berry_Drop_2:
+  Skills:
+  - dropitem{i=wild_berry} @selflocation
+  - dropitem{i=wild_berry} @selflocation
+  
+
+Cactus_Hit:
+  Conditions:
+  - damagecause{cause=ENTITY_ATTACK} true
+  TriggerConditions:
+  - holding{m=IRON_HOE} castinstead Cactus_Hit_3
+  - holding{m=GOLDEN_HOE} castinstead Cactus_Hit_4
+  - holding{m=DIAMOND_HOE} castinstead Cactus_Hit_5
+  - holding{m=NETHERITE_HOE} castinstead Cactus_Hit_6
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - sendtitle{title="";subtitle="&cCan't gather with this tool!";d=20;fi=10;fo=10} @trigger
+  
+Cactus_Hit_3: #6
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=17} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Cactus_Hit_4: #5
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=20} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Cactus_Hit_5: #4
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=25} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Cactus_Hit_6: #2
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=50} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Cactus_Death:
+  Cooldown: 1
+  Skills:
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.grass.break;volume=1;pitch=1.2} @self
+  - skill{s=Cactus_Drop_Random}
+  
+Cactus_Drop_Random:
+  Skills:
+  - randomskill{skills=Cactus_Drop_1 7.5,Cactus_Drop_2 2.5}
+  
+Cactus_Drop_1:
+  Skills:
+  - dropitem{i=cactus_r} @selflocation
+  
+Cactus_Drop_2:
+  Skills:
+  - dropitem{i=cactus_r} @selflocation
+  - dropitem{i=cactus_r} @selflocation
+  
+
+Shamrock_Hit:
+  Conditions:
+  - damagecause{cause=ENTITY_ATTACK} true
+  TriggerConditions:
+  - holding{m=IRON_HOE} castinstead Shamrock_Hit_3
+  - holding{m=GOLDEN_HOE} castinstead Shamrock_Hit_4
+  - holding{m=DIAMOND_HOE} castinstead Shamrock_Hit_5
+  - holding{m=NETHERITE_HOE} castinstead Shamrock_Hit_6
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - sendtitle{title="";subtitle="&cCan't gather with this tool!";d=20;fi=10;fo=10} @trigger
+
+Shamrock_Hit_3: #7
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=15} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Shamrock_Hit_4: #6
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=17} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Shamrock_Hit_5: #4
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=25} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Shamrock_Hit_6: #3
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=34} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Shamrock_Death:
+  Cooldown: 1
+  Skills:
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.grass.break;volume=1;pitch=1.2} @self
+  - skill{s=Shamrock_Drop_Random}
+  
+Shamrock_Drop_Random:
+  Skills:
+  - randomskill{skills=Shamrock_Drop_1 7.5,Shamrock_Drop_2 2.5}
+  
+Shamrock_Drop_1:
+  Skills:
+  - dropitem{i=shamrock} @selflocation
+  
+Shamrock_Drop_2:
+  Skills:
+  - dropitem{i=shamrock} @selflocation
+  - dropitem{i=shamrock} @selflocation
+  
+
+Four_Leaf_Clover_Hit:
+  Conditions:
+  - damagecause{cause=ENTITY_ATTACK} true
+  TriggerConditions:
+  - holding{m=GOLDEN_HOE} castinstead Four_Leaf_Clover_Hit_4
+  - holding{m=DIAMOND_HOE} castinstead Four_Leaf_Clover_Hit_5
+  - holding{m=NETHERITE_HOE} castinstead Four_Leaf_Clover_Hit_6
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - sendtitle{title="";subtitle="&cCan't gather with this tool!";d=20;fi=10;fo=10} @trigger
+
+Four_Leaf_Clover_Hit_4: #7
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=15} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Four_Leaf_Clover_Hit_5: #5
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=20} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Four_Leaf_Clover_Hit_6: #4
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=25} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Four_Leaf_Clover_Death:
+  Cooldown: 1
+  Skills:
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.grass.break;volume=1;pitch=1.2} @self
+  - skill{s=Four_Leaf_Clover_Drop_Random}
+  
+Four_Leaf_Clover_Drop_Random:
+  Skills:
+  - randomskill{skills=Four_Leaf_Clover_Drop_1 7.5,Four_Leaf_Clover_Drop_2 2.5}
+  
+Four_Leaf_Clover_Drop_1:
+  Skills:
+  - dropitem{i=four_leaf_clover} @selflocation
+  
+Four_Leaf_Clover_Drop_2:
+  Skills:
+  - dropitem{i=four_leaf_clover} @selflocation
+  - dropitem{i=four_leaf_clover} @selflocation
+  
+
+Glowing_Mushroom_Hit:
+  Conditions:
+  - damagecause{cause=ENTITY_ATTACK} true
+  TriggerConditions:
+  - holding{m=GOLDEN_HOE} castinstead Glowing_Mushroom_Hit_4
+  - holding{m=DIAMOND_HOE} castinstead Glowing_Mushroom_Hit_5
+  - holding{m=NETHERITE_HOE} castinstead Glowing_Mushroom_Hit_6
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - sendtitle{title="";subtitle="&cCan't gather with this tool!";d=20;fi=10;fo=10} @trigger
+
+Glowing_Mushroom_Hit_4: #8
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=13} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Glowing_Mushroom_Hit_5: #6
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=17} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Glowing_Mushroom_Hit_6: #5
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=20} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Glowing_Mushroom_Death:
+  Cooldown: 1
+  Skills:
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.grass.break;volume=1;pitch=1.2} @self
+  - skill{s=Glowing_Mushroom_Drop_Random}
+  
+Glowing_Mushroom_Drop_Random:
+  Skills:
+  - randomskill{skills=Glowing_Mushroom_Drop_1 7.5,Glowing_Mushroom_Drop_2 2.5}
+  
+Glowing_Mushroom_Drop_1:
+  Skills:
+  - dropitem{i=mushroom_glowing} @selflocation
+  
+Glowing_Mushroom_Drop_2:
+  Skills:
+  - dropitem{i=mushroom_glowing} @selflocation
+  - dropitem{i=mushroom_glowing} @selflocation
+  
+
+Magical_Herb_Hit:
+  Conditions:
+  - damagecause{cause=ENTITY_ATTACK} true
+  TriggerConditions:
+  - holding{m=DIAMOND_HOE} castinstead Magical_Herb_Hit_5
+  - holding{m=NETHERITE_HOE} castinstead Magical_Herb_Hit_6
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - sendtitle{title="";subtitle="&cCan't gather with this tool!";d=20;fi=10;fo=10} @trigger
+
+Magical_Herb_Hit_5: #7
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=15} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Magical_Herb_Hit_6: #6
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=17} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Magical_Herb_Death:
+  Cooldown: 1
+  Skills:
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.grass.break;volume=1;pitch=1.2} @self
+  - skill{s=Magical_Herb_Drop_Random}
+  
+Magical_Herb_Drop_Random:
+  Skills:
+  - randomskill{skills=Magical_Herb_Drop_1 7.5,Magical_Herb_Drop_2 2.5}
+  
+Magical_Herb_Drop_1:
+  Skills:
+  - dropitem{i=magical_herb} @selflocation
+  
+Magical_Herb_Drop_2:
+  Skills:
+  - dropitem{i=magical_herb} @selflocation
+  - dropitem{i=magical_herb} @selflocation
+  
+
+Deathbloom_Hit:
+  Conditions:
+  - damagecause{cause=ENTITY_ATTACK} true
+  TriggerConditions:
+  - holding{m=NETHERITE_HOE} castinstead Deathbloom_Hit_6
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - sendtitle{title="";subtitle="&cCan't gather with this tool!";d=20;fi=10;fo=10} @trigger
+
+Deathbloom_Hit_6: #7
+  Cooldown: 0.5
+  Skills:
+  - skill{s=CancelEventSkill;sync=true}
+  - damage{a=15} @self
+  - state{s=hit} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.crop.break;volume=1;pitch=1} @self
+  
+Deathbloom_Death:
+  Cooldown: 1
+  Skills:
+  - effect:particles{particle=block_crack;m=DIRT;amount=15;hS=0.2;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=block.grass.break;volume=1;pitch=1.2} @self
+  - skill{s=Deathbloom_Drop_Random}
+  
+Deathbloom_Drop_Random:
+  Skills:
+  - randomskill{skills=Deathbloom_Drop_1 7.5,Deathbloom_Drop_2 2.5}
+  
+Deathbloom_Drop_1:
+  Skills:
+  - dropitem{i=deathbloom} @selflocation
+  
+Deathbloom_Drop_2:
+  Skills:
+  - dropitem{i=deathbloom} @selflocation
+  - dropitem{i=deathbloom} @selflocation
+  
+  
+Potion_Minor:
+  Cooldown: 1
+  Skills:
+  - heal{a=2} @self
+  - effect:sound{s=entity.axolotl.idle_water;volume=2;pitch=0.9} @self
+  - effect:sound{s=entity.axolotl.idle_water;volume=2;pitch=0.9} @self
+  - effect:sound{s=entity.generic.drink;volume=0.3;pitch=0.9} @self
+  - consumeslot{slot=HAND;amount=1} @self
+  - effect:particles{particle=redstone;amount=12;hS=0.25;vS=0.6;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+
+Potion_Small:
+  Cooldown: 1
+  Skills:
+  - heal{a=4} @self
+  - effect:sound{s=entity.axolotl.idle_water;volume=2;pitch=0.9} @self
+  - effect:sound{s=entity.axolotl.idle_water;volume=2;pitch=0.9} @self
+  - effect:sound{s=entity.generic.drink;volume=0.3;pitch=0.9} @self
+  - consumeslot{slot=HAND;amount=1} @self
+  - effect:particles{particle=redstone;amount=12;hS=0.25;vS=0.6;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+
+Potion_Large:
+  Cooldown: 1
+  Skills:
+  - heal{a=6} @self
+  - effect:sound{s=entity.axolotl.idle_water;volume=2;pitch=0.9} @self
+  - effect:sound{s=entity.axolotl.idle_water;volume=2;pitch=0.9} @self
+  - effect:sound{s=entity.generic.drink;volume=0.3;pitch=0.9} @self
+  - consumeslot{slot=HAND;amount=1} @self
+  - effect:particles{particle=redstone;amount=12;hS=0.25;vS=0.6;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+
+Potion_Superior:
+  Cooldown: 1
+  Skills:
+  - heal{a=8} @self
+  - effect:sound{s=entity.axolotl.idle_water;volume=2;pitch=0.9} @self
+  - effect:sound{s=entity.axolotl.idle_water;volume=2;pitch=0.9} @self
+  - effect:sound{s=entity.generic.drink;volume=0.3;pitch=0.9} @self
+  - consumeslot{slot=HAND;amount=1} @self
+  - effect:particles{particle=redstone;amount=12;hS=0.25;vS=0.6;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+
+Potion_Eternal:
+  Cooldown: 1
+  Skills:
+  - heal{a=10} @self
+  - effect:sound{s=entity.axolotl.idle_water;volume=2;pitch=0.9} @self
+  - effect:sound{s=entity.axolotl.idle_water;volume=2;pitch=0.9} @self
+  - effect:sound{s=entity.generic.drink;volume=0.3;pitch=0.9} @self
+  - consumeslot{slot=HAND;amount=1} @self
+  - effect:particles{particle=redstone;amount=12;hS=0.25;vS=0.6;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+
+
+Spike_Trap_Still_Skill:
+  Conditions:
+  - playerwithin{d=1} true
+  Cooldown: 0
+  Skills:
+  - effect:sound{s=entity.player.hurt_sweet_berry_bush;volume=1;pitch=1.1} @self
+  - damage{a=3;pkb=true;hnp=false;hp=true} @PIR{r=1}
+
+Spike_Trap_Pop_Up_Skill:
+  Conditions:
+  - playerwithin{d=1} true
+  Cooldown: 0
+  Skills:
+  - effect:sound{s=entity.player.hurt_sweet_berry_bush;volume=1;pitch=1.1} @self
+  - damage{a=3;pkb=true;hnp=false;hp=true} @PIR{r=1}
+  
+Sawblade_Trap_Short_Skill:
+  Cooldown: 0
+  Skills:
+  - totem{md=2;c=1;oH=Sawblade_Trap_Short_Skill2;hnp=false;hp=true;hR=0.25;vR=0.25;i=1} @modelpart{p=sawblade}
+
+Sawblade_Trap_Short_Skill2:
+  Skills:
+  - effect:sound{s=entity.player.hurt_sweet_berry_bush;volume=1;pitch=1.1}
+  - damage{a=3;pkb=true;hnp=false;hp=true}
+  
+Spike_Ball_Trap_Skill:
+  Cooldown: 0
+  Skills:
+  - totem{md=2;c=1;oH=Spike_Ball_Trap_Skill2;hnp=false;hp=true;hR=1;vR=1;i=1} @modelpart{p=ball}
+
+Spike_Ball_Trap_Skill2:
+  Skills:
+  - effect:sound{s=entity.player.hurt_sweet_berry_bush;volume=1;pitch=1.1}
+  - damage{a=3;pkb=true;hnp=false;hp=true}
+  
+Flame_Trap_Skill:
+  Cooldown: 0
+  Skills:
+  - projectile{oH=Flame_Trap_Skill2;oT=Flame_Trap_Skill_TICK;v=10;i=1;hR=1;vR=1;mr=5;hnp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1.35;tyo=1.35;sfo=0} @forward{f=10;y=0}
+  - effect:sound{s=entity.blaze.shoot;volume=0.15;pitch=0.4} @self
+  - effect:sound{s=entity.blaze.burn;volume=0.4;pitch=1} @self
+  
+Flame_Trap_Skill_TICK:
+  Skills:
+  - effect:particles{p=flame;amount=10;size=0.3;hS=0.1;vS=0.1;y=0;speed=0.01;forwardOffset=0;sideOffset=0} @origin
+  
+Flame_Trap_Skill2:
+  Skills:
+  - effect:sound{s=entity.player.hurt_on_fire;volume=1;pitch=0.85}
+  - damage{a=3;pkb=true;hnp=false;hp=true}
+  - ignite{ticks=80}
+
+
+
+Portal_Start_1:
+  TriggerConditions:
+  - crouching false
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=entity.enderman.teleport;volume=1;pitch=0.8}
+  - teleportto{location=-173.5,-40,95;yaw=178;pitch=0;delay=10}
+  
+Portal_End_1:
+  TriggerConditions:
+  - crouching false
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=entity.enderman.teleport;volume=1;pitch=0.8}
+  - teleportto{location=4331.5,42,-845;yaw=-178;pitch=0;delay=10}
+  
+
+Portal_Start_2:
+  TriggerConditions:
+  - crouching false
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=entity.enderman.teleport;volume=1;pitch=0.8}
+  - teleportto{location=5999,72,-308;yaw=178;pitch=0;delay=10}
+  
+Portal_End_2:
+  TriggerConditions:
+  - crouching false
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=entity.enderman.teleport;volume=1;pitch=0.8}
+  - teleportto{location=5976,72,-308;yaw=178;pitch=0;delay=10}
+  
+
+Waystone_1:
+  TriggerConditions:
+  - crouching false
+  - variableEquals{var=target.waypoint_1;value="unlocked"} false
+  Cooldown: 1
+  Skills:
+  - setvariable{var=target.waypoint_1;value="unlocked";type=STRING;delay=1}
+  - effect:sound{s=item.trident.thunder;volume=1;pitch=0.9}
+  - command{c="mmocore waypoints unlock waypoint_1 <trigger.name>";asOp=false}
+  - sendtitle{title="&eWaystone Unlocked!";subtitle="&6Waypoint 1";d=40;fi=10;fo=10}
+  
+Waystone_1_Lastinteract:
+  TriggerConditions:
+  - crouching false
+  - variableEquals{var=target.waypoint_1;value="unlocked"} cast Waystone_1_Lastinteract_Message
+  Cooldown: 1
+  Skills:
+  - setvariable{var=target.lastinteracted;value="waypoint_1";type=STRING;delay=1}
+  
+Waystone_1_Lastinteract_Message:
+  Skills:
+  - sendtitle{title="&eReturn Waypoint Set!";subtitle="&6Waypoint 1";d=40;fi=10;fo=10}
+  - effect:sound{s=entity.experience_orb.pickup;volume=1;pitch=1}
+  
+Scroll_Return_Waypoint_1:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=entity.enderman.teleport;volume=1;pitch=0.8} @self
+  - command{c="mmocore waypoints teleport waypoint_1 <caster.name>";asOp=false}
+  - sendtitle{title="";subtitle="&eTeleporting...";d=40;fi=10;fo=10} @self
+  
+  
+Waystone_2:
+  TriggerConditions:
+  - crouching false
+  - variableEquals{var=target.waypoint_2;value="unlocked"} false
+  Cooldown: 1
+  Skills:
+  - setvariable{var=target.waypoint_2;value="unlocked";type=STRING;delay=1}
+  - effect:sound{s=item.trident.thunder;volume=1;pitch=0.9}
+  - command{c="mmocore waypoints unlock waypoint_2 <trigger.name>";asOp=false}
+  - sendtitle{title="&eWaystone Unlocked!";subtitle="&6Waypoint 2";d=40;fi=10;fo=10}
+  
+Waystone_2_Lastinteract:
+  TriggerConditions:
+  - crouching false
+  - variableEquals{var=target.waypoint_2;value="unlocked"} cast Waystone_2_Lastinteract_Message
+  Cooldown: 1
+  Skills:
+  - setvariable{var=target.lastinteracted;value="waypoint_2";type=STRING;delay=1}
+  
+Waystone_2_Lastinteract_Message:
+  Skills:
+  - sendtitle{title="&eReturn Waypoint Set!";subtitle="&6Waypoint 2";d=40;fi=10;fo=10}
+  - effect:sound{s=entity.experience_orb.pickup;volume=1;pitch=1}
+  
+Scroll_Return_Waypoint_2:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=entity.enderman.teleport;volume=1;pitch=0.8} @self
+  - command{c="mmocore waypoints teleport waypoint_2 <caster.name>";asOp=false}
+  - sendtitle{title="";subtitle="&eTeleporting...";d=40;fi=10;fo=10} @self
+  
+
+Scroll_Return:
+  Conditions:
+  - variableEquals{var=caster.lastinteracted;value="waypoint_1"} cast Scroll_Return_Waypoint_1
+  - variableEquals{var=caster.lastinteracted;value="waypoint_2"} cast Scroll_Return_Waypoint_2
+  Cooldown: 1
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @self
+  
+
+Scroll_Teleport:
+  Cooldown: 1
+  Skills:
+  - command{c="mmocore waypoints open <caster.name>";asOp=false}
+  - consumeslot{slot=HAND;amount=1} @self

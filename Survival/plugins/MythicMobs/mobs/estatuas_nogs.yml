@@ -1,0 +1,151 @@
+Zekk_Estatua:
+  Type: PIG
+  Display: '&2Zekk'
+  Options:
+    Despawn: PERSISTENT
+    NoAI: true
+    Silent: true
+    Invincible: true
+    KnockbackResistance: 1
+    MovementSpeed: 0
+    Collidable: false
+    PreventOtherDrops: true
+    Invisible: true
+  Skills:
+  - model{sync=true;mid=nm_zekk_the_zombie;drive=false;ride=false} @self ~onSpawn
+  - state{s=idle;forceSync=true} @self ~onSpawn
+  - model{sync=true;mid=nm_zekk_the_zombie;drive=false;ride=false} @self ~onLoad
+  - state{s=idle;forceSync=true} @self ~onLoad
+
+Unicorn_Estatua:
+  Type: PIG
+  Display: '&fUnicornio'
+  Options:
+    Despawn: PERSISTENT
+    NoAI: true
+    Silent: true
+    Invincible: true
+    KnockbackResistance: 1
+    MovementSpeed: 0
+    Collidable: false
+    PreventOtherDrops: true
+    Invisible: true
+  Skills:
+  - model{sync=true;mid=Pet_Unicorn_Heavenly;drive=false;ride=false} @self ~onSpawn
+  - state{s=idle;forceSync=true} @self ~onSpawn
+  - model{sync=true;mid=Pet_Unicorn_Heavenly;drive=false;ride=false} @self ~onLoad
+  - state{s=idle;forceSync=true} @self ~onLoad
+
+Oceanic_Shark_Estatua:
+  Type: PIG
+  Display: '&bOceanic Shark'
+  Options:
+    Despawn: PERSISTENT
+    NoAI: true
+    Silent: true
+    Invincible: true
+    KnockbackResistance: 1
+    MovementSpeed: 0
+    Collidable: false
+    PreventOtherDrops: true
+    Invisible: true
+  Skills:
+  - model{sync=true;mid=Pet_Shark_Oceanic;drive=false;ride=false} @self ~onSpawn
+  - state{s=idle;forceSync=true} @self ~onSpawn
+  - model{sync=true;mid=Pet_Shark_Oceanic;drive=false;ride=false} @self ~onLoad
+  - state{s=idle;forceSync=true} @self ~onLoad
+
+Dragon_Fire_Estatua:
+  Type: PIG
+  Display: '&cFire Dragon'
+  Options:
+    Despawn: PERSISTENT
+    NoAI: true
+    Silent: true
+    Invincible: true
+    KnockbackResistance: 1
+    MovementSpeed: 0
+    Collidable: false
+    PreventOtherDrops: true
+    Invisible: true
+  Skills:
+  - model{sync=true;mid=Pet_Fire_Dragon_Fire;drive=false;ride=false} @self ~onSpawn
+  - state{s=idle;forceSync=true} @self ~onSpawn
+  - model{sync=true;mid=Pet_Fire_Dragon_Fire;drive=false;ride=false} @self ~onLoad
+  - state{s=idle;forceSync=true} @self ~onLoad
+
+Ebony_Estatua:
+  Type: PIG
+  Display: '&5Ebony Cat'
+  Options:
+    Despawn: PERSISTENT
+    NoAI: true
+    Silent: true
+    Invincible: true
+    KnockbackResistance: 1
+    MovementSpeed: 0
+    Collidable: false
+    PreventOtherDrops: true
+    Invisible: true
+  Skills:
+  - model{sync=true;mid=ebony_cat;drive=false;ride=false} @self ~onSpawn
+  - state{s=idle;forceSync=true} @self ~onSpawn
+  - model{sync=true;mid=ebony_cat;drive=false;ride=false} @self ~onLoad
+  - state{s=idle;forceSync=true} @self ~onLoad
+
+Castle_Knight_Estatua:
+  Type: PIG
+  Display: '&7Castle Knight'
+  Options:
+    Despawn: PERSISTENT
+    NoAI: true
+    Silent: true
+    Invincible: true
+    KnockbackResistance: 1
+    MovementSpeed: 0
+    Collidable: false
+    PreventOtherDrops: true
+    Invisible: true
+  Skills:
+  - model{sync=true;mid=Pet_Knight_Castle;drive=false;ride=false} @self ~onSpawn
+  - state{s=idle;forceSync=true} @self ~onSpawn
+  - model{sync=true;mid=Pet_Knight_Castle;drive=false;ride=false} @self ~onLoad
+  - state{s=idle;forceSync=true} @self ~onLoad
+
+Phoenix_Estatua:
+  Type: PIG
+  Display: '&6Phoenix'
+  Options:
+    Despawn: PERSISTENT
+    NoAI: true
+    Silent: true
+    Invincible: true
+    KnockbackResistance: 1
+    MovementSpeed: 0
+    Collidable: false
+    PreventOtherDrops: true
+    Invisible: true
+  Skills:
+  - model{sync=true;mid=Pet_Griffon_Phoenix;drive=false;ride=false} @self ~onSpawn
+  - state{s=idle;forceSync=true} @self ~onSpawn
+  - model{sync=true;mid=Pet_Griffon_Phoenix;drive=false;ride=false} @self ~onLoad
+  - state{s=idle;forceSync=true} @self ~onLoad
+
+Cacti_Estatua:
+  Type: PIG
+  Display: '&aCacti'
+  Options:
+    Despawn: PERSISTENT
+    NoAI: true
+    Silent: true
+    Invincible: true
+    KnockbackResistance: 1
+    MovementSpeed: 0
+    Collidable: false
+    PreventOtherDrops: true
+    Invisible: true
+  Skills:
+  - model{sync=true;mid=Pet_Cacti_Sculk;drive=false;ride=false} @self ~onSpawn
+  - state{s=idle;forceSync=true} @self ~onSpawn
+  - model{sync=true;mid=Pet_Cacti_Sculk;drive=false;ride=false} @self ~onLoad
+  - state{s=idle;forceSync=true} @self ~onLoad

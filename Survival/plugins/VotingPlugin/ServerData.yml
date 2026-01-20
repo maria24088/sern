@@ -1,0 +1,16 @@
+LastUpdated: 1765833628455
+VotingPlugin:
+  AutoCachePlaceholders:
+  - total
+  - alltimetotal
+  AutoCacheUpdated: true
+  Version: '1.21.8-6-782ce95 (MC: 1.21.8)'
+  ServiceSites:
+  - TestVote
+  VoteShopConverted: true
+PluginVersions:
+  VotingPlugin: 6.19.1
+Month: DECEMBER
+PrevWeek: 51
+PrevDay: 15
+IgnoreTime: false

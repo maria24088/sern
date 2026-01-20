@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  airconditionerwhite:
+    display_name: "Air Conditioner White"
+    permission: livingroom.airconditionerwhite
+    resource:
+      material: PAPER
+      generate: false
+      model_path: airconditionerwhite
+    behaviours:
+      furniture:
+        light_level: 13

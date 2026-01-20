@@ -1,0 +1,905 @@
+info:
+  namespace: reliquias
+  dictionary_lang: en
+
+items:
+  aladdin_lamp:
+    display_name: "Aladdin Lamp"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15080
+      textures:
+        - "item/aladdin_lamp"
+
+  amethyst_amulet:
+    display_name: "Amethyst Amulet"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15081
+      textures:
+        - "item/amethyst_amulet"
+
+  amethyst_seeds:
+    display_name: "Amethyst Seeds"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15082
+      textures:
+        - "item/amethyst_seeds"
+
+  amethyst_septer:
+    display_name: "Amethyst Septer"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15083
+      textures:
+        - "item/amethyst_septer"
+
+  ancient_amulet:
+    display_name: "Ancient Amulet"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15084
+      textures:
+        - "item/ancient_amulet"
+
+  ancient_coin:
+    display_name: "Ancient Coin"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15085
+      textures:
+        - "item/ancient_coin"
+
+  ancient_totem:
+    display_name: "Ancient Totem"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15086
+      textures:
+        - "item/ancient_totem"
+
+  ancient_trophy:
+    display_name: "Ancient Trophy"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15087
+      textures:
+        - "item/ancient_trophy"
+
+  aquamarine_dust:
+    display_name: "Aquamarine Dust"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15088
+      textures:
+        - "item/aquamarine_dust"
+
+  aquamarine_helmet:
+    display_name: "Aquamarine Helmet"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15089
+      textures:
+        - "item/aquamarine_helmet"
+
+  aqua_book:
+    display_name: "Aqua Book"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15090
+      textures:
+        - "item/aqua_book"
+
+  arcane_scroll:
+    display_name: "Arcane Scroll"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15091
+      textures:
+        - "item/arcane_scroll"
+
+  bag_of_jewellry:
+    display_name: "Bag Of Jewellry"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15092
+      textures:
+        - "item/bag_of_jewellry"
+
+  bat_wing:
+    display_name: "Bat Wing"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15093
+      textures:
+        - "item/bat_wing"
+
+  black_knight:
+    display_name: "Black Knight"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15094
+      textures:
+        - "item/black_knight"
+
+  blue_crystal:
+    display_name: "Blue Crystal"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15095
+      textures:
+        - "item/blue_crystal"
+
+  bowl_blue_flame:
+    display_name: "Bowl Blue Flame"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15096
+      textures:
+        - "item/bowl_blue_flame"
+
+  charred_skull:
+    display_name: "Charred Skull"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15097
+      textures:
+        - "item/charred_skull"
+
+  crown:
+    display_name: "Crown"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15098
+      textures:
+        - "item/crown"
+
+  dark_mask:
+    display_name: "Dark Mask"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15099
+      textures:
+        - "item/dark_mask"
+
+  demon_mask:
+    display_name: "Demon Mask"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15100
+      textures:
+        - "item/demon_mask"
+
+  diamond_eearring:
+    display_name: "Diamond Eearring"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15101
+      textures:
+        - "item/diamond_eearring"
+
+  diamond_glasses:
+    display_name: "Diamond Glasses"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15102
+      textures:
+        - "item/diamond_glasses"
+
+  divine_amulet:
+    display_name: "Divine Amulet"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15103
+      textures:
+        - "item/divine_amulet"
+
+  divine_pickaxe:
+    display_name: "Divine Pickaxe"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15104
+      textures:
+        - "item/divine_pickaxe"
+
+  divine_ring:
+    display_name: "Divine Ring"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15105
+      textures:
+        - "item/divine_ring"
+
+  divine_scepter:
+    display_name: "Divine Scepter"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15106
+      textures:
+        - "item/divine_scepter"
+
+  dragon_egg:
+    display_name: "Dragon Egg"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15107
+      textures:
+        - "item/dragon_egg"
+
+  earring:
+    display_name: "Earring"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15108
+      textures:
+        - "item/earring"
+
+  elemental_orb:
+    display_name: "Elemental Orb"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15109
+      textures:
+        - "item/elemental_orb"
+
+  emerald_axe:
+    display_name: "Emerald Axe"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15110
+      textures:
+        - "item/emerald_axe"
+
+  enchanted_vase:
+    display_name: "Enchanted Vase"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15111
+      textures:
+        - "item/enchanted_vase"
+
+  eye_of_the_future:
+    display_name: "Eye Of The Future"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15112
+      textures:
+        - "item/eye_of_the_future"
+
+  falcom_with_spirits:
+    display_name: "Falcom With Spirits"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15113
+      textures:
+        - "item/falcom_with_spirits"
+
+  fire_shuriken:
+    display_name: "Fire Shuriken"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15114
+      textures:
+        - "item/fire_shuriken"
+
+  flame:
+    display_name: "Flame"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15115
+      textures:
+        - "item/flame"
+
+  flame_stack_decks:
+    display_name: "Flame Stack Decks"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15116
+      textures:
+        - "item/flame_stack_decks"
+
+  flask_with_blood:
+    display_name: "Flask With Blood"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15117
+      textures:
+        - "item/flask_with_blood"
+
+  golden_amulet:
+    display_name: "Golden Amulet"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15118
+      textures:
+        - "item/golden_amulet"
+
+  golden_egg:
+    display_name: "Golden Egg"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15119
+      textures:
+        - "item/golden_egg"
+
+  golden_harp:
+    display_name: "Golden Harp"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15120
+      textures:
+        - "item/golden_harp"
+
+  golden_horsehoe:
+    display_name: "Golden Horsehoe"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15121
+      textures:
+        - "item/golden_horsehoe"
+
+  golden_jug:
+    display_name: "Golden Jug"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15122
+      textures:
+        - "item/golden_jug"
+
+  golden_ring_blue_crystal:
+    display_name: "Golden Ring Blue Crystal"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15123
+      textures:
+        - "item/golden_ring_blue_crystal"
+
+  golden_shield:
+    display_name: "Golden Shield"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15124
+      textures:
+        - "item/golden_shield"
+
+  golden_trumpet:
+    display_name: "Golden Trumpet"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15125
+      textures:
+        - "item/golden_trumpet"
+
+  gold_bars:
+    display_name: "Gold Bars"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15126
+      textures:
+        - "item/gold_bars"
+
+  goodwin_hat:
+    display_name: "Goodwin Hat"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15127
+      textures:
+        - "item/goodwin_hat"
+
+  hand_of_midas:
+    display_name: "Hand Of Midas"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15128
+      textures:
+        - "item/hand_of_midas"
+
+  health_potion:
+    display_name: "Health Potion"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15129
+      textures:
+        - "item/health_potion"
+
+  hourglass:
+    display_name: "Hourglass"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15130
+      textures:
+        - "item/hourglass"
+
+  king_robe:
+    display_name: "King Robe"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15131
+      textures:
+        - "item/king_robe"
+
+  knights_rose:
+    display_name: "Knights Rose"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15132
+      textures:
+        - "item/knights_rose"
+
+  lightning_bow:
+    display_name: "Lightning Bow"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15133
+      textures:
+        - "item/lightning_bow"
+
+  liquid_star:
+    display_name: "Liquid Star"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15134
+      textures:
+        - "item/liquid_star"
+
+  magic_ball:
+    display_name: "Magic Ball"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15135
+      textures:
+        - "item/magic_ball"
+
+  magic_seal:
+    display_name: "Magic Seal"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15136
+      textures:
+        - "item/magic_seal"
+
+  mirror_of_fog:
+    display_name: "Mirror Of Fog"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15137
+      textures:
+        - "item/mirror_of_fog"
+
+  mirror_of_kalandra:
+    display_name: "Mirror Of Kalandra"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15138
+      textures:
+        - "item/mirror_of_kalandra"
+
+  mystic_box:
+    display_name: "Mystic Box"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15139
+      textures:
+        - "item/mystic_box"
+
+  mythic_drop:
+    display_name: "Mythic Drop"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15140
+      textures:
+        - "item/mythic_drop"
+
+  mythic_feather:
+    display_name: "Mythic Feather"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15141
+      textures:
+        - "item/mythic_feather"
+
+  mythic_staff:
+    display_name: "Mythic Staff"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15142
+      textures:
+        - "item/mythic_staff"
+
+  netherite_amulet:
+    display_name: "Netherite Amulet"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15143
+      textures:
+        - "item/netherite_amulet"
+
+  netherite_shield:
+    display_name: "Netherite Shield"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15144
+      textures:
+        - "item/netherite_shield"
+
+  pawn:
+    display_name: "Pawn"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15145
+      textures:
+        - "item/pawn"
+
+  phoenix_egg:
+    display_name: "Phoenix Egg"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15146
+      textures:
+        - "item/phoenix_egg"
+
+  phoenix_feather:
+    display_name: "Phoenix Feather"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15147
+      textures:
+        - "item/phoenix_feather"
+
+  primitive_knife:
+    display_name: "Primitive Knife"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15148
+      textures:
+        - "item/primitive_knife"
+
+  rare_crystals:
+    display_name: "Rare Crystals"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15149
+      textures:
+        - "item/rare_crystals"
+
+  razor_ring:
+    display_name: "Razor Ring"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15150
+      textures:
+        - "item/razor_ring"
+
+  ritual_skull:
+    display_name: "Ritual Skull"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15151
+      textures:
+        - "item/ritual_skull"
+
+  royal_robe:
+    display_name: "Royal Robe"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15152
+      textures:
+        - "item/royal_robe"
+
+  ruby_amulet:
+    display_name: "Ruby Amulet"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15153
+      textures:
+        - "item/ruby_amulet"
+
+  ruby_beads:
+    display_name: "Ruby Beads"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15154
+      textures:
+        - "item/ruby_beads"
+
+  ruby_bracelet:
+    display_name: "Ruby Bracelet"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15155
+      textures:
+        - "item/ruby_bracelet"
+
+  ruby_crystal:
+    display_name: "Ruby Crystal"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15156
+      textures:
+        - "item/ruby_crystal"
+
+  ruby_pendant:
+    display_name: "Ruby Pendant"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15157
+      textures:
+        - "item/ruby_pendant"
+
+  rune_plate:
+    display_name: "Rune Plate"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15158
+      textures:
+        - "item/rune_plate"
+
+  rune_plate2:
+    display_name: "Rune Plate2"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15159
+      textures:
+        - "item/rune_plate2"
+
+  rune_stone:
+    display_name: "Rune Stone"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15160
+      textures:
+        - "item/rune_stone"
+
+  sapphire_butterfly:
+    display_name: "Sapphire Butterfly"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15161
+      textures:
+        - "item/sapphire_butterfly"
+
+  sapphire_sword:
+    display_name: "Sapphire Sword"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15162
+      textures:
+        - "item/sapphire_sword"
+
+  scarlet_flower:
+    display_name: "Scarlet Flower"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15163
+      textures:
+        - "item/scarlet_flower"
+
+  scroll_of_dead:
+    display_name: "Scroll Of Dead"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15164
+      textures:
+        - "item/scroll_of_dead"
+
+  silver_mirror:
+    display_name: "Silver Mirror"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15165
+      textures:
+        - "item/silver_mirror"
+
+  sphere_of_power:
+    display_name: "Sphere Of Power"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15166
+      textures:
+        - "item/sphere_of_power"
+
+  spirit_candle:
+    display_name: "Spirit Candle"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15167
+      textures:
+        - "item/spirit_candle"
+
+  spirit_mask:
+    display_name: "Spirit Mask"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15168
+      textures:
+        - "item/spirit_mask"
+
+  stuffed_raven:
+    display_name: "Stuffed Raven"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15169
+      textures:
+        - "item/stuffed_raven"
+
+  talisman_of_dexterity:
+    display_name: "Talisman Of Dexterity"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15170
+      textures:
+        - "item/talisman_of_dexterity"
+
+  tear_of_the_delirium:
+    display_name: "Tear Of The Delirium"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15171
+      textures:
+        - "item/tear_of_the_delirium"
+
+  toxic_ingot:
+    display_name: "Toxic Ingot"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15172
+      textures:
+        - "item/toxic_ingot"
+
+  toxic_stone:
+    display_name: "Toxic Stone"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15173
+      textures:
+        - "item/toxic_stone"
+
+  void_flask:
+    display_name: "Void Flask"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15174
+      textures:
+        - "item/void_flask"
+
+  void_ingot:
+    display_name: "Void Ingot"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15175
+      textures:
+        - "item/void_ingot"
+
+  void_sphere:
+    display_name: "Void Sphere"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15176
+      textures:
+        - "item/void_sphere"
+
+  volcanic_scarab:
+    display_name: "Volcanic Scarab"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15177
+      textures:
+        - "item/volcanic_scarab"
+
+  warlocks_tome:
+    display_name: "Warlocks Tome"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15178
+      textures:
+        - "item/warlocks_tome"
+
+  wizard_hat:
+    display_name: "Wizard Hat"
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 15179
+      textures:
+        - "item/wizard_hat"
+

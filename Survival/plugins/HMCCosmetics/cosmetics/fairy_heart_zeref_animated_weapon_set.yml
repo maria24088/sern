@@ -1,0 +1,30 @@
+fairy_heart_zeref_animated_weapon_set_hat:
+  slot: HELMET
+  permission: "elitecreatures.hat"
+  dyeable: false
+  item:
+    material: itemsadder:fairy_heart_zeref_animated_weapon_set_hat
+    name: "[Fairy Heart Zeref] Hat"
+    amount: 1
+fairy_heart_zeref_animated_weapon_set_backpack:
+  slot: BACKPACK
+  permission: "elitecreatures.backpack"
+  item:
+    material: itemsadder:fairy_heart_zeref_animated_weapon_set_backpack
+    name: "[Fairy Heart Zeref] Backpack"
+    amount: 1
+  firstperson-item:
+    material: itemsadder:fairy_heart_zeref_animated_weapon_set_backpack
+    amount: 1
+fairy_heart_zeref_animated_weapon_set_wing:
+  slot: BACKPACK
+  permission: "elitecreatures.wing"
+  item:
+    material: itemsadder:fairy_heart_zeref_animated_weapon_set_wing
+    name: "[Fairy Heart Zeref] Wing"
+    amount: 1
+  firstperson-item:
+    material: itemsadder:fairy_heart_zeref_animated_weapon_set_wing
+    amount: 1
+
+#EEM20WYz0EURxGOKpEMwNGSrZVY5BTVUZkVXR1c4dkYsp1RNhTcjN0ZYhmMYVGbyhTTxVEN

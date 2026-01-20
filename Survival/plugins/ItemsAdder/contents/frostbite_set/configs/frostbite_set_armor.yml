@@ -1,0 +1,71 @@
+armors_rendering:
+  frostbitearmor:
+    color: '#1cb9e9'
+    layer_1: armor/frostbite_armor_layer_1
+    layer_2: armor/frostbite_armor_layer_2
+    use_color: false
+info:
+  namespace: frostbite_set
+items:
+  frostbitehelmet:
+    display_name: §fFrostbite Helmet
+    permission: frostbite_set.helmet
+    resource:
+      generate: true
+      textures:
+      - armor/frostbite_helmet_icon.png
+    specific_properties:
+      armor:
+        custom_armor: frostbitearmor
+        slot: head
+    durability:
+      max_custom_durability: 165
+    attribute_modifiers:
+      head:
+        armor: 2
+  frostbitechestplate:
+    display_name: §fFrostbite Chestplate
+    permission: frostbite_set.chestplate
+    resource:
+      generate: true
+      textures:
+      - armor/frostbite_chestplate_icon.png
+    specific_properties:
+      armor:
+        custom_armor: frostbitearmor
+        slot: chest
+    durability:
+      max_custom_durability: 240
+    attribute_modifiers:
+      chest:
+        armor: 6
+  frostbiteleggings:
+    display_name: §fFrostbite Leggings
+    permission: frostbite_set.leggings
+    resource:
+      generate: true
+      textures:
+      - armor/frostbite_leggings_icon.png
+    specific_properties:
+      armor:
+        custom_armor: frostbitearmor
+        slot: legs
+    attribute_modifiers:
+      legs:
+        armor: 5
+  frostbiteboots:
+    display_name: §fFrostbite Boots
+    permission: frostbite_set.boots
+    resource:
+      generate: true
+      textures:
+      - armor/frostbite_boots_icon.png
+    specific_properties:
+      armor:
+        custom_armor: frostbitearmor
+        slot: feet
+    durability:
+      max_custom_durability: 165
+    attribute_modifiers:
+      feet:
+        armor: 2

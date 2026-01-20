@@ -1,0 +1,30 @@
+DisplayName: Dragons Cubees !
+IconName: Dragons Cubees !
+DefaultCategory: false
+Icon:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4440
+  id: minecraft:golden_horse_armor
+  count: 1
+  components:
+    minecraft:lore: '[{extra:[" Air Dragon Cubee"],text:""},{extra:[" Darkness Dragon
+      Cubee"],text:""},{extra:[" Earth Dragon Cubee"],text:""},{extra:[" Fire Dragon
+      Cubee"],text:""},{extra:[" Galaxy Dragon Cubee"],text:""},{extra:[" Ice Dragon
+      Cubee"],text:""},{extra:[" Light Dragon Cubee"],text:""},{extra:[" Nature Dragon
+      Cubee"],text:""}]'
+    minecraft:custom_name: '{extra:[" Dragons Cubees !"],text:""}'
+    minecraft:custom_model_data: '{floats:[7191143.0f]}'
+  schema_version: 1
+Pets:
+- cubee-air_dragon
+- cubee-darkness_dragon
+- cubee-earth_dragon
+- cubee-fire_dragon
+- cubee-galaxy_dragon
+- cubee-ice_dragon
+- cubee-light_dragon
+- cubee-nature_dragon
+Id: cubee-category-v20
+ExcludedCategories: []
+
+

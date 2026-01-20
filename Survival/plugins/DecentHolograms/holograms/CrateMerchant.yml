@@ -1,0 +1,20 @@
+location: SpawnRPG:62.504:92.000:90.459
+enabled: false
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: TRIPWIRE_HOOK'
+    height: 0.6
+  - content: '&6&lMercader de Cajas'
+    height: 0.3
+  - content: '&r¡Compra llaves de cajas con monedas!'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&7Haz clic para Abrir'
+    height: 0.3
+  actions: {}

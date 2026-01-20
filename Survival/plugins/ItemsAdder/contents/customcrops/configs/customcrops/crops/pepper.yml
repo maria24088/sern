@@ -1,0 +1,161 @@
+info:
+  namespace: customcrops
+items:
+  pepper_stage_1:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pepper/stage_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pepper_stage_2:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pepper/stage_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pepper_stage_3:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pepper/stage_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pepper_stage_4:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pepper/stage_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pepper_stage_5:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pepper/stage_5
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pepper_seeds:
+    display_name: "Pepper Seeds"
+    #display_name: 辣椒种子
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pepper/pepper_seeds
+  pepper:
+    display_name: "Pepper"
+    #display_name: 辣椒
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/pepper/pepper
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  pepper_silver_star:
+    display_name: "Pepper (Silver Star)"
+    #display_name: 辣椒(银星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/pepper/pepper_silver_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  pepper_golden_star:
+    display_name: "Pepper (Golden Star)"
+    #display_name: 辣椒(金星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/pepper/pepper_golden_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+categories:
+  customcrops_pepper:
+    enabled: true
+    icon: customcrops:pepper
+    name: 'Pepper'
+    items:
+      - customcrops:pepper
+      - customcrops:pepper_silver_star
+      - customcrops:pepper_golden_star
+      - customcrops:pepper_seeds
+      - customcrops:pepper_stage_1
+      - customcrops:pepper_stage_2
+      - customcrops:pepper_stage_3
+      - customcrops:pepper_stage_4
+      - customcrops:pepper_stage_5

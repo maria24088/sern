@@ -1,0 +1,78 @@
+armors_rendering:
+  dragonstone_armor:
+    color: '#eb3434'
+    layer_1: armor/dragonstone_armor_layer_1
+    layer_2: armor/dragonstone_armor_layer_2
+    use_color: false
+
+info:
+  namespace: dragonstone_guardians
+
+items:
+  dragonstonehelmet:
+    display_name: Dragonstone Guardians Helmet
+    permission: dragonstone_guardians.use
+    resource:
+      generate: true
+      textures:
+      - armor/dragonstone_helmet_icon.png
+    specific_properties:
+      armor:
+        custom_armor: dragonstone_armor
+        slot: head
+    durability:
+      max_custom_durability: 363
+    attribute_modifiers:
+      head:
+        armor: 3
+
+  dragonstonechestplate:
+    display_name: Dragonstone Guardians Chestplate
+    permission: dragonstone_guardians.use
+    resource:
+      generate: true
+      textures:
+      - armor/dragonstone_chestplate_icon.png
+    specific_properties:
+      armor:
+        custom_armor: dragonstone_armor
+        slot: chest
+    durability:
+      max_custom_durability: 528
+    attribute_modifiers:
+      chest:
+        armor: 8
+
+  dragonstoneleggings:
+    display_name: Dragonstone Guardians Leggings
+    permission: dragonstone_guardians.use
+    resource:
+      generate: true
+      textures:
+      - armor/dragonstone_leggings_icon.png
+    specific_properties:
+      armor:
+        custom_armor: dragonstone_armor
+        slot: legs
+    durability:
+      max_custom_durability: 495
+    attribute_modifiers:
+      legs:
+        armor: 6
+
+  dragonstoneboots:
+    display_name: Dragonstone Guardians Boots
+    permission: dragonstone_guardians.use
+    resource:
+      generate: true
+      textures:
+      - armor/dragonstone_boots_icon.png
+    specific_properties:
+      armor:
+        custom_armor: dragonstone_armor
+        slot: feet
+    durability:
+      max_custom_durability: 429
+    attribute_modifiers:
+      feet:
+        armor: 3

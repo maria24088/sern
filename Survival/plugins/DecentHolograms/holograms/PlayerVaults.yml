@@ -1,0 +1,20 @@
+location: SpawnRPG:25.500:92.500:124.500
+enabled: false
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:CHEST'
+    height: 0.5
+  - content: '&#edd93e&lBóvedas de Jugador'
+    height: 0.3
+  - content: '&r¡Almacena objetos personales!'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&7Haz clic para Abrir'
+    height: 0.3
+  actions: {}

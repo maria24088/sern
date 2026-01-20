@@ -1,0 +1,24 @@
+class-points: 0
+skill-points: 0
+skill-reallocation-points: 0
+attribute-points: 0
+attribute-realloc-points: 0
+level: 1
+experience: 47.6908103664928
+class: HUMAN
+waypoints: []
+friends: []
+last-login: 1767658915816
+skill-tree-reallocation-points: 0
+health: 20.0
+mana: 40.0
+stellium: 20.0
+stamina: 20.0
+unlocked-items: []
+skill-tree-level: {}
+attribute: {}
+profession:
+  woodcutting:
+    exp: 257.38632105644086
+    level: 3
+quest: {}

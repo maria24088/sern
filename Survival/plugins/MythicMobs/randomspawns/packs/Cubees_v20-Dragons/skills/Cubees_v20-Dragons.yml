@@ -1,0 +1,1617 @@
+Cubees_v20-Cooldown:
+  Cooldown: 1
+  Skills:
+  - sound{s=entity.experience_orb.pickup;p=0.3;v=0.6;audience=@self} @self
+  - message{m="&c⏹ &eCubee is charging its cooldown!"} @self
+
+  - totem{c=99;
+      os=[
+        - pull{v=7.5;repeat=100;repeatInterval=1;fo=true;toorigin=true} @EIR{r=10}
+      ];md=2;i=10} @ModelPart{mid=chibaku_tensei;p=chibaku_orb}
+  - throw{v=20;vy=0;delay=100} @EIR{r=3;
+      targetconditions=[
+        - owner false
+        - isliving true
+      ]}
+
+Cubees_v20-Cooldown_Refresed:
+  Cooldown: 1
+  Skills:
+  - sound{s=entity.experience_orb.pickup;v=0.6;p=0.9;audience=@self} @self
+  - sound{s=entity.armadillo.ambient;p=1.4;v=0.6;audience=@self} @self
+  - title{title="&2";subtitle="&a⏹ &eCubee's ready! &a⏹";duration=30;fadein=0;fadeout=0}
+  - message{m="&a⏹ &bCubee is ready to unleash its power!"} @self
+
+
+
+Cubee-air_dragon-Pet-Attack:
+  TargetConditions:
+  - distance{d=<10}
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - sudoskill{s=Cubee-air_dragon-Pet-Attack_SudoOwner} @Owner
+
+Cubee-air_dragon-Pet-Attack_SudoOwner:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - totem{
+      oS=[
+        - skill{s=Cubee-air_dragon-Pet-Attack_LOS} @Origin
+      ];md=3;i=10} @Forward{f=20}
+
+Cubee-air_dragon-Pet-Attack_LOS:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - skill{s=Cubee-air_dragon-Pet-Attack_SudoTargetConditions} @EntitiesInLine{r=2.5}
+
+Cubee-air_dragon-Pet-Attack_SudoTargetConditions:
+  TargetConditions:
+  - ( isliving true || isplayer true ) true
+  - distance{d=<<placeholder.Cubee-air_dragon-Skill_MaximumTargetDistance>}
+  Conditions:
+  - targets{a=>0} true
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - signal{s=CubeeAttack} @EIR{r=50;
+      conditions=[
+        - entitytype{t=WOLF}
+      ]}
+
+
+Cubee-air_dragon-Pet-Attack_Activate:
+  Skills:
+  - unsetvar{name=caster.cubee_mark} @self
+  - unsetvar{name=caster.cubee_ally_mark} @self
+  - sudoskill{
+      s=[
+        - unsetvar{var=caster.distance} @self
+        - raytrace{entityskill=Cubee-air_dragon-Pet-Attack_Activat_ConfirmTarget;raywidth=0.2;ignorepassableblocks=true;maxdistance=50} @Forward{f=50}
+      ];cat=true} @Owner
+
+Cubee-air_dragon-Pet-OwnersCombatTarget:
+  Skills:
+  - onDamaged{ondamagedskill=Cubee-air_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-air_dragon-Skill_AutoActivate>";val2="true"}
+  - onAttack{onattackskill=Cubee-air_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-air_dragon-Skill_AutoActivate>";val2="true"}
+
+Cubee-air_dragon-Pet-OnDamagedTarget:
+  TriggetConditions:
+  - owner false
+  - isliving true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"} @Trigger
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-air_dragon-Skill_MaximumTargetDistance>} @Trigger
+  - setTarget @Trigger
+
+Cubee-air_dragon-Pet-Attack_Activat_ConfirmTarget: #Player is Caster
+  TargetConditions:
+  - ( isliving || isplayer ) true
+  Conditions:
+  - crouching castinstead Cubee-air_dragon-Pet-Attack_Activat_ConfirmAlly
+  - targets{a=>0}
+  - hasaura{aura=CubeeAttackCooldown} cast Cubees_v20-Cooldown
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.uuid>} @targetedTarget{}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cTarget is too far! [<placeholder.Cubee-air_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-air_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-air_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-air_dragon-Skill_MaximumTargetDistance>}
+
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-air_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeTargetInherit} @Trigger
+
+Cubee-air_dragon-Pet-Attack_Activat_ConfirmAlly:
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.uuid>}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cAlly is too far! [<placeholder.Cubee-air_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-air_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-air_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-air_dragon-Skill_MaximumTargetDistance>}
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-air_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeAllyInherit} @Trigger
+
+Cubee-air_dragon-TargetInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.var.cubee_mark>} @Owner
+  - skill{s=Cubee-air_dragon-Pet-Attack_Activat_InheritTarget} @UUID{uuid=<caster.var.cubee_mark>} ?variableIsSet{var=caster.cubee_mark}
+
+Cubee-air_dragon-AllyInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.var.cubee_ally_mark>} @Owner
+  - skill{s=Cubee-air_dragon-Pet-Attack_Activat_InheritAlly} @UUID{uuid=<caster.var.cubee_ally_mark>} ?variableIsSet{var=caster.cubee_ally_mark}
+
+Cubee-air_dragon-Pet-Attack_Activat_InheritTarget: #Cubee is Caster
+  Skills:
+  - settarget
+  - threat{mode=forcetop}
+  - sudoskill{s=[ - aura{aura=OnCooldown;d=3;i=10} @Trigger];cat=true} @Owner
+  - threat{mode=ADD;amount=1}
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#e11717;color2=#fc5aa4;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - removeaura{auraname=<caster.uuid>} @Target
+  - cancel ?hasaura{auraname=OnCooldown}
+  - skill{s=Cubee-air_dragon-Pet-Attack_Execute} @Self
+
+Cubee-air_dragon-Pet-Attack_Activat_InheritAlly: #Cubee is Caster
+  Skills:
+  - threat{mode=set;a=0}
+  - threat{mode=clear}
+  - settarget @ThreatTargets
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#8ee6ec;color2=#eafd47;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - aura{auraname="<caster.uuid>";d=9999999;i=10;cancelondeath=false;cancelonteleport=false;cancelonchangeworld=false;canceloncasterdeath=false;cancelonquit=false}
+
+Cubee-air_dragon-Pet-Attack_Execute:
+  Cooldown: "(<placeholder.Cubee-air_dragon-Skill_Cooldown> + 5)-(<pet.power>*<placeholder.Cubee-air_dragon-Skill_Cooldown_PowerScale>)"
+  Skills:
+  - aura{auraname=CubeeAttackCooldown;cancelondeath=false;cancelonquit=false;cancelonquit=false;cancelonchangeworld=false;cancelonteleport=false;i=20;ms=1;ma=true;rd=true;
+      d="((<placeholder.Cubee-air_dragon-Skill_Cooldown> + 5)-(<pet.power>*<placeholder.Cubee-air_dragon-Skill_Cooldown_PowerScale>))*20";
+      oE=[
+        - sudoskill{s=Cubees_v20-Cooldown_Refresed} @Owner
+      ]} @owner
+  - petExperience{exp="<placeholder.Cubee-air_dragon-EXP_Receive>"} @self
+  - auraremove{auraname=Crouching} @self
+  - aura{auraname=Attacking;d="115"} @self
+  - sound{s=entity.player.levelup;p=1.5;v=0.35} @selflocation
+  - state{s=execute;li=0;lo=0} @self
+  - sound{s=cubees_v20:cubee-air_dragon;sc=PLAYERS;p=1;v=4;audience=@owner} @Forward{f=1;owner=true}
+  - delay 30 # Tick 20
+  - aura{auraname=Stay;d=70} @self
+  - sudoskill{
+      s=[
+        - pull{v=2.2} @Trigger
+      ];cat=true;repeat=69;repeatInterval=1} @Target
+  - delay 3
+  - skill{s=Cubee-air_dragon-Pet-VindrWrath_Hit;repeat=23;repeatInterval=3} @EIR{r=10}
+  - particles{p=dust_color_transition;color1=#aaffd4;color2=#75ccce;size=2;a=9;hs=1.4;vs=0.5;repeat=23;repeatInterval=3} @selflocation
+  - particles{p=dust_color_transition;color1=#75ccce;color2=#787a9a;size=3;a=9;hs=1.4;vs=0.8;repeat=23;repeatInterval=3} @selflocation{y=-0.2}
+  
+Cubee-air_dragon-Pet-VindrWrath_Hit: #Target is Caster
+  Skills:
+  - sudoskill{s=Cubee-air_dragon-Pet-VindrWrath_CheckAlly;cat=true} @targetedTarget{}
+
+Cubee-air_dragon-Pet-VindrWrath_CheckAlly: #Target is Caster
+  Skills:
+  - sudoskill{s=Cubee-air_dragon-Pet-VindrWrath_ApplyTarget;cat=true} @trigger ?!hasaura{auraname=<trigger.uuid>}
+
+Cubee-air_dragon-Pet-VindrWrath_ApplyTarget: #Target is Caster
+  Skills:
+  - skill{s=Cubee-air_dragon-Pet-VindrWrath_Damage} @trigger
+
+Cubee-air_dragon-Pet-PullIn:
+  Skills:
+  - pull{v=3;repeat=23;repeatInterval=3}
+
+Cubee-air_dragon-Pet-VindrWrath_Damage:
+  TargetConditions:
+  - owner false
+  - isliving true
+  - distance{d=>5.01} castinstead Cubee-air_dragon-Pet-PullIn
+  Skills:
+  - potion{t=SLOW;p=false;i=false;lvl=3;d=30}
+  - damage{a="(<placeholder.Cubee-air_dragon-Skill_Damage>+(<pet.power>*<placeholder.Cubee-air_dragon-Skill_Damage_PowerScale>))/24";pi=true}
+  - pull{v=3;toorigin=true;origin=@Selflocation{y=5}}
+  - particles{p=wax_on;a=1;speed=0.3} @selflocation
+  - particles{p=flame;a=1;speed=0.35;hs=1;vs=0.5} @selflocation
+  - particles{p=end_rod;a=1;speed=0.5;hs=1;vs=0.5} @selflocation
+
+
+Cubee-darkness_dragon-Pet-Attack:
+  TargetConditions:
+  - distance{d=<10}
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - sudoskill{s=Cubee-darkness_dragon-Pet-Attack_SudoOwner} @Owner
+
+Cubee-darkness_dragon-Pet-Attack_SudoOwner:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - totem{
+      oS=[
+        - skill{s=Cubee-darkness_dragon-Pet-Attack_LOS} @Origin
+      ];md=3;i=10} @Forward{f=20}
+
+Cubee-darkness_dragon-Pet-Attack_LOS:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - skill{s=Cubee-darkness_dragon-Pet-Attack_SudoTargetConditions} @EntitiesInLine{r=2.5}
+
+Cubee-darkness_dragon-Pet-Attack_SudoTargetConditions:
+  TargetConditions:
+  - ( isliving true || isplayer true ) true
+  - distance{d=<<placeholder.Cubee-darkness_dragon-Skill_MaximumTargetDistance>}
+  Conditions:
+  - targets{a=>0} true
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - signal{s=CubeeAttack} @EIR{r=50;
+      conditions=[
+        - entitytype{t=WOLF}
+      ]}
+
+
+Cubee-darkness_dragon-Pet-Attack_Activate:
+  Skills:
+  - unsetvar{name=caster.cubee_mark} @self
+  - unsetvar{name=caster.cubee_ally_mark} @self
+  - sudoskill{
+      s=[
+        - unsetvar{var=caster.distance} @self
+        - raytrace{entityskill=Cubee-darkness_dragon-Pet-Attack_Activat_ConfirmTarget;raywidth=0.2;ignorepassableblocks=true;maxdistance=50} @Forward{f=50}
+      ];cat=true} @Owner
+
+Cubee-darkness_dragon-Pet-OwnersCombatTarget:
+  Skills:
+  - onDamaged{ondamagedskill=Cubee-darkness_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-darkness_dragon-Skill_AutoActivate>";val2="true"}
+  - onAttack{onattackskill=Cubee-darkness_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-darkness_dragon-Skill_AutoActivate>";val2="true"}
+
+Cubee-darkness_dragon-Pet-OnDamagedTarget:
+  TriggetConditions:
+  - owner false
+  - isliving true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"} @Trigger
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-darkness_dragon-Skill_MaximumTargetDistance>} @Trigger
+  - threat{mode=set;amount=1}
+  - setTarget @Trigger
+
+Cubee-darkness_dragon-Pet-Attack_Activat_ConfirmTarget: #Player is Caster
+  TargetConditions:
+  - ( isliving || isplayer ) true
+  Conditions:
+  - crouching castinstead Cubee-darkness_dragon-Pet-Attack_Activat_ConfirmAlly
+  - targets{a=>0}
+  - hasaura{aura=CubeeAttackCooldown} cast Cubees_v20-Cooldown
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.uuid>} @targetedTarget{}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cTarget is too far! [<placeholder.Cubee-darkness_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-darkness_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-darkness_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-darkness_dragon-Skill_MaximumTargetDistance>}
+
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-darkness_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeTargetInherit} @Trigger
+
+Cubee-darkness_dragon-Pet-Attack_Activat_ConfirmAlly:
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.uuid>}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cAlly is too far! [<placeholder.Cubee-darkness_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-darkness_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-darkness_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-darkness_dragon-Skill_MaximumTargetDistance>}
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-darkness_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeAllyInherit} @Trigger
+
+Cubee-darkness_dragon-TargetInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.var.cubee_mark>} @Owner
+  - skill{s=Cubee-darkness_dragon-Pet-Attack_Activat_InheritTarget} @UUID{uuid=<caster.var.cubee_mark>} ?variableIsSet{var=caster.cubee_mark}
+
+Cubee-darkness_dragon-AllyInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.var.cubee_ally_mark>} @Owner
+  - skill{s=Cubee-darkness_dragon-Pet-Attack_Activat_InheritAlly} @UUID{uuid=<caster.var.cubee_ally_mark>} ?variableIsSet{var=caster.cubee_ally_mark}
+
+Cubee-darkness_dragon-Pet-Attack_Activat_InheritTarget: #Cubee is Caster
+  Skills:
+  - settarget
+  - threat{mode=set;amount=1}
+  - threat{mode=forcetop}
+  - sudoskill{s=[ - aura{aura=OnCooldown;d=3;i=10} @Trigger];cat=true} @Owner
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#e11717;color2=#fc5aa4;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - removeaura{auraname=<caster.uuid>} @Target
+  - cancel ?hasaura{auraname=OnCooldown}
+  - skill{s=Cubee-darkness_dragon-Pet-Attack_Execute} @Self
+
+Cubee-darkness_dragon-Pet-Attack_Activat_InheritAlly: #Cubee is Caster
+  Skills:
+  - threat{mode=reset}
+  - settarget @self
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#8ee6ec;color2=#eafd47;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - aura{auraname="<caster.uuid>";d=9999999;i=10;cancelondeath=false;cancelonteleport=false;cancelonchangeworld=false;canceloncasterdeath=false;cancelonquit=false}
+
+Cubee-darkness_dragon-Pet-Attack_Execute:
+  Cooldown: "(<placeholder.Cubee-darkness_dragon-Skill_Cooldown> + 5)-(<pet.power>*<placeholder.Cubee-darkness_dragon-Skill_Cooldown_PowerScale>)"
+  Skills:
+  - aura{auraname=CubeeAttackCooldown;cancelondeath=false;cancelonquit=false;cancelonquit=false;cancelonchangeworld=false;cancelonteleport=false;i=20;ms=1;ma=true;rd=true;
+      d="((<placeholder.Cubee-darkness_dragon-Skill_Cooldown> + 5)-(<pet.power>*<placeholder.Cubee-darkness_dragon-Skill_Cooldown_PowerScale>))*20";
+      oE=[
+        - sudoskill{s=Cubees_v20-Cooldown_Refresed} @Owner
+      ]} @owner
+  - petExperience{exp="<placeholder.Cubee-darkness_dragon-EXP_Receive>"} @self
+  - state{s=execute;ow=true;li=0;lo=true} @self
+  - aura{auraname=Attacking;d=105;i=10} @self
+  - sound{s=entity.player.levelup;p=1.5;v=0.35} @selflocation
+  - sound{s=cubees_v20:cubee-darkness_dragon;sc=PLAYERS;p=1;v=0.35} @selflocation
+  - aura{auraname=Stay;d=70;i=10} @self
+  - delay 1
+  - lockmodel{sync=true;l=true} @self
+  - particleline{particle=dust_color_transition;startyoffset=1.5;sso=1.5;targetyoffset=0.4;color1=#b75bfb;color2=#ff6df8;amount=1;size=1.2;distanceBetween=0.15;hs=0.15;vs=0.15} @target
+  - teleport{radius=1.5;unsafe=true} @Target
+  - tracklocation @self
+  - setgravity{gravity=false} @self
+  - setgravity{gravity=true;delay=50} @self
+  - teleport{repeat=53;repeatinterval=1} @trackedLocation ?!altitude{height=>0} 
+  - skill{s=Cubee-darkness_dragon-Pet-Pre_HadesLair_Cast;repeat=2;repeatInterval=10} @EIR{r=8}
+  - delay 33
+  - particle{particle=large_smoke;a=40;speed=0.5} @selflocation{y=1.2}
+  - particle{particle=witch;a=40;speed=0.5} @selflocation{y=1.2}
+  - sound{s=entity.iron_golem.damage;p=0.5;v=3;sc=BLOCKS} @selflocation
+  - sound{s=minecraft:entity.warden.death;p=0.85;v=3;sc=HOSTILE} @selflocation
+  - skill{s=Cubee-darkness_dragon-Pet-HadesLair_Cast} @EIR{r=4.5}
+  - delay 20
+  - lockmodel{sync=true;l=false} @self
+
+Cubee-darkness_dragon-Pet-HadesLair_Cast:
+  Skills:
+  - sudoskill{s=Cubee-darkness_dragon-Pet-HadesLair_CheckAlly;cat=true} @targetedTarget{}
+
+Cubee-darkness_dragon-Pet-HadesLair_CheckAlly: #Target is Caster
+  Skills:
+  - sudoskill{s=Cubee-darkness_dragon-Pet-HadesLair_ApplyTarget;cat=true} @trigger ?!hasaura{auraname=<trigger.uuid>}
+
+Cubee-darkness_dragon-Pet-HadesLair_ApplyTarget: #Target is Caster
+  Skills:
+  - skill{s=Cubee-darkness_dragon-Pet-HadesLair_Damage} @trigger 
+
+Cubee-darkness_dragon-Pet-HadesLair_Damage: # Cubee is Caster # Target is Trigger
+  TargetConditions:
+  - owner false
+  - isliving true
+  Skills:
+  - damage{a="(<placeholder.Cubee-darkness_dragon-Skill_Damage>+(<pet.power>*<placeholder.Cubee-darkness_dragon-Skill_Damage_PowerScale>))";pi=true;noanger=true}
+  - sudoskill{s=[ - jump{v=1}]}
+  - throw{v=15;vy=1;delay=2}
+  - potion{type=WITHER;duration=100;lvl=2}
+  - potion{type=SLOW;duration=100;lvl=4}
+  - potion{type=WEAKNESS;duration=150;lvl=2}
+  - removetag{t=HadesCasting} @self
+
+Cubee-darkness_dragon-Pet-Pre_HadesLair_Cast:
+  Skills:
+  - sudoskill{s=Cubee-darkness_dragon-Pet-Pre_HadesLair_CheckAlly;cat=true} @targetedTarget 
+
+Cubee-darkness_dragon-Pet-Pre_HadesLair_CheckAlly: #Target is Caster
+  Skills:
+  - sudoskill{s=Cubee-darkness_dragon-Pet-Pre_HadesLair_ApplyTarget;cat=true} @trigger ?!hasaura{auraname=<trigger.uuid>}
+
+Cubee-darkness_dragon-Pet-Pre_HadesLair_ApplyTarget: #Target is Caster
+  Skills:
+  - skill{s=Cubee-darkness_dragon-Pet-Pre_HadesLair_Hit} @trigger 
+
+Cubee-darkness_dragon-Pet-Pre_HadesLair_Hit: # Cubee is Caster # Target is Trigger
+  TargetConditions:
+  - ydiff{difference=>3} false
+  - ydiff{difference=<-3} false
+  - owner false
+  - isliving true
+  Skills:
+  - pull{v=5}
+  - potion{type=SLOW;duration=15;lvl=3}
+  
+
+Cubee-earth_dragon-Pet-Attack:
+  TargetConditions:
+  - distance{d=<10}
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - sudoskill{s=Cubee-earth_dragon-Pet-Attack_SudoOwner} @Owner
+
+Cubee-earth_dragon-Pet-Attack_SudoOwner:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - totem{
+      oS=[
+        - skill{s=Cubee-earth_dragon-Pet-Attack_LOS} @Origin
+      ];md=3;i=10} @Forward{f=20}
+
+Cubee-earth_dragon-Pet-Attack_LOS:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - skill{s=Cubee-earth_dragon-Pet-Attack_SudoTargetConditions} @EntitiesInLine{r=2.5}
+
+Cubee-earth_dragon-Pet-Attack_SudoTargetConditions:
+  TargetConditions:
+  - ( isliving true || isplayer true ) true
+  - distance{d=<<placeholder.Cubee-earth_dragon-Skill_MaximumTargetDistance>}
+  Conditions:
+  - targets{a=>0} true
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - signal{s=CubeeAttack} @EIR{r=50;
+      conditions=[
+        - entitytype{t=WOLF}
+      ]}
+
+
+Cubee-earth_dragon-Pet-Attack_Activate:
+  Skills:
+  - unsetvar{name=caster.cubee_mark} @self
+  - unsetvar{name=caster.cubee_ally_mark} @self
+  - sudoskill{
+      s=[
+        - unsetvar{var=caster.distance} @self
+        - raytrace{entityskill=Cubee-earth_dragon-Pet-Attack_Activat_ConfirmTarget;raywidth=0.2;ignorepassableblocks=true;maxdistance=50} @Forward{f=50}
+      ];cat=true} @Owner
+
+Cubee-earth_dragon-Pet-OwnersCombatTarget:
+  Skills:
+  - onDamaged{ondamagedskill=Cubee-earth_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-earth_dragon-Skill_AutoActivate>";val2="true"}
+  - onAttack{onattackskill=Cubee-earth_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-earth_dragon-Skill_AutoActivate>";val2="true"}
+
+Cubee-earth_dragon-Pet-OnDamagedTarget:
+  TriggetConditions:
+  - owner false
+  - isliving true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"} @Trigger
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-earth_dragon-Skill_MaximumTargetDistance>} @Trigger
+  - setTarget @Trigger
+
+Cubee-earth_dragon-Pet-Attack_Activat_ConfirmTarget: #Player is Caster
+  TargetConditions:
+  - ( isliving || isplayer ) true
+  Conditions:
+  - crouching castinstead Cubee-earth_dragon-Pet-Attack_Activat_ConfirmAlly
+  - targets{a=>0}
+  - hasaura{aura=CubeeAttackCooldown} cast Cubees_v20-Cooldown
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.uuid>} @targetedTarget{}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cTarget is too far! [<placeholder.Cubee-earth_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-earth_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-earth_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-earth_dragon-Skill_MaximumTargetDistance>}
+
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-earth_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeTargetInherit} @Trigger
+
+Cubee-earth_dragon-Pet-Attack_Activat_ConfirmAlly:
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.uuid>}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cAlly is too far! [<placeholder.Cubee-earth_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-earth_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-earth_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-earth_dragon-Skill_MaximumTargetDistance>}
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-earth_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeAllyInherit} @Trigger
+
+Cubee-earth_dragon-TargetInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.var.cubee_mark>} @Owner
+  - skill{s=Cubee-earth_dragon-Pet-Attack_Activat_InheritTarget} @UUID{uuid=<caster.var.cubee_mark>} ?variableIsSet{var=caster.cubee_mark}
+
+Cubee-earth_dragon-AllyInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.var.cubee_ally_mark>} @Owner
+  - skill{s=Cubee-earth_dragon-Pet-Attack_Activat_InheritAlly} @UUID{uuid=<caster.var.cubee_ally_mark>} ?variableIsSet{var=caster.cubee_ally_mark}
+
+Cubee-earth_dragon-Pet-Attack_Activat_InheritTarget: #Cubee is Caster
+  Skills:
+  - settarget
+  - threat{mode=forcetop}
+  - sudoskill{s=[ - aura{aura=OnCooldown;d=3;i=10} @Trigger];cat=true} @Owner
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#e11717;color2=#fc5aa4;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - removeaura{auraname=<caster.uuid>} @Target
+  - cancel ?hasaura{auraname=OnCooldown}
+  - skill{s=Cubee-earth_dragon-Pet-Attack_Execute} @Self
+
+Cubee-earth_dragon-Pet-Attack_Activat_InheritAlly: #Cubee is Caster
+  Skills:
+  - threat{mode=reset}
+  - settarget @self
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#8ee6ec;color2=#eafd47;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - aura{auraname="<caster.uuid>";d=9999999;i=10;cancelondeath=false;cancelonteleport=false;cancelonchangeworld=false;canceloncasterdeath=false;cancelonquit=false}
+
+Cubee-earth_dragon-Pet-Attack_Execute:
+  Cooldown: "(<placeholder.Cubee-earth_dragon-Skill_Cooldown> + 5)-(<pet.power>*<placeholder.Cubee-earth_dragon-Skill_Cooldown_PowerScale>)"
+  Skills:
+  - aura{auraname=CubeeAttackCooldown;cancelondeath=false;cancelonquit=false;cancelonquit=false;cancelonchangeworld=false;cancelonteleport=false;i=20;ms=1;ma=true;rd=true;
+      d="((<placeholder.Cubee-earth_dragon-Skill_Cooldown> + 5)-(<pet.power>*<placeholder.Cubee-earth_dragon-Skill_Cooldown_PowerScale>))*20";
+      oE=[
+        - sudoskill{s=Cubees_v20-Cooldown_Refresed} @Owner
+      ]} @owner
+  - petExperience{exp="<placeholder.Cubee-earth_dragon-EXP_Receive>"} @self
+  - state{s=execute;ow=true;li=0;lo=true} @self
+  - aura{auraname=Attacking;d=95;i=10} @self
+  - sound{s=entity.player.levelup;p=1.5;v=0.35} @selflocation
+  - sound{s=cubees_v20:cubee-earth_dragon;sc=PLAYERS;p=1;v=0.35} @selflocation
+  - aura{auraname=Stay;d=95;i=10} @self
+  - skill{s=Cubees-ForceLookTarget-Run;repeat=23;repeatInterval=1} @Target
+  - sudoskill{
+      s=[
+        - pull{v=4} @Trigger ?~distance{d=>3}
+      ];repeat=10;repeatInterval=1;cat=true} @Target
+  - delay 15
+  - skill{s=[ - tracklocation @floorsOfTarget{tries=99}]} @self
+  - teleport{repeat=73;repeatinterval=1} @trackedLocation{y=1} 
+  - delay 10
+  - lockmodel{sync=true;l=true}
+  - skill{s=Cubee-earth_dragon-Pet-ClobberingCrash_Hit;delay=0} @ModelPart{mid=cubee-earth_dragon;p=vfx_earth_1}
+  - skill{s=Cubee-earth_dragon-Pet-ClobberingCrash_Hit;delay=1} @ModelPart{mid=cubee-earth_dragon;p=vfx_earth_2}
+  - skill{s=Cubee-earth_dragon-Pet-ClobberingCrash_Hit;delay=2} @ModelPart{mid=cubee-earth_dragon;p=vfx_earth_3}
+  - skill{s=Cubee-earth_dragon-Pet-ClobberingCrash_Hit;delay=3} @ModelPart{mid=cubee-earth_dragon;p=vfx_earth_4}
+  - skill{s=Cubee-earth_dragon-Pet-ClobberingCrash_Hit;delay=4} @ModelPart{mid=cubee-earth_dragon;p=vfx_earth_5}
+  - skill{s=Cubee-earth_dragon-Pet-ClobberingCrash_Hit;delay=5} @ModelPart{mid=cubee-earth_dragon;p=vfx_earth_6}
+  - skill{s=Cubee-earth_dragon-Pet-ClobberingCrash_Hit;delay=6} @ModelPart{mid=cubee-earth_dragon;p=vfx_earth_7}
+  - skill{s=Cubee-earth_dragon-Pet-ClobberingCrash_Hit;delay=7} @ModelPart{mid=cubee-earth_dragon;p=vfx_earth_8}
+  - skill{s=Cubee-earth_dragon-Pet-ClobberingCrash_Hit;delay=8} @ModelPart{mid=cubee-earth_dragon;p=vfx_earth_9}
+  - skill{s=Cubee-earth_dragon-Pet-ClobberingCrash_Hit;delay=9} @ModelPart{mid=cubee-earth_dragon;p=vfx_earth_10}
+  - skill{s=Cubee-earth_dragon-Pet-ClobberingCrash_Hit;delay=10} @ModelPart{mid=cubee-earth_dragon;p=vfx_earth_11}
+  - skill{s=Cubee-earth_dragon-Pet-ClobberingCrash_Hit;delay=11} @ModelPart{mid=cubee-earth_dragon;p=vfx_earth_12}
+  - lockmodel{sync=true;l=false;delay=65} @self
+
+Cubee-earth_dragon-Pet-ClobberingCrash_Hit:
+  Skills:
+  - particle{m=dripstone_block;p=block;a=40;hs=0.5;vs=0.2} @targetedLoc{} 
+  - sudoskill{s=Cubee-earth_dragon-Pet-ClobberingCrash_CheckAlly;cat=true} @livingNearTargetLocation{radius=2}
+
+Cubee-earth_dragon-Pet-ClobberingCrash_CheckAlly: #Target is Caster
+  Skills:
+  - sudoskill{s=Cubee-earth_dragon-Pet-ClobberingCrash_ApplyTarget;cat=true} @trigger ?!hasaura{auraname=<trigger.uuid>}
+
+Cubee-earth_dragon-Pet-ClobberingCrash_ApplyTarget: #Target is Caster
+  Skills:
+  - skill{s=Cubee-earth_dragon-Pet-ClobberingCrash_Damage} @trigger
+
+Cubee-earth_dragon-Pet-ClobberingCrash_Damage: # Cubee is Caster # Target is Trigger
+  TargetConditions:
+  - owner false
+  - isliving true
+  Skills:
+  - damage{a="(<placeholder.Cubee-earth_dragon-Skill_Damage>+(<pet.power>*<placeholder.Cubee-earth_dragon-Skill_Damage_PowerScale>))*0.66";pi=true;noanger=true}
+  - potion{t=SLOW;d=40;lvl=99;p=false;i=false}
+  - sudoskill{s=[ - jump{v=0.5} ]}
+
+
+Cubee-fire_dragon-Pet-Attack:
+  TargetConditions:
+  - distance{d=<10}
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - sudoskill{s=Cubee-fire_dragon-Pet-Attack_SudoOwner} @Owner
+
+Cubee-fire_dragon-Pet-Attack_SudoOwner:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - totem{
+      oS=[
+        - skill{s=Cubee-fire_dragon-Pet-Attack_LOS} @Origin
+      ];md=3;i=10} @Forward{f=20}
+
+Cubee-fire_dragon-Pet-Attack_LOS:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - skill{s=Cubee-fire_dragon-Pet-Attack_SudoTargetConditions} @EntitiesInLine{r=2.5}
+
+Cubee-fire_dragon-Pet-Attack_SudoTargetConditions:
+  TargetConditions:
+  - ( isliving true || isplayer true ) true
+  - distance{d=<<placeholder.Cubee-fire_dragon-Skill_MaximumTargetDistance>}
+  Conditions:
+  - targets{a=>0} true
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - signal{s=CubeeAttack} @EIR{r=50;
+      conditions=[
+        - entitytype{t=WOLF}
+      ]}
+
+
+Cubee-fire_dragon-Pet-Attack_Activate:
+  Skills:
+  - unsetvar{name=caster.cubee_mark} @self
+  - unsetvar{name=caster.cubee_ally_mark} @self
+  - sudoskill{
+      s=[
+        - unsetvar{var=caster.distance} @self
+        - raytrace{entityskill=Cubee-fire_dragon-Pet-Attack_Activat_ConfirmTarget;raywidth=0.2;ignorepassableblocks=true;maxdistance=50} @Forward{f=50}
+      ];cat=true} @Owner
+
+Cubee-fire_dragon-Pet-OwnersCombatTarget:
+  Skills:
+  - onDamaged{ondamagedskill=Cubee-fire_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-fire_dragon-Skill_AutoActivate>";val2="true"}
+  - onAttack{onattackskill=Cubee-fire_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-fire_dragon-Skill_AutoActivate>";val2="true"}
+
+Cubee-fire_dragon-Pet-OnDamagedTarget:
+  TriggetConditions:
+  - owner false
+  - isliving true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"} @Trigger
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-fire_dragon-Skill_MaximumTargetDistance>} @Trigger
+  - setTarget @Trigger
+
+Cubee-fire_dragon-Pet-Attack_Activat_ConfirmTarget: #Player is Caster
+  TargetConditions:
+  - ( isliving || isplayer ) true
+  Conditions:
+  - crouching castinstead Cubee-fire_dragon-Pet-Attack_Activat_ConfirmAlly
+  - targets{a=>0}
+  - hasaura{aura=CubeeAttackCooldown} cast Cubees_v20-Cooldown
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.uuid>} @targetedTarget{}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cTarget is too far! [<placeholder.Cubee-fire_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-fire_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-fire_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-fire_dragon-Skill_MaximumTargetDistance>}
+
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-fire_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeTargetInherit} @Trigger
+
+Cubee-fire_dragon-Pet-Attack_Activat_ConfirmAlly:
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.uuid>}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cAlly is too far! [<placeholder.Cubee-fire_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-fire_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-fire_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-fire_dragon-Skill_MaximumTargetDistance>}
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-fire_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeAllyInherit} @Trigger
+
+Cubee-fire_dragon-TargetInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.var.cubee_mark>} @Owner
+  - skill{s=Cubee-fire_dragon-Pet-Attack_Activat_InheritTarget} @UUID{uuid=<caster.var.cubee_mark>} ?variableIsSet{var=caster.cubee_mark}
+
+Cubee-fire_dragon-AllyInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.var.cubee_ally_mark>} @Owner
+  - skill{s=Cubee-fire_dragon-Pet-Attack_Activat_InheritAlly} @UUID{uuid=<caster.var.cubee_ally_mark>} ?variableIsSet{var=caster.cubee_ally_mark}
+
+Cubee-fire_dragon-Pet-Attack_Activat_InheritTarget: #Cubee is Caster
+  Skills:
+  - settarget
+  - threat{mode=forcetop}
+  - sudoskill{s=[ - aura{aura=OnCooldown;d=3;i=10} @Trigger];cat=true} @Owner
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#e11717;color2=#fc5aa4;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - removeaura{auraname=<caster.uuid>} @Target
+  - cancel ?hasaura{auraname=OnCooldown}
+  - skill{s=Cubee-fire_dragon-Pet-Attack_Execute} @Self
+
+Cubee-fire_dragon-Pet-Attack_Activat_InheritAlly: #Cubee is Caster
+  Skills:
+  - threat{mode=reset}
+  - settarget @self
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#8ee6ec;color2=#eafd47;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - aura{auraname="<caster.uuid>";d=9999999;i=10;cancelondeath=false;cancelonteleport=false;cancelonchangeworld=false;canceloncasterdeath=false;cancelonquit=false}
+
+Cubee-fire_dragon-Pet-Attack_Execute:
+  Cooldown: "(<placeholder.Cubee-fire_dragon-Skill_Cooldown> + 5)-(<pet.power>*<placeholder.Cubee-fire_dragon-Skill_Cooldown_PowerScale>)"
+  Skills:
+  - aura{auraname=CubeeAttackCooldown;cancelondeath=false;cancelonquit=false;cancelonquit=false;cancelonchangeworld=false;cancelonteleport=false;i=20;ms=1;ma=true;rd=true;
+      d="((<placeholder.Cubee-fire_dragon-Skill_Cooldown> + 5)-(<pet.power>*<placeholder.Cubee-fire_dragon-Skill_Cooldown_PowerScale>))*20";
+      oE=[
+        - sudoskill{s=Cubees_v20-Cooldown_Refresed} @Owner
+      ]} @owner
+  - petExperience{exp="<placeholder.Cubee-fire_dragon-EXP_Receive>"} @self
+  - state{s=execute;ow=true;li=0;lo=true} @self
+  - aura{auraname=Attacking;d=75;i=10} @self
+  - sound{s=entity.player.levelup;p=1.5;v=0.35} @selflocation
+  - sound{s=cubees_v20:cubee-fire_dragon;sc=PLAYERS;p=1;v=0.35} @selflocation
+  - aura{auraname=Stay;d=70;i=10} @self
+  - lockmodel{sync=true;l=true} @self
+  - lockmodel{sync=true;l=true} @self
+  - particleline{particle=dust_color_transition;startyoffset=1.5;sso=1.5;targetyoffset=0.4;color1=#942c4b;color2=#f2cb9b;amount=1;size=1.2;distanceBetween=0.15;hs=0.15;vs=0.15} @target
+  - particleline{particle=flame;startyoffset=1.5;sso=1.5;targetyoffset=0.4;amount=1;size=1.2;distanceBetween=0.15;hs=0.15;vs=0.15} @target
+  - teleport{radius=2.5;unsafe=true} @Target
+  - delay 1
+  - tracklocation @self
+  - teleport{repeat=53;repeatinterval=1} @trackedLocation
+  - setgravity{gravity=false} @Self
+  - setgravity{gravity=true;delay=75} @self
+  - lockmodel{sync=true;l=false;delay=75} @self
+  - delay 30
+  - particle{particle=flame;a=80;speed=0.5} @selflocation{y=1.2}
+  - particle{particle=lava;a=40;hs=2;vs=0.7;speed=0.5} @selflocation{y=1.2}
+  - particle{particle=large_smoke;a=40;speed=0.5} @selflocation{y=1.2}
+  - sudoskill{s=Cubee-fire_dragon-Pet-ScorchingEmblr_CheckAlly;cat=true} @EIR{r=11}
+
+Cubee-fire_dragon-Pet-ScorchingEmblr_CheckAlly: #Target is Caster
+  Skills:
+  - particle{p=flame;a=1;hS=1;vS=0.5;speed=0.25} @self
+  - particle{p=end_rod;a=1;hS=1;vS=0.5;speed=0.25} @self
+  - sudoskill{s=Cubee-fire_dragon-Pet-ScorchingEmblr_ApplyTarget;cat=true} @trigger ?!hasaura{auraname=<trigger.uuid>}
+
+Cubee-fire_dragon-Pet-ScorchingEmblr_ApplyTarget: #Target is Caster
+  Skills:
+  - skill{s=Cubee-fire_dragon-Pet-ScorchingEmblr_Damage} @trigger
+
+Cubee-fire_dragon-Pet-ScorchingEmblr_Damage: # Cubee is Caster # Target is Trigger
+  TargetConditions:
+  - ydiff{difference=>3} false
+  - ydiff{difference=<-3} false
+  - owner false
+  - isliving true
+  Skills:
+  - damage{a="(<placeholder.Cubee-fire_dragon-Skill_Damage>+(<pet.power>*<placeholder.Cubee-fire_dragon-Skill_Damage_PowerScale>))/1";pkb=true;pi=true;noanger=true}
+  - sudoskill{s=[ - jump{v=0.75}]}
+  - throw{v=20;vy=0;delay=2}  
+  - ignite{v=100}
+
+
+Cubee-galaxy_dragon-Pet-Attack:
+  TargetConditions:
+  - distance{d=<10}
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - sudoskill{s=Cubee-galaxy_dragon-Pet-Attack_SudoOwner} @Owner
+
+Cubee-galaxy_dragon-Pet-Attack_SudoOwner:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - totem{
+      oS=[
+        - skill{s=Cubee-galaxy_dragon-Pet-Attack_LOS} @Origin
+      ];md=3;i=10} @Forward{f=20}
+
+Cubee-galaxy_dragon-Pet-Attack_LOS:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - skill{s=Cubee-galaxy_dragon-Pet-Attack_SudoTargetConditions} @EntitiesInLine{r=2.5}
+
+Cubee-galaxy_dragon-Pet-Attack_SudoTargetConditions:
+  TargetConditions:
+  - ( isliving true || isplayer true ) true
+  - distance{d=<<placeholder.Cubee-galaxy_dragon-Skill_MaximumTargetDistance>}
+  Conditions:
+  - targets{a=>0} true
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - signal{s=CubeeAttack} @EIR{r=50;
+      conditions=[
+        - entitytype{t=WOLF}
+      ]}
+
+
+Cubee-galaxy_dragon-Pet-Attack_Activate:
+  Skills:
+  - unsetvar{name=caster.cubee_mark} @self
+  - unsetvar{name=caster.cubee_ally_mark} @self
+  - sudoskill{
+      s=[
+        - unsetvar{var=caster.distance} @self
+        - raytrace{entityskill=Cubee-galaxy_dragon-Pet-Attack_Activat_ConfirmTarget;raywidth=0.2;ignorepassableblocks=true;maxdistance=50} @Forward{f=50}
+      ];cat=true} @Owner
+
+Cubee-galaxy_dragon-Pet-OwnersCombatTarget:
+  Skills:
+  - onDamaged{ondamagedskill=Cubee-galaxy_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-galaxy_dragon-Skill_AutoActivate>";val2="true"}
+  - onAttack{onattackskill=Cubee-galaxy_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-galaxy_dragon-Skill_AutoActivate>";val2="true"}
+
+Cubee-galaxy_dragon-Pet-OnDamagedTarget:
+  TriggetConditions:
+  - owner false
+  - isliving true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"} @Trigger
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-galaxy_dragon-Skill_MaximumTargetDistance>} @Trigger
+  - setTarget @Trigger
+
+Cubee-galaxy_dragon-Pet-Attack_Activat_ConfirmTarget: #Player is Caster
+  TargetConditions:
+  - ( isliving || isplayer ) true
+  Conditions:
+  - crouching castinstead Cubee-galaxy_dragon-Pet-Attack_Activat_ConfirmAlly
+  - targets{a=>0}
+  - hasaura{aura=CubeeAttackCooldown} cast Cubees_v20-Cooldown
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.uuid>} @targetedTarget{}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cTarget is too far! [<placeholder.Cubee-galaxy_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-galaxy_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-galaxy_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-galaxy_dragon-Skill_MaximumTargetDistance>}
+
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-galaxy_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeTargetInherit} @Trigger
+
+Cubee-galaxy_dragon-Pet-Attack_Activat_ConfirmAlly:
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.uuid>}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cAlly is too far! [<placeholder.Cubee-galaxy_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-galaxy_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-galaxy_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-galaxy_dragon-Skill_MaximumTargetDistance>}
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-galaxy_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeAllyInherit} @Trigger
+
+Cubee-galaxy_dragon-TargetInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.var.cubee_mark>} @Owner
+  - skill{s=Cubee-galaxy_dragon-Pet-Attack_Activat_InheritTarget} @UUID{uuid=<caster.var.cubee_mark>} ?variableIsSet{var=caster.cubee_mark}
+
+Cubee-galaxy_dragon-AllyInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.var.cubee_ally_mark>} @Owner
+  - skill{s=Cubee-galaxy_dragon-Pet-Attack_Activat_InheritAlly} @UUID{uuid=<caster.var.cubee_ally_mark>} ?variableIsSet{var=caster.cubee_ally_mark}
+
+Cubee-galaxy_dragon-Pet-Attack_Activat_InheritTarget: #Cubee is Caster
+  Skills:
+  - settarget
+  - threat{mode=forcetop}
+  - sudoskill{s=[ - aura{aura=OnCooldown;d=3;i=10} @Trigger];cat=true} @Owner
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#e11717;color2=#fc5aa4;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - removeaura{auraname=<caster.uuid>} @Target
+  - cancel ?hasaura{auraname=OnCooldown}
+  - skill{s=Cubee-galaxy_dragon-Pet-Attack_Execute} @Self
+
+Cubee-galaxy_dragon-Pet-Attack_Activat_InheritAlly: #Cubee is Caster
+  Skills:
+  - threat{mode=reset}
+  - settarget @self
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#8ee6ec;color2=#eafd47;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - aura{auraname="<caster.uuid>";d=9999999;i=10;cancelondeath=false;cancelonteleport=false;cancelonchangeworld=false;canceloncasterdeath=false;cancelonquit=false}
+
+Cubee-galaxy_dragon-Pet-Attack_Execute:
+  Cooldown: "(<placeholder.Cubee-galaxy_dragon-Skill_Cooldown> + 6)-(<pet.power>*<placeholder.Cubee-galaxy_dragon-Skill_Cooldown_PowerScale>)"
+  Skills:
+  - aura{auraname=CubeeAttackCooldown;cancelondeath=false;cancelonquit=false;cancelonquit=false;cancelonchangeworld=false;cancelonteleport=false;i=20;ms=1;ma=true;rd=true;
+      d="((<placeholder.Cubee-galaxy_dragon-Skill_Cooldown> + 6)-(<pet.power>*<placeholder.Cubee-galaxy_dragon-Skill_Cooldown_PowerScale>))*20";
+      oE=[
+        - sudoskill{s=Cubees_v20-Cooldown_Refresed} @Owner
+      ]} @owner
+  - petExperience{exp="<placeholder.Cubee-galaxy_dragon-EXP_Receive>"} @self
+  - state{s=execute;ow=true;li=0;lo=true} @self
+  - aura{auraname=Attacking;d=90;i=10} @self
+  - aura{auraname=Stay;d=90;i=10} @self
+  - setgravity{gravity=false} @self
+  - setgravity{gravity=true;delay=90} @self
+  - sound{s=entity.player.levelup;p=1.5;v=0.35} @selflocation
+  - sound{s=cubees_v20:cubee-galaxy_dragon;sc=PLAYERS;p=1;v=0.35} @selflocation
+  - skill{s=Cubee-galaxy_dragon-Pet-DiversionCosmos;delay=10} @self
+  - skill{s=Cubee-galaxy_dragon-Pet-DiversionCosmos;delay=20} @self
+  - skill{s=Cubee-galaxy_dragon-Pet-DiversionCosmos;delay=30} @self
+  - skill{s=Cubee-galaxy_dragon-Pet-DiversionCosmos;delay=57} @self
+
+Cubee-galaxy_dragon-Pet-DiversionCosmos:
+  Skills:
+  - sudoskill{
+      s=[
+        - pull{v=5.5} @Trigger
+      ];repeat=7;repeatInterval=1;cat=true} @Target
+  - delay 8
+  - sudoskill{s=Cubee-galaxy_dragon-Pet-DiversionCosmos_CheckAlly;cat=true} @EIR{r=4.5}
+
+Cubee-galaxy_dragon-Pet-DiversionCosmos_CheckAlly: #Target is Caster
+  Skills:
+  - sudoskill{s=Cubee-galaxy_dragon-Pet-DiversionCosmos_ApplyTarget;cat=true} @trigger ?!hasaura{auraname=<trigger.uuid>}
+
+Cubee-galaxy_dragon-Pet-DiversionCosmos_ApplyTarget: #Target is Caster
+  Skills:
+  - skill{s=Cubee-galaxy_dragon-Pet-DiversionCosmos_Damage} @trigger
+
+Cubee-galaxy_dragon-Pet-DiversionCosmos_Damage: # Cubee is Caster # Target is Trigger
+  TargetConditions:
+  - owner false
+  - isliving true
+  - ydiff{difference=>2.5} false
+  - ydiff{difference=<-2.5} false
+  Skills:
+  - damage{a="(<placeholder.Cubee-galaxy_dragon-Skill_Damage>+(<pet.power>*<placeholder.Cubee-galaxy_dragon-Skill_Damage_PowerScale>))*0.4";pkb=true;pi=true;noanger=true}
+  - particle{p=flame;a=10;hS=0.1;vS=0.1;speed=0.3;delay=4}
+  - particle{p=end_rod;a=10;hS=0.1;vS=0.1;speed=0.3;delay=4}
+  - potion{t=SLOW;d=40;lvl=99;p=false;i=false}
+  - potion{t=LEVITATION;d=20;lvl=1;p=false;i=false}
+  - throw{v=4;vy=0;delay=2}
+
+Cubee-ice_dragon-Pet-Attack:
+  TargetConditions:
+  - distance{d=<10}
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - sudoskill{s=Cubee-ice_dragon-Pet-Attack_SudoOwner} @Owner
+
+Cubee-ice_dragon-Pet-Attack_SudoOwner:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - totem{
+      oS=[
+        - skill{s=Cubee-ice_dragon-Pet-Attack_LOS} @Origin
+      ];md=3;i=10} @Forward{f=20}
+
+Cubee-ice_dragon-Pet-Attack_LOS:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - skill{s=Cubee-ice_dragon-Pet-Attack_SudoTargetConditions} @EntitiesInLine{r=2.5}
+
+Cubee-ice_dragon-Pet-Attack_SudoTargetConditions:
+  TargetConditions:
+  - ( isliving true || isplayer true ) true
+  - distance{d=<<placeholder.Cubee-ice_dragon-Skill_MaximumTargetDistance>}
+  Conditions:
+  - targets{a=>0} true
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - signal{s=CubeeAttack} @EIR{r=50;
+      conditions=[
+        - entitytype{t=WOLF}
+      ]}
+
+
+Cubee-ice_dragon-Pet-Attack_Activate:
+  Skills:
+  - unsetvar{name=caster.cubee_mark} @self
+  - unsetvar{name=caster.cubee_ally_mark} @self
+  - sudoskill{
+      s=[
+        - unsetvar{var=caster.distance} @self
+        - raytrace{entityskill=Cubee-ice_dragon-Pet-Attack_Activat_ConfirmTarget;raywidth=0.2;ignorepassableblocks=true;maxdistance=50} @Forward{f=50}
+      ];cat=true} @Owner
+
+Cubee-ice_dragon-Pet-OwnersCombatTarget:
+  Skills:
+  - onDamaged{ondamagedskill=Cubee-ice_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-ice_dragon-Skill_AutoActivate>";val2="true"}
+  - onAttack{onattackskill=Cubee-ice_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-ice_dragon-Skill_AutoActivate>";val2="true"}
+
+Cubee-ice_dragon-Pet-OnDamagedTarget:
+  TriggetConditions:
+  - owner false
+  - isliving true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"} @Trigger
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-ice_dragon-Skill_MaximumTargetDistance>} @Trigger
+  - setTarget @Trigger
+
+Cubee-ice_dragon-Pet-Attack_Activat_ConfirmTarget: #Player is Caster
+  TargetConditions:
+  - ( isliving || isplayer ) true
+  Conditions:
+  - crouching castinstead Cubee-ice_dragon-Pet-Attack_Activat_ConfirmAlly
+  - targets{a=>0}
+  - hasaura{aura=CubeeAttackCooldown} cast Cubees_v20-Cooldown
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.uuid>} @targetedTarget{}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cTarget is too far! [<placeholder.Cubee-ice_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-ice_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-ice_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-ice_dragon-Skill_MaximumTargetDistance>}
+
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-ice_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeTargetInherit} @Trigger
+
+Cubee-ice_dragon-Pet-Attack_Activat_ConfirmAlly:
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.uuid>}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cAlly is too far! [<placeholder.Cubee-ice_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-ice_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-ice_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-ice_dragon-Skill_MaximumTargetDistance>}
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-ice_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeAllyInherit} @Trigger
+
+Cubee-ice_dragon-TargetInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.var.cubee_mark>} @Owner
+  - skill{s=Cubee-ice_dragon-Pet-Attack_Activat_InheritTarget} @UUID{uuid=<caster.var.cubee_mark>} ?variableIsSet{var=caster.cubee_mark}
+
+Cubee-ice_dragon-AllyInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.var.cubee_ally_mark>} @Owner
+  - skill{s=Cubee-ice_dragon-Pet-Attack_Activat_InheritAlly} @UUID{uuid=<caster.var.cubee_ally_mark>} ?variableIsSet{var=caster.cubee_ally_mark}
+
+Cubee-ice_dragon-Pet-Attack_Activat_InheritTarget: #Cubee is Caster
+  Skills:
+  - settarget
+  - threat{mode=forcetop}
+  - sudoskill{s=[ - aura{aura=OnCooldown;d=3;i=10} @Trigger];cat=true} @Owner
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#e11717;color2=#fc5aa4;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - removeaura{auraname=<caster.uuid>} @Target
+  - cancel ?hasaura{auraname=OnCooldown}
+  - skill{s=Cubee-ice_dragon-Pet-Attack_Execute} @Self
+
+Cubee-ice_dragon-Pet-Attack_Activat_InheritAlly: #Cubee is Caster
+  Skills:
+  - threat{mode=reset}
+  - settarget @self
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#8ee6ec;color2=#eafd47;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - aura{auraname="<caster.uuid>";d=9999999;i=10;cancelondeath=false;cancelonteleport=false;cancelonchangeworld=false;canceloncasterdeath=false;cancelonquit=false}
+
+Cubee-ice_dragon-Pet-Attack_Execute:
+  Cooldown: "(<placeholder.Cubee-ice_dragon-Skill_Cooldown> + 5)-(<pet.power>*<placeholder.Cubee-ice_dragon-Skill_Cooldown_PowerScale>)"
+  Skills:
+  - aura{auraname=CubeeAttackCooldown;cancelondeath=false;cancelonquit=false;cancelonquit=false;cancelonchangeworld=false;cancelonteleport=false;i=20;ms=1;ma=true;rd=true;
+      d="((<placeholder.Cubee-ice_dragon-Skill_Cooldown> + 5)-(<pet.power>*<placeholder.Cubee-ice_dragon-Skill_Cooldown_PowerScale>))*20";
+      oE=[
+        - sudoskill{s=Cubees_v20-Cooldown_Refresed} @Owner
+      ]} @owner
+  - petExperience{exp="<placeholder.Cubee-ice_dragon-EXP_Receive>"} @self
+  - state{s=execute;ow=true;li=0;lo=true} @self
+  - aura{auraname=Attacking;d=105;i=10} @self
+  - sound{s=entity.player.levelup;p=1.5;v=0.35} @selflocation
+  - sound{s=cubees_v20:cubee-ice_dragon;sc=PLAYERS;p=1;v=0.35} @selflocation
+  - aura{auraname=Stay;d=80;i=10} @self
+  - sudoskill{
+      s=[
+        - pull{v=6} @Trigger
+      ];repeat=20;repeatInterval=1;cat=true} @Target
+  - delay 25
+  - lockmodel{sync=true;l=true} @self
+  - lockmodel{sync=true;l=false;delay=100} @self
+  - particle{p=flame;a=10;hS=0.1;vS=0.1;speed=0.3} @self
+  - particle{p=end_rod;a=10;hS=0.1;vS=0.1;speed=0.3} @self
+  - skill{s=Cubee-ice_dragon-Pet-Niflheim_Hit;repeat=10;repeatInterval=5;cat=true} @EIR{r=5.5}
+
+Cubee-ice_dragon-Pet-Niflheim_Hit: #Target is Caster
+  Skills:
+  - sudoskill{s=Cubee-ice_dragon-Pet-Niflheim_CheckAlly;cat=true} @TargetedTarget
+
+Cubee-ice_dragon-Pet-Niflheim_CheckAlly: #Target is Caster
+  Skills:
+  - sudoskill{s=Cubee-ice_dragon-Pet-Niflheim_ApplyTarget;cat=true} @trigger ?!hasaura{auraname=<trigger.uuid>}
+
+Cubee-ice_dragon-Pet-Niflheim_ApplyTarget: #Target is Caster
+  Skills:
+  - skill{s=Cubee-ice_dragon-Pet-Niflheim_Damage} @trigger
+
+Cubee-ice_dragon-Pet-Niflheim_Damage: # Cubee is Caster # Target is Trigger
+  TargetConditions:
+  - owner false
+  - isliving true
+  - ydiff{difference=>3} false
+  - ydiff{difference=<-1.5} false
+  Skills:
+  - damage{a="(<placeholder.Cubee-ice_dragon-Skill_Damage>+(<pet.power>*<placeholder.Cubee-ice_dragon-Skill_Damage_PowerScale>))";pkb=true;ignoreshield=true;pi=true;noanger=true}
+  - particle{p=snowball;a=30;hS=0.4;vS=0.2}
+  - particle{p=block;material=ice;yoffset=1.5;a=10;hS=0.1;vS=0.1}
+  - potion{t=SLOW;d=80;lvl=99;p=false;i=false}
+  - stun{a=80;stopai=true;facing=false}
+  - sound{s=block.glass.break;sc=BLOCKS;v=1;p=2}
+  - sound{s=block.ice.break;sc=BLOCKS;v=1;p=2}
+
+
+Cubee-light_dragon-Pet-Attack:
+  TargetConditions:
+  - distance{d=<10}
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - sudoskill{s=Cubee-light_dragon-Pet-Attack_SudoOwner} @Owner
+
+Cubee-light_dragon-Pet-Attack_SudoOwner:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - totem{
+      oS=[
+        - skill{s=Cubee-light_dragon-Pet-Attack_LOS} @Origin
+      ];md=3;i=10} @Forward{f=20}
+
+Cubee-light_dragon-Pet-Attack_LOS:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - skill{s=Cubee-light_dragon-Pet-Attack_SudoTargetConditions} @EntitiesInLine{r=2.5}
+
+Cubee-light_dragon-Pet-Attack_SudoTargetConditions:
+  TargetConditions:
+  - ( isliving true || isplayer true ) true
+  - distance{d=<<placeholder.Cubee-light_dragon-Skill_MaximumTargetDistance>}
+  Conditions:
+  - targets{a=>0} true
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - signal{s=CubeeAttack} @EIR{r=50;
+      conditions=[
+        - entitytype{t=WOLF}
+      ]}
+
+
+Cubee-light_dragon-Pet-Attack_Activate:
+  Skills:
+  - unsetvar{name=caster.cubee_mark} @self
+  - unsetvar{name=caster.cubee_ally_mark} @self
+  - sudoskill{
+      s=[
+        - unsetvar{var=caster.distance} @self
+        - raytrace{entityskill=Cubee-light_dragon-Pet-Attack_Activat_ConfirmTarget;raywidth=0.2;ignorepassableblocks=true;maxdistance=50} @Forward{f=50}
+      ];cat=true} @Owner
+
+Cubee-light_dragon-Pet-OwnersCombatTarget:
+  Skills:
+  - onDamaged{ondamagedskill=Cubee-light_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-light_dragon-Skill_AutoActivate>";val2="true"}
+  - onAttack{onattackskill=Cubee-light_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-light_dragon-Skill_AutoActivate>";val2="true"}
+
+Cubee-light_dragon-Pet-OnDamagedTarget:
+  TriggetConditions:
+  - owner false
+  - isliving true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"} @Trigger
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-light_dragon-Skill_MaximumTargetDistance>} @Trigger
+  - setTarget @Trigger
+
+Cubee-light_dragon-Pet-Attack_Activat_ConfirmTarget: #Player is Caster
+  TargetConditions:
+  - ( isliving || isplayer ) true
+  Conditions:
+  - crouching castinstead Cubee-light_dragon-Pet-Attack_Activat_ConfirmAlly
+  - targets{a=>0}
+  - hasaura{aura=CubeeAttackCooldown} cast Cubees_v20-Cooldown
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.uuid>} @targetedTarget{}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cTarget is too far! [<placeholder.Cubee-light_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-light_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-light_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-light_dragon-Skill_MaximumTargetDistance>}
+
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-light_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeTargetInherit} @Trigger
+
+Cubee-light_dragon-Pet-Attack_Activat_ConfirmAlly:
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.uuid>}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cAlly is too far! [<placeholder.Cubee-light_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-light_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-light_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-light_dragon-Skill_MaximumTargetDistance>}
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-light_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeAllyInherit} @Trigger
+
+Cubee-light_dragon-TargetInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.var.cubee_mark>} @Owner
+  - skill{s=Cubee-light_dragon-Pet-Attack_Activat_InheritTarget} @UUID{uuid=<caster.var.cubee_mark>} ?variableIsSet{var=caster.cubee_mark}
+
+Cubee-light_dragon-AllyInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.var.cubee_ally_mark>} @Owner
+  - skill{s=Cubee-light_dragon-Pet-Attack_Activat_InheritAlly} @UUID{uuid=<caster.var.cubee_ally_mark>} ?variableIsSet{var=caster.cubee_ally_mark}
+
+Cubee-light_dragon-Pet-Attack_Activat_InheritTarget: #Cubee is Caster
+  Skills:
+  - settarget
+  - threat{mode=forcetop}
+  - sudoskill{s=[ - aura{aura=OnCooldown;d=3;i=10} @Trigger];cat=true} @Owner
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#e11717;color2=#fc5aa4;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - removeaura{auraname=<caster.uuid>} @Target
+  - cancel ?hasaura{auraname=OnCooldown}
+  - skill{s=Cubee-light_dragon-Pet-Attack_Execute} @Self
+
+Cubee-light_dragon-Pet-Attack_Activat_InheritAlly: #Cubee is Caster
+  Skills:
+  - threat{mode=reset}
+  - settarget @self
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#8ee6ec;color2=#eafd47;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - aura{auraname="<caster.uuid>";d=9999999;i=10;cancelondeath=false;cancelonteleport=false;cancelonchangeworld=false;canceloncasterdeath=false;cancelonquit=false}
+
+Cubee-light_dragon-Pet-Attack_Execute:
+  Cooldown: "(<placeholder.Cubee-light_dragon-Skill_Cooldown> + 5)-(<pet.power>*<placeholder.Cubee-light_dragon-Skill_Cooldown_PowerScale>)"
+  Skills:
+  - aura{auraname=CubeeAttackCooldown;cancelondeath=false;cancelonquit=false;cancelonquit=false;cancelonchangeworld=false;cancelonteleport=false;i=20;ms=1;ma=true;rd=true;
+      d="((<placeholder.Cubee-light_dragon-Skill_Cooldown> + 5)-(<pet.power>*<placeholder.Cubee-light_dragon-Skill_Cooldown_PowerScale>))*20";
+      oE=[
+        - sudoskill{s=Cubees_v20-Cooldown_Refresed} @Owner
+      ]} @owner
+  - petExperience{exp="<placeholder.Cubee-air_dragon-EXP_Receive>"} @self
+  - state{s=execute;ow=true;li=0;lo=true} @self
+  - aura{auraname=Attacking;d=100;i=10} @self
+  - sound{s=entity.player.levelup;p=1.5;v=0.35} @selflocation
+  - sound{s=cubees_v20:cubee-light_dragon;sc=PLAYERS;p=1;v=0.35} @selflocation
+  - aura{auraname=Stay;d=100;i=10} @self
+  - particleline{particle=dust_color_transition;startyoffset=1.5;sso=1.5;targetyoffset=0.4;color1=#ffffff  ;color2=#e7c77c;amount=1;size=1.2;distanceBetween=0.15;hs=0.15;vs=0.15} @target
+  - teleport{radius=1.5;unsafe=true} @Target
+  - delay 1
+  - tracklocation @self
+  - setgravity{gravity=false} @self
+  - setgravity{gravity=true;delay=100} @self
+  - teleport{repeat=99;repeatinterval=1} @trackedLocation 
+  - delay 9
+  - lockmodel{sync=true;l=true} @self
+  - lockmodel{sync=true;l=false;delay=90} @self
+  - skill{s=Cubee-light_dragon-Pet-FreyrJudgement_Hit;repeat=8;repeatInterval=5} @EIR{r=3}
+  - addtag{t=LastHit;delay=64} @self
+  - skill{s=Cubee-light_dragon-Pet-FreyrJudgement_Hit;power=9;delay=66} @EIR{r=5}
+  - removetag{t=LastHit;delay=68} @self
+
+Cubee-light_dragon-Pet-FreyrJudgement_Hit:
+  Skills:
+  - sudoskill{s=Cubee-light_dragon-Pet-FreyrJudgement_CheckAlly;cat=true} @TargetedTarget
+
+Cubee-light_dragon-Pet-FreyrJudgement_CheckAlly: #Target is Caster
+  Skills:
+  - sudoskill{s=Cubee-light_dragon-Pet-FreyrJudgement_ApplyTarget;cat=true} @trigger ?!hasaura{auraname=<trigger.uuid>}
+
+Cubee-light_dragon-Pet-FreyrJudgement_ApplyTarget: #Target is Caster
+  Skills:
+  - skill{s=Cubee-light_dragon-Pet-FreyrJudgement_Damage} @trigger
+
+Cubee-light_dragon-Pet-FreyrJudgement_Damage: # Cubee is Caster # Target is Trigger
+  TargetConditions:
+  - owner false
+  - isliving true
+  - ydiff{difference=>4.5} false
+  - ydiff{difference=<-1} false
+  Skills:
+  - sound{s=minecraft:block.note_block.chime;sc=PLAYERS;p=2;v=0.3}
+  - damage{poweraffectsdamage=true;a="(<placeholder.Cubee-light_dragon-Skill_Damage>+(<pet.power>*<placeholder.Cubee-light_dragon-Skill_Damage_PowerScale>))/9";pkb=true;pi=true;noanger=true;poweraffectsdamage=true}
+  - particle{p=block;material=WHITE_STAINED_GLASS;yoffset=1.5;a=10;hS=0.1;vS=0.1}
+  - potion{t=SLOW;d=30;lvl=2;p=false;i=false}
+  - sudoskill{s=[ - jump{v=1.2}]} ?hastag{t=LastHit}
+  
+
+Cubee-nature_dragon-Pet-Attack:
+  TargetConditions:
+  - distance{d=<10}
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - sudoskill{s=Cubee-nature_dragon-Pet-Attack_SudoOwner} @Owner
+
+Cubee-nature_dragon-Pet-Attack_SudoOwner:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - totem{
+      oS=[
+        - skill{s=Cubee-nature_dragon-Pet-Attack_LOS} @Origin
+      ];md=3;i=10} @Forward{f=20}
+
+Cubee-nature_dragon-Pet-Attack_LOS:
+  Conditions:
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - skill{s=Cubee-nature_dragon-Pet-Attack_SudoTargetConditions} @EntitiesInLine{r=2.5}
+
+Cubee-nature_dragon-Pet-Attack_SudoTargetConditions:
+  TargetConditions:
+  - ( isliving true || isplayer true ) true
+  - distance{d=<<placeholder.Cubee-nature_dragon-Skill_MaximumTargetDistance>}
+  Conditions:
+  - targets{a=>0} true
+  - hasaura CubeeAttackCooldown false
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - signal{s=CubeeAttack} @EIR{r=50;
+      conditions=[
+        - entitytype{t=WOLF}
+      ]}
+
+
+Cubee-nature_dragon-Pet-Attack_Activate:
+  Skills:
+  - unsetvar{name=caster.cubee_mark} @self
+  - unsetvar{name=caster.cubee_ally_mark} @self
+  - sudoskill{
+      s=[
+        - unsetvar{var=caster.distance} @self
+        - raytrace{entityskill=Cubee-nature_dragon-Pet-Attack_Activat_ConfirmTarget;raywidth=0.2;ignorepassableblocks=true;maxdistance=50} @Forward{f=50}
+      ];cat=true} @Owner
+
+Cubee-nature_dragon-Pet-OwnersCombatTarget:
+  Skills:
+  - onDamaged{ondamagedskill=Cubee-nature_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-nature_dragon-Skill_AutoActivate>";val2="true"}
+  - onAttack{onattackskill=Cubee-nature_dragon-Pet-OnDamagedTarget;d=20;ms=1;ma=true;rd=true} @Owner ?stringEQ{val1="<placeholder.Cubee-nature_dragon-Skill_AutoActivate>";val2="true"}
+
+Cubee-nature_dragon-Pet-OnDamagedTarget:
+  TriggetConditions:
+  - owner false
+  - isliving true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"} @Trigger
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-nature_dragon-Skill_MaximumTargetDistance>} @Trigger
+  - setTarget @Trigger
+
+Cubee-nature_dragon-Pet-Attack_Activat_ConfirmTarget: #Player is Caster
+  TargetConditions:
+  - ( isliving || isplayer ) true
+  Conditions:
+  - crouching castinstead Cubee-nature_dragon-Pet-Attack_Activat_ConfirmAlly
+  - targets{a=>0}
+  - hasaura{aura=CubeeAttackCooldown} cast Cubees_v20-Cooldown
+  - hasaura CubeeStunned false
+  - hasaura CubeeSuppressed false
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.uuid>} @targetedTarget{}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cTarget is too far! [<placeholder.Cubee-nature_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-nature_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-nature_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-nature_dragon-Skill_MaximumTargetDistance>}
+
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-nature_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeTargetInherit} @Trigger
+
+Cubee-nature_dragon-Pet-Attack_Activat_ConfirmAlly:
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.uuid>}
+  - setvariable{var=caster.distance;type=INTEGER;value="sqrt( ((<caster.l.x> - <target.l.x>))^2 + ((<caster.l.y> - <target.l.y>))^2 + ((<caster.l.z> - <target.l.z>))^2 )"}
+  - message{m="&cAlly is too far! [<placeholder.Cubee-nature_dragon-Skill_MaximumTargetDistance> blocks]"} @self ?varinrange{var=caster.distance;value=><placeholder.Cubee-nature_dragon-Skill_MaximumTargetDistance>}
+  - particlering{points=64;radius=<placeholder.Cubee-nature_dragon-Skill_MaximumTargetDistance>;speed=0;size=1;audience=@self;particle=electric_spark;repeat=3;repeatInterval=1} @selfLocation{y=1} ?varinrange{var=caster.distance;value=><placeholder.Cubee-nature_dragon-Skill_MaximumTargetDistance>}
+  - cancel ?varinrange{var=caster.distance;value=><placeholder.Cubee-nature_dragon-Skill_MaximumTargetDistance>}
+  - signal{s=CubeeAllyInherit} @Trigger
+
+Cubee-nature_dragon-TargetInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_mark;value=<target.var.cubee_mark>} @Owner
+  - skill{s=Cubee-nature_dragon-Pet-Attack_Activat_InheritTarget} @UUID{uuid=<caster.var.cubee_mark>} ?variableIsSet{var=caster.cubee_mark}
+
+Cubee-nature_dragon-AllyInherit: #Cubee is caster
+  TriggerConditions:
+  - owner true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - variableSet{type=STRING;scope=caster;name=cubee_ally_mark;value=<target.var.cubee_ally_mark>} @Owner
+  - skill{s=Cubee-nature_dragon-Pet-Attack_Activat_InheritAlly} @UUID{uuid=<caster.var.cubee_ally_mark>} ?variableIsSet{var=caster.cubee_ally_mark}
+
+Cubee-nature_dragon-Pet-Attack_Activat_InheritTarget: #Cubee is Caster
+  Skills:
+  - settarget
+  - threat{mode=forcetop}
+  - sudoskill{s=[ - aura{aura=OnCooldown;d=3;i=10} @Trigger];cat=true} @Owner
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#e11717;color2=#fc5aa4;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - removeaura{auraname=<caster.uuid>} @Target
+  - cancel ?hasaura{auraname=OnCooldown}
+  - skill{s=Cubee-nature_dragon-Pet-Attack_Execute} @Self
+
+Cubee-nature_dragon-Pet-Attack_Activat_InheritAlly: #Cubee is Caster
+  Skills:
+  - threat{mode=reset}
+  - settarget @self
+  - potion{t=GLOWING;d=2;p=false}
+  - particlering{points=64;radius=1.5;audience=@owner;particle=dust_color_transition;color1=#8ee6ec;color2=#eafd47;a=1;size=0.75;repeat=2;repeatInterval=1}
+  - aura{auraname="<caster.uuid>";d=9999999;i=10;cancelondeath=false;cancelonteleport=false;cancelonchangeworld=false;canceloncasterdeath=false;cancelonquit=false}
+
+Cubee-nature_dragon-Pet-Attack_Execute:
+  Cooldown: "(<placeholder.Cubee-nature_dragon-Skill_Cooldown> + 7.5)-(<pet.power>*<placeholder.Cubee-nature_dragon-Skill_Cooldown_PowerScale>)"
+  Skills:
+  - aura{auraname=CubeeAttackCooldown;cancelondeath=false;cancelonquit=false;cancelonquit=false;cancelonchangeworld=false;cancelonteleport=false;i=20;ms=1;ma=true;rd=true;
+      d="((<placeholder.Cubee-nature_dragon-Skill_Cooldown> + 7.5)-(<pet.power>*<placeholder.Cubee-nature_dragon-Skill_Cooldown_PowerScale>))*20";
+      oE=[
+        - sudoskill{s=Cubees_v20-Cooldown_Refresed} @Owner
+      ]} @owner
+  - petExperience{exp="<placeholder.Cubee-air_dragon-EXP_Receive>"} @self
+  - state{s=execute;ow=true;li=0;lo=true} @self
+  - aura{auraname=Attacking;d=85;i=10} @self
+  - sound{s=entity.player.levelup;p=1.5;v=0.35} @selflocation
+  - sound{s=cubees_v20:cubee-nature_dragon;sc=PLAYERS;p=1;v=0.35} @selflocation
+  - aura{auraname=Stay;d=85;i=10} @self
+  - skill{s=Cubees-ForceLookTarget-Run;repeat=84;repeatInterval=1} @Target
+  - particleline{particle=dust_color_transition;startyoffset=1.5;sso=1.5;targetyoffset=0.4;color1=#517c43;color2=#3a4f50;amount=1;size=1.2;distanceBetween=0.15;hs=0.15;vs=0.15} @Forward{f=6;sideoffset=3;lockpitch=true;owner=true}
+  - teleport{unsafe=false} @Forward{f=6;sideoffset=3;lockpitch=true;owner=true}
+  - delay 1
+  - skill{s=[ - tracklocation @floorsOfTarget{tries=99}]} @self
+  - teleport{repeat=83;repeatinterval=1} @trackedLocation{y=1} 
+  - setgravity{gravity=false} @self
+  - setgravity{gravity=true;delay=100} @self
+  - delay 29
+  - totem{c=99;oS=Cubee-nature_dragon-Pet-YggdrasilWrath;hp=true;hnp=true;md=3;repeat=40;repeatInterval=1} @ModelPart{mid=cubee-nature_dragon;p=hitpoint}
+
+Cubee-nature_dragon-Pet-YggdrasilWrath:
+  Skills:
+  - sudoskill{s=Cubee-nature_dragon-Pet-YggdrasilWrath_CheckAlly;cat=true} @entitiesinline{r=1.5}
+
+Cubee-nature_dragon-Pet-YggdrasilWrath_CheckAlly: #Target is Caster
+  Skills:
+  - sudoskill{s=Cubee-nature_dragon-Pet-YggdrasilWrath_ApplyTarget;cat=true} @trigger ?!hasaura{auraname=<trigger.uuid>}
+
+Cubee-nature_dragon-Pet-YggdrasilWrath_ApplyTarget: #Target is Caster
+  Skills:
+  - skill{s=Cubee-nature_dragon-Pet-YggdrasilWrath_Damage} @trigger
+
+Cubee-nature_dragon-Pet-YggdrasilWrath_Damage: # Cubee is Caster # Target is Trigger
+  TargetConditions:
+  - owner false
+  - isliving true
+  Skills:
+  - damage{a="(<placeholder.Cubee-nature_dragon-Skill_Damage>+(<pet.power>*<placeholder.Cubee-nature_dragon-Skill_Damage_PowerScale>))/41";pkb=true;pi=true;noanger=true}
+  - particle{p=flame;a=1;hS=0.1;vS=0.1;speed=0.2}
+  - particle{p=end_rod;a=1;hS=0.1;vS=0.1;speed=0.2}
+  - ignite
+
+Cubee-darkness_dragon-LevelUp:
+  Skills:
+  - sendtitle{title="&bCubee";subtitle="&aLeveled up!";d=50} @Owner
+Cubee-earth_dragon-LevelUp:
+  Skills:
+  - sendtitle{title="&bCubee";subtitle="&aLeveled up!";d=50} @Owner
+Cubee-fire_dragon-LevelUp:
+  Skills:
+  - sendtitle{title="&bCubee";subtitle="&aLeveled up!";d=50} @Owner
+Cubee-galaxy_dragon-LevelUp:
+  Skills:
+  - sendtitle{title="&bCubee";subtitle="&aLeveled up!";d=50} @Owner
+Cubee-ice_dragon-LevelUp:
+  Skills:
+  - sendtitle{title="&bCubee";subtitle="&aLeveled up!";d=50} @Owner
+Cubee-light_dragon-LevelUp:
+  Skills:
+  - sendtitle{title="&bCubee";subtitle="&aLeveled up!";d=50} @Owner
+Cubee-nature_dragon-LevelUp:
+  Skills:
+  - sendtitle{title="&bCubee";subtitle="&aLeveled up!";d=50} @Owner
+Cubee-air_dragon-LevelUp:
+  Skills:
+  - sendtitle{title="&bCubee";subtitle="&aLeveled up!";d=50} @Owner
+
+
+Cubees-ForceLookTarget-Run:
+  Skills:
+  - skill{s=Cubees-ForceLookTarget} @Target
+
+Cubees-ForceLookTarget:
+  CancelIfNoTargets: true
+  Skills:
+  - setVar{var=caster.x_target;type=FLOAT;value="<target.l.x.double{round=6}>"}
+  - setVar{var=caster.y_target;type=FLOAT;value="<target.l.y.double{round=6}>"}
+  - setVar{var=caster.z_target;type=FLOAT;value="<target.l.z.double{round=6}>"}
+  - setVar{var=caster.xdiff;type=FLOAT;value="<caster.l.x.double{round=6}> - <caster.var.x_target>"} @Self
+  - setVar{var=caster.ydiff;type=FLOAT;value="<caster.l.y.double{round=6}> - <caster.var.y_target>"} @Self
+  - setVar{var=caster.zdiff;type=FLOAT;value="<caster.l.z.double{round=6}> - <caster.var.z_target>"} @Self
+
+  - setVar{var=caster.yawradiandiff;type=FLOAT;value="( (atan2(<caster.var.zdiff>,<caster.var.xdiff>)) * (180/(22/7)) )"} @self
+  - setVar{var=caster.hdiff;type=FLOAT;value="sqrt(((<caster.var.xdiff>*<caster.var.xdiff>)+(<caster.var.zdiff>*<caster.var.zdiff>)))"} @Self
+  - setVar{var=caster.pitchradiandiff;type=FLOAT;value="( (atan2(<caster.var.ydiff>,<caster.var.hdiff>)) * (180/(22/7))*1 )"} @self
+
+  - setrotation{relative=false;yaw="<caster.var.yawradiandiff>+90";pitch="<caster.var.pitchradiandiff>"} @self
+
+Cubees-Function-hdiff: #Horizontal Distance
+  CancelIfNoTargets: true
+  Conditions:
+  - targets{a=>0}
+  Skills:
+  - setVar{var=caster.x_target;type=FLOAT;value="<target.l.x.double{round=6}>"}
+  - setVar{var=caster.y_target;type=FLOAT;value="<target.l.y.double{round=6}>"}
+  - setVar{var=caster.z_target;type=FLOAT;value="<target.l.z.double{round=6}>"}
+  - setVar{var=caster.xdiff;type=FLOAT;value="<caster.l.x.double{round=6}> - <caster.var.x_target>"} @Self
+  - setVar{var=caster.ydiff;type=FLOAT;value="<caster.l.y.double{round=6}> - <caster.var.y_target>"} @Self
+  - setVar{var=caster.zdiff;type=FLOAT;value="<caster.l.z.double{round=6}> - <caster.var.z_target>"} @Self
+
+  - setVar{var=caster.yawradiandiff;type=FLOAT;value="( (atan2(<caster.var.zdiff>,<caster.var.xdiff>)) * (180/(22/7)) )"} @self
+  - setVar{var=caster.hdiff;type=INTEGER;value="sqrt(((<caster.var.xdiff>*<caster.var.xdiff>)+(<caster.var.zdiff>*<caster.var.zdiff>)))"} @Self
+
+
+CDC:
+  Skills:
+  - auraremove{auraname=CubeeAttackCooldown} @self
+  - auraremove{auraname=CubeeAttackCooldown} @child

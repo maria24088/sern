@@ -1,0 +1,1661 @@
+info:
+  namespace: shizuart_furnitures
+
+items:
+  tavern_counter:
+    enabled: true
+    display_name: Counter
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_counter
+  tavern_counter2:
+    enabled: true
+    display_name: Counter
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_counter2
+  tavern_counter_angle:
+    enabled: true
+    display_name: Counter angle
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_counter_angle
+  tavern_windows:
+    enabled: true
+    display_name: Tavern window
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        hitbox:
+          height: 2
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_windows
+  tavern_windows_double:
+    enabled: true
+    display_name: Tavern  big window
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        hitbox:
+          height: 2
+          width: 2
+          width_offset: -1
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: -0.5
+            z: 0
+          scale:
+            x: 1
+            y: 1
+            z: 1
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_windows_double
+  tavern_stool:
+    enabled: true
+    display_name: Tavern stool
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+      furniture_sit:
+        sit_height: 0.9
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_stool
+  tavern_table:
+    enabled: true
+    display_name: Tavern table
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        hitbox:
+          height: 1
+          width: 2
+          length: 2
+          width_offset: -1
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_table
+  tavern_big_table:
+    enabled: true
+    display_name: Tavern big table
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        hitbox:
+          width: 3
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_big_table
+  tavern_bench:
+    enabled: true
+    display_name: Tavern bench
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        hitbox:
+          width: 3
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+      furniture_sit:
+        sit_height: 0.75
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_bench
+  tavern_shelf:
+    enabled: true
+    display_name: Tavern shelf
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        hitbox:
+          width: 3
+          height: 3
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 1
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_shelf
+  tavern_shelf2:
+    enabled: true
+    display_name: Tavern shelf
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        hitbox:
+          width: 3
+          height: 3
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 1
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_shelf2
+  tavern_shelf3:
+    enabled: true
+    display_name: Tavern shelf
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        hitbox:
+          width: 3
+          height: 3
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 1
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_shelf3
+  tavern_bottom_shelf:
+    enabled: true
+    display_name: Tavern bottom shelf
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        hitbox:
+          width: 2
+          width_offset: -1
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_bottom_shelf
+  tavern_hanging_shelf:
+    enabled: true
+    display_name: Tavern hanging shelf
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: false
+          walls: true
+        hitbox:
+          width: 2
+          width_offset: -1
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_hanging_shelf
+  tavern_bread:
+    enabled: true
+    display_name: Tavern bread
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_bread
+  tavern_hanging_mugs:
+    enabled: true
+    display_name: Tavern hanging mugs
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: true
+          floor: false
+          walls: false
+        opposite_direction: false
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_hanging_mugs
+  tavern_keg_support:
+    enabled: true
+    display_name: Tavern kegs on support
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        hitbox:
+          height: 2
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_keg_support
+  tavern_keg_support_double:
+    enabled: true
+    display_name: Tavern kegs on support
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        hitbox:
+          height: 2
+          width: 2
+          width_offset: -1
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_keg_support_double
+  tavern_keg:
+    enabled: true
+    display_name: Tavern keg
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_keg
+  tavern_keg2:
+    enabled: true
+    display_name: Tavern keg
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_keg2
+  tavern_green_bottle:
+    enabled: true
+    display_name: Tavern green bottle
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_green_bottle
+  tavern_brown_bottle:
+    enabled: true
+    display_name: Tavern brown bottle
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_brown_bottle
+  tavern_blue_bottle:
+    enabled: true
+    display_name: Tavern blue bottle
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_blue_bottle
+  tavern_red_bottle:
+    enabled: true
+    display_name: Tavern red bottle
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_red_bottle
+  tavern_small_green_bottle:
+    enabled: true
+    display_name: Tavern small green bottle
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_small_green_bottle
+  tavern_candle_red_bottle:
+    enabled: true
+    display_name: Tavern candle in red bottle
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+        light_level: 15
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_candle_red_bottle
+  tavern_candle_green_bottle:
+    enabled: true
+    display_name: Tavern candle in green bottle
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+        light_level: 15
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_candle_green_bottle
+  tavern_candle:
+    enabled: true
+    display_name: Tavern candle
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+        light_level: 15
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_candle
+  tavern_basket_apple:
+    enabled: true
+    display_name: Tavern  basket of apple
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_basket_apple
+  tavern_big_keg:
+    enabled: true
+    display_name: Tavern big keg
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        hitbox:
+          width: 2
+          length: 2
+          length_offset: -0.5
+          width_offset: -1
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_big_keg
+  tavern_big_keg2:
+    enabled: true
+    display_name: Tavern big keg
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        hitbox:
+          width: 2
+          length: 2
+          length_offset: -0.5
+          width_offset: -1
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_big_keg2
+  tavern_mug:
+    enabled: true
+    display_name: Tavern mug
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_mug
+  tavern_mug2:
+    enabled: true
+    display_name: Tavern mug
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_mug2
+  tavern_multiple_bottles:
+    enabled: true
+    display_name: Tavern pack of bottles
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_multiple_bottles
+  tavern_pile_bottles:
+    enabled: true
+    display_name: Tavern pile of bottles
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_pile_bottles
+  tavern_mural_shelf:
+    enabled: true
+    display_name: Tavern mural shelf
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: false
+          walls: true
+        hitbox:
+          width: 2
+          width_offset: -1
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_mural_shelf
+  tavern_egg_jar:
+    enabled: true
+    display_name: Tavern jar of eggs
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_egg_jar
+  tavern_plate1:
+    enabled: true
+    display_name: Tavern plate of food
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_plate1
+  tavern_plate2:
+    enabled: true
+    display_name: Tavern plate of food
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_plate2
+  tavern_plate3:
+    enabled: true
+    display_name: Tavern plate of food
+    behaviours:
+      furniture:
+        solid: false
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_plate3
+  tavern_mural_beam:
+    enabled: true
+    display_name: Tavern mural beam
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_display
+        fixed_rotation: true
+        placeable_on:
+          ceiling: false
+          floor: false
+          walls: true
+        opposite_direction: true
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+        display_transformation:
+          transform: FIXED
+          translation:
+            x: 0
+            y: 0
+            z: 0
+          scale:
+            x: 0.5
+            y: 0.5
+            z: 0.5
+          right_rotation:
+            axis_angle:
+              angle: -90
+              axis:
+                x: 1
+                y: 0
+                z: 0
+    graphics:
+      material: PAPER
+      generate: false
+      model: shizuart_furnitures:tavern_furniture/tavern_mural_beam
+
+#olWtxWYBFXbBdDdtJjYwdUbNVlWFJVRSVEeXFVeJRkYFJlbZB1b1kkRTFEUJVnMGR0Trx2M

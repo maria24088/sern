@@ -1,0 +1,545 @@
+info:
+  namespace: infinitefishing
+items:
+  gui_bar1:
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/gui_items/gui_bar1
+      model_id: 40096
+  gui_bar2:
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/gui_items/gui_bar2
+      model_id: 40097
+  gui_bar3:
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/gui_items/gui_bar3
+      model_id: 40098
+  crab:
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/util/crab
+      model_id: 50075
+  rainbow_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/rainbow_fish
+      model_id: 50100
+  radioactive_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/radioactive_fish
+      model_id: 50000
+  tuna_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/tuna_fish
+      model_id: 50001
+  tuna_fish_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/tuna_fish_silver_star
+      model_id: 50002
+  tuna_fish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/tuna_fish_golden_star
+      model_id: 50003
+  pike_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/pike_fish
+      model_id: 50004
+  pike_fish_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/pike_fish_silver_star
+      model_id: 50005
+  pike_fish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/pike_fish_golden_star
+      model_id: 50006
+  gold_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/gold_fish
+      model_id: 50007
+  gold_fish_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/gold_fish_silver_star
+      model_id: 50008
+  gold_fish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/gold_fish_golden_star
+      model_id: 50009
+  perch_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/perch_fish
+      model_id: 50010
+  perch_fish_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/perch_fish_silver_star
+      model_id: 50011
+  perch_fish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/perch_fish_golden_star
+      model_id: 50012
+  mullet_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/mullet_fish
+      model_id: 50013
+  mullet_fish_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/mullet_fish_silver_star
+      model_id: 50014
+  mullet_fish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/mullet_fish_golden_star
+      model_id: 50015
+  sardine_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/sardine_fish
+      model_id: 50016
+  sardine_fish_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/sardine_fish_silver_star
+      model_id: 50017
+  sardine_fish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/sardine_fish_golden_star
+      model_id: 50018
+  carp_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/carp_fish
+      model_id: 50019
+  carp_fish_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/carp_fish_silver_star
+      model_id: 50020
+  carp_fish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/carp_fish_golden_star
+      model_id: 50021
+  cat_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/cat_fish
+      model_id: 50022
+  cat_fish_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/cat_fish_silver_star
+      model_id: 50023
+  cat_fish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/cat_fish_golden_star
+      model_id: 50024
+  octopus_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/octopus_fish
+      model_id: 50025
+  octopus_fish_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/octopus_fish_silver_star
+      model_id: 50026
+  octopus_fish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/octopus_fish_golden_star
+      model_id: 50027
+  sunfish_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/sunfish_fish
+      model_id: 50028
+  sunfish_fish_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/sunfish_fish_silver_star
+      model_id: 50029
+  sunfish_fish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/sunfish_fish_golden_star
+      model_id: 50030
+  red_spnapper_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/red_spnapper_fish
+      model_id: 50031
+  red_spnapper_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/red_spnapper_silver_star
+      model_id: 50032
+  red_spnapper_fish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/red_spnapper_fish_golden_star
+      model_id: 50033
+  salmon_void_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/salmon_void_fish
+      model_id: 50034
+  salmon_void_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/salmon_void_silver_star
+      model_id: 50035
+  salmon_void_fish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/salmon_void_fish_golden_star
+      model_id: 50036
+  woodskip_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/woodskip_fish
+      model_id: 50037
+  woodskip_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/woodskip_silver_star
+      model_id: 50038
+  woodskip_fish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/woodskip_fish_golden_star
+      model_id: 50039
+  sturgeon_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/sturgeon_fish
+      model_id: 50040
+  sturgeon_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/sturgeon_silver_star
+      model_id: 50041
+  sturgeon_fish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/sturgeon_fish_golden_star
+      model_id: 50042
+  blue_jellyfish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/blue_jellyfish
+      model_id: 50043
+  blue_jellyfish_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/blue_jellyfish_silver_star
+      model_id: 50044
+  blue_jellyfish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/blue_jellyfish_golden_star
+      model_id: 50045
+  pink_jellyfish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/pink_jellyfish
+      model_id: 50046
+  pink_jellyfish_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/pink_jellyfish_silver_star
+      model_id: 50047
+  pink_jellyfish_golden_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/pink_jellyfish_golden_star
+      model_id: 50048
+  blue_jellyfish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/blue_jellyfish_amethyst_star
+      model_id: 50049     
+  carp_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/carp_fish_amethyst_star
+      model_id: 50050
+  cat_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/cat_fish_amethyst_star
+      model_id: 50051      
+  gold_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/gold_fish_amethyst_star
+      model_id: 50052 
+  golden_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/gold_fish_amethyst_star
+      model_id: 50053      
+  mullet_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/mullet_fish_amethyst_star
+      model_id: 50054 
+  octopus_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/octopus_fish_amethyst_star
+      model_id: 50055      
+  perch_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/perch_fish_amethyst_star
+      model_id: 50056 
+  pike_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/pike_fish_amethyst_star
+      model_id: 50057      
+  pink_jellyfish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/pink_jellyfish_amethyst_star
+      model_id: 50058 
+  red_spnapper_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/red_spnapper_fish_amethyst_star
+      model_id: 50059      
+  salmon_void_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/salmon_void_fish_amethyst_star
+      model_id: 50060 
+  sardine_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/sardine_fish_amethyst_star
+      model_id: 50061      
+  sturgeon_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/sturgeon_fish_amethyst_star
+      model_id: 50062 
+  sunfish_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/sunfish_fish_amethyst_star
+      model_id: 50063      
+  tuna_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/tuna_fish_amethyst_star
+      model_id: 50064 
+  woodskip_fish_amethyst_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/woodskip_fish_amethyst_star
+      model_id: 50065
+  golden_fish:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/golden_fish
+      model_id: 50066
+  golden_fish_gold_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/golden_fish_golden_star
+      model_id: 50067
+  golden_fish_silver_star:
+    resource:
+      material: COD
+      generate: false
+      model_path: item/fish/golden_fish_silver_star
+      model_id: 50068
+  beginner_rod:
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: item/rod/beginner_rod
+      model_id: 50081
+  silver_rod:
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: item/rod/silver_rod
+      model_id: 50082
+  golden_rod:
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: item/rod/golden_rod
+      model_id: 50083
+  star_rod:
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: item/rod/star_rod
+      model_id: 50084
+  bone_rod:
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: item/rod/bone_rod
+      model_id: 50085
+  magical_rod:
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: item/rod/magical_rod
+      model_id: 50086
+  master_rod:
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: item/rod/master_rod
+      model_id: 50087
+  simple_bait:
+    lore:
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/bait/simple_bait
+      model_id: 50070
+  magnetic_bait:
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/bait/magnetic_bait
+      model_id: 50071
+  wild_bait:
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/bait/wild_bait
+      model_id: 50072
+  nice_bait:
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/bait/nice_bait
+      model_id: 50073
+  worm_bait:
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/bait/worm_bait
+      model_id: 50074
+  delicate_hook:
+    resource:
+      material: SHEARS
+      generate: false
+      model_path: item/hook/delicate_hook
+      model_id: 50220
+  fishfinder:
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/util/fishfinder
+      model_id: 50080
+  water_effect:
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/util/splash_water
+      model_id: 49998
+  lava_effect:
+    resource:
+      material: PAPER
+      generate: false
+      model_path: item/util/splash_lava
+      model_id: 49999
+#MGZ1sEZ3dXOTJ3czQXQQVXdvBTV1UEVPl3ZX9kRWVUYPZEWRlnaYVGeClTMzYXRy4USjh2M

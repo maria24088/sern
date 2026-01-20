@@ -1,0 +1,42 @@
+﻿#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+LR_ice_staff_freeze:
+  Type: ARMOR_STAND
+  Display: "FREEZE"
+  Options:
+    Marker: true
+    Collidable: false
+  Skills:
+  - model{mid=ice_staff_freeze;scale=<random.float.0.7to1.3>;usm=true;showhitbox=false;h=false} @self ~onSpawn
+  - model{mid=ice_staff_freeze;scale=<random.float.0.7to1.3>;usm=true;showhitbox=false;h=false} @self ~onLoad
+  - bodyrotation{md=0;mb=0;rde=0;rdu=0} @self ~onSpawn
+  - bodyrotation{md=0;mb=0;rde=0;rdu=0} @self ~onLoad
+  - state{s=spawn2} @self ~onSpawn .5
+  - state{s=spawn3} @self ~onSpawn .5
+  - brightness{b=15;s=15} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onLoad
+  - e:p{p=snowflake;a=1;hs=.25;vs=.25} @modelpart{pid=root} ~onTimer:5
+  - remove{delay=60} @self ~onSpawn
+
+
+ice_staff_fx:
+  Type: TEXT_DISPLAY
+  Display: "PARTICLE"
+  DisplayOptions:
+    Text: "⍯"
+    BackgroundColor: 0000000000
+    BlockLight: 15
+    SkyLight: 15
+    Billboard: CENTER
+    Scale: 4,4,4
+  Skills:
+  - displaytransformation{action=set;transformation=scale;value=<random.float.3.5to4.5>,<random.float.3.5to4.5>,<random.float.3.5to4.5>} @self ~onSpawn
+  - displaytransformation{action=set;transformation=translation;value=<random.float.-0.15to0.15>,<random.float.-0.15to0.15>,<random.float.-0.15to0.15>} @self ~onSpawn
+  - settextdisplay{text="⍰";delay=2} @self ~onSpawn
+  - settextdisplay{text="⍱";delay=4} @self ~onSpawn
+  - settextdisplay{text="⍲";delay=6} @self ~onSpawn
+  - settextdisplay{text="⍳";delay=8} @self ~onSpawn
+  - settextdisplay{text=" ";delay=10} @self ~onSpawn
+  - remove{delay=12} @self ~onSpawn

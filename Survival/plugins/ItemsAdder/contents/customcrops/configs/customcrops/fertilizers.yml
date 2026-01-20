@@ -1,0 +1,114 @@
+info:
+  namespace: customcrops
+items:
+  speed_grow_1:
+    display_name: display-name-speed_grow_1
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/speed_grow_1
+  speed_grow_2:
+    display_name: display-name-speed_grow_2
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/speed_grow_2
+  speed_grow_3:
+    display_name: display-name-speed_grow_3
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/speed_grow_3
+  soil_retain_1:
+    display_name: display-name-soil_retain_1
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/soil_retain_1
+  soil_retain_2:
+    display_name: display-name-soil_retain_2
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/soil_retain_2
+  soil_retain_3:
+    display_name: display-name-soil_retain_3
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/soil_retain_3
+  quality_1:
+    display_name: display-name-quality_1
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/quality_1
+  quality_2:
+    display_name: display-name-quality_2
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/quality_2
+  quality_3:
+    display_name: display-name-quality_3
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/quality_3
+  yield_increase_1:
+    display_name: display-name-yield_increase_1
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/yield_increase_1
+  yield_increase_2:
+    display_name: display-name-yield_increase_2
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/yield_increase_2
+  yield_increase_3:
+    display_name: display-name-yield_increase_3
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/yield_increase_3
+  variation_1:
+    display_name: display-name-variation_1
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/variation_1
+  variation_2:
+    display_name: display-name-variation_2
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/variation_2
+  variation_3:
+    display_name: display-name-variation_3
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/variation_3
+categories:
+  customcrops_fertilizers:
+    enabled: true
+    icon: customcrops:quality_3
+    name: 'display-category-customcrops_fertilizers'
+    items:
+      - customcrops:quality_1
+      - customcrops:quality_2
+      - customcrops:quality_3
+      - customcrops:speed_grow_1
+      - customcrops:speed_grow_2
+      - customcrops:speed_grow_3
+      - customcrops:variation_1
+      - customcrops:variation_2
+      - customcrops:variation_3
+      - customcrops:yield_increase_1
+      - customcrops:yield_increase_2
+      - customcrops:yield_increase_3
+      - customcrops:soil_retain_1
+      - customcrops:soil_retain_2
+      - customcrops:soil_retain_3

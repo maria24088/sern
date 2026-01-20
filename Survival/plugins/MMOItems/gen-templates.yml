@@ -1,0 +1,168 @@
+# --- OVERWORLD NORMAL (STONE) ---
+
+overworld-common:
+  replace: [STONE]
+  worlds: [world]
+  chunk-chance: 0.5
+  depth: 0=255
+  vein-size: 4
+  vein-count: 4
+
+overworld-rare:
+  replace: [STONE]
+  worlds: [world]
+  chunk-chance: 0.25
+  depth: 0=60
+  vein-size: 3
+  vein-count: 3
+
+overworld-epic:
+  replace: [STONE]
+  worlds: [world]
+  chunk-chance: 0.125
+  depth: 0=40
+  vein-size: 3
+  vein-count: 2
+
+overworld-legendary:
+  replace: [STONE]
+  worlds: [world]
+  chunk-chance: 0.05 
+  depth: 0=30
+  vein-size: 2
+  vein-count: 1
+
+overworld-mythic:
+  replace: [STONE]
+  worlds: [world]
+  chunk-chance: 0.02
+  depth: 5=20
+  vein-size: 1
+  vein-count: 1
+
+# --- OVERWORLD DEEPSLATE (PIZARRA) ---
+
+deepslate-common:
+  replace: [DEEPSLATE]
+  worlds: [world]
+  chunk-chance: 0.50
+  depth: -64=-5
+  vein-size: 4
+  vein-count: 4
+
+deepslate-rare:
+  replace: [DEEPSLATE]
+  worlds: [world]
+  chunk-chance: 0.25
+  depth: -64=-10
+  vein-size: 3
+  vein-count: 2
+
+deepslate-epic:
+  replace: [DEEPSLATE]
+  worlds: [world]
+  chunk-chance: 0.125
+  depth: -64=-20
+  vein-size: 3
+  vein-count: 1
+
+deepslate-legendary:
+  replace: [DEEPSLATE]
+  worlds: [world]
+  chunk-chance: 0.05
+  depth: -64=-30
+  vein-size: 1
+  vein-count: 1
+
+deepslate-mythic:
+  replace: [DEEPSLATE]
+  worlds: [world]
+  chunk-chance: 0.03
+  depth: -64=-50
+  vein-size: 1
+  vein-count: 1
+
+# --- NETHER ---
+
+nether-common:
+  replace: [NETHERRACK]
+  worlds: [world_nether]
+  chunk-chance: 0.50
+  depth: 10=110
+  vein-size: 4
+  vein-count: 5
+
+nether-rare:
+  replace: [NETHERRACK]
+  worlds: [world_nether]
+  chunk-chance: 0.25
+  depth: 20=100
+  vein-size: 3
+  vein-count: 3
+
+nether-epic:
+  replace: [NETHERRACK]
+  worlds: [world_nether]
+  chunk-chance: 0.125
+  depth: 30=80
+  vein-size: 3
+  vein-count: 2
+
+nether-legendary:
+  replace: [NETHERRACK]
+  worlds: [world_nether]
+  chunk-chance: 0.05
+  depth: 15=40
+  vein-size: 2
+  vein-count: 1
+
+nether-mythic:
+  replace: [NETHERRACK]
+  worlds: [world_nether]
+  chunk-chance: 0.015
+  depth: 100=120
+  vein-size: 1
+  vein-count: 1
+
+# --- THE END ---
+
+end-common:
+  replace: [END_STONE]
+  worlds: [world_the_end]
+  chunk-chance: 0.5
+  depth: 0=255
+  vein-size: 4
+  vein-count: 4
+
+end-rare:
+  replace: [END_STONE]
+  worlds: [world_the_end]
+  chunk-chance: 0.25
+  depth: 20=70
+  vein-size: 3
+  vein-count: 2
+
+end-epic:
+  replace: [END_STONE]
+  worlds: [world_the_end]
+  chunk-chance: 0.125
+  depth: 30=60
+  vein-size: 2
+  vein-count: 2
+
+end-legendary:
+  replace: [END_STONE]
+  worlds: [world_the_end]
+  chunk-chance: 0.05   # 5%
+  depth: 0=255
+  vein-size: 1
+  vein-count: 1
+  bordering: [AIR]     # Solo aparece si toca aire (visible en los bordes de islas)
+
+end-mythic:
+  replace: [END_STONE]
+  worlds: [world_the_end]
+  chunk-chance: 0.025   # 1%
+  depth: 0=40
+  vein-size: 1
+  vein-count: 1

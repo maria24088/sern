@@ -1,0 +1,115 @@
+menu_title: "&f%img_offset_-8%%img_quest_leaderboard%"
+open_command: qleaderboard
+size: 27
+update_interval: 10
+items:
+  1:
+    material: head-%ajlb_lb_odailyquests_total_1_alltime_name%
+    slot: 4
+    display_name: "&f%ajlb_lb_odailyquests_total_1_alltime_name%"
+    lore:
+      - "&7ᴍɪsɪᴏɴᴇs ᴄᴏᴍᴘʟᴇᴛᴀᴅᴀs: &#64ba3f%ajlb_lb_odailyquests_total_1_alltime_value%"
+      - "&#a5d0e9Muestra el total de misiones"
+      - "&#a5d0e9que completó este jugador"
+      - ""
+      - "&fᴘᴜᴇsᴛᴏ: &#c372de1ʀᴏ"
+    model_data: 2
+  2:
+    material: head-%ajlb_lb_odailyquests_total_2_alltime_name%
+    slot: 3
+    display_name: "&f%ajlb_lb_odailyquests_total_2_alltime_name%"
+    lore:
+      - "&7ᴍɪsɪᴏɴᴇs ᴄᴏᴍᴘʟᴇᴛᴀᴅᴀs: &#64ba3f%ajlb_lb_odailyquests_total_2_alltime_value%"
+      - "&#a5d0e9Muestra el total de misiones"
+      - "&#a5d0e9que completó este jugador"
+      - ""
+      - "&fᴘᴜᴇsᴛᴏ: &#c372de2ᴅᴏ"
+    model_data: 2
+  3:
+    material: head-%ajlb_lb_odailyquests_total_3_alltime_name%
+    slot: 5
+    display_name: "&f%ajlb_lb_odailyquests_total_3_alltime_name%"
+    lore:
+      - "&7ᴍɪsɪᴏɴᴇs ᴄᴏᴍᴘʟᴇᴛᴀᴅᴀs: &#64ba3f%ajlb_lb_odailyquests_total_3_alltime_value%"
+      - "&#a5d0e9Muestra el total de misiones"
+      - "&#a5d0e9que completó este jugador"
+      - ""
+      - "&fᴘᴜᴇsᴛᴏ: &#c372de3ʀᴏ"
+    model_data: 2
+  4:
+    material: head-%ajlb_lb_odailyquests_total_4_alltime_name%
+    slot: 10
+    display_name: "&f%ajlb_lb_odailyquests_total_4_alltime_name%"
+    lore:
+      - "&7ᴍɪsɪᴏɴᴇs ᴄᴏᴍᴘʟᴇᴛᴀᴅᴀs: &#64ba3f%ajlb_lb_odailyquests_total_4_alltime_value%"
+      - "&#a5d0e9Muestra el total de misiones"
+      - "&#a5d0e9que completó este jugador"
+      - ""
+      - "&fᴘᴜᴇsᴛᴏ: &#c372de4ᴛᴏ"
+    model_data: 2
+  5:
+    material: head-%ajlb_lb_odailyquests_total_5_alltime_name%
+    slot: 11
+    display_name: "&f%ajlb_lb_odailyquests_total_5_alltime_name%"
+    lore:
+      - "&7ᴍɪsɪᴏɴᴇs ᴄᴏᴍᴘʟᴇᴛᴀᴅᴀs: &#64ba3f%ajlb_lb_odailyquests_total_5_alltime_value%"
+      - "&#a5d0e9Muestra el total de misiones"
+      - "&#a5d0e9que completó este jugador"
+      - ""
+      - "&fᴘᴜᴇsᴛᴏ: &#c372de5ᴛᴏ"
+    model_data: 2
+  6:
+    material: head-%ajlb_lb_odailyquests_total_6_alltime_name%
+    slot: 12
+    display_name: "&f%ajlb_lb_odailyquests_total_6_alltime_name%"
+    lore:
+      - "&7ᴍɪsɪᴏɴᴇs ᴄᴏᴍᴘʟᴇᴛᴀᴅᴀs: &#64ba3f%ajlb_lb_odailyquests_total_6_alltime_value%"
+      - "&#a5d0e9Muestra el total de misiones"
+      - "&#a5d0e9que completó este jugador"
+      - ""
+      - "&fᴘᴜᴇsᴛᴏ: &#c372de6ᴛᴏ"
+    model_data: 2
+  7:
+    material: head-%ajlb_lb_odailyquests_total_7_alltime_name%
+    slot: 13
+    display_name: "&f%ajlb_lb_odailyquests_total_7_alltime_name%"
+    lore:
+      - "&7ᴍɪsɪᴏɴᴇs ᴄᴏᴍᴘʟᴇᴛᴀᴅᴀs: &#64ba3f%ajlb_lb_odailyquests_total_7_alltime_value%"
+      - "&#a5d0e9Muestra el total de misiones"
+      - "&#a5d0e9que completó este jugador"
+      - ""
+      - "&fᴘᴜᴇsᴛᴏ: &#c372de7ᴍᴏ"
+    model_data: 2
+  8:
+    material: head-%ajlb_lb_odailyquests_total_8_alltime_name%
+    slot: 14
+    display_name: "&f%ajlb_lb_odailyquests_total_8_alltime_name%"
+    lore:
+      - "&7ᴍɪsɪᴏɴᴇs ᴄᴏᴍᴘʟᴇᴛᴀᴅᴀs: &#64ba3f%ajlb_lb_odailyquests_total_8_alltime_value%"
+      - "&#a5d0e9Muestra el total de misiones"
+      - "&#a5d0e9que completó este jugador"
+      - ""
+      - "&fᴘᴜᴇsᴛᴏ: &#c372de8ᴠᴏ"
+    model_data: 2
+  9:
+    material: head-%ajlb_lb_odailyquests_total_9_alltime_name%
+    slot: 15
+    display_name: "&f%ajlb_lb_odailyquests_total_9_alltime_name%"
+    lore:
+      - "&7ᴍɪsɪᴏɴᴇs ᴄᴏᴍᴘʟᴇᴛᴀᴅᴀs: &#64ba3f%ajlb_lb_odailyquests_total_9_alltime_value%"
+      - "&#a5d0e9Muestra el total de misiones"
+      - "&#a5d0e9que completó este jugador"
+      - ""
+      - "&fᴘᴜᴇsᴛᴏ: &#c372de9ɴᴏ"
+    model_data: 2
+  10:
+    material: head-%ajlb_lb_odailyquests_total_10_alltime_name%
+    slot: 16
+    display_name: "&f%ajlb_lb_odailyquests_total_10_alltime_name%"
+    lore:
+      - "&7ᴍɪsɪᴏɴᴇs ᴄᴏᴍᴘʟᴇᴛᴀᴅᴀs: &#64ba3f%ajlb_lb_odailyquests_total_10_alltime_value%"
+      - "&#a5d0e9Muestra el total de misiones"
+      - "&#a5d0e9que completó este jugador"
+      - ""
+      - "&fᴘᴜᴇsᴛᴏ: &#c372de10ᴍᴏ"
+    model_data: 2

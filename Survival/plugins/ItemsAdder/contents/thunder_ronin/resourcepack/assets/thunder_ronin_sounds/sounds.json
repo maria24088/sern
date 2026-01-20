@@ -1,0 +1,52 @@
+{
+  "samus.thunder_ronin.thunder_barrage": {
+    "category": "master",
+    "sounds": [
+      "thunder_ronin:samus/thunder_ronin/thunder_barrage"
+    ]
+  },
+  "samus.thunder_ronin.thunder_charge": {
+    "category": "master",
+    "sounds": [
+      "thunder_ronin:samus/thunder_ronin/thunder_charge"
+    ]
+  },
+  "samus.thunder_ronin.thunder_circle_charge": {
+    "category": "master",
+    "sounds": [
+      "thunder_ronin:samus/thunder_ronin/thunder_circle_charge"
+    ]
+  },
+  "samus.thunder_ronin.thunder_dash": {
+    "category": "master",
+    "sounds": [
+      "thunder_ronin:samus/thunder_ronin/thunder_dash"
+    ]
+  },
+  "samus.thunder_ronin.thunder_dragon_summon": {
+    "category": "master",
+    "sounds": [
+      "thunder_ronin:samus/thunder_ronin/thunder_dragon_summon"
+    ]
+  },
+  "samus.thunder_ronin.thunder_strike": {
+    "category": "master",
+    "sounds": [
+      "thunder_ronin:samus/thunder_ronin/thunder_strike"
+    ]
+  },
+  "samus.thunder_ronin.thunder_slash": {
+    "category": "master",
+    "sounds": [
+      "thunder_ronin:samus/thunder_ronin/thunder_slash1",
+      "thunder_ronin:samus/thunder_ronin/thunder_slash2"
+    ]
+  },
+  "samus.thunder_ronin.thunder_slash_ult": {
+    "category": "master",
+    "sounds": [
+      "thunder_ronin:samus/thunder_ronin/thunder_slash3",
+      "thunder_ronin:samus/thunder_ronin/thunder_slash4"
+    ]
+  }
+}

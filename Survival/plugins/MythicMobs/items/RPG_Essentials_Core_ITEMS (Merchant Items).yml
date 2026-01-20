@@ -1,0 +1,19 @@
+######## created by samus2002 #########
+
+POTION_SPEED:
+  Id: potion
+  Display: '&bSpeed Potion'
+  Options:
+    Color: 140,238,255
+    HideFlags: true
+  PotionEffects:
+  - SPEED 600 0
+POTION_RESISTANCE:
+  Id: potion
+  Display: '&6Resistance Potion'
+  Options:
+    Color: 255,176,97
+    HideFlags: true
+  PotionEffects:
+  - DAMAGE_RESISTANCE 600 0
+#24f35df792b6ddcf3baf6e41e84f2dde

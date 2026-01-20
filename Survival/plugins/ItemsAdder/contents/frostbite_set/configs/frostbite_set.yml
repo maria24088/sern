@@ -1,0 +1,166 @@
+info:
+  namespace: frostbite_set
+items:
+  frostbite_axe:
+    display_name: §fFrostbite Axe
+    permission: frostbite_set.axe
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: axe
+  frostbite_bow:
+    display_name: §fFrostbite Bow
+    permission: frostbite_set.bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+  frostbite_chest:
+    display_name: §fFrostbite Chest
+    permission: frostbite_set.chest
+    resource:
+      material: PAPER
+      generate: false
+      model_path: chest
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+  frostbite_crossbow:
+    display_name: §fFrostbite Crossbow
+    permission: frostbite_set.crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow
+  frostbite_fishing_rod:
+    display_name: §fFrostbite Fishing Rod
+    permission: frostbite_set.fishing_rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+  frostbite_hammer:
+    display_name: §fFrostbite Hammer
+    permission: frostbite_set.hammer
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: hammer
+  frostbite_helmet:
+    display_name: §fFrostbite Helmet
+    permission: frostbite_set.helmet
+    resource:
+      material: PAPER
+      generate: false
+      model_path: helmet
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165
+  frostbite_hoe:
+    display_name: §fFrostbite Hoe
+    permission: frostbite_set.hoe
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: hoe
+  frostbite_key:
+    display_name: §fFrostbite Key
+    permission: frostbite_set.key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: key
+  frostbite_mace:
+    display_name: §fFrostbite Mace
+    permission: frostbite_set.mace
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: mace
+  frostbite_pickaxe:
+    display_name: §fFrostbite Pickaxe
+    permission: frostbite_set.pickaxe
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: pickaxe
+  frostbite_scythe:
+    display_name: §fFrostbite Scythe
+    permission: frostbite_set.scythe
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: scythe
+  frostbite_shield:
+    display_name: §fFrostbite Shield
+    permission: frostbite_set.shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+  frostbite_shovel:
+    display_name: §fFrostbite Shovel
+    permission: frostbite_set.shovel
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: shovel
+  frostbite_spear:
+    display_name: §fFrostbite Spear
+    permission: frostbite_set.spear
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: spear
+  frostbite_staff:
+    display_name: §fFrostbite Staff
+    permission: frostbite_set.staff
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: staff
+  frostbite_sword:
+    display_name: §fFrostbite Sword
+    permission: frostbite_set.sword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: sword
+  frostbite_trident:
+    display_name: §fFrostbite Trident
+    permission: frostbite_set.trident
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: trident
+  frostbite_wings:
+    display_name: §fFrostbite Wings
+    permission: frostbite_set.wings
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wings
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165

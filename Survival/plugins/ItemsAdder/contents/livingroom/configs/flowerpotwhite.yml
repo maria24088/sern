@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  flowerpotwhite:
+    display_name: "Flower Pot White"
+    permission: livingroom.flowerpotwhite
+    resource:
+      material: PAPER
+      generate: false
+      model_path: flowerpotwhite
+    behaviours:
+      furniture:
+        light_level: 13

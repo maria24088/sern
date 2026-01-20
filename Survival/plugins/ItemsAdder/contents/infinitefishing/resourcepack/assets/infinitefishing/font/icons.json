@@ -1,0 +1,229 @@
+{
+    "providers": [
+        {
+            "file": "infinitefishing:font/icons/strain_1.png",
+            "chars": [
+                "\ub001"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/icons/strain_2.png",
+            "chars": [
+                "\ub002"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/strain_3.png",
+            "chars": [
+                "\ub003"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/strain_4.png",
+            "chars": [
+                "\ub004"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/strain_5.png",
+            "chars": [
+                "\ub005"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/progress_6.png",
+            "chars": [
+                "\ub006"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/progress_7.png",
+            "chars": [
+                "\ub007"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/progress_8.png",
+            "chars": [
+                "\ub008"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/progress_9.png",
+            "chars": [
+                "\ub009"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/strain_1.png",
+            "chars": [
+                "\ub011"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/strain_2.png",
+            "chars": [
+                "\ub012"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/strain_3.png",
+            "chars": [
+                "\ub013"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/strain_4.png",
+            "chars": [
+                "\ub014"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/strain_5.png",
+            "chars": [
+                "\ub015"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/strain_6.png",
+            "chars": [
+                "\ub016"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/strain_7.png",
+            "chars": [
+                "\ub017"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/strain_8.png",
+            "chars": [
+                "\ub018"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/strain_9.png",
+            "chars": [
+                "\ub019"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/shift.png",
+            "chars": [
+                "\ub020"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/left_click.png",
+            "chars": [
+                "\ub021"
+            ],
+            "height": 13,
+            "ascent": 13,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/left_click.png",
+            "chars": [
+                "\ub022"
+            ],
+            "height": 8,
+            "ascent": 8,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/right_click.png",
+            "chars": [
+                "\ub023"
+            ],
+            "height": 8,
+            "ascent": 8,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/space.png",
+            "chars": [
+                "\ub024"
+            ],
+            "height": 8,
+            "ascent": 8,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/shift.png",
+            "chars": [
+                "\ub025"
+            ],
+            "height": 8,
+            "ascent": 8,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/icons/barrier.png",
+            "chars": [
+                "\ub026"
+            ],
+            "height": 8,
+            "ascent": 8,
+            "type": "bitmap"
+        }
+    ]
+}

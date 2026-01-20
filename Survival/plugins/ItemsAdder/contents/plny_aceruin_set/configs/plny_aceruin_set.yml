@@ -1,0 +1,166 @@
+info:
+  namespace: plny_aceruin_set
+items:
+  plny_aceruin_set_axe:
+    display_name: Aceruin Axe
+    permission: plny_aceruin_set.axe
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: axe
+  plny_aceruin_set_bow:
+    display_name: Aceruin Bow
+    permission: plny_aceruin_set.bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+  plny_aceruin_set_chest:
+    display_name: Aceruin Chest
+    permission: plny_aceruin_set.chest
+    resource:
+      material: PAPER
+      generate: false
+      model_path: chest
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: false
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: false
+  plny_aceruin_set_crossbow:
+    display_name: Aceruin Crossbow
+    permission: plny_aceruin_set.crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow
+  plny_aceruin_set_fishing_rod:
+    display_name: Aceruin Fishing Rod
+    permission: plny_aceruin_set.fishing_rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+  plny_aceruin_set_hammer:
+    display_name: Aceruin Hammer
+    permission: plny_aceruin_set.hammer
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: hammer
+  plny_aceruin_set_helmet:
+    display_name: Aceruin Helmet
+    permission: plny_aceruin_set.helmet
+    resource:
+      material: PAPER
+      generate: false
+      model_path: helmet
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165
+  plny_aceruin_set_hoe:
+    display_name: Aceruin Hoe
+    permission: plny_aceruin_set.hoe
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: hoe
+  plny_aceruin_set_key:
+    display_name: Aceruin Key
+    permission: plny_aceruin_set.key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: key
+  plny_aceruin_set_mace:
+    display_name: Aceruin Mace
+    permission: plny_aceruin_set.mace
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: mace
+  plny_aceruin_set_pickaxe:
+    display_name: Aceruin Pickaxe
+    permission: plny_aceruin_set.pickaxe
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: pickaxe
+  plny_aceruin_set_scythe:
+    display_name: Aceruin Scythe
+    permission: plny_aceruin_set.scythe
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: scythe
+  plny_aceruin_set_shield:
+    display_name: Aceruin Shield
+    permission: plny_aceruin_set.shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+  plny_aceruin_set_shovel:
+    display_name: Aceruin Shovel
+    permission: plny_aceruin_set.shovel
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: shovel
+  plny_aceruin_set_spear:
+    display_name: Aceruin Spear
+    permission: plny_aceruin_set.spear
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: spear
+  plny_aceruin_set_staff:
+    display_name: Aceruin Staff
+    permission: plny_aceruin_set.staff
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: staff
+  plny_aceruin_set_sword:
+    display_name: Aceruin Sword
+    permission: plny_aceruin_set.sword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: sword
+  plny_aceruin_set_trident:
+    display_name: Aceruin Trident
+    permission: plny_aceruin_set.trident
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: trident
+  plny_aceruin_set_wings:
+    display_name: Aceruin Wings
+    permission: plny_aceruin_set.wings
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wings
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165

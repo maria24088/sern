@@ -1,0 +1,13 @@
+info:
+  namespace: schoolfurnitures
+items:
+  wallclock:
+    display_name: "Wall Clock"
+    permission: schoolfurnitures.wallclock
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wallclock
+    behaviours:
+      furniture:
+        light_level: 13

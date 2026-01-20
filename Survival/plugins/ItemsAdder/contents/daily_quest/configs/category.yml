@@ -1,0 +1,27 @@
+info:
+  namespace: daily_quest
+categories:
+  blocks:
+    enabled: true
+    skip_if_already: false
+    name: Daily Quest
+    permission: ia.daily_quest
+    items:
+      - daily_quest:reward
+      - daily_quest:easy_quest
+      - daily_quest:medium_quest
+      - daily_quest:hard_quest
+      - daily_quest:rookie_badge
+      - daily_quest:beginner_badge
+      - daily_quest:advanced_badge
+      - daily_quest:locked_badge
+      - daily_quest:pro_badge
+      - daily_quest:expert_badge
+      - daily_quest:skilled_badge
+      - daily_quest:legend_badge
+      - daily_quest:master_badge
+      - daily_quest:empty
+      - daily_quest:button_leaderboard
+      - daily_quest:button_badges
+      - daily_quest:arrow_left
+      - daily_quest:arrow_right

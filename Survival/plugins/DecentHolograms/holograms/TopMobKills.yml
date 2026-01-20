@@ -1,0 +1,35 @@
+location: SpawnRPG:18.483:64.000:-162.492
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:soul_campfire'
+    height: 0.6
+  - content: '&#17c8be&lT&#1dc7c4&lo&#22c6cb&lp &#28c5d1&lM&#2dc4d7&lo&#33c4de&lb
+      &#39c3e4&lK&#3ec2ea&li&#44c1f0&ll&#49c0f7&ll&#4fbffd&ls'
+    height: 0.3
+  - content: '&3#1 &b%ajlb_lb_statistic_mob_kills_1_alltime_name% §8- §f%ajlb_lb_statistic_mob_kills_1_alltime_value%'
+    height: 0.3
+  - content: '&3#2 &b%ajlb_lb_statistic_mob_kills_2_alltime_name% §8- §f%ajlb_lb_statistic_mob_kills_2_alltime_value%'
+    height: 0.3
+  - content: '&3#3 &b%ajlb_lb_statistic_mob_kills_3_alltime_name% §8- §f%ajlb_lb_statistic_mob_kills_3_alltime_value%'
+    height: 0.3
+  - content: '&3#4 &b%ajlb_lb_statistic_mob_kills_4_alltime_name% §8- §f%ajlb_lb_statistic_mob_kills_4_alltime_value%'
+    height: 0.3
+  - content: '&3#5 &b%ajlb_lb_statistic_mob_kills_5_alltime_name% §8- §f%ajlb_lb_statistic_mob_kills_5_alltime_value%'
+    height: 0.3
+  - content: '&3#6 &b%ajlb_lb_statistic_mob_kills_6_alltime_name% §8- §f%ajlb_lb_statistic_mob_kills_6_alltime_value%'
+    height: 0.3
+  - content: '&3#7 &b%ajlb_lb_statistic_mob_kills_7_alltime_name% §8- §f%ajlb_lb_statistic_mob_kills_7_alltime_value%'
+    height: 0.3
+  - content: '&3#8 &b%ajlb_lb_statistic_mob_kills_8_alltime_name% §8- §f%ajlb_lb_statistic_mob_kills_8_alltime_value%'
+    height: 0.3
+  - content: '&3#9 &b%ajlb_lb_statistic_mob_kills_9_alltime_name% §8- §f%ajlb_lb_statistic_mob_kills_9_alltime_value%'
+    height: 0.3
+  - content: '&3#10 &b%ajlb_lb_statistic_mob_kills_10_alltime_name% §8- §f%ajlb_lb_statistic_mob_kills_10_alltime_value%'
+    height: 0.3
+  actions: {}

@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  radioblack:
+    display_name: "Radio Black"
+    permission: livingroom.radioblack
+    resource:
+      material: PAPER
+      generate: false
+      model_path: radioblack
+    behaviours:
+      furniture:
+        light_level: 13

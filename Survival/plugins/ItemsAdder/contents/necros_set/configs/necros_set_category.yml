@@ -1,0 +1,35 @@
+info:
+    namespace: necros_set
+categories:
+    necros_set:
+        name: Necros Animated Weapons And Tools Set
+        enabled: true
+        icon: necros_set:necros_wings
+        permission: ia.menu.necros_set
+        items:
+        - necros_set:necroshelmet
+        - necros_set:necroschestplate
+        - necros_set:necrosleggings
+        - necros_set:necrosboots
+        - necros_set:necros_helmet
+        - necros_set:necros_axe
+        - necros_set:necros_pickaxe
+        - necros_set:necros_shovel
+        - necros_set:necros_hoe
+        - necros_set:necros_fishing_rod
+        - necros_set:necros_sword
+        - necros_set:necros_shield
+        - necros_set:necros_crossbow
+        - necros_set:necros_bow
+        - necros_set:necros_staff
+        - necros_set:necros_trident
+        - necros_set:necros_hammer
+        - necros_set:necros_spear
+        - necros_set:necros_scythe
+        - necros_set:necros_chest
+        - necros_set:necros_key
+        - necros_set:necros_mace
+        - necros_set:necros_wings
+
+#30d4610397b833f341e6d8c0581961d8
+#AzTxcWMTlWZvt0NDFEUyN0avFzU3lEROJTSE90MFRUT4dGVj9WRpFjeplFSiV1V4o1UKhlM

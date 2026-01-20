@@ -1,0 +1,963 @@
+# ╔══════════════════════════╗
+# ║  SOME TEXT AND MESSAGES  ║
+# ╚══════════════════════════╝
+
+You dont have the permission: '&c¡No tienes el permiso requerido!'
+You are not the player: '&c¡No eres un jugador!'
+Player isnt exists: '&c¡El jugador está desconectado!'
+Plugin reloaded: '&a¡Vegas recargado!'
+Table created: '&2¡Has conseguido una nueva máquina tragamonedas!'
+Table placed: '&2¡Has instalado una máquina tragamonedas!'
+Table removed: '&2¡Has destruido una máquina tragamonedas!'
+Game installed: '&2¡Has instalado el juego en esta mesa!'
+Main menu casino title: జ
+Havent enough money: '&c¡No tienes suficiente dinero!'
+Buying coins message: '&fCompraste fichas por valor de &e&l%price%&6&l$&r!'
+Give coins message: '&fLe diste al jugador &e%player% &e&l%price%'
+Coins received message: '&fRecibiste &e&l%price%&r &fde parte del jugador &e%player%'
+Coins sold: '&2Vendiste tus fichas y recibiste %price%$'
+Coins sold vegas economy: '&2¡Vendiste tu saldo!'
+Victory message: '&5✦ &eGanaste %price% &6⛀ &5✦'
+The owner cannot play at his table: '&c¡No puedes jugar en tu propia mesa!'
+The owner hasnt enough money: '&c¡No puedes jugar en esta mesa! El dueño no tiene
+  suficiente dinero'
+You have no chips: '&c¡No tienes fichas en tu inventario!'
+Minimum chip value limit: '&c¡No puedes apostar una ficha porque su valor es bajo!'
+Jackpot message:
+- ' '
+- '&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k# &6&lJACKPOT &e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#'
+- ' '
+- '&6%player% &fgolpea el &6$%prize% &fjackpot!'
+- ' '
+- '&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#&e&k#'
+- ' '
+
+
+# ╔══════════════╗
+# ║  STATISTICS  ║
+# ╚══════════════╝
+
+Statistics game title: 
+Statistics menu title: '&6✪ &6&lESTADÍSTICAS&r &6✪'
+Statistics menu description: []
+Total games name: '&6✪ &6&lJUEGOS TOTALES&r &7- &f%score%'
+Total games description:
+- '&7Puntuación máxima entre los jugadores: &f%player% &e%max_score% ✪'
+Victories name: '&6⚔ &6&lVICTORIAS&r &7- &f%score%'
+Victories description:
+- '&7Puntuación máxima entre los jugadores: &f%player% &e%max_score% ⚔'
+Little victories name: '&6⚔ &6&lPEQUEÑAS VICTORIAS&r &7- &f%score%'
+Little victories description:
+- '&7Puntuación máxima entre los jugadores: &f%player% &e%max_score% ⚔'
+Defeats name: '&6⚔ &6&lDERROTAS&r &7- &f%score%'
+Defeats description:
+- '&7Puntuación máxima entre los jugadores: &f%player% &e%max_score% ⚔'
+Won money name: '&6⛃ &6&lDINERO GANADO&r &7- &f%score%'
+Won money description:
+- '&7Puntuación máxima entre los jugadores: &f%player% &e%max_score% ⛃'
+Lost money name: '&6⛃ &6&lDINERO PERDIDO&r &7- &f%score%'
+Lost money description:
+- '&7Puntuación máxima entre los jugadores: &f%player% &e%max_score% ⛃'
+
+
+# ╔════════════╗
+# ║  GUI SHOP  ║
+# ╚════════════╝
+
+Shop title: 
+Shop menu title: '&6⛃ &6&lTIENDA&r &6⛃'
+Shop menu description: []
+Shop balance name: '&f&lSALDO&r &7- &e&l%balance%&r &6⛃'
+Shop balance description: []
+Shop item description:
+- '&7Precio: &e%price% &6⛃'
+Shop item added: '&f¡Nuevo artículo añadido a la tienda!'
+Shop item removed: '&f¡Artículo eliminado de la tienda!'
+
+
+# ╔═══════════════╗
+# ║  CHIP PARAMS  ║
+# ╚═══════════════╝
+
+# ➥ CHIP ITEM
+
+Chip name: '&6&l❂ FICHA ❂'
+Chip description:
+- '&e• &8Ficha de %price%$'
+
+
+# ➥ CHIP DESCRIPTION IN MAIN MENU
+
+Chip shop name: '&6❂ &6&lFICHA %price%$'
+Chip shop description:
+- '&e¡Solo estas fichas se pueden jugar en el casino!'
+- '&8Tomas fichas de tu inventario y las colocas'
+- '&8en la barrera, ¡y luego empiezas a jugar!'
+- '&8¡Puedes elegir entre diferentes modos mientras juegas!'
+- ' '
+- '&e✏ Clic izquierdo - &fComprar'
+- '&e✏ Clic derecho en tus fichas - &fVender'
+
+
+# ╔═════════════════════════════╗
+# ║  CASINO TABLE BLOCK (ITEM)  ║
+# ╚═════════════════════════════╝
+
+Casino table names:
+  ROULETTE: '&c☻ &c&lROULETTE SLOT MACHINE&r &c☻'
+  DARTS: '&c☻ &c&lDARTS SLOT MACHINE&r &c☻'
+  DRUMS: '&c☻ &c&lDRUMS SLOT MACHINE&r &c☻'
+  RACES: '&c☻ &c&lRACES SLOT MACHINE&r &c☻'
+  PYRAMID: '&c☻ &c&lPYRAMID SLOT MACHINE&r &c☻'
+  STAIRS: '&c☻ &c&lSTAIRS SLOT MACHINE&r &c☻'
+  LOTTERY: '&c☻ &c&lLOTTERY SLOT MACHINE&r &c☻'
+  CRASH: '&c☻ &c&lCRASH SLOT MACHINE&r &c☻'
+  CLASSIC: '&c☻ &c&lCLASSIC SLOT MACHINE&r &c☻'
+  BLACKJACK: '&c☻ &c&lBLACKJACK SLOT MACHINE&r &c☻'
+  ROCKPAPERSCISSORS: '&c☻ &c&lROCKPAPERSCISSORS SLOT MACHINE&r &c☻'
+  TICTACTOE: '&c☻ &c&lTICTACTOE SLOT MACHINE&r &c☻'
+  DEADMANSCHEST: '&c☻ &c&lDEADMANSCHEST SLOT MACHINE&r &c☻'
+  POKER: '&c☻ &c&lPOKER SLOT MACHINE&r &c☻'
+  DICE: '&c☻ &c&lDICE SLOT MACHINE&r &c☻'
+  MINESWEEPER: '&c☻ &c&lMINESWEEPER SLOT MACHINE&r &c☻'
+  DOUBLEROULETTE: '&c☻ &c&lDOUBLE ROULETTE SLOT MACHINE&r &c☻'
+Casino table description:
+- '&7Aquí puedes jugar:'
+- '&6❉ &e15 &fmodos diferentes!'
+- '&6❉ &d3 &fcategorías de juegos!'
+- '&6❉ ¡Juegos contra jugadores y bots!'
+
+
+# ╔═══════════════════╗
+# ║  ROULETTE PARAMS  ║
+# ╚═══════════════════╝
+
+# ➥ ROULETTE TITLE AND DESCRIPTIONS
+
+Roulette game title: చ
+Roulette menu title: '&l❉ RULETA ❉'
+Roulette menu description:
+- '&e• Un jugador.'
+- '&e• Puedes lanzar tus fichas'
+- '&e• eligiendo uno de los tres modos!'
+- ' '
+- '&e⇨ Modo fácil (verde) - alta probabilidad de ganar, premio ✕3'
+- '&e⇨ Modo medio (amarillo) - probabilidad normal de ganar, premio ✕6'
+- '&e⇨ Modo difícil (rojo) - baja probabilidad de ganar, pero premio ✕10'
+- ' '
+- ¡También puedes aterrizar en campos de bonificación!
+
+
+# ➥ ROULETTE 3 MODES DESCRIPTION
+
+Roulette easy mode name: Modo Fácil (verde)
+Roulette easy mode description:
+- Toca para girar en modo fácil!
+- ¡La probabilidad de ganar es alta, premio ✕3!
+Roulette medium mode name: Modo Medio (amarillo)
+Roulette medium mode description:
+- Toca para girar en modo medio!
+- ¡La probabilidad de ganar es media, premio ✕6!
+Roulette hard mode name: Modo Difícil (rojo)
+Roulette hard mode description:
+- Toca para girar en modo difícil!
+- ¡La probabilidad de ganar es baja, pero el premio es ✕10!
+Roulette mode activated: '[ACTIVADO]'
+Roulette bonus name: Potenciador %number%
+
+
+# ╔════════════════╗
+# ║  DARTS PARAMS  ║
+# ╚════════════════╝
+
+# ➥ DARTS TITLE AND DESCRIPTIONS
+
+Darts game title: 
+Darts menu title: '&l➹ DARDOS ➹'
+Darts menu description:
+- '&e• &aUn jugador.'
+- '&e• &fNecesitas golpear todas las cabezas que'
+- '&e• &fse te mostrarán. Si golpeas &e5 cabezas,'
+- '&e• &frecibirás una recompensa de &6✕3.'
+- ' '
+- '&e⇨ &fSi le quitas la cabeza a la enredadera - &c¡tú pierdes!'
+- '&e⇨ &fSi le quitas la cabeza al dragón - &2premio &6✕10!'
+
+
+# ╔════════════════╗
+# ║  DRUMS PARAMS  ║
+# ╚════════════════╝
+
+# ➥ DRUMS TITLE AND DESCRIPTIONS
+
+Drums game title: ట
+Drums menu title: '&l➌➌➌  TAMBORES  ➌➌➌'
+Drums menu description:
+- '&e• &aUn jugador.'
+- '&e• Puedes desplazar tus fichas y, '
+- '&e• dependiendo de la posición de las ranuras,'
+- '&e• recibirás un premio!'
+- ' '
+- '&e► &5&l➋x➋ &r&eUn bloque - premio &6✕3.5'
+- '&e► &5&l➊x➎ &r&eUna línea verticalmente - premio &6✕10'
+- '&e► &5&l➎x➊ &r&eUna línea horizontalmente no en el centro - premio &6✕6'
+- '&e► &eLínea oblicuamente - premio &6✕10'
+- '&e► &5&l➎x➊ &r&eUna línea horizontalmente en el centro - premio &6✕25'
+- '&e► &eDos líneas oblicuas - premio &6✕50'
+- '&e► &5&l➎x➎ &r&eTodo lo anterior - premio &6✕100'
+- ' '
+- '&e• Si alguna de estas combinaciones son cabezas de dragón,'
+- '&e• entonces el factor principal se multiplica por ¡5!'
+
+
+# ╔════════════════╗
+# ║  RACES PARAMS  ║
+# ╚════════════════╝
+
+# ➥ RACES TITLE AND DESCRIPTIONS
+
+Races game title: 
+Races menu title: '&l♞ CARRERAS ♞'
+Races menu description:
+- '&e• Un jugador.'
+- ¡Haz tus apuestas en los caballos!
+- Estás apostando por uno de los cuatro caballos!
+- Si el caballo que elegiste gana la carrera,
+- ¡recibirás un premio de ✕3!
+
+
+# ➥ RACES BUTTONS
+
+Horse 1 name: '&a&lVIPER ÁGIL'
+Horse 1 description: []
+Horse 2 name: '&6&lSABUESO DE MÚNICH'
+Horse 2 description: []
+Horse 3 name: '&b&lDIABLO RELÁMPAGO'
+Horse 3 description: []
+Horse 4 name: '&a&lLOCOMOTORA RUSA'
+Horse 4 description: []
+Horse choose horse: '&6&lELIGE CABALLO'
+Horse active: ¡Haz clic para seleccionar!
+Horse selected: '&6&lCABALLO SELECCIONADO'
+
+
+# ╔══════════════════╗
+# ║  PYRAMID PARAMS  ║
+# ╚══════════════════╝
+
+# ➥ PYRAMID TITLE AND DESCRIPTIONS
+
+Pyramid game title: 
+Pyramid menu title: '&l☄ PIRÁMIDE ☄'
+Pyramid menu description:
+- '&e• Un jugador.'
+- Elige una de las ranuras de arriba.
+- El juego comienza inmediatamente.
+- Necesitas golpear un agujero.
+- ' '
+- '&e⇨ &c&lTNT &f- &cjuego terminado!'
+- '&e⇨ &5&lTOLVA EQUIVOCADA &f- &cjuego terminado!'
+- '&e⇨ &6&lESTRELLA RARO &f- &6✕20'
+- ' '
+- Por golpear el embudo correcto, ¡premio ✕3!
+
+
+# ➥ ARTÍCULOS DE LA PIRÁMIDE
+
+Pyramid hopper win title: '&6&lGANAR ✕3'
+Pyramid hopper lose title: '&6&lPERDER'
+Pyramid tnt title: '&c&lBOMBA'
+Pyramid rare star title: '&6&lESTRELLA RARA'
+
+
+# ╔═════════════════╗
+# ║  STAIRS PARAMS  ║
+# ╚═════════════════╝
+
+# ➥ STAIRS TITLE AND DESCRIPTIONS
+
+Stairs game title: 
+Stairs menu title: '&l⇧ ESCALERAS ⇧'
+Stairs menu description:
+- '&e• Un jugador.'
+- Necesitas moverte hacia arriba eligiendo
+- un bloque en cada nivel.
+- ¡Si golpeas una bomba, el juego termina!
+- ' '
+- '&e⇨ &2&lPRIMER NIVEL &f- &6✕0.3'
+- '&e⇨ &b&lSEGUNDO NIVEL &f- &6✕0.5'
+- '&e⇨ &9&lTERCER NIVEL &f- &6✕0.8'
+- '&e⇨ &5&lCUARTO NIVEL &f- &6✕1.3'
+- '&e⇨ &c&lQUINTO NIVEL &f- &6✕2'
+- '&e⇨ &6&lSEXTO NIVEL &f- &6✕3'
+
+
+# ➥ STAIRS BOOSTERS
+
+Booster 6 lvl: '&6&lPOTENCIADOR ✕3'
+Booster 5 lvl: '&c&lPOTENCIADOR ✕2'
+Booster 4 lvl: '&5&lPOTENCIADOR ✕1.3'
+Booster 3 lvl: '&9&lPOTENCIADOR ✕0.8'
+Booster 2 lvl: '&b&lPOTENCIADOR ✕0.5'
+Booster 1 lvl: '&2&lPOTENCIADOR ✕0.3'
+
+
+# ╔══════════════════╗
+# ║  LOTTERY PARAMS  ║
+# ╚══════════════════╝
+
+# ➥ LOTTERY TITLE AND DESCRIPTIONS
+
+Lottery game title: 
+Lottery menu title: '&l♤ LOTERÍA ♤'
+Lottery menu description:
+- '&e• Un jugador.'
+- Se te ha dado un billete de lotería.
+- ¡Y se te dan 5 clics!
+- Por cada clic, abres un bloque.
+- Podría ser basura, podría ser un amplificador.
+- Al final del juego, multiplicas tu
+- apuesta por el amplificador más alto!
+- ' '
+- Hay un número en el potenciador, por ejemplo - &6&l9
+- '&e⇨ Potenciador azul + número - premio ✕0,09'
+- '&e⇨ Potenciador verde + número - premio ✕0,9'
+- '&e⇨ Potenciador dorado + número - premio ✕9'
+
+
+# ╔════════════════╗
+# ║  CRASH PARAMS  ║
+# ╚════════════════╝
+
+# ➥ CRASH TITLE AND DESCRIPTIONS
+
+Crash game title: 
+Crash menu title: '&l☒ COLISIÓN ☒'
+Crash menu description:
+- '&e• &bMultijugador.'
+- '&e• &fSe te da una línea con probabilidades.'
+- '&e• &f¡Haces tu apuesta y comienza el juego!'
+- '&e• &fLa relación está aumentando constantemente'
+- '&e• &fy puede caer en cualquier momento y perderás!'
+- '&e• ¡Elige el momento adecuado para retirar tus monedas!'
+- ' '
+- '&fEstos son los colores de los potenciadores:'
+- '&e⇨ &a&lPOTENCIADOR LIMA &r&f - &6✕0&8...&6✕2'
+- '&e⇨ &b&lPOTENCIADOR AZUL &r&f - &6✕2&8...&6✕5'
+- '&e⇨ &e&lPOTENCIADOR AMARILLO &r&f - &6✕5&8...&6✕10'
+- '&e⇨ &c&lPOTENCIADOR ROJO &r&f - &6✕10&8...&6✕25'
+- '&e⇨ &7&lPOTENCIADOR NEGRO &r&f - &6✕25&8...&6✕100'
+
+
+# ➥ CRASH INFO
+
+Crash waiting title: '&bEspera para girar...'
+Crash waiting description:
+- '&70:0%time%'
+Crash spinning title: '&bGirando...'
+Crash spinning description:
+- '&6¡Presiona para retirar tu apuesta!'
+- '&ex%bet text%'
+Crash game over: '&c¡Fin del juego!'
+
+
+# ╔══════════════════╗
+# ║  CLASSIC PARAMS  ║
+# ╚══════════════════╝
+
+# ➥ CLASSIC TITLE AND DESCRIPTIONS
+
+Classic game title: 
+Classic menu title: '&l❈ CLÁSICO ❈'
+Classic menu description:
+- '&e• Multijugador.'
+- Se te ha dado una línea con las cabezas de los jugadores!
+- ¡Estás haciendo tu apuesta! Cuanto mayor sea la apuesta,
+- mayores serán las posibilidades de ganar!
+- ¡En cualquier momento, puedes aumentarla, aumentando así
+- el coeficiente ganador en sí mismo!
+- ' '
+- Si tu cabeza es seleccionada, ¡ganas!
+
+
+# ➥ CLASSIC INFO
+
+Classic chances description line: '&e• Probabilidades de %player%: %procent%%'
+Classic waiting title: 'Espera a otros jugadores: %time% segundos...'
+Classic waiting description:
+- ¡Espera a que comience el juego!
+- '%chances%'
+Classic spinning title: Girando...
+Classic spinning description:
+- ¡Espera a que termine el juego!
+- '%chances%'
+Classic game over title: ¡Fin del juego!
+Classic game over description:
+- 'Ganador: ✯ %player% ✯'
+Classic icon title: '%player%'
+Classic icon description:
+- 'Probabilidad de ganar: %procent%%'
+
+
+# ╔════════════════════╗
+# ║  BLACKJACK PARAMS  ║
+# ╚════════════════════╝
+
+# ➥ BLACKJACK TITLE AND DESCRIPTIONS
+
+BlackJack game title: 
+BlackJack menu title: '&l۞ BLACKJACK ۞'
+BlackJack menu description:
+- Un jugador.
+- Tu objetivo es marcar exactamente 21 puntos!
+- Si marcas más, ¡pierdes!
+- Si marcas más puntos que el crupier
+- y los jugadores, ¡recibirás una recompensa!
+- Si tienes la misma puntuación, gana el que tenga menos cartas.
+- Pero si el número de cartas es el mismo, ¡el premio se divide por la mitad!
+- ''
+- Puedes DOBLAR tu apuesta y RETIRAR
+- parte de la apuesta en cualquier momento!
+
+
+# ➥ BLACKJACK BUTTONS
+
+BlackJack hit button title: TOMAR LA CARTA
+BlackJack hit button description:
+- Cuando el crupier se aclare,
+- puedes sacar otra carta.
+BlackJack stay button title: PASAR
+BlackJack stay button description:
+- Quédate con tus cartas.
+- Salta el turno.
+BlackJack stop button title: ABANDONAR EL JUEGO
+BlackJack stop button description:
+- Sal y recupera algo
+- de las fichas de vuelta.
+BlackJack double button title: AUMENTAR LA APUESTA
+BlackJack double button description:
+- Aumenta tu apuesta mientras juegas
+- Solo puedes tomar una carta después.
+- ¡Se toma automáticamente del inventario!
+BlackJack timer title: TEMPORIZADOR
+BlackJack timer description:
+- '%timer status%'
+
+BlackJack timer status 1: ¡Haz tu apuesta para comenzar el juego!
+BlackJack timer status 2: ¡Fin del juego - Ganador %player%!
+BlackJack timer status 3: Elige una de las acciones...
+BlackJack timer status 4: El crupier abre las cartas...
+BlackJack timer status 5: Reparto de cartas...
+BlackJack timer status 6: Antes del comienzo - %time%
+BlackJack dealer title: '&6☻ CRUPIER ☻'
+BlackJack dealer description: []
+
+BlackJack draw: EMPATE
+
+
+# ╔═══════════════════════════════════╗
+# ║  ROCK, PAPER AND SCISSORS PARAMS  ║
+# ╚═══════════════════════════════════╝
+
+# ➥ ROCK, PAPER AND SCISSORS TITLE AND DESCRIPTION
+
+RockPaperScissors game title: 
+RockPaperScissors menu title: '&l✄ PIEDRA, PAPEL Y TIJERAS ✄'
+RockPaperScissors menu description:
+- '&e• &cDuelo.'
+- '&e• &fTu tarea es derrotar a tu oponente más de &a1 vez.'
+- '&e• &fTendrás la opción de qué forma tomar.'
+- '&e• &fLas piezas se abren sincrónicamente con el oponente!'
+- '&e• &fPuedes apostar la misma cantidad que tu oponente,'
+- '&e• &fo inferior-superior en un &e20 por ciento!'
+- ' '
+- '&a&lCOMBINACIONES:'
+- '&8Piedra &f⚔ &7Tijeras'
+- '&8Piedra &f⚔ &cFuego'
+- '&7Tijeras &f⚔ &fPapel'
+- '&7Tijeras &f⚔ &aÁrbol'
+- '&fPapel &f⚔ &8Piedra'
+- '&fPapel &f⚔ &bPozo'
+- '&bPozo &f⚔ &8Piedra'
+- '&bPozo &f⚔ &7Tijeras'
+- '&bPozo &f⚔ &cFuego'
+- '&cFuego &f⚔ &7Tijeras'
+- '&cFuego &f⚔ &fPapel'
+- '&cFuego &f⚔ &aÁrbol'
+- '&aÁrbol &f⚔ &8Piedra'
+- '&aÁrbol &f⚔ &fPapel'
+- '&aÁrbol &f⚔ &bPozo'
+
+
+# ➥ DESCRIPTION OF FIGURES IN ROCK, PAPER AND SCISSORS
+
+RockPaperScissors rock title: '&8◆ PIEDRA&r ◆'
+RockPaperScissors rock description:
+- 'Combinaciones:'
+- Piedra ⚔ Tijeras
+- Piedra ⚔ Fuego
+RockPaperScissors paper title: ▤ PAPEL ▤
+RockPaperScissors paper description:
+- 'Combinaciones:'
+- Papel ⚔ Piedra
+- Papel ⚔ Pozo
+RockPaperScissors scissors title: ✂ TIJERAS ✂
+RockPaperScissors scissors description:
+- 'Combinaciones:'
+- Tijeras ⚔ Papel
+- Tijeras ⚔ Árbol
+RockPaperScissors well title: ☔ POZO ☔
+RockPaperScissors well description:
+- 'Combinaciones:'
+- Pozo ⚔ Piedra
+- Pozo ⚔ Tijeras
+- Pozo ⚔ Fuego
+RockPaperScissors fire title: ☼ FUEGO ☼
+RockPaperScissors fire description:
+- 'Combinaciones:'
+- Fuego ⚔ Tijeras
+- Fuego ⚔ Papel
+- Fuego ⚔ Árbol
+RockPaperScissors tree title: ❀ ÁRBOL ❀
+RockPaperScissors tree description:
+- 'Combinaciones:'
+- Árbol ⚔ Piedra
+- Árbol ⚔ Papel
+- Árbol ⚔ Pozo
+RockPaperScissors score number title: '&fPuntuación &a%player% &f➠ &a%score% ✪'
+RockPaperScissors score number description: []
+
+RockPaperScissors timer title: '&e&lINFORMACIÓN'
+RockPaperScissors timer description 1:
+- '&fSe necesitan 2 jugadores para comenzar el juego!'
+
+RockPaperScissors timer description 2:
+- '&f¡El juego comenzará en unos segundos!'
+
+RockPaperScissors timer description 3:
+- '&f¡Elige una forma!'
+
+RockPaperScissors timer description 4:
+- '&f¡Resumiendo!'
+
+RockPaperScissors timer description 5:
+- '&f¡Por favor espera!'
+
+RockPaperScissors timer description 6:
+- '&f¡Empate! ¡Elige una forma de nuevo!'
+
+RockPaperScissors timer description 7:
+- '&a%winner% &fderrotó a &e%loser%'
+
+RockPaperScissors timer description 8:
+- '&f¡El jugador ha abandonado el partido! ¡Has ganado!'
+
+
+# ╔══════════════════════╗
+# ║  TIC TAC TOE PARAMS  ║
+# ╚══════════════════════╝
+
+# ➥ TIC TAC TOE TITLE AND DESCRIPTION
+
+TicTacToe game title: 
+TicTacToe menu title: '&l✕ TIC TAC TOE ○'
+TicTacToe menu description:
+- '&e• &cDuelo.'
+- '&e• &fTu tarea es que tu figura ocupe &ala línea.'
+- '&e• &fLa línea puede ser vertical, horizontal '
+- '&e• &fy hasta diagonal!'
+- '&e• &fPero si ninguno de los jugadores hace una línea, habrá &eun empate!'
+- '&e• &dLas cruces se mueven primero, &flas piezas se dan al azar!'
+- '&e• &fPuedes apostar la misma cantidad que tu oponente, '
+- '&e• &fo inferior-superior por &e20 por ciento!'
+
+
+# ╔═══════════════════════════╗
+# ║  DEAD MAN'S CHEST PARAMS  ║
+# ╚═══════════════════════════╝
+
+# ➥ DEAD MAN'S CHEST TITLE AND DESCRIPTION
+
+DeadMansChest game title: 
+DeadMansChest menu title: '&l☠ EL COFRE DEL HOMBRE MUERTO ☠'
+DeadMansChest menu description:
+- '&e• &aModo individual.'
+- '&e• &f¡Tienes &a3 movimientos &fy &e3 cofres disponibles!'
+- '&e• &f¡Por cada movimiento abres algún tipo de premio!'
+- '&e• &f¡Puede ser monedas, un amplificador y solo cosas!'
+- '&e• &f¡Cada cofre contiene los 3 artículos y se puede abrir 3 veces!'
+- '&e• &f¡Puedes abrir todos los cofres 1 vez y golpear '
+- '&e• &fcualquier cosa que quieras varias veces!'
+- '&e• &f¡También hay una posibilidad de caer en la trampa y perder!'
+- ' '
+- '&e⇨ &a&lFÁCIL - &r&fModo seguro con bajas proporciones'
+- '&e⇨ &e&lMEDIO - &r&fModo estándar con proporciones medias'
+- '&e⇨ &c&lDIFÍCIL - &r&fModo difícil con posibilidad de restablecer tu saldo'
+
+DeadMansChest chest title: '&6☠ &e&lEL COFRE DEL HOMBRE MUERTO&r &6☠'
+DeadMansChest chest description:
+- '&fCompraste un Cofre Perdido con Múltiples Capas!'
+- '&f¡Todos los cofres contienen lo mismo, pero diferentes valores!'
+- '&e➟ &fDinero del premio: &e%winnings_min% - %winnings_max%'
+- '&e➟ &fAmplificadores: &d%coeff_min% - %coeff_max%'
+- '&e➟ &fArtículos: &a%items_total% artículos'
+- '&e➟ &fPosibilidad de romper el cofre: &c%lose_chance%'
+- '&e➟ &fPosibilidad de restablecer completamente el saldo: &4%balance_clear_chance%'
+
+DeadMansChest easy mode title: '&a&lMODO FÁCIL'
+DeadMansChest easy mode description:
+- '&3◦ &fPosibilidad de dinero del premio: &e%winnings_chance%'
+- '&3◦ &fPosibilidad de amplificador: &d%coeff_chance%'
+- '&3◦ &fPosibilidad de premios: &a%prise_chance%'
+- '&3◦ &fPosibilidad de final: &c%lose_chance%'
+- '&3◦ &fPosibilidad de restablecer el saldo: &4%balance_clear_chance%'
+
+DeadMansChest medium mode title: '&e&lMODO MEDIO'
+DeadMansChest medium mode description:
+- '&3◦ &fPosibilidad de dinero del premio: &e%winnings_chance%'
+- '&3◦ &fPosibilidad de amplificador: &d%coeff_chance%'
+- '&3◦ &fPosibilidad de premios: &a%prise_chance%'
+- '&3◦ &fPosibilidad de final: &c%lose_chance%'
+- '&3◦ &fPosibilidad de restablecer el saldo: &4%balance_clear_chance%'
+
+DeadMansChest hard mode title: '&c&lMODO DIFÍCIL'
+DeadMansChest hard mode description:
+- '&3◦ &fPosibilidad de dinero del premio: &e%winnings_chance%'
+- '&3◦ &fPosibilidad de amplificador: &d%coeff_chance%'
+- '&3◦ &fPosibilidad de premios: &a%prise_chance%'
+- '&3◦ &fPosibilidad de final: &c%lose_chance%'
+- '&3◦ &fPosibilidad de restablecer el saldo: &4%balance_clear_chance%'
+
+DeadMansChest mode activated: '&6&l[ACTIVADO]'
+DeadMansChest your prises: '&e&lTUS PREMIOS'
+
+DeadMansChest minimal prise of bet: '&6&l[&e&lVEGAS&6&l] &fLa apuesta debe ser superior
+  a &6%price%$'
+DeadMansChest minimal prise of balance: '&6&l[&e&lVEGAS&6&l] &fPara empezar a jugar,
+  debes tener &6%price%$ &fen tu saldo!'
+
+
+# ╔════════════════╗
+# ║  POKER PARAMS  ║
+# ╚════════════════╝
+
+# ➥ POKER TITLE AND DESCRIPTIONS
+
+Poker game title: 
+Poker menu title: '&l۞ POKER ۞'
+Poker menu description:
+- '&e• &bMultijugador.'
+- '&e• &f¡Tu tarea es obtener una buena combinación!'
+- '&e• &6Escalera real de color &f- ¡es la mejor!'
+- '&e• &f¡Para empezar a jugar, necesitas tener un cierto saldo de fichas!'
+- '&e• &fPueden jugar al póker hasta 4 jugadores a la vez.'
+- '&e• &fEl juego comenzará cuando haya al menos 2 jugadores.'
+- ' '
+- '&fPuedes &a&lSUBIR&r&f, &e&lIGUALAR&r&f, &c&lPASAR&r'
+
+
+# ➥ POKER ITEMS
+
+Poker empty slot title: '&e&l¡OBTÉN UN ASIENTO!'
+Poker empty slot description: []
+
+Poker player name title: '&a%player%'
+Poker player name description:
+- '&fSaldo: &e%balance%$'
+
+Poker player name fold title: '&7&m%player%'
+Poker player name fold description: []
+
+Poker raise title: '&a&lSUBIR'
+Poker raise description:
+- '&a⇒ Clic izquierdo &f- Añadir &e1000$'
+- '&a⇒ Clic izquierdo + Shift &f- Añadir &e5000$'
+- '&a⇒ Clic derecho &f- Establecer &e1000$'
+- '&a⇒ Clic derecho + Shift &f- &cAceptar'
+
+Poker call title: '&e&lIGUALAR'
+Poker call description:
+- '&f¡Iguala la apuesta con la apuesta de los oponentes!'
+
+Poker fold title: '&e&lPASAR'
+Poker fold description:
+- '&f¡Descarta tus cartas, perdiendo tus apuestas!'
+
+Poker players bet title: '&6&lAPUESTA DEL JUGADOR'
+Poker players bet description:
+- '&fTu apuesta: &a%bet%$'
+- '&fApuesta actual: &c%game bet%$'
+
+Poker game bet title: '&6&lAPUESTA TOTAL'
+Poker game bet description:
+- '&fApuesta máxima actual: &a%current bet%$'
+- '&fApuesta total: &6%full bet%$'
+
+Poker bet title: '&a%player% &fhizo una apuesta! ¡Apuesta total - &6%total bet%$'
+
+Poker next turn title (for all): '&a%player% &fhace un movimiento'
+Poker next turn title (for active): ¡Es tu turno! ¡Tienes 20 segundos!
+Poker player fold title: ¡&a%player% descartó las cartas!
+Poker player call title: ¡&a%player% igualó la apuesta!
+Poker player raise title: ¡&a%player% subió la apuesta!
+Poker win 1 title: '&6&lESCALERA REAL'
+Poker win 2 title: '&6&lESCALERA DE COLOR'
+Poker win 3 title: '&6&lPOKER'
+Poker win 4 title: '&6&lFULL'
+Poker win 5 title: '&6&lCOLOR'
+Poker win 6 title: '&6&lESCALERA'
+Poker win 7 title: '&6&lTRÍO'
+Poker win 8 title: '&6&lDOBLE PAREJA'
+Poker win 9 title: '&6&lPAREJA'
+Poker win 10 title: '&6&lCARTA ALTA'
+Poker win default title: '&6&lSOBREVIVIÓ'
+Poker winner title: '&e%player% &fgana!'
+
+Poker player dont have enough money: '&cNo tienes suficiente dinero para empezar a
+  jugar!'
+Poker another player dont have enough money: '&cOtro jugador no tiene suficiente dinero
+  para seguir jugando!'
+
+
+# ╔═══════════════╗
+# ║  DICE PARAMS  ║
+# ╚═══════════════╝
+
+# ➥ DICE TITLE AND DESCRIPTION
+
+Dice game title: 
+Dice menu title: '&l▩ DADOS ▩'
+Dice menu description:
+- '&e• &cDuelo.'
+- '&e• &f¡En este modo, no se requiere nada del jugador!'
+- '&e• &f¡El jugador hace una apuesta y tira &e2 dados!'
+- '&e• &f¡El jugador que obtenga un número más alto que el otro jugador gana!'
+- '&e• &fPuedes apostar la misma cantidad que tu oponente,'
+- '&e• &fo inferior-superior por &e20 por ciento!'
+
+
+# ➥ DESCRIPTION OF FIGURES IN DICE
+
+Dice timer title: '&e&lINFORMACIÓN'
+Dice timer description 1:
+- '&f¡Se necesitan 2 jugadores para comenzar el juego!'
+
+Dice timer description 2:
+- '&f¡El juego comenzará en unos segundos!'
+
+Dice timer description 3:
+- '&f¡Por favor espera!'
+
+Dice timer description 4:
+- '&f¡Empate!'
+
+Dice timer description 5:
+- '&a%winner% &fderrotó a &e%loser%'
+
+Dice timer description 6:
+- '&f¡El jugador ha abandonado el partido! ¡Has ganado!'
+
+
+# ╔══════════════════════╗
+# ║  MINESWEEPER PARAMS  ║
+# ╚══════════════════════╝
+
+# ➥ MINESWEEPER TITLE AND DESCRIPTIONS
+
+Minesweeper game title: 
+Minesweeper menu title: '&l❈ DRAGAMINAS ❈'
+Minesweeper menu description:
+- '&e• &aModo individual.'
+- '&e• &f¡Se te asigna un campo con una cierta cantidad de minas, dependiendo del
+  modo!'
+- '&e• &fPor cada clic exitoso, aumenta su apuesta en un coeficiente.'
+- '&e• &f¡Y puedes tomar el dinero en esta etapa!'
+- '&e• &f¡Si golpeas una mina, perderás inmediatamente!'
+- ' '
+- '&e⇨ &a&lFÁCIL - &r&fModo Seguro con pocas minas y bajo coeficiente'
+- '&e⇨ &e&lMEDIO - &r&fModo estándar con pocas minas y mayor coeficiente'
+- '&e⇨ &c&lDIFÍCIL - &r&fModo difícil con muchas minas y alto coeficiente.\'
+
+# ➥ MINESWEEPER ITEMS
+
+Minesweeper withdraw button title: '&6&lTUS GANANCIAS'
+Minesweeper withdraw button description:
+- '&fPuedes retirar &e%amount%&6⛃'
+
+Minesweeper mode activated: '&6&l[ACTIVADO]'
+
+Minesweeper easy mode title: '&a&lMODO FÁCIL'
+Minesweeper easy mode description:
+- '&3◦ &fCantidad de minas: &e%mines_amount%'
+- '&3◦ &fCoeficiente por cada clic: &d%coeff_by_click%'
+
+Minesweeper medium mode title: '&e&lMODO MEDIO'
+Minesweeper medium mode description:
+- '&3◦ &fCantidad de minas: &e%mines_amount%'
+- '&3◦ &fCoeficiente por cada clic: &d%coeff_by_click%'
+
+Minesweeper hard mode title: '&c&lMODO DIFÍCIL'
+Minesweeper hard mode description:
+- '&3◦ &fCantidad de minas: &e%mines_amount%'
+- '&3◦ &fCoeficiente por cada clic: &d%coeff_by_click%'
+
+
+# ╔══════════════════════════╗
+# ║  DOUBLE ROULETTE PARAMS  ║
+# ╚══════════════════════════╝
+
+# ➥ DOUBLE ROULETTE TITLE AND DESCRIPTIONS
+
+DoubleRoulette game title: 
+DoubleRoulette menu title: '&l🞕 DOUBLE ROULETTE 🞕'
+DoubleRoulette menu description:
+- '&e• &bMultijugador.'
+- '&e• &fTienes la opción de elegir entre 3 colores.'
+- '&e• &fEl rojo y el negro caen más a menudo y la posibilidad de ganar es igual.'
+- '&e• &fLa posibilidad de obtener el verde es baja, ¡pero la recompensa es mayor!'
+- '&e• &fDespués de desplazarte, puedes ver los últimos 7 colores.'
+- ' '
+- '&e⇨ &8&lNEGRO - &r&6✕2 &fcoeficiente'
+- '&e⇨ &c&lROJO - &r&6✕2 &fcoeficiente'
+- '&e⇨ &a&lVERDE - &r&6✕15 &fcoeficiente'
+
+# ➥ DOUBLE ROULETTE ITEMS
+
+DoubleRoulette black block name: '&8&l■ NEGRO &6✕%coefficient%'
+DoubleRoulette black block description:
+- '&7Jugadores apostando: &a%players%'
+- '&7Apuesta total: &e%bank%&6⛃'
+- ' '
+- '&fTu apuesta: &e%bet%&6⛃'
+- ' '
+- '&a☰ &fJugadores:'
+- '%players list%'
+DoubleRoulette red block name: '&c&l■ ROJO &6✕%coefficient%'
+DoubleRoulette red block description:
+- '&7Jugadores apostando: &a%players%'
+- '&7Apuesta total: &e%bank%&6⛃'
+- ' '
+- '&fTu apuesta: &e%bet%&6⛃'
+- ' '
+- '&a☰ &fJugadores:'
+- '%players list%'
+DoubleRoulette green block name: '&a&l■ VERDE &6✕%coefficient%'
+DoubleRoulette green block description:
+- '&7Jugadores apostando: &a%players%'
+- '&7Apuesta total: &e%bank%&6⛃'
+- ' '
+- '&fTu apuesta: &e%bet%&6⛃'
+- ' '
+- '&a☰ &fJugadores:'
+- '%players list%'
+DoubleRoulette players list format: '&7⮩ &a%player% &e%bet%&6⛃'
+DoubleRoulette lever inactive name: '&6&l[COLOCA TUS APUESTAS]'
+DoubleRoulette lever inactive description:
+- '&f¡Puedes apostar en diferentes colores!'
+- '&f¡Puedes colocar múltiples apuestas en color&7/&fcolores!'
+- ' '
+- '&fÚltimos 100 juegos:'
+- '&8&l■ NEGRO&r &f%black%'
+- '&c&l■ ROJO&r &f%red%'
+- '&a&l■ VERDE&r &f%green%'
+DoubleRoulette lever active name: '&6&l[EL JUEGO COMIENZA PRONTO]'
+DoubleRoulette lever active description:
+- '&fBanca total: &e%bank%&6⛃'
+- ' '
+- '&fÚltimos 100 juegos:'
+- '&8&l■ NEGRO&r &f%black%'
+- '&c&l■ ROJO&r &f%red%'
+- '&a&l■ VERDE&r &f%green%'
+- ' '
+- '&fAntes del inicio: &e%time%'
+DoubleRoulette lever rolling name: '&6&lGIRANDO...'
+DoubleRoulette lever rolling description: []
+
+DoubleRoulette you cant place a bet: '&c¡No puedes colocar una apuesta! ¡La apuesta
+  es demasiado alta para un color!'
+
+
+# ╔══════════════╗
+# ║  BET PARAMS  ║
+# ╚══════════════╝
+
+Lever inactive name: '&6&l¡Coloca tu apuesta para girar!'
+Lever inactive description: []
+Lever active name: '&6&lCLIC PARA GIRAR'
+Lever active description: []
+Lever rolling name: '&6&lGIRANDO...'
+Lever rolling description: []
+Place for bet name: '&6&lColoca tu apuesta'
+Place for bet description:
+- '&f¡Puedes colocar tus fichas!'
+
+
+# ╔═══════════════╗
+# ║  CARDS ITEMS  ║
+# ╚═══════════════╝
+
+Cards clubs title: '&8♣ &8&lTRÉBOLES&r &8♣ %card name%'
+Cards diamonds title: '&c♦ &c&lDIAMANTES&r &c♦ %card name%'
+Cards hearts title: '&c♥ &c&lCORAZONES&r &c♥ %card name%'
+Cards spades title: '&8♠ &8&lPICAS&r &8♠ %card name%'
+Cards jack title: Jota
+Cards queen title: Reina
+Cards king title: Rey
+Cards ace title: As
+
+
+# ╔═══════════════╗
+# ║  TOWN SYSTEM  ║
+# ╚═══════════════╝
+
+Bank havent money: '&c&l¡No hay dinero en la cuenta bancaria!'
+
+
+# ╔════════════════════╗
+# ║  DISCORD MESSAGES  ║
+# ╚════════════════════╝
+
+Discord victory message:
+- ':coin: [CASINO] **%player%** won **%total%** ⛃'
+
+Discord defeat message:
+- ':skull_crossbones: [CASINO] **%player%** lost **%total%** ⛃'
+
+Discord little victory message:
+- ':fire: [CASINO] **%player%** won **%total%** ⛃'
+
+Discord jackpot message:
+- ':gem: [CASINO] **%player%** got the jackpot **%total%** ⛃'
+
+
+# ╔═══════════════════╗
+# ║ HELP DESCRIPTION  ║
+# ╚═══════════════════╝
+
+Wrong command: '&6&l[&e&lVEGAS&6&l] &fCOMANDOS DEL CASINO:&r&e/vegas help'
+Help title: '&6&l[&e&lVEGAS&6&l] PLUGIN DEL CASINO - &e%version%'
+Help lines 1:
+- '&6➩ &fObtener una máquina tragamonedas:'
+- '&e/casino create &fo &e/casino create <estilo>'
+- '&6➩ &fObtener una máquina tragamonedas para un juego específico:'
+- '&e/casino set game <juego> &fy mira la máquina tragamonedas'
+- '&6➩ &fComprar varias fichas de cualquier valor:'
+- '&e/casino bet <precio de la ficha> <cantidad>'
+- '&6➩ &fVender todas las fichas:'
+- '&e/casino sell'
+- '&6➩ &fEmitir fichas:'
+- '&e/casino give <jugador> <precio de la ficha> <cantidad>'
+- '&6➩ &fAbrir el juego con el comando:'
+- '&e/casino game <juego>'
+- '&6➩ &fAbrir el menú con el comando:'
+- '&e/casino menu'
+- '&fPágina: &e1&f/&e2'
+Help lines 2:
+- '&6➩ &fAgregar un artículo a la tienda:'
+- '&e/casino shop add <ranura> <precio>'
+- '&6➩ &fEliminar un artículo de la tienda:'
+- '&e/casino shop remove <ranura>'
+- '&6➩ &fToda la información del plugin:'
+- '&e/casino help'
+- '&fPágina: &e2&f/&e2'
+# eyJ1c2VyLW5hbWUiOiJUYWxlc09mSkRMIiwidXNlci1pZCI6IjYyMDIiLCJkYXRlIjoiMjAyNS0xMC0xMCAyMjo1NSIsInNpdGUiOiJodHRwczovL2dsZWFrcy5wcm8ifQ==

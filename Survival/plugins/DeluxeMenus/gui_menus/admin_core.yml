@@ -1,0 +1,447 @@
+# Made by samus2002
+
+menu_title: '&8&lRPG Essentials | Core'
+open_command:
+  - admin_core
+size: 45
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: "*"
+      deny_commands:
+        - "[message] &cYou can't access RPG Essentials | Core!"
+items:
+  'WAYPOINT_GATE':
+    material: END_CRYSTAL
+    slot: 0
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lWaypoint Gate'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aWaypoint Gate&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s Waypoint_Gate'
+      - "[message] &aWaypoint Gate Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'STORAGE_CHEST':
+    material: END_CRYSTAL
+    slot: 1
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lStorage Chest'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aStorage Chest&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s Storage_Chest'
+      - "[message] &aStorage Chest Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'PORTAL_BASIC':
+    material: END_CRYSTAL
+    slot: 2
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lBasic Portal'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aBasic Portal&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s Portal_Basic'
+      - "[message] &aBasic Portal Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'PORTAL_DUNGEON':
+    material: END_CRYSTAL
+    slot: 3
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lDungeon Portal'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aDungeon Portal&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s Portal_Dungeon'
+      - "[message] &aDungeon Portal Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'PORTAL_SANCTUARY':
+    material: END_CRYSTAL
+    slot: 4
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lSanctuary Portal'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aSanctuary Portal&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s Portal_Sanctuary'
+      - "[message] &aSanctuary Portal Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'PORTAL_UNSTABLE':
+    material: END_CRYSTAL
+    slot: 5
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lUnstable Portal'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aUnstable Portal&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s Portal_Unstable'
+      - "[message] &aUnstable Portal Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_MERCHANT_BASIC':
+    material: PLAYER_HEAD
+    slot: 6
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lBasic Merchant'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aBasic Merchant&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Merchant_Basic'
+      - "[message] &aBasic Merchant Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_MERCHANT_WEAPON':
+    material: PLAYER_HEAD
+    slot: 7
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lWeapon Merchant'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aWeapon Merchant&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Merchant_Weapon'
+      - "[message] &aWeapon Merchant Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_MERCHANT_ARMOR':
+    material: PLAYER_HEAD
+    slot: 8
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lArmor Merchant'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aArmor Merchant&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Merchant_Armor'
+      - "[message] &aArmor Merchant Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_MERCHANT_JEWELRY':
+    material: PLAYER_HEAD
+    slot: 9
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lJewelry Merchant'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aJewelry Merchant&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Merchant_Jewelry'
+      - "[message] &aJewelry Merchant Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_MERCHANT_PET':
+    material: PLAYER_HEAD
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lPet Merchant'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aPet Merchant&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Merchant_Pet'
+      - "[message] &aPet Merchant Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_MERCHANT_POTION':
+    material: PLAYER_HEAD
+    slot: 11
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lPotion Merchant'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aPotion Merchant&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Merchant_Potion'
+      - "[message] &aPotion Merchant Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_MERCHANT_FORBIDDEN':
+    material: PLAYER_HEAD
+    slot: 12
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lForbidden Merchant'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aForbidden Merchant&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Merchant_Forbidden'
+      - "[message] &aForbidden Merchant Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_MERCHANT_WANDERING':
+    material: PLAYER_HEAD
+    slot: 13
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lWandering Merchant'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aWandering Merchant&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Merchant_Wandering'
+      - "[message] &aWandering Merchant Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_HEALING_FAIRY':
+    material: PLAYER_HEAD
+    slot: 14
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lHealing Fairy'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aHealing Fairy&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Healing_Fairy'
+      - "[message] &aHealing Fairy Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_BANKER':
+    material: PLAYER_HEAD
+    slot: 15
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lBanker'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aBanker&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Banker'
+      - "[message] &aBanker Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_Villager_M':
+    material: PLAYER_HEAD
+    slot: 16
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lVillager M'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aVillager M&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Villager_M'
+      - "[message] &aVillager M Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_Villager_F':
+    material: PLAYER_HEAD
+    slot: 17
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lVillager F'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aVillager F&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Villager_F'
+      - "[message] &aVillager F Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_Villager_M_SITTING':
+    material: PLAYER_HEAD
+    slot: 18
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lSitting Villager M'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aSitting Villager M&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Villager_M_SITTING'
+      - "[message] &aSitting Villager M Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_Villager_F_SITTING':
+    material: PLAYER_HEAD
+    slot: 19
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lSitting Villager F'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aSitting Villager F&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Villager_F_SITTING'
+      - "[message] &aSitting Villager F Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_Mayor':
+    material: PLAYER_HEAD
+    slot: 20
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lMayor'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aMayor&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Mayor'
+      - "[message] &aMayor Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_Guard':
+    material: PLAYER_HEAD
+    slot: 21
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lGuard'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aGuard&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Guard'
+      - "[message] &aGuard Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_Guard_PATROL':
+    material: PLAYER_HEAD
+    slot: 22
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lPatrolling Guard'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aPatrolling Guard&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Guard_PATROL'
+      - "[message] &aPatrolling Guard Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'NPC_Quest_Master':
+    material: PLAYER_HEAD
+    slot: 23
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lQuest Master'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aQuest Master&7!"
+      - ""
+    left_click_commands:
+      - '[player] mm m spawn -s NPC_Quest_Master'
+      - "[message] &aQuest Master Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'COIN':
+    material: STICK
+    slot: 24
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lCoin'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aCoin&7!"
+      - ""
+    left_click_commands:
+      - '[player] mi give MISCELLANEOUS COIN %player_name% 1 0 100 0 silent'
+      - "[message] &aCoin Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'STACKED_COIN':
+    material: STICK
+    slot: 25
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lStacked Coin'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aStacked Coin&7!"
+      - ""
+    left_click_commands:
+      - '[player] mi give MISCELLANEOUS STACKED_COIN %player_name% 1 0 100 0 silent'
+      - "[message] &aStacked Coin Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+  'COIN_BUNDLE':
+    material: STICK
+    slot: 26
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lCoin Bundle'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to summon &aCoin Bundle&7!"
+      - ""
+    left_click_commands:
+      - '[player] mi give MISCELLANEOUS COIN_BUNDLE %player_name% 1 0 100 0 silent'
+      - "[message] &aCoin Bundle Summoned!"
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+#24f35df792b6ddcf3baf6e41e84f2dde

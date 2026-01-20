@@ -1,0 +1,1065 @@
+  
+Cancelattack:
+  Skills:
+  - CancelEvent
+  
+Pet_Step_SFX:
+  Skills:
+  - sound{sound=entity.wolf.step;volume=1;pitch=1.2} @self
+  
+EXP_Gain:
+  Conditions:
+  - incombat true
+  Skills:
+  - petExperience{exp=1} @self
+  
+Pet_Look:
+  Conditions:
+  - incombat castinstead Pet_Look_TARGET
+  - hasaura{n=NO_LOOK} false
+  Skills:
+  - look{headOnly=false;immediately=true} @PetOwner
+  
+Pet_Look_TARGET:
+  Conditions:
+  - hasaura{n=NO_LOOK} false
+  Skills:
+  - look{headOnly=false;immediately=true} @target
+Pet_Look_FORCELOOKTARGET:
+  Conditions:
+  - hasaura{n=NO_LOOK} false
+  Skills:
+  - look{headOnly=false;immediately=true;force=true} @target
+
+
+Pet_Fire_Dragon_Fire_FX:
+  Skills:
+  - particles{p=small_flame;amount=6;hS=0.3;vS=0.3;y=0;size=1;speed=0.03} @modelpart{mid=pet_fire_dragon_fire;pid=body;location=0,0.6,0;em=true}
+Pet_Fire_Dragon_Soulfire_FX:
+  Skills:
+  - particles{p=soul_fire_flame;amount=6;hS=0.3;vS=0.3;y=0;size=1;speed=0.03} @modelpart{mid=pet_fire_dragon_fire;pid=body;location=0,0.6,0;em=true}
+Pet_Fire_Dragon_Holyfire_FX:
+  Skills:
+  - particles{p=end_rod;amount=6;hS=0.3;vS=0.3;y=0;size=1;speed=0.03} @modelpart{mid=pet_fire_dragon_fire;pid=body;location=0,0.6,0;em=true}
+Pet_Fire_Dragon_Shadowflame_FX:
+  Skills:
+  - particles{p=portal;amount=6;hS=0.3;vS=0.3;y=0;size=1;speed=0.03} @modelpart{mid=pet_fire_dragon_fire;pid=body;location=0,0.3,0;em=true}
+  
+Pet_Interact_Fire_Dragon_Fire:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=60} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 6
+  - effect:sound{s=entity.panda.pre_sneeze;volume=0.8;pitch=1.1} @self
+  - delay 12
+  - effect:sound{s=entity.panda.sneeze;volume=0.8;pitch=1.1} @self
+  - particles{p=flame;amount=3;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_fire_dragon_fire;pid=nose;location=0.3,0,0;em=true}
+  - particles{p=campfire_cosy_smoke;amount=2;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_fire_dragon_fire;pid=nose;location=0.3,0,0;em=true}
+  - particles{p=flame;amount=3;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_fire_dragon_fire;pid=nose;location=-0.3,0,0;em=true}
+  - particles{p=campfire_cosy_smoke;amount=2;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_fire_dragon_fire;pid=nose;location=-0.3,0,0;em=true}
+  
+Pet_Fire_Dragon_Fire_Skill:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=85}
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=60;repeati=1}
+  - delay 20
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=65;level=50;hasParticles=false} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=11} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=23} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=35} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=45} @self
+  - effect:sound{s=entity.ender_dragon.growl;volume=0.3;pitch=1.8;delay=31} @self
+  
+  - delay 33
+  
+  - effect:sound{s=entity.blaze.shoot;volume=0.8;pitch=1.3} @self
+  - projectile{bulletType=MOB;mob=VFX_Flame_Shot_Fire;sfo=0;onHit=Pet_Fire_Dragon_Fire_Skill_DAMAGE;v=11;i=1;hR=1;vR=1;mr=15;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=2.4;tyo=1.7} @target
+Pet_Fire_Dragon_Fire_Skill_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=entity.generic.explode;volume=0.7;pitch=1.3}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:particles{particle=lava;amount=10;hS=0.4;vS=0.8;speed=0.2;forwardOffset=0;sideOffset=0;y=0.8}
+
+  - damage{a="<pet.damagemodifier> * 0.3";pkb=true;hnp=true;hp=true;repeat=3;repeati=20;delay=20}
+  - effect:sound{s=entity.player.hurt_on_fire;volume=0.7;pitch=1.1;repeat=4;repeati=20}
+  - effect:particles{particle=flame;amount=15;hS=0.4;vS=0.8;speed=0.05;forwardOffset=0;sideOffset=0;y=0.8;repeat=4;repeati=20}
+
+Pet_Interact_Fire_Dragon_Soulfire:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=60} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 6
+  - effect:sound{s=entity.panda.pre_sneeze;volume=0.8;pitch=1.1} @self
+  - delay 12
+  - effect:sound{s=entity.panda.sneeze;volume=0.8;pitch=1.1} @self
+  - particles{p=soul_fire_flame;amount=3;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_Fire_Dragon_Soulfire;pid=nose;location=0.3,0,0;em=true}
+  - particles{p=campfire_cosy_smoke;amount=2;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_Fire_Dragon_Soulfire;pid=nose;location=0.3,0,0;em=true}
+  - particles{p=soul_fire_flame;amount=3;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_Fire_Dragon_Soulfire;pid=nose;location=-0.3,0,0;em=true}
+  - particles{p=campfire_cosy_smoke;amount=2;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_Fire_Dragon_Soulfire;pid=nose;location=-0.3,0,0;em=true}
+  
+Pet_Fire_Dragon_Soulfire_Skill:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=85}
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=60;repeati=1}
+  - delay 20
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=65;level=50;hasParticles=false} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=11} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=23} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=35} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=45} @self
+  - effect:sound{s=entity.ender_dragon.growl;volume=0.3;pitch=1.8;delay=31} @self
+  
+  - delay 33
+  
+  - effect:sound{s=entity.blaze.shoot;volume=0.8;pitch=1.3} @self
+  - projectile{bulletType=MOB;mob=VFX_Flame_Shot_Soulfire;sfo=0;onHit=Pet_Fire_Dragon_Soulfire_Skill_DAMAGE;v=11;i=1;hR=1;vR=1;mr=15;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=2.4;tyo=1.7} @target
+Pet_Fire_Dragon_Soulfire_Skill_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=entity.generic.explode;volume=0.7;pitch=1.3}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:particles{particle=sonic_boom;amount=3;hS=0.4;vS=0.5;speed=0.2;forwardOffset=0;sideOffset=0;y=0.8}
+
+  - damage{a="<pet.damagemodifier> * 0.3";pkb=true;hnp=true;hp=true;repeat=3;repeati=20;delay=20}
+  - effect:sound{s=entity.player.hurt_on_fire;volume=0.7;pitch=1.1;repeat=4;repeati=20}
+  - effect:particles{particle=soul_fire_flame;amount=15;hS=0.4;vS=0.8;speed=0.05;forwardOffset=0;sideOffset=0;y=0.8;repeat=4;repeati=20}
+
+Pet_Interact_Fire_Dragon_Holyfire:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=60} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 6
+  - effect:sound{s=entity.panda.pre_sneeze;volume=0.8;pitch=1.1} @self
+  - delay 12
+  - effect:sound{s=entity.panda.sneeze;volume=0.8;pitch=1.1} @self
+  - particles{p=end_rod;amount=2;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_Fire_Dragon_Holyfire;pid=nose;location=0.3,0,0;em=true}
+  - particles{p=campfire_cosy_smoke;amount=2;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_Fire_Dragon_Holyfire;pid=nose;location=0.3,0,0;em=true}
+  - particles{p=end_rod;amount=2;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_Fire_Dragon_Holyfire;pid=nose;location=-0.3,0,0;em=true}
+  - particles{p=campfire_cosy_smoke;amount=2;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_Fire_Dragon_Holyfire;pid=nose;location=-0.3,0,0;em=true}
+  
+Pet_Fire_Dragon_Holyfire_Skill:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=85}
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=60;repeati=1}
+  - delay 20
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=65;level=50;hasParticles=false} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=11} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=23} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=35} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=45} @self
+  - effect:sound{s=entity.ender_dragon.growl;volume=0.3;pitch=1.8;delay=31} @self
+  
+  - delay 33
+  
+  - effect:sound{s=entity.blaze.shoot;volume=0.8;pitch=1.3} @self
+  - projectile{bulletType=MOB;mob=VFX_Flame_Shot_Holyfire;sfo=0;onHit=Pet_Fire_Dragon_Holyfire_Skill_DAMAGE;v=11;i=1;hR=1;vR=1;mr=15;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=2.4;tyo=1.7} @target
+Pet_Fire_Dragon_Holyfire_Skill_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=entity.generic.explode;volume=0.7;pitch=1.3}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:particles{particle=flash;amount=1;hS=0;vS=0;speed=0.1;forwardOffset=0;sideOffset=0;y=0.8}
+
+  - damage{a="<pet.damagemodifier> * 0.3";pkb=true;hnp=true;hp=true;repeat=3;repeati=20;delay=20}
+  - effect:sound{s=entity.player.hurt_on_fire;volume=0.7;pitch=1.1;repeat=4;repeati=20}
+  - effect:particles{particle=end_rod;amount=10;hS=0.4;vS=0.8;speed=0.05;forwardOffset=0;sideOffset=0;y=0.8;repeat=4;repeati=20}
+
+Pet_Interact_Fire_Dragon_Shadowflame:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=60} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 6
+  - effect:sound{s=entity.panda.pre_sneeze;volume=0.8;pitch=1.1} @self
+  - delay 12
+  - effect:sound{s=entity.panda.sneeze;volume=0.8;pitch=1.1} @self
+  - particles{p=witch;amount=3;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_Fire_Dragon_Shadowflame;pid=nose;location=0.3,0,0;em=true}
+  - particles{p=campfire_cosy_smoke;amount=2;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_Fire_Dragon_Shadowflame;pid=nose;location=0.3,0,0;em=true}
+  - particles{p=witch;amount=3;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_Fire_Dragon_Shadowflame;pid=nose;location=-0.3,0,0;em=true}
+  - particles{p=campfire_cosy_smoke;amount=2;hS=0.05;vS=0.05;y=0;size=1;speed=0.1} @modelpart{mid=pet_Fire_Dragon_Shadowflame;pid=nose;location=-0.3,0,0;em=true}
+  
+Pet_Fire_Dragon_Shadowflame_Skill:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=85}
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=60;repeati=1}
+  - delay 20
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=65;level=50;hasParticles=false} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=11} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=23} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=35} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5;delay=45} @self
+  - effect:sound{s=entity.ender_dragon.growl;volume=0.3;pitch=1.8;delay=31} @self
+  
+  - delay 33
+  
+  - effect:sound{s=entity.blaze.shoot;volume=0.8;pitch=1.3} @self
+  - projectile{bulletType=MOB;mob=VFX_Flame_Shot_Shadowflame;sfo=0;onHit=Pet_Fire_Dragon_Shadowflame_Skill_DAMAGE;v=11;i=1;hR=1;vR=1;mr=15;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=2.4;tyo=1.7} @target
+Pet_Fire_Dragon_Shadowflame_Skill_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=entity.generic.explode;volume=0.7;pitch=1.3}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:particles{particle=witch;amount=10;hS=0.4;vS=0.8;speed=0.2;forwardOffset=0;sideOffset=0;y=0.8}
+
+  - damage{a="<pet.damagemodifier> * 0.3";pkb=true;hnp=true;hp=true;repeat=3;repeati=20;delay=20}
+  - effect:sound{s=entity.player.hurt_on_fire;volume=0.7;pitch=1.1;repeat=4;repeati=20}
+  - effect:particles{particle=portal;amount=15;hS=0.4;vS=0.8;speed=0.05;forwardOffset=0;sideOffset=0;y=0.8;repeat=4;repeati=20}
+
+
+Pet_Unicorn_Heavenly_FX:
+  Skills:
+  - orbital{onTick=Pet_Unicorn_Heavenly_Skill_FX_RED;r=0.75;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - orbital{startingpoint=15;onTick=Pet_Unicorn_Heavenly_Skill_FX_BLUE;r=0.75;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - orbital{startingpoint=30;onTick=Pet_Unicorn_Heavenly_Skill_FX_YELLOW;r=0.75;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+Pet_Unicorn_Nature_FX:
+  Skills:
+  - orbital{onTick=Pet_Unicorn_Nature_Skill_FX_RED;r=0.75;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - orbital{startingpoint=15;onTick=Pet_Unicorn_Nature_Skill_FX_BLUE;r=0.75;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - orbital{startingpoint=30;onTick=Pet_Unicorn_Nature_Skill_FX_YELLOW;r=0.75;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+Pet_Unicorn_Rainbow_FX:
+  Skills:
+  - orbital{onTick=Pet_Unicorn_Rainbow_Skill_FX_RED;r=0.75;points=49;i=1;duration=49;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - orbital{startingpoint=7;onTick=Pet_Unicorn_Rainbow_Skill_FX_ORANGE;r=0.75;points=49;i=1;duration=49;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - orbital{startingpoint=14;onTick=Pet_Unicorn_Rainbow_Skill_FX_YELLOW;r=0.75;points=49;i=1;duration=49;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - orbital{startingpoint=21;onTick=Pet_Unicorn_Rainbow_Skill_FX_GREEN;r=0.75;points=49;i=1;duration=49;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - orbital{startingpoint=28;onTick=Pet_Unicorn_Rainbow_Skill_FX_BLUE;r=0.75;points=49;i=1;duration=49;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - orbital{startingpoint=35;onTick=Pet_Unicorn_Rainbow_Skill_FX_INDIGO;r=0.75;points=49;i=1;duration=49;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - orbital{startingpoint=42;onTick=Pet_Unicorn_Rainbow_Skill_FX_PURPLE;r=0.75;points=49;i=1;duration=49;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+Pet_Unicorn_Undead_FX:
+  Skills:
+  - orbital{onTick=Pet_Unicorn_Undead_Skill_FX_RED;r=0.75;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - orbital{startingpoint=15;onTick=Pet_Unicorn_Undead_Skill_FX_BLUE;r=0.75;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - orbital{startingpoint=30;onTick=Pet_Unicorn_Undead_Skill_FX_YELLOW;r=0.75;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - particlering{particle=smoke;radius=1.2;points=45;amount=1;hS=0;vS=0} @self
+  
+Pet_Interact_Unicorn_Heavenly:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=60} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 14
+  - effect:sound{s=entity.allay.item_taken;volume=1.4;pitch=1.3} @self
+  - particles{p=dust_color_transition;color1=#FFFFFF;color2=#D1F1FC;amount=10;hS=0.4;vS=0.5;y=0.85;size=0.45;speed=0.1;repeat=3;repeati=2} @modelpart{mid=pet_unicorn_Rainbow;pid=body;location=0,0,0;em=true}
+  - particles{p=dust_color_transition;color1=#8DF7FF;color2=#2D8BF0;amount=10;hS=0.4;vS=0.5;y=0.85;size=0.45;speed=0.1;repeat=3;repeati=2} @modelpart{mid=pet_unicorn_Rainbow;pid=body;location=0,0,0;em=true}
+  - particles{p=dust_color_transition;color1=#E5FE6B;color2=#FAED32;amount=10;hS=0.4;vS=0.5;y=0.85;size=0.45;speed=0.1;repeat=3;repeati=2} @modelpart{mid=pet_unicorn_Rainbow;pid=body;location=0,0,0;em=true}
+Pet_Unicorn_Heavenly_Skill:
+  Skills:
+  - potion{type=INCREASE_DAMAGE;duration=20;level=<pet.power>;hasParticles=false} @owner
+  - potion{type=SPEED;duration=20;level=<pet.power>;hasParticles=false} @owner
+  - potion{type=DAMAGE_RESISTANCE;duration=20;level=<pet.power>;hasParticles=false} @owner
+  - orbital{onTick=Pet_Unicorn_Heavenly_Skill_FX_RED;r=1;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+  - orbital{startingpoint=15;onTick=Pet_Unicorn_Heavenly_Skill_FX_BLUE;r=1;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+  - orbital{startingpoint=30;onTick=Pet_Unicorn_Heavenly_Skill_FX_YELLOW;r=1;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+Pet_Unicorn_Heavenly_Skill_FX_RED:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#FFFFFF;color2=#D1F1FC;size=0.45;amount=5;hS=0.02;vS=0.02;speed=0} @origin
+Pet_Unicorn_Heavenly_Skill_FX_BLUE:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#8DF7FF;color2=#2D8BF0;size=0.45;amount=5;hS=0.02;vS=0.02;speed=0} @origin
+Pet_Unicorn_Heavenly_Skill_FX_YELLOW:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#E5FE6B;color2=#FAED32;size=0.45;amount=5;hS=0.02;vS=0.02;speed=0} @origin
+  
+Pet_Interact_Unicorn_Nature:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=60} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 14
+  - effect:sound{s=entity.allay.item_taken;volume=1.4;pitch=1.3} @self
+  - particles{p=totem;amount=10;hS=0.4;vS=0.5;y=0.85;size=0.45;speed=0.1;repeat=3;repeati=2} @modelpart{mid=pet_unicorn_Rainbow;pid=body;location=0,0,0;em=true}
+Pet_Unicorn_Nature_Skill:
+  Skills:
+  - potion{type=INCREASE_DAMAGE;duration=20;level=<pet.power>;hasParticles=false} @owner
+  - potion{type=SPEED;duration=20;level=<pet.power>;hasParticles=false} @owner
+  - potion{type=DAMAGE_RESISTANCE;duration=20;level=<pet.power>;hasParticles=false} @owner
+  - orbital{onTick=Pet_Unicorn_Nature_Skill_FX_RED;r=1;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+  - orbital{startingpoint=15;onTick=Pet_Unicorn_Nature_Skill_FX_BLUE;r=1;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+  - orbital{startingpoint=30;onTick=Pet_Unicorn_Nature_Skill_FX_YELLOW;r=1;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+Pet_Unicorn_Nature_Skill_FX_RED:
+  Skills:
+  - effect:particles{p=totem;size=0.45;amount=2;hS=0.02;vS=0.02;speed=0} @origin
+Pet_Unicorn_Nature_Skill_FX_BLUE:
+  Skills:
+  - effect:particles{p=totem;size=0.45;amount=2;hS=0.02;vS=0.02;speed=0} @origin
+Pet_Unicorn_Nature_Skill_FX_YELLOW:
+  Skills:
+  - effect:particles{p=totem;size=0.45;amount=2;hS=0.02;vS=0.02;speed=0} @origin
+  
+Pet_Interact_Unicorn_Rainbow:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=60} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 14
+  - effect:sound{s=entity.allay.item_taken;volume=1.4;pitch=1.3} @self
+  - particles{p=dust_color_transition;color1=#FC7550;color2=#D60A0A;amount=10;hS=0.6;vS=0.5;y=0.85;size=0.45;speed=0.1;repeat=1;repeati=2} @modelpart{mid=pet_unicorn_Rainbow;pid=body;location=0,0,0;em=true}
+  - particles{p=dust_color_transition;color1=#FFE255;color2=#F69A10;amount=10;hS=0.6;vS=0.5;y=0.85;size=0.45;speed=0.1;repeat=1;repeati=2;delay=1} @modelpart{mid=pet_unicorn_Rainbow;pid=body;location=0,0,0;em=true}
+  - particles{p=dust_color_transition;color1=#E8FE7C;color2=#F3F022;amount=10;hS=0.6;vS=0.5;y=0.85;size=0.45;speed=0.1;repeat=1;repeati=2;delay=2} @modelpart{mid=pet_unicorn_Rainbow;pid=body;location=0,0,0;em=true}
+  - particles{p=dust_color_transition;color1=#86FB74;color2=#0FF540;amount=10;hS=0.6;vS=0.5;y=0.85;size=0.45;speed=0.1;repeat=1;repeati=2;delay=3} @modelpart{mid=pet_unicorn_Rainbow;pid=body;location=0,0,0;em=true}
+  - particles{p=dust_color_transition;color1=#78FBF2;color2=#1DB3F3;amount=10;hS=0.6;vS=0.5;y=0.85;size=0.45;speed=0.1;repeat=1;repeati=2;delay=4} @modelpart{mid=pet_unicorn_Rainbow;pid=body;location=0,0,0;em=true}
+  - particles{p=dust_color_transition;color1=#629DF6;color2=#112FF3;amount=10;hS=0.6;vS=0.5;y=0.85;size=0.45;speed=0.1;repeat=1;repeati=2;delay=5} @modelpart{mid=pet_unicorn_Rainbow;pid=body;location=0,0,0;em=true}
+  - particles{p=dust_color_transition;color1=#9256F2;color2=#AF14EC;amount=10;hS=0.6;vS=0.5;y=0.85;size=0.45;speed=0.1;repeat=1;repeati=2;delay=6} @modelpart{mid=pet_unicorn_Rainbow;pid=body;location=0,0,0;em=true}
+Pet_Unicorn_Rainbow_Skill:
+  Skills:
+  - potion{type=INCREASE_DAMAGE;duration=20;level=<pet.power>;hasParticles=false} @owner
+  - potion{type=SPEED;duration=20;level=<pet.power>;hasParticles=false} @owner
+  - potion{type=DAMAGE_RESISTANCE;duration=20;level=<pet.power>;hasParticles=false} @owner
+  - orbital{onTick=Pet_Unicorn_Rainbow_Skill_FX_RED;r=1;points=49;i=1;duration=49;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+  - orbital{startingpoint=7;onTick=Pet_Unicorn_Rainbow_Skill_FX_ORANGE;r=1;points=49;i=1;duration=49;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+  - orbital{startingpoint=14;onTick=Pet_Unicorn_Rainbow_Skill_FX_YELLOW;r=1;points=49;i=1;duration=49;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+  - orbital{startingpoint=21;onTick=Pet_Unicorn_Rainbow_Skill_FX_GREEN;r=1;points=49;i=1;duration=49;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+  - orbital{startingpoint=28;onTick=Pet_Unicorn_Rainbow_Skill_FX_BLUE;r=1;points=49;i=1;duration=49;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+  - orbital{startingpoint=35;onTick=Pet_Unicorn_Rainbow_Skill_FX_INDIGO;r=1;points=49;i=1;duration=49;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+  - orbital{startingpoint=42;onTick=Pet_Unicorn_Rainbow_Skill_FX_PURPLE;r=1;points=49;i=1;duration=49;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+Pet_Unicorn_Rainbow_Skill_FX_RED:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#FC7550;color2=#D60A0A;size=0.45;amount=5;hS=0.02;vS=0.02;speed=0} @origin
+Pet_Unicorn_Rainbow_Skill_FX_ORANGE:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#FFE255;color2=#F69A10;size=0.45;amount=5;hS=0.02;vS=0.02;speed=0} @origin
+Pet_Unicorn_Rainbow_Skill_FX_YELLOW:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#E8FE7C;color2=#F3F022;size=0.45;amount=5;hS=0.02;vS=0.02;speed=0} @origin
+Pet_Unicorn_Rainbow_Skill_FX_GREEN:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#86FB74;color2=#0FF540;size=0.45;amount=5;hS=0.02;vS=0.02;speed=0} @origin
+Pet_Unicorn_Rainbow_Skill_FX_BLUE:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#78FBF2;color2=#1DB3F3;size=0.45;amount=5;hS=0.02;vS=0.02;speed=0} @origin
+Pet_Unicorn_Rainbow_Skill_FX_INDIGO:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#629DF6;color2=#112FF3;size=0.45;amount=5;hS=0.02;vS=0.02;speed=0} @origin
+Pet_Unicorn_Rainbow_Skill_FX_PURPLE:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#9256F2;color2=#AF14EC;size=0.45;amount=5;hS=0.02;vS=0.02;speed=0} @origin
+  
+Pet_Interact_Unicorn_Undead:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=60} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 14
+  - effect:sound{s=entity.allay.item_taken;volume=1.4;pitch=0.6} @self
+  - particles{p=smoke;amount=10;hS=0.4;vS=0.4;y=0.85;size=0.45;speed=0.1;repeat=3;repeati=2} @modelpart{mid=pet_unicorn_Undead;pid=body;location=0,0,0;em=true}
+  - particles{p=witch;amount=10;hS=0.4;vS=0.4;y=0.85;size=0.45;speed=0.1;repeat=3;repeati=2} @modelpart{mid=pet_unicorn_Undead;pid=body;location=0,0,0;em=true}
+  - particles{p=soul;amount=10;hS=0.4;vS=0.4;y=0.85;size=0.45;speed=0.1;repeat=3;repeati=2} @modelpart{mid=pet_unicorn_Undead;pid=body;location=0,0,0;em=true}
+Pet_Unicorn_Undead_Skill:
+  Skills:
+  - potion{type=INCREASE_DAMAGE;duration=20;level=<pet.power>;hasParticles=false} @owner
+  - potion{type=SPEED;duration=20;level=<pet.power>;hasParticles=false} @owner
+  - potion{type=DAMAGE_RESISTANCE;duration=20;level=<pet.power>;hasParticles=false} @owner
+  - particlering{particle=smoke;radius=1.5;points=45;amount=1;hS=0;vS=0} @owner
+  - orbital{onTick=Pet_Unicorn_Undead_Skill_FX_RED;r=1;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+  - orbital{startingpoint=15;onTick=Pet_Unicorn_Undead_Skill_FX_BLUE;r=1;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+  - orbital{startingpoint=30;onTick=Pet_Unicorn_Undead_Skill_FX_YELLOW;r=1;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @owner
+Pet_Unicorn_Undead_Skill_FX_RED:
+  Skills:
+  - effect:particles{p=soul;size=0.45;amount=1;hS=0;vS=0;speed=0.01} @origin
+Pet_Unicorn_Undead_Skill_FX_BLUE:
+  Skills:
+  - effect:particles{p=soul;size=0.45;amount=1;hS=0;vS=0;speed=0.01} @origin
+Pet_Unicorn_Undead_Skill_FX_YELLOW:
+  Skills:
+  - effect:particles{p=soul;size=0.45;amount=1;hS=0;vS=0;speed=0.01} @origin
+  
+
+Pet_Frog_Golden_FX:
+  Skills:
+  - particles{p=end_rod;amount=5;hS=0.4;vS=0.4;y=0;size=1;speed=0.03} @modelpart{mid=pet_frog_golden;pid=body;location=0,0.3,0;em=true}
+Pet_Frog_Nether_FX:
+  Skills:
+  - particles{p=flame;amount=5;hS=0.4;vS=0.4;y=0;size=1;speed=0.02} @modelpart{mid=pet_frog_nether;pid=body;location=0,0.3,0;em=true}
+  
+Pet_Step_SFX_Frog:
+  Skills:
+  - sound{sound=entity.frog.long_jump;volume=1;pitch=1.2} @self
+
+Pet_Interact_Frog_Green:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=55} @self
+  - state{s=interact;speed=1;lo=15;p=1} @self
+  - partvis{m=pet_frog_green;p=fly;v=true;em=true;child=true;delay=1} @self
+  - effect:sound{s=entity.bee.loop;volume=0.7;pitch=1.3;delay=2} @self
+  - stopsound{s=entity.bee.loop;delay=35} @PIR{r=10}
+  
+  - delay 35
+  
+  - effect:sound{s=entity.slime.attack;volume=0.8;pitch=1.1} @self
+  
+  - delay 4
+  
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.1} @self
+  - partvis{m=pet_frog_green;p=fly;v=false;em=true;child=true} @self
+Pet_Frog_Green_Skill:
+  Cooldown: 5
+  Conditions:
+  - offgcd
+  - targetwithin{d=10} true
+  Skills:
+  - gcd{ticks=52}
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=40;repeati=1}
+  - delay 20
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=35;level=50;hasParticles=false} @self
+  
+  - delay 12
+  
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.3} @self
+  - effect:sound{s=entity.slime.attack;volume=0.8;pitch=1.2} @self
+  - projectile{sfo=0;onHit=Pet_Frog_Green_Skill_DAMAGE;v=30;i=1;hR=1;vR=1;mr=10;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.7;tyo=1.5} @target
+Pet_Frog_Green_Skill_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=entity.frog.hurt;volume=0.8;pitch=1.3}
+  - effect:sound{s=block.slime_block.fall;volume=0.8;pitch=1.3}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:particles{particle=slime;amount=10;hS=0.4;vS=0.8;speed=0.2;forwardOffset=0;sideOffset=0;y=0.8}
+  - pull{velocity=5}
+  - potion{type=SLOW;duration="<pet.power> * 20";level=2;hasParticles=false}
+
+Pet_Interact_Frog_Mushroom:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=55} @self
+  - state{s=interact;speed=1;lo=15;p=1} @self
+  - partvis{m=pet_frog_Mushroom;p=fly;v=true;em=true;child=true;delay=1} @self
+  - effect:sound{s=entity.bee.loop;volume=0.7;pitch=1.3;delay=2} @self
+  - stopsound{s=entity.bee.loop;delay=35} @PIR{r=10}
+  
+  - delay 35
+  
+  - effect:sound{s=entity.slime.attack;volume=0.8;pitch=1.1} @self
+  
+  - delay 4
+  
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.1} @self
+  - partvis{m=pet_frog_Mushroom;p=fly;v=false;em=true;child=true} @self
+Pet_Frog_Mushroom_Skill:
+  Cooldown: 5
+  Conditions:
+  - offgcd
+  - targetwithin{d=10} true
+  Skills:
+  - gcd{ticks=52}
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=40;repeati=1}
+  - delay 20
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=35;level=50;hasParticles=false} @self
+  
+  - delay 12
+  
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.3} @self
+  - effect:sound{s=entity.slime.attack;volume=0.8;pitch=1.2} @self
+  - projectile{sfo=0;onHit=Pet_Frog_Mushroom_Skill_DAMAGE;v=30;i=1;hR=1;vR=1;mr=10;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.7;tyo=1.5} @target
+Pet_Frog_Mushroom_Skill_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=entity.frog.hurt;volume=0.8;pitch=1.3}
+  - effect:sound{s=block.slime_block.fall;volume=0.8;pitch=1.3}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:particles{particle=Falling_Nectar;amount=10;hS=0.4;vS=0.8;speed=0.2;forwardOffset=0;sideOffset=0;y=0.8}
+  - pull{velocity=5}
+  - potion{type=SLOW;duration="<pet.power> * 20";level=2;hasParticles=false}
+
+Pet_Interact_Frog_Stone:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=55} @self
+  - state{s=interact;speed=1;lo=15;p=1} @self
+  - partvis{m=pet_frog_Stone;p=fly;v=true;em=true;child=true;delay=1} @self
+  - effect:sound{s=entity.bee.loop;volume=0.7;pitch=1.3;delay=2} @self
+  - stopsound{s=entity.bee.loop;delay=35} @PIR{r=10}
+  
+  - delay 35
+  
+  - effect:sound{s=entity.slime.attack;volume=0.8;pitch=1.1} @self
+  
+  - delay 4
+  
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.1} @self
+  - partvis{m=pet_frog_Stone;p=fly;v=false;em=true;child=true} @self
+Pet_Frog_Stone_Skill:
+  Cooldown: 5
+  Conditions:
+  - offgcd
+  - targetwithin{d=10} true
+  Skills:
+  - gcd{ticks=52}
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=40;repeati=1}
+  - delay 20
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=35;level=50;hasParticles=false} @self
+  
+  - delay 12
+  
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.3} @self
+  - effect:sound{s=entity.slime.attack;volume=0.8;pitch=1.2} @self
+  - projectile{sfo=0;onHit=Pet_Frog_Stone_Skill_DAMAGE;v=30;i=1;hR=1;vR=1;mr=10;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.7;tyo=1.5} @target
+Pet_Frog_Stone_Skill_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=entity.frog.hurt;volume=0.8;pitch=1.3}
+  - effect:sound{s=block.slime_block.fall;volume=0.8;pitch=1.3}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:particles{particle=block_crack;m=STONE;amount=10;hS=0.4;vS=0.8;speed=0.2;forwardOffset=0;sideOffset=0;y=0.8}
+  - pull{velocity=5}
+  - potion{type=SLOW;duration="<pet.power> * 20";level=2;hasParticles=false}
+  
+Pet_Interact_Frog_Golden:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=55} @self
+  - state{s=interact;speed=1;lo=15;p=1} @self
+  - partvis{m=pet_frog_Golden;p=fly;v=true;em=true;child=true;delay=1} @self
+  - effect:sound{s=entity.bee.loop;volume=0.7;pitch=1.3;delay=2} @self
+  - stopsound{s=entity.bee.loop;delay=35} @PIR{r=10}
+  
+  - delay 35
+  
+  - effect:sound{s=entity.slime.attack;volume=0.8;pitch=1.1} @self
+  
+  - delay 4
+  
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.1} @self
+  - partvis{m=pet_frog_Golden;p=fly;v=false;em=true;child=true} @self
+Pet_Frog_Golden_Skill:
+  Cooldown: 5
+  Conditions:
+  - offgcd
+  - targetwithin{d=10} true
+  Skills:
+  - gcd{ticks=52}
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=40;repeati=1}
+  - delay 20
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=35;level=50;hasParticles=false} @self
+  
+  - delay 12
+  
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.3} @self
+  - effect:sound{s=entity.slime.attack;volume=0.8;pitch=1.2} @self
+  - projectile{sfo=0;onHit=Pet_Frog_Golden_Skill_DAMAGE;v=30;i=1;hR=1;vR=1;mr=10;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.7;tyo=1.5} @target
+Pet_Frog_Golden_Skill_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=entity.frog.hurt;volume=0.8;pitch=1.3}
+  - effect:sound{s=block.slime_block.fall;volume=0.8;pitch=1.3}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:particles{particle=end_rod;amount=5;hS=0.4;vS=0.8;speed=0.2;forwardOffset=0;sideOffset=0;y=0.8}
+  - pull{velocity=5}
+  - potion{type=SLOW;duration="<pet.power> * 20";level=2;hasParticles=false}
+  
+Pet_Interact_Frog_Nether:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=55} @self
+  - state{s=interact;speed=1;lo=15;p=1} @self
+  - partvis{m=pet_frog_Nether;p=fly;v=true;em=true;child=true;delay=1} @self
+  - effect:sound{s=entity.bee.loop;volume=0.7;pitch=1.3;delay=2} @self
+  - stopsound{s=entity.bee.loop;delay=35} @PIR{r=10}
+  
+  - delay 35
+  
+  - effect:sound{s=entity.slime.attack;volume=0.8;pitch=1.1} @self
+  
+  - delay 4
+  
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.1} @self
+  - partvis{m=pet_frog_Nether;p=fly;v=false;em=true;child=true} @self
+Pet_Frog_Nether_Skill:
+  Cooldown: 5
+  Conditions:
+  - offgcd
+  - targetwithin{d=10} true
+  Skills:
+  - gcd{ticks=52}
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=40;repeati=1}
+  - delay 20
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=35;level=50;hasParticles=false} @self
+  
+  - delay 12
+  
+  - effect:sound{s=entity.frog.ambient;volume=0.8;pitch=1.3} @self
+  - effect:sound{s=entity.slime.attack;volume=0.8;pitch=1.2} @self
+  - projectile{sfo=0;onHit=Pet_Frog_Nether_Skill_DAMAGE;v=30;i=1;hR=1;vR=1;mr=10;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.7;tyo=1.5} @target
+Pet_Frog_Nether_Skill_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=entity.frog.hurt;volume=0.8;pitch=1.3}
+  - effect:sound{s=block.slime_block.fall;volume=0.8;pitch=1.3}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:particles{particle=lava;amount=5;hS=0.4;vS=0.8;speed=0.2;forwardOffset=0;sideOffset=0;y=0.8}
+  - pull{velocity=5}
+  - potion{type=SLOW;duration="<pet.power> * 20";level=2;hasParticles=false}
+  
+
+Pet_Cacti_Sculk_FX:
+  Skills:
+  - particles{p=sculk_soul;amount=6;hS=0.3;vS=0.5;y=0;size=1;speed=0} @modelpart{mid=pet_cacti_sculk;pid=body;location=0,0.6,0;em=true}
+Pet_Cacti_Frozen_FX:
+  Skills:
+  - particles{p=snowflake;amount=6;hS=0.3;vS=0.5;y=0;size=1;speed=0} @modelpart{mid=pet_cacti_frozen;pid=body;location=0,0.6,0;em=true}
+  
+Pet_Interact_Cacti_Desert:
+  Cooldown: 7
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=34} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=1.4} @self
+  
+  - delay 19
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=1.4} @self
+Pet_Cacti_Desert_Skill:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=45}
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=45;level=50;hasParticles=false} @self
+  
+  - delay 14
+  
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=1.4} @self
+  - effect:sound{s=entity.evoker.cast_spell;volume=0.8;pitch=1.4;delay=2} @owner
+  - orbital{auraName=Spike_Armor_Desert;bulletType=MOB;mob=VFX_Spike_Armor_Desert;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration="<pet.power> * 20";oy=2.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @owner
+  - onDamaged{auraName=Spike_Armor_Desert_OD;d="<pet.power> * 20";oH=Pet_Cacti_Desert_Skill_DAMAGE;cE=false;deflectProjectiles=false} @owner
+Pet_Cacti_Desert_Skill_DAMAGE:
+  Skills:
+  - effect:sound{s=entity.bee.sting;volume=0.7;pitch=1.1} @trigger
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true} @trigger
+  - state{s=hit;speed=1} @MobsInRadius{r=3;types=VFX_Spike_Armor_Desert;ofowner=true;sort=NEAREST;target=armorstands}
+
+Pet_Interact_Cacti_Sculk:
+  Cooldown: 7
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=34} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=1.4} @self
+  
+  - delay 19
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=1.4} @self
+Pet_Cacti_Sculk_Skill:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=45}
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=45;level=50;hasParticles=false} @self
+  
+  - delay 14
+  
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=1.4} @self
+  - effect:sound{s=entity.evoker.cast_spell;volume=0.8;pitch=1.4;delay=2} @owner
+  - orbital{auraName=Spike_Armor_Sculk;bulletType=MOB;mob=VFX_Spike_Armor_Sculk;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration="<pet.power> * 20";oy=2.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @owner
+  - onDamaged{auraName=Spike_Armor_Sculk_OD;d="<pet.power> * 20";oH=Pet_Cacti_Sculk_Skill_DAMAGE;cE=false;deflectProjectiles=false} @owner
+Pet_Cacti_Sculk_Skill_DAMAGE:
+  Skills:
+  - effect:sound{s=entity.bee.sting;volume=0.7;pitch=1.1} @trigger
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true} @trigger
+  - state{s=hit;speed=1} @MobsInRadius{r=3;types=VFX_Spike_Armor_Sculk;ofowner=true;sort=NEAREST;target=armorstands}
+  
+Pet_Interact_Cacti_Frozen:
+  Cooldown: 7
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=34} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=1.4} @self
+  
+  - delay 19
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=1.4} @self
+Pet_Cacti_Frozen_Skill:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=45}
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=45;level=50;hasParticles=false} @self
+  
+  - delay 14
+  
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=1.4} @self
+  - effect:sound{s=entity.evoker.cast_spell;volume=0.8;pitch=1.4;delay=2} @owner
+  - orbital{auraName=Spike_Armor_Frozen;bulletType=MOB;mob=VFX_Spike_Armor_Frozen;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration="<pet.power> * 20";oy=2.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @owner
+  - onDamaged{auraName=Spike_Armor_Frozen_OD;d="<pet.power> * 20";oH=Pet_Cacti_Frozen_Skill_DAMAGE;cE=false;deflectProjectiles=false} @owner
+Pet_Cacti_Frozen_Skill_DAMAGE:
+  Skills:
+  - effect:sound{s=entity.bee.sting;volume=0.7;pitch=1.1} @trigger
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true} @trigger
+  - state{s=hit;speed=1} @MobsInRadius{r=3;types=VFX_Spike_Armor_Frozen;ofowner=true;sort=NEAREST;target=armorstands}
+  
+
+Pet_Knight_Glacial_FX:
+  Skills:
+  - particles{p=snowflake;amount=6;hS=0.3;vS=0.7;y=0;size=1;speed=0.03} @modelpart{mid=pet_knight_glacial;pid=body;location=0,0.4,0;em=true}
+Pet_Knight_Holy_FX:
+  Skills:
+  - particles{p=end_rod;amount=4;hS=0.3;vS=0.7;y=0;size=1;speed=0.03} @modelpart{mid=pet_knight_holy;pid=body;location=0,0.4,0;em=true}
+Pet_Knight_Ender_FX:
+  Skills:
+  - particles{p=portal;amount=8;hS=0.3;vS=0.7;y=0;size=1;speed=0.03} @modelpart{mid=pet_knight_ender;pid=body;location=0,0.1,0;em=true}
+  
+Pet_Interact_Knight_Castle:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=55} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 9
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.5} @self
+  
+  - delay 8
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.5} @self
+  
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=1.4;delay=13} @self
+  - delay 14
+  - effect:sound{s=entity.pillager.ambient;volume=0.8;pitch=1.3} @self
+Pet_Knight_Castle_Skill:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  - targetwithin{d=7} true
+  Skills:
+  - gcd{ticks=75}
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=40;repeati=1}
+  - delay 20
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=55;level=50;hasParticles=false} @self
+  
+  - delay 11
+  
+  - lunge{velocity=1;velocityY=0} @target
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5} @self
+  - delay 2
+  
+  - summon{type=VFX_Knight_Thrust_Castle;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=-0.3}
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=1.2} @self
+  - skill{s=Pet_Knight_Castle_Skill_TOTEM} @targetlocation
+Pet_Knight_Castle_Skill_TOTEM:
+  Skills:
+  - totem{md=2;c=1;oH=Pet_Knight_Castle_Skill_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1}
+Pet_Knight_Castle_Skill_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.2}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - throw{velocity=4;velocityY=0}
+  
+Pet_Interact_Knight_Glacial:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=55} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 9
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.5} @self
+  
+  - delay 8
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.5} @self
+  
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=1.4;delay=13} @self
+  - delay 14
+  - effect:sound{s=entity.pillager.ambient;volume=0.8;pitch=1.3} @self
+Pet_Knight_Glacial_Skill:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  - targetwithin{d=7} true
+  Skills:
+  - gcd{ticks=75}
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=40;repeati=1}
+  - delay 20
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=55;level=50;hasParticles=false} @self
+  
+  - delay 11
+  
+  - lunge{velocity=1;velocityY=0} @target
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5} @self
+  - delay 2
+  
+  - summon{type=VFX_Knight_Thrust_Glacial;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=-0.3}
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=1.2} @self
+  - skill{s=Pet_Knight_Glacial_Skill_TOTEM} @targetlocation
+Pet_Knight_Glacial_Skill_TOTEM:
+  Skills:
+  - totem{md=2;c=1;oH=Pet_Knight_Glacial_Skill_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1}
+Pet_Knight_Glacial_Skill_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.2}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - throw{velocity=4;velocityY=0}
+  
+Pet_Interact_Knight_Holy:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=55} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 9
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.5} @self
+  
+  - delay 8
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.5} @self
+  
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=1.4;delay=13} @self
+  - delay 14
+  - effect:sound{s=entity.pillager.ambient;volume=0.8;pitch=1.3} @self
+Pet_Knight_Holy_Skill:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  - targetwithin{d=7} true
+  Skills:
+  - gcd{ticks=75}
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=40;repeati=1}
+  - delay 20
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=55;level=50;hasParticles=false} @self
+  
+  - delay 11
+  
+  - lunge{velocity=1;velocityY=0} @target
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5} @self
+  - delay 2
+  
+  - summon{type=VFX_Knight_Thrust_Holy;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=-0.3}
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=1.2} @self
+  - skill{s=Pet_Knight_Holy_Skill_TOTEM} @targetlocation
+Pet_Knight_Holy_Skill_TOTEM:
+  Skills:
+  - totem{md=2;c=1;oH=Pet_Knight_Holy_Skill_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1}
+Pet_Knight_Holy_Skill_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.2}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - throw{velocity=4;velocityY=0}
+  
+Pet_Interact_Knight_Ender:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=55} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 9
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.5} @self
+  
+  - delay 8
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.5} @self
+  
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=1.4;delay=13} @self
+  - delay 14
+  - effect:sound{s=entity.pillager.ambient;volume=0.8;pitch=1.3} @self
+Pet_Knight_Ender_Skill:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  - targetwithin{d=7} true
+  Skills:
+  - gcd{ticks=75}
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=40;repeati=1}
+  - delay 20
+  - state{s=skill;lo=15} @self
+  - potion{type=SLOW;duration=55;level=50;hasParticles=false} @self
+  
+  - delay 11
+  
+  - lunge{velocity=1;velocityY=0} @target
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5} @self
+  - delay 2
+  
+  - summon{type=VFX_Knight_Thrust_Ender;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=-0.3}
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=1.2} @self
+  - skill{s=Pet_Knight_Ender_Skill_TOTEM} @targetlocation
+Pet_Knight_Ender_Skill_TOTEM:
+  Skills:
+  - totem{md=2;c=1;oH=Pet_Knight_Ender_Skill_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1}
+Pet_Knight_Ender_Skill_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.2}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - throw{velocity=4;velocityY=0}
+#AlZ3cDTSF1UZJHaRhXQyUUQrNTVyRXbSJlRxEmNC5GZUZUbXlmQtBTcpd1UVZEcRp3aWZXO

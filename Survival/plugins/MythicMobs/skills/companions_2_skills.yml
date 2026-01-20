@@ -1,0 +1,1357 @@
+  
+Cancelattack:
+  Skills:
+  - CancelEvent
+  
+Pet_Step_SFX:
+  Skills:
+  - sound{sound=entity.wolf.step;volume=1;pitch=1.2} @self
+  
+EXP_Gain:
+  Conditions:
+  - incombat true
+  Skills:
+  - petExperience{exp=1} @self
+  
+Pet_Look:
+  Conditions:
+  - incombat castinstead Pet_Look_TARGET
+  - hasaura{n=NO_LOOK} false
+  Skills:
+  - look{headOnly=false;immediately=true} @PetOwner
+  
+Pet_Look_TARGET:
+  Conditions:
+  - hasaura{n=NO_LOOK} false
+  Skills:
+  - look{headOnly=false;immediately=true} @target
+Pet_Look_FORCELOOKTARGET:
+  Conditions:
+  - hasaura{n=NO_LOOK} false
+  Skills:
+  - look{headOnly=false;immediately=true;force=true} @target
+
+
+
+SFX_Pet_Outlaw_Spin_Pistol:
+  Cooldown: 0
+  Conditions:
+  - offgcd
+  Skills:
+  - effect:sound{s=entity.witch.throw;volume=0.2;pitch=1.6;delay=0} @self
+  - effect:sound{s=entity.witch.throw;volume=0.2;pitch=1.6;delay=3} @self
+  - effect:sound{s=entity.witch.throw;volume=0.2;pitch=1.6;delay=6} @self
+
+Pet_Interact_Outlaw_Wild_West:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=52} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 14
+  - effect:sound{s=block.wool.place;volume=0.6;pitch=1.1} @self
+  - effect:sound{s=entity.vindicator.ambient;volume=0.5;pitch=0.7} @self
+  
+
+Pet_Outlaw_Wild_West_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=25} true
+  Skills:
+  - gcd{ticks=100}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=60;repeati=10}
+  - effect:sound{s=companions_2_sounds:samus.companions_2.showdown;volume=0.8;pitch=1;delay=3} @self
+  - delay 15
+  - skill{s=Pet_Outlaw_Wild_West_SHOT;repeat=3;repeati=3} @EIR{r=25;limit=1;conditions=[  - hasaura{aura=VFX_Red_Target} false  - owner false ]}
+  
+  - delay 39
+
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  - delay 3
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  - delay 3
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  - delay 3
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  
+  - delay 20
+  - effect:sound{s=entity.breeze.shoot;volume=0.4;pitch=2} @self
+
+  - delay 19
+
+  - setspeed{speed=1.5;type=walking} @self
+Pet_Outlaw_Wild_West_SHOT:
+  Skills:
+  - orbital{auraName=VFX_Red_Target;bulletType=MOB;mob=VFX_Red_Target;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=40;oy=2.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  - delay 40
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:sound{s=entity.iron_golem.damage;volume=0.5;pitch=1.5}
+  - particles{p=Campfire_Cosy_Smoke;amount=3;hS=0.2;vS=0.2;y=1;size=1;speed=0.01}
+  - particles{p=smoke;amount=9;hS=0.3;vS=0.3;y=1;size=1;speed=0.02}
+
+
+
+
+
+Pet_Outlaw_Cyborg_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=25} true
+  Skills:
+  - gcd{ticks=100}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=60;repeati=10}
+  - effect:sound{s=companions_2_sounds:samus.companions_2.showdown;volume=0.8;pitch=1;delay=3} @self
+  - delay 15
+  - skill{s=Pet_Outlaw_Cyborg_SHOT;repeat=3;repeati=3} @EIR{r=25;limit=1;conditions=[  - hasaura{aura=VFX_Blue_Target} false  - owner false ]}
+  
+  - delay 39
+
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  - delay 3
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  - delay 3
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  - delay 3
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  
+  - delay 20
+  - effect:sound{s=entity.breeze.shoot;volume=0.4;pitch=2} @self
+
+  - delay 19
+
+  - setspeed{speed=1.5;type=walking} @self
+Pet_Outlaw_Cyborg_SHOT:
+  Skills:
+  - orbital{auraName=VFX_Blue_Target;bulletType=MOB;mob=VFX_Blue_Target;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=40;oy=2.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  - delay 40
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:sound{s=entity.iron_golem.damage;volume=0.5;pitch=1.5}
+  - particles{p=Campfire_Cosy_Smoke;amount=3;hS=0.2;vS=0.2;y=1;size=1;speed=0.01}
+  - particles{p=Soul_Fire_Flame;amount=9;hS=0.3;vS=0.3;y=1;size=1;speed=0.02}
+
+
+
+
+
+Pet_Outlaw_Officer_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=25} true
+  Skills:
+  - gcd{ticks=100}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=60;repeati=10}
+  - effect:sound{s=companions_2_sounds:samus.companions_2.showdown;volume=0.8;pitch=1;delay=3} @self
+  - delay 15
+  - skill{s=Pet_Outlaw_Officer_SHOT;repeat=3;repeati=3} @EIR{r=25;limit=1;conditions=[  - hasaura{aura=VFX_Red_Target} false  - owner false ]}
+  
+  - delay 39
+
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  - delay 3
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  - delay 3
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  - delay 3
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  
+  - delay 20
+  - effect:sound{s=entity.breeze.shoot;volume=0.4;pitch=2} @self
+
+  - delay 19
+
+  - setspeed{speed=1.5;type=walking} @self
+Pet_Outlaw_Officer_SHOT:
+  Skills:
+  - orbital{auraName=VFX_Red_Target;bulletType=MOB;mob=VFX_Red_Target;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=40;oy=2.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  - delay 40
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:sound{s=entity.iron_golem.damage;volume=0.5;pitch=1.5}
+  - particles{p=Campfire_Cosy_Smoke;amount=3;hS=0.2;vS=0.2;y=1;size=1;speed=0.01}
+  - particles{p=smoke;amount=9;hS=0.3;vS=0.3;y=1;size=1;speed=0.02}
+
+
+
+
+Pet_Outlaw_Steampunk_FX:
+  Skills:
+  - particles{p=Campfire_Cosy_Smoke;amount=1;hS=0;vS=0;y=0;size=1;speed=0} @modelpart{mid=pet_outlaw_steampunk;pid=left_arm;location=0,0.6,0;em=true}
+  - particles{p=Campfire_Cosy_Smoke;amount=1;hS=0;vS=0;y=0;size=1;speed=0} @modelpart{mid=pet_outlaw_steampunk;pid=right_arm;location=0,0.6,0;em=true}
+
+Pet_Outlaw_Steampunk_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=25} true
+  Skills:
+  - gcd{ticks=100}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+  - skill{s=Pet_Look_FORCELOOKTARGET;repeat=60;repeati=10}
+  - effect:sound{s=companions_2_sounds:samus.companions_2.showdown;volume=0.8;pitch=1;delay=3} @self
+  - delay 15
+  - skill{s=Pet_Outlaw_Steampunk_SHOT;repeat=3;repeati=3} @EIR{r=25;limit=1;conditions=[  - hasaura{aura=VFX_Yellow_Target} false  - owner false ]}
+  
+  - delay 39
+
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  - delay 3
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  - delay 3
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  - delay 3
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=block.chain.break;volume=0.8;pitch=1.6;delay=6} @self
+  
+  - delay 20
+  - effect:sound{s=entity.breeze.shoot;volume=0.4;pitch=2} @self
+
+  - delay 19
+
+  - setspeed{speed=1.5;type=walking} @self
+Pet_Outlaw_Steampunk_SHOT:
+  Skills:
+  - orbital{auraName=VFX_Yellow_Target;bulletType=MOB;mob=VFX_Yellow_Target;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=40;oy=2.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  - delay 40
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:sound{s=entity.iron_golem.damage;volume=0.5;pitch=1.5}
+  - particles{p=Campfire_Cosy_Smoke;amount=3;hS=0.2;vS=0.2;y=1;size=1;speed=0.01}
+  - particles{p=Small_Flame;amount=9;hS=0.3;vS=0.3;y=1;size=1;speed=0.02}
+  - particles{p=Lava;amount=4;hS=0.3;vS=0.3;y=1;size=1;speed=0.02}
+
+
+
+Pet_Interact_Griffon_Griffon:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=51} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 16
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.4;pitch=1.4} @self
+  - effect:sound{s=entity.parrot.ambient;volume=0.7;pitch=1.2} @self
+
+
+Pet_Griffon_Griffon_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=70}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+
+  - delay 15
+  - delay 26
+
+  - effect:sound{s=block.anvil.land;volume=0.4;pitch=1.3} @self
+  - effect:sound{s=entity.illusioner.prepare_blindness;volume=0.7;pitch=1.3} @self
+  - heal{a=<pet.power>} @owner
+  - potion{type=DAMAGE_RESISTANCE;duration="<pet.power> * 20";level=1;hasParticles=false} @owner
+  - orbital{auraName=Pet_Griffon_Griffon_Skill_FX;onTick=Pet_Griffon_Griffon_Skill_FX;r=0.5;points=20;i=10;duration=30;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=0} @owner
+  - orbital{startingpoint=90;auraName=Pet_Griffon_Griffon_Skill_FX2;onTick=Pet_Griffon_Griffon_Skill_FX;r=0.5;points=20;i=10;duration=30;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=0} @owner
+  
+  - delay 28
+
+  - setspeed{speed=1.5;type=walking} @self
+
+Pet_Griffon_Griffon_Skill_FX:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#fff780;color2=#ffcb5c;size=0.3;amount=1;hS=0;vS=0;speed=0;repeat=5;repeati=10} @origin
+  - modifyProjectile{trait=YOFFSET;action=ADD;value=0.06}
+
+
+
+
+
+Pet_Griffon_Phoenix_FX:
+  Skills:
+  - particles{p=flame;amount=15;hS=0.4;vS=0.3;y=0;size=0.7;speed=0} @modelpart{mid=pet_Griffon_Phoenix;pid=root;location=0,0,0;em=true}
+  
+Pet_Griffon_Phoenix_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=70}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+
+  - delay 15
+  - delay 26
+
+  - effect:sound{s=block.anvil.land;volume=0.4;pitch=1.3} @self
+  - effect:sound{s=entity.illusioner.prepare_blindness;volume=0.7;pitch=1.3} @self
+  - effect:sound{s=entity.blaze.ambient;volume=0.55;pitch=1.4} @self
+  - heal{a=<pet.power>} @owner
+  - potion{type=DAMAGE_RESISTANCE;duration="<pet.power> * 20";level=1;hasParticles=false} @owner
+  - orbital{auraName=Pet_Griffon_Phoenix_Skill_FX;onTick=Pet_Griffon_Phoenix_Skill_FX;r=0.5;points=20;i=10;duration=30;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=0} @owner
+  - orbital{startingpoint=90;auraName=Pet_Griffon_Phoenix_Skill_FX2;onTick=Pet_Griffon_Phoenix_Skill_FX;r=0.5;points=20;i=10;duration=30;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=0} @owner
+  
+  - delay 28
+
+  - setspeed{speed=1.5;type=walking} @self
+
+Pet_Griffon_Phoenix_Skill_FX:
+  Skills:
+  - effect:particles{p=flame;size=0.5;amount=1;hS=0;vS=0;speed=0;repeat=5;repeati=10} @origin
+  - modifyProjectile{trait=YOFFSET;action=ADD;value=0.06}
+
+
+
+
+
+
+Pet_Griffon_Rockstar_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=70}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+
+  - delay 15
+  - delay 26
+
+  - effect:sound{s=block.anvil.land;volume=0.4;pitch=1.3} @self
+  - effect:sound{s=block.beacon.power_select;volume=0.7;pitch=1.7} @self
+  - heal{a=<pet.power>} @owner
+  - potion{type=DAMAGE_RESISTANCE;duration="<pet.power> * 20";level=1;hasParticles=false} @owner
+  - orbital{auraName=Pet_Griffon_Rockstar_Skill_FX;onTick=Pet_Griffon_Rockstar_Skill_FX;r=0.8;points=20;i=10;duration=15;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=0} @owner
+  - orbital{startingpoint=90;auraName=Pet_Griffon_Rockstar_Skill_FX2;onTick=Pet_Griffon_Rockstar_Skill_FX;r=0.8;points=20;i=10;duration=15;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=0} @owner
+  
+  - delay 28
+
+  - setspeed{speed=1.5;type=walking} @self
+
+Pet_Griffon_Rockstar_Skill_FX:
+  Skills:
+  - effect:particles{p=note;size=0.3;amount=1;hS=0;vS=0;speed=0.1;repeat=1;repeati=10} @origin
+  - modifyProjectile{trait=YOFFSET;action=ADD;value=0.06}
+
+
+
+
+
+Pet_Griffon_Khonsu_FX:
+  Skills:
+  - particles{p=dust_color_transition;color1=#f2ffff;color2=#7ae5ff;amount=15;hS=0.4;vS=0.4;y=0;size=0.7;speed=0} @modelpart{mid=pet_Griffon_Khonsu;pid=root;location=0,0,0;em=true}
+  
+Pet_Griffon_Khonsu_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=70}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+
+  - delay 15
+  - delay 26
+
+  - effect:sound{s=block.anvil.land;volume=0.4;pitch=1.3} @self
+  - effect:sound{s=entity.illusioner.prepare_blindness;volume=0.7;pitch=1.3} @self
+  - heal{a=<pet.power>} @owner
+  - potion{type=DAMAGE_RESISTANCE;duration="<pet.power> * 20";level=1;hasParticles=false} @owner
+  - orbital{auraName=Pet_Griffon_Khonsu_Skill_FX;onTick=Pet_Griffon_Khonsu_Skill_FX;r=0.5;points=20;i=10;duration=30;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=0} @owner
+  - orbital{startingpoint=90;auraName=Pet_Griffon_Khonsu_Skill_FX2;onTick=Pet_Griffon_Khonsu_Skill_FX;r=0.5;points=20;i=10;duration=30;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=0} @owner
+  
+  - delay 28
+
+  - setspeed{speed=1.5;type=walking} @self
+
+Pet_Griffon_Khonsu_Skill_FX:
+  Skills:
+  - effect:particles{p=end_rod;size=0.3;amount=1;hS=0;vS=0;speed=0;repeat=5;repeati=10} @origin
+  - modifyProjectile{trait=YOFFSET;action=ADD;value=0.06}
+
+
+
+
+
+Pet_Griffon_Ra_FX:
+  Skills:
+  - particles{p=dust_color_transition;color1=#ffa436;color2=#d10a00;amount=15;hS=0.4;vS=0.4;y=0;size=0.7;speed=0} @modelpart{mid=pet_Griffon_Ra;pid=root;location=0,0,0;em=true}
+  
+Pet_Griffon_Ra_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=70}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+
+  - delay 15
+  - delay 26
+
+  - effect:sound{s=block.anvil.land;volume=0.4;pitch=1.3} @self
+  - effect:sound{s=entity.illusioner.prepare_blindness;volume=0.7;pitch=1.3} @self
+  - heal{a=<pet.power>} @owner
+  - potion{type=DAMAGE_RESISTANCE;duration="<pet.power> * 20";level=1;hasParticles=false} @owner
+  - orbital{auraName=Pet_Griffon_Ra_Skill_FX;onTick=Pet_Griffon_Ra_Skill_FX;r=0.5;points=20;i=10;duration=30;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=0} @owner
+  - orbital{startingpoint=90;auraName=Pet_Griffon_Ra_Skill_FX2;onTick=Pet_Griffon_Ra_Skill_FX;r=0.5;points=20;i=10;duration=30;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=0} @owner
+  
+  - delay 28
+
+  - setspeed{speed=1.5;type=walking} @self
+
+Pet_Griffon_Ra_Skill_FX:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#ff6512;color2=#d60000;size=0.7;amount=1;hS=0;vS=0;speed=0;repeat=5;repeati=10} @origin
+  - effect:particles{p=small_flame;size=0.5;amount=1;hS=0;vS=0;speed=0;repeat=5;repeati=10} @origin
+  - modifyProjectile{trait=YOFFSET;action=ADD;value=0.06}
+
+
+
+Pet_Interact_Samurai_Shiba_Samurai:
+  Cooldown: 6
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=107} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 65
+  - effect:sound{s=entity.wolf.ambient;volume=0.5;pitch=1.3} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.5;pitch=1} @self
+
+
+Pet_Samurai_Shiba_Samurai_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=100}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+  
+  - delay 15
+  - delay 17
+
+  - effect:sound{s=item.axe.scrape;volume=0.65;pitch=1.5} @self
+
+  - delay 13
+
+  - lunge{velocity=3.5;velocityY=0} @target
+  - effect:sound{s=entity.player.attack.sweep;volume=0.6;pitch=0.7;delay=2} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.5;pitch=1.5} @self
+  - effect:sound{s=item.trident.throw;volume=0.6;pitch=0.7;delay=2} @self
+  - effect:sound{s=item.trident.thunder;volume=0.3;pitch=4;delay=2} @self
+  - delay 2
+  
+  - summon{type=VFX_SLASH_Pet_Samurai_Shiba_Samurai;amount=1;radius=0;yRadius=0;onSurface=true} @target
+  - particles{p=Cherry_Leaves;amount=15;hS=1.7;vS=0.8;y=0.8;size=1;speed=0} @targetlocation
+  - skill{s=Pet_Samurai_Shiba_Samurai_Swift_Strike_TOTEM} @targetlocation
+
+  - delay 28
+
+  - effect:sound{s=item.axe.scrape;volume=0.65;pitch=1.3} @self
+
+  - delay 25
+
+  - setspeed{speed=1.5;type=walking} @self
+Pet_Samurai_Shiba_Samurai_Swift_Strike_TOTEM:
+  Skills:
+  - totem{md=2;c=1;oH=Pet_Samurai_Shiba_Samurai_Swift_Strike_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=10}
+Pet_Samurai_Shiba_Samurai_Swift_Strike_DAMAGE:
+  Skills:
+  - skill{s=Pet_Samurai_Shiba_Samurai_Swift_Strike_DAMAGE_D} @EntitiesNearOrigin{r=4;ignore=armorstands}
+Pet_Samurai_Shiba_Samurai_Swift_Strike_DAMAGE_D:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.2}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+
+  - damage{a="<pet.damagemodifier> * 0.3";pkb=true;hnp=true;hp=true;repeat=<pet.power>;repeati=20;delay=20}
+  - effect:sound{s=entity.player.hurt;volume=0.4;pitch=1.1;repeat=<pet.power>;repeati=20;delay=20}
+  - effect:particles{particle=Dripping_Lava;amount=10;hS=0.2;vS=0.6;speed=0;forwardOffset=0;sideOffset=0;y=0.7;repeat=<pet.power> * 2;repeati=100;delay=10}
+
+
+
+
+
+Pet_Samurai_Shiba_Bamboo_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=100}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+  
+  - delay 15
+  - delay 17
+
+  - effect:sound{s=item.axe.scrape;volume=0.65;pitch=1.5} @self
+
+  - delay 13
+
+  - lunge{velocity=3.5;velocityY=0} @target
+  - effect:sound{s=entity.player.attack.sweep;volume=0.6;pitch=0.7;delay=2} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.5;pitch=1.5} @self
+  - effect:sound{s=item.trident.throw;volume=0.6;pitch=0.7;delay=2} @self
+  - effect:sound{s=item.trident.thunder;volume=0.3;pitch=4;delay=2} @self
+  - delay 2
+  
+  - summon{type=VFX_SLASH_Pet_Samurai_Shiba_Bamboo;amount=1;radius=0;yRadius=0;onSurface=true} @target
+  - particles{p=Totem_Of_Undying;amount=15;hS=1.7;vS=0.8;y=0.8;size=1;speed=0} @targetlocation
+  - skill{s=Pet_Samurai_Shiba_Bamboo_Swift_Strike_TOTEM} @targetlocation
+
+  - delay 28
+
+  - effect:sound{s=item.axe.scrape;volume=0.65;pitch=1.3} @self
+
+  - delay 25
+
+  - setspeed{speed=1.5;type=walking} @self
+Pet_Samurai_Shiba_Bamboo_Swift_Strike_TOTEM:
+  Skills:
+  - totem{md=2;c=1;oH=Pet_Samurai_Shiba_Bamboo_Swift_Strike_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=10}
+Pet_Samurai_Shiba_Bamboo_Swift_Strike_DAMAGE:
+  Skills:
+  - skill{s=Pet_Samurai_Shiba_Bamboo_Swift_Strike_DAMAGE_D} @EntitiesNearOrigin{r=4;ignore=armorstands}
+Pet_Samurai_Shiba_Bamboo_Swift_Strike_DAMAGE_D:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.2}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+
+  - damage{a="<pet.damagemodifier> * 0.3";pkb=true;hnp=true;hp=true;repeat=<pet.power>;repeati=20;delay=20}
+  - effect:sound{s=entity.player.hurt;volume=0.4;pitch=1.1;repeat=<pet.power>;repeati=20;delay=20}
+  - effect:particles{particle=Dripping_Lava;amount=10;hS=0.2;vS=0.6;speed=0;forwardOffset=0;sideOffset=0;y=0.7;repeat=<pet.power> * 2;repeati=100;delay=10}
+
+
+
+
+
+Pet_Samurai_Shiba_Pirate_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=100}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+  
+  - delay 15
+  - delay 17
+
+  - effect:sound{s=item.axe.scrape;volume=0.65;pitch=1.5} @self
+
+  - delay 13
+
+  - lunge{velocity=3.5;velocityY=0} @target
+  - effect:sound{s=entity.player.attack.sweep;volume=0.6;pitch=0.7;delay=2} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.5;pitch=1.5} @self
+  - effect:sound{s=item.trident.throw;volume=0.6;pitch=0.7;delay=2} @self
+  - effect:sound{s=item.trident.thunder;volume=0.3;pitch=4;delay=2} @self
+  - delay 2
+  
+  - summon{type=VFX_SLASH_Pet_Samurai_Shiba_Pirate;amount=1;radius=0;yRadius=0;onSurface=true} @target
+  - particles{p=splash;amount=23;hS=1.7;vS=0.8;y=0.8;size=1;speed=0} @targetlocation
+  - skill{s=Pet_Samurai_Shiba_Pirate_Swift_Strike_TOTEM} @targetlocation
+
+  - delay 28
+
+  - effect:sound{s=item.axe.scrape;volume=0.65;pitch=1.3} @self
+
+  - delay 25
+
+  - setspeed{speed=1.5;type=walking} @self
+Pet_Samurai_Shiba_Pirate_Swift_Strike_TOTEM:
+  Skills:
+  - totem{md=2;c=1;oH=Pet_Samurai_Shiba_Pirate_Swift_Strike_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=10}
+Pet_Samurai_Shiba_Pirate_Swift_Strike_DAMAGE:
+  Skills:
+  - skill{s=Pet_Samurai_Shiba_Pirate_Swift_Strike_DAMAGE_D} @EntitiesNearOrigin{r=4;ignore=armorstands}
+Pet_Samurai_Shiba_Pirate_Swift_Strike_DAMAGE_D:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.2}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+
+  - damage{a="<pet.damagemodifier> * 0.3";pkb=true;hnp=true;hp=true;repeat=<pet.power>;repeati=20;delay=20}
+  - effect:sound{s=entity.player.hurt;volume=0.4;pitch=1.1;repeat=<pet.power>;repeati=20;delay=20}
+  - effect:particles{particle=Dripping_Lava;amount=10;hS=0.2;vS=0.6;speed=0;forwardOffset=0;sideOffset=0;y=0.7;repeat=<pet.power> * 2;repeati=100;delay=10}
+
+
+
+
+Pet_Samurai_Shiba_New_Year_FX:
+  Skills:
+  - particles{p=flame;amount=15;hS=0.3;vS=0.3;y=0;size=0.7;speed=0.01} @modelpart{mid=pet_Samurai_Shiba_New_Year;pid=root;location=0,0.3,0;em=true}
+  
+Pet_Samurai_Shiba_New_Year_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=100}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+  
+  - delay 15
+  - delay 17
+
+  - effect:sound{s=item.axe.scrape;volume=0.65;pitch=1.5} @self
+
+  - delay 13
+
+  - lunge{velocity=3.5;velocityY=0} @target
+  - effect:sound{s=entity.player.attack.sweep;volume=0.6;pitch=0.7;delay=2} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.5;pitch=1.5} @self
+  - effect:sound{s=item.trident.throw;volume=0.6;pitch=0.7;delay=2} @self
+  - effect:sound{s=item.trident.thunder;volume=0.3;pitch=4;delay=2} @self
+  - delay 2
+  
+  - summon{type=VFX_SLASH_Pet_Samurai_Shiba_New_Year;amount=1;radius=0;yRadius=0;onSurface=true} @target
+  - particles{p=lava;amount=10;hS=1.7;vS=0.8;y=0.8;size=1;speed=0} @targetlocation
+  - particles{p=flame;amount=15;hS=1.7;vS=0.8;y=0.8;size=0.7;speed=0.03} @targetlocation
+  - skill{s=Pet_Samurai_Shiba_New_Year_Swift_Strike_TOTEM} @targetlocation
+
+  - delay 28
+
+  - effect:sound{s=item.axe.scrape;volume=0.65;pitch=1.3} @self
+
+  - delay 25
+
+  - setspeed{speed=1.5;type=walking} @self
+Pet_Samurai_Shiba_New_Year_Swift_Strike_TOTEM:
+  Skills:
+  - totem{md=2;c=1;oH=Pet_Samurai_Shiba_New_Year_Swift_Strike_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=10}
+Pet_Samurai_Shiba_New_Year_Swift_Strike_DAMAGE:
+  Skills:
+  - skill{s=Pet_Samurai_Shiba_New_Year_Swift_Strike_DAMAGE_D} @EntitiesNearOrigin{r=4;ignore=armorstands}
+Pet_Samurai_Shiba_New_Year_Swift_Strike_DAMAGE_D:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1.2}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+
+  - damage{a="<pet.damagemodifier> * 0.3";pkb=true;hnp=true;hp=true;repeat=<pet.power>;repeati=20;delay=20}
+  - effect:sound{s=entity.player.hurt;volume=0.4;pitch=1.1;repeat=<pet.power>;repeati=20;delay=20}
+  - effect:particles{particle=Dripping_Lava;amount=10;hS=0.2;vS=0.6;speed=0;forwardOffset=0;sideOffset=0;y=0.7;repeat=<pet.power> * 2;repeati=100;delay=10}
+
+
+
+SFX_Pet_Necromancer_Cat_Necromancer:
+  Cooldown: 0
+  Conditions:
+  - offgcd
+  Skills:
+  - effect:sound{s=entity.cat.purreow;volume=0.8;pitch=1;delay=0} @self
+
+Pet_Interact_Necromancer_Cat_Necromancer:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=53} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 24
+  - effect:sound{s=entity.witch.throw;volume=0.6;pitch=1} @self
+  - effect:sound{s=block.ancient_debris.hit;volume=0.8;pitch=0.7} @self
+  - delay 1
+  - effect:sound{s=entity.witch.throw;volume=0.6;pitch=1.5;delay=0} @self
+  - effect:sound{s=entity.witch.throw;volume=0.6;pitch=1.2;delay=2} @self
+  - effect:sound{s=entity.witch.throw;volume=0.6;pitch=0.8;delay=4} @self
+  - effect:sound{s=entity.witch.throw;volume=0.6;pitch=0.5;delay=6} @self
+
+
+Pet_Necromancer_Cat_Necromancer_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=22} true
+  Skills:
+  - gcd{ticks=60}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+  
+  - delay 15
+  - delay 19
+
+  - effect:sound{s=entity.wither.shoot;volume=0.2;pitch=1.3;repeat=2;repeati=7} @self
+  - projectile{bulletType=MOB;mob=VFX_Necrocat_Skull;sfo=0;onHit=Pet_Necromancer_Cat_Necromancer_Skull_Barrage_DAMAGE;a=0.98;v=8;i=10;hR=0.7;vR=0.7;mr=25;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.8;tyo=0.4;delay=0;repeat=2;repeati=7;drawhitbox=false;byo=0} @target
+
+  - delay 26
+
+  - setspeed{speed=1.5;type=walking} @self
+Pet_Necromancer_Cat_Necromancer_Skull_Barrage_DAMAGE:
+  Skills:
+  - skill{s=Pet_Necromancer_Cat_Necromancer_Skull_Barrage_DAMAGE_D} @EntitiesNearOrigin{r=4;limit=3;sort=NEAREST}
+Pet_Necromancer_Cat_Necromancer_Skull_Barrage_DAMAGE_D:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=entity.wither.hurt;volume=0.3;pitch=0.8}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:particles{particle=Soul;amount=15;hS=0.6;vS=0.6;speed=0;forwardOffset=0;sideOffset=0;y=0.8}
+  - potion{type=SLOW;duration=60;level=1;hasParticles=false}
+  - effect:particles{particle=Sculk_Charge_Pop;amount=15;hS=0.4;vS=0.1;speed=0;forwardOffset=0;sideOffset=0;y=0.05;repeat=5;repeati=100}
+  
+
+
+
+
+Pet_Necromancer_Cat_Santa_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=22} true
+  Skills:
+  - gcd{ticks=60}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+  
+  - delay 15
+  - delay 19
+
+  - effect:sound{s=entity.wither.shoot;volume=0.2;pitch=1.3;repeat=2;repeati=7} @self
+  - projectile{bulletType=MOB;mob=VFX_Necrocat_Gift;sfo=0;onHit=Pet_Necromancer_Cat_Santa_Skull_Barrage_DAMAGE;a=0.98;v=8;i=10;hR=0.7;vR=0.7;mr=25;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.8;tyo=0.4;delay=0;repeat=2;repeati=7;drawhitbox=false;byo=0} @target
+
+  - delay 26
+
+  - setspeed{speed=1.5;type=walking} @self
+Pet_Necromancer_Cat_Santa_Skull_Barrage_DAMAGE:
+  Skills:
+  - skill{s=Pet_Necromancer_Cat_Santa_Skull_Barrage_DAMAGE_D} @EntitiesNearOrigin{r=4;limit=3;sort=NEAREST}
+Pet_Necromancer_Cat_Santa_Skull_Barrage_DAMAGE_D:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=entity.wither.hurt;volume=0.3;pitch=0.8}
+  - effect:sound{s=block.note_block.chime;volume=0.5;pitch=1}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:particles{particle=end_rod;amount=15;hS=0.6;vS=0.6;speed=0;forwardOffset=0;sideOffset=0;y=0.8}
+  - potion{type=SLOW;duration=60;level=1;hasParticles=false}
+  - effect:particles{particle=Item_Snowball;amount=15;hS=0.4;vS=0.1;speed=0;forwardOffset=0;sideOffset=0;y=0.05;repeat=5;repeati=100}
+
+
+
+
+Pet_Necromancer_Cat_Fire_Mage_FX:
+  Skills:
+  - particles{p=flame;amount=15;hS=0.4;vS=0.3;y=0;size=0.7;speed=0.01} @modelpart{mid=pet_necromancer_Cat_Fire_Mage;pid=root;location=0,0.1,0;em=true}
+  
+Pet_Necromancer_Cat_Fire_Mage_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=22} true
+  Skills:
+  - gcd{ticks=60}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+  
+  - delay 15
+  - delay 19
+
+  - effect:sound{s=entity.wither.shoot;volume=0.2;pitch=1.3;repeat=2;repeati=7} @self
+  - projectile{bulletType=MOB;mob=VFX_Necrocat_Fireball;sfo=0;onHit=Pet_Necromancer_Cat_Fire_Mage_Skull_Barrage_DAMAGE;a=0.98;v=8;i=10;hR=0.7;vR=0.7;mr=25;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.8;tyo=0.4;delay=0;repeat=2;repeati=7;drawhitbox=false;byo=0} @target
+
+  - delay 26
+
+  - setspeed{speed=1.5;type=walking} @self
+Pet_Necromancer_Cat_Fire_Mage_Skull_Barrage_DAMAGE:
+  Skills:
+  - skill{s=Pet_Necromancer_Cat_Fire_Mage_Skull_Barrage_DAMAGE_D} @EntitiesNearOrigin{r=4;limit=3;sort=NEAREST}
+Pet_Necromancer_Cat_Fire_Mage_Skull_Barrage_DAMAGE_D:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=entity.wither.hurt;volume=0.3;pitch=0.8}
+  - effect:sound{s=entity.player.hurt_on_fire;volume=0.4;pitch=1}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:particles{particle=flame;amount=15;hS=0.6;vS=0.6;speed=0;forwardOffset=0;sideOffset=0;y=0.8}
+  - potion{type=SLOW;duration=60;level=1;hasParticles=false}
+  - effect:particles{particle=lava;amount=3;hS=0.4;vS=0.1;speed=0;forwardOffset=0;sideOffset=0;y=0.05;repeat=5;repeati=100}
+
+
+
+
+Pet_Necromancer_Cat_Ice_Mage_FX:
+  Skills:
+  - particles{p=snowflake;amount=12;hS=0.35;vS=0.3;y=0;size=0.7;speed=0.01} @modelpart{mid=pet_necromancer_Cat_Ice_Mage;pid=root;location=0,0.1,0;em=true}
+  
+Pet_Necromancer_Cat_Ice_Mage_Skill:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=22} true
+  Skills:
+  - gcd{ticks=60}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill;li=105;lo=15} @self
+  
+  - delay 15
+  - delay 19
+
+  - effect:sound{s=entity.wither.shoot;volume=0.2;pitch=1.3;repeat=2;repeati=7} @self
+  - projectile{bulletType=MOB;mob=VFX_Necrocat_Iceball;sfo=0;onHit=Pet_Necromancer_Cat_Ice_Mage_Skull_Barrage_DAMAGE;a=0.98;v=8;i=10;hR=0.7;vR=0.7;mr=25;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.8;tyo=0.4;delay=0;repeat=2;repeati=7;drawhitbox=false;byo=0} @target
+
+  - delay 26
+
+  - setspeed{speed=1.5;type=walking} @self
+Pet_Necromancer_Cat_Ice_Mage_Skull_Barrage_DAMAGE:
+  Skills:
+  - skill{s=Pet_Necromancer_Cat_Ice_Mage_Skull_Barrage_DAMAGE_D} @EntitiesNearOrigin{r=4;limit=3;sort=NEAREST}
+Pet_Necromancer_Cat_Ice_Mage_Skull_Barrage_DAMAGE_D:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=entity.wither.hurt;volume=0.3;pitch=0.8}
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true}
+  - effect:particles{particle=snowflake;amount=15;hS=0.6;vS=0.6;speed=0;forwardOffset=0;sideOffset=0;y=0.8}
+  - potion{type=SLOW;duration=60;level=1;hasParticles=false}
+  - effect:particles{particle=block_crack;m=ICE;amount=15;hS=0.4;vS=0.1;speed=0;forwardOffset=0;sideOffset=0;y=0.05;repeat=5;repeati=100}
+
+
+Pet_Necromancer_Cat_Necromancer_Soul_Harvest:
+  Conditions:
+  - targetwithin{d=15} true
+  Skills:
+  - onDeath{od=Pet_Necromancer_Cat_Necromancer_Soul_Harvest_SUMMONSOUL;auraname=SOULHARVEST_DEATH;d=20} @EIR{r=20}
+Pet_Necromancer_Cat_Necromancer_Soul_Harvest_SUMMONSOUL:
+  Skills:
+  - totem{c=1;md=200;oT=Pet_Necromancer_Cat_Necromancer_Soul_Harvest_SUMMONSOUL_TICK;oH=Pet_Necromancer_Cat_Necromancer_Soul_Harvest_SUMMONSOUL_HIT;hnp=false;hp=true;hR=1;vR=1;i=100} @TargetedTarget
+  - sound{sound=entity.bogged.hurt;volume=0.8;pitch=1} @TargetedTarget
+Pet_Necromancer_Cat_Necromancer_Soul_Harvest_SUMMONSOUL_TICK:
+  Skills:
+  - particles{p=dust_color_transition;color1=#1cffb0;color2=#09e3d8;amount=10;hS=0.08;vS=0.08;y=0.1;size=0.5;speed=0} @origin
+  - particles{p=dust_color_transition;color1=#0377fc;color2=#30c4ff;amount=15;hS=0.15;vS=0.15;y=0.1;size=0.5;speed=0} @origin
+Pet_Necromancer_Cat_Necromancer_Soul_Harvest_SUMMONSOUL_HIT:
+  Skills:
+  - skill{s=Pet_Necromancer_Cat_Necromancer_Soul_Harvest_SUMMONSOUL_HEAL} @PlayersNearOrigin{r=2.5;conditions=[  - owner true ]}
+Pet_Necromancer_Cat_Necromancer_Soul_Harvest_SUMMONSOUL_HEAL:
+  Skills:
+  - heal{a=<pet.power>} @owner
+  - sound{sound=entity.allay.item_taken;volume=0.6;pitch=1.8} @owner
+  - particles{p=dust_color_transition;color1=#1cffb0;color2=#09e3d8;amount=40;hS=0.35;vS=0.8;y=0.7;size=0.5;speed=0} @owner
+
+
+
+
+
+Pet_Necromancer_Cat_Santa_Soul_Harvest:
+  Conditions:
+  - targetwithin{d=15} true
+  Skills:
+  - onDeath{od=Pet_Necromancer_Cat_Santa_Soul_Harvest_SUMMONSOUL;auraname=SOULHARVEST_DEATH;d=20} @EIR{r=20}
+Pet_Necromancer_Cat_Santa_Soul_Harvest_SUMMONSOUL:
+  Skills:
+  - totem{c=1;md=200;oT=Pet_Necromancer_Cat_Santa_Soul_Harvest_SUMMONSOUL_TICK;oH=Pet_Necromancer_Cat_Santa_Soul_Harvest_SUMMONSOUL_HIT;hnp=false;hp=true;hR=1;vR=1;i=100} @TargetedTarget
+  - sound{sound=entity.bogged.hurt;volume=0.8;pitch=1} @TargetedTarget
+Pet_Necromancer_Cat_Santa_Soul_Harvest_SUMMONSOUL_TICK:
+  Skills:
+  - particles{p=end_rod;amount=5;hS=0.08;vS=0.08;y=0.1;size=0.5;speed=0} @origin
+Pet_Necromancer_Cat_Santa_Soul_Harvest_SUMMONSOUL_HIT:
+  Skills:
+  - skill{s=Pet_Necromancer_Cat_Santa_Soul_Harvest_SUMMONSOUL_HEAL} @PlayersNearOrigin{r=2.5;conditions=[  - owner true ]}
+Pet_Necromancer_Cat_Santa_Soul_Harvest_SUMMONSOUL_HEAL:
+  Skills:
+  - heal{a=<pet.power>} @owner
+  - sound{sound=entity.allay.item_taken;volume=0.6;pitch=1.8} @owner
+  - particles{p=dust_color_transition;color1=#b8f3ff;color2=#ffffff;amount=40;hS=0.35;vS=0.8;y=0.7;size=0.5;speed=0} @owner
+
+
+
+
+
+Pet_Necromancer_Cat_Fire_Mage_Soul_Harvest:
+  Conditions:
+  - targetwithin{d=15} true
+  Skills:
+  - onDeath{od=Pet_Necromancer_Cat_Fire_Mage_Soul_Harvest_SUMMONSOUL;auraname=SOULHARVEST_DEATH;d=20} @EIR{r=20}
+Pet_Necromancer_Cat_Fire_Mage_Soul_Harvest_SUMMONSOUL:
+  Skills:
+  - totem{c=1;md=200;oT=Pet_Necromancer_Cat_Fire_Mage_Soul_Harvest_SUMMONSOUL_TICK;oH=Pet_Necromancer_Cat_Fire_Mage_Soul_Harvest_SUMMONSOUL_HIT;hnp=false;hp=true;hR=1;vR=1;i=100} @TargetedTarget
+  - sound{sound=entity.bogged.hurt;volume=0.8;pitch=1} @TargetedTarget
+Pet_Necromancer_Cat_Fire_Mage_Soul_Harvest_SUMMONSOUL_TICK:
+  Skills:
+  - particles{p=flame;amount=10;hS=0.08;vS=0.08;y=0.1;size=0.5;speed=0} @origin
+  - particles{p=dust_color_transition;color1=#ff8812;color2=#d60000;amount=15;hS=0.15;vS=0.15;y=0.1;size=0.5;speed=0} @origin
+Pet_Necromancer_Cat_Fire_Mage_Soul_Harvest_SUMMONSOUL_HIT:
+  Skills:
+  - skill{s=Pet_Necromancer_Cat_Fire_Mage_Soul_Harvest_SUMMONSOUL_HEAL} @PlayersNearOrigin{r=2.5;conditions=[  - owner true ]}
+Pet_Necromancer_Cat_Fire_Mage_Soul_Harvest_SUMMONSOUL_HEAL:
+  Skills:
+  - heal{a=<pet.power>} @owner
+  - sound{sound=entity.allay.item_taken;volume=0.6;pitch=1.8} @owner
+  - particles{p=flame;amount=20;hS=0.35;vS=0.8;y=0.7;size=0.5;speed=0} @owner
+  - particles{p=dust_color_transition;color1=#ff8812;color2=#d60000;amount=40;hS=0.35;vS=0.8;y=0.7;size=0.5;speed=0} @owner
+
+
+
+
+
+Pet_Necromancer_Cat_Ice_Mage_Soul_Harvest:
+  Conditions:
+  - targetwithin{d=15} true
+  Skills:
+  - onDeath{od=Pet_Necromancer_Cat_Ice_Mage_Soul_Harvest_SUMMONSOUL;auraname=SOULHARVEST_DEATH;d=20} @EIR{r=20}
+Pet_Necromancer_Cat_Ice_Mage_Soul_Harvest_SUMMONSOUL:
+  Skills:
+  - totem{c=1;md=200;oT=Pet_Necromancer_Cat_Ice_Mage_Soul_Harvest_SUMMONSOUL_TICK;oH=Pet_Necromancer_Cat_Ice_Mage_Soul_Harvest_SUMMONSOUL_HIT;hnp=false;hp=true;hR=1;vR=1;i=100} @TargetedTarget
+  - sound{sound=entity.bogged.hurt;volume=0.8;pitch=1} @TargetedTarget
+Pet_Necromancer_Cat_Ice_Mage_Soul_Harvest_SUMMONSOUL_TICK:
+  Skills:
+  - particles{p=dust_color_transition;color1=#d6f8ff;color2=#8ad0ff;amount=10;hS=0.08;vS=0.08;y=0.1;size=0.5;speed=0} @origin
+  - particles{p=dust_color_transition;color1=#5485ff;color2=#1034c4;amount=15;hS=0.15;vS=0.15;y=0.1;size=0.5;speed=0} @origin
+Pet_Necromancer_Cat_Ice_Mage_Soul_Harvest_SUMMONSOUL_HIT:
+  Skills:
+  - skill{s=Pet_Necromancer_Cat_Ice_Mage_Soul_Harvest_SUMMONSOUL_HEAL} @PlayersNearOrigin{r=2.5;conditions=[  - owner true ]}
+Pet_Necromancer_Cat_Ice_Mage_Soul_Harvest_SUMMONSOUL_HEAL:
+  Skills:
+  - heal{a=<pet.power>} @owner
+  - sound{sound=entity.allay.item_taken;volume=0.6;pitch=1.8} @owner
+  - particles{p=snowflake;amount=40;hS=0.35;vS=0.8;y=0.7;size=0.5;speed=0} @owner
+
+
+
+SFX_Shark_Step:
+  Skills:
+  - sound{sound=entity.puffer_fish.flop;volume=0.7;pitch=1.3} @self
+
+SFX_Pet_Shark_Oceanic_WADDLE:
+  Cooldown: 0
+  Conditions:
+  - offgcd
+  Skills:
+  - effect:sound{s=entity.cod.flop;volume=0.7;pitch=0.7;delay=0} @self
+  - effect:sound{s=entity.cod.flop;volume=0.7;pitch=0.9;delay=2} @self
+  - effect:sound{s=entity.cod.flop;volume=0.7;pitch=0.8;delay=4} @self
+  - effect:sound{s=entity.cod.flop;volume=0.7;pitch=1.1;delay=6} @self
+  - effect:sound{s=entity.cod.flop;volume=0.7;pitch=0.7;delay=8} @self
+
+Pet_Interact_Shark_Oceanic:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=74} @self
+  - state{s=interact;speed=1;lo=15} @self
+  
+  - delay 16
+  - effect:sound{s=entity.witch.throw;volume=0.8;pitch=1.3} @self
+  - delay 4
+  - effect:sound{s=entity.puffer_fish.flop;volume=0.8;pitch=0.8} @self
+  - delay 29
+  - effect:sound{s=entity.generic.eat;volume=0.8;pitch=1.2;delay=0} @self
+  - effect:sound{s=entity.generic.eat;volume=0.8;pitch=1.2;delay=6} @self
+  - delay 11
+  - effect:sound{s=entity.generic.eat;volume=0.8;pitch=0.6} @self
+
+Pet_Interact_Shark_Baby_Shark:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  - incombat false
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=74} @self
+  - state{s=interact;speed=1;lo=15} @self
+
+  - effect:sound{s=block.note_block.harp;volume=0.6;pitch=0.83} @self
+  - effect:sound{s=block.note_block.harp;volume=0.6;pitch=0.93;delay=10} @self
+  - effect:sound{s=block.note_block.harp;volume=0.6;pitch=1.11;delay=20} @self
+  - effect:sound{s=block.note_block.harp;volume=0.6;pitch=1.11;delay=30} @self
+  - effect:sound{s=block.note_block.harp;volume=0.6;pitch=1.11;delay=34} @self
+  - effect:sound{s=block.note_block.harp;volume=0.6;pitch=1.11;delay=37} @self
+  - effect:sound{s=block.note_block.harp;volume=0.6;pitch=1.11;delay=42} @self
+  - effect:sound{s=block.note_block.harp;volume=0.6;pitch=1.11;delay=45} @self
+  
+  - delay 16
+  - effect:sound{s=entity.witch.throw;volume=0.8;pitch=1.3} @self
+  - delay 4
+  - effect:sound{s=entity.puffer_fish.flop;volume=0.8;pitch=0.8} @self
+  - delay 29
+  - effect:sound{s=entity.generic.eat;volume=0.8;pitch=1.2;delay=0} @self
+  - effect:sound{s=entity.generic.eat;volume=0.8;pitch=1.2;delay=6} @self
+  - delay 11
+  - effect:sound{s=entity.generic.eat;volume=0.8;pitch=0.6} @self
+
+
+Pet_Shark_Oceanic_Blood_Scent:
+  Skills:
+  - skill{s=Pet_Shark_Oceanic_Blood_Scent_SCAN} @EIR{r=20}
+Pet_Shark_Oceanic_Blood_Scent_SCAN:
+  TargetConditions:
+  - hasaura{n=BLOODMARK} true
+  Skills:
+  - potion{type=SPEED;duration=60;level=1;hasParticles=false} @owner
+  - particles{p=dust_color_transition;color1=#eb0000;color2=#420000;amount=60;hS=0.3;vS=0.6;y=0.7;size=0.5;speed=0;repeat=3;repeati=5} @owner
+  
+
+
+
+Pet_Shark_Baby_Shark_Blood_Scent:
+  Skills:
+  - skill{s=Pet_Shark_Baby_Shark_Blood_Scent_SCAN} @EIR{r=20}
+Pet_Shark_Baby_Shark_Blood_Scent_SCAN:
+  TargetConditions:
+  - hasaura{n=BLOODMARK} true
+  Skills:
+  - potion{type=SPEED;duration=60;level=1;hasParticles=false} @owner
+  - particles{p=dust_color_transition;color1=#fff53b;color2=#ff8400;amount=60;hS=0.3;vS=0.6;y=0.7;size=0.5;speed=0;repeat=3;repeati=5} @owner
+  
+
+
+
+Pet_Shark_Chef_Blood_Scent:
+  Skills:
+  - skill{s=Pet_Shark_Chef_Blood_Scent_SCAN} @EIR{r=20}
+Pet_Shark_Chef_Blood_Scent_SCAN:
+  TargetConditions:
+  - hasaura{n=BLOODMARK} true
+  Skills:
+  - potion{type=SPEED;duration=60;level=1;hasParticles=false} @owner
+  - particles{p=dust_color_transition;color1=#eb0000;color2=#420000;amount=60;hS=0.3;vS=0.6;y=0.7;size=0.5;speed=0;repeat=3;repeati=5} @owner
+  
+
+
+
+Pet_Shark_Dragonborn_Blood_Scent:
+  Skills:
+  - skill{s=Pet_Shark_Dragonborn_Blood_Scent_SCAN} @EIR{r=20}
+Pet_Shark_Dragonborn_Blood_Scent_SCAN:
+  TargetConditions:
+  - hasaura{n=BLOODMARK} true
+  Skills:
+  - potion{type=SPEED;duration=60;level=1;hasParticles=false} @owner
+  - particles{p=dust_color_transition;color1=#eb0000;color2=#420000;amount=20;hS=0.3;vS=0.6;y=0.7;size=0.5;speed=0;repeat=3;repeati=5} @owner
+  - particles{p=small_flame;amount=10;hS=0.3;vS=0.6;y=0.7;size=0.5;speed=0;repeat=3;repeati=5} @owner
+  
+
+Pet_Shark_Oceanic_Jaws_DIGIN:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=20} true
+  Skills:
+  - gcd{ticks=16}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill_digin} @self
+
+  - delay 10
+  - effect:sound{s=block.rooted_dirt.break;volume=0.8;pitch=0.7;delay=0} @self
+  - particles{p=block_crack;m=DIRT;amount=15;hS=0.3;vS=0.2;y=0.03;size=1;speed=0;repeat=2;repeati=2} @self
+
+  - delay 6
+
+  - state{s=skill_idle} @self
+  - partvis{m=pet_shark_oceanic;p=body;v=false;em=true;child=true} @self
+  - partvis{m=pet_shark_oceanic;p=fin;v=true;em=true;child=true;delay=1} @self
+  - aura{auraName=DIGIN;duration=100} @self
+  - setspeed{speed=2;type=walking} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - goto{speedModifier=1;spreadH=0;spreadV=0;repeat=90;repeati=10} @targetlocation
+  
+  - delay 98
+  - cancelSkill ?!hasaura{n=DIGIN}
+  - delay 1
+  - runaigoalselector{goal=clear} @self
+  - state{s=skill_idle;remove=true;lo=20} @self
+  - partvis{m=pet_shark_oceanic;p=body;v=true;em=true;child=true} @self
+  - setspeed{speed=1.5;type=walking} @self
+
+Pet_Shark_Oceanic_Jaws_DIGOUT:
+  Cooldown: 3
+  Conditions:
+  - hasaura{n=DIGIN} true
+  - targetwithin{d=2} true
+  Skills:
+  - gcd{ticks=27}
+  - teleport{spreadh=0;spreadv=0} @target
+  - auraremove{aura=DIGIN} @self
+  - delay 1
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill_idle;remove=true} @self
+  - state{s=skill_digout;delay=1} @self
+  - partvis{m=pet_shark_oceanic;p=body;v=true;em=true;child=true} @self
+  - effect:sound{s=block.rooted_dirt.break;volume=0.8;pitch=0.7;delay=1} @self
+  - particles{p=block_crack;m=DIRT;amount=15;hS=0.3;vS=0.2;y=0.03;size=1;speed=0;repeat=2;repeati=2} @self
+  - stun{d=12;f=false;CancelOnTakeDamage=false;CancelOnDeath=true} @target
+
+  - delay 4
+
+  - orbital{auraName=BLOODMARK;bulletType=MOB;mob=VFX_Blood_Mark;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=100;oy=3.8;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @target
+  - particles{p=dust_color_transition;color1=#eb0000;color2=#420000;amount=60;hS=0.3;vS=0.6;y=0.7;size=0.5;speed=0;repeat=19;repeati=5} @target
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true} @target
+  - effect:sound{s=entity.phantom.bite;volume=0.7;pitch=1.4} @self
+  - runaigoalselector{goal=clear} @self
+
+  - delay 23
+
+  - setspeed{speed=1.5;type=walking} @self
+
+
+
+
+
+
+Pet_Shark_Baby_Shark_Jaws_DIGIN:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=20} true
+  Skills:
+  - gcd{ticks=16}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill_digin} @self
+
+  - delay 10
+  - effect:sound{s=block.rooted_dirt.break;volume=0.8;pitch=0.7;delay=0} @self
+  - particles{p=block_crack;m=DIRT;amount=15;hS=0.3;vS=0.2;y=0.03;size=1;speed=0;repeat=2;repeati=2} @self
+
+  - delay 6
+
+  - state{s=skill_idle} @self
+  - partvis{m=pet_shark_Baby_Shark;p=body;v=false;em=true;child=true} @self
+  - partvis{m=pet_shark_Baby_Shark;p=fin;v=true;em=true;child=true;delay=1} @self
+  - aura{auraName=DIGIN;duration=100} @self
+  - setspeed{speed=2;type=walking} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - goto{speedModifier=1;spreadH=0;spreadV=0;repeat=90;repeati=10} @targetlocation
+  
+  - delay 98
+  - cancelSkill ?!hasaura{n=DIGIN}
+  - delay 1
+  - runaigoalselector{goal=clear} @self
+  - state{s=skill_idle;remove=true;lo=20} @self
+  - partvis{m=pet_shark_Baby_Shark;p=body;v=true;em=true;child=true} @self
+  - setspeed{speed=1.5;type=walking} @self
+
+Pet_Shark_Baby_Shark_Jaws_DIGOUT:
+  Cooldown: 3
+  Conditions:
+  - hasaura{n=DIGIN} true
+  - targetwithin{d=2} true
+  Skills:
+  - gcd{ticks=27}
+  - teleport{spreadh=0;spreadv=0} @target
+  - auraremove{aura=DIGIN} @self
+  - delay 1
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill_idle;remove=true} @self
+  - state{s=skill_digout;delay=1} @self
+  - partvis{m=pet_shark_Baby_Shark;p=body;v=true;em=true;child=true} @self
+  - effect:sound{s=block.rooted_dirt.break;volume=0.8;pitch=0.7;delay=1} @self
+  - particles{p=block_crack;m=DIRT;amount=15;hS=0.3;vS=0.2;y=0.03;size=1;speed=0;repeat=2;repeati=2} @self
+  - stun{d=12;f=false;CancelOnTakeDamage=false;CancelOnDeath=true} @target
+
+  - delay 4
+
+  - orbital{auraName=BLOODMARK;bulletType=MOB;mob=VFX_Blood_Mark;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=100;oy=3.8;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @target
+  - particles{p=dust_color_transition;color1=#eb0000;color2=#420000;amount=60;hS=0.3;vS=0.6;y=0.7;size=0.5;speed=0;repeat=19;repeati=5} @target
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true} @target
+  - effect:sound{s=entity.phantom.bite;volume=0.7;pitch=1.4} @self
+  - runaigoalselector{goal=clear} @self
+
+  - delay 23
+
+  - setspeed{speed=1.5;type=walking} @self
+
+
+
+
+
+
+Pet_Shark_Chef_Jaws_DIGIN:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=20} true
+  Skills:
+  - gcd{ticks=16}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill_digin} @self
+
+  - delay 10
+  - effect:sound{s=block.rooted_dirt.break;volume=0.8;pitch=0.7;delay=0} @self
+  - particles{p=block_crack;m=DIRT;amount=15;hS=0.3;vS=0.2;y=0.03;size=1;speed=0;repeat=2;repeati=2} @self
+
+  - delay 6
+
+  - state{s=skill_idle} @self
+  - partvis{m=pet_shark_Chef;p=body;v=false;em=true;child=true} @self
+  - partvis{m=pet_shark_Chef;p=fin;v=true;em=true;child=true;delay=1} @self
+  - aura{auraName=DIGIN;duration=100} @self
+  - setspeed{speed=2;type=walking} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - goto{speedModifier=1;spreadH=0;spreadV=0;repeat=90;repeati=10} @targetlocation
+  
+  - delay 98
+  - cancelSkill ?!hasaura{n=DIGIN}
+  - delay 1
+  - runaigoalselector{goal=clear} @self
+  - state{s=skill_idle;remove=true;lo=20} @self
+  - partvis{m=pet_shark_Chef;p=body;v=true;em=true;child=true} @self
+  - setspeed{speed=1.5;type=walking} @self
+
+Pet_Shark_Chef_Jaws_DIGOUT:
+  Cooldown: 3
+  Conditions:
+  - hasaura{n=DIGIN} true
+  - targetwithin{d=2} true
+  Skills:
+  - gcd{ticks=27}
+  - teleport{spreadh=0;spreadv=0} @target
+  - auraremove{aura=DIGIN} @self
+  - delay 1
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill_idle;remove=true} @self
+  - state{s=skill_digout;delay=1} @self
+  - partvis{m=pet_shark_Chef;p=body;v=true;em=true;child=true} @self
+  - effect:sound{s=block.rooted_dirt.break;volume=0.8;pitch=0.7;delay=1} @self
+  - particles{p=block_crack;m=DIRT;amount=15;hS=0.3;vS=0.2;y=0.03;size=1;speed=0;repeat=2;repeati=2} @self
+  - stun{d=12;f=false;CancelOnTakeDamage=false;CancelOnDeath=true} @target
+
+  - delay 4
+
+  - orbital{auraName=BLOODMARK;bulletType=MOB;mob=VFX_Blood_Mark;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=100;oy=3.8;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @target
+  - particles{p=dust_color_transition;color1=#eb0000;color2=#420000;amount=60;hS=0.3;vS=0.6;y=0.7;size=0.5;speed=0;repeat=19;repeati=5} @target
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true} @target
+  - effect:sound{s=entity.phantom.bite;volume=0.7;pitch=1.4} @self
+  - runaigoalselector{goal=clear} @self
+
+  - delay 23
+
+  - setspeed{speed=1.5;type=walking} @self
+
+
+
+
+
+Pet_Shark_Dragonborn_FX:
+  Skills:
+  - particles{p=small_flame;amount=15;hS=0.4;vS=0.3;y=0;size=0.7;speed=0.01} @modelpart{mid=pet_shark_Dragonborn;pid=root;location=0,0,0;em=true}
+  
+Pet_Shark_Dragonborn_Jaws_DIGIN:
+  Cooldown: 8
+  Conditions:
+  - offgcd
+  - targetwithin{d=20} true
+  Skills:
+  - gcd{ticks=16}
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill_digin} @self
+
+  - delay 10
+  - effect:sound{s=block.rooted_dirt.break;volume=0.8;pitch=0.7;delay=0} @self
+  - particles{p=block_crack;m=DIRT;amount=15;hS=0.3;vS=0.2;y=0.03;size=1;speed=0;repeat=2;repeati=2} @self
+  - particles{p=lava;amount=8;hS=0.3;vS=0.2;y=0.03;size=1;speed=0;repeat=2;repeati=2} @self
+
+  - delay 6
+
+  - state{s=skill_idle} @self
+  - partvis{m=pet_shark_Dragonborn;p=body;v=false;em=true;child=true} @self
+  - partvis{m=pet_shark_Dragonborn;p=fin;v=true;em=true;child=true;delay=1} @self
+  - aura{auraName=DIGIN;duration=100} @self
+  - setspeed{speed=2;type=walking} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - goto{speedModifier=1;spreadH=0;spreadV=0;repeat=90;repeati=10} @targetlocation
+  
+  - delay 98
+  - cancelSkill ?!hasaura{n=DIGIN}
+  - delay 1
+  - runaigoalselector{goal=clear} @self
+  - state{s=skill_idle;remove=true;lo=20} @self
+  - partvis{m=pet_shark_Dragonborn;p=body;v=true;em=true;child=true} @self
+  - setspeed{speed=1.5;type=walking} @self
+
+Pet_Shark_Dragonborn_Jaws_DIGOUT:
+  Cooldown: 3
+  Conditions:
+  - hasaura{n=DIGIN} true
+  - targetwithin{d=2} true
+  Skills:
+  - gcd{ticks=27}
+  - teleport{spreadh=0;spreadv=0} @target
+  - auraremove{aura=DIGIN} @self
+  - delay 1
+  - setspeed{speed=0;type=walking} @self
+  - state{s=skill_idle;remove=true} @self
+  - state{s=skill_digout;delay=1} @self
+  - partvis{m=pet_shark_Dragonborn;p=body;v=true;em=true;child=true} @self
+  - effect:sound{s=block.rooted_dirt.break;volume=0.8;pitch=0.7;delay=1} @self
+  - particles{p=block_crack;m=DIRT;amount=15;hS=0.3;vS=0.2;y=0.03;size=1;speed=0;repeat=2;repeati=2} @self
+  - particles{p=lava;amount=8;hS=0.3;vS=0.2;y=0.03;size=1;speed=0;repeat=2;repeati=2} @self
+  - stun{d=12;f=false;CancelOnTakeDamage=false;CancelOnDeath=true} @target
+
+  - delay 4
+
+  - orbital{auraName=BLOODMARK;bulletType=MOB;mob=VFX_Blood_Mark;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=100;oy=3.8;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @target
+  - particles{p=dust_color_transition;color1=#eb0000;color2=#420000;amount=60;hS=0.3;vS=0.6;y=0.7;size=0.5;speed=0;repeat=19;repeati=5} @target
+  - damage{a=<pet.damagemodifier>;pkb=true;hnp=true;hp=true} @target
+  - effect:sound{s=entity.phantom.bite;volume=0.7;pitch=1.4} @self
+  - runaigoalselector{goal=clear} @self
+
+  - delay 23
+
+  - setspeed{speed=1.5;type=walking} @self

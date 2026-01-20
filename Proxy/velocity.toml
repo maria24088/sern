@@ -1,0 +1,82 @@
+# Config version. Do not change this
+config-version = "2.7"
+
+# El puerto donde entrarán los jugadores (El que conectarás con Playit.gg)
+bind = "0.0.0.0:25565"
+
+# Mensaje que sale en la lista de servidores
+motd = "          <gradient:#09add3:#a100ff:#09add3><bold>ORBIS NETWORK</bold></gradient> <dark_gray>[</dark_gray><#09add3>1.21.4</#09add3> <gray>-</gray> <#09add3>1.21.x</#09add3><dark_gray>]              </dark_gray>\n<gray>           ¡Un universo nuevo te espera! <#a100ff>☄</#a100ff></gray>"
+
+# Jugadores máximos visuales
+show-max-players = 500
+
+# IMPORTANTE:
+# true = Solo cuentas originales (Premium).
+# false = Entran todos (No Premium / Crackeado).
+online-mode = false
+
+# Seguridad de claves (Déjalo en true si usas online-mode true)
+force-key-authentication = false
+
+# Protección básica contra VPNs
+prevent-client-proxy-connections = false
+
+# --- CONFIGURACIÓN CRÍTICA ---
+# "modern" es OBLIGATORIO para servidores Paper actuales (1.13+).
+# Esto permite que Velocity pase la información del jugador (Skin, UUID) al Lobby/Survival.
+player-info-forwarding-mode = "bungeeguard"
+
+# Archivo de seguridad. Velocity lo creará automáticamente.
+# IMPORTANTE: Tendrás que copiar el contenido de este archivo al "paper-global.yml" de tus servidores.
+forwarding-secret-file = "forwarding.secret"
+
+announce-forge = false
+kick-existing-players = false
+ping-passthrough = "DISABLED"
+sample-players-in-ping = false
+enable-player-address-logging = true
+
+[servers]
+# Aquí definimos tus servidores internos.
+# Usamos 127.0.0.1 (localhost) porque están en la misma máquina (Codespace).
+lobby = "127.0.0.1:30001"
+survival = "127.0.0.1:30002"
+
+# Orden de intento de conexión. Siempre intentará el Lobby primero.
+try = [
+    "lobby"
+]
+
+[forced-hosts]
+# Esto es avanzado, por ahora lo dejamos genérico apuntando al lobby.
+"lobby.example.com" = [
+    "lobby"
+]
+
+[advanced]
+compression-threshold = 256
+compression-level = -1
+login-ratelimit = 3000
+connection-timeout = 10000
+read-timeout = 30000
+haproxy-protocol = false
+tcp-fast-open = false
+bungee-plugin-message-channel = true
+show-ping-requests = false
+failover-on-unexpected-server-disconnect = true
+announce-proxy-commands = true
+log-command-executions = false
+log-player-connections = true
+accepts-transfers = false
+enable-reuse-port = false
+command-rate-limit = 50
+forward-commands-if-rate-limited = true
+kick-after-rate-limited-commands = 0
+tab-complete-rate-limit = 10
+kick-after-rate-limited-tab-completes = 0
+
+[query]
+enabled = false
+port = 25565
+map = "Velocity"
+show-plugins = false

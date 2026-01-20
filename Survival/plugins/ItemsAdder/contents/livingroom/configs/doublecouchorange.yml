@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  doublecouchorange:
+    display_name: "Double Couch Orange"
+    permission: livingroom.doublecouchorange
+    resource:
+      material: PAPER
+      generate: false
+      model_path: doublecouchorange
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.1

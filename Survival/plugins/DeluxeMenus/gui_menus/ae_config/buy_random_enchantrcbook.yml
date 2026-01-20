@@ -1,0 +1,55 @@
+#  A DeluxeMenus advanced configuration guide
+#=========================================================
+menu_title: '&f᪄᪑'
+open_command:
+  - buy_random_enchantrcbook
+size: 9
+items:
+
+  'random_enchantrcbook':
+    material: PAPER
+    model_data: 40027
+    slot: 4
+    lore_append_mode: BOTTOM
+    display_name: "&f᪝ Random Enchantment"
+    lore:
+    - ""
+    - "&#dff9fbA book with mysterious spirit,"
+    - "&#dff9fbconcealed occult magic inside"
+    - "&#dff9fbit, emitting an eerie light."
+    - ""
+    - "&#f7d794You'll receive a random book"
+    - "&#f7d794with random rarity when used."
+    - ""
+    - "&7ʙᴏᴏᴋ ʀᴀʀɪᴛʏ: &fRandom"
+
+    
+  'buy_confirm':
+    material: FEATHER
+    model_data: 9999
+    slots: [1,2,3]
+    lore_append_mode: BOTTOM
+    display_name: "&fAccept: &#c0e45a40&f᪠"
+    lore: []
+    click_requirement:
+      deny_commands:
+        - "[sound] ENTITY_VILLAGER_NO"
+        - "[message] &fYou dont have enought ᪠"
+      requirements:
+        balance_check:
+          type: has exp
+          amount: 3000
+    click_commands:
+    - "[sound] ENTITY_VILLAGER_YES"
+    - '[console] xp take %player_name% 40l'
+    - "[console] advancedenchantments:ae givercbook * %player_name% 1"
+
+  'cancel':
+    material: FEATHER
+    model_data: 9999
+    slots: [5,6,7]
+    lore_append_mode: BOTTOM
+    display_name: "&fBack"
+    lore: []
+    click_commands:
+    - "[player] enchanter"

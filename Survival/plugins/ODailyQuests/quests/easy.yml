@@ -1,0 +1,551 @@
+# ==============================================================
+#                       EASY QUESTS FILE
+# ==============================================================
+# Las misiones deben estar numeradas e incrementar de 1 en 1.
+# Por favor, presta atencion a la indentacion.
+# ==============================================================
+quests:
+  1:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8]&f ᴀsᴇsɪɴᴏ ᴅᴇ ᴄʀᴇᴇᴘᴇʀs"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Encuentra &f15 #b0c5d8creepers"
+      - " #a5d0e9y #b0c5d8matalos."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: KILL
+    required_amount: 15
+    required_entity: CREEPER
+    reward:
+      reward_type: MONEY
+      amount: 200
+  2:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fᴀsᴇsɪɴᴏ ᴅᴇ ᴢᴏᴍʙɪᴇs"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f25 #a5d0e9zombies"
+      - " #a5d0e9y #a5d0e9matalos."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: KILL
+    required_amount: 25
+    required_entity: ZOMBIE
+    reward:
+      reward_type: MONEY
+      amount: 200
+  3:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fᴀsᴇsɪɴᴏ ᴅᴇ ᴀʀᴀɴᴀs"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f20 #a5d0e9aranas"
+      - " #a5d0e9y #a5d0e9matalas."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: KILL
+    required_amount: 20
+    required_entity: SPIDER
+    reward:
+      reward_type: MONEY
+      amount: 200
+  4:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fʙᴀᴛᴍᴀɴ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f5 #a5d0e9murcielagos"
+      - " #a5d0e9y #a5d0e9matalos."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: KILL
+    required_amount: 5
+    required_entity: BAT
+    reward:
+      reward_type: MONEY
+      amount: 200
+  5:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fᴍᴀᴇsᴛʀᴏ ᴅᴇʟ ᴀʟᴍᴀᴄᴇɴ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo"
+      - " #a5d0e9y craftea &f8#a5d0e9 cofres."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: CRAFT
+    required_amount: 8
+    required_item: CHEST
+    reward:
+      reward_type: MONEY
+      amount: 200
+  6:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fᴄᴏɴsᴛʀᴜᴄᴛᴏʀ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo"
+      - " #a5d0e9y craftea &f24#a5d0e9 ladrillos."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: CRAFT
+    required_amount: 24
+    required_item: BRICKS
+    reward:
+      reward_type: MONEY
+      amount: 200
+  7:
+    name: "&8[#eed17aɢʀᴀɴᴊᴀ&8] &fʟᴇᴄʜᴇ ғʀᴇsᴄᴀ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f8 &fVacas"
+      - " #a5d0e9y #a5d0e9ordenalas."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: MILKING
+    required_amount: 8
+    reward:
+      reward_type: MONEY
+      amount: 200
+  8:
+    name: "&8[#eed17aɢʀᴀɴᴊᴀ&8] &fᴇsᴘᴀɴᴛᴀᴘᴀᴊᴀʀᴏs"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f8 &fCalabazas"
+      - " #a5d0e9y #a5d0e9tallalas."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: CARVE
+    required_amount: 8
+    reward:
+      reward_type: MONEY
+      amount: 200
+  9:
+    name: "&8[#eed17aɢʀᴀɴᴊᴀ&8] &fᴍᴀs ʟᴀɴᴀ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f12 &fOvejas"
+      - " #a5d0e9y #a5d0e9esquilalas."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: SHEAR
+    required_entity: SHEEP
+    required_amount: 12
+    reward:
+      reward_type: MONEY
+      amount: 200
+  10:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fᴄᴇɴᴀ ᴅᴇ ᴛᴏᴄɪɴᴏ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f15 &fCerdos"
+      - " #a5d0e9y #a5d0e9matalos."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: KILL
+    required_entity: PIG
+    required_amount: 15
+    reward:
+      reward_type: MONEY
+      amount: 200
+  11:
+    name: "&8[#8ed760ᴇxᴘʟᴏʀᴀᴄɪᴏɴ&8] &fᴍᴇᴊᴏʀ ᴀᴍɪɢᴏ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f1 &fLobo"
+      - " #a5d0e9y #a5d0e9domesticalo."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: TAME
+    required_entity: WOLF
+    required_amount: 1
+    reward:
+      reward_type: MONEY
+      amount: 200
+  12:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fᴛʜᴏʀ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo"
+      - " #a5d0e9y craftea &f1 &fPararrayos."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: CRAFT
+    required_item: LIGHTNING_ROD
+    required_amount: 1
+    reward:
+      reward_type: MONEY
+      amount: 200
+  13:
+    name: "&8[#eed17aɢʀᴀɴᴊᴀ&8] &fᴍᴜᴜᴜ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f8 &fVacas"
+      - " #a5d0e9y #a5d0e9crialas."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: BREED
+    required_entity: COW
+    required_amount: 8
+    reward:
+      reward_type: MONEY
+      amount: 200
+  14:
+    name: "&8[#eed17aɢʀᴀɴᴊᴀ&8] &fᴋɪᴋɪʀɪᴋɪ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f10 &fPollos"
+      - " #a5d0e9y #a5d0e9crialos."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: BREED
+    required_entity: CHICKEN
+    required_amount: 10
+    reward:
+      reward_type: MONEY
+      amount: 200
+  15:
+    name: "&8[#eed17aɢʀᴀɴᴊᴀ&8] &fʙᴇᴇᴇ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f8 &fOvejas"
+      - " #a5d0e9y #a5d0e9crialas."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: BREED
+    required_entity: SHEEP
+    required_amount: 8
+    reward:
+      reward_type: MONEY
+      amount: 200
+  16:
+    name: "&8[#8ed760ᴇxᴘʟᴏʀᴀᴄɪᴏɴ&8] &fᴍɪᴀᴜ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f1 &fGato"
+      - " #a5d0e9y #a5d0e9domesticalo."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: TAME
+    required_entity: CAT
+    required_amount: 1
+    reward:
+      reward_type: MONEY
+      amount: 200
+  17:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fғᴇʟɪᴢ ᴄᴜᴍᴘʟᴇᴀɴᴏs"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo"
+      - " #a5d0e9y craftea &f1 &ftarta."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: CRAFT
+    required_item: CAKE
+    required_amount: 1
+    reward:
+      reward_type: MONEY
+      amount: 200
+  18:
+    name: "&8[#8ed760ᴇxᴘʟᴏʀᴀᴄɪᴏɴ&8] &fᴇQᴜɪᴘᴏ ᴀʀʙᴏʟᴇs"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Consigue &f20 &fBrotes de Roble"
+      - " #a5d0e9y #a5d0e9plantalos."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: PLACE
+    required_item: OAK_SAPLING
+    required_amount: 20
+    reward:
+      reward_type: MONEY
+      amount: 200
+  19:
+    name: "&8[#99adceᴍɪɴᴇʀɪᴀ&8] &fᴍɪɴᴇʀᴀʟ ʙʀɪʟʟᴀɴᴛᴇ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve a una &fCueva #a5d0e9y"
+      - " #a5d0e9mina &f1 &fMena de Diamante."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: BREAK
+    required_amount: 1
+    required_item: DIAMOND_ORE
+    reward:
+      reward_type: MONEY
+      amount: 200
+  20:
+    name: "&8[#8ed760ᴇxᴘʟᴏʀᴀᴄɪᴏɴ&8] &fᴄᴀʀᴘɪɴᴛᴇʀᴏ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve a lo &fSalvaje #a5d0e9y"
+      - " #a5d0e9rompe &f32 &fTroncos de Roble."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: BREAK
+    required_amount: 32
+    required_item: OAK_LOG
+    reward:
+      reward_type: MONEY
+      amount: 200
+  21:
+    name: "&8[#eed17aɢʀᴀɴᴊᴀ&8] &fᴏɪɴᴋ ᴏɪɴᴋ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f12 &fcerdos"
+      - " #a5d0e9y #a5d0e9crialos."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: BREED
+    required_entity: PIG
+    required_amount: 12
+    reward:
+      reward_type: MONEY
+      amount: 200
+  22:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fᴘᴀɴᴀᴅᴇʀᴏ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo"
+      - " #a5d0e9y craftea &f8 #a5d0e9panes."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: CRAFT
+    required_item: BREAD
+    required_amount: 8
+    reward:
+      reward_type: MONEY
+      amount: 200
+  23:
+    name: "&8[#8ed760ᴇxᴘʟᴏʀᴀᴄɪᴏɴ&8] &fʜᴜᴇʀᴛᴏ ᴅᴇ ᴍᴀɴᴢᴀɴᴀs"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra un &fRoble"
+      - " #a5d0e9y consigue &f15 #a5d0e9manzanas."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: PICKUP
+    required_item: APPLE
+    required_amount: 15
+    reward:
+      reward_type: MONEY
+      amount: 200
+  24:
+    name: "&8[#8ed760ᴇxᴘʟᴏʀᴀᴄɪᴏɴ&8] &fᴇxᴘᴀɴsɪᴏɴ ᴅᴇ ᴀʀᴇᴀ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Consigue &f64 &fTierra "
+      - " #a5d0e9y #a5d0e9colocala."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: PLACE
+    required_item: DIRT
+    required_amount: 64
+    reward:
+      reward_type: MONEY
+      amount: 200
+  25:
+    name: "&8[#8ed760ᴇxᴘʟᴏʀᴀᴄɪᴏɴ&8] &fᴄʜᴇғ"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Consigue &f12 #a5d0e9Chuletones "
+      - " #a5d0e9y #a5d0e9cocinalos."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: COOK
+    required_item: BEEF
+    required_amount: 12
+    reward:
+      reward_type: MONEY
+      amount: 200
+  26:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fᴇʟᴇᴄᴛʀɪᴄɪᴅᴀᴅ ɢʀᴀᴛɪs"
+    menu_item: itemsadder:daily_quest:easy_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ғᴀᴄɪʟ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo"
+      - " #a5d0e9y craftea &f3 #a5d0e9velas."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f200 #ffc919Dinero"
+    quest_type: CRAFT
+    required_item: CANDLE
+    required_amount: 3
+    reward:
+      reward_type: MONEY
+      amount: 200

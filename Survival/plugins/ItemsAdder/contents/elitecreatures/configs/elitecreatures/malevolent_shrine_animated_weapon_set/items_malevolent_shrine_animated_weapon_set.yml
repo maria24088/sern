@@ -1,0 +1,189 @@
+info:
+  namespace: elitecreatures
+armors_rendering:
+  malevolent_shrine_animated_weapon_set:
+    color: "#8c196a"
+    layer_1: malevolent_shrine_animated_weapon_set/armor/malevolentshrine_armor_layer_1
+    layer_2: malevolent_shrine_animated_weapon_set/armor/malevolentshrine_armor_layer_2
+    use_color: false
+items:
+  malevolent_shrine_animated_weapon_set_helmet:
+    display_name: Malevolent Shrine Helmet
+    resource:
+      generate: true
+      textures:
+        - malevolent_shrine_animated_weapon_set/armor/malevolentshrine_helmet.png
+    specific_properties:
+      armor:
+        slot: head
+        custom_armor: malevolent_shrine_animated_weapon_set
+  malevolent_shrine_animated_weapon_set_chestplate:
+    display_name: Malevolent Shrine Chestplate
+    resource:
+      generate: true
+      textures:
+        - malevolent_shrine_animated_weapon_set/armor/malevolentshrine_chestplate.png
+    specific_properties:
+      armor:
+        slot: chest
+        custom_armor: malevolent_shrine_animated_weapon_set
+  malevolent_shrine_animated_weapon_set_leggings:
+    display_name: Malevolent Shrine Leggings
+    resource:
+      generate: true
+      textures:
+        - malevolent_shrine_animated_weapon_set/armor/malevolentshrine_leggings.png
+    specific_properties:
+      armor:
+        slot: legs
+        custom_armor: malevolent_shrine_animated_weapon_set
+  malevolent_shrine_animated_weapon_set_boots:
+    display_name: Malevolent Shrine Boots
+    resource:
+      generate: true
+      textures:
+        - malevolent_shrine_animated_weapon_set/armor/malevolentshrine_boots.png
+    specific_properties:
+      armor:
+        slot: FEET
+        custom_armor: malevolent_shrine_animated_weapon_set
+  malevolent_shrine_animated_weapon_set_axe:
+    display_name: Axe
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/axe
+  malevolent_shrine_animated_weapon_set_backpack:
+    display_name: Backpack
+    resource:
+      material: PAPER
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/backpack
+  malevolent_shrine_animated_weapon_set_bow:
+    display_name: Bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/bow
+  malevolent_shrine_animated_weapon_set_chest:
+    display_name: Chest
+    resource:
+      material: PAPER
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/chest
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: true
+        entity: armor_stand
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  malevolent_shrine_animated_weapon_set_crossbow:
+    display_name: Crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/crossbow
+  malevolent_shrine_animated_weapon_set_dagger:
+    display_name: Dagger
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/dagger
+  malevolent_shrine_animated_weapon_set_fishing_rod:
+    display_name: Fishing Rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/fishing_rod
+  malevolent_shrine_animated_weapon_set_greatsword:
+    display_name: Greatsword
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/greatsword
+  malevolent_shrine_animated_weapon_set_hammer:
+    display_name: Hammer
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/hammer
+  malevolent_shrine_animated_weapon_set_hat:
+    display_name: Hat
+    resource:
+      material: PAPER
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/hat
+    behaviours:
+      hat: true
+  malevolent_shrine_animated_weapon_set_hoe:
+    display_name: Hoe
+    resource:
+      material: DIAMOND_HOE
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/hoe
+  malevolent_shrine_animated_weapon_set_key:
+    display_name: Key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/key
+  malevolent_shrine_animated_weapon_set_mace:
+    display_name: Mace
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/mace
+  malevolent_shrine_animated_weapon_set_pickaxe:
+    display_name: Pickaxe
+    resource:
+      material: DIAMOND_PICKAXE
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/pickaxe
+  malevolent_shrine_animated_weapon_set_shield:
+    display_name: Shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/shield
+  malevolent_shrine_animated_weapon_set_shovel:
+    display_name: Shovel
+    resource:
+      material: DIAMOND_SHOVEL
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/shovel
+  malevolent_shrine_animated_weapon_set_spear:
+    display_name: Spear
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/spear
+  malevolent_shrine_animated_weapon_set_staff:
+    display_name: Staff
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/staff
+  malevolent_shrine_animated_weapon_set_sword:
+    display_name: Sword
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/sword
+  malevolent_shrine_animated_weapon_set_wing:
+    display_name: Wing
+    resource:
+      material: PAPER
+      generate: false
+      model_path: malevolent_shrine_animated_weapon_set/wing
+
+#glMDRkR4wmYwcWWC5UcCtGSFhVY3l1RN1mSwI1RatmURpFRVFlZ2JGaBREMtNlRmBlQHFjM

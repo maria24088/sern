@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  mediumcarpetred:
+    display_name: "Medium Carpet Red"
+    permission: livingroom.mediumcarpetred
+    resource:
+      material: PAPER
+      generate: false
+      model_path: mediumcarpetred
+    behaviours:
+      furniture:
+        light_level: 13

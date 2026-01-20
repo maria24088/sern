@@ -1,0 +1,15 @@
+info:
+  namespace: schoolfurnitures
+items:
+  teacherchair:
+    display_name: "Teacher Chair"
+    permission: schoolfurnitures.teacherchair
+    resource:
+      material: PAPER
+      generate: false
+      model_path: teacherchair
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1

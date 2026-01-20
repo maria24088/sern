@@ -1,0 +1,20 @@
+  
+awakened_warrior_brutesword:
+  Id: stone_sword
+  Display: "<gradient:#ff0000:#ff582e:#ff0000>&lBrutesword"
+  Model: 2086
+  Lore:
+  - '<gradient:#ff0000:#ff582e:#ff0000>The Brutesword of the Awakened Warrior'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Bulwark_Instinct} @self ~onDamaged
+  - skill{s=Brutal_Combo} @self ~onSwing
+  - skill{s=Berserkers_Leap} @self ~onUse
+  - skill{s=Relentless_Whirlwind} @self ~onCrouch
+  - skill{s=Bloodbound_Barrier} @self ~onTimer:10
+  - skill{s=Vicious_Strike} @self ~onUse
+  - skill{s=Strike_Of_Fury} @self ~onSwing

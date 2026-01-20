@@ -1,0 +1,36 @@
+location: SpawnRPG:17.465:64.000:-165.485
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:Grass_Block'
+    height: 0.6
+  - content: '&#88c800&lT&#83c800&lo&#7fc800&lp &#7ac800&lC&#75c700&ll&#71c700&la&#6cc700&li&#67c700&lm
+      &#62c700&lB&#5ec700&ll&#59c600&lo&#54c600&lc&#50c600&lk&#4bc600&ls'
+    height: 0.3
+  - content: '&2#1 &a%ajlb_lb_griefprevention_accruedclaims_1_alltime_name% §8- §f%ajlb_lb_griefprevention_accruedclaims_1_alltime_value%'
+    height: 0.3
+  - content: '&2#2 &a%ajlb_lb_griefprevention_accruedclaims_2_alltime_name% §8- §f%ajlb_lb_griefprevention_accruedclaims_2_alltime_value%'
+    height: 0.3
+  - content: '&2#3 &a%ajlb_lb_griefprevention_accruedclaims_3_alltime_name% §8- §f%ajlb_lb_griefprevention_accruedclaims_3_alltime_value%'
+    height: 0.3
+  - content: '&2#4 &a%ajlb_lb_griefprevention_accruedclaims_4_alltime_name% §8- §f%ajlb_lb_griefprevention_accruedclaims_4_alltime_value%'
+    height: 0.3
+  - content: '&2#5 &a%ajlb_lb_griefprevention_accruedclaims_5_alltime_name% §8- §f%ajlb_lb_griefprevention_accruedclaims_5_alltime_value%'
+    height: 0.3
+  - content: '&2#6 &a%ajlb_lb_griefprevention_accruedclaims_6_alltime_name% §8- §f%ajlb_lb_griefprevention_accruedclaims_6_alltime_value%'
+    height: 0.3
+  - content: '&2#7 &a%ajlb_lb_griefprevention_accruedclaims_7_alltime_name% §8- §f%ajlb_lb_griefprevention_accruedclaims_7_alltime_value%'
+    height: 0.3
+  - content: '&2#8 &a%ajlb_lb_griefprevention_accruedclaims_8_alltime_name% §8- §f%ajlb_lb_griefprevention_accruedclaims_8_alltime_value%'
+    height: 0.3
+  - content: '&2#9 &a%ajlb_lb_griefprevention_accruedclaims_9_alltime_name% §8- §f%ajlb_lb_griefprevention_accruedclaims_9_alltime_value%'
+    height: 0.3
+  - content: '&2#10 &a%ajlb_lb_griefprevention_accruedclaims_10_alltime_name% §8-
+      §f%ajlb_lb_griefprevention_accruedclaims_10_alltime_value%'
+    height: 0.3
+  actions: {}

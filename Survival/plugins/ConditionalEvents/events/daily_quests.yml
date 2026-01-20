@@ -1,0 +1,81 @@
+Events:
+  rookie:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+      - '%odailyquests_total% == 0'
+    one_time: true
+    actions:
+      default:
+      - 'message: #7ed359¡Has conseguido la Insignia de Novato! GG'
+      - 'console_command: lp user %player% meta set badge Novato'
+  beginner:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+      - '%odailyquests_total% == 10'
+    one_time: true
+    actions:
+      default:
+      - 'message: #7ed359¡Has conseguido la Insignia de Principiante! GG'
+      - 'console_command: lp user %player% meta set badge Principiante'
+  advanced:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+      - '%odailyquests_total% == 30'
+    one_time: true
+    actions:
+      default:
+      - 'message: #7ed359¡Has conseguido la Insignia de Avanzado! GG'
+      - 'console_command: lp user %player% meta set badge Avanzado'
+  pro:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+      - '%odailyquests_total% == 50'
+    one_time: true
+    actions:
+      default:
+      - 'message: #7ed359¡Has conseguido la Insignia Profesional! GG'
+      - 'console_command: lp user %player% meta set badge Profesional'
+  expert:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+      - '%odailyquests_total% == 75'
+    one_time: true
+    actions:
+      default:
+      - 'message: #7ed359¡Has conseguido la Insignia de Experto! GG'
+      - 'console_command: lp user %player% meta set badge Experto'
+  skilled:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+      - '%odailyquests_total% == 100'
+    one_time: true
+    actions:
+      default:
+      - 'message: #7ed359¡Has conseguido la Insignia de Habilidoso! GG'
+      - 'console_command: lp user %player% meta set badge Habilidoso'
+  legend:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+      - '%odailyquests_total% == 150'
+    one_time: true
+    actions:
+      default:
+      - 'message: #7ed359¡Has conseguido la Insignia de Leyenda de Misiones! GG'
+      - 'console_command: lp user %player% meta set badge Leyenda'
+  master:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+      - '%odailyquests_total% == 200'
+    one_time: true
+    actions:
+      default:
+      - 'message: #7ed359¡Has conseguido la Insignia de Maestro de Misiones! GG'
+      - 'console_command: lp user %player% meta set badge Maestro'

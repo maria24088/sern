@@ -1,0 +1,20 @@
+POTION_MINOR:
+    mythicmobs-skill-id: Potion_Minor
+
+POTION_SMALL:
+    mythicmobs-skill-id: Potion_Small
+    
+POTION_LARGE:
+    mythicmobs-skill-id: Potion_Large
+    
+POTION_SUPERIOR:
+    mythicmobs-skill-id: Potion_Superior
+    
+POTION_ETERNAL:
+    mythicmobs-skill-id: Potion_Eternal
+    
+SCROLL_RETURN:
+    mythicmobs-skill-id: Scroll_Return
+    
+SCROLL_TELEPORT:
+    mythicmobs-skill-id: Scroll_Teleport

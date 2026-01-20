@@ -1,0 +1,63 @@
+title: <white>
+rows: 6
+items:
+  necros_cosmetics_wings:
+    slots:
+    - 0
+    item:
+      name: <white>Necros Wings
+      material: POTION
+      model-data: 9924750
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_necros_cosmetics_wings%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_necros_cosmetics_wings%'
+    type: cosmetic
+    cosmetic: necros_cosmetics_wings
+    locked-item:
+      name: <white>Necros Wings <red><b>(LOCK)
+      material: POTION
+      model-data: 9924750
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+  necros_cosmetics_helmet:
+    slots:
+    - 1
+    item:
+      name: <white>Necros Helmet
+      material: POTION
+      model-data: 9924749
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_necros_cosmetics_helmet%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_necros_cosmetics_helmet%'
+    type: cosmetic
+    cosmetic: necros_cosmetics_helmet
+    locked-item:
+      name: <white>Necros Helmet <red><b>(LOCK)
+      material: POTION
+      model-data: 9924749
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+
+#30d4610397b833f341e6d8c0581961d8

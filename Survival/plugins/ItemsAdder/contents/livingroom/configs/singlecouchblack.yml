@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  singlecouchblack:
+    display_name: "Single Couch Black"
+    permission: livingroom.singlecouchblack
+    resource:
+      material: PAPER
+      generate: false
+      model_path: singlecouchblack
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.1

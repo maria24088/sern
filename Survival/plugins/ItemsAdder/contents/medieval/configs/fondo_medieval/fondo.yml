@@ -1,0 +1,10 @@
+info:
+  namespace: "fondo_medieval"
+font_images:  
+  fondo_medieval:
+    permission: 0
+    show_in_gui: false
+    suggest_in_command: false
+    path: "fondo/fondo.png"
+    scale_ratio: 256
+    y_position: 48

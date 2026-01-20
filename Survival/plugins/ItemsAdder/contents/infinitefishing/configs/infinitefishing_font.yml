@@ -1,0 +1,18 @@
+info:
+  namespace: infinitefishing
+font_images:
+
+  evaluator:
+    path: "font/ui/evaluator.png"
+    y_position: 97
+    scale_ratio: 256
+    symbol: "큓"
+
+  pointer:
+    path: "font/bars/pointer.png"
+    y_position: 22
+    scale_ratio: 30
+    symbol: "뀁"
+
+
+#MGZ1sEZ3dXOTJ3czQXQQVXdvBTV1UEVPl3ZX9kRWVUYPZEWRlnaYVGeClTMzYXRy4USjh2M

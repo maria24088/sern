@@ -1,0 +1,45 @@
+# Comandos esenciales para el jugador
+player:
+  main: player
+  aliases:
+  - p
+  - profile
+  description: Muestra tus estadísticas y atributos.
+  permission: mmocore.profile
+  verbose: ALL
+
+attributes:
+  main: attributes
+  aliases:
+  - att
+  - stats
+  description: Abre el menú para gastar tus puntos de atributo.
+  permission: mmocore.attributes
+  verbose: ALL
+
+# Necesario para gestionar las habilidades que mencionaste
+skills:
+  main: skills
+  aliases:
+  - s
+  description: Menú para ver y asignar tus habilidades activas.
+  permission: mmocore.skills
+  verbose: ALL
+
+# El sistema de Party de MMOCore es bueno para compartir XP.
+# Si usas otro plugin de parties, borra esto también.
+party:
+  main: party
+  aliases: []
+  description: Invita jugadores a tu grupo para compartir experiencia.
+  permission: mmocore.party
+  verbose: ALL
+
+# Opcional: Si quieres permitir activar/desactivar PvP por rol
+pvp-mode:
+  main: pvpmode
+  aliases:
+  - pvp
+  description: Activa o desactiva tu modo PvP.
+  permission: mmocore.pvpmode
+  verbose: ALL

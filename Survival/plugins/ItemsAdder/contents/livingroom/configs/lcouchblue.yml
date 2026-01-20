@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  lcouchblue:
+    display_name: "L Couch Blue"
+    permission: livingroom.lcouchblue
+    resource:
+      material: PAPER
+      generate: false
+      model_path: lcouchblue
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.1

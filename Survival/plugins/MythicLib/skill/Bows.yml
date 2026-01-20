@@ -1,0 +1,27 @@
+FOCUS:
+  mythicmobs-skill-id: Focus
+  modifiers: []
+
+STARMARKED:
+  mythicmobs-skill-id: Starmarked
+  modifiers: []
+
+CLOSE_CALL:
+  mythicmobs-skill-id: Close_Call
+  modifiers: []
+
+OWTV:
+  mythicmobs-skill-id: OWTV
+  modifiers: []
+
+HELLWRAITH:
+  mythicmobs-skill-id: HellWraith
+  modifiers: []
+
+DRAGON_SLAYER:
+  mythicmobs-skill-id: Dragon_Slayer
+  modifiers: []
+
+HIGH_GROUND:
+  mythicmobs-skill-id: High_Ground
+  modifiers: []

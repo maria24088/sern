@@ -1,0 +1,44 @@
+info:
+  namespace: angel_weapon_set
+armors_rendering:
+  angel_armor:
+    color: '#ECBE5D'
+    layer_1: angel_armor_layer1
+    layer_2: angel_armor_layer2
+    use_color: false
+items:
+  angelchestplate:
+    display_name: angel Chestplate
+    permission: simple
+    resource:
+      generate: true
+      textures:
+      - angel_armor_chestplate
+    specific_properties:
+      armor:
+        slot: chest
+        custom_armor: angel_armor
+  angelleggings:
+    display_name: angel Leggings
+    permission: simple
+    resource:
+      generate: true
+      textures:
+      - angel_armor_leggings
+    specific_properties:
+      armor:
+        slot: legs
+        custom_armor: angel_armor
+  angelboots:
+    display_name: angel Boots
+    permission: simple
+    resource:
+      generate: true
+      textures:
+      - angel_armor_boots
+    specific_properties:
+      armor:
+        slot: FEET
+        custom_armor: angel_armor
+
+# 2122414448588391688183765

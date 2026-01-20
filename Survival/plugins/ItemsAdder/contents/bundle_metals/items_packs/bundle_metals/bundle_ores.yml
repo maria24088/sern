@@ -1,0 +1,1424 @@
+info:
+  namespace: bundle_metals
+items:
+  blue7:
+    display_name: "&fblue7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - blue7.png
+  blue1:
+    display_name: blue1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - blue1.png
+  blue2:
+    display_name: blue2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - blue2.png
+  blue3:
+    display_name: blue3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - blue3.png
+  blue5:
+    display_name: blue5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - blue5.png
+  blue6:
+    display_name: "&fblue6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - blue6.png
+  blue4:
+    display_name: "&fblue4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - blue4.png
+  spike7:
+    display_name: "&fspike7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - spike7.png
+  spike6:
+    display_name: "&fspike6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - spike6.png
+  spike4:
+    display_name: "&fspike4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - spike4.png
+  spike1:
+    display_name: spike1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - spike1.png
+  spike2:
+    display_name: spike2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - spike2.png
+  spike3:
+    display_name: spike3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - spike3.png
+  spike5:
+    display_name: spike5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - spike5.png
+  magic7:
+    display_name: "&fmagic7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - magic7.png
+  magic6:
+    display_name: "&fmagic6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - magic6.png
+  magic4:
+    display_name: "&fmagic4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - magic4.png
+  magic1:
+    display_name: magic1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - magic1.png
+  magic2:
+    display_name: magic2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - magic2.png
+  magic3:
+    display_name: magic3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - magic3.png
+  magic5:
+    display_name: magic5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - magic5.png
+  purple7:
+    display_name: "&fpurple7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - purple7.png
+  purple6:
+    display_name: "&fpurple6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - purple6.png
+  purple4:
+    display_name: "&fpurple4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - purple4.png
+  purple1:
+    display_name: purple1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - purple1.png
+  purple2:
+    display_name: purple2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - purple2.png
+  purple3:
+    display_name: purple3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - purple3.png
+  purple5:
+    display_name: purple5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - purple5.png
+  silver7:
+    display_name: "&fsilver7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - silver7.png
+  silver6:
+    display_name: "&fsilver6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - silver6.png
+  silver4:
+    display_name: "&fsilver4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - silver4.png
+  silver1:
+    display_name: silver1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - silver1.png
+  silver2:
+    display_name: silver2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - silver2.png
+  silver3:
+    display_name: silver3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - silver3.png
+  silver5:
+    display_name: silver5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - silver5.png
+  bubble7:
+    display_name: "&fbubble7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bubble7.png
+  bubble6:
+    display_name: "&fbubble6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bubble6.png
+  bubble4:
+    display_name: "&fbubble4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bubble4.png
+  bubble1:
+    display_name: bubble1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bubble1.png
+  bubble2:
+    display_name: bubble2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bubble2.png
+  bubble3:
+    display_name: bubble3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bubble3.png
+  bubble5:
+    display_name: bubble5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bubble5.png
+  crystal7:
+    display_name: "&fcrystal7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crystal7.png
+  crystal6:
+    display_name: "&fcrystal6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crystal6.png
+  crystal4:
+    display_name: "&fcrystal4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crystal4.png
+  crystal1:
+    display_name: crystal1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crystal1.png
+  crystal2:
+    display_name: crystal2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crystal2.png
+  crystal3:
+    display_name: crystal3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crystal3.png
+  crystal5:
+    display_name: crystal5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crystal5.png
+  lcyan7:
+    display_name: "&flcyan7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - lcyan7.png
+  lcyan6:
+    display_name: "&flcyan6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - lcyan6.png
+  lcyan4:
+    display_name: "&flcyan4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - lcyan4.png
+  lcyan1:
+    display_name: lcyan1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - lcyan1.png
+  lcyan2:
+    display_name: lcyan2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - lcyan2.png
+  lcyan3:
+    display_name: lcyan3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - lcyan3.png
+  lcyan5:
+    display_name: lcyan5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - lcyan5.png
+  cyan7:
+    display_name: "&fcyan7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - cyan7.png
+  cyan6:
+    display_name: "&fcyan6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - cyan6.png
+  cyan4:
+    display_name: "&fcyan4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - cyan4.png
+  cyan1:
+    display_name: cyan1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - cyan1.png
+  cyan2:
+    display_name: cyan2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - cyan2.png
+  cyan3:
+    display_name: cyan3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - cyan3.png
+  cyan5:
+    display_name: cyan5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - cyan5.png
+  obsi7:
+    display_name: "&fobsi7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - obsi7.png
+  obsi6:
+    display_name: "&fobsi6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - obsi6.png
+  obsi4:
+    display_name: "&fobsi4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - obsi4.png
+  obsi1:
+    display_name: obsi1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - obsi1.png
+  obsi2:
+    display_name: obsi2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - obsi2.png
+  obsi3:
+    display_name: obsi3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - obsi3.png
+  obsi5:
+    display_name: obsi5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - obsi5.png
+  pcop7:
+    display_name: "&fpcop7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pcop7.png
+  pcop6:
+    display_name: "&fpcop6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pcop6.png
+  pcop4:
+    display_name: "&fpcop4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pcop4.png
+  pcop1:
+    display_name: pcop1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pcop1.png
+  pcop2:
+    display_name: pcop2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pcop2.png
+  pcop3:
+    display_name: pcop3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pcop3.png
+  pcop5:
+    display_name: pcop5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pcop5.png
+  dragon7:
+    display_name: "&fdragon7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dragon7.png
+  dragon6:
+    display_name: "&fdragon6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dragon6.png
+  dragon4:
+    display_name: "&fdragon4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dragon4.png
+  dragon1:
+    display_name: dragon1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dragon1.png
+  dragon2:
+    display_name: dragon2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dragon2.png
+  dragon3:
+    display_name: dragon3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dragon3.png
+  dragon5:
+    display_name: dragon5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dragon5.png
+  jag7:
+    display_name: "&fjag7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - jag7.png
+  jag6:
+    display_name: "&fjag6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - jag6.png
+  jag4:
+    display_name: "&fjag4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - jag4.png
+  jag1:
+    display_name: jag1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - jag1.png
+  jag2:
+    display_name: jag2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - jag2.png
+  jag3:
+    display_name: jag3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - jag3.png
+  jag5:
+    display_name: jag5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - jag5.png
+  taxis7:
+    display_name: "&ftaxis7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - taxis7.png
+  taxis6:
+    display_name: "&ftaxis6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - taxis6.png
+  taxis4:
+    display_name: "&ftaxis4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - taxis4.png
+  taxis1:
+    display_name: taxis1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - taxis1.png
+  taxis2:
+    display_name: taxis2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - taxis2.png
+  taxis3:
+    display_name: taxis3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - taxis3.png
+  taxis5:
+    display_name: taxis5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - taxis5.png
+  green7:
+    display_name: "&fgreen7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - green7.png
+  green6:
+    display_name: "&fgreen6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - green6.png
+  green4:
+    display_name: "&fgreen4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - green4.png
+  green1:
+    display_name: green1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - green1.png
+  green2:
+    display_name: green2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - green2.png
+  green3:
+    display_name: green3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - green3.png
+  green5:
+    display_name: green5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - green5.png
+  tech7:
+    display_name: "&ftech7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - tech7.png
+  tech6:
+    display_name: "&ftech6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - tech6.png
+  tech4:
+    display_name: "&ftech4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - tech4.png
+  tech1:
+    display_name: tech1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - tech1.png
+  tech2:
+    display_name: tech2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - tech2.png
+  tech3:
+    display_name: tech3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - tech3.png
+  tech5:
+    display_name: tech5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - tech5.png
+  infect7:
+    display_name: "&finfect7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - infect7.png
+  infect6:
+    display_name: "&finfect6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - infect6.png
+  infect4:
+    display_name: "&finfect4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - infect4.png
+  infect1:
+    display_name: infect1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - infect1.png
+  infect2:
+    display_name: infect2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - infect2.png
+  infect3:
+    display_name: infect3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - infect3.png
+  infect5:
+    display_name: infect5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - infect5.png
+  matrix7:
+    display_name: "&fmatrix7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - matrix7.png
+  matrix6:
+    display_name: "&fmatrix6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - matrix6.png
+  matrix4:
+    display_name: "&fmatrix4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - matrix4.png
+  matrix1:
+    display_name: matrix1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - matrix1.png
+  matrix2:
+    display_name: matrix2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - matrix2.png
+  matrix3:
+    display_name: matrix3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - matrix3.png
+  matrix5:
+    display_name: matrix5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - matrix5.png
+  bcop7:
+    display_name: "&fbcop7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bcop7.png
+  bcop6:
+    display_name: "&fbcop6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bcop6.png
+  bcop4:
+    display_name: "&fbcop4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bcop4.png
+  bcop1:
+    display_name: bcop1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bcop1.png
+  bcop2:
+    display_name: bcop2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bcop2.png
+  bcop3:
+    display_name: bcop3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bcop3.png
+  bcop5:
+    display_name: bcop5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bcop5.png
+  nebula7:
+    display_name: "&fnebula7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - nebula7.png
+  nebula6:
+    display_name: "&fnebula6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - nebula6.png
+  nebula4:
+    display_name: "&fnebula4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - nebula4.png
+  nebula1:
+    display_name: nebula1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - nebula1.png
+  nebula2:
+    display_name: nebula2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - nebula2.png
+  nebula3:
+    display_name: nebula3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - nebula3.png
+  nebula5:
+    display_name: nebula5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - nebula5.png
+  lcop7:
+    display_name: "&flcop7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - lcop7.png
+  lcop6:
+    display_name: "&flcop6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - lcop6.png
+  lcop4:
+    display_name: "&flcop4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - lcop4.png
+  lcop1:
+    display_name: lcop1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - lcop1.png
+  lcop2:
+    display_name: lcop2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - lcop2.png
+  lcop3:
+    display_name: lcop3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - lcop3.png
+  lcop5:
+    display_name: lcop5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - lcop5.png
+  ocop7:
+    display_name: "&focop7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ocop7.png
+  ocop6:
+    display_name: "&focop6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ocop6.png
+  ocop4:
+    display_name: "&focop4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ocop4.png
+  ocop1:
+    display_name: ocop1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ocop1.png
+  ocop2:
+    display_name: ocop2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ocop2.png
+  ocop3:
+    display_name: ocop3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ocop3.png
+  ocop5:
+    display_name: ocop5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ocop5.png
+  heart7:
+    display_name: "&fheart7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - heart7.png
+  heart6:
+    display_name: "&fheart6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - heart6.png
+  heart4:
+    display_name: "&fheart4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - heart4.png
+  heart1:
+    display_name: heart1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - heart1.png
+  heart2:
+    display_name: heart2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - heart2.png
+  heart3:
+    display_name: heart3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - heart3.png
+  heart5:
+    display_name: heart5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - heart5.png
+  dgold7:
+    display_name: "&fdgold7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dgold7.png
+  dgold6:
+    display_name: "&fdgold6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dgold6.png
+  dgold4:
+    display_name: "&fdgold4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dgold4.png
+  dgold1:
+    display_name: dgold1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dgold1.png
+  dgold2:
+    display_name: dgold2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dgold2.png
+  dgold3:
+    display_name: dgold3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dgold3.png
+  dgold5:
+    display_name: dgold5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dgold5.png
+  pink7:
+    display_name: "&fpink7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pink7.png
+  pink6:
+    display_name: "&fpink6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pink6.png
+  pink4:
+    display_name: "&fpink4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pink4.png
+  pink1:
+    display_name: pink1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pink1.png
+  pink2:
+    display_name: pink2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pink2.png
+  pink3:
+    display_name: pink3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pink3.png
+  pink5:
+    display_name: pink5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pink5.png
+  reddish7:
+    display_name: "&freddish7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - reddish7.png
+  reddish6:
+    display_name: "&freddish6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - reddish6.png
+  reddish4:
+    display_name: "&freddish4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - reddish4.png
+  reddish1:
+    display_name: reddish1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - reddish1.png
+  reddish2:
+    display_name: reddish2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - reddish2.png
+  reddish3:
+    display_name: reddish3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - reddish3.png
+  reddish5:
+    display_name: reddish5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - reddish5.png
+  cgold7:
+    display_name: "&fcgold7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - cgold7.png
+  cgold6:
+    display_name: "&fcgold6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - cgold6.png
+  cgold4:
+    display_name: "&fcgold4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - cgold4.png
+  cgold1:
+    display_name: cgold1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - cgold1.png
+  cgold2:
+    display_name: cgold2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - cgold2.png
+  cgold3:
+    display_name: cgold3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - cgold3.png
+  cgold5:
+    display_name: cgold5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - cgold5.png
+  ciron7:
+    display_name: "&fciron7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ciron7.png
+  ciron6:
+    display_name: "&fciron6"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ciron6.png
+  ciron4:
+    display_name: "&fciron4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ciron4.png
+  ciron1:
+    display_name: ciron1
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ciron1.png
+  ciron2:
+    display_name: ciron2
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ciron2.png
+  ciron3:
+    display_name: ciron3
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ciron3.png
+  ciron5:
+    display_name: ciron5
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ciron5.png
+  nether7:
+    display_name: "&fnether7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - nether7.png
+  nether_dragon4:
+    display_name: "&fnether_dragon4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - nether_dragon4.png
+  nether_dragon7:
+    display_name: "&fnether_dragon7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - nether_dragon7.png
+  aurellium4:
+    display_name: "&faurellium4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - aurellium4.png
+  aurellium7:
+    display_name: "&faurellium7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - aurellium7.png
+  gnether4:
+    display_name: "&fgnether4"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - gnether4.png
+  gnether7:
+    display_name: "&fgnether7"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - gnether7.png

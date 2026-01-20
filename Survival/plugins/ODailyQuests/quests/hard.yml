@@ -1,0 +1,345 @@
+# ==============================================================
+#                        HARD QUESTS FILE
+# ==============================================================
+# Las misiones deben estar numeradas e incrementar de 1 en 1.
+# Por favor, presta atencion a la indentacion.
+# ==============================================================
+quests:
+  1:
+    name: "&8[#99adceᴍɪɴᴇʀɪᴀ&8] &fʜᴏʀᴀ ᴅᴇ ᴍᴇᴊᴏʀᴀʀ"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve al &fNether #a5d0e9y"
+      - " #a5d0e9mina &f8 #a5d0e9Escombros Ancestrales."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: BREAK
+    required_item: ANCIENT_DEBRIS
+    required_amount: 8
+    reward:
+      reward_type: MONEY
+      amount: 800
+    required_worlds:
+      - world_nether
+  2:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fᴀǫᴜᴀᴍᴀɴ"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Busca un &fMonumento Oceanico #a5d0e9y"
+      - " #a5d0e9mata &f8 #a5d0e9Guardianes."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: KILL
+    required_entity: GUARDIAN
+    required_amount: 8
+    reward:
+      reward_type: MONEY
+      amount: 800
+  3:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fᴘʀᴏᴛᴇᴄᴄɪᴏɴ ᴅᴇ ʟᴀ ᴀʟᴅᴇᴀ"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Busca un &fPuesto de Saqueadores #a5d0e9y"
+      - " #a5d0e9mata &f10 #a5d0e9Saqueadores."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: KILL
+    required_entity: PILLAGER
+    required_amount: 10
+    reward:
+      reward_type: MONEY
+      amount: 800
+  4:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fᴅᴇᴍᴀsɪᴀᴅᴏ ғʀɪᴏ"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo #a5d0e9y"
+      - " #a5d0e9craftea &f6 #a5d0e9Hielo Azul."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: CRAFT
+    required_item: BLUE_ICE
+    required_amount: 6
+    reward:
+      reward_type: MONEY
+      amount: 800
+  5:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fᴇʟ ᴅᴇsᴛʀᴜᴄᴛᴏʀ"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Invoca al &fWither"
+      - " #a5d0e9y #a5d0e9matalo."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: KILL
+    required_entity: WITHER
+    required_amount: 1
+    reward:
+      reward_type: MONEY
+      amount: 800
+  6:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fᴇʟ sᴇɴᴏʀ ᴅᴇ ʟᴀ ᴏsᴄᴜʀɪᴅᴀᴅ"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve a la &fCiudad Antigua"
+      - " #a5d0e9y mata &f1 #a5d0e9Warden."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: KILL
+    required_entity: WARDEN
+    required_amount: 1
+    reward:
+      reward_type: MONEY
+      amount: 800
+  7:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fsᴀǫᴜᴇᴀᴅᴏʀ ᴍᴀɢᴏ"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Encuentra un &fInvocador"
+      - " #a5d0e9y #a5d0e9matalo"
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: KILL
+    required_entity: EVOKER
+    required_amount: 1
+    reward:
+      reward_type: MONEY
+      amount: 800
+  8:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fᴄᴀᴢᴀɴᴅᴏ ᴀʟ ᴅᴇᴠᴀsᴛᴀᴅᴏʀ"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Encuentra un &fDevastador"
+      - " #a5d0e9y #a5d0e9matalo"
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: KILL
+    required_entity: RAVAGER
+    required_amount: 1
+    reward:
+      reward_type: MONEY
+      amount: 800
+  9:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fᴋᴀʙᴏᴏᴍ"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo #a5d0e9y"
+      - " #a5d0e9craftea &f16 #a5d0e9TNT."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: CRAFT
+    required_item: TNT
+    required_amount: 16
+    reward:
+      reward_type: MONEY
+      amount: 800
+  10:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fɴᴏ ᴇs ᴇʟ ғɪɴ"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo #a5d0e9y"
+      - " #a5d0e9craftea &f4 &fCristales del End."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: CRAFT
+    required_item: END_CRYSTAL
+    required_amount: 4
+    reward:
+      reward_type: MONEY
+      amount: 800
+  11:
+    name: "&8[#99adceᴍɪɴᴇʀɪᴀ&8] &fɴᴏ ᴍᴇ ᴍɪɴᴇs"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve a una &fCueva #a5d0e9y"
+      - " #a5d0e9mina &f3 #a5d0e9Sensores de Sculk."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: BREAK
+    required_item: SCULK_SENSOR
+    required_amount: 3
+    reward:
+      reward_type: MONEY
+      amount: 800
+  12:
+    name: "&8[#99adceᴍɪɴᴇʀɪᴀ&8] &fʜᴏᴍʙʀᴇ ᴅᴇ ɴᴇɢᴏᴄɪᴏs"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve a una &fCueva #a5d0e9y"
+      - " #a5d0e9mina &f12 #a5d0e9Menas de Esmeralda."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: BREAK
+    required_item: EMERALD_ORE
+    required_amount: 12
+    reward:
+      reward_type: MONEY
+      amount: 800
+  13:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fᴀʟᴍᴀᴄᴇɴ ᴘᴏʀᴛᴀᴛɪʟ"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo #a5d0e9y"
+      - " #a5d0e9craftea &f1 #a5d0e9Caja de Shulker."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: CRAFT
+    required_item: SHULKER_BOX
+    required_amount: 1
+    reward:
+      reward_type: MONEY
+      amount: 800
+  14:
+    name: "&8[#99adceᴍɪɴᴇʀɪᴀ&8] &fᴍɪɴᴀɴᴅᴏ ᴘʀᴏʙʟᴇᴍᴀs"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve a una &fCueva #a5d0e9y"
+      - " #a5d0e9rompe &f3 #a5d0e9Pizarra Reforzada."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: BREAK
+    required_item: REINFORCED_DEEPSLATE
+    required_amount: 3
+    reward:
+      reward_type: MONEY
+      amount: 800
+  15:
+    name: "&8[#99adceᴍɪɴᴇʀɪᴀ&8] &fɴᴏ ᴇs ᴘɪᴢᴀʀʀᴀ"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve a una &fCueva #a5d0e9y"
+      - " #a5d0e9mina &f16 #a5d0e9Menas de Diamante."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: BREAK
+    required_item: DIAMOND_ORE
+    required_amount: 16
+    reward:
+      reward_type: MONEY
+      amount: 800
+  16:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fʟᴏs ᴄᴀʙᴀʟʟᴇʀᴏs ᴏsᴄᴜʀᴏs"
+    menu_item: itemsadder:daily_quest:hard_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴅɪғɪᴄɪʟ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve al &fNether #a5d0e9y"
+      - " #a5d0e9mata &f8 #a5d0e9Esqueletos Wither."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f800 #ffc919Dinero"
+    quest_type: KILL
+    required_entity: WITHER_SKELETON
+    required_amount: 8
+    reward:
+      reward_type: MONEY
+      amount: 800

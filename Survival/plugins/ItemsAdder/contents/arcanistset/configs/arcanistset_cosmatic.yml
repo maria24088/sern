@@ -1,0 +1,76 @@
+info:
+  namespace: arcanistset
+items:
+  arcanist_cosmetics_hat:
+    display_name: Arcanist Cosmetics Hat
+    permission: arcanistset.cosmetics_hat
+    resource:
+      model_id: 7730000
+      material: POTION
+      generate: false
+      model_path: helmet
+  arcanist_cosmetics_wings:
+    display_name: Arcanist Cosmetics Wings
+    permission: arcanistset.cosmetics_wings
+    resource:
+      model_id: 7730001
+      material: POTION
+      generate: false
+      model_path: wings_cosmetics
+  arcanist_cosmetics_wings_self:
+    display_name: Arcanist Cosmetics Wings Self
+    permission: arcanistset.cosmetics_wings_self
+    resource:
+      model_id: 7730002
+      material: POTION
+      generate: false
+      model_path: wings_cosmetics_self
+  arcanist_cosmetics_wings_self_2:
+    display_name: Arcanist Cosmetics Wings Self 2
+    permission: arcanistset.cosmetics_wings_self_2
+    resource:
+      model_id: 7730003
+      material: POTION
+      generate: false
+      model_path: wings_cosmetics_self_2
+  arcanist_cosmetics_wings_normal_2:
+    display_name: Arcanist Cosmetics Wings Normal 2
+    permission: arcanistset.cosmetics_wings_normal_2
+    resource:
+      model_id: 7730004
+      material: POTION
+      generate: false
+      model_path: wings_cosmetics_normal_2
+  arcanist_cosmetics_backpack:
+    display_name: Arcanist Cosmetics Backpack
+    permission: arcanistset.cosmetics_backpack
+    resource:
+      model_id: 7730005
+      material: POTION
+      generate: false
+      model_path: backpack_cosmetics
+  arcanist_cosmetics_backpack_self:
+    display_name: Arcanist Cosmetics Backpack Self
+    permission: arcanistset.cosmetics_backpack_self
+    resource:
+      model_id: 7730006
+      material: POTION
+      generate: false
+      model_path: backpack_cosmetics_self
+  arcanist_cosmetics_backpack_self_2:
+    display_name: Arcanist Cosmetics Backpack Self 2
+    permission: arcanistset.cosmetics_backpack_self_2
+    resource:
+      model_id: 7730007
+      material: POTION
+      generate: false
+      model_path: backpack_cosmetics_self_2
+  arcanist_cosmetics_backpack_normal_2:
+    display_name: Arcanist Cosmetics Backpack Normal 2
+    permission: arcanistset.cosmetics_backpack_normal_2
+    resource:
+      model_id: 7730008
+      material: POTION
+      generate: false
+      model_path: backpack_cosmetics_normal_2
+#Y3dnJ3MwIUMGRXO0MVYBFnaJ1GV3dmeORTQU1EMRRlT5F1MhJmepdUevhXaaJlYMJmawIUN

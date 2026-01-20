@@ -1,0 +1,62 @@
+{
+  "samus.awakened_archer.awakened_archer_arrow_fan": {
+    "category": "master",
+    "sounds": [
+      "awakened_archer:samus/awakened_archer/awakened_archer_arrow_fan"
+    ]
+  },
+  "samus.awakened_archer.awakened_archer_arrow_shoot": {
+    "category": "master",
+    "sounds": [
+      "awakened_archer:samus/awakened_archer/awakened_archer_arrow_shoot"
+    ]
+  },
+  "samus.awakened_archer.awakened_archer_charge": {
+    "category": "master",
+    "sounds": [
+      "awakened_archer:samus/awakened_archer/awakened_archer_charge"
+    ]
+  },
+  "samus.awakened_archer.awakened_archer_charge_shot": {
+    "category": "master",
+    "sounds": [
+      "awakened_archer:samus/awakened_archer/awakened_archer_charge_shot"
+    ]
+  },
+  "samus.awakened_archer.awakened_archer_first_hit": {
+    "category": "master",
+    "sounds": [
+      "awakened_archer:samus/awakened_archer/awakened_archer_first_hit"
+    ]
+  },
+  "samus.awakened_archer.awakened_archer_rapid_fire": {
+    "category": "master",
+    "sounds": [
+      "awakened_archer:samus/awakened_archer/awakened_archer_rapid_fire"
+    ]
+  },
+  "samus.awakened_archer.awakened_archer_rubble_path": {
+    "category": "master",
+    "sounds": [
+      "awakened_archer:samus/awakened_archer/awakened_archer_rubble_path"
+    ]
+  },
+  "samus.awakened_archer.awakened_archer_strong_arrow": {
+    "category": "master",
+    "sounds": [
+      "awakened_archer:samus/awakened_archer/awakened_archer_strong_arrow"
+    ]
+  },
+  "samus.awakened_archer.awakened_archer_ground": {
+    "category": "master",
+    "sounds": [
+      "awakened_archer:samus/awakened_archer/awakened_archer_ground"
+    ]
+  },
+  "samus.awakened_archer.awakened_archer_arrow_shoot_whoosh": {
+    "category": "master",
+    "sounds": [
+      "awakened_archer:samus/awakened_archer/awakened_archer_arrow_shoot_whoosh"
+    ]
+  }
+}

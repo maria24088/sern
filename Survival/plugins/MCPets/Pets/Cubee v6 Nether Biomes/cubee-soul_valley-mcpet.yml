@@ -1,0 +1,18 @@
+Id: cubee-soul_valley
+MythicMob: cubee-soul_valley
+Permission: mcpet.cubee-soul_valley
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §x§5§6§4§0§3§AS§x§4§E§4§6§4§2o§x§4§6§4§D§4§Au§x§3§E§5§3§5§2l §x§4§0§6§D§6§EV§x§4§B§9§B§9§Da§x§5§6§C§8§C§Cl§x§6§1§F§6§F§Bl§x§5§6§C§8§C§Ce§x§4§B§9§B§9§Dy
+    §x§4§0§6§D§6§EC§x§3§E§5§3§5§2u§x§4§6§4§D§4§Ab§x§4§E§4§6§4§2e§x§5§6§4§0§3§Ae
+  Description:
+  - §fFilled with millions lost souls
+  - §fNever call this cubee HEARTLESS!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191050
+
+
+# 4c55fedd7b128b210d38f1779cf09ee2

@@ -1,0 +1,182 @@
+info:
+  namespace: customcrops
+items:
+  pitaya_stage_1:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pitaya/stage_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pitaya_stage_2:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pitaya/stage_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pitaya_stage_3:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pitaya/stage_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pitaya_stage_4:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pitaya/stage_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pitaya_stage_5:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pitaya/stage_5
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pitaya_stage_6:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pitaya/stage_6
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pitaya_seeds:
+    display_name: "Pitaya Seeds"
+    #display_name: 火龙果种子
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pitaya/pitaya_seeds
+  pitaya:
+    display_name: "Pitaya"
+    #display_name: 火龙果
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/pitaya/pitaya
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  pitaya_silver_star:
+    display_name: "Pitaya (Silver Star)"
+    #display_name: 火龙果(银星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/pitaya/pitaya_silver_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  pitaya_golden_star:
+    display_name: "Pitaya (Golden Star)"
+    #display_name: 火龙果(金星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/pitaya/pitaya_golden_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+categories:
+  customcrops_pitaya:
+    enabled: true
+    icon: customcrops:pitaya
+    name: 'Pitaya'
+    items:
+      - customcrops:pitaya
+      - customcrops:pitaya_silver_star
+      - customcrops:pitaya_golden_star
+      - customcrops:pitaya_seeds
+      - customcrops:pitaya_stage_1
+      - customcrops:pitaya_stage_2
+      - customcrops:pitaya_stage_3
+      - customcrops:pitaya_stage_4
+      - customcrops:pitaya_stage_5
+      - customcrops:pitaya_stage_6

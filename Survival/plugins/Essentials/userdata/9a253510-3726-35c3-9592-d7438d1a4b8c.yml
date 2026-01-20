@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.19.211.102
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1765487112011
+  login: 1765487061427
+money: '0'
+last-account-name: hola
+lastlocation:
+  world: 84574fde-df87-47b2-b7b6-fba349c79632
+  world-name: world
+  x: 64.5
+  y: 51.0
+  z: -47.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: f9f42665-d084-4921-862b-ce7d2039b3ff
+  world-name: spawnImportar
+  x: -330.2222140633979
+  y: 56.9375
+  z: -348.95501915328526
+  yaw: 86.62364196777344
+  pitch: 13.954538345336914

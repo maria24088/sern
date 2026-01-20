@@ -1,0 +1,103 @@
+{
+    "ice_staff.ice_blizzard_loop_80tick": {
+        "sounds": [
+            "littleroom_staff_pack:ice_blizzard_loop_80tick"
+        ]
+    },
+    "ice_staff.ice_blizzard_loop_end": {
+        "sounds": [
+            "littleroom_staff_pack:ice_blizzard_loop_end"
+        ]
+    },
+    "ice_staff.ice_blizzard_loop_start": {
+        "sounds": [
+            "littleroom_staff_pack:ice_blizzard_loop_start"
+        ]
+    },
+    "ice_staff.ice_blizzard_sweetener": {
+        "sounds": [
+            "littleroom_staff_pack:ice_blizzard_sweetener_01",
+            "littleroom_staff_pack:ice_blizzard_sweetener_02",
+            "littleroom_staff_pack:ice_blizzard_sweetener_03"
+        ]
+    },
+    "ice_staff.ice_freeze": {
+        "sounds": [
+            "littleroom_staff_pack:ice_freeze"
+        ]
+    },
+    "ice_staff.ice_impact": {
+        "sounds": [
+            "littleroom_staff_pack:ice_impact_01",
+            "littleroom_staff_pack:ice_impact_02"
+        ]
+    },
+    "incendia_staff.flamethrower_loop": {
+        "sounds": [
+            "littleroom_staff_pack:incendia_flamethrower_loop",
+            "littleroom_staff_pack:incendia_flamethrower_loop_2"
+        ]
+    },
+    "incendia_staff.incendia_projectile": {
+        "sounds": [
+            "littleroom_staff_pack:incendia_projectile_01",
+            "littleroom_staff_pack:incendia_projectile_02",
+            "littleroom_staff_pack:incendia_projectile_03"
+        ]
+    },
+    "gravita_staff.launch": {
+        "sounds": [
+            "littleroom_staff_pack:gravita_launch"
+        ]
+    },
+    "gravita_staff.grab": {
+        "sounds": [
+            "littleroom_staff_pack:gravita_grab"
+        ]
+    },
+    "gravita_staff.projectile": {
+        "sounds": [
+            "littleroom_staff_pack:gravita_projectile"
+        ]
+    },
+    "gravita_staff.rocks": {
+        "sounds": [
+            "littleroom_staff_pack:gravita_rocks_01",
+            "littleroom_staff_pack:gravita_rocks_02"
+        ]
+    },
+    "noxus_staff.projectile": {
+        "sounds": [
+            "littleroom_staff_pack:noxus_projectile_01",
+            "littleroom_staff_pack:noxus_projectile_02"
+        ]
+    },
+    "noxus_staff.bubbling": {
+        "sounds": [
+            "littleroom_staff_pack:noxus_bubbling_01",
+            "littleroom_staff_pack:noxus_bubbling_02"
+        ]
+    },
+    "noxus_staff.flamethrower_loop": {
+        "sounds": [
+            "littleroom_staff_pack:noxus_flamethrower_loop",
+            "littleroom_staff_pack:noxus_flamethrower_loop_2"
+        ]
+    },
+    "noxus_staff.projectile_impact": {
+        "sounds": [
+            "littleroom_staff_pack:noxus_projectile_impact"
+        ]
+    },
+    "blood_staff.summon": {
+        "sounds": [
+            "littleroom_staff_pack:blood_summon_01",
+            "littleroom_staff_pack:blood_summon_02"
+        ]
+    },
+    "blood_staff.sacrifice": {
+        "sounds": [
+            "littleroom_staff_pack:blood_sacrifice"
+        ]
+    }
+}

@@ -1,0 +1,256 @@
+header-footer:
+  enabled: true
+  designs:
+    world-world1:
+      display-condition: '%world%=world1'
+      header:
+      - an example of world with custom
+      footer:
+      - header/footer and prefix/suffix
+    world-world2;world3:
+      display-condition: '%world%=world2|%world%=world3'
+      header:
+      - This is a shared header for
+      - world2 and world3
+      footer: []
+    server-server1:
+      display-condition: '%server%=server1'
+      header:
+      - an example of server with custom header
+      footer: []
+    default:
+      display-condition: '%world%!=disabledworld'
+      header:
+      - ''
+      - '&f%img_offset_2%%img_logo%'
+      - ''
+      - ''
+      - ''
+      - <$#53FA00>1.21.4<$#F0F001> &8&l- <$#F50700>1.21.8<$#F56007>
+      - ''
+      footer:
+      - <#FFFFFF>&m                                                </#FFFF00>
+      - ''
+      - '&#AD8EFFᴡᴇʙsɪᴛᴇ: www.servername.net'
+      - '&#AD8EFFᴅɪsᴄᴏʀᴅ: discord.servername.net'
+      - ''
+      - '&#FEF8F5ᴊᴜɢᴀᴅᴏʀᴇꜱ ᴏɴʟɪɴᴇ: &#FF0601%online%'
+      - '&#FEF8F5ᴛᴏᴛᴀʟ ᴅᴇ ᴊᴜɢᴀᴅᴏʀᴇꜱ: &#FF0601%server_max_players%'
+      - ''
+      - ''
+      - <$#9443f0>sᴘᴀᴡɴ:<$#641885> &f%server_online_spawnrpg% <$#e04f4f>ɴᴇᴛʜᴇʀ<$#e36f2b>
+        &f%server_online_world_nether% <$#f2e5c4>ᴇɴᴅ:<$#f0cc7f> &f%server_online_world_the_end%
+        <$#52b3eb>ᴡᴏʀʟᴅ:<$#2e5fe6> &f%server_online_world%
+      - '&f                                                                          '
+tablist-name-formatting:
+  enabled: true
+  disable-condition: '%world%=disabledworld'
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  sorting-types:
+  - GROUPS:owner,rank1,Default
+  - PLACEHOLDER_A_TO_Z:%player%
+  case-sensitive-sorting: true
+  can-see-friendly-invisibles: false
+  disable-condition: '%world%=disabledworld'
+playerlist-objective:
+  enabled: true
+  value: '%ping%'
+  fancy-value: '&e%ping%'
+  disable-condition: '%world%=disabledworld'
+  title: TAB
+  render-type: INTEGER
+belowname-objective:
+  enabled: true
+  disable-condition: '%world%=disabledworld'
+  fancy-value-default: ''
+  fancy-value: '&8↘ &#BACEF5%health%&#FF0000 ❤ &8↙'
+  value: '%health%'
+  title: ''
+prevent-spectator-effect:
+  enabled: false
+bossbar:
+  enabled: true
+  toggle-command: /bossbar
+  remember-toggle-choice: false
+  hidden-by-default: true
+  bars:
+    ServerInfo:
+      style: NOTCHED_20
+      color: WHITE
+      progress: '100'
+      text: '&f%img_earth% &e%skriptplaceholders_world% &8| &f%img_compass% X:%player_x%,Y:%player_y%
+        Z:%player_z% &8 | &f%img_clock% %player_world_time_24% &8| &f%img_ping% %ping%'
+scoreboard:
+  enabled: true
+  toggle-command: /sb
+  remember-toggle-choice: false
+  hidden-by-default: false
+  use-numbers: false
+  static-number: 0
+  delay-on-join-milliseconds: 0
+  scoreboards:
+    admin:
+      display-condition: permission:litebans.ban
+      title: '%img_scoreboardlogo%'
+      lines:
+      - ''
+      - '&f%img_spirit% &fᴊᴜɢᴀᴅᴏʀ: &8▸ &#389ed1%player_name%'
+      - '&f%img_egg_icon% &fʀᴀɴɢᴏ &8▸ %luckperms_meta_rango_sb%'
+      - '&f%img_ruby% &fᴏʀᴏ &8▸ &#31fc03%vault_eco_balance_commas% $'
+      - '&f%img_death% &fᴋ/ᴅ &8▸ &#e64c35%kdratio_ratio%'
+      - '&f%img_eye% &fᴛʀᴀʙᴀᴊᴏꜱ &8▸ %jobsr_user_jobs%'
+      - ''
+      - '&f%img_eye% &fᴘᴇʀғᴏʀᴍᴀɴᴄᴇ &8▸ &e%tps%'
+      - '&f%img_hourglass% &fꜰᴇᴄʜᴀ &8▸ &#bababa%localtime_time_dd/MM/yyyy%'
+      - '&f%img_clock_icon% &fʜᴏʀᴀ &8▸ &#bababa%localtime_time_HH:mm%'
+    scoreboard1:
+      title: '%img_scoreboardlogo%'
+      lines:
+      - ''
+      - '&f%img_spirit% &fᴊᴜɢᴀᴅᴏʀ: &8▸ &#389ed1%player_name%'
+      - '&f%img_egg_icon% &fʀᴀɴɢᴏ &8▸ %luckperms_meta_rango_sb%'
+      - '&f%img_ruby% &fᴏʀᴏ &8▸ &#31fc03%vault_eco_balance_commas% $'
+      - '&f%img_death% &fᴋ/ᴅ &8▸ &#e64c35%kdratio_ratio%'
+      - '&f%img_eye% &fᴛʀᴀʙᴀᴊᴏꜱ &8▸ &#e64c35%jobsr_user_jobs%'
+      - ''
+      - '&f%img_hourglass% &fꜰᴇᴄʜᴀ &8▸ &#bababa%localtime_time_dd/MM/yyyy%'
+      - '&f%img_clock_icon% &fʜᴏʀᴀ &8▸ &#bababa%localtime_time_HH:mm%'
+layout:
+  enabled: false
+  direction: COLUMNS
+  default-skin: mineskin:1753261242
+  enable-remaining-players-text: true
+  remaining-players-text: '... and %s more'
+  empty-slot-ping-value: 1000
+  layouts:
+    default:
+      fixed-slots:
+      - '1|&3Website&f:'
+      - 2|&bmyserver.net
+      - '3|&8&m                       '
+      - '4|&3Name&f:'
+      - 5|&b%player%
+      - '7|&3Rank&f:'
+      - '8|Rank: %group%'
+      - '10|&3World&f:'
+      - 11|&b%world%
+      - '13|&3Time&f:'
+      - 14|&b%time%
+      - '21|&3Teamspeak&f:'
+      - 22|&bts.myserver.net
+      - '23|&8&m                       '
+      - '41|&3Store&f:'
+      - 42|&bshop.myserver.net
+      - '43|&8&m                       '
+      groups:
+        staff:
+          condition: permission:tab.staff
+          slots:
+          - 24-40
+        players:
+          slots:
+          - 44-80
+ping-spoof:
+  enabled: false
+  value: 0
+placeholders:
+  date-format: dd.MM.yyyy
+  time-format: '[HH:mm:ss / h:mm a]'
+  time-offset: 0
+  register-tab-expansion: true
+placeholder-output-replacements:
+  '%essentials_vanished%':
+    'yes': '&7| Invisible'
+    'no': ''
+  '%tps%':
+    '20': '&720'
+    '19.99': '&720'
+    '19.98': '&720'
+    '19.97': '&720'
+    '19.96': '&720'
+    '19.95': '&720'
+    '19.94': '&720'
+    '19.93': '&720'
+    '19.92': '&720'
+    '19.91': '&720'
+    '19.90': '&720'
+    '19': '&720'
+  '%essentials_afk%':
+    'true': ' &f%img_afk%'
+    'false': ''
+  '%essentials_nickname%':
+    '%essentials_nickname%': '%player%'
+conditions:
+  nick:
+    conditions:
+    - '%player%=%essentials_nickname%'
+    true: '%player%'
+    false: ~%essentials_nickname%
+assign-groups-by-permissions: false
+primary-group-finding-list:
+- default
+- owner
+- rank1
+permission-refresh-interval: 1000
+debug: false
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: tab
+  username: user
+  password: password
+  useSSL: true
+per-world-playerlist:
+  enabled: false
+  allow-bypass-permission: false
+  ignore-effect-in-worlds:
+  - ignoredworld
+  - build
+  shared-playerlist-world-groups:
+    lobby:
+    - lobby1
+    - lobby2
+    minigames:
+    - paintball
+    - bedwars
+global-playerlist:
+  enabled: false
+  display-others-as-spectators: false
+  display-vanished-players-as-spectators: true
+  isolate-unlisted-servers: false
+  spy-servers:
+  - spyserver1
+  - spyserver2
+  server-groups:
+    lobbies:
+    - lobby1
+    - lobby2
+    group2:
+    - server1
+    - server2
+  update-latency: false
+use-bukkit-permissions-manager: false
+use-online-uuid-in-tablist: true
+proxy-support:
+  enabled: true
+  type: PLUGIN
+  plugin:
+    name: RedisBungee
+compensate-for-packetevents-bug: false
+placeholder-refresh-intervals:
+  default-refresh-interval: 500
+  '%server_uptime%': 1000
+  '%server_tps_1_colored%': 1000
+  '%server_unique_joins%': 5000
+  '%player_health%': 200
+  '%player_ping%': 1000
+  '%vault_prefix%': 1000
+  '%rel_factionsuuid_relation_color%': 1000
+config-version: 2
+components:
+  minimessage-support: true
+  disable-shadow-for-heads: true

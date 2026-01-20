@@ -1,0 +1,90 @@
+
+Mushroom_Red_Random:
+  MobType: Mushroom_Red
+  Worlds: world
+  Chance: 0.025
+  Priority: 25
+  Action: ADD
+  Conditions:
+  - mobsinchunk{a=<1} true
+  - outside true
+  - onblock{b=GRASS_BLOCK,DIRT}
+  
+Wild_Berry_Random:
+  MobType: Wild_Berry
+  Worlds: world
+  Chance: 0.025
+  Priority: 25
+  Action: ADD
+  Conditions:
+  - mobsinchunk{a=<1} true
+  - outside true
+  - onblock{b=GRASS_BLOCK,DIRT}
+  
+Cactus_Random:
+  MobType: Cactus
+  Worlds: world
+  Chance: 0.025
+  Priority: 25
+  Action: ADD
+  Conditions:
+  - mobsinchunk{a=<1} true
+  - outside true
+  - onblock{b=GRASS_BLOCK,DIRT}
+  
+Shamrock_Random:
+  MobType: Shamrock
+  Worlds: world
+  Chance: 0.025
+  Priority: 25
+  Action: ADD
+  Conditions:
+  - mobsinchunk{a=<1} true
+  - outside true
+  - onblock{b=GRASS_BLOCK,DIRT}
+  
+Four_Leaf_Clover_Random:
+  MobType: Four_Leaf_Clover
+  Worlds: world
+  Chance: 0.025
+  Priority: 25
+  Action: ADD
+  Conditions:
+  - mobsinchunk{a=<1} true
+  - outside true
+  - onblock{b=GRASS_BLOCK,DIRT}
+  
+Glowing_Mushroom_Random:
+  MobType: Glowing_Mushroom
+  Worlds: world
+  Chance: 0.025
+  Priority: 25
+  Action: ADD
+  Conditions:
+  - mobsinchunk{a=<1} true
+  - outside true
+  - onblock{b=GRASS_BLOCK,DIRT}
+  
+Magical_Herb_Random:
+  MobType: Magical_Herb
+  Worlds: world
+  Chance: 0.025
+  Priority: 25
+  Action: ADD
+  Conditions:
+  - mobsinchunk{a=<1} true
+  - outside true
+  - onblock{b=GRASS_BLOCK,DIRT}
+  
+Deathbloom_Random:
+  MobType: Deathbloom
+  Worlds: world
+  Chance: 0.025
+  Priority: 25
+  Action: ADD
+  Conditions:
+  - mobsinchunk{a=<1} true
+  - outside true
+  - onblock{b=GRASS_BLOCK,DIRT}
+
+# 64173YSXRP14LJLWSF45R

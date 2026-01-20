@@ -1,0 +1,180 @@
+info:
+  namespace: customcrops
+items:
+  tomato_stage_1:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/tomato/stage_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  tomato_stage_2:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/tomato/stage_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        solid: false
+        cancel_drop: true
+        shift_interact_rotate: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  tomato_stage_3:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/tomato/stage_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  tomato_stage_4:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/tomato/stage_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  tomato_stage_golden:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/tomato/stage_golden
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  tomato_seeds:
+    display_name: display-name-tomato_seeds
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/tomato/tomato_seeds
+  tomato:
+    display_name: display-name-tomato
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/tomato/tomato
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  tomato_silver_star:
+    display_name: display-name-tomato_silver_star
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/tomato/tomato_silver_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  tomato_golden_star:
+    display_name: display-name-tomato_golden_star
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/tomato/tomato_golden_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  golden_tomato:
+    display_name: display-name-golden_tomato
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/tomato/golden_tomato
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  gigantic_tomato:
+    display_name: display-name-gigantic_tomato
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/tomato/gigantic_tomato
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_TRANSPARENT
+categories:
+  customcrops_tomato:
+    enabled: true
+    icon: customcrops:tomato
+    name: 'Tomato'
+    items:
+      - customcrops:tomato
+      - customcrops:tomato_silver_star
+      - customcrops:tomato_golden_star
+      - customcrops:golden_tomato
+      - customcrops:tomato_seeds
+      - customcrops:gigantic_tomato
+      - customcrops:tomato_stage_1
+      - customcrops:tomato_stage_2
+      - customcrops:tomato_stage_3
+      - customcrops:tomato_stage_4
+      - customcrops:tomato_stage_golden

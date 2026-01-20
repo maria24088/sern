@@ -1,0 +1,347 @@
+FRIGID:
+  base:
+    material: CARROT_ON_A_STICK
+    custom-model-data: 10000
+    name: '                 <#FFC0CB>Apicultor'
+    lore:
+    - '&fా ꜰᴜʀɪᴀ ʜᴇʟᴀᴅᴀ &f᎙'
+    - '&7Desata una ola de escarcha,'
+    - <#d3fafb>inmovilizando &7a enemigos cercanos
+    - '&7y causando&c 35&7 de daño.'
+    - '&8 | &f<#AEC6CF>⌚20s &b✎20 &8|'
+    - ''
+    attack-damage: 20.0
+    cooldown-reduction: 15.0
+    tooltip-style: epic
+    fire-damage-reduction: 100.0
+    movement-speed: 0.01
+    ability:
+      ability1:
+        type: ICE_FURY
+        mode: RIGHT_CLICK
+        mana: 20.0
+        cooldown: 10.0
+      ability2:
+        type: SWARM_STRIKE
+        mode: LEFT_CLICK    
+        cooldown: 1
+
+WITCHCRAFT:
+  base:
+    material: CARROT_ON_A_STICK
+    custom-model-data: 10002
+    name: '                 <#FFC0CB>Brujería'
+    lore:
+    - '&f丠 ᴘᴜᴀꜱ ᴏꜱᴄᴜʀᴀꜱ &f᎙'
+    - '&7Bombardea el área objetivo'
+    - '&7con púas oscuras, causando &c100'
+    - '&7de daño a los objetivos golpeados'
+    - '&8 | &f<#AEC6CF>⌚30s &b✎30 &8|'
+    attack-damage: 15.0
+    skill-critical-strike-power: 15.0
+    skill-critical-strike-chance: 5.0
+    cooldown-reduction: 30.0
+    tooltip-style: epic
+    movement-speed: 0.02
+    ability:
+      ability1:
+        type: ARCANE_HAIL
+        mode: RIGHT_CLICK
+        mana: 30.0
+        cooldown: 30.0
+        damage: 100.0
+      ability2:
+        type: SOUL_LANTERN
+        mode: LEFT_CLICK    
+        cooldown: 1
+
+
+CONTINUUM:
+  base:
+    material: CARROT_ON_A_STICK
+    custom-model-data: 10001
+    name: '              <#FFC0CB>Continuo'
+    lore:
+    - '&f両 ɢʀɪᴇᴛᴀ ᴇꜱᴘᴀᴄɪᴏᴛᴇᴍᴘᴏʀᴀʟ &f᎙'
+    - '&7Abre de un tajo una grieta'
+    - '&7espaciotemporal que &datrae&7 a'
+    - '&7las unidades cercanas.'
+    - '&8 | &f<#AEC6CF>⌚30s &b✎30 &8|'
+    attack-damage: 35.0
+    skill-critical-strike-power: 30.0
+    cooldown-reduction: -10.0
+    tooltip-style: epic
+    movement-speed: 0.01
+    ability:
+      ability1:
+        type: BLACK_HOLE
+        mode: RIGHT_CLICK
+        mana: 30.0
+        cooldown: 30.0
+        duration: 5.0
+      ability2:
+        type: PLASMA_BLAST
+        mode: LEFT_CLICK    
+        cooldown: 1
+
+SMITE:
+  base:
+    material: STICK
+    custom-model-data: 1006
+    name: <#FFC0CB>Castigo
+    lore:
+    - '&f丢 ᴘᴇʀᴅɪᴄɪᴏɴ ᴄᴇʟᴇꜱᴛɪᴀʟ &f᎙'
+    - '&7Desata un rayo sagrado, que'
+    - '&7causa un daño masivo de &4500'
+    - '&7al primer objetivo golpeado.'
+    - '&8 | &f<#AEC6CF>⌚60s &b✎100 &8|'
+    attack-damage: 25.0
+    skill-critical-strike-power: 35.0
+    skill-critical-strike-chance: 10.0
+    tooltip-style: epic
+    movement-speed: 0.01
+    ability:
+      ability1:
+        type: Holy Missile
+        mode: RIGHT_CLICK
+        mana: 100.0
+        cooldown: 30.0
+        damage: 500.0
+
+
+VOID_WALKER:
+  base:
+    material: CARROT_ON_A_STICK
+    custom-model-data: 10004
+    name: '           <#FFC0CB>Caminante del Vacío'
+    lore:
+    - '&f丣 ʀᴀʏᴏ ᴅᴇʟ ᴠᴀᴄɪᴏ &f᎙'
+    - '&7Lanza un rayo del vacío,'
+    - '&7rebotando en superficies. Causa &c200'
+    - '&7de daño a los objetivos golpeados'
+    - '&8 | &f<#AEC6CF>⌚60s &b✎100 &8|'
+    attack-damage: 23.0
+    cooldown-reduction: 30.0
+    tooltip-style: epic
+    movement-speed: 0.01
+    ability:
+      ability1:
+        type: VOID_ZAPPER
+        mode: RIGHT_CLICK
+        mana: 100.0
+        cooldown: 30.0
+        damage: 200.0
+      ability2:
+        type: THUNDER_CLAP
+        mode: LEFT_CLICK    
+        cooldown: 1
+
+CATACLYSM:
+  base:
+    material: STICK
+    custom-model-data: 1000
+    name: <#915ace>El Cataclismo
+    disable-crafting: true
+    tooltip-style: mythic
+    lore:
+    - '&fヷ ᴅɪᴀ ᴅᴇʟ ᴊᴜɪᴄɪᴏ &f᎙'
+    - '&bInmovilízate&7 por &b3 segs,'
+    - '&7luego desata una explosión del vacío,'
+    - '&7causando &c650 &8+ &c100% ❤&7 a'
+    - '&7enemigos cercanos.'
+    - '&8 | &f<#AEC6CF>⌚100s &b✎150 &8|'
+    revision-id: 2
+    ability:
+      ability1:
+        type: DOOMSDAY
+        mode: RIGHT_CLICK
+        mana: 150.0
+        cooldown: 100.0
+    unstackable: true
+    disable-interaction: true
+    attack-damage: 40.0
+    skill-critical-strike-power: 50.0
+    skill-critical-strike-chance: 100.0
+    range: 15.0
+    upgrade:
+      template: damned
+      reference: damned
+      max: 5
+    gem-sockets:
+    - '&dHechicería'
+    - '&dHechicería'
+    - '&3Tiempo'
+
+SCORPIO:
+  base:
+    material: STICK
+    custom-model-data: 1002
+    movement-speed: 0.03
+    defense: 20
+    skill-damage: 100.0
+    name: <#915ace>Escorpio
+    lore:
+    - '&fఖ ɢᴀꜱᴇꜱ ᴛᴏxɪᴄᴏꜱ &f᎙'
+    - '&7Dispara una andanada de gases'
+    - '&7tóxicos, causando &c35&7 de daño a'
+    - '&7los objetivos golpeados.'
+    - '&8 | &f<#AEC6CF>⌚0s &b✎15 &8|'
+    tooltip-style: mythic
+    ability:
+      ability1:
+        type: ACID_SPRAY
+        mode: RIGHT_CLICK
+        mana: 15.0
+    gem-sockets:
+    - '&dHechicería'
+    - '&dHechicería'
+
+STARCALLER:
+  base:
+    material: STICK
+    custom-model-data: 1003
+    name: <#915ace>Invocador Estelar
+    lore:
+    - '&fశ ᴀʏᴜᴅᴀ ᴄᴇʟᴇꜱᴛɪᴀʟ &f᎙'
+    - '&7Invoca una estrella para golpear'
+    - '&7la ubicación, causando'
+    - <#FDFD96>350❤&7 a los enemigos. Cada
+    - '&7enemigo golpeado te cura &7por <#FDFD96>50❤'
+    - '&8 | &f<#AEC6CF>⌚30s &b✎100 &8|'
+    attack-damage: 37.0
+    cooldown-reduction: 10.0
+    tooltip-style: mythic
+    movement-speed: 0.04
+    ability:
+      ability1:
+        type: CELESTIAL_AID
+        mode: RIGHT_CLICK
+        mana: 300.0
+        cooldown: 60.0
+    gem-sockets:
+    - '&dHechicería'
+
+DISRUPTER:
+  base:
+    material: STICK
+    custom-model-data: 1008
+    name: <#915ace>Disruptor
+    lore:
+    - '&f两 ᴇꜱꜰᴇʀᴀ ɪɴᴇꜱᴛᴀʙʟᴇ &f᎙'
+    - '&7Invoca una esfera inestable'
+    - '&7en la ubicación, la cual'
+    - '&7explotará tras un breve'
+    - '&7retraso, causando &c250❤'
+    - '&8 | &f<#AEC6CF>⌚30s &b✎50 &8|'
+    attack-damage: 45.0
+    cooldown-reduction: 10.0
+    skill-damage: 50.0
+    weapon-damage: -25.0
+    tooltip-style: mythic
+    movement-speed: 0.02
+    ability:
+      ability1:
+        type: OVERLOADED_SPHERE
+        mode: RIGHT_CLICK
+        cooldown: 30.0
+        mana: 50.0
+    gem-sockets:
+    - '&dHechicería'
+
+BLIGHTSPORE:
+  base:
+    material: CARROT_ON_A_STICK
+    custom-model-data: 10003
+    name: '           <#915ace>Espora de Plaga'
+    lore:
+    - '&f严 ᴇxᴘʟᴏꜱɪᴏɴ ᴅᴇ ꜱᴀɴɢʀᴇ &f᎙'
+    - '&7Consume &c10% ❤HP máx&7 para'
+    - '&7crear una explosión de sangre,'
+    - '&7causando &410x&7 tu &c❤HP&7 máx como'
+    - '&7daño en área.'
+    - '&8 | &f<#AEC6CF>⌚5s &8|'
+    attack-damage: 30.0
+    defense: 50.0
+    tooltip-style: mythic
+    movement-speed: 0.05
+    ability:
+      ability1:
+        type: BLOODBURST
+        mode: RIGHT_CLICK
+        cooldown: 5.0
+      ability2:
+        type: SPIDER_ROULETTE
+        mode: LEFT_CLICK    
+        cooldown: 1
+    gem-sockets:
+    - '&dHechicería'
+    - '&3Tiempo'
+    skill-critical-strike-chance: 15.0
+    skill-critical-strike-power: 50.0
+
+
+VOODOO:
+  base:
+    material: STICK
+    custom-model-data: 1011
+    name: <#915ace>Vudú
+    lore:
+    - '&f丵 ʀɪᴛᴜᴀʟ ᴏꜱᴄᴜʀᴏ &f᎙'
+    - '&7Entras en &6⌛ Éxtasis&7, y luego'
+    - '&7lanzas &5Ritual Oscuro&7 por &d5s.'
+    - '&7'
+    - '&5Ritual Oscuro&7: Causa &c125+50%❤'
+    - '&7a enemigos cercanos por seg.'
+    - '&8 | &f<#AEC6CF>⌚60s &b✎150 &8|'
+    attack-damage: 38.0
+    skill-critical-strike-power: 200.0
+    skill-critical-strike-chance: -10.0
+    tooltip-style: mythic
+    movement-speed: 0.02
+    ability:
+      ability1:
+        type: DARK_RITUAL
+        mode: RIGHT_CLICK
+        cooldown: 60.0
+        mana: 150.0
+    gem-sockets:
+    - '&dHechicería'
+    - '&3Tiempo'
+
+
+EVENT_HORIZON:
+  base:
+    material: STICK
+    custom-model-data: 1010
+    attack-damage: 52.0
+    skill-critical-strike-chance: 50.0
+    weapon-damage: -100.0
+    tooltip-style: godlike
+    unbreakable: true
+    name: <#cb8592>Horizonte de Sucesos
+    lore:
+    - '&f並 ᴄᴏʟᴀᴘꜱᴏ &f᎙'
+    - '&7Invoca una estrella para chocar,'
+    - '&7explotando al contactar con'
+    - '&7el suelo y causando &c5.000'
+    - '&7de daño'
+    - '&8 | &f<#AEC6CF>⌚90s &b✎300 &8|'
+    - ''
+    - '&f丧 ᴘᴜʟꜱᴀʀ &f᎙'
+    - <#ccd8fc>Reemplaza &f並 <#ccd8fc>a los 100 &f临
+    - '&7Desde el cielo invoca la'
+    - <#44008b>galaxia&7 para caer, causando
+    - '&c25.000&7 de daño y además'
+    - '&f᎜ <#a41ca4>aturdiendo &7a los objetivos'
+    - '&7por &53s&7.'
+    - '&8 | &f<#AEC6CF>⌚90s &b✎300 &8|'
+    ability:
+      ability1:
+        type: COMET
+        mode: RIGHT_CLICK
+        mana: 300.0
+        cooldown: 90.0
+    gem-sockets:
+    - '&dHechicería'
+    - '&dHechicería'
+    - '&3Tiempo'

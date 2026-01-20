@@ -1,0 +1,327 @@
+info:
+  namespace: cubejobs
+font_images:
+  gui_alchemist:
+    path: cubejobs:gui/alchemist.png
+    y_position: 21
+    scale_ratio: 256
+    symbol: ṛ
+  gui_assassin:
+    path: cubejobs:gui/assassin.png
+    y_position: 21
+    scale_ratio: 256
+    symbol: Ṝ
+  gui_blacksmith:
+    path: cubejobs:gui/blacksmith.png
+    y_position: 21
+    scale_ratio: 256
+    symbol: ṝ
+  gui_builder:
+    path: cubejobs:gui/builder.png
+    y_position: 21
+    scale_ratio: 256
+    symbol: Ṟ
+  gui_crafter:
+    path: cubejobs:gui/crafter.png
+    y_position: 21
+    scale_ratio: 256
+    symbol: ṟ
+  gui_digger:
+    path: cubejobs:gui/digger.png
+    y_position: 21
+    scale_ratio: 256
+    symbol: Ṡ
+  gui_enchanter:
+    path: cubejobs:gui/enchanter.png
+    y_position: 21
+    scale_ratio: 256
+    symbol: ṡ
+  gui_farmer:
+    path: cubejobs:gui/farmer.png
+    y_position: 21
+    scale_ratio: 256
+    symbol: Ṣ
+  gui_fisherman:
+    path: cubejobs:gui/fisherman.png
+    y_position: 21
+    scale_ratio: 256
+    symbol: ṣ
+  gui_hunter:
+    path: cubejobs:gui/hunter.png
+    y_position: 21
+    scale_ratio: 256
+    symbol: Ṥ
+  gui_lumberjack:
+    path: cubejobs:gui/lumberjack.png
+    y_position: 21
+    scale_ratio: 256
+    symbol: ṥ
+  gui_miner:
+    path: cubejobs:gui/miner.png
+    y_position: 21
+    scale_ratio: 256
+    symbol: Ṧ
+  gui_smelter:
+    path: cubejobs:gui/smelter.png
+    y_position: 21
+    scale_ratio: 256
+    symbol: ṧ
+  icon_empty:
+    path: cubejobs:icon/empty.png
+    y_position: 5
+    scale_ratio: 5
+    symbol: Ṩ
+  icon_exp:
+    path: cubejobs:icon/exp.png
+    y_position: 8
+    scale_ratio: 9
+    symbol: ṩ
+  icon_filled:
+    path: cubejobs:icon/filled.png
+    y_position: 5
+    scale_ratio: 5
+    symbol: Ṫ
+  icon_left_click:
+    path: cubejobs:icon/left_click.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: ṫ
+  icon_right_click:
+    path: cubejobs:icon/right_click.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: Ṭ
+  misc_empty:
+    path: cubejobs:misc/empty.png
+    y_position: -32768
+    scale_ratio: -10
+    symbol: ṭ
+  prefix_chat_prefix:
+    path: cubejobs:prefix/chat/prefix.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: Ṯ
+  prefix_job_alchemist:
+    path: cubejobs:prefix/job/alchemist.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: ṯ
+  prefix_job_assassin:
+    path: cubejobs:prefix/job/assassin.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: Ṱ
+  prefix_job_blacksmith:
+    path: cubejobs:prefix/job/blacksmith.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: ṱ
+  prefix_job_builder:
+    path: cubejobs:prefix/job/builder.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: Ṳ
+  prefix_job_crafter:
+    path: cubejobs:prefix/job/crafter.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: ṳ
+  prefix_job_digger:
+    path: cubejobs:prefix/job/digger.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: Ṵ
+  prefix_job_enchanter:
+    path: cubejobs:prefix/job/enchanter.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: ṵ
+  prefix_job_farmer:
+    path: cubejobs:prefix/job/farmer.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: Ṷ
+  prefix_job_fisherman:
+    path: cubejobs:prefix/job/fisherman.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: ṷ
+  prefix_job_hunter:
+    path: cubejobs:prefix/job/hunter.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: Ṹ
+  prefix_job_lumberjack:
+    path: cubejobs:prefix/job/lumberjack.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: ṹ
+  prefix_job_miner:
+    path: cubejobs:prefix/job/miner.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: Ṻ
+  prefix_job_smelter:
+    path: cubejobs:prefix/job/smelter.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: ṻ
+  prefix_rank_adept:
+    path: cubejobs:prefix/rank/adept.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: Ṽ
+  prefix_rank_apprentice:
+    path: cubejobs:prefix/rank/apprentice.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: ṽ
+  prefix_rank_grandmaster:
+    path: cubejobs:prefix/rank/grandmaster.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: Ṿ
+  prefix_rank_initiate:
+    path: cubejobs:prefix/rank/initiate.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: ṿ
+  prefix_rank_journeyman:
+    path: cubejobs:prefix/rank/journeyman.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: Ẁ
+  prefix_rank_legendary:
+    path: cubejobs:prefix/rank/legendary.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: ẁ
+  prefix_rank_master:
+    path: cubejobs:prefix/rank/master.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: Ẃ
+  prefix_rank_novice:
+    path: cubejobs:prefix/rank/novice.png
+    y_position: 7
+    scale_ratio: 8
+    symbol: ẃ
+minecraft_lang_overwrite:
+  container_inventory:
+    entries:
+      "container.inventory": ""
+    languages:
+      - ALL
+items:
+  alchemist:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7812
+      textures:
+      - cubejobs:items/alchemist
+  assassin:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7813
+      textures:
+      - cubejobs:items/assassin
+  blacksmith:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7814
+      textures:
+      - cubejobs:items/blacksmith
+  builder:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7815
+      textures:
+      - cubejobs:items/builder
+  crafter:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7816
+      textures:
+      - cubejobs:items/crafter
+  digger:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7817
+      textures:
+      - cubejobs:items/digger
+  enchanter:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7818
+      textures:
+      - cubejobs:items/enchanter
+  farmer:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7819
+      textures:
+      - cubejobs:items/farmer
+  fisherman:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7820
+      textures:
+      - cubejobs:items/fisherman
+  hunter:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7821
+      textures:
+      - cubejobs:items/hunter
+  left_arrow:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7822
+      textures:
+      - cubejobs:items/left_arrow
+  lumberjack:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7823
+      textures:
+      - cubejobs:items/lumberjack
+  miner:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7824
+      textures:
+      - cubejobs:items/miner
+  right_arrow:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7825
+      textures:
+      - cubejobs:items/right_arrow
+  smelter:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7826
+      textures:
+      - cubejobs:items/smelter
+  air:
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 7827
+      textures:
+      - cubejobs:misc/air

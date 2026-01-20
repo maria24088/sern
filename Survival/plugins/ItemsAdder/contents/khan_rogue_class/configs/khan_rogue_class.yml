@@ -1,0 +1,121 @@
+info:
+  namespace: khan_rogue_class
+
+equipments:
+  khan_rogue_class_armor:
+    type: armor
+    layer_1: khan_rogue_class/rogue_layer_1
+    layer_2: khan_rogue_class/rogue_layer_2
+
+items:
+  rogue_dualdagger:
+    name: "rogue_dualdagger"
+    permission: "rogue_dualdagger"
+    resource:
+      material: "STONE_SWORD"
+      model_id: 4587
+      generate: false
+      model_path: "khan_rogue_class_model/rogue_dualdaggers"
+
+  rogue_helmet:
+    name: rogue_helmet
+    resource:
+      generate: false
+      material: CHAINMAIL_HELMET      
+      model_path: khan_rogue_class_model/rogue_helmet                  
+    durability:
+      max_durability: 165
+    equipment:
+      slot_attribute_modifiers:
+        armor: 2.5
+
+  rogue_chestplate:
+    name: rogue_chestplate
+    resource:
+      generate: true
+      model_id: 4588
+      texture: khan_rogue_class/rogue_chestplate
+      material: CHAINMAIL_CHESTPLATE
+    durability:
+      max_durability: 165
+    equipment:
+      id: khan_rogue_class:khan_rogue_class_armor
+
+  rogue_leggings:
+    name: rogue_leggings
+    resource:
+      generate: true
+      model_id: 4590
+      texture: khan_rogue_class/rogue_leggings
+      material: CHAINMAIL_LEGGINGS
+    durability:
+      max_durability: 165
+    equipment:
+      id: khan_rogue_class:khan_rogue_class_armor
+
+  rogue_boots:
+    name: rogue_boots
+    resource:
+      generate: true
+      model_id: 4591
+      texture: khan_rogue_class/rogue_boots
+      material: CHAINMAIL_BOOTS
+    durability:
+      max_durability: 165
+    equipment:
+      id: khan_rogue_class:khan_rogue_class_armor   
+
+  icon_rogue_vicious_cuts:
+    name: "icon_rogue_vicious_cuts"
+    permission: icon_rogue_vicious_cuts
+    resource:
+      material: COAL
+      texture: khan_rogue_class/icon_rogue_vicious_cuts      
+      model_id: 1928
+      generate: true
+
+  icon_rogue_slice_and_dice:
+    name: "icon_rogue_slice_and_dice"
+    permission: icon_rogue_slice_and_dice
+    resource:
+      texture: khan_rogue_class/icon_rogue_slice_and_dice       
+      material: COAL
+      model_id: 1929
+      generate: true
+
+  icon_rogue_cutthroat_combo:
+    name: "icon_rogue_cutthroat_combo"
+    permission: icon_rogue_cutthroat_combo
+    resource:
+      texture: khan_rogue_class/icon_rogue_cutthroat_combo      
+      material: COAL
+      model_id: 1930
+      generate: true
+
+  icon_rogue_smokebomb:
+    name: "icon_rogue_smokebomb"
+    permission: icon_rogue_smokebomb
+    resource:
+      texture: khan_rogue_class/icon_rogue_smokebomb      
+      material: COAL
+      model_id: 1931
+      generate: true
+
+  icon_rogue_grappling_hook:
+    name: "icon_rogue_grappling_hook"
+    permission: icon_rogue_grappling_hook
+    resource:
+      texture: khan_rogue_class/icon_rogue_grappling_hook      
+      material: COAL
+      model_id: 1932
+      generate: true
+
+  icon_rogue_mark_of_death:
+    name: "icon_rogue_mark_of_death"
+    permission: icon_rogue_mark_of_death
+    resource:
+      texture: khan_rogue_class/icon_rogue_mark_of_death      
+      material: COAL
+      model_id: 1933
+      generate: true
+

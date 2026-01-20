@@ -1,0 +1,121 @@
+# PlayerAuctions by Olzie-12
+# https://www.spigotmc.org/resources/83073
+# We also have a discord server for help: https://olziedev.com/discord or check docs https://docs.olziedev.com/projects/playerauctions
+# Also if you find any bugs be happy to report them I will fix them :)
+# Made with love
+
+# If you want to disable any message just set it to nothing. by doing
+# list: "" <- This will no longer send a message.
+
+
+# every singe message in the plugin is here.
+# make sure you use "" to end of every string
+# Also you can use colour codes <3
+
+# To use hex color codes you will need to do
+# "{#HEX} text"
+
+lang:
+  cancel-chat-wait: "cancel"
+  chat-wait-cancelled: "&cCancelled your request!"
+  friendly-max-auctions: "Unlimited"
+  prefix: "&6💰 &eAuction &8|"
+  auction-confirmation: "%prefix% &fSelling this auction will cost you &e%price%&f, do the command again to confirm."
+  auction-sell: "%prefix% &fStarted to sell &e%item%&f for &e%price%&f on the auction!"
+  auction-added: "%prefix% &fYou added &e%amount%&f items to your similar auction on the market, the total price for that item is now &e%price%&f, this works out as &e$%priceper%&f per item."
+  auction-bid: "%prefix% &fStarted to bid the item for &e%price%&f on the auction!"
+  reloaded: "%prefix% &fSuccessfully reloaded all configs!"
+  money-taken: "%prefix% &f%price% has been taken from your bank account."
+  auctions-cancelled: "%prefix% &fYour auctions have been cancelled!"
+  auctions-collected: "%prefix% &fSuccessfully collected &e%items%&f expired items!"
+  bought-item: "%prefix% &fSuccessfully purchased &e%item%&f for &e%price%&f!"
+  someone-purchased: "%prefix% &e%player%&f has just purchased &e%item% x%amount%&f for &e%price%&f!"
+  offline-title: "%prefix% &fWhile you were offline..."
+  bidder: "%prefix% &e%player%&f has just offered your bid of &e%item%&f for &e%price%"
+  bidded: "%prefix% &fYou just offered a bid to &e%item%&f for &e%price%"
+  bid-success: "%prefix% &e%player%&f has won your auction of &e%item%&f for &e%price%"
+  bidder-success: "%prefix% &fYou've won the auction of &e%item%&f for &e%price%&f Check your expired auctions."
+  earned-offline: "%prefix% &fYou've earned a total of &e$%total%&f!"
+  given-more-auctions-success: "%prefix% &fSuccessfully given &e%player%&f an extra of &e%extra%&f auctions and a total of &e%total%&f!"
+  dbexec-successful: "%prefix% &fSuccessfully updated &d%count%&f rows. &fPlease execute &d/%cmd% reload&f to update changes."
+  current-amount-of-auctions:
+  - "%prefix% &fYou currently have a maximum of &e%auctionsmax%&f (&e%staticauctions% static&f) auctions."
+  - "%prefix% &fYou currently have used &e%auctionsused%&f auctions."
+  current-amount-of-auctions-other:
+  - "%prefix% &d%player%&f currently has a maximum of &e%auctionsmax%&f (&e%staticauctions% static&f) auctions."
+  - "%prefix% &d%player%&f currently has used &e%auctionsused%&f auctions."
+  amount-auctions-others-alert: "&c%player% is currently offline, only showing their maximum auctions as a static amount."
+
+  # the help menu for a player
+  # The variable %cmd% is any command from the config.yml :)
+  help-player:
+  - "%prefix% &e/%cmd% help &7&l- &fDisplays this menu."
+  - "%prefix% &e/%cmd% sell <price> [currency] [amount] &7&l- &fSell an item."
+  - "%prefix% &e/%cmd% bid <price> &7&l- &fBid an item."
+  - "%prefix% &e/%cmd% auction &7&l- &fAuction via a GUI."
+  - "%prefix% &e/%cmd% cancel [id] [player] &7&l- &fCancel your auctioning items."
+  - "%prefix% &e/%cmd% collect &7&l- &fCollect your cancelled items."
+  - "%prefix% &e/%cmd% open [menu] [options] &7&l- &fOpens the player auction gui."
+  - "%prefix% &e/%cmd% amount &7&l- &fCheck how much auctions you have."
+  - "%prefix% &e/%cmd% reload &7&l- &fReloads all the config files."
+
+  # the help menu for console
+  # The variable %cmd% is any command from the config.yml :)
+  help-console:
+  - "%prefix% &e/%cmd% help &7&l- &fDisplays this menu."
+  - "%prefix% &e/%cmd% open [menu] [options] &7&l- &fOpens the player auction gui."
+  - "%prefix% &e/%cmd% reload &7&l- &fReloads all the config files."
+  - "%prefix% &e/%cmd% dbexec <query> &7&l- &fExecutes a query."
+
+  # error messages.
+  errors:
+    command-syntax: "%prefix% &cIncorrect syntax, use:\n%syntax%"
+    player-only: "%prefix%&c You must be a player!"
+    console-only: "%prefix% &CThis command can only be executed from console!"
+    not-a-number: "%prefix%&c That is not a number!"
+    no-permission: "%prefix%&c You do not have permission."
+    auction-dont-exist: "%prefix% &cThat auction does not exist!"
+    too-many-auctions: "%prefix%&c You can only sell %amount% item(s) at a time with your rank!"
+    money-not-enough-sell: "%prefix%&c You do not have %price% to sell this item!"
+    money-not-enough-buy: "%prefix%&c You do not have %price% to buy this item!"
+    money-not-enough-bid: "%prefix%&c You do not have %price% to bid this item!"
+    disabled-world-sell: "%prefix%&c You cannot sell items in this world!"
+    invalid-item: "%prefix%&c That is an invalid item to sell!"
+    damaged-item: "%prefix%&c You cannot sell a damaged item!"
+    invalid-gamemode: "%prefix%&c That is an invalid gamemode to sell in!"
+    invalid-category: "%prefix%&c That is a invalid category"
+    min-price: "%prefix%&c You need to set the price to at least %min%!"
+    max-price: "%prefix%&c You need to set the price below %max%!"
+    no-auctions: "%prefix%&c You currently have no auctions!"
+    no-expired-auctions: "%prefix%&c You currently have no expired auctions to collect!"
+    purchase-own: "%prefix%&c You cannot purchase your own auction!"
+    bid-own: "%prefix%&c You cannot bid your own auction!"
+    sell-cooldown: "%prefix%&c You currently have a cooldown for auctioning items! (%cooldown% left)"
+    bid-cooldown: "%prefix%&c You currently have a cooldown for bidding items! (%cooldown% left)"
+    offer-cooldown: "%prefix%&c You currently have a cooldown for offering a bid! (%cooldown% left)"
+    purchase-cooldown: "%prefix%&c You currently have a cooldown for purchasing items! (%cooldown% left)"
+    no-player-joined: "%prefix% &cThat player does not exist!"
+    bidder-no-money: "%prefix% &c%player% doesn't have enough money for your &e%item%, their offer has been removed."
+    bid-no-money: "%prefix% &cYou do not have enough money anymore for &e%item%'s bid, your offer has been removed."
+    min-bid: "%prefix% &cYou cannot offer that much! The minimum offer you can bid on is $1,000"
+    gui-cooldown: "%prefix% &cYou will need to wait a few seconds to use this again."
+    not-enough-add-bid: "%prefix% &cYou do not have enough money to add $%amount% to $%bid%"
+    cancel-bid: "%prefix% &cYou cannot cancel this auction while its been offered a bid!"
+    auction-doesnt-exist: "%prefix% &cThat auction doesn't exist anymore!"
+    dbexec-failed: "%prefix% &cThere was an error executing this query. %error%"
+
+# Here you can specify different types of messages per no-permission message, using the specific permission node.
+# Or you may set it to blank to not send a message at all.
+# no-permission:
+#   pa.purchase: "You do not have permission to purchase auctions!"
+
+n/a:
+  no-seller: "N/A"
+  no-expire: "N/A"
+  no-category: "N/A"
+  no-displayname: "%player%"
+
+# Here you can configure the item name formatting, please note that you will have to add the items below that you want to change
+# You can view the list of the items here: https://javadocs.olziedev.com/spigot/latest/org/bukkit/Material.html
+item-names:
+  ARMOR_STAND: "Armor Stand"

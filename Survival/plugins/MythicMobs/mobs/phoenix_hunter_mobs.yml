@@ -1,0 +1,575 @@
+######## created by samus2002 #########
+
+#### VFX ####
+
+# Hit Impact #
+
+VFX_Phoenix_Impact:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - aura{d=18;i=2;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    - model{sync=true;usestatemachine=true;mid=vfx_phoenix_impact_1;lockpitch=true}
+    - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0}
+    - brightness{mid=vfx_phoenix_impact_1;b=15;s=15}
+    - state{s=skill}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=vfx_phoenix_impact_1;nm=vfx_phoenix_impact_<caster.var.iteration>;p=bone;np=bone}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Phoenix_Impact2:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - aura{d=18;i=2;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    - model{sync=true;usestatemachine=true;mid=vfx_phoenix_impact_1;lockpitch=true}
+    - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0}
+    - brightness{mid=vfx_phoenix_impact_1;b=15;s=15}
+    - state{s=skill2}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=vfx_phoenix_impact_1;nm=vfx_phoenix_impact_<caster.var.iteration>;p=bone;np=bone}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+# Phoenix Feather #
+
+VFX_Phoenix_Feather:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_feather} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_feather;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=shoot;p=1} @self ~onSpawn
+  - state{s=shoot_end;delay=20;p=2} @self ~onSpawn
+VFX_Phoenix_Feather1:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_feather} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_feather;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=shoot1;p=1} @self ~onSpawn
+  - state{s=shoot_end;delay=20;p=2} @self ~onSpawn
+VFX_Phoenix_Feather2:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_feather} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_feather;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=shoot2;p=1} @self ~onSpawn
+  - state{s=shoot_end;delay=20;p=2} @self ~onSpawn
+VFX_Phoenix_Feather3:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_feather} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_feather;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=shoot3;p=1} @self ~onSpawn
+  - state{s=shoot_end;delay=20;p=2} @self ~onSpawn
+VFX_Phoenix_Feather4:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_feather} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_feather;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=shoot4;p=1} @self ~onSpawn
+  - state{s=shoot_end;delay=20;p=2} @self ~onSpawn
+VFX_Phoenix_Feather5:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_feather} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_feather;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=shoot5;p=1} @self ~onSpawn
+  - state{s=shoot_end;delay=20;p=2} @self ~onSpawn
+VFX_Phoenix_Feather6:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_feather} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_feather;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=shoot6;p=1} @self ~onSpawn
+  - state{s=shoot_end;delay=20;p=2} @self ~onSpawn
+VFX_Phoenix_Feather7:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_feather} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_feather;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=shoot7;p=1} @self ~onSpawn
+  - state{s=shoot_end;delay=20;p=2} @self ~onSpawn
+
+VFX_Phoenix_Feather_NOTRAIL:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_feather} @self ~onSpawn
+  - partvis{m=vfx_phoenix_feather;p=trail;v=false;em=true;child=true} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_feather;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=shoot;p=1} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;amount=1;hS=0;vS=0;y=0;size=0.4;speed=0.01} @modelpart{p=body} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#4a0200;color2=#1c0000;amount=1;hS=0;vS=0;y=0;size=0.4;speed=0.01} @modelpart{p=body} ~onTimer:1
+VFX_Phoenix_Feather_NOTRAIL1:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_feather} @self ~onSpawn
+  - partvis{m=vfx_phoenix_feather;p=trail;v=false;em=true;child=true} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_feather;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=left;p=1} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;amount=1;hS=0;vS=0;y=0;size=0.4;speed=0.01} @modelpart{p=body} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#4a0200;color2=#1c0000;amount=1;hS=0;vS=0;y=0;size=0.4;speed=0.01} @modelpart{p=body} ~onTimer:1
+VFX_Phoenix_Feather_NOTRAIL2:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_feather} @self ~onSpawn
+  - partvis{m=vfx_phoenix_feather;p=trail;v=false;em=true;child=true} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_feather;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=right;p=1} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;amount=1;hS=0;vS=0;y=0;size=0.4;speed=0.01} @modelpart{p=body} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#4a0200;color2=#1c0000;amount=1;hS=0;vS=0;y=0;size=0.4;speed=0.01} @modelpart{p=body} ~onTimer:1
+
+# Shoot Impact #
+
+VFX_Phoenix_Shoot_Impact:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - aura{d=18;i=2;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    - model{sync=true;usestatemachine=true;mid=vfx_phoenix_shoot_impact_1;lockpitch=false}
+    - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0}
+    - brightness{mid=vfx_phoenix_shoot_impact_1;b=15;s=15}
+    - state{s=skill}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=vfx_phoenix_shoot_impact_1;nm=vfx_phoenix_shoot_impact_<caster.var.iteration>;p=bone;np=bone}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+VFX_Phoenix_Shoot_Impact2:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - aura{d=18;i=2;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    - model{sync=true;usestatemachine=true;mid=vfx_phoenix_shoot_impact_1;lockpitch=false}
+    - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0}
+    - brightness{mid=vfx_phoenix_shoot_impact_1;b=15;s=15}
+    - state{s=skill3}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=vfx_phoenix_shoot_impact_1;nm=vfx_phoenix_shoot_impact_<caster.var.iteration>;p=bone;np=bone}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+VFX_Phoenix_Shoot_Impact3:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - aura{d=18;i=2;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    - model{sync=true;usestatemachine=true;mid=vfx_phoenix_shoot_impact_1;lockpitch=false}
+    - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0}
+    - brightness{mid=vfx_phoenix_shoot_impact_1;b=15;s=15}
+    - state{s=skill2}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=vfx_phoenix_shoot_impact_1;nm=vfx_phoenix_shoot_impact_<caster.var.iteration>;p=bone;np=bone}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+# Small Explosion #
+
+VFX_Phoenix_Explosion_SMALL:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - aura{d=24;i=2;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    - model{sync=true;usestatemachine=true;mid=vfx_phoenix_explosion_1;lockpitch=true;scale=0.35}
+    - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0}
+    - brightness{mid=vfx_phoenix_explosion_1;b=15;s=15}
+    - skill{s=VFX_Phoenix_Explosion_RAN}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=vfx_phoenix_explosion_1;nm=vfx_phoenix_explosion_<caster.var.iteration>;p=body;np=body}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+  - effect:particles{p=smoke;amount=10;hS=0.3;vS=0.3;y=0;size=1;speed=0.05;delay=10} @modelpart{p=body} ~onSpawn
+  - effect:particles{p=campfire_cosy_smoke;amount=3;hS=0.5;vS=0.5;y=0;size=1;speed=0.1;delay=10} @modelpart{p=body} ~onSpawn
+  - effect:particles{p=lava;amount=5;hS=0.3;vS=0.3;y=0;size=1;speed=0.1;delay=10} @modelpart{p=body} ~onSpawn
+  
+# Phoenix Dash #
+
+VFX_Phoenix_Dash:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - aura{delay=3;d=11;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    - model{sync=true;usestatemachine=true;mid=vfx_phoenix_dash_1;lockpitch=true}
+    - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0}
+    - brightness{mid=vfx_phoenix_dash_1;b=15;s=15}
+    - state{s=skill}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=vfx_phoenix_dash_1;nm=vfx_phoenix_dash_<caster.var.iteration>;p=bone;np=bone}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+# Fireball #
+
+VFX_Phoenix_Fireball:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_fireball} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_fireball;b=15;s=15} @self ~onSpawn
+  #- effect:particles{p=campfire_cosy_smoke;amount=1;hS=0;vS=0;y=0;size=0.5;speed=0} @modelpart{p=body} ~onTimer:1
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=loop} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;amount=3;hS=0.01;vS=0.01;y=0;size=0.5;speed=0} @modelpart{p=front} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#4a0200;color2=#1c0000;amount=3;hS=0.01;vS=0.01;y=0;size=0.5;speed=0} @modelpart{p=front} ~onTimer:1
+  - effect:particles{p=small_flame;amount=1;hS=0;vS=0;y=0;size=0.7;speed=0.01} @modelpart{p=front} ~onTimer:1
+
+
+# Big Explosion #
+
+VFX_Phoenix_Explosion_BIG:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - aura{d=24;i=2;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    - model{sync=true;usestatemachine=true;mid=vfx_phoenix_explosion_1;lockpitch=true;scale=0.7}
+    - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0}
+    - brightness{mid=vfx_phoenix_explosion_1;b=15;s=15}
+    - skill{s=VFX_Phoenix_Explosion_RAN}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=vfx_phoenix_explosion_1;nm=vfx_phoenix_explosion_<caster.var.iteration>;p=body;np=body}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+  
+  - effect:particles{p=smoke;amount=15;hS=0.7;vS=0.7;y=0;size=1;speed=0.05;delay=10} @modelpart{p=body} ~onSpawn
+  - effect:particles{p=campfire_cosy_smoke;amount=5;hS=0.8;vS=0.8;y=0;size=1;speed=0.1;delay=10} @modelpart{p=body} ~onSpawn
+  - effect:particles{p=lava;amount=7;hS=0.7;vS=0.7;y=0;size=1;speed=0.1;delay=10} @modelpart{p=body} ~onSpawn
+  
+# Phoenix Totem #
+
+VFX_Phoenix_Totem:
+  Type: WOLF
+  Display: '&f'
+  Health: 2000
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+    Invincible: true
+    NoDamageTicks: 1
+    Collidable: false
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_totem} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_totem;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=spawn} @self ~onSpawn
+  - state{s=despawn;delay=180} @self ~onSpawn
+  - remove{delay=200} @self ~onSpawn
+  - state{s=hit} @self ~onSignal:TOTEM ?hasaura{n=TOTEM<trigger.uuid>}
+  - state{s=hit} @self ~onSignal:ENDTOT ?hasaura{n=TOTEM<trigger.uuid>}
+  - aura{auraName=TOTEMACTIVA;duration=4;ow=true} @owner ~onSignal:TOTEM ?hasaura{n=TOTEM<trigger.uuid>}
+  - aura{auraName=TOTEMACTIVA;duration=4;ow=true} @owner ~onSignal:ENDTOT ?hasaura{n=TOTEM<trigger.uuid>}
+  #- remove{delay=5} @self ~onSignal:ENDTOT ?hasaura{n=TOTEM<trigger.uuid>}
+  - skill{s=Phoenix_Totem_DMG_Aura_REMOVE} @owner ~onTimer:1
+  - sudoskill{s=SUDO_TOTEM;cat=true} @owner ~onSpawn
+
+# Rupture #
+
+VFX_Phoenix_Rupture:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_earthquake_rupture_1;lockpitch=true} @self ~onSpawn
+  - brightness{mid=vfx_earthquake_rupture_1;b=11;s=11} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill2} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=F50000;em=false} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=BE0000;em=false;delay=22} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=8D0000;em=false;delay=24} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=570000;em=false;delay=26} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=310000;em=false;delay=30} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=000000;em=false;delay=32} @self ~onSpawn
+  
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_2;np=body;delay=64} @self ~onSpawn
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_3;np=body;delay=66} @self ~onSpawn
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_4;np=body;delay=68} @self ~onSpawn
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_5;np=body;delay=70} @self ~onSpawn
+  - remove{delay=72} @self ~onSpawn
+
+# Feather Spread #
+
+VFX_Phoenix_Feather_Spread:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_feather_spread} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_feather_spread;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=spawn} @self ~onSpawn
+  - state{s=loop;delay=12;li=100} @self ~onSpawn
+
+# Phoenix Wings #
+
+VFX_Phoenix_Wings:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_phoenix_wings_1;lockpitch=true} @self ~onSpawn
+  - changepart{m=vfx_phoenix_wings_1;p=bone;nm=vfx_phoenix_wings_2;np=bone;delay=2} @self ~onSpawn
+  - changepart{m=vfx_phoenix_wings_1;p=bone;nm=vfx_phoenix_wings_3;np=bone;delay=4} @self ~onSpawn
+  - changepart{m=vfx_phoenix_wings_1;p=bone;nm=vfx_phoenix_wings_a;np=bone;delay=6} @self ~onSpawn
+  - brightness{mid=vfx_phoenix_wings_1;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  #- changepart{m=vfx_phoenix_wings_1;p=bone;nm=vfx_phoenix_wings_3;np=bone;delay=194} @self ~onSpawn
+  #- changepart{m=vfx_phoenix_wings_1;p=bone;nm=vfx_phoenix_wings_2;np=bone;delay=196} @self ~onSpawn
+  #- changepart{m=vfx_phoenix_wings_1;p=bone;nm=vfx_phoenix_wings_1;np=bone;delay=198} @self ~onSpawn
+  
+# Blaze Wave #
+
+VFX_Phoenix_Blaze_Wave_1:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - aura{d=18;i=2;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    - model{sync=true;usestatemachine=true;mid=vfx_phoenix_blaze_wave_1;lockpitch=false;scale=2}
+    - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0}
+    - brightness{mid=vfx_phoenix_blaze_wave_1;b=15;s=15}
+    - state{s=skill1} @self ~onSpawn
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=vfx_phoenix_blaze_wave_1;nm=vfx_phoenix_blaze_wave_<caster.var.iteration>;p=bone;np=bone}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+  
+  - effect:particles{p=small_flame;amount=7;hS=0.5;vS=0.5;y=0;size=1;speed=0.05;delay=4} @modelpart{p=bone} ~onSpawn
+  - effect:particles{p=campfire_cosy_smoke;amount=5;hS=0.5;vS=0.5;y=0;size=1;speed=0.05;delay=4} @modelpart{p=bone} ~onSpawn
+  - effect:particles{p=lava;amount=4;hS=0.4;vS=0.4;y=0;size=1;speed=0.1;delay=4} @modelpart{p=bone} ~onSpawn
+VFX_Phoenix_Blaze_Wave_2:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - aura{d=18;i=2;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    - model{sync=true;usestatemachine=true;mid=vfx_phoenix_blaze_wave_1;lockpitch=false;scale=2}
+    - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0}
+    - brightness{mid=vfx_phoenix_blaze_wave_1;b=15;s=15}
+    - state{s=skill2} @self ~onSpawn
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=vfx_phoenix_blaze_wave_1;nm=vfx_phoenix_blaze_wave_<caster.var.iteration>;p=bone;np=bone}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+  
+  - effect:particles{p=small_flame;amount=7;hS=0.5;vS=0.5;y=0;size=1;speed=0.05;delay=4} @modelpart{p=bone} ~onSpawn
+  - effect:particles{p=campfire_cosy_smoke;amount=5;hS=0.5;vS=0.5;y=0;size=1;speed=0.05;delay=4} @modelpart{p=bone} ~onSpawn
+  - effect:particles{p=lava;amount=4;hS=0.4;vS=0.4;y=0;size=1;speed=0.1;delay=4} @modelpart{p=bone} ~onSpawn
+  
+VFX_Phoenix_Blaze_Wave_1_SHOOTER:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - skill{s=Ashdance_Rebirth_PRO_VS1;delay=1} ~onSpawn
+  - remove{delay=80} @self ~onSpawn
+VFX_Phoenix_Blaze_Wave_2_SHOOTER:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - skill{s=Ashdance_Rebirth_PRO_VS2;delay=1} ~onSpawn
+  - remove{delay=80} @self ~onSpawn

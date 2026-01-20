@@ -1,0 +1,30 @@
+necrotic_animated_weapon_set_hat:
+  slot: HELMET
+  permission: "elitecreatures.hat"
+  dyeable: false
+  item:
+    material: itemsadder:necrotic_animated_weapon_set_hat
+    name: "[Necrotic] Hat"
+    amount: 1
+necrotic_animated_weapon_set_backpack:
+  slot: BACKPACK
+  permission: "elitecreatures.backpack"
+  item:
+    material: itemsadder:necrotic_animated_weapon_set_backpack
+    name: "[Necrotic] Backpack"
+    amount: 1
+  firstperson-item:
+    material: itemsadder:necrotic_animated_weapon_set_backpack
+    amount: 1
+necrotic_animated_weapon_set_wing:
+  slot: BACKPACK
+  permission: "elitecreatures.wing"
+  item:
+    material: itemsadder:necrotic_animated_weapon_set_wing
+    name: "[Necrotic] Wing"
+    amount: 1
+  firstperson-item:
+    material: itemsadder:necrotic_animated_weapon_set_wing
+    amount: 1
+
+#kGS3cTT5gmespXevdWOUNzdj12UaxmVXplRq5EaGdVTah2RhhlT41EdpZTSSZVYBl1dFFzM

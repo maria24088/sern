@@ -1,0 +1,18 @@
+backup_version: 2
+users:
+    26ed0e51-3dbb-3950-b9ae-1b7db8ac61c6:
+        skills:
+            auraskills/agility: {level: 9, xp: 20471.227840000134}
+            auraskills/enchanting: {level: 0, xp: 0.0}
+            auraskills/defense: {level: 3, xp: 626.3201938629156}
+            auraskills/excavation: {level: 9, xp: 17234.68000000021}
+            auraskills/farming: {level: 0, xp: 24.7}
+            auraskills/alchemy: {level: 2, xp: 300.0}
+            auraskills/mining: {level: 0, xp: 3.2000000000000006}
+            auraskills/fighting: {level: 7, xp: 6373.29999999997}
+            auraskills/fishing: {level: 0, xp: 0.0}
+            auraskills/foraging: {level: 0, xp: 0.0}
+            auraskills/archery: {level: 0, xp: 28.0}
+        mana: 64.0
+        trait_modifiers:
+        - {name: mmoitems_max_mana, trait: auraskills/max_mana, operation: ADD, value: 30.0}

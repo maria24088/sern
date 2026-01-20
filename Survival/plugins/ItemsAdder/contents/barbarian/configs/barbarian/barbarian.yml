@@ -1,0 +1,78 @@
+# Downloaded from https://nullforums.net/resources/rpg-class-series-barbarian-v1-1.6445/
+info:
+  namespace: barbarian
+items:
+  axe_babarian:
+    display_name: "axe_babarian"
+    permission: axe_babarian
+    resource:
+      material: STONE_SWORD
+      model_id: 2056
+      generate: false
+      model_path: babarian_model/axe_babarian
+  axe_babarian_shiny:
+    display_name: "axe_babarian_shiny"
+    permission: axe_babarian_shiny
+    resource:
+      material: STONE_SWORD
+      model_id: 2057
+      generate: false
+      model_path: babarian_model/axe_babarian_shiny
+  icon_bloodlust:
+    display_name: "icon_bloodlust"
+    permission: icon_bloodlust
+    resource:
+      material: COAL
+      model_id: 2179
+      generate: false
+      model_path: babarian_model/icon_bloodlust
+  icon_double_edge:
+    display_name: "icon_double_edge"
+    permission: icon_double_edge
+    resource:
+      material: COAL
+      model_id: 2180
+      generate: false
+      model_path: babarian_model/icon_double_edge
+  icon_eternal_fury:
+    display_name: "icon_eternal_fury"
+    permission: icon_eternal_fury
+    resource:
+      material: COAL
+      model_id: 2181
+      generate: false
+      model_path: babarian_model/icon_eternal_fury
+  icon_primal_axe:
+    display_name: "icon_primal_axe"
+    permission: icon_primal_axe
+    resource:
+      material: COAL
+      model_id: 2182
+      generate: false
+      model_path: babarian_model/icon_primal_axe
+  icon_rageblade:
+    display_name: "icon_rageblade"
+    permission: icon_rageblade
+    resource:
+      material: COAL
+      model_id: 2183
+      generate: false
+      model_path: babarian_model/icon_rageblade
+  icon_relentless_leap:
+    display_name: "icon_relentless_leap"
+    permission: icon_relentless_leap
+    resource:
+      material: COAL
+      model_id: 2184
+      generate: false
+      model_path: babarian_model/icon_relentless_leap
+  icon_war_cry:
+    display_name: "icon_war_cry"
+    permission: icon_war_cry
+    resource:
+      material: COAL
+      model_id: 2185
+      generate: false
+      model_path: babarian_model/icon_war_cry
+  
+# a170b77c875ddb1ca77fad9c86a9cf4f278453d3 . 43849

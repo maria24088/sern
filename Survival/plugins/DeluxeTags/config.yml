@@ -1,0 +1,171 @@
+# DeluxeTags version: 1.8.2-Release Main Configuration
+#
+# Create your tags using the following format:
+#
+# deluxetags:
+#   VIP: 
+#     order: 1
+#     tag: '&7[&eVIP&7]'
+#     description: 'This tag is awarded by getting VIP'
+#
+# Placeholders for your chat plugin that supports PlaceholderAPI (Including DeluxeChat)
+#
+# %deluxetags_identifier% - display the players active tag identifier
+# %deluxetags_tag% - display the players active tag
+# %deluxetags_description% - display the players active tag description
+# %deluxetags_amount% - display the amount of tags a player has access to
+#
+# Placeholders for your essentials/chat handling formats config:
+#
+# {deluxetags_identifier} - display the players active tag identifier
+# {deluxetags_tag} - display the players active tag
+# {deluxetags_description} - display the players active tag description
+# {deluxetags_amount} - display the amount of tags a player has access to
+
+force_tags: false
+check_updates: true
+legacy_hex: false
+papi_chat: true
+format_chat:
+  enabled: false
+  format: '{deluxetags_tag} <%1$s> %2$s'
+load_tag_on_join: true
+gui:
+  name: '&6Available tags&f: &6%deluxetags_amount%'
+  tag_select_item:
+    material: NAME_TAG
+    data: 0
+    displayname: '&6Tag&f: &6%deluxetags_identifier%'
+    lore:
+    - '%deluxetags_tag%'
+    - '%deluxetags_description%'
+  divider_item:
+    material: BLACK_STAINED_GLASS_PANE
+    data: 0
+    displayname: ''
+    lore: []
+  has_tag_item:
+    material: PLAYER_HEAD
+    data: 0
+    displayname: '&eCurrent tag&f: &6%deluxetags_identifier%'
+    lore:
+    - '%deluxetags_tag%'
+    - Click to remove your current tag
+  no_tag_item:
+    material: PLAYER_HEAD
+    data: 0
+    displayname: '&cYou don''t have a tag set!'
+    lore:
+    - '&7Click a tag above to select one!'
+  exit_item:
+    material: IRON_DOOR
+    data: 0
+    displayname: '&cClick to exit'
+    lore:
+    - '&7Exit the tags menu'
+  next_page:
+    material: PAPER
+    data: 0
+    displayname: '&6Next page: %page%'
+    lore:
+    - '&7Move to the next page'
+  previous_page:
+    material: PAPER
+    data: 0
+    displayname: '&6Previous page: %page%'
+    lore:
+    - '&7Move to the previous page'
+deluxetags:
+  USA:
+    order: 1
+    tag: '&7&r#be0b31&lU&f&lS#002768&lA&r&7&r '
+    permission: tags.usa
+  
+  Star:
+    order: 2
+    tag: '#fbf100&lS#fce200&lT#fcd400&lA#fdc500&lR&r '
+    permission: tags.star
+  
+  Love:
+    order: 3
+    tag: '#fb4545&lL#fc3838&lO#fc2a2a&lV#fd1d1d&lE&r '
+    permission: tags.love
+  
+  Dollar:
+    order: 4
+    tag: '#8dfb00&l$#49fc00&l$#05fd00&l$&r '
+    permission: tags.dollar
+  
+  Number1:
+    order: 5
+    tag: '#fbf100&l##fbf100&l1&r '
+    permission: tags.number1
+  
+  Overlord:
+    order: 6
+    tag: '#c900fb&lO#d000ef&lV#d800e3&lE#df00d7&lR#e700cb&lL#ee00bf&lO#f600b3&lR#fd00a7&lD&r '
+    permission: tags.overlord
+  
+  Titan:
+    order: 7
+    tag: '#0092fb&lT#0087fc&lI#007cfc&lT#0070fd&lA#0065fd&lN&r '
+    permission: tags.titan
+  
+  Hero:
+    order: 8
+    tag: '#56ddfb&lH#3be8de&lE#21f2c1&lR#06fda4&lO&r '
+    permission: tags.hero
+  
+  Immortal:
+    order: 9
+    tag: '#272b53&lI#2b2551&lM#301f4f&lM#34194d&lO#39144a&lR#3d0e48&lT#420846&lA#460244&lL&r '
+    permission: tags.immortal
+  
+  Legend:
+    order: 10
+    tag: '#ff000f&lL#ff001e&lE#ff002e&lG#ff003d&lE#ff004d&lN#ff005c&lD&r '
+    permission: tags.legend
+  
+  Duke:
+    order: 11
+    tag: '#56ff53&lD#3ad837&lU#1fb21c&lK#038b00&lE&r '
+    permission: tags.duke
+  
+  Music:
+    order: 12
+    tag: '#eb00ff&lM#b03cff&lU#7678ff&lS#3bb4ff&lI#00f0ff&lC&r '
+    permission: tags.music
+  
+  OG:
+    order: 13
+    tag: '#0057ff&lO#0057ff&lG&r '
+    permission: tags.og
+  
+  MVP:
+    order: 14
+    tag: '#00c2ff&lM#0094ff&lV#0066ff&lP&r '
+    permission: tags.mvp
+  
+  Rainbow:
+    order: 15
+    tag: '#ff4b4b&lR#ff7519&lA#ffae00&lI#fff500&lN#a4f000&lB#4fe036&lO#00c6a2&lW&r '
+    permission: tags.rainbow
+  
+  Summer:
+    order: 16
+    tag: '#fba900&lS#fb9400&lU#fc7f00&lM#fc6a00&lM#fd5500&lE#fd4000&lR&r '
+    permission: tags.seasonal_summer
+  
+  Exotic:
+    order: 17
+    tag: '#00fbe0&lE#00fbd1&lX#00fcc2&lO#00fcb4&lT#00fda5&lI#00fd96&lC&r '
+    permission: tags.seasonal_exotic
+  
+  Beach:
+    order: 18
+    tag: '#fffdc8&lB#fff896&lE#fef264&lA#feed32&lC#fde700&lH&r '
+    permission: tags.seasonal_beach
+
+
+
+

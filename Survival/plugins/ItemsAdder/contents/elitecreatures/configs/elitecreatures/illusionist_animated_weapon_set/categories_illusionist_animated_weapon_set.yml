@@ -1,0 +1,33 @@
+info:
+  namespace: elitecreatures
+categories:
+  illusionist_animated_weapon_set:
+    enabled: true
+    icon: "elitecreatures:illusionist_animated_weapon_set_hat"
+    name: "Illusionist Animated Weapon Set"
+    permission: "ia.menu.illusionist_animated_weapon_set"
+    items:
+      - "elitecreatures:illusionist_animated_weapon_set_axe"
+      - "elitecreatures:illusionist_animated_weapon_set_backpack"
+      - "elitecreatures:illusionist_animated_weapon_set_bow"
+      - "elitecreatures:illusionist_animated_weapon_set_chest"
+      - "elitecreatures:illusionist_animated_weapon_set_crossbow"
+      - "elitecreatures:illusionist_animated_weapon_set_dagger"
+      - "elitecreatures:illusionist_animated_weapon_set_fishing_rod"
+      - "elitecreatures:illusionist_animated_weapon_set_greatsword"
+      - "elitecreatures:illusionist_animated_weapon_set_hammer"
+      - "elitecreatures:illusionist_animated_weapon_set_hat"
+      - "elitecreatures:illusionist_animated_weapon_set_hoe"
+      - "elitecreatures:illusionist_animated_weapon_set_key"
+      - "elitecreatures:illusionist_animated_weapon_set_mace"
+      - "elitecreatures:illusionist_animated_weapon_set_pickaxe"
+      - "elitecreatures:illusionist_animated_weapon_set_shield"
+      - "elitecreatures:illusionist_animated_weapon_set_shovel"
+      - "elitecreatures:illusionist_animated_weapon_set_spear"
+      - "elitecreatures:illusionist_animated_weapon_set_staff"
+      - "elitecreatures:illusionist_animated_weapon_set_sword"
+      - "elitecreatures:illusionist_animated_weapon_set_wing"
+      - "elitecreatures:illusionist_animated_weapon_set_helmet"
+      - "elitecreatures:illusionist_animated_weapon_set_chestplate"
+      - "elitecreatures:illusionist_animated_weapon_set_leggings"
+      - "elitecreatures:illusionist_animated_weapon_set_boots"

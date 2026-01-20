@@ -1,0 +1,28 @@
+malevolent_shrine_animated_weapon_set_hat:
+  slot: HELMET
+  permission: "elitecreatures.hat"
+  dyeable: false
+  item:
+    material: itemsadder:malevolent_shrine_animated_weapon_set_hat
+    name: "[Malevolent Shrine] Hat"
+    amount: 1
+malevolent_shrine_animated_weapon_set_backpack:
+  slot: BACKPACK
+  permission: "elitecreatures.backpack"
+  item:
+    material: itemsadder:malevolent_shrine_animated_weapon_set_backpack
+    name: "[Malevolent Shrine] Backpack"
+    amount: 1
+  firstperson-item:
+    material: itemsadder:malevolent_shrine_animated_weapon_set_backpack
+    amount: 1
+malevolent_shrine_animated_weapon_set_wing:
+  slot: BACKPACK
+  permission: "elitecreatures.wing"
+  item:
+    material: itemsadder:malevolent_shrine_animated_weapon_set_wing
+    name: "[Malevolent Shrine] Backpack"
+    amount: 1
+  firstperson-item:
+    material: itemsadder:malevolent_shrine_animated_weapon_set_wing
+    amount: 1

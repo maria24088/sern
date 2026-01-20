@@ -1,0 +1,484 @@
+open_command: marketplace
+register_command: true
+
+size: 45
+menu_title: '&f%img_offset_-8%%img_main_marketplace%'
+items:
+  'close':
+    material: itemsadder-invisible_item
+    slot: 8
+    display_name: '&#da5240&lCERRAR'
+    click_commands:
+      - "[close]"
+  'leaderboard':
+    material: itemsadder-invisible_item
+    slot: 7
+    display_name: '&#eedc12&lTABLA SEMANAL'
+    lore:
+      - '&8ɪɴғᴏʀᴍᴀᴄɪᴏɴ'
+      - ""
+      - "&#fcb451Información:"
+      - "&8ᴄᴏsᴇᴄʜᴀ ᴛᴀɴᴛᴏs"
+      - "&8ᴄᴜʟᴛɪᴠᴏs ᴄᴏᴍᴏ ᴘᴜᴇᴅᴀs"
+      - ""
+      - "&#eedc12#1 %ajlb_lb_servervariables_value_harvested_crops_1_weekly_name% &8- &#e7c86b%ajlb_lb_servervariables_value_harvested_crops_1_weekly_value%"
+      - "&#cccccc#2 %ajlb_lb_servervariables_value_harvested_crops_2_weekly_name% &8- &#e7c86b%ajlb_lb_servervariables_value_harvested_crops_2_weekly_value%"
+      - "&#b2816b#3 %ajlb_lb_servervariables_value_harvested_crops_3_weekly_name% &8- &#e7c86b%ajlb_lb_servervariables_value_harvested_crops_3_weekly_value%"
+      - ""
+      - "&#9bd7efTu posición: &#e1e1e2#%ajlb_position_servervariables_value_harvested_crops_weekly% &8- &#bff4fe%ajlb_value_servervariables_value_harvested_crops_weekly%"
+
+  'seeds1':
+    material: itemsadder-invisible_item
+    slots:
+      - 9-11
+      - 18-20
+      - 27-29
+    display_name: '&#87e1fa&lSEMILLAS'
+    lore:
+      - '&8ᴛɪᴇɴᴅᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴄᴏᴍᴘʀᴀ ᴠᴀʀɪᴇᴅᴀᴅ ᴅᴇ sᴇᴍɪʟʟᴀs'
+      - '&#e1e1e2ᴘᴀʀᴀ ᴇxᴘᴀɴᴅɪʀ ᴛᴜ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_vegetables_seeds"
+
+  'misc1':
+    material: itemsadder-invisible_item
+    slots:
+      - 12-15
+      - 21-24
+    display_name: '&#9a86fd&lVARIOS'
+    lore:
+      - '&8ᴛɪᴇɴᴅᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴄᴏᴍᴘʀᴀ ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - '&#e1e1e2ᴘᴀʀᴀ ʜᴀᴄᴇʀ ᴛᴜ ɢʀᴀɴᴊᴀ ᴍás ᴇғɪᴄɪᴇɴᴛᴇ'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_misc_fertilizers"
+
+  'deals1':
+    material: itemsadder-invisible_item
+    priority: 5
+    slots:
+      - 30-33
+      - 39-42
+    display_name: '&#f6c248&lOFERTAS DIARIAS'
+    lore:
+      - '&8ᴛɪᴇɴᴅᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴍɪʀᴀ ʟᴏs ᴅᴇsᴄᴜᴇɴᴛᴏs ᴅɪᴀʀɪᴏs'
+      - '&#e1e1e2ᴇɴ ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_daily_deals_1"
+    view_requirement:
+      requirements:
+        stock:
+          type: '=='
+          input: '%servervariables_globalvalue_current_deal%'
+          output: '1'
+  'deals2':
+    material: itemsadder-invisible_item
+    priority: 4
+    slots:
+      - 30-33
+      - 39-42
+    display_name: '&#f6c248&lOFERTAS DIARIAS'
+    lore:
+      - '&8ᴛɪᴇɴᴅᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴍɪʀᴀ ʟᴏs ᴅᴇsᴄᴜᴇɴᴛᴏs ᴅɪᴀʀɪᴏs'
+      - '&#e1e1e2ᴇɴ ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_daily_deals_2"
+    view_requirement:
+      requirements:
+        stock:
+          type: '=='
+          input: '%servervariables_globalvalue_current_deal%'
+          output: '2'
+  'deals3':
+    material: itemsadder-invisible_item
+    priority: 3
+    slots:
+      - 30-33
+      - 39-42
+    display_name: '&#f6c248&lOFERTAS DIARIAS'
+    lore:
+      - '&8ᴛɪᴇɴᴅᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴍɪʀᴀ ʟᴏs ᴅᴇsᴄᴜᴇɴᴛᴏs ᴅɪᴀʀɪᴏs'
+      - '&#e1e1e2ᴇɴ ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_daily_deals_3"
+    view_requirement:
+      requirements:
+        stock:
+          type: '=='
+          input: '%servervariables_globalvalue_current_deal%'
+          output: '3'
+  'deals4':
+    material: itemsadder-invisible_item
+    priority: 2
+    slots:
+      - 30-33
+      - 39-42
+    display_name: '&#f6c248&lOFERTAS DIARIAS'
+    lore:
+      - '&8ᴛɪᴇɴᴅᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴍɪʀᴀ ʟᴏs ᴅᴇsᴄᴜᴇɴᴛᴏs ᴅɪᴀʀɪᴏs'
+      - '&#e1e1e2ᴇɴ ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_daily_deals_4"
+    view_requirement:
+      requirements:
+        stock:
+          type: '=='
+          input: '%servervariables_globalvalue_current_deal%'
+          output: '4'
+  'deals5':
+    material: itemsadder-invisible_item
+    priority: 1
+    slots:
+      - 30-33
+      - 39-42
+    display_name: '&#f6c248&lOFERTAS DIARIAS'
+    lore:
+      - '&8ᴛɪᴇɴᴅᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴍɪʀᴀ ʟᴏs ᴅᴇsᴄᴜᴇɴᴛᴏs ᴅɪᴀʀɪᴏs'
+      - '&#e1e1e2ᴇɴ ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_daily_deals_5"
+    view_requirement:
+      requirements:
+        stock:
+          type: '=='
+          input: '%servervariables_globalvalue_current_deal%'
+          output: '5'
+
+
+  'sellcrops1':
+    material: itemsadder-invisible_item
+    slots:
+      - 16-17
+      - 25-26
+      - 34-35
+      - 43-44
+    display_name: '&#85d746&lVENDER CULTIVOS'
+    lore:
+      - '&8ᴛɪᴇɴᴅᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴠᴇɴᴅᴇ ᴛᴜs ᴄᴜʟᴛɪᴠᴏs ᴄᴏsᴇᴄʜᴀᴅᴏs'
+      - '&#e1e1e2ᴘᴀʀᴀ ɢᴀɴᴀʀ ᴅɪɴᴇʀᴏ'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+      - "&f%img_shift_right_click_icon% &#709ed3Click-derecho para abrir menú de gigantes"
+    left_click_commands:
+      - "[openguimenu] submenu_categories_vegetables_sell"
+    right_click_commands:
+      - "[openguimenu] submenu_categories_overgrown_vegetables_sell"
+
+  'level_2_upgrade_locked':
+    material: itemsadder-invisible_item
+    priority: 11
+    slots:
+      - 36-38
+    display_name: '&#a8bdbd&lMEJORA DE MERCADO'
+    lore:
+      - '&8ᴍᴇᴊᴏʀᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴍᴇᴊᴏʀᴀ ᴛᴜ ᴍᴇʀᴄᴀᴅᴏ ᴘᴀʀᴀ'
+      - '&#e1e1e2ᴅᴇsʙʟᴏǫᴜᴇᴀʀ ᴍás ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&#e7c86bTu nivel: &#e1e1e2%servervariables_value_marketplace_level%"
+      - ""
+      - "&#9a86fdRequisitos:"
+      - "%changeoutput_>=_input:{servervariables_value_harvested_crops}_matcher:100_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Cosecha &#a8bdbd100 &#e1e1e2cultivos"
+      - "%changeoutput_>=_input:{vault_eco_balance}_matcher:5000_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Tener &#6bc9435000$"
+      - ""
+      - "&#e45838❌ No puedes desbloquear"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%servervariables_value_marketplace_level%'
+          output: '1'
+
+  'level_2_upgrade_unlocked':
+    material: itemsadder-invisible_item
+    priority: 10
+    slots:
+      - 36-38
+    display_name: '&#a8bdbd&lMEJORA DE MERCADO'
+    lore:
+      - '&8ᴍᴇᴊᴏʀᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴍᴇᴊᴏʀᴀ ᴛᴜ ᴍᴇʀᴄᴀᴅᴏ ᴘᴀʀᴀ'
+      - '&#e1e1e2ᴅᴇsʙʟᴏǫᴜᴇᴀʀ ᴍás ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&#e7c86bTu nivel: &#e1e1e2%servervariables_value_marketplace_level%"
+      - ""
+      - "&#9a86fdRequisitos:"
+      - "%changeoutput_>=_input:{servervariables_value_harvested_crops}_matcher:100_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Cosecha &#a8bdbd100 &#e1e1e2cultivos"
+      - "%changeoutput_>=_input:{vault_eco_balance}_matcher:5000_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Tener &#6bc9435000$"
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para mejorar tu mercado"
+    click_commands:
+      - "[console] svar add marketplace_level 1 %player_name%"
+      - "[takemoney] 5000"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        harvest:
+          type: '>='
+          input: '%servervariables_value_harvested_crops%'
+          output: '100'
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '5000'
+        level:
+          type: '=='
+          input: '%servervariables_value_marketplace_level%'
+          output: '1'
+  'level_3_upgrade_locked':
+    material: itemsadder-invisible_item
+    priority: 9
+    slots:
+      - 36-38
+    display_name: '&#a8bdbd&lMEJORA DE MERCADO'
+    lore:
+      - '&8ᴍᴇᴊᴏʀᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴍᴇᴊᴏʀᴀ ᴛᴜ ᴍᴇʀᴄᴀᴅᴏ ᴘᴀʀᴀ'
+      - '&#e1e1e2ᴅᴇsʙʟᴏǫᴜᴇᴀʀ ᴍás ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&#e7c86bTu nivel: &#e1e1e2%servervariables_value_marketplace_level%"
+      - ""
+      - "&#9a86fdRequisitos:"
+      - "%changeoutput_>=_input:{servervariables_value_harvested_crops}_matcher:300_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Cosecha &#a8bdbd300 &#e1e1e2cultivos"
+      - "%changeoutput_>=_input:{vault_eco_balance}_matcher:15000_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Tener &#6bc94315000$"
+      - ""
+      - "&#e45838❌ No puedes desbloquear"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%servervariables_value_marketplace_level%'
+          output: '2'
+  'level_3_upgrade_unlocked':
+    material: itemsadder-invisible_item
+    priority: 8
+    slots:
+      - 36-38
+    display_name: '&#a8bdbd&lMEJORA DE MERCADO'
+    lore:
+      - '&8ᴍᴇᴊᴏʀᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴍᴇᴊᴏʀᴀ ᴛᴜ ᴍᴇʀᴄᴀᴅᴏ ᴘᴀʀᴀ'
+      - '&#e1e1e2ᴅᴇsʙʟᴏǫᴜᴇᴀʀ ᴍás ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&#e7c86bTu nivel: &#e1e1e2%servervariables_value_marketplace_level%"
+      - ""
+      - "&#9a86fdRequisitos:"
+      - "%changeoutput_>=_input:{servervariables_value_harvested_crops}_matcher:300_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Cosecha &#a8bdbd300 &#e1e1e2cultivos"
+      - "%changeoutput_>=_input:{vault_eco_balance}_matcher:15000_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Tener &#6bc94315000$"
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para mejorar tu mercado"
+    click_commands:
+      - "[console] svar add marketplace_level 1 %player_name%"
+      - "[takemoney] 15000"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        harvest:
+          type: '>='
+          input: '%servervariables_value_harvested_crops%'
+          output: '300'
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '15000'
+        level:
+          type: '=='
+          input: '%servervariables_value_marketplace_level%'
+          output: '2'
+  'level_4_upgrade_locked':
+    material: itemsadder-invisible_item
+    priority: 7
+    slots:
+      - 36-38
+    display_name: '&#a8bdbd&lMEJORA DE MERCADO'
+    lore:
+      - '&8ᴍᴇᴊᴏʀᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴍᴇᴊᴏʀᴀ ᴛᴜ ᴍᴇʀᴄᴀᴅᴏ ᴘᴀʀᴀ'
+      - '&#e1e1e2ᴅᴇsʙʟᴏǫᴜᴇᴀʀ ᴍás ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&#e7c86bTu nivel: &#e1e1e2%servervariables_value_marketplace_level%"
+      - ""
+      - "&#9a86fdRequisitos:"
+      - "%changeoutput_>=_input:{servervariables_value_harvested_crops}_matcher:1000_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Cosecha &#a8bdbd1000 &#e1e1e2cultivos"
+      - "%changeoutput_>=_input:{vault_eco_balance}_matcher:50000_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Tener &#6bc94350000$"
+      - ""
+      - "&#e45838❌ No puedes desbloquear"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%servervariables_value_marketplace_level%'
+          output: '3'
+
+  'level_4_upgrade_unlocked':
+    material: itemsadder-invisible_item
+    priority: 6
+    slots:
+      - 36-38
+    display_name: '&#a8bdbd&lMEJORA DE MERCADO'
+    lore:
+      - '&8ᴍᴇᴊᴏʀᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴍᴇᴊᴏʀᴀ ᴛᴜ ᴍᴇʀᴄᴀᴅᴏ ᴘᴀʀᴀ'
+      - '&#e1e1e2ᴅᴇsʙʟᴏǫᴜᴇᴀʀ ᴍás ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&#e7c86bTu nivel: &#e1e1e2%servervariables_value_marketplace_level%"
+      - ""
+      - "&#9a86fdRequisitos:"
+      - "%changeoutput_>=_input:{servervariables_value_harvested_crops}_matcher:1000_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Cosecha &#a8bdbd1000 &#e1e1e2cultivos"
+      - "%changeoutput_>=_input:{vault_eco_balance}_matcher:50000_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Tener &#6bc94350000$"
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para mejorar tu mercado"
+    click_commands:
+      - "[console] svar add marketplace_level 1 %player_name%"
+      - "[takemoney] 50000"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        harvest:
+          type: '>='
+          input: '%servervariables_value_harvested_crops%'
+          output: '1000'
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '50000'
+        level:
+          type: '=='
+          input: '%servervariables_value_marketplace_level%'
+          output: '3'
+  'level_5_upgrade_locked':
+    material: itemsadder-invisible_item
+    priority: 5
+    slots:
+      - 36-38
+    display_name: '&#a8bdbd&lMEJORA DE MERCADO'
+    lore:
+      - '&8ᴍᴇᴊᴏʀᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴍᴇᴊᴏʀᴀ ᴛᴜ ᴍᴇʀᴄᴀᴅᴏ ᴘᴀʀᴀ'
+      - '&#e1e1e2ᴅᴇsʙʟᴏǫᴜᴇᴀʀ ᴍás ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&#e7c86bTu nivel: &#e1e1e2%servervariables_value_marketplace_level%"
+      - ""
+      - "&#9a86fdRequisitos:"
+      - "%changeoutput_>=_input:{servervariables_value_harvested_crops}_matcher:2500_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Cosecha &#a8bdbd2500 &#e1e1e2cultivos"
+      - "%changeoutput_>=_input:{vault_eco_balance}_matcher:100000_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Tener &#6bc943100000$"
+      - ""
+      - "&#e45838❌ No puedes desbloquear"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%servervariables_value_marketplace_level%'
+          output: '4'
+
+  'level_5_upgrade_unlocked':
+    material: itemsadder-invisible_item
+    priority: 4
+    slots:
+      - 36-38
+    display_name: '&#a8bdbd&lMEJORA DE MERCADO'
+    lore:
+      - '&8ᴍᴇᴊᴏʀᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴍᴇᴊᴏʀᴀ ᴛᴜ ᴍᴇʀᴄᴀᴅᴏ ᴘᴀʀᴀ'
+      - '&#e1e1e2ᴅᴇsʙʟᴏǫᴜᴇᴀʀ ᴍás ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&#e7c86bTu nivel: &#e1e1e2%servervariables_value_marketplace_level%"
+      - ""
+      - "&#9a86fdRequisitos:"
+      - "%changeoutput_>=_input:{servervariables_value_harvested_crops}_matcher:2500_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Cosecha &#a8bdbd2500 &#e1e1e2cultivos"
+      - "%changeoutput_>=_input:{vault_eco_balance}_matcher:100000_ifmatch:&#64ba3f✔_else:&#e45838❌% &#e1e1e2Tener &#6bc943100000$"
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para mejorar tu mercado"
+    click_commands:
+      - "[console] svar add marketplace_level 1 %player_name%"
+      - "[takemoney] 100000"
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        harvest:
+          type: '>='
+          input: '%servervariables_value_harvested_crops%'
+          output: '2500'
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '100000'
+        level:
+          type: '=='
+          input: '%servervariables_value_marketplace_level%'
+          output: '4'
+  'marketplace_upgrade_max':
+    material: itemsadder-invisible_item
+    priority: 1
+    slots:
+      - 36-38
+    display_name: '&#a8bdbd&lMEJORA DE MERCADO'
+    lore:
+      - '&8ᴍᴇᴊᴏʀᴀs'
+      - ""
+      - "&#fcb451Información:"
+      - '&#e1e1e2ᴍᴇᴊᴏʀᴀ ᴛᴜ ᴍᴇʀᴄᴀᴅᴏ ᴘᴀʀᴀ'
+      - '&#e1e1e2ᴅᴇsʙʟᴏǫᴜᴇᴀʀ ᴍás ᴏʙᴊᴇᴛᴏs ᴅᴇ ɢʀᴀɴᴊᴀ'
+      - ""
+      - "&#e7c86bTu nivel: &#e1e1e2%servervariables_value_marketplace_level%"
+      - ""
+      - "&#6bc943✔ Nivel máximo alcanzado"
+    view_requirement:
+      requirements:
+        level:
+          type: '=='
+          input: '%servervariables_value_marketplace_level%'
+          output: '5'

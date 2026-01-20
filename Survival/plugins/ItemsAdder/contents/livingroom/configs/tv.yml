@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  tv:
+    display_name: "TV"
+    permission: livingroom.tv
+    resource:
+      material: PAPER
+      generate: false
+      model_path: tv
+    behaviours:
+      furniture:
+        light_level: 13

@@ -1,0 +1,17 @@
+Id: cubee-blackstone
+MythicMob: cubee-blackstone
+Permission: mcpet.cubee-blackstone
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §x§3§C§3§9§4§7B§x§6§0§4§F§4§Bl§x§8§3§6§6§4§Fa§x§A§7§7§C§5§3c§x§C§A§9§2§5§7k§x§E§4§A§5§5§Cs§x§E§A§B§0§6§4t§x§F§1§B§B§6§Bo§x§F§7§C§5§7§2n§x§F§D§D§0§7§Ae
+    §x§E§6§C§0§7§6C§x§C§1§A§3§6§Eu§x§9§C§8§6§6§5b§x§7§7§6§8§5§De§x§5§2§4§B§5§4e
+  Description:
+  - §fJumping around rocks in the nether
+  - §fis the hobby of this cubee!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191045
+
+# 4c55fedd7b128b210d38f1779cf09ee2

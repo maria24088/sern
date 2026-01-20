@@ -1,0 +1,15 @@
+Id: cubee-discord
+MythicMob: cubee-discord
+Permission: mcpet.cubee-discord
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §9Discord §6Cubee
+  Description:
+  - §fThis cubee sent you a friend request!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191033
+
+# c1d8afcb98ec728e8f78149f12543142

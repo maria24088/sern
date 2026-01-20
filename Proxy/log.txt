@@ -1,0 +1,87 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/workspaces/Ser/Proxy/velocity.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-01-20T02:35:23.306594373Z main WARN Advanced terminal features are not available in this environment
+[23:35:24 INFO]: Booting up Velocity 3.4.0-SNAPSHOT (git-8f65a814-b558)...
+[23:35:24 INFO]: Loading localizations...
+[23:35:24 INFO]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[23:35:24 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[23:35:25 INFO]: Loading plugins...
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/workspaces/Ser/Proxy/velocity.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[23:35:25 INFO]: Loaded plugin luckperms 5.5.21 by Luck
+[23:35:25 INFO]: Loaded plugin nantibot 2.0.3 by NickUC
+[23:35:26 INFO]: Loaded plugin nlogin 2.0.7 by NickUC
+[23:35:26 INFO]: Loaded plugin skinsrestorer 15.9.2 by knat, AlexProgrammerDE, Blackfire62, McLive
+[23:35:26 INFO]: Loaded plugin viaversion 5.7.0 by _MylesC, creeper123123321, Gerrygames, kennytv, Matsv, EnZaXD, RK_01
+[23:35:26 INFO]: Loaded plugin viabackwards 5.7.0 by Matsv, kennytv, Gerrygames, creeper123123321, ForceUpdate1, EnZaXD
+[23:35:26 INFO]: Loaded 7 plugins
+[23:35:27 INFO] [luckperms]: Loading configuration...
+[23:35:27 INFO]: [38;2;85;255;255m       [38;2;0;170;170m __    [0m
+[23:35:27 INFO]: [38;2;85;255;255m  |    [38;2;0;170;170m|__)   [0m[38;2;0;170;0mLuckPerms[0m [38;2;85;255;255mv5.5.21[0m
+[23:35:27 INFO]: [38;2;85;255;255m  |___ [38;2;0;170;170m|      [38;2;85;85;85mRunning on Velocity - Velocity[0m
+[23:35:27 INFO]: 
+[23:35:28 INFO] [luckperms]: Loading storage provider... [H2]
+[23:35:29 INFO] [luckperms]: Loading internal permission managers...
+[23:35:29 INFO] [luckperms]: Performing initial data load...
+[23:35:30 INFO] [luckperms]: Successfully enabled. (took 3423ms)
+[23:35:33 INFO] [nantibot]: Successful plugin core start (took 1.66s)
+[23:35:33 INFO]: [nAntiBot] [38;2;255;85;85m          _         _   _   ___       _   [0m
+[23:35:33 INFO]: [nAntiBot] [38;2;255;85;85m  _ __   /_\  _ __ | |_(_) / __\ ___ | |_ [0m
+[23:35:33 INFO]: [nAntiBot] [38;2;255;85;85m | '_ \ //_\\| '_ \| __| |/__\/// _ \| __|[0m
+[23:35:33 INFO]: [nAntiBot] [38;2;255;85;85m | | | /  _  \ | | | |_| / \/  \ (_) | |_ [0m
+[23:35:33 INFO]: [nAntiBot] [38;2;255;85;85m |_| |_\_/ \_/_| |_|\__|_\_____/\___/ \__|[0m
+[23:35:33 INFO]: [nAntiBot] [38;2;255;85;85m                                         [0m
+[23:35:33 INFO]: [nAntiBot] [38;2;255;85;85m By: www.nickuc.com - V 2.0.3[0m
+[23:35:33 INFO]: [nAntiBot] 
+[23:35:36 INFO] [nlogin]: Successful plugin core start (took 0.72s)
+[23:35:37 INFO]: [nLogin] [38;2;85;85;255m          __             _       [0m
+[23:35:37 INFO]: [nLogin] [38;2;85;85;255m  _ __   / /  ___   __ _(_)_ __  [0m
+[23:35:37 INFO]: [nLogin] [38;2;85;85;255m | '_ \ / /  / _ \ / _` | | '_ \ [0m
+[23:35:37 INFO]: [nLogin] [38;2;85;85;255m | | | / /__| (_) | (_| | | | | |[0m
+[23:35:37 INFO]: [nLogin] [38;2;85;85;255m |_| |_\____/\___/ \__, |_|_| |_|[0m
+[23:35:37 INFO]: [nLogin] [38;2;85;85;255m                  |___/            [0m
+[23:35:37 INFO]: [nLogin] [38;2;85;85;255m By: www.nickuc.com - V 2.0.7[0m
+[23:35:37 INFO]: [nLogin] [38;2;85;85;255m [0m
+[23:35:39 WARN]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[23:35:42 INFO] [skinsrestorer]: [32;1m----------------------------------------------[0;39m
+[23:35:42 INFO] [skinsrestorer]: [32;1m    +==================+[0;39m
+[23:35:42 INFO] [skinsrestorer]: [32;1m    |   SkinsRestorer  |[0;39m
+[23:35:42 INFO] [skinsrestorer]: [32;1m    |------------------|[0;39m
+[23:35:42 INFO] [skinsrestorer]: [32;1m    +==================+[0;39m
+[23:35:42 INFO] [skinsrestorer]: [32;1m----------------------------------------------[0;39m
+[23:35:42 INFO] [skinsrestorer]: [36;1m    Version: [31;1m15.9.2[0;39m
+[23:35:42 INFO] [skinsrestorer]: [36;1m    Commit: [31;1m823b90a[0;39m
+[23:35:42 INFO] [skinsrestorer]: [36;1m    A new version ([32;1m15.9.3[36;1m) is available![0;39m
+[23:35:42 INFO] [skinsrestorer]: [33;1m    https://modrinth.com/plugin/skinsrestorer/version/15.9.3[0;39m
+[23:35:42 INFO] [skinsrestorer]: [32;1m----------------------------------------------[0;39m
+[23:35:42 INFO] [skinsrestorer]: [34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[23:35:42 INFO] [skinsrestorer]: [34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[23:35:43 INFO] [nantibot]: [Captcha] Captchas generated successfully. (RAM usage ≃ 8 MB [static only], total = 500, protocol count = 50, threads = 4, took 9.54s)
+[23:35:43 INFO] [viaversion]: Loading block connection mappings ...
+[23:35:44 INFO] [viaversion]: Replacing channel initializers; you can safely ignore the following two warnings.
+[23:35:44 WARN]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[23:35:44 WARN]: The backend channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[23:35:44 INFO] [viabackwards]: Loading translations...
+[23:35:44 INFO] [viabackwards]: Registering protocols...
+[23:35:45 INFO] [viaversion]: ViaVersion detected lowest supported version by the proxy: 1.7.2-1.7.5 (4)
+[23:35:45 INFO] [viaversion]: Highest supported version by the proxy: 1.21.11 (774)
+[23:35:45 INFO] [viaversion]: Finished mapping loading, shutting down loader executor.
+[23:35:45 INFO] [nantibot]: Injecting channel initializers
+[23:35:45 WARN]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[23:35:45 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[23:35:45 INFO] [nantibot]: Connecting to the remote server antibot.nickuc.com...
+[23:35:45 INFO]: Done (22.02s)!
+[23:35:45 WARN] [viaversion]: There is a newer plugin version available: 5.7.1, you're on: 5.7.0
+[23:40:46 INFO]: Shutting down the proxy...
+[23:40:46 INFO]: Closing endpoint /0.0.0.0:25565
+[23:40:46 INFO] [nantibot]: Successful plugin core shutdown (took 0.01s)
+[23:40:46 INFO] [nantibot]: Disconnecting from remote server...
+[23:40:48 INFO] [nlogin]: Successful plugin core shutdown (took 0.01s)
+[23:40:48 INFO] [luckperms]: Starting shutdown process...
+[23:40:48 INFO] [luckperms]: Closing storage...
+[23:40:48 INFO] [luckperms]: Goodbye!

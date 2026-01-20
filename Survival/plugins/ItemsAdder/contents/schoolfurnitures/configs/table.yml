@@ -1,0 +1,13 @@
+info:
+  namespace: schoolfurnitures
+items:
+  table:
+    display_name: "Table"
+    permission: schoolfurnitures.table
+    resource:
+      material: PAPER
+      generate: false
+      model_path: table
+    behaviours:
+      furniture:
+        light_level: 13

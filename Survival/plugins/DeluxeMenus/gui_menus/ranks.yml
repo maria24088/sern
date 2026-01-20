@@ -1,0 +1,277 @@
+#  A DeluxeMenus advanced configuration guide
+#=========================================================
+menu_title: 'Server Ranks'
+open_command:
+  - ranks
+open_commands: []
+size: 45
+# as always, only cool people can open this menu :)
+items:
+  'chicken':
+    material: CHICKEN_SPAWN_EGG
+    slot: 12
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fbfbfb&lC&#ebedec&lH&#dae0dc&lI&#cad2cd&lC&#bac4bd&lK&#a9b7ae&lE&#99a99e&lN &fRank'
+    lore:
+      - '&8Server Rank'
+      - '&f'
+      - '&7Description:'
+      - '&fPurchases of any size help us keep the server running!'
+      - '&fBy purchasing the &#fbfbfb&lC&#ebedec&lH&#dae0dc&lI&#cad2cd&lC&#bac4bd&lK&#a9b7ae&lE&#99a99e&lN &fRank, you''ll unlock the following:'
+      - '&f'
+      - ' &7◆ &#fbfbfb&lC&#ebedec&lH&#dae0dc&lI&#cad2cd&lC&#bac4bd&lK&#a9b7ae&lE&#99a99e&lN&f Prefix'
+      - ' &7◆ &#fbfbfb&lC&#ebedec&lH&#dae0dc&lI&#cad2cd&lC&#bac4bd&lK&#a9b7ae&lE&#99a99e&lN&f Kit'
+      - ' &7◆ &fPremium Rewrads'
+      - ' &7◆ &fSell 2x /ah items simultaneously'
+      - ' &7◆ &fSet 2x Player Warps'
+      - ' &7◆ &fSet 3x Player Homes'
+      - ' &7◆ &fVirtual Crafting Table (/craft)'
+      - ''
+      - '&e→ &e&lRIGHT CLICK&e to preview the Kit!'
+      - '&a→ &a&lLEFT CLICK&a to view on the Store!'
+    left_click_commands:
+      - '[close]'
+      - '[message] &f'
+      - '[message] &f &#FFD700༄ &lWebstore'
+      - '[message] &f &7Please click the link below to continue your'
+      - '[message] &f &7purchase of the CHICKEN rank!'
+      - '[message] &f'
+      - '[message] &f &#FFD700&nstore.yourserver.com/chicken'
+      - '[message] &f'
+    right_click_commands:
+      - '[player] previewkit chicken'
+
+  'fox':
+    material: FOX_SPAWN_EGG
+    slot: 13
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fd8900&lF&#fc9f00&lO&#fbb500&lX &#fbb500Rank'
+    lore:
+      - '&8Server Rank'
+      - '&f'
+      - '&#fbb500Description:'
+      - '&fPurchases of any size help us keep the server running!'
+      - '&fBy purchasing the &#fd8900&lF&#fc9f00&lO&#fbb500&lX &#fbb500Rank&f, you''ll unlock the following:'
+      - '&f'
+      - ' &#fbb500◆ &#fd8900&lF&#fc9f00&lO&#fbb500&lX&f Prefix'
+      - ' &#fbb500◆ &#fd8900&lF&#fc9f00&lO&#fbb500&lX&f Kit'
+      - ' &#fbb500◆ &f1x Private /Vault'
+      - ' &#fbb500◆ &fSell 3x /ah items simultaneously'
+      - ' &#fbb500◆ &fSet 3x Player Warps'
+      - ' &#fbb500◆ &fSet 5x Player Homes'
+      - ' &#fbb500◆ &fVirtual Crafting Table (/craft)'
+      - ' &#fbb500◆ &fVirtual Enderchest (/enderchest)'
+      - ''
+      - '&e→ &e&lRIGHT CLICK&e to preview the Kit!'
+      - '&a→ &a&lLEFT CLICK&a to view on the Store!'
+    left_click_commands:
+      - '[close]'
+      - '[message] &f'
+      - '[message] &f &#FFD700༄ &lWebstore'
+      - '[message] &f &7Please click the link below to continue your'
+      - '[message] &f &7purchase of the FOX rank!'
+      - '[message] &f'
+      - '[message] &f &#FFD700&nstore.yourserver.com/fox'
+      - '[message] &f'
+    right_click_commands:
+      - '[player] previewkit fox'
+  
+  'witch':
+    material: WITCH_SPAWN_EGG
+    slot: 14
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#cc00fb&lW&#c300e7&lI&#ba00d2&lT&#b100be&lC&#a800a9&lH &#cc00fbRank'
+    lore:
+      - '&8Server Rank'
+      - '&f'
+      - '&#cc00fbDescription:'
+      - '&fPurchases of any size help us keep the server running!'
+      - '&fBy purchasing the &#cc00fb&lW&#c300e7&lI&#ba00d2&lT&#b100be&lC&#a800a9&lH &#cc00fbRank&f, you''ll unlock the following:'
+      - '&f'
+      - ' &#cc00fb◆ &#cc00fb&lW&#c300e7&lI&#ba00d2&lT&#b100be&lC&#a800a9&lH&f Prefix'
+      - ' &#cc00fb◆ &#cc00fb&lW&#c300e7&lI&#ba00d2&lT&#b100be&lC&#a800a9&lH&f Kit'
+      - ' &#cc00fb◆ &f3x Private /Vault'
+      - ' &#cc00fb◆ &fSell 5x /ah items simultaneously'
+      - ' &#cc00fb◆ &fSet 5x Player Warps'
+      - ' &#cc00fb◆ &fSet 5x Player Homes'
+      - ' &#cc00fb◆ &fVirtual Crafting Table (/craft)'
+      - ' &#cc00fb◆ &fVirtual Enderchest (/enderchest)'
+      - ' &#cc00fb◆ &f/Clearinventory'
+      - ''
+      - '&e→ &e&lRIGHT CLICK&e to preview the Kit!'
+      - '&a→ &a&lLEFT CLICK&a to view on the Store!'
+    left_click_commands:
+      - '[close]'
+      - '[message] &f'
+      - '[message] &f &#FFD700༄ &lWebstore'
+      - '[message] &f &7Please click the link below to continue your'
+      - '[message] &f &7purchase of the WITCH rank!'
+      - '[message] &f'
+      - '[message] &f &#FFD700&nstore.yourserver.com/witch'
+      - '[message] &f'
+    right_click_commands:
+      - '[player] previewkit witch'
+
+  'squid':
+    material: SQUID_SPAWN_EGG
+    slot: 21
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00a2fd&lS&#009afd&lQ&#0093fc&lU&#008bfc&lI&#0083fb&lD&f &#0083fbRank'
+    lore:
+      - '&8Server Rank'
+      - '&f'
+      - '&#0083fbDescription:'
+      - '&fPurchases of any size help us keep the server running!'
+      - '&fBy purchasing the &#00a2fd&lS&#009afd&lQ&#0093fc&lU&#008bfc&lI&#0083fb&lD&f &#0083fbRank&f, you''ll unlock the following:'
+      - '&f'
+      - ' &#0083fb◆ &#00a2fd&lS&#009afd&lQ&#0093fc&lU&#008bfc&lI&#0083fb&lD&f Prefix'
+      - ' &#0083fb◆ &#00a2fd&lS&#009afd&lQ&#0093fc&lU&#008bfc&lI&#0083fb&lD&f Kit'
+      - ' &#0083fb◆ &f3x Private /Vault'
+      - ' &#0083fb◆ &fSell 10x /ah items simultaneously'
+      - ' &#0083fb◆ &fSet 7x Player Warps'
+      - ' &#0083fb◆ &fSet 7x Player Homes'
+      - ' &#0083fb◆ &fVirtual Crafting Table (/craft)'
+      - ' &#0083fb◆ &fVirtual Enderchest (/enderchest)'
+      - ' &#0083fb◆ &fVirtual Grindstone (/grindstone)'
+      - ' &#0083fb◆ &fVirtual Anvil (/anvil)'
+      - ' &#0083fb◆ &f/Getpos'
+      - ' &#0083fb◆ &f/Clearinventory'
+      - ''
+      - '&e→ &e&lRIGHT CLICK&e to preview the Kit!'
+      - '&a→ &a&lLEFT CLICK&a to view on the Store!'
+    left_click_commands:
+      - '[close]'
+      - '[message] &f'
+      - '[message] &f &#FFD700༄ &lWebstore'
+      - '[message] &f &7Please click the link below to continue your'
+      - '[message] &f &7purchase of the SQUID rank!'
+      - '[message] &f'
+      - '[message] &f &#FFD700&nstore.yourserver.com/squid'
+      - '[message] &f'
+    right_click_commands:
+      - '[player] previewkit squid'
+
+  'creeper':
+    material: CREEPER_SPAWN_EGG
+    slot: 22
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#20fb00&lC&#1bed0d&lR&#15e01b&lE&#10d228&lE&#0bc435&lP&#05b743&lE&#00a950&lR &#20fb00Rank'
+    lore:
+      - '&8Server Rank'
+      - '&f'
+      - '&#20fb00Description:'
+      - '&fPurchases of any size help us keep the server running!'
+      - '&fBy purchasing the &#20fb00&lC&#1bed0d&lR&#15e01b&lE&#10d228&lE&#0bc435&lP&#05b743&lE&#00a950&lR &#20fb00Rank&f, you''ll unlock the following:'
+      - '&f'
+      - ' &#20fb00◆ &#20fb00&lC&#1bed0d&lR&#15e01b&lE&#10d228&lE&#0bc435&lP&#05b743&lE&#00a950&lR&f Prefix'
+      - ' &#20fb00◆ &#20fb00&lC&#1bed0d&lR&#15e01b&lE&#10d228&lE&#0bc435&lP&#05b743&lE&#00a950&lR&f Kit'
+      - ' &#20fb00◆ &f3x Private /Vault'
+      - ' &#20fb00◆ &fSell 12x /ah items simultaneously'
+      - ' &#20fb00◆ &fSet 10x Player Warps'
+      - ' &#20fb00◆ &fSet 8x Player Homes'
+      - ' &#20fb00◆ &fVirtual Crafting Table (/craft)'
+      - ' &#20fb00◆ &fVirtual Enderchest (/enderchest)'
+      - ' &#20fb00◆ &fVirtual Grindstone (/grindstone)'
+      - ' &#20fb00◆ &fVirtual Anvil (/anvil)'
+      - ' &#20fb00◆ &fVirtual Stonecutter (/stonecutter)'
+      - ' &#20fb00◆ &f/Getpos'
+      - ' &#20fb00◆ &f/Clearinventory'
+      - ' &#20fb00◆ &f/Repair'
+      - ' &#20fb00◆ &f/Feed & /Heal'
+      - ''
+      - '&e→ &e&lRIGHT CLICK&e to preview the Kit!'
+      - '&a→ &a&lLEFT CLICK&a to view on the Store!'
+    left_click_commands:
+      - '[close]'
+      - '[message] &f'
+      - '[message] &f &#FFD700༄ &lWebstore'
+      - '[message] &f &7Please click the link below to continue your'
+      - '[message] &f &7purchase of the CREEPER rank!'
+      - '[message] &f'
+      - '[message] &f &#FFD700&nstore.yourserver.com/creeper'
+      - '[message] &f'
+    right_click_commands:
+      - '[player] previewkit creeper'
+
+
+
+  'goat':
+    material: GOAT_SPAWN_EGG
+    slot: 23
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#bae1fd&lG&#b5ddfc&lO&#b1d9fc&lA&#acd5fb&lT &#acd5fbRank'
+    lore:
+      - '&8Server Rank'
+      - '&f'
+      - '&#acd5fbDescription:'
+      - '&fPurchases of any size help us keep the server running!'
+      - '&fBy purchasing the &#bae1fd&lG&#b5ddfc&lO&#b1d9fc&lA&#acd5fb&lT &#acd5fbRank&f, you''ll unlock the following:'
+      - '&f'
+      - ' &#acd5fb◆ &#bae1fd&lG&#b5ddfc&lO&#b1d9fc&lA&#acd5fb&lT&f Prefix'
+      - ' &#acd5fb◆ &#bae1fd&lG&#b5ddfc&lO&#b1d9fc&lA&#acd5fb&lT&f Kit'
+      - ' &#acd5fb◆ &f5x Private /Vault'
+      - ' &#acd5fb◆ &fSell 15x /ah items simultaneously'
+      - ' &#acd5fb◆ &fSet 20x Player Warps'
+      - ' &#acd5fb◆ &fSet 10x Player Homes'
+      - ' &#acd5fb◆ &fVirtual Crafting Table (/craft)'
+      - ' &#acd5fb◆ &fVirtual Enderchest (/enderchest)'
+      - ' &#acd5fb◆ &fVirtual Grindstone (/grindstone)'
+      - ' &#acd5fb◆ &fVirtual Anvil (/anvil)'
+      - ' &#acd5fb◆ &fVirtual Stonecutter (/stonecutter)'
+      - ' &#acd5fb◆ &f/Getpos'
+      - ' &#acd5fb◆ &f/Clearinventory'
+      - ' &#acd5fb◆ &f/Repair'
+      - ' &#acd5fb◆ &f/Feed & /Heal'
+      - ' &#acd5fb◆ &fChange Nickname (/nick)'
+      - ' &#acd5fb◆ &fUnlimited /Fly'
+      - ' &#acd5fb◆ &fFREE Silk Touch Perk'
+      - ''
+      - '&e→ &e&lRIGHT CLICK&e to preview the Kit!'
+      - '&a→ &a&lLEFT CLICK&a to view on the Store!'
+    left_click_commands:
+      - '[close]'
+      - '[message] &f'
+      - '[message] &f &#FFD700༄ &lWebstore'
+      - '[message] &f &7Please click the link below to continue your'
+      - '[message] &f &7purchase of the GOAT rank!'
+      - '[message] &f'
+      - '[message] &f &#FFD700&nstore.yourserver.com/goat'
+      - '[message] &f'
+    right_click_commands:
+      - '[player] previewkit goat'
+  
+
+  'store':
+    material: GOLD_INGOT
+    slot: 40
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#FFD700&lWebstore'
+    lore:
+      - '&8Server Store'
+      - '&f'
+      - '&#FFD700◆&f Thank you for your interest in making a purchase!'
+      - '&f   All purchases go towards server upkeep costs and'
+      - '&f   development.'
+      - '&r'
+      - '&#FFD700◆&f If you have any questions, please contact one'
+      - '&f  of our Staff Members!'
+      - '&r'
+      - '&#FFD700&nstore.yourserver.com'
+  
+
+    
+  

@@ -1,0 +1,16 @@
+Id: cubee-youtube
+MythicMob: cubee-youtube
+Permission: mcpet.cubee-youtube
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §cYoutube §fCubee
+  Description:
+  - §fLike and Subscribe will make this cubee happy!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191043
+
+
+# c1d8afcb98ec728e8f78149f12543142

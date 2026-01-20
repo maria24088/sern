@@ -1,0 +1,67 @@
+ 
+#permissions and alias
+Commands:
+   
+  admin:
+    # NOT RECOMMENDED: Use empty for don't need permissions
+    permission: clanchest.admin
+    # Alias for command.
+    alias: clanchest
+   
+  player:
+    # Use empty for don't need permissions
+    permission: uclans.player.chest
+    # Alias for command.
+    alias: chest
+    # Command cooldown.
+    cooldown: 0
+    # Value to use.
+    value: 0.0
+    disabled_worlds: [
+      ]
+    disabled_regions: [
+      ]
+   
+  # player command
+  chest:
+    help:
+      aliases: help
+      show: <click:suggest_command:"/{_clan} {_chest} "><hover:show_text:'<green>Haz clic para expandir.'> <yellow>/{_clan} {_chest} <dark_gray>-<white> Ampliar comandos del cofre.</hover></click> <hover:show_text:'<green>Con subcomandos.'><green>[!]</hover>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_chest} {_help}'
+      error: '%tag% <red>Error al utilizarlo.'
+      success: '%tag% <green>Se ejecutó con éxito.'
+    buy:
+      aliases: buy
+      show: <click:suggest_command:"/{_clan} {_chest} {_buy} "><hover:show_text:'<green>Haz clic para comprar.'> <yellow>/{_clan} {_chest} {_buy} <dark_gray>-<white> Comprar página del cofre.</hover></click>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_chest} {_buy}'
+      error: '%tag% <red>Hubo un error al comprar, ¡es posible que no se te permita comprar más!'
+      success: '%tag% <green>Has comprado exitosamente una página adicional del cofre.'
+    open:
+      aliases: open
+      show: <click:suggest_command:"/{_clan} {_chest} {_open} "><hover:show_text:'<green>Haz clic para ver.'> <yellow>/{_clan} {_chest} {_open} <light_purple>(página) <dark_gray>-<white> Abrir cofre.</hover></click>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_chest} {_open} <light_purple>(página)'
+      error: '%tag% <red>Error.'
+      success: '%tag% <green>Éxito.'
+  #admin command
+  clanchest:
+    help:
+      aliases: [
+        ]
+      show: ' <click:run_command:"/clanchest help"><hover:show_text:"<green>Click to show."><green>/clanchest help <gray>- <yellow>Show help menu.</hover></click>'
+      usage: '%tag% <red>Error, usa: <green>/clanchest help'
+      error: '%tag% <red>Error al utilizarlo.'
+      success: '%tag% <green>Se ejecutó con éxito.'
+    reload:
+      aliases: [
+        ]
+      show: ' <green>/clanchest reload <gray>- <yellow>Recargar ajustes.'
+      usage: '%tag% <red>Error, usa: <green>/clanchest reload'
+      error: '%tag% <red>Se ha producido un error al recargar.'
+      success: '%tag% <green>Plugin reloaded successfully.'
+    open:
+      aliases:
+      - open
+      show: ' <green>/clanchest open <red><player|tag> <gray>- <yellow>Abrir cofres de clan.'
+      usage: '%tag% <red>Error, usa: <green>/clanchest open <red><player|tag>'
+      error: '%tag% <red>Se ha producido un error al abrir el cofre.'
+      success: '%tag% <green>¡El cofre se ha abierto con éxito!'

@@ -1,0 +1,69 @@
+COMMON_KEY:
+  base:
+    material: TRIPWIRE_HOOK
+    name: <#ff4c4c>Llave Comun
+    custom-model-data: 10001
+    lore-format: key
+    unstackable: true
+
+    tier: COMMON
+
+RARE_KEY:
+  base:
+    material: TRIPWIRE_HOOK
+    name: <#ff4c4c>Llave Rara
+    custom-model-data: 10004
+    lore-format: key
+    unstackable: true
+
+    tier: RARE
+
+EPIC_KEY:
+  base:
+    material: TRIPWIRE_HOOK
+    name: <#ff4c4c>Llave Epica
+    custom-model-data: 10002
+    lore-format: key
+    unstackable: true
+
+    tier: EPIC
+
+LEGENDARY_KEY:
+  base:
+    material: TRIPWIRE_HOOK
+    name: <#ff4c4c>Llave Legendaria
+    custom-model-data: 10000
+    lore-format: key
+    unstackable: true
+
+    tier: LEGENDARY
+
+MYTHIC_KEY:
+  base:
+    material: TRIPWIRE_HOOK
+    name: <#ff4c4c>Llave Mitica
+    custom-model-data: 10005
+    lore-format: key
+    unstackable: true
+
+    tier: MYTHIC
+
+GODTIER_KEY:
+  base:
+    material: TRIPWIRE_HOOK
+    name: <#ff4c4c>Llave Godtier
+    custom-model-data: 10003
+    lore-format: key
+    unstackable: true
+
+    tier: GODLIKE
+
+COSMETIC_KEY:
+  base:
+    material: TRIPWIRE_HOOK
+    name: <#ff4c4c>Llave Cosmeticos
+    custom-model-data: 10006
+    lore-format: key
+    unstackable: true
+
+    tier: GODLIKE

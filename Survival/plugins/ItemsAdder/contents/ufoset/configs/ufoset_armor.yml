@@ -1,0 +1,53 @@
+armors_rendering:
+  ufoarmor:
+    color: '#2366da'
+    layer_1: armor/ufo_armor_layer_1
+    layer_2: armor/ufo_armor_layer_2
+    use_color: false
+info:
+  namespace: ufoset
+items:
+  ufoboots:
+    display_name: UFO Boots
+    permission: ufo.boots
+    resource:
+      generate: true
+      textures:
+      - armor/ufo_boots_icon.png
+    specific_properties:
+      armor:
+        custom_armor: ufoarmor
+        slot: feet
+  ufochestplate:
+    display_name: UFO Chestplate
+    permission: ufo.chestplate
+    resource:
+      generate: true
+      textures:
+      - armor/ufo_chestplate_icon.png
+    specific_properties:
+      armor:
+        custom_armor: ufoarmor
+        slot: chest
+  ufoleggings:
+    display_name: UFO Leggings
+    permission: ufo.leggings
+    resource:
+      generate: true
+      textures:
+      - armor/ufo_leggings_icon.png
+    specific_properties:
+      armor:
+        custom_armor: ufoarmor
+        slot: legs
+  ufohelmet:
+    display_name: UFO Helmet
+    permission: ufo.helmet
+    resource:
+      generate: true
+      textures:
+      - armor/ufo_helmet_icon.png
+    specific_properties:
+      armor:
+        custom_armor: ufoarmor
+        slot: head

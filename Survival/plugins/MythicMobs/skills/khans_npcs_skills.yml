@@ -1,0 +1,98 @@
+khansnpcs_quindle_the_mage_emotes:
+  Skills:
+  - skill{s=khansnpcs_quindle_the_mage_flame} @self
+  - skill{s=khansnpcs_quindle_the_mage_teaser} @self
+
+khansnpcs_quindle_the_mage_flame:
+  Conditions:
+  - offgcd
+  - chance{chance=0.5} true
+  Skills:
+  - gcd{ticks=129}
+  - state{model=khansnpcs_quindle_the_mage;state=emote_flame} @self
+  - delay 5
+  - sound{s=npcs.quindle.snap;volume=0.3;delay=55} @self
+  - sound{s=npcs.quindle.fire;volume=0.1;delay=58} @self
+  - partvisibility{model=khansnpcs_quindle_the_mage;pid=red_fire;v=true;child=true} @self
+  - delay 124
+  - partvisibility{model=khansnpcs_quindle_the_mage;pid=red_fire;v=false;child=true} @self
+
+khansnpcs_quindle_the_mage_teaser:
+  Conditions:
+  - offgcd
+  - chance{chance=0.4} true
+  - playersinradius{a=0;r=8}
+  Skills:
+  - gcd{ticks=107}
+  - state{model=khansnpcs_quindle_the_mage;state=emote_teaser} @self
+
+khansnpcs_quindle_the_mage_interact:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=55}
+  - state{model=khansnpcs_quindle_the_mage;state=interact;delay=20} @self
+
+khansnpcs_bromnar_the_blacksmith_emotes:
+  Skills:
+  - skill{s=khansnpcs_bromnar_the_blacksmith_spin} @self
+
+khansnpcs_bromnar_the_blacksmith_spin:
+  Conditions:
+  - offgcd
+  - chance{chance=0.5} true
+  Skills:
+  - gcd{ticks=36}
+  - state{model=khansnpcs_bromnar_the_blacksmith;state=emote_spin} @self
+  - sound{s=npcs.bromnar.spin;volume=0.3;delay=18} @self
+
+khansnpcs_bromnar_the_blacksmith_interact:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=65}
+  - state{model=khansnpcs_bromnar_the_blacksmith;state=emote_interact} @self
+
+khansnpcs_mizzlewick_the_alchemist_emotes:
+  Skills:
+  - skill{s=khansnpcs_mizzlewick_the_alchemist_bottlecheck} @self
+
+khansnpcs_mizzlewick_the_alchemist_bottlecheck:
+  Conditions:
+  - offgcd
+  - chance{chance=0.6} true
+  Skills:
+  - gcd{ticks=100}
+  - state{model=khansnpcs_mizzlewick_the_alchemist;state=emote_bottlecheck} @self
+  - sound{s=npcs.mizzlewick.bottleshake;volume=0.5;delay=40} @self
+
+khansnpcs_mizzlewick_the_alchemist_interact:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=96}
+  - state{model=khansnpcs_mizzlewick_the_alchemist;state=emote_interact} @self
+  - sound{s=npcs.mizzlewick.bottleshake;volume=0.5;delay=27;p=<random.float.1.1to1.4>} @self
+  - sound{s=npcs.mizzlewick.bottleshake;volume=0.5;delay=56;p=<random.float.0.9to1.1>} @self
+
+khansnpcs_cedric_coincloak_the_banker_emotes:
+  Skills:
+  - skill{s=khansnpcs_cedric_coincloak_the_banker_cointoss} @self
+
+khansnpcs_cedric_coincloak_the_banker_cointoss:
+  Conditions:
+  - offgcd
+  - chance{chance=0.6} true
+  Skills:
+  - gcd{ticks=80}
+  - state{model=khansnpcs_cedric_coincloak_the_banker;state=emote_cointoss} @self
+  - sound{s=npcs.cedric.cointoss;volume=0.8;delay=21} @self
+  - sound{s=npcs.cedric.cointoss.throw;volume=0.8;delay=21} @self
+  - sound{s=npcs.cedric.cointoss.grab;volume=0.8;delay=49} @self
+
+khansnpcs_cedric_coincloak_the_banker_interact:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=96}
+  - state{model=khansnpcs_cedric_coincloak_the_banker;state=emote_hat} @self

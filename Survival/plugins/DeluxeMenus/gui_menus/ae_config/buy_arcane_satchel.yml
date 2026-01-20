@@ -1,0 +1,50 @@
+#  A DeluxeMenus advanced configuration guide
+#=========================================================
+menu_title: '&f᪄᪑'
+open_command:
+  - buy_arcane_satchel
+size: 9
+items:
+
+  'arcane_satchel':
+    material: PAPER
+    model_data: 40020
+    slot: 4
+    lore_append_mode: BOTTOM
+    display_name: "&f᪝ Arcane Satchel"
+    lore:
+    - ""
+    - "&#e2ace5A mysterious satchel, when"
+    - "&#e2ace5opened has a chance to"
+    - "&#e2ace5receive a &#d696d6Lucky Gem."
+
+    
+  'buy_confirm':
+    material: FEATHER
+    model_data: 9999
+    slots: [1,2,3]
+    lore_append_mode: BOTTOM
+    display_name: "&fAccept: &#c0e45a20&f᪠"
+    lore: []
+    click_requirement:
+      deny_commands:
+        - "[sound] ENTITY_VILLAGER_NO"
+        - "[message] &fYou dont have enought ᪠"
+      requirements:
+        balance_check:
+          type: has exp
+          amount: 550
+    click_commands:
+    - "[sound] ENTITY_VILLAGER_YES"
+    - '[console] xp take %player_name% 20l'
+    - "[console] advancedenchantments:ae giveitem %player_name% secret 1"
+
+  'cancel':
+    material: FEATHER
+    model_data: 9999
+    slots: [5,6,7]
+    lore_append_mode: BOTTOM
+    display_name: "&fBack"
+    lore: []
+    click_commands:
+    - "[player] enchanter"

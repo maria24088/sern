@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  mediumcarpetorange:
+    display_name: "Medium Carpet Orange"
+    permission: livingroom.mediumcarpetorange
+    resource:
+      material: PAPER
+      generate: false
+      model_path: mediumcarpetorange
+    behaviours:
+      furniture:
+        light_level: 13

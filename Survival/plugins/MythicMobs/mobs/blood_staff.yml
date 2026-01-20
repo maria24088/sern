@@ -1,0 +1,131 @@
+﻿#########################################################
+
+
+
+## Developed by Little Room, patreon.com/littleroomdev ##
+
+
+
+#########################################################
+
+
+
+
+
+
+
+LR_blood_staff_summon:
+
+
+
+  Type: WOLF
+
+
+
+  Display: "Ichor Skeleton"
+
+
+
+  Damage: 5
+
+
+
+  Health: 50
+
+
+
+  Modules:
+
+
+
+    ThreatTable: true
+
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownerattacker
+  - 2 attacker
+  - 3 ownertarget
+  - 4 hurtbytarget    
+  AIGoalSelectors:
+  - 0 float
+  - 1 followowner
+  - 2 meleeattack
+  - 3 wander
+  Options:
+    MovementSpeed: 0.3
+    Interactable: false
+    Tamed: true
+    Silent: true
+    PreventOtherDrops: true
+    Collidable: false
+    Passthrough: false
+    FollowRange: 24
+    PreventOtherDrops: true
+  Skills:
+
+
+
+  - CancelEvent{sync=true} @self ~onAttack
+
+
+
+  - CancelEvent{sync=true} @self ~onInteract
+
+
+
+  - model{mid=blood_staff_summon;usm=true;sync=true;drive=true} @self ~onSpawn
+
+
+
+  - model{mid=blood_staff_summon;usm=true;sync=true;drive=true} @self ~onLoad
+
+
+
+  - partvis{pid=gib;em=false} @self ~onSpawn
+
+
+
+  - setspeed{s=1.75} @self ~onSpawn
+
+
+
+  - skill{s=LR_blood_staff_summon_spawn} @self ~onSpawn
+
+
+
+  - skill{s=LR_blood_staff_summon_brightness;sync=true} @self ~onTimer:5
+
+
+
+  - effect:particles{particle=dust_color_transition;color1=#FF0000;color2=#000000;amount=4;hs=.1;vs=.1} @modelpart{pid=head} ~onTimer:1
+
+
+
+  - randomskill{s=LR_blood_staff_summon_attack_1,LR_blood_staff_summon_attack_2} @target ~onTimer:5
+
+
+
+  - setvar{var=caster.parentname;val=<target.name>;type=STRING} @parent ~onSpawn
+
+
+
+  - setfaction{faction="<caster.var.parentname>";sync=true} @self ~onSpawn
+
+
+
+  - skill{s=LR_blood_staff_summon_inair} @self ~onTimer:1
+
+
+
+  - skill{s=LR_blood_staff_summon_land} @self ~onTimer:1
+
+
+
+  - skill{s=LR_blood_staff_summon_death} @self ~onDeath
+
+
+
+  - skill{s=LR_blood_staff_summon_death;delay=480} @self ~onSpawn
+
+  - delay 5 # Espera 5 ticks antes de aplicar velocidad e IA
+  - setspeed{s=1.75} @self

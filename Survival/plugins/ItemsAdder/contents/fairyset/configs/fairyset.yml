@@ -1,0 +1,179 @@
+info:
+  namespace: fairyset
+items:
+  fairy_axe:
+    display_name: Fairy Axe
+    permission: fairy.axe
+    resource:
+      generate: false
+      material: IRON_AXE
+      model_path: axe
+  fairy_bow:
+    display_name: Fairy Bow
+    permission: fairy.bow
+    resource:
+      generate: false
+      material: BOW
+      model_path: bow
+  fairy_chest:
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+    display_name: Fairy Chest
+    permission: fairy.chest
+    resource:
+      generate: false
+      material: SEA_LANTERN
+      model_path: chest
+  fairy_chest_opening:
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        hitbox:
+          height: 2
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+    display_name: Fairy Chest Opening
+    permission: fairy.chest_opening
+    resource:
+      generate: false
+      material: SEA_LANTERN
+      model_path: chest_opening
+  fairy_crossbow:
+    display_name: Fairy Crossbow
+    permission: fairy.crossbow
+    resource:
+      generate: false
+      material: CROSSBOW
+      model_path: crossbow
+  fairy_fishing_rod:
+    display_name: Fairy Fishing Rod
+    permission: fairy.fishing_rod
+    resource:
+      generate: false
+      material: FISHING_ROD
+      model_path: fishing_rod
+  fairy_greatsword:
+    display_name: Fairy Greatsword
+    permission: fairy.greatsword
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: greatsword
+  fairy_hammer:
+    display_name: Fairy Hammer
+    permission: fairy.hammer
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: hammer
+
+  fairy_hoe:
+    display_name: Fairy Hoe
+    permission: fairy.hoe
+    resource:
+      generate: false
+      material: IRON_HOE
+      model_path: hoe
+  fairy_key:
+    display_name: Fairy Key
+    permission: fairy.key
+    resource:
+      generate: false
+      material: PAPER
+      model_path: key
+  fairy_pickaxe:
+    display_name: Fairy Pickaxe
+    permission: fairy.pickaxe
+    resource:
+      generate: false
+      material: IRON_PICKAXE
+      model_path: pickaxe
+  fairy_scythe:
+    display_name: Fairy Scythe
+    permission: fairy.scythe
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: scythe
+  fairy_shield:
+    display_name: Fairy Shield
+    permission: fairy.shield
+    resource:
+      generate: false
+      material: SHIELD
+      model_path: shield
+  fairy_shovel:
+    display_name: Fairy Shovel
+    permission: fairy.shovel
+    resource:
+      generate: false
+      material: IRON_SHOVEL
+      model_path: shovel
+  fairy_spear:
+    display_name: Fairy Spear
+    permission: fairy.spear
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: spear
+  fairy_staff:
+    display_name: Fairy Staff
+    permission: fairy.staff
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: staff
+  fairy_sword:
+    display_name: Fairy Sword
+    permission: fairy.sword
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: sword
+  fairy_trident:
+    display_name: Fairy Trident
+    permission: fairy.trident
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: trident
+  fairy_wing:
+    behaviours:
+      hat: true
+    display_name: Fairy Wing
+    permission: fairy.wing
+    resource:
+      generate: false
+      material: PAPER
+      model_path: wings
+
+  fairy_head:
+    behaviours:
+      hat: true
+    display_name: Fairy Helmet
+    permission: fairy.helmet
+    resource:
+      generate: false
+      material: PAPER
+      model_path: helmet

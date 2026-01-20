@@ -1,0 +1,106 @@
+Id: Pet_Cacti_Desert
+MythicMob: Pet_Cacti_Desert
+Permission: mcpet.Pet_Cacti_Desert
+Mountable: false
+Distance: 6
+DismountOnDamaged: false
+SpawnRange: 3
+ComingBackRange: 5
+Icon:
+  Name: §bDesert Cacti
+  Material: BRICK
+  CustomModelData: 12000
+  Description:
+  - §fGet your pet Desert Cacti!
+  - ''
+  - §f[§cSpike Armor§f]
+  - §fYour Cacti gives its owner a spike barrier,
+  - §freflecting incoming attacks.
+  - ''
+  - '§7Level up: §a+Damage, +Duration'
+Skins:
+  Pet_Cacti_Desert:
+    MythicMob: Pet_Cacti_Desert
+    Permission: skin.Pet_Cacti_Desert
+    Icon:
+      Material: BRICK
+      CustomModelData: 12000
+      DisplayName: §bDesert Cacti
+      Lore:
+      - §fGet your pet Desert Cacti!
+  Pet_Cacti_Frozen:
+    MythicMob: Pet_Cacti_Frozen
+    Permission: skin.Pet_Cacti_Frozen
+    Icon:
+      Material: BRICK
+      CustomModelData: 12001
+      DisplayName: §bFrozen Cacti
+      Lore:
+      - §fGet your pet Frozen Cacti!
+  Pet_Cacti_Sculk:
+    MythicMob: Pet_Cacti_Sculk
+    Permission: skin.Pet_Cacti_Sculk
+    Icon:
+      Material: BRICK
+      CustomModelData: 12002
+      DisplayName: §bSculk Cacti
+      Lore:
+      - §fGet your pet Sculk Cacti!
+Levels:
+  Lvl_Common:
+    Name: §fCommon
+    ExperienceThreshold: 0
+    MaxHealth: 100
+    Regeneration: 0.1
+    ResistanceModifier: 1
+    DamageModifier: 2
+    Power: 3
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+  Lvl_Rare:
+    Name: §aRare
+    ExperienceThreshold: 500
+    MaxHealth: 150
+    Regeneration: 0.12
+    ResistanceModifier: 1
+    DamageModifier: 4
+    Power: 3.5
+    Cooldowns:
+      Respawn: 14
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &aRare &6level!'
+      Type: CHAT
+  Lvl_Epic:
+    Name: §dEpic
+    ExperienceThreshold: 2000
+    MaxHealth: 200
+    Regeneration: 0.14
+    ResistanceModifier: 1
+    DamageModifier: 6
+    Power: 4
+    Cooldowns:
+      Respawn: 13
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &dEpic &6level!'
+      Type: CHAT
+  Lvl_Legendary:
+    Name: §eLegendary
+    ExperienceThreshold: 5000
+    MaxHealth: 300
+    Regeneration: 0.2
+    ResistanceModifier: 1
+    DamageModifier: 9
+    Power: 4.5
+    Cooldowns:
+      Respawn: 12
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &eLegendary &6level!'
+      Type: CHAT

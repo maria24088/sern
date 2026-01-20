@@ -1,0 +1,293 @@
+npc-data:
+  npc-13:
+    cooldown: 0
+    right-click-commands:
+    - '[player] shop Dyes'
+    left-click-commands:
+    - '[player] shop Dyes'
+    price: 0
+  npc-11:
+    cooldown: 0
+    right-click-commands:
+    - '[player] shop Spawners'
+    left-click-commands:
+    - '[player] shop Spawners'
+    price: 0
+  npc-12:
+    cooldown: 0
+    right-click-commands:
+    - '[player] shop Blocks'
+    left-click-commands:
+    - '[player] shop Blocks'
+    price: 0
+  npc-20:
+    cooldown: 0
+    right-click-commands:
+    - '[player] shop Redstone'
+    left-click-commands:
+    - '[player] shop Redstone'
+    price: 0
+  npc-21:
+    cooldown: 0
+    right-click-commands:
+    - '[player] shop Decoration'
+    left-click-commands:
+    - '[player] shop Decoration'
+    price: 0
+  npc-22:
+    cooldown: 0
+    right-click-commands:
+    - '[player] shop Enchanting'
+    left-click-commands:
+    - '[player] shop Enchanting'
+    price: 0
+  npc-17:
+    cooldown: 0
+    right-click-commands:
+    - '[player] shop Music'
+    left-click-commands:
+    - '[player] shop Music'
+    price: 0
+  npc-18:
+    cooldown: 0
+    right-click-commands:
+    - '[player] shop Potions'
+    left-click-commands:
+    - '[player] shop Potions'
+    price: 0
+  npc-19:
+    cooldown: 0
+    right-click-commands:
+    - '[player] shop Miscellaneous'
+    left-click-commands:
+    - '[player] shop Miscellaneous'
+    price: 0
+  npc-15:
+    cooldown: 0
+    right-click-commands:
+    - '[player] shop Ores'
+    left-click-commands:
+    - '[player] shop Ores'
+    price: 0
+  npc-14:
+    cooldown: 0
+    right-click-commands:
+    - '[player] shop Mobs'
+    left-click-commands:
+    - '[player] shop Mobs'
+    price: 0
+  npc-16:
+    cooldown: 0
+    right-click-commands:
+    - '[player] shop Food'
+    left-click-commands:
+    - '[player] shop Food'
+    price: 0
+  npc-33:
+    cooldown: 0
+    right-click-commands:
+    - '[message] &3→ &b%ajlb_lb_statistic_mob_kills_1_alltime_name% &fhas slain the
+      most mobs on the server, with &b%ajlb_lb_statistic_mob_kills_1_alltime_value%&f
+      kills!'
+    left-click-commands:
+    - '[message] &3→ &b%ajlb_lb_statistic_mob_kills_1_alltime_name% &fhas slain the
+      most mobs on the server, with &b%ajlb_lb_statistic_mob_kills_1_alltime_value%&f
+      kills!'
+    price: 0
+  npc-28:
+    cooldown: 0
+    right-click-commands:
+    - '[message] &6→ &e%ajlb_lb_vault_eco_balance_1_alltime_name% &fhas the highest
+      balance on the server, with &e$%ajlb_lb_vault_eco_balance_1_alltime_value%&f!'
+    left-click-commands:
+    - '[message] &6→ &e%ajlb_lb_vault_eco_balance_1_alltime_name% &fhas the highest
+      balance on the server, with &e$%ajlb_lb_vault_eco_balance_1_alltime_value%&f!'
+    price: 0
+  npc-29:
+    cooldown: 0
+    right-click-commands:
+    - '[message] &3→ &b%ajlb_lb_statistic_player_kills_1_alltime_name% &fhas the most
+      kills on the server, with &b%ajlb_lb_statistic_player_kills_1_alltime_value%&f!'
+    left-click-commands:
+    - '[message] &3→ &b%ajlb_lb_statistic_player_kills_1_alltime_name% &fhas the most
+      kills on the server, with &b%ajlb_lb_statistic_player_kills_1_alltime_value%&f!'
+    price: 0
+  npc-30:
+    cooldown: 0
+    right-click-commands:
+    - '[message] &e→ &6%ajlb_lb_statistic_time_played_1_alltime_name% &fhas the most
+      playtime on the server, with &6%ajlb_lb_statistic_time_played_1_alltime_value%&f
+      played!'
+    left-click-commands:
+    - '[message] &e→ &6%ajlb_lb_statistic_time_played_1_alltime_name% &fhas the most
+      playtime on the server, with &6%ajlb_lb_statistic_time_played_1_alltime_value%&f
+      played!'
+    price: 0
+  npc-31:
+    cooldown: 0
+    right-click-commands:
+    - '[message] &5→ &d%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_1_alltime_name%
+      &fhas slain the most dragons on the server, with &d%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_1_alltime_value%&f
+      kills!'
+    left-click-commands:
+    - '[message] &5→ &d%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_1_alltime_name%
+      &fhas slain the most dragons on the server, with &d%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_1_alltime_value%&f
+      kills!'
+    price: 0
+  npc-32:
+    cooldown: 0
+    right-click-commands:
+    - '[message] &4→ &c%ajlb_lb_statistic_deaths_1_alltime_name% &fhas the most deaths
+      on the server, with &c%ajlb_lb_statistic_deaths_1_alltime_value%&f deaths!'
+    left-click-commands:
+    - '[message] &4→ &c%ajlb_lb_statistic_deaths_1_alltime_name% &fhas the most deaths
+      on the server, with &c%ajlb_lb_statistic_deaths_1_alltime_value%&f deaths!'
+    price: 0
+  npc-34:
+    cooldown: 0
+    right-click-commands:
+    - '[message] &2→ &a%ajlb_lb_griefprevention_accruedclaims_1_alltime_name% &fhas
+      the most claim blocks on the server, with &a%ajlb_lb_griefprevention_accruedclaims_1_alltime_value%
+      &fblocks!'
+    left-click-commands:
+    - '[message] &2→ &a%ajlb_lb_griefprevention_accruedclaims_1_alltime_name% &fhas
+      the most claim blocks on the server, with &a%ajlb_lb_griefprevention_accruedclaims_1_alltime_value%
+      &fblocks!'
+    price: 0
+  npc-6:
+    cooldown: 0
+    right-click-commands:
+    - '[player] cratemerchant'
+    left-click-commands:
+    - '[player] cratemerchant'
+    price: 0
+  npc-26:
+    cooldown: 0
+    right-click-commands:
+    - '[player] warp'
+    left-click-commands:
+    - '[player] warp'
+    price: 0
+  npc-24:
+    cooldown: 0
+    right-click-commands:
+    - '[player] pwarp'
+    left-click-commands:
+    - '[player] pwarp'
+    price: 0
+  npc-8:
+    cooldown: 0
+    right-click-commands:
+    - '[player] coinshop'
+    left-click-commands:
+    - '[player] coinshop'
+    price: 0
+  npc-3:
+    cooldown: 0
+    right-click-commands:
+    - '[player] levels'
+    left-click-commands:
+    - '[player] levels'
+    price: 0
+  npc-7:
+    cooldown: 0
+    right-click-commands:
+    - '[player] vote'
+    left-click-commands:
+    - '[player] vote'
+    price: 0
+  npc-25:
+    cooldown: 0
+    right-click-commands:
+    - '[player] theauction open'
+    left-click-commands:
+    - '[player] theauction open'
+    price: 0
+  npc-27:
+    cooldown: 0
+    right-click-commands:
+    - '[player] tasks'
+    left-click-commands:
+    - '[player] tasks'
+    price: 0
+  npc-35:
+    cooldown: 0
+    right-click-commands:
+    - '[player] shop Potions'
+    left-click-commands:
+    - '[player] shop Potions'
+    price: 0
+  npc-36:
+    cooldown: 0
+    right-click-commands:
+    - '[player] essentials:warp pvp'
+    left-click-commands:
+    - '[player] essentials:warp pvp'
+    price: 0
+  npc-1:
+    cooldown: 0
+    right-click-commands:
+    - '[message] &r'
+    - '[message] &r &#FFD700༄ &lWebstore'
+    - '[message] &r &7 Running a server is by no means free. Please consider'
+    - '[message] &r &7 making a payment on our webstore to support us!'
+    - '[message] &r &7'
+    - '[message] &r &#FFD700 &nhttps://store.yourserver.com'
+    - '[message] &r &7'
+    left-click-commands:
+    - '[message] &r'
+    - '[message] &r &#FFD700༄ &lWebstore'
+    - '[message] &r &7 Running a server is by no means free. Please consider'
+    - '[message] &r &7 making a payment on our webstore to support us!'
+    - '[message] &r &7'
+    - '[message] &r &#FFD700 &nhttps://store.yourserver.com'
+    - '[message] &r'
+    price: 0
+  npc-2:
+    cooldown: 0
+    right-click-commands:
+    - '[message] &r'
+    - '[message] &r &#7289da༄ &lDiscord'
+    - '[message] &r &7 Join our Discord Server to stay up-to-date with'
+    - '[message] &r &7 the latest news, announcements, giveaways and more!'
+    - '[message] &r'
+    - '[message] &r &#7289da &nhttps://discord.yourserver.com'
+    - '[message] &r'
+    left-click-commands:
+    - '[message] &r'
+    - '[message] &r &#7289da༄ &lDiscord'
+    - '[message] &r &7 Join our Discord Server to stay up-to-date with'
+    - '[message] &r &7 the latest news, announcements, giveaways and more!'
+    - '[message] &r'
+    - '[message] &r &#7289da &nhttps://discord.yourserver.com'
+    - '[message] &r'
+    price: 0
+  npc-23:
+    cooldown: 0
+    right-click-commands:
+    - '[player] storage'
+    left-click-commands:
+    - '[player] storage'
+    price: 0
+  npc-51:
+    cooldown: 0
+    right-click-commands:
+    - '[player] fishmarket'
+    left-click-commands:
+    - '[player] fishmarket'
+    price: 0
+  npc-52:
+    cooldown: 0
+    right-click-commands:
+    - '[player] evaluator'
+    left-click-commands:
+    - '[player] evaluator'
+    price: 0
+  npc-53:
+    cooldown: 0
+    right-click-commands:
+    - '[player] casino sell'
+    left-click-commands:
+    - '[player] casino sell'
+    price: 0
+

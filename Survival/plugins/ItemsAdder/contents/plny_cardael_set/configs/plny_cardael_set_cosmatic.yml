@@ -1,0 +1,43 @@
+info:
+  namespace: plny_cardael_set
+items:
+  plny_cardael_set_cosmetics_helmet:
+    display_name: Cardael Helmet Cosmetics
+    permission: plny_cardael_set.plny_cardael_set_cosmetics_helmet
+    resource:
+      generate: false
+      model_path: helmet
+      material: POTION
+      model_id: 9925546
+  plny_cardael_set_cosmetics_wings:
+    display_name: Cardael Wings Cosmetics
+    permission: plny_cardael_set.plny_cardael_set_cosmetics_wings
+    resource:
+      generate: false
+      model_path: wings_cosmetic
+      material: POTION
+      model_id: 9925547
+  plny_cardael_set_cosmetics_wings_self:
+    display_name: Cardael Wings Cosmetics Self
+    permission: plny_cardael_set.plny_cardael_set_cosmetics_wings_self
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self
+      material: POTION
+      model_id: 9925548
+  plny_cardael_set_cosmetics_wings_self_2:
+    display_name: Cardael Wings Cosmetics Self 2
+    permission: plny_cardael_set.plny_cardael_set_cosmetics_wings_self_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self_2
+      material: POTION
+      model_id: 9925549
+  plny_cardael_set_cosmetics_wings_normal_2:
+    display_name: Cardael Wings Cosmetics Normal 2
+    permission: plny_cardael_set.plny_cardael_set_cosmetics_wings_normal_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_normal_2
+      material: POTION
+      model_id: 9925550

@@ -1,0 +1,53 @@
+armors_rendering:
+  fiendskullarmor:
+    color: '#4e2d38'
+    layer_1: armor/fiendskull_armor_layer_1
+    layer_2: armor/fiendskull_armor_layer_2
+    use_color: false
+info:
+  namespace: fiendskullset
+items:
+  fiendskullboots:
+    display_name: Fiend Skull Boots
+    permission: fiendskull.boots
+    resource:
+      generate: true
+      textures:
+      - armor/fiendskull_boots_icon.png
+    specific_properties:
+      armor:
+        custom_armor: fiendskullarmor
+        slot: feet
+  fiendskullchestplate:
+    display_name: Fiend Skull Chestplate
+    permission: fiendskull.chestplate
+    resource:
+      generate: true
+      textures:
+      - armor/fiendskull_chestplate_icon.png
+    specific_properties:
+      armor:
+        custom_armor: fiendskullarmor
+        slot: chest
+  fiendskullleggings:
+    display_name: Fiend Skull Leggings
+    permission: fiendskull.leggings
+    resource:
+      generate: true
+      textures:
+      - armor/fiendskull_leggings_icon.png
+    specific_properties:
+      armor:
+        custom_armor: fiendskullarmor
+        slot: legs
+  fiendskullhelmet:
+    display_name: Fiend Skull Helmet
+    permission: fiendskull.helmet
+    resource:
+      generate: true
+      textures:
+      - armor/fiendskull_helmet_icon.png
+    specific_properties:
+      armor:
+        custom_armor: fiendskullarmor
+        slot: head

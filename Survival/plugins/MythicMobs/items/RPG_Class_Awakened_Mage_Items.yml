@@ -1,0 +1,20 @@
+  
+awakened_mage_runestaff:
+  Id: stone_sword
+  Display: "<gradient:#4c00ff:#75acff:#4c00ff>&lRunestaff"
+  Model: 2089
+  Lore:
+  - '<gradient:#4c00ff:#75acff:#4c00ff>The Runestaff of the Awakened Mage'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Mana_Barrier} @self ~onTimer:10
+  - skill{s=Sorcery_Combo} @self ~onSwing
+  - skill{s=Teleport_Strike} @self ~onUse
+  - skill{s=Blazing_Barrage} @self ~onCrouch
+  - skill{s=Cryo_Prison} @self ~onTimer:10
+  - skill{s=Hailpiercer} @self ~onUse
+  - skill{s=Meteor_Of_Doom} @self ~onSwing

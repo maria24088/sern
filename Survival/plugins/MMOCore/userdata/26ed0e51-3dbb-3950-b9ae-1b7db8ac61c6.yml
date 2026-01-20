@@ -1,0 +1,48 @@
+class-points: 0
+skill-points: 0
+skill-reallocation-points: 0
+attribute-points: 0
+attribute-realloc-points: 0
+level: 1
+experience: 190.15889224185088
+class: HUMAN
+waypoints: []
+friends: []
+last-login: 1768866393699
+skill-tree-reallocation-points: 0
+health: 21.200000762939453
+mana: 20.996000000000002
+stellium: 20.0
+stamina: 20.0
+unlocked-items: []
+skill-tree-level: {}
+attribute:
+  dexterity: 0
+  core-strength: 0
+  intelligence: 0
+profession:
+  enchanting:
+    exp: 0.0
+    level: 1
+  smithing:
+    exp: 0.0
+    level: 1
+  woodcutting:
+    exp: 0.0
+    level: 1
+  farming:
+    exp: 4.442009018057897
+    level: 1
+  fishing:
+    exp: 0.0
+    level: 1
+  alchemy:
+    exp: 0.0
+    level: 1
+  mining:
+    exp: 0.0
+    level: 1
+  smelting:
+    exp: 0.0
+    level: 1
+quest: {}

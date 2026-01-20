@@ -1,0 +1,34 @@
+title: <white>
+rows: 6
+items:
+  blueflame_cosmetics_wings:
+    slots:
+    - 0
+    item:
+      name: <white>Blueflame Wings
+      material: POTION
+      model-data: 9924667
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_blueflame_cosmetics_wings%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_blueflame_cosmetics_wings%'
+    type: cosmetic
+    cosmetic: blueflame_cosmetics_wings
+    locked-item:
+      name: <white>Blueflame Wings <red><b>(LOCK)
+      material: POTION
+      model-data: 9924667
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+
+#6d6a89f17823566d406a05035b07c188

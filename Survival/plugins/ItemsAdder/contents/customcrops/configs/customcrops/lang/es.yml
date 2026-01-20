@@ -1,0 +1,41 @@
+info:
+  namespace: customcrops
+  dictionary-lang: "es"
+dictionary:
+  display-category-customcrops_basics: Basics
+  display-category-customcrops_sprinklers: Sprinklers
+  display-category-customcrops_fertilizers: Fertilizantes
+  display-category-customcrops_wateringcans: Regaderas
+  display-name-dry_pot: Pot
+  display-name-wet_pot: Pot
+  display-name-scarecrow: EspantapÃ¡jaros
+  display-name-greenhouse_glass: Cristal para invernaderos
+  display-name-speed_grow_1: Speed-Gro
+  display-name-speed_grow_2: Deluxe Speed-Gro
+  display-name-speed_grow_3: Hyper Speed-Gro
+  display-name-soil_retain_1: Basic Retaining Soil
+  display-name-soil_retain_2: Quality Retaining Soil
+  display-name-soil_retain_3: Deluxe Retaining Soil
+  display-name-quality_1: Basic Fertilizer
+  display-name-quality_2: Quality Fertilizer
+  display-name-quality_3: Deluxe Fertilizer
+  display-name-yield_increase_1: Basic Yield Increasing
+  display-name-yield_increase_2: Quality Yield Increasing
+  display-name-yield_increase_3: Deluxe Yield Increasing
+  display-name-variation_1: Primary Magic Bottle
+  display-name-variation_2: Intermediate Magic Bottle
+  display-name-variation_3: Advanced Magic Bottle
+  display-name-watering_can_1: Regadera de Cobre
+  display-name-watering_can_2: Regadera de Steel
+  display-name-watering_can_3: Regadera de Oro
+  display-name-watering_can_4: Regadera de Iridium
+  display-name-sprinkler_1_item: Sprinkler Primitivo
+  display-name-sprinkler_2_item: Sprinkler de Calidad
+  display-name-sprinkler_3_item: Sprinkler Moderno
+  # Tomato
+  display-name-tomato: Tomate
+  display-name-tomato_silver_star: Tomato (Estrella Plateada)
+  display-name-tomato_golden_star: Tomato (Estrella Dorada)
+  display-name-tomato_seeds: Semillas de Tomate
+  display-name-gigantic_tomato: Tomate Overgrown 
+  display-name-golden_tomato: Tomate Dorado

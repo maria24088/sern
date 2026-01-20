@@ -1,0 +1,190 @@
+# Create customized commands.
+enchantment-info:
+  # Is this command enabled?
+  enabled: true
+  # Change the start of the command
+  # Use it in game: /<command> <enchantment>
+  command: /enchant
+  aliases:
+    - /enchantment
+  # Permission for command
+  # Set to "" to disable
+  permission: ""
+  inventory:
+    # Inventory size (9-18-27-36-45-54)
+    size: 27
+    # Inventory name
+    name: "&f᪄᪖"
+    items:
+      # Slots start from 0
+      # This number defines the inventory slot.
+      "13":
+        type: ENCHANTED_BOOK
+        id: 0
+        custom-model-data: 0
+        force-glow: false
+        name: "&fEnchantment: %group-color%%enchant%"
+        lore:
+          - ""
+          - "&7ᴍᴀx ʟᴇᴠᴇʟ: %group-color%%max-lvl-roman%"
+          - "&7ᴅᴇsᴄʀɪᴘᴛɪᴏɴ:"
+          - "&f%desc%"
+          - ""
+          - "&7ᴀᴘᴘʟɪᴇs ᴛᴏ:"
+          - " &f%applies-to%"
+        prefix-addon: "&f"
+enchantments:
+  # Is this command enabled?
+  enabled: true
+  # Change the command
+  # Use it in game: /<command>
+  command: /enchants
+  aliases:
+    - /enchantments
+  # Permission for command
+  # Set to "" to disable
+  permission: ""
+  mode:
+    # Modes: GROUPS, ALL
+    # If set to GROUPS, first group selection inventory will show up
+    # If set to ALL, first inventory will show all available enchants
+    currentMode: GROUPS
+  inventory:
+    # Inventory size (18-27-36-45-54)
+    size: 36
+    # Display page number with next/previous page item amounts?
+    display-page-number: false
+    # Inventory name
+    name: "&f᪄᪔"
+    items:
+      # Slots start from 0
+      # This number defines the inventory slot.
+      "10":
+        type: PAPER
+        id: 0
+        custom-model-data: 40021
+        force-glow: false
+        # What enchantment group list should it open?
+        group: SIMPLE
+        name: "&f᪗ Enchantment Index"
+        lore:
+          - "&7Click here to open a preview"
+          - "&7of all available {#e0e0e0}Simple &7group"
+          - "&7enchantments!"
+      "11":
+        type: PAPER
+        id: 5
+        custom-model-data: 40022
+        force-glow: false
+        group: UNIQUE
+        name: "&f᪘ Enchantment Index"
+        lore:
+          - "&7Click here to open a preview"
+          - "&7of all available {#6cbc64}Unique &7group"
+          - "&7enchantments!"
+      "12":
+        type: PAPER
+        id: 3
+        custom-model-data: 40023
+        force-glow: false
+        group: ELITE
+        name: "&f᪙ Enchantment Index"
+        lore:
+          - "&7Click here to open a preview"
+          - "&7of all available {#bcdcee}Elite &7group"
+          - "&7enchantments!"
+      "13":
+        type: PAPER
+        id: 4
+        custom-model-data: 40024
+        force-glow: false
+        group: ULTIMATE
+        name: "&f᪚ Enchantment Index"
+        lore:
+          - "&7Click here to open a preview"
+          - "&7of all available {#d7ace0}Ultimate &7group"
+          - "&7enchantments!"
+      "14":
+        type: PAPER
+        id: 1
+        custom-model-data: 40025
+        force-glow: false
+        group: LEGENDARY
+        name: "&f᪛ Enchantment Index"
+        lore:
+          - "&7Click here to open a preview"
+          - "&7of all available {#fccc5c}Legendary &7group"
+          - "&7enchantments!"
+      "15":
+        type: PAPER
+        id: 6
+        custom-model-data: 40026
+        force-glow: false
+        group: FABLED
+        name: "&f᪜ Enchantment Index"
+        lore:
+          - "&7Click here to open a preview"
+          - "&7of all available {#fc8484}Fabled &7group"
+          - "&7enchantments!"
+      fill:
+        type: FEATHER
+        id: 15
+        custom-model-data: 9999
+        force-glow: false
+        name: " "
+        lore: []
+  group-enchantment-inventory:
+    name: "&f᪄᪕"
+    # Fills empty slots with this item
+    fill-item:
+      material: FEATHER
+      id: 15
+      custom-model-data: 9999
+      name: " "
+      lore: []
+    go-back-item:
+      # Show "Go Back" item?
+      enabled: true
+      slot: "%invSize% - 7"
+      item:
+        type: FEATHER
+        id: 0
+        custom-model-data: 9999
+      name: "&fGo Back"
+      lore: []
+    previous-page:
+      material: FEATHER
+      id: 14
+      custom-model-data: 9999
+      name: "&fPrevious Page."
+      lore: []
+      slot: "%invSize% - 2"
+    next-page:
+      material: FEATHER
+      id: 5
+      custom-model-data: 9999
+      name: "&fNext Page."
+      lore: []
+      slot: "%invSize% - 1"
+    item:
+      type: ENCHANTED_BOOK
+      id: 0
+      custom-model-data: 0
+      force-glow: false
+      # What command should be run when player clicks on one of the enchantments?
+      # %max-lvl% - Displays max. level in numbers, %max-lvl-roman% - displays max. level in roman numerals
+      # command: /enchant %enchantment%
+      name: "&fEnchantment: %group-color%%enchant%"
+      lore:
+        - ""
+        - "&7ᴍᴀx ʟᴇᴠᴇʟ: %group-color%%max-lvl-roman%"
+        - "&7ᴅᴇsᴄʀɪᴘᴛɪᴏɴ:"
+        - "&f%desc%"
+        - ""
+        - "&7ᴀᴘᴘʟɪᴇs ᴛᴏ:"
+        - " &f%applies-to%"
+      prefix-addon: "&f"
+enchants:
+  group-enchantment-inventory:
+    item:
+      prefix-addon: ""

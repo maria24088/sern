@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  grandfatherclock:
+    display_name: "Grandfather Clock"
+    permission: livingroom.grandfatherclock
+    resource:
+      material: PAPER
+      generate: false
+      model_path: grandfatherclock
+    behaviours:
+      furniture:
+        light_level: 13

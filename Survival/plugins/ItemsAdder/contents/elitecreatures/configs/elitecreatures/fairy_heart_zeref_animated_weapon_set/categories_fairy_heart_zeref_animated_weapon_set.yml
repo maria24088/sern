@@ -1,0 +1,33 @@
+info:
+  namespace: elitecreatures
+categories:
+  fairy_heart_zeref_animated_weapon_set:
+    enabled: true
+    icon: "elitecreatures:fairy_heart_zeref_animated_weapon_set_bow"
+    name: "Fairy Heart Zeref Animated Weapon Set"
+    permission: "ia.menu.fairy_heart_zeref_animated_weapon_set"
+    items:
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_axe"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_backpack"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_bow"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_chest"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_crossbow"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_dagger"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_fishing_rod"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_greatsword"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_hammer"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_hat"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_hoe"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_key"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_mace"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_pickaxe"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_shield"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_shovel"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_spear"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_staff"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_sword"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_wing"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_helmet"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_chestplate"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_leggings"
+      - "elitecreatures:fairy_heart_zeref_animated_weapon_set_boots"

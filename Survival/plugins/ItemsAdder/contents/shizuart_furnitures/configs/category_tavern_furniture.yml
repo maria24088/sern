@@ -1,0 +1,52 @@
+info:
+  namespace: shizuart_furnitures
+
+categories:
+  tavern_furniture:
+    enabled: true
+    icon: "shizuart_furnitures:tavern_green_bottle"
+    name: "Tavern furniture"
+    items:
+      - "shizuart_furnitures:tavern_counter"
+      - "shizuart_furnitures:tavern_counter2"
+      - "shizuart_furnitures:tavern_counter_angle"
+      - "shizuart_furnitures:tavern_windows"
+      - "shizuart_furnitures:tavern_windows_double"
+      - "shizuart_furnitures:tavern_stool"
+      - "shizuart_furnitures:tavern_table"
+      - "shizuart_furnitures:tavern_big_table"
+      - "shizuart_furnitures:tavern_bench"
+      - "shizuart_furnitures:tavern_shelf"
+      - "shizuart_furnitures:tavern_shelf2"
+      - "shizuart_furnitures:tavern_shelf3"
+      - "shizuart_furnitures:tavern_bottom_shelf"
+      - "shizuart_furnitures:tavern_hanging_shelf"
+      - "shizuart_furnitures:tavern_bread"
+      - "shizuart_furnitures:tavern_hanging_mugs"
+      - "shizuart_furnitures:tavern_keg_support"
+      - "shizuart_furnitures:tavern_keg_support_double"
+      - "shizuart_furnitures:tavern_keg"
+      - "shizuart_furnitures:tavern_keg2"
+      - "shizuart_furnitures:tavern_green_bottle"
+      - "shizuart_furnitures:tavern_brown_bottle"
+      - "shizuart_furnitures:tavern_blue_bottle"
+      - "shizuart_furnitures:tavern_red_bottle"
+      - "shizuart_furnitures:tavern_small_green_bottle"
+      - "shizuart_furnitures:tavern_candle_red_bottle"
+      - "shizuart_furnitures:tavern_candle_green_bottle"
+      - "shizuart_furnitures:tavern_candle"
+      - "shizuart_furnitures:tavern_basket_apple"
+      - "shizuart_furnitures:tavern_big_keg"
+      - "shizuart_furnitures:tavern_big_keg2"
+      - "shizuart_furnitures:tavern_mug"
+      - "shizuart_furnitures:tavern_mug2"
+      - "shizuart_furnitures:tavern_multiple_bottles"
+      - "shizuart_furnitures:tavern_pile_bottles"
+      - "shizuart_furnitures:tavern_mural_shelf"
+      - "shizuart_furnitures:tavern_egg_jar"
+      - "shizuart_furnitures:tavern_plate1"
+      - "shizuart_furnitures:tavern_plate2"
+      - "shizuart_furnitures:tavern_plate3"
+      - "shizuart_furnitures:tavern_mural_beam"
+
+#olWtxWYBFXbBdDdtJjYwdUbNVlWFJVRSVEeXFVeJRkYFJlbZB1b1kkRTFEUJVnMGR0Trx2M

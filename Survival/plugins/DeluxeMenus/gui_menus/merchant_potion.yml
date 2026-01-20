@@ -1,0 +1,88 @@
+# Made by samus2002
+
+menu_title: '&8&lPotion Shop'
+open_command:
+  - shop_potion
+size: 45
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: shop_potion.open
+      deny_commands:
+        - "[message] &cYou can't access the Potion Shop yet!"
+items:
+  'SPEED_POTION':
+    material: POTION
+    rgb: 140, 238, 255
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ADDITIONAL_TOOLTIP
+    display_name: '&b&lSpeed Potion'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to buy!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$50"
+      - ""
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lRight-click&7 to sell for &a$25!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a1x Speed Potion"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_POTION_BUY_1";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    right_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_POTION_SELL_1";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+  'RESISTANCE_POTION':
+    material: POTION
+    rgb: 255, 176, 97
+    slot: 11
+    priority: 1
+    update: true
+    item_flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_ADDITIONAL_TOOLTIP
+    display_name: '&b&lResistance Potion'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to buy!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$60"
+      - ""
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lRight-click&7 to sell for &a$30!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a1x Resistance Potion"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_POTION_BUY_2";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    right_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_POTION_SELL_2";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+
+  'PLAYER':
+    material: ENDER_PEARL
+    slot: 4
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lBalance'
+    lore:
+      - "&a$%vault_eco_balance%"
+#24f35df792b6ddcf3baf6e41e84f2dde

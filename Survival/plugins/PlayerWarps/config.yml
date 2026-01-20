@@ -1,0 +1,163 @@
+#    ______ _                       _    _
+#    | ___ \ |                     | |  | |
+#    | |_/ / | __ _ _   _  ___ _ __| |  | | __ _ _ __ _ __  ___
+#    |  __/| |/ _` | | | |/ _ \ '__| |/\| |/ _` | '__| '_ \/ __|
+#    | |   | | (_| | |_| |  __/ |  \  /\  / (_| | |  | |_) \__ \
+#    \_|   |_|\__,_|\__, |\___|_|   \/  \/ \__,_|_|  | .__/|___/
+#                   __/ |                            | |
+#                 |___/                             |_|
+#
+#                                                by Athelion Development
+#
+# Get the new textured custom UI from here: https://builtbybit.com/resources/playerwarps-custom-ui.51704/
+#
+# If you have some questions, join https://discord.gg/TfUC8uJ for help
+#
+# From 1.16 version you can also use HEX colors.
+# Instead of &f format use <#ffffff>
+#
+config:
+  language: English
+  update-checker: true
+  autosave-enabled: true
+  autosave-announce: true
+  date-format: dd/MM/yyyy
+  warp-name-format: '&b&n%warpName%'
+  
+  demand-verification: false
+  
+  # 30 minutes is recommended
+  autosave-interval: 30
+  teleport-delay: 3
+  currency-symbol: $
+  allow-colors-in-warp-display-names: true
+  sort-by:
+  - ALPHABETICAL
+  - VISITS
+  - LATEST
+  - RATING
+  
+  selected-sort: '&a ► '
+  other-sort: '&7  '
+  
+  # All icons can be found here: https://github.com/webbukkit/dynmap/wiki/Using-Markers
+  dynmap-marker-icon: blueflag
+  dynmap-marker-label: 'Warp: %warp% by %owner%'
+  
+  warp-description-color: '&9'
+  
+  #
+  warp-creation-for-trusted-players: true
+  
+  # Be careful with size of menus, if you change this property
+  # make sure you've adjusted the positions of items appropriate to not exceed the menu size
+  warp-listing-menu-size: 54
+  categories-menu-size: 54
+  warp-manage-menu-size: 54
+  confirmation-menu-size: 27
+  
+  # To disable the fee features, set them to 0
+  # This option works only with installed Vault plugin
+  warp-price: 5000
+  relocate-warp-fee: 1000
+  rename-warp-fee: 500
+  transfer-ownership-fee: 0
+  set-status-fee: 0
+  set-type-fee: 0
+  set-preview-item-fee: 0
+  set-description-fee: 0
+  set-description-characters-limit: 32
+  set-display-name-fee: 200
+  set-admission-fee: 0
+  # To disable refund set to 0
+  delete-warp-refund: 2000
+  max-warp-admission: 100000
+  # Make sure you are using valid IDs
+  default-warp-item: ENDER_PEARL
+  # Can be: OPENED, CLOSED
+  default-warp-status: OPENED
+  banned-items:
+  - DEBUG_STICK
+  - BARRIER
+  - STRUCTURE_VOID
+  default-limit-size: 1
+  warp-name-max-length: 24
+  disabled-worlds:
+  - disabledworld1
+  - disabledworld2
+  - disabledworld3
+  enabled-regions:
+  - enabledregion1
+  - enabledregion2
+  - enabledregion3
+  
+  enable-hints: true
+  enable-categories: true
+  enable-warp-search: true
+  enable-warp-rating: true
+  
+  # Set none to disable this option
+  categories-background-item: LIGHT_GRAY_STAINED_GLASS_PANE
+  
+  warp-visit-notification: true
+  warp-creation-notification: true
+  
+  # This option note player that warp teleportation is charged
+  allow-teleport-accept-menu: true
+  # Checking if the warp destination is safe (fire, lava, fall from a height or of the world)
+  check-for-safe-teleport: true
+  
+  next-page-item: ARROW
+  previous-page-item: ARROW
+  
+  no-warp-found-item: BARRIER
+  
+  confirm-item: LIME_STAINED_GLASS_PANE
+  deny-item: RED_STAINED_GLASS_PANE
+  insufficient-permissions-item: BARRIER
+  warp-list-item: PAPER
+  sort-warps-item: REPEATER
+  search-warp-item: OAK_SIGN
+  help-item: REDSTONE_TORCH
+  my-warps-item: REPEATER
+  favorite-warps-item: NAME_TAG
+  page-item: ARROW
+  star-review-item: SUNFLOWER
+  back-item: OAK_BUTTON
+  # Settings menu items
+  set-price-item: SUNFLOWER
+  set-category-item: WHITE_BANNER
+  change-display-name-item: WRITABLE_BOOK
+  change-preview-item: ITEM_FRAME
+  change-description-item: NAME_TAG
+  change-accessibility-item: IRON_DOOR
+  rename-warp-item: OAK_SIGN
+  remove-warp-item: BARRIER
+  relocate-warp-item: WHITE_BANNER
+  change-owner-item: PLAYER_HEAD
+  blocked-players-item: SHIELD
+  
+  # To remove item from menu, set
+  # its position to -1
+  warp-overview-position: 4
+  set-price-position: 11
+  set-category-position: 12
+  change-display-name-position: 13
+  change-preview-item-position: 14
+  change-description-position: 15
+  change-accessibility-position: 22
+  remove-warp-position: 38
+  rename-warp-position: 39
+  relocate-warp-position: 41
+  change-owner-position: 42
+  blocked-players-position: 40
+  
+  confirm-item-positions:
+  - 10
+  - 11
+  - 12
+  
+  deny-item-positions:
+  - 14
+  - 15
+  - 16

@@ -1,0 +1,143 @@
+menu_title: 'Jobs | Information'
+open_command: jobsinformation
+size: 45
+update_interval: 1
+items:
+  Pescadoractive:
+    material: FISHING_ROD
+    slot: 22
+    priority: 2
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&e&lPescador Job&r'
+    lore:
+    - '&7Tropical Fish &f| &a$3,500.00 &e1,250.00EXP'
+    - '&7Pufferfish &f| &a$750.00 &e250.00 EXP'
+    - '&7Raw Salmon &f| &a$350.00 &e20.00 EXP'
+    - '&7Raw Cod &f| &a$150.00 &e10.00 EXP'
+    left_click_commands:
+    - '[refresh]'
+    right_click_commands:
+    - '[refresh]'
+
+
+  Mineroactive:
+    material: DIAMOND_PICKAXE
+    slot: 20
+    priority: 2
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&e&lMinero Job&r'
+    lore:
+    - '&7Ancient Debris &f| &a$800.00 &e28.00 EXP'
+    - '&7Emerald Ore &f| &a$500.00 &e16.00 EXP'
+    - '&7Diamond Ore &f| &a$400.00 &e14.00 EXP'
+    - '&7Lapis Ore &f| &a$70.00 &e12.00 EXP'
+    - '&7Gold Ore &f| &a$60.00 &e10.00 EXP'
+    - '&7Nether Gold Ore &f| &a$50.00 &e10.00 EXP'
+    - '&7Redstone Ore &f| &a$50.00 &e9.00 EXP'
+    - '&7Iron Ore &f| &a$40.00 &e8.00 EXP'
+    - '&7Nether Quartz Ore &f| &a$25.00 &e5.00 EXP'
+    - '&7Copper Ore &f| &a$25.00 &e5.00 EXP'
+    - '&7Coal Ore &f| &a$25.00 &e5.00 EXP'
+    - '&7End Stone &f| &a$1.30 &e0.20 EXP'
+    - '&7Terracotta &f| &a$1.25 &e0.15 EXP'
+    - '&7Stone &f| &a$1.00 &e0.15 EXP'
+    - '&7Basalt &f| &a$1.00 &e0.10 EXP'
+    - '&7Sandstone &f| &a$1.00 &e0.10 EXP'
+    - '&7Netherrack &f| &a$1.00 &e0.10 EXP'
+    left_click_commands:
+    - '[refresh]'
+    right_click_commands:
+    - '[refresh]'
+
+
+  woodcutteractive:
+    material: IRON_AXE
+    slot: 21
+    priority: 2
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&e&lWoodcutter Job&r'
+    lore:
+    - '&7Mangrove Log &f| &a$20.00 &e3.15 EXP'
+    - '&7Acacia Log &f| &a$20.00 &e3.15 EXP'
+    - '&7Warped Stem &f| &a$20.00 &e3.15 EXP'
+    - '&7Birch Log &f| &a$20.00 &e3.15 EXP'
+    - '&7Crimson Stem &f| &a$20.00 &e3.15 EXP'
+    - '&7Oak Log &f| &a$20.00 &e3.15 EXP'
+    - '&7Dark Oak Log &f| &a$10.00 &e1.60 EXP'
+    - '&7Spruce Log &f| &a$10.00 &e1.60 EXP'
+    - '&7Jungle Log &f| &a$10.00 &e1.60 EXP'
+    left_click_commands:
+    - '[refresh]'
+    right_click_commands:
+    - '[refresh]'
+
+  Granjeroactive:
+    material: IRON_HOE
+    slot: 23
+    priority: 2
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&e&lGranjero Job&r'
+    lore:
+    - '&7Cocoa Beans &f| &a$4.50 &e0.72 EXP'
+    - '&7Pumpkin &f| &a$3.20 &e0.51 EXP'
+    - '&7Melon &f| &a$3.20 &e0.51 EXP'
+    - '&7Bamboo &f| &a$2.25 &e0.36 EXP'
+    - '&7Sugar Cane &f| &a$2.25 &e0.36 EXP'
+    - '&7Kelp &f| &a$2.25 &e0.36 EXP'
+    - '&7Carrot &f| &a$2.05 &e0.33 EXP'
+    - '&7Potato &f| &a$2.05 &e0.33 EXP'
+    - '&7Wheat &f| &a$2.05 &e0.33 EXP'
+    - '&7Nether Wart &f| &a$2.05 &e0.33 EXP'
+    - '&7Beetroot &f| &a$2.05 &e0.33 EXP'
+    left_click_commands:
+    - '[refresh]'
+    right_click_commands:
+    - '[refresh]'
+
+  excavatoractive:
+    material: DIAMOND_SHOVEL
+    slot: 24
+    priority: 2
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&e&lExcavator Job&r'
+    lore:
+    - '&7Clay &f| &a$10.00 &e5.00 EXP'
+    - '&7Soul Sand &f| &a$1.40 &e0.25 EXP'
+    - '&7Gravel &f| &a$1.40 &e0.20 EXP'
+    - '&7Mycelium &f| &a$1.35 &e0.20 EXP'
+    - '&7Sand &f| &a$1.35 &e0.20 EXP'
+    - '&7Grass Block &f| &a$1.10 &e0.20 EXP'
+    - '&7Mud &f| &a$1.10 &e0.16 EXP'
+    - '&7Coarse Dirt &f| &a$1.10 &e0.16EXP'
+    - '&7Podzol &f| &a$1.10 &e0.16 EXP'
+    - '&7Dirt &f| &a$1.00 &e0.15 EXP'
+    - '&7Snow &f| &a$1.00 &e0.15 EXP'
+    left_click_commands:
+    - '[refresh]'
+    right_click_commands:
+    - '[refresh]'
+
+  information:
+    material: RED_BED
+    slot: 40
+    priority: 1
+    update: true
+    display_name: '&c&lReturn to Jobs'
+    lore:
+    - ''
+    - '&a&l→ &fClick to view all Jobs'
+    left_click_commands:
+    - '[openguimenu] jobs'
+    right_click_commands:
+    - '[openguimenu] jobs'
+  

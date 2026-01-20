@@ -1,0 +1,15 @@
+info:
+  namespace: hyronic_utils
+items:
+  hc_transparent_item:
+    enabled: true
+    display_name: "[UI] Transparent Item"
+    lore:
+      - "&7A transparent item used"
+      - "&7for designing GUIs"
+    resource:
+      material: FEATHER
+      generate: true
+      model_id: 9999
+      textures:
+        - transparent

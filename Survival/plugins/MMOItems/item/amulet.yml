@@ -1,0 +1,25 @@
+AmuletoDivino:
+  base:
+    material: PAPER
+    name: <#ff4c4c>Amuleto Divino
+    custom-model-data: 15103
+    lore-format: amuleto
+    unstackable: true
+    
+    damage-reduction: 0.08
+    health-regeneration: 0.5
+    
+    lore:
+    - '&f 뀆 '
+    - '&fా ʙᴇɴᴅɪᴄɪᴏɴ ᴄᴇʟᴇsᴛɪᴀʟ'
+    - '&7Una gracia divina te protege,'
+    - '&7reduciendo el &fᎍ <#c7c4bf>daño'
+    - <#c7c4bf>recibido &7en &7<#ADD8E6>8%
+    - ''
+    - '&fా ʀᴇɢᴇɴᴇʀᴀᴄɪᴏɴ sᴀɢʀᴀᴅᴀ'
+    - '&7La energía divina fluye en ti,'
+    - '&7restaurando &fᎏ <#c7c4bf>salud &7cada'
+    - '&7<#ADD8E6>3 segundos'
+    
+    tier: LEGENDARY
+

@@ -1,0 +1,169 @@
+info:
+  namespace: necros_set
+items:
+  necros_axe:
+    display_name: Necros Axe
+    permission: necros_set.axe
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: axe
+  necros_bow:
+    display_name: Necros Bow
+    permission: necros_set.bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+  necros_chest:
+    display_name: Necros Chest
+    permission: necros_set.chest
+    resource:
+      material: PAPER
+      generate: false
+      model_path: chest
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: false
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: false
+  necros_crossbow:
+    display_name: Necros Crossbow
+    permission: necros_set.crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow
+  necros_fishing_rod:
+    display_name: Necros Fishing Rod
+    permission: necros_set.fishing_rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+  necros_hammer:
+    display_name: Necros Hammer
+    permission: necros_set.hammer
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: hammer
+  necros_helmet:
+    display_name: Necros Helmet
+    permission: necros_set.helmet
+    resource:
+      material: PAPER
+      generate: false
+      model_path: helmet
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165
+  necros_hoe:
+    display_name: Necros Hoe
+    permission: necros_set.hoe
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: hoe
+  necros_key:
+    display_name: Necros Key
+    permission: necros_set.key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: key
+  necros_mace:
+    display_name: Necros Mace
+    permission: necros_set.mace
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: mace
+  necros_pickaxe:
+    display_name: Necros Pickaxe
+    permission: necros_set.pickaxe
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: pickaxe
+  necros_scythe:
+    display_name: Necros Scythe
+    permission: necros_set.scythe
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: scythe
+  necros_shield:
+    display_name: Necros Shield
+    permission: necros_set.shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+  necros_shovel:
+    display_name: Necros Shovel
+    permission: necros_set.shovel
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: shovel
+  necros_spear:
+    display_name: Necros Spear
+    permission: necros_set.spear
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: spear
+  necros_staff:
+    display_name: Necros Staff
+    permission: necros_set.staff
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: staff
+  necros_sword:
+    display_name: Necros Sword
+    permission: necros_set.sword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: sword
+  necros_trident:
+    display_name: Necros Trident
+    permission: necros_set.trident
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: trident
+  necros_wings:
+    display_name: Necros Wings
+    permission: necros_set.wings
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wings
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165
+
+#30d4610397b833f341e6d8c0581961d8
+#AzTxcWMTlWZvt0NDFEUyN0avFzU3lEROJTSE90MFRUT4dGVj9WRpFjeplFSiV1V4o1UKhlM

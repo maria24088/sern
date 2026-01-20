@@ -1,0 +1,99 @@
+custom-rods:
+  default:
+    name: "&fCaña de Pescar" # O el nombre que quieras, pero &f es blanco estándar
+    item: FISHING_ROD
+    durability: 64 # 64 es la durabilidad real de Minecraft. (-1 es infinita)
+    model-data: 0  # IMPORTANTE: 0 significa "sin textura custom", se verá como la vanilla
+    loot-table-weight: -1
+    luck: 0        # 0 es la suerte base de Minecraft
+    speed: 1.0     # 1.0 es la velocidad normal
+    radius: 0      # 0 para que no pesque en área (comportamiento vanilla)
+    rarity: COMMON
+    description: [] # Corchetes vacíos para borrar el Lore (texto descriptivo)
+    
+  beginner-rod:
+    name: "&a&lApprentice Angler's Rod"
+    item: FISHING_ROD
+    durability: -1
+    model-data: 50081
+    loot-table-weight: 30
+    luck: 1
+    speed: 1
+    radius: 5
+    rarity: COMMON
+    description:
+      - "&7A sturdy rod for budding fishermen."
+      - "&7Slightly better than the standard rod."
+  silver-rod:
+    name: "#C0C0C0Silverscale Rod"
+    item: FISHING_ROD
+    durability: -1
+    model-data: 50082
+    loot-table-weight: 10
+    luck: 2
+    speed: 2
+    radius: 5
+    rarity: UNCOMMON
+    description:
+      - "&7Gleaming like fish scales in moonlight."
+      - "&7An uncommon find for dedicated anglers."
+  golden-rod:
+    name: "&6&lMidas Touch Fishing Rod"
+    item: FISHING_ROD
+    durability: -1
+    model-data: 50083
+    luck: 3
+    speed: 3
+    radius: 5
+    rarity: RARE
+    description:
+      - "&6A rod of exquisite craftsmanship."
+      - "&7Rare and highly sought after."
+  star-rod:
+    name: "#FFD700Celestial Angler"
+    item: FISHING_ROD
+    durability: -1
+    model-data: 50084
+    luck: 4
+    speed: 4
+    radius: 5
+    rarity: RARE
+    description:
+      - "&bIts star-like sheen catches the eye."
+      - "&7A rare rod with impressive stats."
+  bone-rod:
+    name: "#E0E0E0&lSkeletal Fishing Rod"
+    item: FISHING_ROD
+    durability: -1
+    model-data: 50085
+    luck: 5
+    speed: 5
+    radius: 5
+    rarity: EPIC
+    description:
+      - "&fCrafted from mysterious ancient bones."
+      - "&7An epic rod with superior performance."
+  magical-rod:
+    name: "#FF00FF&lEnchanted Fishcatcher"
+    item: FISHING_ROD
+    durability: -1
+    model-data: 50086
+    luck: 6
+    speed: 6
+    radius: 5
+    rarity: EPIC
+    description:
+      - "&dPulsing with arcane energy."
+      - "&7An epic rod with remarkable capabilities."
+  master-rod:
+    name: "#00FFFF&lPoseidon's Trident"
+    item: FISHING_ROD
+    durability: -1
+    model-data: 50087
+    luck: 7
+    speed: 7
+    radius: 5
+    rarity: LEGENDARY
+    description:
+      - "&bA legendary rod of unmatched quality."
+      - "&7The pinnacle of fishing technology."

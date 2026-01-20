@@ -1,0 +1,158 @@
+info:
+  namespace: iavegastables
+items:
+  roulette:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66601
+      model_path: custom/blocks/roulette
+  darts:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66602
+      model_path: custom/blocks/darts
+  drums:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66603
+      model_path: custom/blocks/drums
+  races:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66604
+      model_path: custom/blocks/races
+  pyramid:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66605
+      model_path: custom/blocks/pyramid
+  stairs:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66606
+      model_path: custom/blocks/stairs
+  lottery:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66607
+      model_path: custom/blocks/lottery
+  crash:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66608
+      model_path: custom/blocks/crash
+  classic:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66609
+      model_path: custom/blocks/classic
+  blackjack:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66610
+      model_path: custom/blocks/blackjack
+  rockpaperscissors:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66611
+      model_path: custom/blocks/rockpaperscissors
+  tictactoe:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66612
+      model_path: custom/blocks/tictactoe
+  deadmanschest:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66613
+      model_path: custom/blocks/deadmanschest
+  poker:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66614
+      model_path: custom/blocks/poker
+  dice:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66615
+      model_path: custom/blocks/dice
+  minesweeper:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66616
+      model_path: custom/blocks/minesweeper
+  doubleroulette:
+    enabled: true
+    display_name: ' '
+    permission: iavegastables.item
+    resource:
+      material: BARRIER
+      generate: false
+      model_id: 66617
+      model_path: custom/blocks/doubleroulette
+
+#UEW3tGOM9USB9Ua61kcw4mdjBDVMx2aUxkQzM1T1sGVqZUMUp3VL9UeKh2SJJlTYNmRwFnM

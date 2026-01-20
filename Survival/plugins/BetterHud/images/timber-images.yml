@@ -1,0 +1,74 @@
+## Hotbar Elements
+timber_hotbar_left:
+  type: single
+  file: timber/hotbar_left.png
+timber_hotbar_right:
+  type: single
+  file: timber/hotbar_right.png
+timber_hotbar_armor:
+  type: single
+  file: timber/armor_bar.png
+## Player Experience
+timber_hotbar_experience:
+  type: listener
+  file: timber/exp_full.png
+  split: 48
+  split-type: left
+  setting:
+    listener:
+      class: exp
+## Water / Food / Armor
+timber_hotbar_armor_fill:
+  type: listener
+  file: timber/armor_full.png
+  split: 25
+  split-type: left
+  setting:
+    listener:
+      class: armor
+timber_hotbar_water:
+  type: listener
+  file: timber/water_full.png
+  split: 25
+  split-type: left
+  setting:
+    listener:
+      class: air
+timber_hotbar_food:
+  type: listener
+  file: timber/food_full.png
+  split: 25
+  split-type: right
+  setting:
+    listener:
+      class: food
+timber_hotbar_health:
+  type: listener
+  file: timber/hp_full.png
+  split: 25
+  split-type: up
+  setting:
+    listener:
+      class: health
+timber_hotbar_mana:
+  type: listener
+  file: timber/mana_full.png
+  split: 25
+  split-type: up
+  setting:
+    listener:
+      class: placeholder
+      value: "(number)papi:auraskills_mana"
+      max: "(number)papi:auraskills_mana_max"
+money_background:
+  type: single
+  file: timber/trans_bg_50.png
+player_name_background:
+  type: single
+  file: timber/trans_bg_80.png
+icon_money:
+  type: single
+  file: timber/icon_money.png
+fondo_left:
+  type: single
+  file: timber/fondo.png

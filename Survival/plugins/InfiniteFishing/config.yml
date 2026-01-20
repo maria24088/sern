@@ -1,0 +1,251 @@
+# Data Management Configuration
+data-management:
+  # Choose the storage method for plugin data (JSON or MYSQL)
+  storage-method: JSON
+  # MySQL connection details (only used if storage-method is set to MYSQL)
+  mysql:
+    host: localhost
+    port: 3306
+    database: fishing
+    username: root
+    password: verysecurepassword
+save-interval: 6000 # Interval in ticks to save data (20 ticks = 1 second)
+
+# Language Configuration
+language: en # Add your own in the messages folder
+
+# Notifications
+disable-save-notification: false
+disable-season-notification: false
+
+# Disable fishing/InfiniteFishing in certain regions or worlds
+#disabled-worlds:
+#  world1: fishing # Disable fishing in world1
+#  world2: infinitefishing # Disable InfiniteFishing in world2
+
+#disabled-regions:
+#  region1: fishing # Disable fishing in region1
+#  region2: infinitefishing # Disable InfiniteFishing in region2
+
+# Fishing Configuration
+fish-evaluation: true # Enable fish evaluation
+fish-evaluation-chance: 0.3 # Chance to catch a fish with unknown rarity (0.0 - 1.0) (0.3 = 30%)
+fish-evaluation-custom: true # Use a custom resource-pack evaluator
+fish-evaluation-custom-offset: "" # Custom resource-pack evaluator offset
+fish-evaluation-custom-symbol: "큓" # Custom resource-pack evaluator symbol
+fish-include-vanilla-loot: true # Include vanilla loot in the fish loot table
+fish-vanila-loot-chance: 0.1 # Chance to catch vanilla loot (0.0 - 1.0) (0.1 = 10%)
+fish-outside-of-spots: true # Allow fishing outside of fishing spots /spots
+fish-auto-catch: true # Enable auto-catch for fish
+fish-execute-commands-after-catch: false # Execute commands after catching a fish
+fish-execute-commands:
+  - 'say %player% has caught a fish!'
+fish-unlock-catalog-by-default: false # Unlock fish catalog by default
+
+# ^ this can be also used to give player xp in different plugins
+# Note: This method isn't effective, check for Plugins integration
+# Placeholders:
+# %player% - The player who caught the fish
+# %xp% - The market price divided by a divisor, rounded to a whole number
+# %rng_10,15% - Random number between 10 and 15
+
+# Splash Configuration
+water-splash: true # Enable splash effects when fishing
+
+# Maximum number of baits that can be attached to a single fishing rod
+bait-limit: 10
+
+# Environment Effects Configuration
+# These settings control the frequency and duration of special fishing events
+environment-effects-enabled: true     # Enable environment effects
+environment-effects-delay-min: 24000 # Minimum delay between effects (in ticks, 20 ticks = 1 second)
+environment-effects-delay-max: 48000 # Maximum delay between effects (in ticks)
+environment-effects-duration: 6000   # Duration of each effect (in ticks)
+environment-effects: # Change the drop rates of fish during these effects
+  season:
+    legendary-boost: 1.2
+    epic-boost: 1.35
+    rare-boost: 1.5
+    uncommon-boost: 1.0
+    common-boost: 1.0
+  lunar_phase:
+    legendary-boost: 1.1
+    epic-boost: 1.2
+    rare-boost: 1.3
+    uncommon-boost: 1.0
+    common-boost: 1.0
+  water_pollution:
+    legendary-boost: 0.8
+    epic-boost: 0.9
+    rare-boost: 0.95
+    uncommon-boost: 1.1
+    common-boost: 1.2
+
+# Party Configuration
+party: true # Enable the /party command and functionality
+
+# Fishing Market Configuration
+# These settings change how the Fishing Market behaves
+fishing-market: true # Fishing market enabled
+fishing-market-custom: false # Enable custom fishing market gui
+fishing-market-custom-symbol: "" # Custom fishing market symbol
+fishing-market-custom-offset: "" # Custom fishing market offset
+
+# Fishing Economy Configuration
+fish-size-divider: 5.0 # The number that the fish size will be divided in the final price calculation (1.0 = no division)
+fish-weight-divider: 5.0 # The number that the fish weight will be divided in the final price calculation (1.0 = no division)
+fish-xp-divider: 10 # The number that the fish xp will be divided in the fish-execute-commands calculation (10 = price / 10)
+
+# Fish Top Configuration
+# These settings control the Fish Top event
+fish-top-weekly: true # Enable Fish Top weekly
+fish-top-weekly-rewards: # Commands that will be executed after event ends
+  1:
+    - 'give %player% minecraft:diamond 1'
+  2:
+    - 'give %player% minecraft:iron_ingot 1'
+  3:
+    - 'give %player% minecraft:coal 1'
+fish-top-weekly-queue-rewards: true # Queue commands incase the player is not online! They will execute after player joins
+
+# Tournament Configuration
+# Control individual settings for the tournaments in tournaments.yml
+tournaments: true # Enable tournaments
+
+# Augments Configuration
+augments: true # Enable augments
+
+# Spots Configuration
+fishing-spots-holograms: true # Enable holograms for fishing spots
+
+# Minigame Configuration
+# These settings adjust the difficulty and behavior of fishing minigames
+minigames:
+  enabled: true # Enable minigames, If false, fish will be caught instantly
+  # Struggling Fish Minigame Settings
+  struggling-fish:
+    enabled: true
+    struggle-delay: 5 # Delay between fish struggles
+    fish-speed: 1     # Speed of the fish movement
+    #allow: ALLOW # Geyser support: ALLOW (Java+Bedrock), ALLOW_JAVA (Java only), ALLOW_BEDROCK (Bedrock only)
+  # Click Minigame Settings
+  click:
+    enabled: true
+    min-cps: 3 # Minimum clicks per second required
+    max-cps: 6 # Maximum clicks per second allowed
+  # Judgement Area Minigame Settings
+  judgement-area:
+    enabled: true
+    switch-delay: 30 # Delay between area switches
+    speed: 1         # Speed of the judgement area movement
+    difficulty:
+        easy:
+            weight: 60 # Weight of the easy difficulty
+            time: 1200 # Time in ticks (20 ticks = 1 second)
+        medium:
+            weight: 30 # Weight of the medium difficulty
+            time: 900  # Time in ticks (20 ticks = 1 second)
+        hard:
+            weight: 10 # Weight of the hard difficulty
+            time: 600  # Time in ticks (20 ticks = 1 second)
+  # Dance Minigame Settings
+  dance:
+    enabled: true
+    min-actions: 5
+    max-actions: 10
+  # Pointer Bar Minigame Settings
+  pointer-bar:
+    enabled: true
+    yellow-area-chance: 0.0 # Chance of winning when hitting the yellow area
+    orange-area-chance: 0.0  # Chance of winning when hitting the orange area
+  moving-rod:
+    enabled: true
+
+# Random Events Configuration
+# Setting any of the weights to 0 will disable the event
+random-events:
+  chance: 0.15 # Chance of a random event occurring (0.0 - 1.0) (0.15 = 15%)
+  silverfish: # Spawns a silverfish (or crab) when a random event occurs
+    weight: 30 # Weight of the silverfish event
+    crab: true # Spawn a crab instead of a silverfish
+    lifetime: 1200 # Time in ticks (20 ticks = 1 second)
+  lightning: # Strikes the player with lightning when a random event occurs
+    weight: 20 # Weight of the lightning event
+    damage: 5   # Damage dealt by the lightning
+
+# Offset Characters Configuration
+# These characters are used for custom GUI rendering
+offset-characters:
+  font: fishing:offset_chars
+  '1': 
+  '2': 
+  '4': 
+  '8': 
+  '16': 
+  '32': 
+  '64': 
+  '128': 
+  '-1': 
+  '-2': 
+  '-4': 
+  '-8': 
+  '-16': 
+  '-32': 
+  '-64': 
+  '-128': 
+
+# Minigame Character Configuration
+# These characters are used to render different elements in the minigames
+minigame-characters:
+  # Struggling Fish Minigame Characters
+  struggling-fish:
+    bar: '뀑'
+    shift: '뀠'
+    moving-fish: '뀍'
+    struggling-fish-up: '뀎'
+    struggling-fish-down: '뀐'
+    base-strain: '뀑'
+  # Moving Rod Minigame Characters
+  moving-rod:
+    base-bar: '뀌'
+    fish: '뀍'
+    pointer: '뀁'
+  # Pointer Bar Minigame Characters
+  pointer-bar:
+    color-bar-1: '뀕'
+    color-bar-2: '뀖'
+    color-bar-3: '뀗'
+    color-bar-4: '뀘'
+    color-bar-5: '뀙'
+    color-bar-6: '뀠'
+    color-bar-7: '뀡'
+    color-bar-8: '뀢'
+    color-bar-9: '뀣'
+    pointer: '뀁'
+  # Rapid Click Minigame Character
+  rapid-click:
+    left-click: '뀢'
+  # Judgement Area Minigame Characters
+  judgement-area:
+    base-bar: '뀌'
+    fish: '뀍'
+    finishing: '뀁'
+    easy-crate: '뀒'
+    medium-crate: '뀓'
+    hard-crate: '뀔'
+  # Dance Minigame Characters
+  dance:
+    left-click: '뀢'
+    right-click: '뀣'
+    shift-click: '뀠'
+
+# Plugins integration
+auraskills-integration: false # Enable integration for AuraSkills
+auraskills-level-locking: false # Lock fishes to certain fishing level before they can be caught
+
+parties-integration: false # Enable integration for Parties
+#Note: 'party' should be set to false, disabling the default way of handling parties
+
+# Debug Mode
+# When set to true, additional debug messages will be printed to the console
+debug: false

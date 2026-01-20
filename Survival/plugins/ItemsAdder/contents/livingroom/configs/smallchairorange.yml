@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  smallchairorange:
+    display_name: "Small Chair Orange"
+    permission: livingroom.smallchairorange
+    resource:
+      material: PAPER
+      generate: false
+      model_path: smallchairorange
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.1

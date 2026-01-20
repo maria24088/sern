@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.19.211.102
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1766270921130
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1766270994095
+  login: 1766270810791
+money: '0.0'
+last-account-name: Fran
+lastlocation:
+  world: 0c52527c-f895-4989-828f-80caa9f6e8b5
+  world-name: Spawn
+  x: -41.88070335709886
+  y: 88.0
+  z: 105.72440714596591
+  yaw: 134.194091796875
+  pitch: 1.1437768936157227
+logoutlocation:
+  world: 0c52527c-f895-4989-828f-80caa9f6e8b5
+  world-name: Spawn
+  x: -59.57033197686091
+  y: 87.0
+  z: 92.45990846304075
+  yaw: -84.60650634765625
+  pitch: 17.669090270996094

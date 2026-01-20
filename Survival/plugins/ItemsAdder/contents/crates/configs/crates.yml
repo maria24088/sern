@@ -1,0 +1,272 @@
+info:
+  namespace: crates
+
+categories:
+  crates_category:
+    enabled: true
+    icon: crates:toffy_crate_paladin
+    name: "Crates & Keys"
+    items:
+      - crates:toffy_crate_black
+      - crates:toffy_crate_blue
+      - crates:toffy_crate_cinder
+      - crates:toffy_crate_green
+      - crates:toffy_crate_paladin
+      - crates:toffy_crate_purple
+      - crates:toffy_crate_red
+      - crates:toffy_crate_viking
+      - crates:toffy_key_black
+      - crates:toffy_key_blue
+      - crates:toffy_key_cinder
+      - crates:toffy_key_green
+      - crates:toffy_key_purple
+      - crates:toffy_key_red
+      - crates:toffy_key_viking
+
+items:
+  # =============================================================
+  # CRATES (Muebles Sólidos)
+  # NOTA: Si flotan, baja la Translación Y en "Display > Head" en Blockbench.
+  # =============================================================
+  toffy_crate_black:
+    display_name: "Toffy Crate Black"
+    permission: crates.toffy_crate_black
+    resource:
+      material: PAPER
+      generate: false
+      model_path: toffy_crate_black
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        solid: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+
+  toffy_crate_blue:
+    display_name: "Toffy Crate Blue"
+    permission: crates.toffy_crate_blue
+    resource:
+      material: PAPER
+      generate: false
+      model_path: toffy_crate_blue
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        solid: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+
+  toffy_crate_cinder:
+    display_name: "Toffy Crate Cinder"
+    permission: crates.toffy_crate_cinder
+    resource:
+      material: PAPER
+      generate: false
+      model_path: toffy_crate_cinder
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        solid: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+
+  toffy_crate_green:
+    display_name: "Toffy Crate Green"
+    permission: crates.toffy_crate_green
+    resource:
+      material: PAPER
+      generate: false
+      model_path: toffy_crate_green
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        solid: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+
+  toffy_crate_paladin:
+    display_name: "Toffy Crate Paladin"
+    permission: crates.toffy_crate_paladin
+    resource:
+      material: PAPER
+      generate: false
+      model_path: toffy_crate_paladin
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        solid: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+
+  toffy_crate_purple:
+    display_name: "Toffy Crate Purple"
+    permission: crates.toffy_crate_purple
+    resource:
+      material: PAPER
+      generate: false
+      model_path: toffy_crate_purple
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        solid: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+
+  toffy_crate_red:
+    display_name: "Toffy Crate Red"
+    permission: crates.toffy_crate_red
+    resource:
+      material: PAPER
+      generate: false
+      model_path: toffy_crate_red
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        solid: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+
+  toffy_crate_viking:
+    display_name: "Toffy Crate Viking"
+    permission: crates.toffy_crate_viking
+    resource:
+      material: PAPER
+      generate: false
+      model_path: toffy_crate_viking
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        solid: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+
+  # =============================================================
+  # KEYS (Items Normales)
+  # =============================================================
+  toffy_key_black:
+    display_name: "Toffy Key Black"
+    permission: crates.toffy_key_black
+    resource:
+      material: TRIPWIRE_HOOK
+      generate: false
+      model_path: toffy_key_black
+
+  toffy_key_blue:
+    display_name: "Toffy Key Blue"
+    permission: crates.toffy_key_blue
+    resource:
+      material: TRIPWIRE_HOOK
+      generate: false
+      model_path: toffy_key_blue
+
+  toffy_key_cinder:
+    display_name: "Toffy Key Cinder"
+    permission: crates.toffy_key_cinder
+    resource:
+      material: TRIPWIRE_HOOK
+      generate: false
+      model_path: toffy_key_cinder
+
+  toffy_key_green:
+    display_name: "Toffy Key Green"
+    permission: crates.toffy_key_green
+    resource:
+      material: TRIPWIRE_HOOK
+      generate: false
+      model_path: toffy_key_green
+
+  toffy_key_purple:
+    display_name: "Toffy Key Purple"
+    permission: crates.toffy_key_purple
+    resource:
+      material: TRIPWIRE_HOOK
+      generate: false
+      model_path: toffy_key_purple
+
+  toffy_key_red:
+    display_name: "Toffy Key Red"
+    permission: crates.toffy_key_red
+    resource:
+      material: TRIPWIRE_HOOK
+      generate: false
+      model_path: toffy_key_red
+
+  toffy_key_viking:
+    display_name: "Toffy Key Viking"
+    permission: crates.toffy_key_viking
+    resource:
+      material: TRIPWIRE_HOOK
+      generate: false
+      model_path: toffy_key_viking

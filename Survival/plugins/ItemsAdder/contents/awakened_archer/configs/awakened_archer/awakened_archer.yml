@@ -1,0 +1,67 @@
+info:
+  namespace: awakened_archer
+items:
+  awakened_archer_galebow:
+    display_name: "awakened_archer_galebow"
+    permission: awakened_archer_galebow
+    resource:
+      material: STONE_SWORD
+      model_id: 2087
+      generate: false
+      model_path: awakened_archer_model/awakened_archer_galebow
+  icon_ambush:
+    display_name: "icon_ambush"
+    permission: icon_ambush
+    resource:
+      material: COAL
+      model_id: 2294
+      generate: false
+      model_path: awakened_archer_model/icon_ambush
+  icon_blasting_combo:
+    display_name: "icon_blasting_combo"
+    permission: icon_blasting_combo
+    resource:
+      material: COAL
+      model_id: 2295
+      generate: false
+      model_path: awakened_archer_model/icon_blasting_combo
+  icon_evasive_shot:
+    display_name: "icon_evasive_shot"
+    permission: icon_evasive_shot
+    resource:
+      material: COAL
+      model_id: 2296
+      generate: false
+      model_path: awakened_archer_model/icon_evasive_shot
+  icon_piercing_skyfall:
+    display_name: "icon_piercing_skyfall"
+    permission: icon_piercing_skyfall
+    resource:
+      material: COAL
+      model_id: 2297
+      generate: false
+      model_path: awakened_archer_model/icon_piercing_skyfall
+  icon_rapid_arrows:
+    display_name: "icon_rapid_arrows"
+    permission: icon_rapid_arrows
+    resource:
+      material: COAL
+      model_id: 2298
+      generate: false
+      model_path: awakened_archer_model/icon_rapid_arrows
+  icon_shot_of_destruction:
+    display_name: "icon_shot_of_destruction"
+    permission: icon_shot_of_destruction
+    resource:
+      material: COAL
+      model_id: 2299
+      generate: false
+      model_path: awakened_archer_model/icon_shot_of_destruction
+  icon_volley_of_arrows:
+    display_name: "icon_volley_of_arrows"
+    permission: icon_volley_of_arrows
+    resource:
+      material: COAL
+      model_id: 2300
+      generate: false
+      model_path: awakened_archer_model/icon_volley_of_arrows

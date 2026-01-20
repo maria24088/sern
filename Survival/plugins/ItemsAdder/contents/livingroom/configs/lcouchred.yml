@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  lcouchred:
+    display_name: "L Couch Red"
+    permission: livingroom.lcouchred
+    resource:
+      material: PAPER
+      generate: false
+      model_path: lcouchred
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.1

@@ -1,0 +1,15 @@
+Id: cubee-croissant_shark
+MythicMob: cubee-croissant_shark
+Permission: mcpet.cubee-croissant_shark
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §d Croissant Shark Cubee
+  Description:
+  - §7"Don't be afraid of me. I'm not just crispy, I also have a soft and delicious
+    inside!" §8§o- Croissant Shark Cubee
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191316
+

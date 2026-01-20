@@ -1,0 +1,14 @@
+Id: cubee-cupcake_snake
+MythicMob: cubee-cupcake_snake
+Permission: mcpet.cubee-cupcake_snake
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §e Cupcake Snake Cubee
+  Description:
+  - §7"I'm not just a regular snake. I'm a snake with a sweet and cute surprise!"
+    §8§o- Cupcake Snake Cubee
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191317

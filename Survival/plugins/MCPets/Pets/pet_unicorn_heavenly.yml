@@ -1,0 +1,114 @@
+Id: Pet_Unicorn_Heavenly
+MythicMob: Pet_Unicorn_Heavenly
+Permission: mcpet.Pet_Unicorn_Heavenly
+Mountable: false
+Distance: 6
+DismountOnDamaged: false
+SpawnRange: 3
+ComingBackRange: 5
+Icon:
+  Name: §bHeavenly Unicorn
+  Material: BRICK
+  CustomModelData: 12016
+  Description:
+  - §fGet your pet Heavenly Unicorn!
+  - ''
+  - §f[§cBuff of Harmony§f]
+  - §fYour Unicorn gives you Resistance, Speed, and Strength.
+  - ''
+  - '§7Level up: §a+Effect Power'
+Skins:
+  Pet_Unicorn_Heavenly:
+    MythicMob: Pet_Unicorn_Heavenly
+    Permission: skin.Pet_Unicorn_Heavenly
+    Icon:
+      Material: BRICK
+      CustomModelData: 12016
+      DisplayName: §bHeavenly Unicorn
+      Lore:
+      - §fGet your pet Heavenly Unicorn!
+  Pet_Unicorn_Nature:
+    MythicMob: Pet_Unicorn_Nature
+    Permission: skin.Pet_Unicorn_Nature
+    Icon:
+      Material: BRICK
+      CustomModelData: 12017
+      DisplayName: §bNature Unicorn
+      Lore:
+      - §fGet your pet Nature Unicorn!
+  Pet_Unicorn_Rainbow:
+    MythicMob: Pet_Unicorn_Rainbow
+    Permission: skin.Pet_Unicorn_Rainbow
+    Icon:
+      Material: BRICK
+      CustomModelData: 12018
+      DisplayName: §bRainbow Unicorn
+      Lore:
+      - §fGet your pet Rainbow Unicorn!
+  Pet_Unicorn_Undead:
+    MythicMob: Pet_Unicorn_Undead
+    Permission: skin.Pet_Unicorn_Undead
+    Icon:
+      Material: BRICK
+      CustomModelData: 12019
+      DisplayName: §bUndead Unicorn
+      Lore:
+      - §fGet your pet Undead Unicorn!
+Levels:
+  Lvl_Common:
+    Name: §fCommon
+    ExperienceThreshold: 0
+    MaxHealth: 100
+    Regeneration: 0.1
+    ResistanceModifier: 1
+    DamageModifier: 2
+    Power: 0
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+  Lvl_Rare:
+    Name: §aRare
+    ExperienceThreshold: 500
+    MaxHealth: 150
+    Regeneration: 0.12
+    ResistanceModifier: 1
+    DamageModifier: 4
+    Power: 0
+    Cooldowns:
+      Respawn: 14
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &aRare &6level!'
+      Type: CHAT
+  Lvl_Epic:
+    Name: §dEpic
+    ExperienceThreshold: 2000
+    MaxHealth: 200
+    Regeneration: 0.14
+    ResistanceModifier: 1
+    DamageModifier: 6
+    Power: 1
+    Cooldowns:
+      Respawn: 13
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &dEpic &6level!'
+      Type: CHAT
+  Lvl_Legendary:
+    Name: §eLegendary
+    ExperienceThreshold: 5000
+    MaxHealth: 300
+    Regeneration: 0.2
+    ResistanceModifier: 1
+    DamageModifier: 9
+    Power: 2
+    Cooldowns:
+      Respawn: 12
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &eLegendary &6level!'
+      Type: CHAT

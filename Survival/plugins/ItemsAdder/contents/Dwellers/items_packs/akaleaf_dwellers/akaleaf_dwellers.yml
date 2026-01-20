@@ -1,0 +1,204 @@
+# ### Author: Akaleaf
+# ### mcmodels: mcmodels.net/vendors/akaleaf
+# ### 
+# ### Dwellers Tools Pack
+
+# Dwellers namespace
+info:
+  namespace: akaleaf_dwellers
+
+# Dwellers category
+categories:
+  akaleaf_dwellers:
+    enabled: true
+    icon: akaleaf_dwellers:akaleaf_dwellers_helmet
+    name: Dwellers Tools Pack
+    permission: ia.menu.akaleaf_dwellers
+    items:
+    - akaleaf_dwellers:akaleaf_dwellers_helmet
+    - akaleaf_dwellers:akaleaf_dwellers_chestplate
+    - akaleaf_dwellers:akaleaf_dwellers_leggings
+    - akaleaf_dwellers:akaleaf_dwellers_boots
+    - akaleaf_dwellers:akaleaf_dwellers_sword
+    - akaleaf_dwellers:akaleaf_dwellers_pickaxe
+    - akaleaf_dwellers:akaleaf_dwellers_axe
+    - akaleaf_dwellers:akaleaf_dwellers_shovel
+    - akaleaf_dwellers:akaleaf_dwellers_hoe
+    - akaleaf_dwellers:akaleaf_dwellers_shield
+    - akaleaf_dwellers:akaleaf_dwellers_bow
+    - akaleaf_dwellers:akaleaf_dwellers_crossbow
+    - akaleaf_dwellers:akaleaf_dwellers_fishing_rod
+
+# Dwellers armors rendering
+armors_rendering:
+  akaleaf_dwellers:
+    color: '#001389'
+    layer_1: item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_armor_layer_1
+    layer_2: item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_armor_layer_2
+    emissive_1: item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_armor_layer_1_e
+    emissive_2: item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_armor_layer_2_e
+    use_color: false
+
+# Dwellers items
+items:
+
+  # Dwellers Helmet
+  akaleaf_dwellers_helmet:
+    display_name: Dwellers Helmet
+    permission: akaleaf_dwellers
+    resource:
+      generate: true
+      textures:
+      - item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_helmet
+    durability:
+      max_custom_durability: 1000
+    specific_properties:
+      armor:
+        slot: head
+        custom_armor: akaleaf_dwellers
+    attribute_modifiers:
+      head:
+        armor: 3
+        armorToughness: 3
+  
+  # Dwellers Chestplate
+  akaleaf_dwellers_chestplate:
+    display_name: Dwellers Chestplate
+    permission: akaleaf_dwellers
+    resource:
+      generate: true
+      textures:
+      - item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_chestplate
+    durability:
+      max_custom_durability: 1000
+    specific_properties:
+      armor:
+        slot: chest
+        custom_armor: akaleaf_dwellers
+    attribute_modifiers:
+      chest:
+        armor: 8
+        armorToughness: 3
+  
+  # Dwellers Leggings
+  akaleaf_dwellers_leggings:
+    display_name: Dwellers Leggings
+    permission: akaleaf_dwellers
+    resource:
+      generate: true
+      textures:
+      - item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_leggings
+    durability:
+      max_custom_durability: 1000
+    specific_properties:
+      armor:
+        slot: legs
+        custom_armor: akaleaf_dwellers
+    attribute_modifiers:
+      legs:
+        armor: 6
+        armorToughness: 3
+  
+  # Dwellers Boots
+  akaleaf_dwellers_boots:
+    display_name: Dwellers Boots
+    permission: akaleaf_dwellers
+    resource:
+      generate: true
+      textures:
+      - item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_boots
+    durability:
+      max_custom_durability: 1000
+    specific_properties:
+      armor:
+        slot: FEET
+        custom_armor: akaleaf_dwellers
+    attribute_modifiers:
+      feet:
+        armor: 4
+        armorToughness: 3
+  
+  # Dwellers Sword
+  akaleaf_dwellers_sword:
+    display_name: Dwellers Sword
+    permission: akaleaf_dwellers_sword
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_sword
+  
+  # Dwellers Pickaxe
+  akaleaf_dwellers_pickaxe:
+    display_name: Dwellers Pickaxe
+    permission: akaleaf_dwellers_pickaxe
+    resource:
+      material: NETHERITE_PICKAXE
+      generate: false
+      model_path: item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_pickaxe
+  
+  # Dwellers Axe
+  akaleaf_dwellers_axe:
+    display_name: Dwellers Axe
+    permission: akaleaf_dwellers_axe
+    resource:
+      material: NETHERITE_AXE
+      generate: false
+      model_path: item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_axe
+  
+  # Dwellers Shovel
+  akaleaf_dwellers_shovel:
+    display_name: Dwellers Shovel
+    permission: akaleaf_dwellers_shovel
+    resource:
+      material: NETHERITE_SHOVEL
+      generate: false
+      model_path: item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_shovel
+  
+  # Dwellers Hoe
+  akaleaf_dwellers_hoe:
+    display_name: Dwellers Hoe
+    permission: akaleaf_dwellers_hoe
+    resource:
+      material: NETHERITE_HOE
+      generate: false
+      model_path: item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_hoe
+  
+  # Dwellers Shield
+  akaleaf_dwellers_shield:
+    display_name: Dwellers Shield
+    permission: akaleaf_dwellers_shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_shield
+  
+  # Dwellers Bow
+  akaleaf_dwellers_bow:
+    display_name: Dwellers Bow
+    permission: akaleaf_dwellers_bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_bow
+  
+  # Dwellers Crossbow
+  akaleaf_dwellers_crossbow:
+    display_name: Dwellers Crossbow
+    permission: akaleaf_dwellers_crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_crossbow
+  
+  # Dwellers Fishing Rod
+  akaleaf_dwellers_fishing_rod:
+    display_name: Dwellers Fishing Rod
+    permission: akaleaf_dwellers_fishing_rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: item/akaleaf/akaleaf_dwellers/akaleaf_dwellers_fishing_rod
+  
+  
+#e91a05ee4ff940bc6ccfe5e036265a64
+#YDRC9mNsVHcpBjTkNleTN3dZVkUOpERhFTVEJ2cGdVW5lVMU9mePFHNiFXboVTY3wWTyYnN

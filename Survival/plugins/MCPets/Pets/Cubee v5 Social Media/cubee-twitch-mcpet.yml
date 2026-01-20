@@ -1,0 +1,16 @@
+Id: cubee-twitch
+MythicMob: cubee-twitch
+Permission: mcpet.cubee-twitch
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §5Twitch §fCubee
+  Description:
+  - §fThis cubee wanna take some action!!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191039
+
+
+# c1d8afcb98ec728e8f78149f12543142

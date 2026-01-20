@@ -1,0 +1,230 @@
+# For textures only!!!
+info:
+  namespace: mmoitems_pack
+items:
+
+  bpot1:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1001
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/strengthpot_1
+
+  bpot2:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1002
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/strengthpot_2
+
+  bpot3:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1003
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/strengthpot_3
+
+  bpot4:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1004
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/strengthpot_4
+
+  bpot5:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1005
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/strengthpot_5
+
+  bpot6:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1006
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/lifestealpot_1
+
+  bpot7:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1007
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/lifestealpot_2
+
+  bpot8:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1008
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/lifestealpot_3
+
+  bpot9:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1009
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/lifestealpot_4
+
+
+  bpot10:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1010
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/lifestealpot_5
+
+  bpot11:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1011
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/magicpot_1
+
+  bpot12:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1012
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/magicpot_2
+
+  bpot13:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1013
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/magicpot_3
+
+  bpot14:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1014
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/magicpot_4
+
+  bpot15:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1015
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/magicpot_5
+
+  bpot16:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1016
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/critpot_1
+
+  bpot17:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1017
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/critpot_2
+
+  bpot18:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1018
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/critpot_3
+
+  bpot19:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1019
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/critpot_4
+
+  bpot20:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1020
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/critpot_5
+
+  bpot21:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1021
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/endurepot_1
+
+  bpot22:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1022
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/endurepot_2
+
+  bpot23:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1023
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/endurepot_3
+
+  bpot24:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1024
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/endurepot_4
+
+  bpot25:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1025
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/buff_pot/endurepot_5

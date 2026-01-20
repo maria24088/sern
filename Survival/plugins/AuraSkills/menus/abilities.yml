@@ -1,0 +1,142 @@
+title: '<white>:offset_-18: %img_abilities_menu%'
+size: 6
+fill:
+  enabled: false
+  material: black_stained_glass_pane
+items:
+
+  back:
+    pos: 0,1
+    material: BRICK
+    nbt:
+      CustomModelData: 40051
+    display_name: '<white>{{back}}'
+    lore:
+      - '<gray>{{back_click}}'
+  skull:
+    skull_meta:
+      placeholder_uuid: '{player}'
+    pos: 1,2
+    material: player_head
+    nbt:
+      CustomModelData: 100
+    display_name: ''
+    
+templates:
+  locked_ability:
+    options:
+      slots:
+        - '14'
+        - '15'
+        - '16'
+        - '23'
+        - '24'
+        - '25'
+    material: BRICK
+    nbt:
+      CustomModelData: 40082
+    display_name: '<#cf3932><bold>{name}'
+    lore:
+      - ' <gray>▪ <white>{{description}}:'
+      - text: ' {desc}'
+        wrap: true
+        wrap_indent: '  '
+        style: '<gray>'
+      - ' '
+      - text: ' <gray>▪ {{unlocked_at}}'
+        styles:
+          1: '<gray>'
+          2: '<#86A7FC>'
+      - ' '
+      - '<#cf3932> → {{locked}}'
+  locked_mana_ability:
+    pos: 3,6
+    material: BRICK
+    nbt:
+      CustomModelData: 40081
+    display_name: '<#cf3932><bold>{name}'
+    lore:
+      - ' <gray>▪ <white>{{description}}:'
+      - text: ' {desc}'
+        wrap: true
+        wrap_indent: '  '
+        styles:
+          0: '<gray>'
+          1: '<dark_gray>'
+      - ' '
+      - text: '{{unlocked_at}}'
+        styles:
+          1: '<gray>'
+          2: '<#86A7FC>'
+      - ' '
+      - '<#cf3932> → {{locked}}'
+  unlocked_ability:
+    slots:
+    options:
+      slots:
+        - '14'
+        - '15'
+        - '16'
+        - '23'
+        - '24'
+        - '25'
+    material: BRICK
+    nbt:
+      CustomModelData: 40080
+    display_name: '<white><bold>{name}'
+    lore:
+      - component: your_level
+      - component: your_level_maxed
+      - ' '
+      - component: unlocked_desc
+      - component: unlocked_desc_maxed
+      - ' '
+      - '<#82CD47> → {{unlocked}}'
+  unlocked_mana_ability:
+    pos: 3,6
+    material: BRICK
+    nbt:
+      CustomModelData: 40079
+    display_name: '<white><bold>{name}'
+    lore:
+      - component: your_level
+      - component: your_level_maxed
+      - ' '
+      - component: unlocked_desc
+      - component: unlocked_desc_maxed
+      - ' '
+      - '<#82CD47> → {{unlocked}}'
+components:
+  your_level:
+    context: AbstractAbility
+    lore:
+      - ' <gray>▪ <white>{{your_level}}: <#86A7FC>{level}'
+  your_level_maxed:
+    context: AbstractAbility
+    lore:
+      - ' <gray>▪ <white>{{your_level}}: <#86A7FC>{level} <gold>(MAXED)'
+  unlocked_desc:
+    context: AbstractAbility
+    lore:
+      - text: ' <gray>▪ {{next_upgrade_at}}'
+        styles:
+          1: '<white>'
+          2: '<#86A7FC>'
+      - text: ' {desc}'
+        wrap: true
+        wrap_indent: '  '
+        styles:
+          0: '<gray>'
+          1: '<dark_gray>'
+  unlocked_desc_maxed:
+    context: AbstractAbility
+    lore:
+      - ' <gray>▪ <white>{{description}}:'
+      - text: ' {desc}'
+        wrap: true
+        wrap_indent: '  '
+        styles:
+          0: '<gray>'
+          1: '<dark_gray>'
+formats:
+  desc_upgrade_value: '<gray>{current}<dark_gray>→{next}<gray>'

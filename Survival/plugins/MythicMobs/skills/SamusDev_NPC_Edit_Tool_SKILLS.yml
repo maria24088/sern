@@ -1,0 +1,119 @@
+######## created by samus2002 #########
+
+# TOOL #
+
+NPC_EDIT:
+  Cooldown: 4
+  TriggerConditions:
+  - haspermission{p=*} true
+  - crouching true
+  Conditions:
+  - hasaura{n=EDIT_AURA} castinstead NPC_REMOVE
+  Skills:
+  - setowner @trigger
+  - aura{auraName=EDIT_AURA;duration=20000;delay=2} @self
+  - BodyRotation{mh=0;mb=0;player=true} @self
+  - aura{auraName=NPCMODESTACK;duration=99999;maxStacks=2;delay=1} @self
+  - message{m="&b&lSamusDev NPC Edit Tool"} @trigger
+  - message{m="- &c&lMove around&r &fto position/rotate object"} @trigger
+  - message{m="- &c&lLeft-click&r &fto switch between input modes"} @trigger
+  - message{m="  * &9Name Mode &f- &c&lInput chat&r &fto rename object"} @trigger
+  - message{m="  * &9Color Mode &f- &c&lInput chat&r &fto tint object"} @trigger
+  - message{m="- &c&lShift + Right-click&r &fto remove object"} @trigger
+  - message{m="- &c&lRight-click&r &fto set object and exit tool"} @trigger
+NPC_SET:
+  Cooldown: 1
+  TriggerConditions:
+  - haspermission{p=*} true
+  - owner true
+  - crouching false
+  Skills:
+  - delay 2
+  - auraremove{aura=EDIT_AURA} @self
+  - message{m="&aObject set!"} @owner
+  - removeowner @self
+  - auraremove{aura=NPCMODESTACK} @self
+  - BodyRotation{mh=0;mb=<skill.rot>;player=true} @self
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self
+NPC_SET_LOCK_VERSION:
+  Cooldown: 1
+  TriggerConditions:
+  - haspermission{p=*} true
+  - owner true
+  - crouching false
+  Skills:
+  - delay 2
+  - auraremove{aura=EDIT_AURA} @self
+  - message{m="&aObject set!"} @owner
+  - removeowner @self
+  - auraremove{aura=NPCMODESTACK} @self
+  - BodyRotation{mh=360;mb=360;player=true} @self
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self
+NPC_REMOVE:
+  Cooldown: 1
+  TriggerConditions:
+  - haspermission{p=*} true
+  - owner true
+  - crouching true
+  Skills:
+  - message{m="&4Object removed!"} @owner
+  - remove @self
+
+NPC_MODE:
+  Skills:
+  - onSwing{osw=NPC_MODE_CHANGE;aura=npcmodeaura;d=10} @owner
+NPC_MODE_CHANGE:
+  Cooldown: 0
+  Conditions:
+  - hasaurastacks{n=NPCMODESTACK;s=1} cast NPC_MODE_CHANGE_1
+  - hasaurastacks{n=NPCMODESTACK;s=2} cast NPC_MODE_CHANGE_2
+  Skills:
+  - aura{auraName=NPCMODESTACK;duration=99999;maxStacks=2;delay=1} @self
+NPC_MODE_CHANGE_1:
+  Cooldown: 0
+  Skills:
+  - message{m="&fSwitched to &9Name Mode"} @owner
+NPC_MODE_CHANGE_2:
+  Cooldown: 0
+  Skills:
+  - auraremove{aura=NPCMODESTACK;delay=1} @self
+  - message{m="&fSwitched to &9Color Mode"} @owner
+
+
+
+NPC_NAME_CHANGE:
+  Conditions:
+  - hasaura{n=EDIT_AURA} true
+  - variableisset{n=caster.Name} true
+  - hasaurastacks{n=NPCMODESTACK;s=2} true
+  Skills:
+  - auraremove{aura=colorchange} @owner
+  - onChat{onChat=NPC_NAME_CHANGE_SKILL;aura=namechange;d=20} @owner
+NPC_NAME_CHANGE_SKILL:
+  Cooldown: 0.1
+  Skills:
+  - setvariable{var=caster.Name;value=<skill.var.input>;type=string} @self ?hasaurastacks{n=NPCMODESTACK;s=2}
+  - setmodeltag{p=health;tag="<skill.var.input>";v=true} @self ?hasaurastacks{n=NPCMODESTACK;s=2}
+  - message{m="&bObject's name has been changed!"} @owner ?hasaurastacks{n=NPCMODESTACK;s=2}
+
+
+NPC_COLOR_CHANGE:
+  Conditions:
+  - hasaura{n=EDIT_AURA} true
+  - variableisset{n=caster.Color} true
+  - hasaurastacks{n=NPCMODESTACK;s=1} true
+  Skills:
+  - auraremove{aura=namechange} @owner
+  - onChat{onChat=NPC_COLOR_CHANGE_SKILL;aura=colorchange;d=20} @owner
+NPC_COLOR_CHANGE_SKILL:
+  Cooldown: 0.1
+  Skills:
+  - setvariable{var=caster.Color;value=<skill.var.input>;type=string} @self ?hasaurastacks{n=NPCMODESTACK;s=1}
+  - tint{c=#<skill.var.input>;damagetint=false;em=false} @self ?hasaurastacks{n=NPCMODESTACK;s=1}
+  - tint{p=notint;c=#FFFFFF;damagetint=false;em=false} @self ?hasaurastacks{n=NPCMODESTACK;s=1}
+  - message{m="&bObject's color has been changed!"} @owner ?hasaurastacks{n=NPCMODESTACK;s=1}
+#24f35df792b6ddcf3baf6e41e84f2dde

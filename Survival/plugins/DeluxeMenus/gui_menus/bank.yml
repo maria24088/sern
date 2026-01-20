@@ -1,0 +1,202 @@
+# Made by samus2002
+
+menu_title: '&8&lBank'
+open_command:
+  - bank
+size: 27
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: bank.open
+      deny_commands:
+        - "[message] &cYou can't access the Bank yet!"
+items:
+  'COIN':
+    material: PAPER
+    model_data: 50000
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lCoin &7&l(Convert)'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lRight-click&7 to exchange &f1x Stacked Coin &7for &f64x Coin"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a1x Stacked Coin"
+      - ""
+    right_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_BANKER_STACKED_COIN_TO_COIN";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    right_click_requirement:
+      requirements:
+        deny1:
+          type: has item
+          material: PAPER
+          modeldata: 50001
+          amount: 1
+          strict: false
+      deny_commands:
+        - "[message] &4Requirements not met!"
+        - '[sound] ENTITY_ITEM_BREAK'
+  'STACKED_COIN':
+    material: PAPER
+    model_data: 50001
+    slot: 13
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lStacked Coin &7&l(Convert)'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to exchange &f64x Coin &7for &f1x Stacked Coin"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a64x Coin"
+      - ""
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lRight-click&7 to exchange &f1x Coin Bundle &7for &f64x Stacked Coin"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a1x Coin Bundle"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_BANKER_COIN_TO_STACKED_COIN";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    left_click_requirement:
+      requirements:
+        deny1:
+          type: has item
+          material: PAPER
+          modeldata: 50000
+          amount: 64
+          strict: false
+      deny_commands:
+        - "[message] &4Requirements not met!"
+        - '[sound] ENTITY_ITEM_BREAK'
+    right_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_BANKER_COIN_BUNDLE_TO_STACKED_COIN";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    right_click_requirement:
+      requirements:
+        deny1:
+          type: has item
+          material: PAPER
+          modeldata: 50002
+          amount: 1
+          strict: false
+      deny_commands:
+        - "[message] &4Requirements not met!"
+        - '[sound] ENTITY_ITEM_BREAK'
+  'COIN_BUNDLE':
+    material: PAPER
+    model_data: 50002
+    slot: 16
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lCoin Bundle &7&l(Convert)'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to exchange &f64x Stacked Coin &7for &f1x Coin Bundle"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a64x Stacked Coin"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_BANKER_STACKED_COIN_TO_COIN_BUNDLE";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    left_click_requirement:
+      requirements:
+        deny1:
+          type: has item
+          material: PAPER
+          modeldata: 50001
+          amount: 64
+          strict: false
+      deny_commands:
+        - "[message] &4Requirements not met!"
+        - '[sound] ENTITY_ITEM_BREAK'
+
+
+  'COIN_VAULT':
+    material: PAPER
+    model_data: 50000
+    slot: 19
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lCoin &7&l(Withdraw)'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to withdraw &f$1 &7from your bank for &f1x Coin"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$1"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_BANKER_WITHDRAW_COIN";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+  'STACKED_COIN_VAULT':
+    material: PAPER
+    model_data: 50001
+    slot: 22
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lStacked Coin &7&l(Withdraw)'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to withdraw &f$64 &7from your bank for &f64x Coin"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$64"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_BANKER_WITHDRAW_STACKED_COIN";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+  'COIN_BUNDLE_VAULT':
+    material: PAPER
+    model_data: 50002
+    slot: 25
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lCoin Bundle &7&l(Withdraw)'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to withdraw &f$4096 &7from your bank for &f4096x Coin"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$4096"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_BANKER_WITHDRAW_COIN_BUNDLE";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+
+  'PLAYER':
+    material: ENDER_PEARL
+    slot: 4
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lBalance'
+    lore:
+      - "&a$%vault_eco_balance%"
+#24f35df792b6ddcf3baf6e41e84f2dde

@@ -1,0 +1,47 @@
+AresMinion:
+  Type: ZOMBIE
+  Health: 5
+  Damage: 2
+  Faction: Ares
+  Options:
+    Silent: true
+    MovementSpeed: 0.3
+    PreventSunburn: true
+    PreventOtherDrops: true
+    PreventJockeyMounts: true
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - gotoowner 10
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  - monsters
+  - attacker
+  - players
+  Equipment:
+  - ARES_HELMET HEAD
+  - ARES_CHESTPLATE CHEST
+  - ARES_LEGGINGS LEGS
+  - ARES_BOOTS FEET
+  - ARES_GREATSWORD HAND
+  - ARES_SHIELD OFFHAND
+  Skills:
+  - remove{delay=300} @self ~onSpawn
+  - effect:flames @self ~onTimer:5
+  - ignite{ticks=140} @trigger ~onDamaged
+AresSword:
+  Type: ARMOR_STAND
+  Faction: Ares
+  Options:
+    Gravity: true
+  Skills:
+  - model{m=ares_greatsword} @self ~onSpawn
+  - model{m=ares_greatsword} @self ~onLoad
+  - teleport{spreadh=0;spreadv=0} @Origin{xoffset=0;yoffset=30;zoffset=0} ~onSpawn
+  - effect:particlering{particle=flame;fo=true;radius=5;points=32;amount=1;hS=1;vS=2;delay=30} @self ~onTimer:10
+  - velocity{m=set;x=0;y=-20;z=0;delay=20} @self ~onSpawn
+  - ignite{ticks=60} @EIR{r=10;ignore=armorstands,self} ~onTimer:20
+  - damage{a=10} @EIR{r=10;ignore=armorstands,self} ~onTimer:60
+  - remove{delay=200} @self ~onSpawn
+# 1141079724375061690707531

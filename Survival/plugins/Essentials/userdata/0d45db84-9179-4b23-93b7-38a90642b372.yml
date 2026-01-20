@@ -1,0 +1,41 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.19.211.102
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1766422586156
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1766422766636
+  login: 1766421257588
+  kits:
+    squid: 1765846154467
+    claiming: 1765901149455
+money: '9894612.0'
+last-account-name: Bruno240707
+logoutlocation:
+  world: 0c52527c-f895-4989-828f-80caa9f6e8b5
+  world-name: Spawn
+  x: -25.23173161045978
+  y: 97.40680577081636
+  z: 57.05568656611664
+  yaw: 72.06184387207031
+  pitch: 25.971729278564453
+lastlocation:
+  world: 0c52527c-f895-4989-828f-80caa9f6e8b5
+  world-name: Spawn
+  x: 282.5249325848961
+  y: 95.0
+  z: 568.7880887012385
+  yaw: 175.3575897216797
+  pitch: 8.922452926635742

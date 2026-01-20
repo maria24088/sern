@@ -1,0 +1,18 @@
+timber_hud:
+  layouts:
+    1:
+      name: timber_hud_bottom
+      x: 50
+      y: 100
+    2:
+      name: timber_hud_bottom_fills
+      x: 50
+      y: 100
+    3:
+      name: timber_hud_top
+      x: 100
+      y: 0
+    4:
+      name: fondo_layout
+      x: 50
+      y: 100

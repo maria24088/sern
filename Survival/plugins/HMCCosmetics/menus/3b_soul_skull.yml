@@ -1,0 +1,34 @@
+title: <white>
+rows: 6
+items:
+  soul_skull_cosmetics_wings:
+    slots:
+    - 0
+    item:
+      name: <white>Soul Skull Wings
+      material: POTION
+      model-data: 9926717
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_soul_skull_cosmetics_wings%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_soul_skull_cosmetics_wings%'
+    type: cosmetic
+    cosmetic: soul_skull_cosmetics_wings
+    locked-item:
+      name: <white>Soul Skull Wings <red><b>(LOCK)
+      material: POTION
+      model-data: 9926717
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available

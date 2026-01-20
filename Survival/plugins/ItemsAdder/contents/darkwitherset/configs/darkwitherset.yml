@@ -1,0 +1,166 @@
+info:
+  namespace: darkwitherset
+items:
+  dark_wither_axe:
+    display_name: §fDark Wither Axe
+    permission: darkwitherset.axe
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: axe
+  dark_wither_bow:
+    display_name: §fDark Wither Bow
+    permission: darkwitherset.bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+  dark_wither_cape:
+    display_name: §fDark Wither Cape
+    permission: darkwitherset.cape
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cape
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165
+  dark_wither_chest:
+    display_name: §fDark Wither Chest
+    permission: darkwitherset.chest
+    resource:
+      material: PAPER
+      generate: false
+      model_path: chest
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+  dark_wither_crossbow:
+    display_name: §fDark Wither Crossbow
+    permission: darkwitherset.crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow
+  dark_wither_fishing_rod:
+    display_name: §fDark Wither Fishing Rod
+    permission: darkwitherset.fishing_rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+  dark_wither_greatsword:
+    display_name: §fDark Wither Greatsword
+    permission: darkwitherset.greatsword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: greatsword
+  dark_wither_hammer:
+    display_name: §fDark Wither Hammer
+    permission: darkwitherset.hammer
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: hammer
+  dark_wither_helmet:
+    display_name: §fDark Wither Helmet
+    permission: darkwitherset.helmet
+    resource:
+      material: PAPER
+      generate: false
+      model_path: helmet
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165
+  dark_wither_hoe:
+    display_name: §fDark Wither Hoe
+    permission: darkwitherset.hoe
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: hoe
+  dark_wither_key:
+    display_name: §fDark Wither Key
+    permission: darkwitherset.key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: key
+  dark_wither_pickaxe:
+    display_name: §fDark Wither Pickaxe
+    permission: darkwitherset.pickaxe
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: pickaxe
+  dark_wither_scythe:
+    display_name: §fDark Wither Scythe
+    permission: darkwitherset.scythe
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: scythe
+  dark_wither_shield:
+    display_name: §fDark Wither Shield
+    permission: darkwitherset.shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+  dark_wither_shovel:
+    display_name: §fDark Wither Shovel
+    permission: darkwitherset.shovel
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: shovel
+  dark_wither_spear:
+    display_name: §fDark Wither Spear
+    permission: darkwitherset.spear
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: spear
+  dark_wither_staff:
+    display_name: §fDark Wither Staff
+    permission: darkwitherset.staff
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: staff
+  dark_wither_sword:
+    display_name: §fDark Wither Sword
+    permission: darkwitherset.sword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: sword
+  dark_wither_trident:
+    display_name: §fDark Wither Trident
+    permission: darkwitherset.trident
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: trident

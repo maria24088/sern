@@ -1,0 +1,13 @@
+info:
+  namespace: "cc_utils"
+  
+items: 
+  invisible_item: 
+    display_name: " "
+    permission: 0
+    resource:
+      generate: true
+      material: MAP
+      model_id: 3000
+      textures:
+      - "items/invisible_item"

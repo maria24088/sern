@@ -1,0 +1,35 @@
+info:
+  namespace: elitecreatures
+categories:
+  heart_of_sea_animated_weapon_set:
+    enabled: true
+    icon: "elitecreatures:heart_of_sea_animated_weapon_set_axe"
+    name: "Heart Of Sea Animated Weapon Set"
+    permission: "ia.menu.heart_of_sea_animated_weapon_set"
+    items:
+      - "elitecreatures:heart_of_sea_animated_weapon_set_axe"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_backpack"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_bow"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_chest"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_crossbow"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_dagger"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_fishing_rod"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_greatsword"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_hammer"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_hat"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_hoe"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_key"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_mace"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_pickaxe"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_shield"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_shovel"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_spear"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_staff"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_sword"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_wing"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_helmet"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_chestplate"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_leggings"
+      - "elitecreatures:heart_of_sea_animated_weapon_set_boots"
+
+#1561c4a5be435268c1bd9c782108ea9d

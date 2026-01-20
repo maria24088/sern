@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  livingroomchandelierblack:
+    display_name: "Living Room Chandelier Black"
+    permission: livingroom.livingroomchandelierblack
+    resource:
+      material: PAPER
+      generate: false
+      model_path: livingroomchandelierblack
+    behaviours:
+      furniture:
+        light_level: 13

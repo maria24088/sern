@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "hyronic_pack/items/bow/the_predator_0"
+  }
+}

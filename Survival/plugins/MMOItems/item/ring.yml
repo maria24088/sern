@@ -1,0 +1,45 @@
+ANILLODIVINO:
+  base:
+    material: PAPER
+    # Nombre con colores HEX
+    name: '<#ff4c4c>Anillo Divino'
+    custom-model-data: 15105
+    lore-format: anillo
+    unstackable: true
+
+
+    health-regeneration: 0.3
+    damage-reduction: 5
+    max-mana: 10   
+
+
+    lore:
+    - '&f 뀉 '
+    - '&7Un anillo bendecido por una antigua deidad.'
+    - '&7Su luz sagrada protege y fortalece'
+    - '&7a quienes demuestran un corazón puro.'
+    - ''
+    - '&6Otorga resistencia divina,'
+    - '&6mayor energía espiritual y'
+    - '&6una sutil regeneración vital.'
+
+
+    tier: EPIC
+
+ANILLOCORTANTE:
+  base:
+    material: PAPER
+    name: <#ff4c4c>Anillo Cortante
+    custom-model-data: 15150
+    lore-format: anillo
+    unstackable: true
+   
+    weapon-damage: 5
+   
+    lore:
+    - '&f 뀌 '
+    - '&f⚔ ꜰɪʟᴏ ᴘʀᴇᴄɪꜱᴏ'
+    - '&7Infliges &b+5% &7de daño cuerpo a cuerpo'
+    - '&7gracias al filo oculto del anillo.'
+
+    tier: RARE

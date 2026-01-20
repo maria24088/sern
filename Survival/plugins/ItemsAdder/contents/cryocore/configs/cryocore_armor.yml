@@ -1,0 +1,71 @@
+armors_rendering:
+  cryocorearmor:
+    color: '#a6a6bf'
+    layer_1: armor/cryocore_armor_layer_1
+    layer_2: armor/cryocore_armor_layer_2
+    use_color: false
+info:
+  namespace: cryocore
+items:
+  cryocoreboots:
+    attribute_modifiers:
+      feet:
+        armor: 2
+    display_name: Cryocore Boots
+    durability:
+      max_custom_durability: 165
+    permission: cryocore.boots
+    resource:
+      generate: true
+      textures:
+      - armor/cryocore_boots_icon.png
+    specific_properties:
+      armor:
+        custom_armor: cryocorearmor
+        slot: feet
+  cryocorechestplate:
+    attribute_modifiers:
+      chest:
+        armor: 6
+    display_name: Cryocore Chestplate
+    durability:
+      max_custom_durability: 240
+    permission: cryocore.chestplate
+    resource:
+      generate: true
+      textures:
+      - armor/cryocore_chestplate_icon.png
+    specific_properties:
+      armor:
+        custom_armor: cryocorearmor
+        slot: chest
+  cryocorehelmet:
+    attribute_modifiers:
+      head:
+        armor: 2
+    display_name: Cryocore Helmet
+    durability:
+      max_custom_durability: 165
+    permission: cryocore.helmet
+    resource:
+      generate: true
+      textures:
+      - armor/cryocore_helmet_icon.png
+    specific_properties:
+      armor:
+        custom_armor: cryocorearmor
+        slot: head
+  cryocoreleggings:
+    attribute_modifiers:
+      legs:
+        armor: 5
+    display_name: Cryocore Leggings
+    permission: cryocore.leggings
+    resource:
+      generate: true
+      textures:
+      - armor/cryocore_leggings_icon.png
+    specific_properties:
+      armor:
+        custom_armor: cryocorearmor
+        slot: legs

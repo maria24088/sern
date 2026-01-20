@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  floorlampblack:
+    display_name: "Floor Lamp Black"
+    permission: livingroom.floorlampblack
+    resource:
+      material: PAPER
+      generate: false
+      model_path: floorlampblack
+    behaviours:
+      furniture:
+        light_level: 13

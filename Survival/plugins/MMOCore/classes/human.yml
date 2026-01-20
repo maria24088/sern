@@ -1,0 +1,36 @@
+# Display options...
+display:
+    name: 'Human'
+    item: LEATHER_CHESTPLATE
+
+options:
+    default: true
+    display: false
+    needs-permission: false
+    off-combat-health-regen: false
+    off-combat-mana-regen: false
+
+exp-curve: '{level} * 200'
+exp-table: class_exp_table
+
+skill-slots:
+    1:
+        name: "&aSkill Slot I"
+        unlocked-by-default: true
+        lore: []
+    2:
+        name: "&aSkill Slot II"
+        unlocked-by-default: true
+        lore: []
+    3:
+        name: "&aSkill Slot III"
+        unlocked-by-default: true
+        lore: []
+    4:
+        name: "&aSkill Slot IV"
+        unlocked-by-default: true
+        lore: []
+
+main-exp-sources:
+- 'killmob{type=ZOMBIE;amount=1-3}'
+- 'killmob{type=ENDERMAN;amount=6-9}'

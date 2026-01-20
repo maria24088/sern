@@ -1,0 +1,23 @@
+soul_skull_cosmetics_wings:
+  height: 4
+  permission: cosmetics.soul_skull_cosmetics_wings
+  dyeable: false
+  slot: BACKPACK
+  item:
+    material: POTION
+    model-data: 9926720
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+  firstperson-item:
+    material: POTION
+    model-data: 9926719
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES

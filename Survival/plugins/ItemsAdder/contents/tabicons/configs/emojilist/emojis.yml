@@ -1,0 +1,118 @@
+info:
+  namespace: "emojilist"
+font_images:
+  afk:
+    permission: "emojis.admin"
+    show_in_gui: true
+    suggest_in_command: false
+    path: "emojis/afk.png"
+    scale_ratio: 7
+    y_position: 7 
+  scoreboardlogo:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/scoreboardlogo.png"
+    scale_ratio: 22
+    y_position: 13
+  clock:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/clock.png"
+    scale_ratio: 9
+    y_position: 8   
+  compass:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/compass.png"
+    scale_ratio: 9
+    y_position: 8    
+  earth:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/earth.png"
+    scale_ratio: 9
+    y_position: 8
+  info:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/info.png"
+    scale_ratio: 9
+    y_position: 8       
+  ping:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/ping.png"
+    scale_ratio: 9
+    y_position: 8              
+  death:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/death.png"
+    scale_ratio: 9
+    y_position: 8
+  eye:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/eye.png"
+    scale_ratio: 9
+    y_position: 8       
+  clock_icon:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/clock_icon.png"
+    scale_ratio: 9
+    y_position: 8        
+  hourglass:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/hourglass.png"
+    scale_ratio: 9
+    y_position: 8            
+  spirit:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/spirit.png"
+    scale_ratio: 9
+    y_position: 8        
+  ruby:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/ruby.png"
+    scale_ratio: 9
+    y_position: 8      
+  egg_icon:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/egg_icon.png"
+    scale_ratio: 9
+    y_position: 8            
+  exp_icon:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/exp_icon.png"
+    scale_ratio: 9
+    y_position: 8        
+  gift_icon:
+    permission: "emojis.admin"
+    show_in_gui: false
+    path: "emojis/gift_icon.png"
+    scale_ratio: 9
+    y_position: 8             
+  logo:
+    path: "emojis/logo.png"
+    scale_ratio: 48
+    y_position: 24
+  lord:
+    permission: "ranklar.admin"
+    show_in_gui: true
+    suggest_in_command: false
+    path: "emojis/lord.png"
+    scale_ratio: 7
+    y_position: 7
+  lord_icon:
+    permission: "ranklar.admin"
+    show_in_gui: true
+    suggest_in_command: false
+    path: "emojis/lord_icon.png"
+    scale_ratio: 7
+    y_position: 7    

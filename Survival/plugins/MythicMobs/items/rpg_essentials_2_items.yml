@@ -1,0 +1,119 @@
+  
+cactus_r:
+  Id: feather
+  Display: "&fCactus"
+  Model: 2030
+  Hide:
+  - ATTRIBUTES
+ 
+deathbloom:
+  Id: feather
+  Display: "&fDeathbloom"
+  Model: 2031
+  Hide:
+  - ATTRIBUTES
+
+four_leaf_clover:
+  Id: feather
+  Display: "&fFour-leaf Clover"
+  Model: 2032
+  Hide:
+  - ATTRIBUTES
+  
+magical_herb:
+  Id: feather
+  Display: "&fMagical Herb"
+  Model: 2033
+  Hide:
+  - ATTRIBUTES
+  
+mushroom_glowing:
+  Id: feather
+  Display: "&fGlowing Mushroom"
+  Model: 2034
+  Hide:
+  - ATTRIBUTES
+  
+mushroom_red:
+  Id: feather
+  Display: "&fRed Mushroom"
+  Model: 2035
+  Hide:
+  - ATTRIBUTES
+  
+potion_eternal:
+  Id: feather
+  Display: "&fEternal Healing Potion"
+  Model: 2036
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Potion_Eternal} @self ~onUse
+  
+potion_large:
+  Id: feather
+  Display: "&fLarge Healing Potion"
+  Model: 2037
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Potion_Large} @self ~onUse
+  
+potion_minor:
+  Id: feather
+  Display: "&fMinor Healing Potion"
+  Model: 2038
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Potion_Minor} @self ~onUse
+  
+potion_small:
+  Id: feather
+  Display: "&fSmall Healing Potion"
+  Model: 2039
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Potion_Small} @self ~onUse
+  
+potion_superior:
+  Id: feather
+  Display: "&fSuperior Healing Potion"
+  Model: 2040
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Potion_Superior} @self ~onUse
+  
+scroll_return:
+  Id: feather
+  Display: "&fReturn Scroll"
+  Model: 2041
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Scroll_Return} @self ~onUse
+  
+scroll_teleport:
+  Id: feather
+  Display: "&fTeleport Scroll"
+  Model: 2042
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Scroll_Teleport} @self ~onUse
+  
+shamrock:
+  Id: feather
+  Display: "&fShamrock"
+  Model: 2043
+  Hide:
+  - ATTRIBUTES
+ 
+wild_berry:
+  Id: feather
+  Display: "&fWild Berry"
+  Model: 2044
+  Hide:
+  - ATTRIBUTES

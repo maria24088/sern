@@ -1,0 +1,117 @@
+# Custom Baits Configuration
+# This file defines all the custom baits that can be used for fishing.
+
+custom-baits:
+  # Default bait settings - Used as a template for all baits
+  default:
+    name: "&7Generic Bait"
+    item: CARROT  # Minecraft item type to represent this bait
+    durability: 10  # Number of uses before the bait is consumed
+    model-data: 1  # Custom model data for resource packs
+    min-rod-luck: 0
+    loot-table-weight: 90  # Chance of obtaining this bait (higher = more common)
+    rarity: COMMON  # COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+    description:
+      - "&7A basic fishing bait."
+      - "&7Slightly increases fishing luck."
+      - "&c&lWARNING: Not for consumption"
+    rarity-chances:  # Chance of getting each rarity of fish with this bait
+      COMMON: 0.05
+      UNCOMMON: 0.0
+      RARE: 0.0
+      EPIC: 0.0
+      LEGENDARY: 0.0
+    fish-chances:  # Chance of catching specific fish types (if any)
+      none: 0.0
+
+  simple-bait:
+    name: "&fSimple Bait"
+    item: PAPER
+    durability: 10
+    model-data: 50070
+    loot-table-weight: 90
+    rarity: COMMON
+    description:
+      - "&7An easy-to-use bait for beginners."
+      - "&7Slightly increases chance of uncommon fish."
+      - "&8Perfect for casual fishing trips."
+    rarity-chances:
+      COMMON: 0.0
+      UNCOMMON: 0.2
+      RARE: 0.0
+      EPIC: 0.0
+      LEGENDARY: 0.0
+
+  magnetic-bait:
+    name: "&bMagnetic Bait"
+    item: PAPER
+    durability: 15
+    model-data: 50071
+    loot-table-weight: 50
+    rarity: UNCOMMON
+    description:
+      - "&7Attracts fish with its magnetic properties."
+      - "&7Increases chance of rare fish."
+      - "&8Especially effective in deep waters."
+    rarity-chances:
+      COMMON: 0.0
+      UNCOMMON: 0.0
+      RARE: 0.2
+      EPIC: 0.0
+      LEGENDARY: 0.0
+
+  wild-bait:
+    name: "&aWild Bait"
+    item: PAPER
+    durability: 8
+    model-data: 50072
+    loot-table-weight: 30
+    rarity: RARE
+    description:
+      - "&7Made from exotic jungle herbs."
+      - "&7Significantly increases chance of epic fish."
+      - "&8Irresistible to tropical species."
+    rarity-chances:
+      COMMON: 0.0
+      UNCOMMON: 0.0
+      RARE: 0.0
+      EPIC: 0.2
+      LEGENDARY: 0.0
+
+  nice-bait:
+    name: "&dNice Bait"
+    item: PAPER
+    durability: 12
+    model-data: 50073
+    loot-table-weight: 30
+    rarity: RARE
+    description:
+      - "&7A premium bait with a secret recipe."
+      - "&7Greatly increases chance of epic fish."
+      - "&8Loved by fish of all sizes."
+    rarity-chances:
+      COMMON: 0.0
+      UNCOMMON: 0.0
+      RARE: 0.0
+      EPIC: 0.2
+      LEGENDARY: 0.0
+
+  worm-bait:
+    name: "&5Glowing Worm Bait"
+    item: PAPER
+    durability: 5
+    model-data: 50074
+    loot-table-weight: 10
+    rarity: EPIC
+    description:
+      - "&7Rare bioluminescent worms."
+      - "&7Attracts legendary deep-sea fish."
+      - "&8Glows in the dark waters."
+    rarity-chances:
+      COMMON: 0.0
+      UNCOMMON: 0.0
+      RARE: 0.0
+      EPIC: 0.0
+      LEGENDARY: 0.2
+
+# Note: loot-table-weight of -1 means the bait cannot be naturally obtained and must be crafted or given by an admin.

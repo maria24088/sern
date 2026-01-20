@@ -1,0 +1,898 @@
+VFX_SW_Impact:
+  Type: text_display
+  DisplayOptions:
+    Text: ""
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+    Billboard: CENTER
+    BackgroundColor: 0,0,0,0
+    Translation: 0,0,0
+    ViewRange: 5
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - settextdisplay{text="ក";delay=0} @self ~onSpawn
+  - settextdisplay{text="ខ";delay=1} @self ~onSpawn
+  - settextdisplay{text="គ";delay=2} @self ~onSpawn
+  - settextdisplay{text="ឃ";delay=3} @self ~onSpawn
+  - settextdisplay{text="ង";delay=4} @self ~onSpawn
+  - settextdisplay{text="ច";delay=5} @self ~onSpawn
+  - settextdisplay{text="ឆ";delay=6} @self ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+
+VFX_Brutal_Combo_SLASH_L:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=brutal_combo_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=slash_left;speed=1} @self ~onSpawn
+  
+  - aura{delay=2;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Brutal_Combo_SLASH_R:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=brutal_combo_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=slash_right;speed=1} @self ~onSpawn
+  
+  - aura{delay=2;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Brutal_Combo_SLASH_LD:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=brutal_combo_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=slash_left_diag;speed=1} @self ~onSpawn
+  
+  - aura{delay=2;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Brutal_Combo_SLASH_RD:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=brutal_combo_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=slash_right_diag;speed=1} @self ~onSpawn
+  
+  - aura{delay=2;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Brutal_Combo_SLASH_DOWN:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=brutal_combo_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=strike;speed=1} @self ~onSpawn
+  
+  - aura{delay=2;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Brutal_Combo_SLASH_UP:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=brutal_combo_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=slash_up;speed=1} @self ~onSpawn
+  
+  - aura{delay=2;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Brutal_Combo_SLASH_UP2:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=brutal_combo_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=slash_up2;speed=1} @self ~onSpawn
+  
+  - aura{delay=2;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Brutal_Combo_PIERCE:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=brutal_combo_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=pierce;speed=1} @self ~onSpawn
+  
+  - aura{delay=2;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Brutal_Combo_SPIN:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=brutal_combo_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=spin;speed=1} @self ~onSpawn
+  
+  - aura{delay=1;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Brutal_Combo_SPIN_LOOP:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=brutal_combo_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=spin_loop;speed=1} @self ~onSpawn
+  
+  - aura{delay=1;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=brutal_combo_1;nm=brutal_combo_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    ]} @self ~onTimer:9
+
+
+VFX_SW_Rupture_Small:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_earthquake_rupture_1;lockpitch=true} @self ~onSpawn
+  - brightness{mid=vfx_earthquake_rupture_1;b=15;s=15} @self ~onSpawn
+  - brightness{mid=vfx_earthquake_rupture_1;b=13;s=13;delay=22} @self ~onSpawn
+  - brightness{mid=vfx_earthquake_rupture_1;b=11;s=11;delay=26} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill2} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=ffd35c;em=false} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=f76605;em=false;delay=22} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=911f00;em=false;delay=24} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=570c00;em=false;delay=26} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=2b0200;em=false;delay=30} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=000000;em=false;delay=32} @self ~onSpawn
+  
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_2;np=body;delay=44} @self ~onSpawn
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_3;np=body;delay=46} @self ~onSpawn
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_4;np=body;delay=48} @self ~onSpawn
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_5;np=body;delay=50} @self ~onSpawn
+  - remove{delay=52} @self ~onSpawn
+VFX_SW_Rubbles_Small:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_rubbles;lockpitch=true} @self ~onSpawn
+  - brightness{b=11;s=11} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  - remove{delay=45} @self ~onSpawn
+
+
+
+VFX_Berserkers_Leap_LINE:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=berserker_leap_1;lockpitch=true} @self ~onSpawn
+  - brightness{p=floor_crack;b=10;s=10;em=false} @self ~onSpawn
+  - brightness{p=floor_crack;b=9;s=9;em=false;delay=25} @self ~onSpawn
+  - brightness{p=floor_crack;b=8;s=8;em=false;delay=27} @self ~onSpawn
+  - brightness{p=floor_crack;b=7;s=7;em=false;delay=29} @self ~onSpawn
+  - brightness{p=floor_crack;b=6;s=6;em=false;delay=31} @self ~onSpawn
+  - brightness{p=floor_crack;b=5;s=5;em=false;delay=33} @self ~onSpawn
+  - brightness{p=floor_crack;b=4;s=4;em=false;delay=35} @self ~onSpawn
+  - brightness{p=floor_crack;b=3;s=3;em=false;delay=37} @self ~onSpawn
+  - brightness{p=floor_crack;b=2;s=2;em=false;delay=39} @self ~onSpawn
+  - brightness{p=flame;b=15;s=15;em=false} @self ~onSpawn
+  - brightness{p=impact;b=15;s=15;em=false} @self ~onSpawn
+  - brightness{p=stone;b=10;s=10;em=false} @self ~onSpawn
+  - brightness{p=rubble;b=10;s=10;em=false} @self ~onSpawn
+  - particles{p=Campfire_Cosy_Smoke;amount=3;hS=0.3;vS=0.1;y=0;size=1;speed=0.1} @modelpart{pid=ef_fire_spin3;location=0,0.5,0;em=true} ~onSpawn
+  - particles{p=Campfire_Cosy_Smoke;amount=3;hS=0.3;vS=0.1;y=0;size=1;speed=0.1;delay=2} @modelpart{pid=ef_fire_spin4;location=0,0.5,0;em=true} ~onSpawn
+  - particles{p=Campfire_Cosy_Smoke;amount=3;hS=0.3;vS=0.1;y=0;size=1;speed=0.1;delay=4} @modelpart{pid=ef_fire_spin5;location=0,0.5,0;em=true} ~onSpawn
+  - partvis{p=rubble;v=false;em=false;child=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation;speed=1} @self ~onSpawn
+  
+  - aura{delay=1;d=13;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=berserker_leap_1;nm=berserker_leap_<caster.var.iteration>;p=ef_impact_v1_1;np=ef_impact_v1_1}
+    - changepart{m=berserker_leap_1;nm=berserker_leap_<caster.var.iteration>;p=ef_impact_v1_2;np=ef_impact_v1_2}
+    - changepart{m=berserker_leap_1;nm=berserker_leap_<caster.var.iteration>;p=ef_impact_v2_1;np=ef_impact_v2_1}
+    - changepart{m=berserker_leap_1;nm=berserker_leap_<caster.var.iteration>;p=ef_impact_v2_2;np=ef_impact_v2_2}
+    - changepart{m=berserker_leap_1;nm=berserker_leap_<caster.var.iteration>;p=ef_impact_v3_1;np=ef_impact_v3_1}
+    - changepart{m=berserker_leap_1;nm=berserker_leap_<caster.var.iteration>;p=ef_impact_v3_2;np=ef_impact_v3_2}
+    ]} @self ~onSpawn
+
+  - remove{delay=40} @self ~onSpawn
+
+VFX_Vicious_Strike_CHARGE:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=vicious_strike_charge;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=charge;speed=1} @self ~onSpawn
+  
+  - remove{delay=25} @self ~onSpawn
+VFX_Vicious_Strike_LINE_LONG:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=vicious_strike_1;lockpitch=true} @self ~onSpawn
+  - brightness{p=floor_crack;b=10;s=10;em=false} @self ~onSpawn
+  - brightness{p=floor_crack;b=9;s=9;em=false;delay=25} @self ~onSpawn
+  - brightness{p=floor_crack;b=8;s=8;em=false;delay=27} @self ~onSpawn
+  - brightness{p=floor_crack;b=7;s=7;em=false;delay=29} @self ~onSpawn
+  - brightness{p=floor_crack;b=6;s=6;em=false;delay=31} @self ~onSpawn
+  - brightness{p=floor_crack;b=5;s=5;em=false;delay=33} @self ~onSpawn
+  - brightness{p=floor_crack;b=4;s=4;em=false;delay=35} @self ~onSpawn
+  - brightness{p=floor_crack;b=3;s=3;em=false;delay=37} @self ~onSpawn
+  - brightness{p=floor_crack;b=2;s=2;em=false;delay=39} @self ~onSpawn
+  - brightness{p=flame;b=15;s=15;em=false} @self ~onSpawn
+  - brightness{p=impact;b=15;s=15;em=false} @self ~onSpawn
+  - brightness{p=stone;b=10;s=10;em=false} @self ~onSpawn
+  - brightness{p=rubble;b=10;s=10;em=false} @self ~onSpawn
+  - particles{p=Campfire_Cosy_Smoke;amount=4;hS=0.4;vS=0.1;y=0;size=1;speed=0.1} @modelpart{pid=ef_fire_spin3;location=0,0.5,0;em=true} ~onSpawn
+  - particles{p=Campfire_Cosy_Smoke;amount=4;hS=0.4;vS=0.1;y=0;size=1;speed=0.1;delay=2} @modelpart{pid=ef_fire_spin4;location=0,0.5,0;em=true} ~onSpawn
+  - particles{p=Campfire_Cosy_Smoke;amount=4;hS=0.4;vS=0.1;y=0;size=1;speed=0.1;delay=4} @modelpart{pid=ef_fire_spin5;location=0,0.5,0;em=true} ~onSpawn
+  - particles{p=Campfire_Cosy_Smoke;amount=4;hS=0.4;vS=0.1;y=0;size=1;speed=0.1;delay=6} @modelpart{pid=ef_fire_spin8;location=0,0.5,0;em=true} ~onSpawn
+  - particles{p=Campfire_Cosy_Smoke;amount=4;hS=0.4;vS=0.1;y=0;size=1;speed=0.1;delay=8} @modelpart{pid=ef_fire_spin9;location=0,0.5,0;em=true} ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation;speed=1} @self ~onSpawn
+  
+  - aura{delay=1;d=13;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=vicious_strike_1;nm=vicious_strike_<caster.var.iteration>;p=ef_impact_v1_1;np=ef_impact_v1_1}
+    - changepart{m=vicious_strike_1;nm=vicious_strike_<caster.var.iteration>;p=ef_impact_v1_2;np=ef_impact_v1_2}
+    - changepart{m=vicious_strike_1;nm=vicious_strike_<caster.var.iteration>;p=ef_impact_v2_1;np=ef_impact_v2_1}
+    - changepart{m=vicious_strike_1;nm=vicious_strike_<caster.var.iteration>;p=ef_impact_v2_2;np=ef_impact_v2_2}
+    - changepart{m=vicious_strike_1;nm=vicious_strike_<caster.var.iteration>;p=ef_impact_v3_1;np=ef_impact_v3_1}
+    - changepart{m=vicious_strike_1;nm=vicious_strike_<caster.var.iteration>;p=ef_impact_v3_2;np=ef_impact_v3_2}
+    - changepart{m=vicious_strike_1;nm=vicious_strike_<caster.var.iteration>;p=ef_impact_v4_1;np=ef_impact_v4_1}
+    - changepart{m=vicious_strike_1;nm=vicious_strike_<caster.var.iteration>;p=ef_impact_v4_2;np=ef_impact_v4_2}
+    - changepart{m=vicious_strike_1;nm=vicious_strike_<caster.var.iteration>;p=ef_impact_v5_1;np=ef_impact_v5_1}
+    - changepart{m=vicious_strike_1;nm=vicious_strike_<caster.var.iteration>;p=ef_impact_v5_2;np=ef_impact_v5_2}
+    - changepart{m=vicious_strike_1;nm=vicious_strike_<caster.var.iteration>;p=ef_impact_v6_1;np=ef_impact_v6_1}
+    - changepart{m=vicious_strike_1;nm=vicious_strike_<caster.var.iteration>;p=ef_impact_v6_2;np=ef_impact_v6_2}
+    ]} @self ~onSpawn
+
+  - remove{delay=40} @self ~onSpawn
+
+VFX_Bloodbound_Barrier:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=bloodbound_barrier;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation;speed=1} @self ~onSpawn
+  - state{s=idle_bloodbound_barrier;speed=1;delay=16} @self ~onSpawn
+
+
+VFX_Relentless_Whirlwind_SPIN:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=relentless_whirlwind_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=spin2;speed=2} @self ~onSpawn
+  - partvis{p=efv;v=false;em=false;child=true} @self ~onSpawn
+
+  - aura{delay=0;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=8;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>-1"}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    ]} @self ~onSpawn
+
+  - aura{delay=22;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    ]} @self ~onSpawn
+  
+VFX_Relentless_Whirlwind_SPIN2:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=relentless_whirlwind_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=spin2;speed=1} @self ~onSpawn
+  
+  - aura{delay=0;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    ]} @self ~onSpawn
+
+  - aura{delay=0;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    ]} @self ~onTimer:8
+
+  - aura{delay=0;d=5;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    ]} @self ~onSpawn
+
+  - aura{delay=0;d=5;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    ]} @self ~onTimer:5
+VFX_Relentless_Whirlwind_PIERCE:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=relentless_whirlwind_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=dash_pierce;speed=1} @self ~onSpawn
+  
+  - aura{delay=1;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_pierce;np=warrior_pierce}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_spin;np=warrior_spin}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=relentless_whirlwind_1;nm=relentless_whirlwind_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+
+VFX_Strike_Of_Fury_SWORD:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=strike_of_fury_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=charge_sword;speed=1} @self ~onSpawn
+  - partvis{p=efv;v=false;em=false;child=true} @self ~onSpawn
+  - partvis{p=warrior_slash;v=false;em=false;child=true} @self ~onSpawn
+
+  - state{s=sword_slash1;speed=1;delay=40} @self ~onSpawn
+  
+
+  - state{s=sword_slash2;speed=1;delay=45} @self ~onSpawn
+  
+
+  - state{s=sword_slash1;speed=1;delay=50} @self ~onSpawn
+  
+
+  - state{s=sword_slash2;speed=1;delay=55} @self ~onSpawn
+  
+
+  - state{s=sword_jump;speed=1;delay=65} @self ~onSpawn
+
+  - state{s=sword_stomp;speed=1;delay=71} @self ~onSpawn
+VFX_Strike_Of_Fury_SWORD2:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=strike_of_fury_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=charge_sword;speed=1} @self ~onSpawn
+
+  - state{s=sword_slash1;speed=1;delay=40} @self ~onSpawn
+  - aura{delay=40;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    ]} @self ~onSpawn
+
+  - state{s=sword_slash2;speed=1;delay=48} @self ~onSpawn
+  - aura{delay=48;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    ]} @self ~onSpawn
+
+  - state{s=sword_slash1;speed=1;delay=56} @self ~onSpawn
+  - aura{delay=56;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    ]} @self ~onSpawn
+
+  - state{s=sword_slash2;speed=1;delay=64} @self ~onSpawn
+  - aura{delay=64;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    ]} @self ~onSpawn
+
+  - state{s=sword_jump;speed=1;delay=75} @self ~onSpawn
+
+  - state{s=sword_stomp;speed=1;delay=81} @self ~onSpawn
+
+VFX_Strike_Of_Fury_SWORD_SLASH1:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=strike_of_fury_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - partvis{p=sword;v=false;em=true;child=true} @self ~onSpawn
+
+  - state{s=sword_slash1;speed=1} @self ~onSpawn
+  - aura{delay=0;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    ]} @self ~onSpawn
+VFX_Strike_Of_Fury_SWORD_SLASH2:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=strike_of_fury_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - partvis{p=sword;v=false;em=true;child=true} @self ~onSpawn
+
+  - state{s=sword_slash2;speed=1} @self ~onSpawn
+  - aura{delay=0;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_slash;np=warrior_slash}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv1_1;np=warrior_efv1_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv2_1;np=warrior_efv2_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv3_1;np=warrior_efv3_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_1;np=warrior_efv4_1}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_2;np=warrior_efv4_2}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_3;np=warrior_efv4_3}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=warrior_efv4_4;np=warrior_efv4_4}
+    ]} @self ~onSpawn
+
+VFX_Strike_Of_Fury_RUPTURE:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=strike_of_fury_1;lockpitch=true} @self ~onSpawn
+  - brightness{p=sword;b=15;s=15;em=false} @self ~onSpawn
+  - brightness{p=efv;b=15;s=15;em=false} @self ~onSpawn
+  - brightness{p=charge;b=15;s=15;em=false} @self ~onSpawn
+  - brightness{p=impact;b=15;s=15;em=false} @self ~onSpawn
+  - brightness{p=floor_crack;b=12;s=12;em=false} @self ~onSpawn
+  - brightness{p=floor_crack;b=11;s=11;em=false;delay=55} @self ~onSpawn
+  - brightness{p=floor_crack;b=10;s=10;em=false;delay=56} @self ~onSpawn
+  - brightness{p=floor_crack;b=9;s=9;em=false;delay=57} @self ~onSpawn
+  - brightness{p=floor_crack;b=8;s=8;em=false;delay=58} @self ~onSpawn
+  - brightness{p=floor_crack;b=7;s=7;em=false;delay=59} @self ~onSpawn
+  - brightness{p=floor_crack;b=6;s=6;em=false;delay=60} @self ~onSpawn
+  - brightness{p=floor_crack;b=5;s=5;em=false;delay=61} @self ~onSpawn
+  - brightness{p=floor_crack;b=4;s=4;em=false;delay=62} @self ~onSpawn
+  - brightness{p=floor_crack;b=3;s=3;em=false;delay=63} @self ~onSpawn
+  - brightness{p=stone;b=9;s=9;em=false} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=floor_crack;speed=1} @self ~onSpawn
+  
+  - aura{delay=5;d=13;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=ef_floor_crack;np=ef_floor_crack}
+    ]} @self ~onSpawn
+
+  - aura{delay=26;d=13;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=13;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>-1"}
+    - changepart{m=strike_of_fury_1;nm=strike_of_fury_<caster.var.iteration>;p=ef_floor_crack;np=ef_floor_crack}
+    ]} @self ~onSpawn
+  
+  - particles{p=Campfire_Cosy_Smoke;amount=30;hS=2;vS=0.3;y=0;size=1;speed=0.1;delay=1} @modelpart{pid=floor_crack;location=0,0.3,0;em=false} ~onSpawn
+  - particles{p=Campfire_Cosy_Smoke;amount=60;hS=2;vS=0.3;y=0;size=1;speed=0.1;delay=20} @modelpart{pid=floor_crack;location=0,0.3,0;em=false} ~onSpawn
+  
+  - particles{p=block_crack;m=DIRT;amount=70;hS=0.8;vS=1.3;y=0;size=1;speed=0;delay=65} @modelpart{pid=stone_impact;location=0,2.5,0;em=false} ~onSpawn
+  
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.rupture_quick;volume=0.7;pitch=<random.float.0.5to0.6>;delay=20} @self ~onSpawn
+
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.rupture_big;volume=0.3;pitch=<random.float.0.6to0.7>;delay=65} @self ~onSpawn
+
+  - remove{delay=66} @self ~onSpawn

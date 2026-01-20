@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  mediumcarpetgray:
+    display_name: "Medium Carpet Gray"
+    permission: livingroom.mediumcarpetgray
+    resource:
+      material: PAPER
+      generate: false
+      model_path: mediumcarpetgray
+    behaviours:
+      furniture:
+        light_level: 13

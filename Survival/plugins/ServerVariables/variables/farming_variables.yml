@@ -1,0 +1,36 @@
+variables:
+  harvested_crops:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 1t
+  marketplace_level:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 1
+    limitations:
+      max_value: 5
+  current_deal:
+    variable_type: GLOBAL
+    value_type: INTEGER
+    initial_value: 1
+    limitations:
+      max_value: 5
+  deal_1_stock:
+    variable_type: GLOBAL
+    value_type: INTEGER
+  deal_1_discount:
+    variable_type: GLOBAL
+    value_type: INTEGER
+  deal_2_stock:
+    variable_type: GLOBAL
+    value_type: INTEGER
+  deal_2_discount:
+    variable_type: GLOBAL
+    value_type: INTEGER
+  deal_3_stock:
+    variable_type: GLOBAL
+    value_type: INTEGER
+  deal_3_discount:
+    variable_type: GLOBAL
+    value_type: INTEGER
+

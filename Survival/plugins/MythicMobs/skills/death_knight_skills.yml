@@ -1,0 +1,693 @@
+######## created by samus2002 #########
+
+# Cursed Seal #
+
+Cursed_Seal:
+  Cooldown: 0
+  Skills:
+  - Aura{auraName=Cursed_Seal;duration=20} @self
+
+# Death Strike #
+
+Death_Strike_ST:
+  Cooldown: 0.2
+  Conditions:
+  - crouching false
+  Skills:
+  - skill{s=Death_Strike_ST_CAST;damage=4}
+Death_Strike_ST_CAST:
+  Skills:
+  - skill{s=Death_Strike_ST_1}
+  - skill{s=Death_Strike_ST_2}
+  - skill{s=Death_Strike_ST_3}
+  - skill{s=Death_Strike_ST_4}
+
+
+Death_Strike_ST_1:
+  Conditions:
+  - hasaurastacks{auraName=Death_Strike_Stack;stacks=1} false
+  - hasaurastacks{auraName=Death_Strike_Stack;stacks=2} false
+  - hasaurastacks{auraName=Death_Strike_Stack;stacks=3} false
+  Skills:
+  #slash + wave
+  - Aura{auraName=Death_Strike_Stack;duration=300;maxStacks=3;delay=1} @self
+  - totem{md=2;c=1;oH=Death_Strike_DAMAGE_D;hnp=true;hp=true;hR=3;vR=2;i=10} @forward{f=0.3;lockpitch=true}
+  - summon{type=VFX_Death_Strike_1;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0.2;y=1.4;sideOffset=0;lockpitch=true}
+  - effect:sound{s=death_knight_sounds:samus.death_knight.death_slash;volume=0.7;pitch=0.9} @self
+  - effect:sound{s=particle.soul_escape;volume=0.7;pitch=0.9} @self
+
+Death_Strike_ST_2:
+  Conditions:
+  - hasaurastacks{auraName=Death_Strike_Stack;stacks=1} true
+  - hasaurastacks{auraName=Death_Strike_Stack;stacks=2} false
+  - hasaurastacks{auraName=Death_Strike_Stack;stacks=3} false
+  Skills:
+  #slash + wave
+  - Aura{auraName=Death_Strike_Stack;duration=300;maxStacks=3;delay=1} @self
+  - totem{md=2;c=1;oH=Death_Strike_DAMAGE_D;hnp=true;hp=true;hR=3;vR=2;i=10} @forward{f=0.3;lockpitch=true}
+  - summon{type=VFX_Death_Strike_2;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0.2;y=1.4;sideOffset=0;lockpitch=true}
+  - effect:sound{s=death_knight_sounds:samus.death_knight.death_slash;volume=0.7;pitch=0.9} @self
+  - effect:sound{s=particle.soul_escape;volume=0.7;pitch=0.9} @self
+
+
+Death_Strike_ST_3:
+  Conditions:
+  - hasaurastacks{auraName=Death_Strike_Stack;stacks=1} false
+  - hasaurastacks{auraName=Death_Strike_Stack;stacks=2} true
+  - hasaurastacks{auraName=Death_Strike_Stack;stacks=3} false
+  Skills:
+  #chain grapple
+  - Aura{auraName=Death_Strike_Stack;duration=300;maxStacks=3;delay=1} @self
+  - effect:sound{s=death_knight_sounds:samus.death_knight.chain;volume=0.7;pitch=0.9;delay=4} @self
+  - effect:sound{s=death_knight_sounds:samus.death_knight.chain;volume=0.7;pitch=1.1;delay=14} @self
+  - skill{s=Death_Chains_DISTANCECHECK_PRO;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=12;uel=true}
+
+Death_Chains_DISTANCECHECK_PRO:
+  Skills:
+  - projectile{oh=Death_Chains_LATCHED;ohb=Death_Chains_LATCHED;onEnd=Death_Chains_DISTANCECHECK_END;v=50;i=10;hR=0.8;vR=0.8;mr=10;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=true;hitConditions=[- isLiving true - hasaura{aura=immunedelay} false ];byo=0;drawhitbox=false;ham=true}
+Death_Chains_DISTANCECHECK_END:
+  Skills:
+  - delay 1
+  - summon{type=VFX_Death_Chains;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=2;y=1.1;sideOffset=0;lockpitch=false} ?!hasaura{n=LATCHED}
+
+Death_Chains_LATCHED:
+  Skills:
+  - aura{auraName=LATCHED;duration=30} @self
+  - effect:sound{s=block.trial_spawner.place;volume=1;pitch=0.6} @self
+  - summon{type=Death_Chains_DISTANCECHECK;amount=1;radius=0;yRadius=0;onSurface=false} @origin
+  - skill{s=Death_Strike3_DAMAGE_D} @EntitiesNearOrigin{r=3;sort=NEAREST;limit=1}
+
+Death_Chains_DISTANCECHECK_CHANGE:
+  TriggerConditions:
+  - distance{d<3} castinstead Death_Chains_DISTANCECHECK_2
+  - distance{d=3to4} castinstead Death_Chains_DISTANCECHECK_3
+  - distance{d=4to5} castinstead Death_Chains_DISTANCECHECK_4
+  - distance{d=5to6} castinstead Death_Chains_DISTANCECHECK_5
+  - distance{d=6to7} castinstead Death_Chains_DISTANCECHECK_6
+  - distance{d=7to8} castinstead Death_Chains_DISTANCECHECK_7
+  Skills:
+  - summon{type=VFX_Death_Chains8;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=2;y=1.1;sideOffset=0;lockpitch=false}
+Death_Chains_DISTANCECHECK_2:
+  Skills:
+  - summon{type=VFX_Death_Chains2;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=2;y=1.1;sideOffset=0;lockpitch=false}
+Death_Chains_DISTANCECHECK_3:
+  Skills:
+  - summon{type=VFX_Death_Chains3;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=2;y=1.1;sideOffset=0;lockpitch=false}
+Death_Chains_DISTANCECHECK_4:
+  Skills:
+  - summon{type=VFX_Death_Chains4;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=2;y=1.1;sideOffset=0;lockpitch=false}
+Death_Chains_DISTANCECHECK_5:
+  Skills:
+  - summon{type=VFX_Death_Chains5;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=2;y=1.1;sideOffset=0;lockpitch=false}
+Death_Chains_DISTANCECHECK_6:
+  Skills:
+  - summon{type=VFX_Death_Chains6;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=2;y=1.1;sideOffset=0;lockpitch=false}
+Death_Chains_DISTANCECHECK_7:
+  Skills:
+  - summon{type=VFX_Death_Chains7;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=2;y=1.1;sideOffset=0;lockpitch=false}
+
+Death_Strike_ST_4:
+  Conditions:
+  - hasaurastacks{auraName=Death_Strike_Stack;stacks=1} false
+  - hasaurastacks{auraName=Death_Strike_Stack;stacks=2} false
+  - hasaurastacks{auraName=Death_Strike_Stack;stacks=3} true
+  Skills:
+  - auraremove{aura=Death_Strike_Stack} @self
+  #step back
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=0.8} @self
+  - lunge{velocity=0.8;velocityY=-0.1;repeat=3;repeati=10} @forward{f=-5;y=-1;lockpitch=true}
+  #delay
+  - delay 7
+  #smash ground + shockwave
+  - skill{s=Death_Strike_4_PRO;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=12;uel=true}
+  - totem{md=2;c=1;oH=Death_Strike4_DAMAGE_D;hnp=true;hp=true;hR=3;vR=2;i=10} @forward{f=0.3;lockpitch=true}
+  - summon{type=VFX_Death_Strike_4;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0.2;y=1.4;sideOffset=0;lockpitch=true}
+  - effect:sound{s=death_knight_sounds:samus.death_knight.death_slash;volume=0.7;pitch=0.7} @self
+  - effect:sound{s=particle.soul_escape;volume=0.7;pitch=0.9} @self
+  - delay 5
+  - effect:sound{s=item.mace.smash_ground_heavy;volume=0.8;pitch=0.65} @self
+  - particles{p=Campfire_Cosy_Smoke;amount=7;hS=0.8;vS=0.1;y=0;size=1;speed=0} @forward{f=3;y=0.05;lockpitch=true}
+  - particles{p=block_crack;m=DIRT;amount=25;hS=0.9;vS=0.2;y=0;size=1;speed=0} @forward{f=3;y=0.05;lockpitch=true}
+
+Death_Strike_4_PRO:
+  Skills:
+  - projectile{tickinterpolation=5;bulletType=MOB;mob=VFX_Death_Strike_4_WAVE;onHit=Death_Strike4_DAMAGE_D;v=20;i=10;hR=0.4;vR=1.4;mr=22;hnp=true;hO=0;sE=false;sB=false;hs=true;hfs=0;sfo=1;syo=0;tyo=0;sso=0;fo=true;hitConditions=[- isLiving true - hasaura{aura=immunedelay} false ];byo=0;drawhitbox=false;ham=true}
+  
+Death_Strike_DAMAGE_D:
+  Skills:
+  - skill{s=Death_Strike_DAMAGE} @EntitiesNearOrigin{r=4;limit=5;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+  - skill{s=CURSED_SEAL_INFLICT} @EntitiesNearOrigin{r=4;limit=5;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} false - hasaura{aura=VFX_Cursed_Seal1} false - hasaura{aura=VFX_Cursed_Seal2} false - hasaura{aura=VFX_Cursed_Seal3} false  ]}
+  - skill{s=CURSED_SEAL_ADD1} @EntitiesNearOrigin{r=4;limit=5;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} true  ]}
+  - skill{s=CURSED_SEAL_ADD2} @EntitiesNearOrigin{r=4;limit=5;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal1} true  ]}
+  - skill{s=CURSED_SEAL_WEAKEN} @EntitiesNearOrigin{r=4;limit=5;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal2} true  ]}
+Death_Strike_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true;delay=1}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_Death_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - effect:sound{s=entity.phantom.hurt;volume=0.6;pitch=0.7}
+  - effect:sound{s=item.mace.smash_air;volume=1;pitch=1}
+  - throw{velocity=5;velocityY=0}
+
+CURSED_SEAL_INFLICT:
+  Conditions:
+  - hasaura{n=Cursed_Seal} true
+  Skills:
+  - aura{auraName=CURSEIMMUNE;duration=5}
+  - sound{sound=death_knight_sounds:samus.death_knight.cursed_seal;volume=0.65;pitch=0.6}
+  - orbital{auraName=VFX_Cursed_Seal;bulletType=MOB;mob=VFX_Cursed_Seal;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=200;oy=4.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;delay=1}
+CURSED_SEAL_ADD1:
+  Conditions:
+  - hasaura{n=Cursed_Seal} true
+  Skills:
+  - aura{auraName=CURSEIMMUNE;duration=5}
+  - sound{sound=death_knight_sounds:samus.death_knight.cursed_seal;volume=0.65;pitch=0.8}
+  - auraremove{aura=VFX_Cursed_Seal;delay=1}
+  - orbital{auraName=VFX_Cursed_Seal1;bulletType=MOB;mob=VFX_Cursed_Seal1;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=200;oy=4.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;delay=1}
+CURSED_SEAL_ADD2:
+  Conditions:
+  - hasaura{n=Cursed_Seal} true
+  Skills:
+  - aura{auraName=CURSEIMMUNE;duration=5}
+  - sound{sound=death_knight_sounds:samus.death_knight.cursed_seal;volume=0.65;pitch=1}
+  - auraremove{aura=VFX_Cursed_Seal1;delay=1}
+  - orbital{auraName=VFX_Cursed_Seal2;bulletType=MOB;mob=VFX_Cursed_Seal2;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=200;oy=4.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;delay=1}
+CURSED_SEAL_WEAKEN:
+  Conditions:
+  - hasaura{n=Cursed_Seal} true
+  Skills:
+  - aura{auraName=CURSEIMMUNE;duration=5}
+  - sound{sound=death_knight_sounds:samus.death_knight.cursed_seal;volume=0.65;pitch=1.2}
+  - auraremove{aura=VFX_Cursed_Seal2;delay=1}
+  - orbital{auraName=VFX_Cursed_Seal3;bulletType=MOB;mob=VFX_Cursed_Seal3;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=200;oy=4.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;delay=1}
+  - potion{type=WEAKNESS;duration=200;level=0;hasParticles=false}
+
+CURSED1:
+  Skills:
+  - signal{s=ONE} @MIR{t=VFX_Cursed_Seal;r=5;sort=NEAREST;limit=1}
+CURSED2:
+  Skills:
+  - signal{s=TWO} @MIR{t=VFX_Cursed_Seal;r=5;sort=NEAREST;limit=1}
+CURSED3:
+  Skills:
+  - signal{s=THREE} @MIR{t=VFX_Cursed_Seal;r=5;sort=NEAREST;limit=1}
+
+Death_Strike3_DAMAGE_D:
+  Skills:
+  - skill{s=Death_Strike3_DAMAGE;delay=3} @targetedtarget{conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+  - skill{s=CURSED_SEAL_INFLICT} @targetedtarget{sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} false - hasaura{aura=VFX_Cursed_Seal1} false - hasaura{aura=VFX_Cursed_Seal2} false - hasaura{aura=VFX_Cursed_Seal3} false  ]}
+  - skill{s=CURSED_SEAL_ADD1} @targetedtarget{sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} true  ]}
+  - skill{s=CURSED_SEAL_ADD2} @targetedtarget{sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal1} true  ]}
+  - skill{s=CURSED_SEAL_WEAKEN} @targetedtarget{sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal2} true  ]}
+Death_Strike3_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - damage{a=<skill.damage> * 0.5;pkb=true;hnp=true;hp=true;delay=1}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_Death_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - effect:sound{s=entity.phantom.hurt;volume=0.6;pitch=0.7}
+  - effect:sound{s=item.mace.smash_air;volume=1;pitch=1}
+
+Death_Strike4_DAMAGE_D:
+  Skills:
+  - skill{s=Death_Strike4_DAMAGE} @EntitiesNearOrigin{r=4;limit=5;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+  - skill{s=CURSED_SEAL_INFLICT} @EntitiesNearOrigin{r=4;limit=5;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} false - hasaura{aura=VFX_Cursed_Seal1} false - hasaura{aura=VFX_Cursed_Seal2} false - hasaura{aura=VFX_Cursed_Seal3} false  ]}
+  - skill{s=CURSED_SEAL_ADD1} @EntitiesNearOrigin{r=4;limit=5;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} true  ]}
+  - skill{s=CURSED_SEAL_ADD2} @EntitiesNearOrigin{r=4;limit=5;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal1} true  ]}
+  - skill{s=CURSED_SEAL_WEAKEN} @EntitiesNearOrigin{r=4;limit=5;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal2} true  ]}
+Death_Strike4_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=10}
+  - damage{a=<skill.damage> * 1.5;pkb=true;hnp=true;hp=true;delay=1}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_Death_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - effect:sound{s=entity.phantom.hurt;volume=0.6;pitch=0.7}
+  - effect:sound{s=item.mace.smash_air;volume=1;pitch=1}
+  - throw{velocity=12;velocityY=0}
+
+# Phantom Charge #
+
+Phantom_Charge:
+  Cooldown: 1
+  Conditions:
+  - crouching false
+  - onground true
+  Skills:
+  - skill{s=Phantom_Charge_CAST;damage=3}
+
+Phantom_Charge_CAST:
+  Skills:
+  #summon wings
+  - stun{d=15;f=true;CancelOnTakeDamage=false;CancelOnDeath=true} @self
+  - Aura{auraName=Phantom_Charge;duration=40} @self
+  - skill{s=Phantom_Charge_RING} @selflocation{y=1}
+  - sound{sound=entity.breeze.inhale;volume=0.8;pitch=0.7} @self
+  - sound{sound=particle.soul_escape;volume=0.8;pitch=1} @self
+  - delay 6
+  - sound{sound=entity.ender_dragon.flap;volume=0.8;pitch=0.8} @self
+  - sound{sound=entity.ender_dragon.flap;volume=0.8;pitch=0.6;delay=3} @self
+  - sound{sound=entity.ender_dragon.flap;volume=0.8;pitch=0.7;delay=12} @self
+  - orbital{auraName=VFX_Death_Wings_Phantom_Charge;bulletType=MOB;mob=VFX_Death_Wings_Phantom_Charge;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=40;oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - particles{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;amount=30;hS=0.35;vS=0.6;y=0.9;size=1.3;speed=0;repeat=30;repeati=10} @selflocation{fo=0.6}
+  #delay
+  - delay 15
+  #charge
+  - sound{sound=entity.breeze.death;volume=1;pitch=0.7} @self
+  - sound{sound=event.mob_effect.raid_omen;volume=0.8;pitch=0.6} @self
+  - onDamaged{auraName=landresist;d=15;cE=true} @self
+  - lunge{velocity=1;velocityY=0.05;repeat=15;repeatinterval=1} @forward{f=12;y=0.05;lockpitch=true}
+  - skill{s=Phantom_Charge_DAMAGE_D;repeat=3;repeatinterval=5}
+  - skill{s=Phantom_Charge_PUSH;repeat=15;repeatinterval=1} @EIR{r=4.5;conditions=[ - isLiving true  ]}
+  - sound{sound=entity.ender_dragon.flap;volume=0.8;pitch=0.5;delay=15} @self
+Phantom_Charge_DAMAGE_D:
+  Skills:
+  - skill{s=Phantom_Charge_DAMAGE} @EIR{r=4.5;limit=8;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+  - skill{s=CURSED_SEAL_INFLICT} @EIR{r=4.5;limit=8;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} false - hasaura{aura=VFX_Cursed_Seal1} false - hasaura{aura=VFX_Cursed_Seal2} false - hasaura{aura=VFX_Cursed_Seal3} false  ]}
+  - skill{s=CURSED_SEAL_ADD1} @EIR{r=4.5;limit=8;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} true  ]}
+  - skill{s=CURSED_SEAL_ADD2} @EIR{r=4.5;limit=8;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal1} true  ]}
+  - skill{s=CURSED_SEAL_WEAKEN} @EIR{r=4.5;limit=8;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal2} true  ]}
+Phantom_Charge_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=10}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true;delay=1}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_Death_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - effect:sound{s=entity.phantom.hurt;volume=0.6;pitch=0.7}
+  - effect:sound{s=item.mace.smash_air;volume=1;pitch=1}
+Phantom_Charge_PUSH:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - throw{velocity=10;velocityY=0;fo=true;origin=@forward{f=-5;y=0}}
+
+Phantom_Charge_RING:
+  Skills:
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=5;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.75;delay=0}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=4.5;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.75;delay=1}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=4;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.75;delay=2}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=3.5;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.75;delay=3}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=3;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.75;delay=4}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=2.5;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.75;delay=5}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=2;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.75;delay=6}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=1.5;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.75;delay=7}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=1;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.75;delay=8}
+
+
+
+# Wraithbound Chains #
+
+Wraithbound_Chains:
+  Conditions:
+  - hasaurastacks{auraName=Wraithbound_Chains_aura} castinstead Wraithbound_Chains_SKILL
+  Skills:
+  - Aura{auraName=Wraithbound_Chains_aura;interval=1;duration=5} @self
+
+Wraithbound_Chains_SKILL:
+  Cooldown: 3
+  Skills:
+  - skill{s=Wraithbound_Chains_CAST;damage=4}
+Wraithbound_Chains_CAST:
+  Cooldown: 3
+  Skills:
+  #throw chains to enemies
+  - stun{d=20;f=false;CancelOnTakeDamage=false;CancelOnDeath=true} @self
+  - skill{s=Wraithbound_Chains_PRO} @forward{f=10;y=0}
+  - delay 3
+  - effect:sound{s=death_knight_sounds:samus.death_knight.chain;volume=0.7;pitch=0.9} @self
+  - delay 9
+  - stun{d=42;f=false;CancelOnTakeDamage=false;CancelOnDeath=true;delay=8} @self ?hasaura{n=CHAINBOUND}
+  - effect:sound{s=death_knight_sounds:samus.death_knight.chain;volume=0.7;pitch=0.7} @self ?hasaura{n=CHAINBOUND}
+  - delay 13
+  - effect:sound{s=death_knight_sounds:samus.death_knight.chain;volume=0.7;pitch=0.6} @self ?hasaura{n=CHAINBOUND}
+  - effect:sound{s=death_knight_sounds:samus.death_knight.chain;volume=0.3;pitch=0.55;delay=15} @self ?hasaura{n=CHAINBOUND}
+
+Wraithbound_Chains_PRO:
+  Skills:
+  - projectile{bulletType=MOB;mob=VFX_Wraithbound_Chains1;v=0;i=10;hR=0;vR=0;mr=8.5;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=1;syo=1;tyo=1;sso=0;fo=true;byo=0;ham=true;bmd=true}
+  - projectile{oH=Wraithbound_Chains_DAMAGE_D;v=35;i=10;hR=0.8;vR=0.8;mr=7.5;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0;syo=1.5;tyo=1.5;sso=0;fo=true;byo=0;ham=true}
+  - projectile{bulletType=MOB;mob=VFX_Wraithbound_Chains2;v=0;i=10;hR=0;vR=0;mr=8.5;hnp=false;hO=-20;sE=false;sB=false;hs=false;hfs=0;sfo=1;syo=1;tyo=1;sso=0;fo=true;byo=0;ham=true;bmd=true}
+  - projectile{oH=Wraithbound_Chains_DAMAGE_D;v=35;i=10;hR=0.8;vR=0.8;mr=7.5;hnp=true;hO=-20;sE=false;sB=true;hs=false;hfs=0;sfo=0;syo=1.5;tyo=1.5;sso=0;fo=true;byo=0;ham=true}
+  - projectile{bulletType=MOB;mob=VFX_Wraithbound_Chains3;v=0;i=10;hR=0;vR=0;mr=8.5;hnp=false;hO=20;sE=false;sB=false;hs=false;hfs=0;sfo=1;syo=1;tyo=1;sso=0;fo=true;byo=0;ham=true;bmd=true}
+  - projectile{oH=Wraithbound_Chains_DAMAGE_D;v=35;i=10;hR=0.8;vR=0.8;mr=7.5;hnp=true;hO=20;sE=false;sB=true;hs=false;hfs=0;sfo=0;syo=1.5;tyo=1.5;sso=0;fo=true;byo=0;ham=true}
+
+
+
+
+Wraithbound_Chains_REMOVE:
+  TargetConditions:
+  - hasaura{n=CHAINBOUND} false
+  Skills:
+  - state{s=pull_fail;speed=1} @self
+  - partvis{m=vfx_death_chain;p=bone8;v=false;em=true;child=true;delay=1} @self
+  - partvis{m=vfx_death_chain;p=bone7;v=false;em=true;child=true;delay=2} @self
+  - partvis{m=vfx_death_chain;p=bone6;v=false;em=true;child=true;delay=3} @self
+  - partvis{m=vfx_death_chain;p=bone5;v=false;em=true;child=true;delay=4} @self
+  - partvis{m=vfx_death_chain;p=bone4;v=false;em=true;child=true;delay=5} @self
+  - partvis{m=vfx_death_chain;p=bone3;v=false;em=true;child=true;delay=6} @self
+  - delay 8
+  - remove @self
+Wraithbound_Chains_SUC:
+  TargetConditions:
+  - hasaura{n=CHAINBOUND} true
+  Skills:
+  - state{s=pull_slow2;speed=1} @self
+
+
+Wraithbound_Chains_REMOVE2:
+  TargetConditions:
+  - hasaura{n=CHAINBOUND} false
+  Skills:
+  - state{s=pull_fail2;speed=1} @self
+  - partvis{m=vfx_death_chain;p=bone8;v=false;em=true;child=true;delay=1} @self
+  - partvis{m=vfx_death_chain;p=bone7;v=false;em=true;child=true;delay=2} @self
+  - partvis{m=vfx_death_chain;p=bone6;v=false;em=true;child=true;delay=3} @self
+  - partvis{m=vfx_death_chain;p=bone5;v=false;em=true;child=true;delay=4} @self
+  - partvis{m=vfx_death_chain;p=bone4;v=false;em=true;child=true;delay=5} @self
+  - partvis{m=vfx_death_chain;p=bone3;v=false;em=true;child=true;delay=6} @self
+  - delay 8
+  - remove @self
+Wraithbound_Chains_SUC2:
+  TargetConditions:
+  - hasaura{n=CHAINBOUND} true
+  Skills:
+  - state{s=pull_slow3;speed=1} @self
+
+
+Wraithbound_Chains_REMOVE3:
+  TargetConditions:
+  - hasaura{n=CHAINBOUND} false
+  Skills:
+  - state{s=pull_fail3;speed=1} @self
+  - partvis{m=vfx_death_chain;p=bone8;v=false;em=true;child=true;delay=1} @self
+  - partvis{m=vfx_death_chain;p=bone7;v=false;em=true;child=true;delay=2} @self
+  - partvis{m=vfx_death_chain;p=bone6;v=false;em=true;child=true;delay=3} @self
+  - partvis{m=vfx_death_chain;p=bone5;v=false;em=true;child=true;delay=4} @self
+  - partvis{m=vfx_death_chain;p=bone4;v=false;em=true;child=true;delay=5} @self
+  - partvis{m=vfx_death_chain;p=bone3;v=false;em=true;child=true;delay=6} @self
+  - delay 8
+  - remove @self
+Wraithbound_Chains_SUC3:
+  TargetConditions:
+  - hasaura{n=CHAINBOUND} true
+  Skills:
+  - state{s=pull_slow4;speed=1} @self
+
+Wraithbound_Chains_DAMAGE_D:
+  Skills:
+  - skill{s=Wraithbound_Chains_DAMAGE} @EntitiesNearOrigin{r=3;limit=4;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+  - skill{s=CURSED_SEAL_INFLICT} @EntitiesNearOrigin{r=3;limit=4;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} false - hasaura{aura=VFX_Cursed_Seal1} false - hasaura{aura=VFX_Cursed_Seal2} false - hasaura{aura=VFX_Cursed_Seal3} false  ]}
+  - skill{s=CURSED_SEAL_ADD1} @EntitiesNearOrigin{r=3;limit=4;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} true  ]}
+  - skill{s=CURSED_SEAL_ADD2} @EntitiesNearOrigin{r=3;limit=4;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal1} true  ]}
+  - skill{s=CURSED_SEAL_WEAKEN} @EntitiesNearOrigin{r=3;limit=4;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal2} true  ]}
+Wraithbound_Chains_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=CHAINBOUND;duration=100} @self
+  - aura{auraName=immunedelay;duration=10}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true;delay=1}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_Death_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - effect:sound{s=entity.phantom.hurt;volume=0.6;pitch=0.7}
+  - effect:sound{s=item.mace.smash_air;volume=1;pitch=1}
+  - potion{type=SLOW;duration=46;level=50;hasParticles=false}
+  - stun{d=60;f=false;CancelOnTakeDamage=false;CancelOnDeath=true;delay=46}
+  #pull
+  - pull{velocity=2;to=true;origin=@selflocation;delay=5;repeat=6;repeati=10}
+  - pull{velocity=2;to=true;origin=@selflocation;delay=19;repeat=10;repeati=10}
+
+  #necrohand grab
+  - summon{type=VFX_Necrohand_Grabber;amount=1;radius=0;yRadius=0;onSurface=true;delay=42}
+  - skill{s=Wraithbound_Chains_AFTERMATH_DAMAGE_D;delay=59}
+
+Wraithbound_Chains_AFTERMATH_DAMAGE_D:
+  Skills:
+  - skill{s=Wraithbound_Chains_AFTERMATH_DAMAGE} @targetedtarget{sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+  - skill{s=CURSED_SEAL_INFLICT} @targetedtarget{sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} false - hasaura{aura=VFX_Cursed_Seal1} false - hasaura{aura=VFX_Cursed_Seal2} false - hasaura{aura=VFX_Cursed_Seal3} false  ]}
+  - skill{s=CURSED_SEAL_ADD1} @targetedtarget{sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} true  ]}
+  - skill{s=CURSED_SEAL_ADD2} @targetedtarget{sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal1} true  ]}
+  - skill{s=CURSED_SEAL_WEAKEN} @targetedtarget{sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal2} true  ]}
+Wraithbound_Chains_AFTERMATH_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=10}
+  - damage{a=<skill.damage> * 0.5;pkb=true;hnp=true;hp=true;delay=1}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_Death_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - effect:sound{s=entity.phantom.hurt;volume=0.5;pitch=0.7}
+  
+# Soul Barrier #
+
+Soul_Barrier:
+  Cooldown: 0
+  Conditions:
+  - crouching castinstead Soul_Barrier_STACK
+  Skills:
+  - auraremove{aura=Soul_Barrier_STACK} @self
+Soul_Barrier_STACK:
+  Conditions:
+  - hasaurastacks{auraName=Soul_Barrier_STACK;stacks=2} castinstead Soul_Barrier_Skill
+  Skills:
+  - Aura{auraName=Soul_Barrier_STACK;duration=120;maxStacks=2} @self
+Soul_Barrier_Skill:
+  Cooldown: 3
+  Skills:
+  - skill{s=Soul_Barrier_CAST;duration=9}
+
+Soul_Barrier_CAST:
+  Skills:
+  - auraremove{aura=Soul_Barrier_STACK} @self
+  #summon barrier
+  - onDamaged{auraName=shield_block;oH=Soul_Barrier_BLOCK;cE=true;d=<skill.duration> * 20} @self
+  - orbital{auraName=VFX_Soul_Barrier;bulletType=MOB;mob=VFX_Soul_Barrier;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=<skill.duration> * 20;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - effect:sound{s=block.respawn_anchor.set_spawn;volume=0.8;pitch=1} @self
+  - effect:sound{s=particle.soul_escape;volume=0.8;pitch=1} @self
+Soul_Barrier_BLOCK:
+  Skills:
+  - effect:sound{s=entity.elder_guardian.hurt;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=block.trial_spawner.spawn_item_begin;volume=1;pitch=1} @self
+  - heal{a=<skill.var.damage-amount>} @self
+  - particles{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;amount=40;hS=0.35;vS=0.6;y=0.9;size=0.45;speed=0;repeat=2;repeati=10} @self
+  
+
+# Necrotic Whirlwind #
+
+Necrotic_Whirlwind:
+  Cooldown: 3
+  Conditions:
+  - crouching true
+  Skills:
+  - skill{s=Necrotic_Whirlwind_CAST;damage=2;heal=2}
+Necrotic_Whirlwind_CAST:
+  Skills:
+  #whirlwind
+  - lunge{velocity=0.15;velocityY=0;repeat=80;repeati=10} @forward{f=5;y=0;lockpitch=true}
+  - sound{sound=death_knight_sounds:samus.death_knight.whirlwind;volume=0.7;pitch=<random.float.0.7to1>;repeat=7;repeati=100} @self
+  - orbital{auraName=VFX_Necrotic_Whirlwind;bulletType=MOB;mob=VFX_Necrotic_Whirlwind;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=80;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - skill{s=Necrotic_Whirlwind_DAMAGE_D;repeat=10;repeati=7}
+  #delay
+  - delay 85
+  #necroclaw slash
+  - stun{d=15;f=false;CancelOnTakeDamage=false;CancelOnDeath=true} @self
+  - sound{sound=entity.blaze.shoot;volume=0.7;pitch=0.7;delay=2} @self
+  - sound{sound=particle.soul_escape;volume=1.1;pitch=1;delay=2} @self
+  - orbital{auraName=VFX_Necrotic_Whirlwind_CLAW;bulletType=MOB;mob=VFX_Necrotic_Whirlwind_CLAW;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=30;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - sound{sound=death_knight_sounds:samus.death_knight.claw_slash;volume=0.8;pitch=1;delay=9} @self
+  - totem{md=2;c=1;oH=Necrotic_Whirlwind_CLAW_DAMAGE_D;hnp=true;hp=true;hR=3;vR=2;i=10;delay=9} @forward{f=1;lockpitch=true}
+  - slash{fo=-0.3;y=0.4;w=4;h=4;mpd=true;a=180;oP=[ e:p{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;size=0.5} ];roll=170;d=8;p=35;delay=9} @forward{f=0.4;lockpitch=true}
+  - slash{fo=-0.3;y=0.4;w=4;h=4;mpd=true;a=180;oP=[ e:p{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;size=0.5} ];roll=-170;d=8;p=35;delay=9} @forward{f=0.4;lockpitch=true}
+  - slash{fo=-0.3;y=1.2;w=4;h=4;mpd=true;a=180;oP=[ e:p{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;size=0.5} ];roll=170;d=8;p=35;delay=9} @forward{f=0.4;lockpitch=true}
+  - slash{fo=-0.3;y=1.2;w=4;h=4;mpd=true;a=180;oP=[ e:p{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;size=0.5} ];roll=-170;d=8;p=35;delay=9} @forward{f=0.4;lockpitch=true}
+  - slash{fo=-0.3;y=2.0;w=4;h=4;mpd=true;a=180;oP=[ e:p{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;size=0.5} ];roll=170;d=8;p=35;delay=9} @forward{f=0.4;lockpitch=true}
+  - slash{fo=-0.3;y=2.0;w=4;h=4;mpd=true;a=180;oP=[ e:p{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;size=0.5} ];roll=-170;d=8;p=35;delay=9} @forward{f=0.4;lockpitch=true}
+  
+
+Necrotic_Whirlwind_DAMAGE_D:
+  Skills:
+  - skill{s=Necrotic_Whirlwind_DAMAGE} @EIR{r=5.5;limit=8;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+  - skill{s=CURSED_SEAL_INFLICT} @EIR{r=5.5;limit=8;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} false - hasaura{aura=VFX_Cursed_Seal1} false - hasaura{aura=VFX_Cursed_Seal2} false - hasaura{aura=VFX_Cursed_Seal3} false  ]}
+  - skill{s=CURSED_SEAL_ADD1} @EIR{r=5.5;limit=8;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} true  ]}
+  - skill{s=CURSED_SEAL_ADD2} @EIR{r=5.5;limit=8;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal1} true  ]}
+  - skill{s=CURSED_SEAL_WEAKEN} @EIR{r=5.5;limit=8;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal2} true  ]}
+Necrotic_Whirlwind_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true;delay=1}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_Death_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - effect:sound{s=entity.phantom.hurt;volume=0.6;pitch=0.7}
+  - effect:sound{s=item.mace.smash_air;volume=1;pitch=1}
+  - throw{velocity=0;velocityY=4}
+  - throw{velocity=0;velocityY=-4;delay=3}
+  
+Necrotic_Whirlwind_CLAW_DAMAGE_D:
+  Skills:
+  - skill{s=Necrotic_Whirlwind_CLAW_DAMAGE} @EntitiesNearOrigin{r=5.5;limit=8;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+  - skill{s=CURSED_SEAL_INFLICT} @EntitiesNearOrigin{r=5.5;limit=8;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} false - hasaura{aura=VFX_Cursed_Seal1} false - hasaura{aura=VFX_Cursed_Seal2} false - hasaura{aura=VFX_Cursed_Seal3} false  ]}
+  - skill{s=CURSED_SEAL_ADD1} @EntitiesNearOrigin{r=5.5;limit=8;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} true  ]}
+  - skill{s=CURSED_SEAL_ADD2} @EntitiesNearOrigin{r=5.5;limit=8;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal1} true  ]}
+  - skill{s=CURSED_SEAL_WEAKEN} @EntitiesNearOrigin{r=5.5;limit=8;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal2} true  ]}
+Necrotic_Whirlwind_CLAW_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=10}
+  - damage{a=<skill.damage> * 2;pkb=true;hnp=true;hp=true;delay=1}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_Death_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - effect:sound{s=entity.phantom.hurt;volume=0.6;pitch=0.7}
+  - effect:sound{s=item.mace.smash_air;volume=1;pitch=1}
+  - throw{velocity=10;velocityY=0}
+  - potion{type=SLOW;duration=60;level=1;hasParticles=false}
+  - particles{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;amount=25;hS=0.4;vS=0.1;y=0.1;size=0.75;speed=0;repeat=60;repeati=10}
+  - heal{a=<skill.heal>;repeat=<skill.targets>;repeati=0} @self
+  - particles{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;amount=40;hS=0.35;vS=0.6;y=0.9;size=0.45;speed=0;repeat=2;repeati=10} @self
+  - effect:sound{s=block.trial_spawner.spawn_item_begin;volume=1;pitch=1} @self
+
+# Death Sentence #
+
+Death_Sentence:
+  Cooldown: 3
+  Conditions:
+  - crouching true
+  Skills:
+  - skill{s=Death_Sentence_CAST;damage=5}
+Death_Sentence_CAST:
+  Skills:
+  #summon wings
+  - skill{s=Death_Sentence_SPHERE}
+  - sound{sound=entity.ender_dragon.flap;volume=0.8;pitch=0.8} @self
+  - sound{sound=entity.ender_dragon.flap;volume=0.8;pitch=0.6;delay=3} @self
+  - sound{sound=entity.ender_dragon.flap;volume=0.8;pitch=0.6;delay=23} @self
+  - sound{sound=entity.ender_dragon.flap;volume=0.8;pitch=0.6;delay=55} @self
+  - sound{sound=entity.ender_dragon.flap;volume=0.8;pitch=0.6;delay=88} @self
+  - sound{sound=entity.ender_dragon.flap;volume=0.8;pitch=0.7;delay=99} @self
+  - orbital{auraName=VFX_Death_Wings_Death_Sentence;bulletType=MOB;mob=VFX_Death_Wings_Death_Sentence;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=114;oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - particles{delay=10;p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;amount=30;hS=0.35;vS=0.6;y=0.9;size=1.3;speed=0;repeat=110;repeati=10} @selflocation{fo=0.6}
+  #delay
+  - delay 28
+  #soar up
+  - sound{sound=entity.breeze.death;volume=1;pitch=0.7} @self
+  - sound{sound=event.mob_effect.raid_omen;volume=0.8;pitch=0.6} @self
+  - skill{s=Death_Sentence_RING} @selflocation
+  - leap{velocity=280} @forward{f=2;y=3;lockpitch=true}
+  #delay
+  - delay 15
+  #hover
+  - potion{type=LEVITATION;duration=60;level=-1;hasParticles=false} @self
+  - skill{s=Death_Sentence_SPHERE;repeat=3;repeati=105}
+  #summon sword
+  - orbital{auraName=VFX_Soul_Blade;bulletType=MOB;mob=VFX_Soul_Blade;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=90;oy=3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  #aim target location
+  - skill{s=Death_Sentence_SUMMON_PRO;origin=@SelfEyeLocation{fo=-0.5;yo=0};repeat=55;repeati=10} @targetblock
+  - sound{sound=death_knight_sounds:samus.death_knight.death_sentence_smash;volume=0.5;pitch=0.85;delay=50} @self
+  - sound{sound=death_knight_sounds:samus.death_knight.soul_blade_slash;volume=0.8;pitch=1;delay=50} @self
+  #delay
+  - delay 60
+  #smash down
+  - sound{sound=entity.breeze.death;volume=1;pitch=0.7} @self
+  - sound{sound=event.mob_effect.raid_omen;volume=0.8;pitch=0.6} @self
+  - onDamaged{auraName=landresist;d=40;cE=true} @self
+  #- leap{velocity=400} @targetblock
+  - propel{v=400;repeat=7;repeati=10} @targetblock
+  #delay
+  - delay 4
+  #slash sword
+  - skill{s=Death_Sentence_LAND}
+  - delay 1
+  - skill{s=Death_Sentence_LAND}
+  - delay 1
+  - skill{s=Death_Sentence_LAND}
+  - delay 1
+  - skill{s=Death_Sentence_LAND}
+  - delay 1
+  - skill{s=Death_Sentence_LAND}
+  - delay 1
+  - skill{s=Death_Sentence_LAND}
+  - delay 1
+  - skill{s=Death_Sentence_LAND}
+  - delay 1
+  - skill{s=Death_Sentence_LAND}
+  - delay 1
+  - skill{s=Death_Sentence_LAND}
+  - delay 1
+  - skill{s=Death_Sentence_LAND}
+
+Death_Sentence_LAND:
+  Cooldown: 5
+  Conditions:
+  - onground true
+  Skills:
+  - stun{d=10;f=true;CancelOnTakeDamage=false;CancelOnDeath=true} @self
+  - slash{fo=-0.1;y=1.3;w=7;h=7;mpd=true;a=210;oP=[ e:p{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;size=0.8;hS=0.4;vS=0.1} ];roll=178;d=10;p=50} @forward{f=0.4;lockpitch=true}
+  - summon{type=VFX_Death_Sentence_Rupture;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation
+  - skill{s=Death_Sentence_RING} @selflocation
+  - skill{s=Death_Sentence_DAMAGE_D}
+
+Death_Sentence_SUMMON_PRO:
+  Skills:
+  - projectile{tickinterpolation=5;ohb=Death_Sentence_SUMMON;v=50;i=10;hR=0.4;vR=0.4;mr=60;hnp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0;syo=0.5;tyo=0.5;sso=0;fo=true;byo=0;drawhitbox=false;ham=true}
+Death_Sentence_SUMMON:
+  Skills:
+  - effect:particlering{p=dust_color_transition;color1=#fefffc;color2=#d0ffb3;radius=7;points=80;amount=1;hS=0.03;vS=0.1;y=0.05;size=1.2;viewDistance=600} @origin
+
+Death_Sentence_RING:
+  Skills:
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=1;points=80;amount=1;hS=0;vS=0;y=0.1;size=0.75}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=2;points=80;amount=1;hS=0;vS=0;y=0.1;size=0.75;delay=1}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=3;points=80;amount=1;hS=0;vS=0;y=0.1;size=0.75;delay=2}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=4;points=80;amount=1;hS=0;vS=0;y=0.1;size=0.75;delay=3}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=5;points=80;amount=1;hS=0;vS=0;y=0.1;size=0.75;delay=4}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=6;points=80;amount=1;hS=0;vS=0;y=0.1;size=0.75;delay=5}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=6.5;points=80;amount=1;hS=0;vS=0;y=0.1;size=0.75;delay=6}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=7;points=80;amount=1;hS=0;vS=0;y=0.1;size=0.75;delay=7}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=7.4;points=80;amount=1;hS=0;vS=0;y=0.1;size=0.75;delay=8}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=7.7;points=80;amount=1;hS=0;vS=0;y=0.1;size=0.75;delay=10}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=7.9;points=80;amount=1;hS=0;vS=0;y=0.1;size=0.75;delay=12}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=8;points=80;amount=1;hS=0;vS=0;y=0.1;size=0.75;delay=15}
+  - effect:particlering{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=8.1;points=80;amount=1;hS=0;vS=0;y=0.1;size=0.75;delay=18}
+Death_Sentence_SPHERE:
+  Skills:
+  - sound{sound=entity.breeze.inhale;volume=0.8;pitch=0.7} @self
+  - sound{sound=particle.soul_escape;volume=0.8;pitch=1} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=0.5;size=0.55;amount=20;y=0.6;delay=9} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=1;size=0.55;y=0.6;amount=40;delay=8} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=1.5;size=0.55;y=0.6;amount=60;delay=7} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=2;size=0.55;y=0.6;amount=80;delay=6} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=2.5;size=0.55;y=0.6;amount=100;delay=5} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=3;size=0.55;y=0.6;amount=120;delay=4} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=3.5;size=0.55;y=0.6;amount=140;delay=3} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=4;size=0.55;y=0.6;amount=170;delay=2} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=4.5;size=0.55;y=0.6;amount=200;delay=1} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#a2f8cb;color2=#0eaf9b;radius=5;size=0.55;y=0.6;amount=230} @self
+
+Death_Sentence_DAMAGE_D:
+  Skills:
+  - skill{s=Death_Sentence_DAMAGE} @EIR{r=7;conditions=[ - isLiving true  ]}
+  - skill{s=CURSED_SEAL_INFLICT} @EIR{r=7;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} false - hasaura{aura=VFX_Cursed_Seal1} false - hasaura{aura=VFX_Cursed_Seal2} false - hasaura{aura=VFX_Cursed_Seal3} false  ]}
+  - skill{s=CURSED_SEAL_ADD1} @EIR{r=7;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal} true  ]}
+  - skill{s=CURSED_SEAL_ADD2} @EIR{r=7;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal1} true  ]}
+  - skill{s=CURSED_SEAL_WEAKEN} @EIR{r=7;conditions=[ - isLiving true - hasaura{aura=CURSEIMMUNE} false - hasaura{aura=VFX_Cursed_Seal2} true  ]}
+  - skill{s=CURSED_SEAL_EXECUTE} @EIR{r=7;conditions=[ - isLiving true - hasaura{aura=VFX_Cursed_Seal3} true  ]}
+Death_Sentence_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=10}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true;delay=1}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_Death_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - effect:sound{s=entity.phantom.hurt;volume=0.6;pitch=0.7}
+  - effect:sound{s=item.mace.smash_air;volume=1;pitch=1}
+CURSED_SEAL_EXECUTE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - damage{a=99999;pkb=true;hnp=true;hp=true;delay=1}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_Death_Sentence_X;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.45;tyo=1.45;sso=0;fo=true;byo=0;ham=true}
+  - effect:sound{s=entity.ender_dragon.hurt;volume=0.7;pitch=0.4}
+  - effect:sound{s=item.mace.smash_air;volume=1;pitch=1}
+#cHM5w0TQxkTJhmQWZTWzUmVjVEZ3VERPVTUE90MFRUT4N3VRJUS0BXYP1UbGpla0BHT38mM

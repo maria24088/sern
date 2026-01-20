@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  longcarpetblack:
+    display_name: "Long Carpet Black"
+    permission: livingroom.longcarpetblack
+    resource:
+      material: PAPER
+      generate: false
+      model_path: longcarpetblack
+    behaviours:
+      furniture:
+        light_level: 13

@@ -1,0 +1,296 @@
+Starting org.bukkit.craftbukkit.Main
+*** Warning, you've not updated in a while! ***
+*** Please download a new build from https://papermc.io/downloads/paper ***
+2026-01-20T02:35:28.450005001Z ServerMain WARN Advanced terminal features are not available in this environment
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/workspaces/Ser/Lobby/libraries/io/netty/netty-common/4.1.118.Final/netty-common-4.1.118.Final.jar)
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+[23:35:29 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.1+8-LTS; Microsoft Microsoft-12574222) on Linux 6.8.0-1030-azure (amd64)
+[23:35:29 INFO]: [bootstrap] Loading Paper 1.21.8-60-main@29c8822 (2025-09-06T21:49:13Z) for Minecraft 1.21.8
+[23:35:30 INFO]: [PluginInitializerManager] Initializing plugins...
+[23:35:33 INFO]: [PluginInitializerManager] Initialized 20 plugins
+[23:35:33 INFO]: [PluginInitializerManager] Bukkit plugins (20):
+ - BungeeGuard (1.4-SNAPSHOT), DeluxeMenus (1.14.1-Release), Essentials (2.22.0-dev+47-faa02b5), EssentialsChat (2.22.0-dev+47-faa02b5), EssentialsSpawn (2.22.0-dev+47-faa02b5), FastAsyncWorldEdit (2.14.4-SNAPSHOT-1258+9dd0c7f), ItemJoin (6.1.6-RELEASE-b1117), LuckPerms (5.5.0), Multiverse-Core (5.5.0), PlaceholderAPI (2.11.7), SkinsRestorer (15.9.3), ViaBackwards (5.7.0), ViaVersion (5.5.0), ViaVersion (5.6.0), VoidGen (2.3.4), VoidSpawn (1.22.0), WorldEdit (7.3.17+7262-c7fbe08), WorldGuard (7.0.14+2339-43997ec), WorldGuardExtraFlags (4.2.4-SNAPSHOT), nLogin (2.0.7)
+[23:35:48 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[23:35:53 INFO]: Loaded 1407 recipes
+[23:35:53 INFO]: Loaded 1520 advancements
+[23:35:53 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[23:35:54 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 908.1ms
+[23:35:54 INFO]: Starting minecraft server version 1.21.8
+[23:35:54 INFO]: Loading properties
+[23:35:54 INFO]: This server is running Paper version 1.21.8-60-main@29c8822 (2025-09-06T21:49:13Z) (Implementing API version 1.21.8-R0.1-SNAPSHOT)
+[23:35:54 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[23:35:54 INFO]: Server Ping Player Sample Count: 12
+[23:35:54 INFO]: Using 4 threads for Netty based IO
+[23:35:56 INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[23:35:56 INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[23:35:57 INFO]: Default game type: SURVIVAL
+[23:35:57 INFO]: Generating keypair
+[23:35:57 INFO]: Starting Minecraft server on *:30001
+[23:35:57 INFO]: Using epoll channel type
+[23:35:57 INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[23:35:57 INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[23:35:57 ERROR]: [ModernPluginLoadingStrategy] Ambiguous plugin name 'WorldEdit' for files 'plugins/.paper-remapped/worldedit-bukkit-7.3.17.jar' and 'plugins/.paper-remapped/worldedit-bukkit-7.3.17.jar' in 'plugins/.paper-remapped'
+[23:35:57 ERROR]: [ModernPluginLoadingStrategy] Ambiguous plugin name 'ViaVersion' for files 'plugins/ViaVersion-5.5.0.jar' and 'plugins/ViaVersion-5.6.0.jar' in 'plugins'
+[23:35:57 WARN]: [ModernPluginLoadingStrategy] `WorldEdit' is provided by both `FastAsyncWorldEdit' and `WorldEdit'
+[23:35:59 ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'worldedit-bukkit-7.3.17.jar' in folder 'plugins/.paper-remapped'
+java.lang.IllegalStateException: Provider SpigotPluginProvider{path=plugins/.paper-remapped/worldedit-bukkit-7.3.17.jar, description=org.bukkit.plugin.PluginDescriptionFile@2422fb77, jarFile=worldedit-bukkit-7.3.17.jar@114bba47, status=null, dependencyContext=null} attempted to add duplicate plugin identifier FastAsyncWorldEdit v2.14.4-SNAPSHOT-1258+9dd0c7f THIS WILL CREATE BUGS!!!
+	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage$1.applyContext(ServerPluginProviderStorage.java:28) ~[paper-1.21.8.jar:1.21.8-60-29c8822]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:113) ~[paper-1.21.8.jar:1.21.8-60-29c8822]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.8.jar:1.21.8-60-29c8822]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:39) ~[paper-1.21.8.jar:1.21.8-60-29c8822]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:567) ~[paper-1.21.8.jar:1.21.8-60-29c8822]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:235) ~[paper-1.21.8.jar:1.21.8-60-29c8822]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1164) ~[paper-1.21.8.jar:1.21.8-60-29c8822]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.8.jar:1.21.8-60-29c8822]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[23:36:00 INFO]: [ViaVersion] Loading server plugin ViaVersion v5.5.0
+[23:36:00 INFO]: [ViaVersion] ViaVersion 5.5.0 is now loaded. Registering protocol transformers and injecting...
+[23:36:01 INFO]: [ViaVersion] Loading block connection mappings ...
+[23:36:01 INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[23:36:02 ERROR]: [ViaBackwards] ================================
+[23:36:02 ERROR]: [ViaBackwards] YOUR VIAVERSION IS OUTDATED (you are running 5.5.0)
+[23:36:02 ERROR]: [ViaBackwards] PLEASE USE VIAVERSION 5.7.0 OR NEWER
+[23:36:02 ERROR]: [ViaBackwards] LINK: https://ci.viaversion.com/
+[23:36:02 ERROR]: [ViaBackwards] VIABACKWARDS WILL NOW DISABLE
+[23:36:02 ERROR]: [ViaBackwards] ================================
+[23:36:02 INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.14.4-SNAPSHOT-1258+9dd0c7f
+[23:36:04 INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@72bf6e91]
+[23:36:04 INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.7
+[23:36:04 INFO]: [VoidGen] Loading server plugin VoidGen v2.3.4
+[23:36:04 INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.7.0
+[23:36:04 INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.0
+[23:36:05 INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.14+2339-43997ec
+[23:36:05 INFO]: [CoreLogging] Loading server plugin Multiverse-Core v5.5.0
+[23:36:05 INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.9.3
+[23:36:05 INFO]: [Essentials] Loading server plugin Essentials v2.22.0-dev+47-faa02b5
+[23:36:05 INFO]: [VoidSpawn] Loading server plugin VoidSpawn v1.22.0
+[23:36:05 INFO]: [DeluxeMenus] Loading server plugin DeluxeMenus v1.14.1-Release
+[23:36:05 WARN]: [DeluxeMenus] Could not setup a NMS hook for your server version! The following Item options will not work: nbt_int, nbt_ints, nbt_string and nbt_strings.
+[23:36:05 INFO]: [BungeeGuard] Loading server plugin BungeeGuard v1.4-SNAPSHOT
+[23:36:05 INFO]: [WorldGuardExtraFlags] Loading server plugin WorldGuardExtraFlags v4.2.4-SNAPSHOT
+[23:36:05 INFO]: [ItemJoin] Loading server plugin ItemJoin v6.1.6-RELEASE-b1117
+[23:36:05 INFO]: [nLogin] Loading server plugin nLogin v2.0.7
+[23:36:06 INFO]: [EssentialsSpawn] Loading server plugin EssentialsSpawn v2.22.0-dev+47-faa02b5
+[23:36:06 INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.22.0-dev+47-faa02b5
+[23:36:06 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:36:06 INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.14.4-SNAPSHOT-1258+9dd0c7f
+[23:36:06 INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[23:36:06 INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[23:36:06 INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[23:36:06 INFO]: WEPIF: Using the Bukkit Permissions API.
+[23:36:07 INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_21_6.PaperweightFaweAdapter as the Bukkit adapter
+[23:36:08 INFO]: [VoidGen] Enabling VoidGen v2.3.4
+[23:36:09 INFO]: [VoidGen] Using VoidChunkGen: VERSION_1_21_3
+[23:36:09 INFO]: [LuckPerms] Enabling LuckPerms v5.5.0
+[23:36:09 WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] An update for FastAsyncWorldEdit is available. You are 10 build(s) out of date.
+You are running build 1258, the latest version is build 1268.
+Update at https://ci.athion.net/job/FastAsyncWorldEdit
+[23:36:09 WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] A new release for FastAsyncWorldEdit is available: 2.15.0. You are currently on 2.14.4.
+Download from https://modrinth.com/plugin/fastasyncworldedit or https://hangar.papermc.io/IntellectualSites/FastAsyncWorldEdit
+[23:36:10 INFO]: [38;2;85;255;255m       [38;2;0;170;170m __    [0m
+[23:36:10 INFO]: [38;2;85;255;255m  |    [38;2;0;170;170m|__)   [38;2;0;170;0mLuckPerms[0m [38;2;85;255;255mv5.5.0[0m
+[23:36:10 INFO]: [38;2;85;255;255m  |___ [38;2;0;170;170m|      [38;2;85;85;85mRunning on Bukkit - Paper[0m
+[23:36:10 INFO]: 
+[23:36:10 INFO]: [LuckPerms] Loading configuration...
+[23:36:10 INFO]: [LuckPerms] Loading storage provider... [H2]
+[23:36:10 INFO]: [LuckPerms] Loading internal permission managers...
+[23:36:10 INFO]: [LuckPerms] Performing initial data load...
+[23:36:11 INFO]: [LuckPerms] Successfully enabled. (took 2352ms)
+[23:36:11 INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.9.3
+[23:36:12 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m-------------------------/Warning\-------------------------[0;39m
+[23:36:12 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mThis plugin is running in PROXY mode![0;39m
+[23:36:12 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mYou have to put the same config.yml on all servers and on the proxy.[0;39m
+[23:36:12 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m(<proxy>/plugins/SkinsRestorer/)[0;39m
+[23:36:12 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m-------------------------\Warning/-------------------------[0;39m
+[23:36:12 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.21.8[32;1m.[0;39m
+[23:36:13 WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1mProxy mode API is enabled (server.proxyMode.api), but MySQL is not set up, this is not supported. You must configure MySQL on all servers and on the proxy and use the same database.[0;39m
+[23:36:13 INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.9.3]
+[23:36:13 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mPlaceholderAPI expansion registered![0;39m
+[23:36:13 INFO]: [BungeeGuard] Enabling BungeeGuard v1.4-SNAPSHOT
+[23:36:13 INFO]: [BungeeGuard] Using Paper's PlayerHandshakeEvent to listen for connections.
+[23:36:13 INFO]: [ItemJoin] Enabling ItemJoin v6.1.6-RELEASE-b1117
+[23:36:13 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[23:36:13 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[23:36:13 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[23:36:13 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[23:36:13 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |    [33;1mProxy Mode[32;1m    |[0;39m
+[23:36:13 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[23:36:13 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[23:36:13 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.9.3[0;39m
+[23:36:13 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1m989bf18[0;39m
+[23:36:13 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[23:36:13 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[23:36:13 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[23:36:13 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[23:36:13 INFO]: [nLogin] Enabling nLogin v2.0.7
+[23:36:14 INFO]: [nLogin] Successful plugin core start (took 0.44s)
+[23:36:14 INFO]: [nLogin] [38;2;85;85;255m          __             _       [0m
+[23:36:14 INFO]: [nLogin] [38;2;85;85;255m  _ __   / /  ___   __ _(_)_ __  [0m
+[23:36:14 INFO]: [nLogin] [38;2;85;85;255m | '_ \ / /  / _ \ / _` | | '_ \ [0m
+[23:36:14 INFO]: [nLogin] [38;2;85;85;255m | | | / /__| (_) | (_| | | | | |[0m
+[23:36:14 INFO]: [nLogin] [38;2;85;85;255m |_| |_\____/\___/ \__, |_|_| |_|[0m
+[23:36:14 INFO]: [nLogin] [38;2;85;85;255m                  |___/            [0m
+[23:36:14 INFO]: [nLogin] [38;2;85;85;255m By: www.nickuc.com - V 2.0.7[0m
+[23:36:14 INFO]: [nLogin] [38;2;85;85;255m [0m
+[23:36:16 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[23:36:16 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[23:36:16 WARN]: Whilst this makes it possible to use BungeeCord, unless access to your server is properly restricted, it also opens up the ability for hackers to connect with any username they choose.
+[23:36:16 WARN]: Please see http://www.spigotmc.org/wiki/firewall-guide/ for further information.
+[23:36:16 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[23:36:16 INFO]: Preparing level "Lobby"
+[23:36:16 INFO]: Preparing start region for dimension minecraft:overworld
+[23:36:17 INFO]: Preparing spawn area: 0%
+[23:36:17 INFO]: Preparing spawn area: 4%
+[23:36:17 INFO]: Preparing spawn area: 46%
+[23:36:18 INFO]: Time elapsed: 1090 ms
+[23:36:18 INFO]: [ViaVersion] Enabling ViaVersion v5.5.0
+[23:36:18 INFO]: [ViaVersion] ViaVersion detected server version: 1.21.7-1.21.8 (772)
+[23:36:18 INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.7
+[23:36:18 INFO]: [PlaceholderAPI] Fetching available expansion information...
+[23:36:18 INFO]: [ViaBackwards] Enabling ViaBackwards v5.7.0
+[23:36:18 INFO]: [WorldGuard] Enabling WorldGuard v7.0.14+2339-43997ec
+[23:36:18 INFO]: [WorldGuard] (Lobby) TNT ignition is PERMITTED.
+[23:36:18 INFO]: [WorldGuard] (Lobby) Lighters are PERMITTED.
+[23:36:18 INFO]: [WorldGuard] (Lobby) Lava fire is PERMITTED.
+[23:36:18 INFO]: [WorldGuard] (Lobby) Fire spread is UNRESTRICTED.
+[23:36:18 INFO]: [WorldGuard] Loaded configuration for world 'Lobby'
+[23:36:18 INFO]: [WorldGuard] Loading region data...
+[23:36:19 INFO]: [Multiverse-Core] Enabling Multiverse-Core v5.5.0
+[23:36:20 INFO]: [VoidGen] 
+[23:36:20 INFO]: [VoidGen] > ——————————————————————[ Lobby ]——————————————————————
+[23:36:20 INFO]: [VoidGen] > 
+[23:36:20 INFO]: [VoidGen] > Generator settings have not been set, we will use the default settings:
+[23:36:20 INFO]: [VoidGen] > {"biome":"the_void"}
+[23:36:20 INFO]: [VoidGen] > 
+[23:36:20 INFO]: [VoidGen] > ——————————————————————[ Lobby ]——————————————————————
+[23:36:20 INFO]: [VoidGen] 
+[23:36:22 INFO]: [PlaceholderAPI] Successfully registered internal expansion: multiverse-core [5.5.0]
+[23:36:22 INFO]: [Multiverse-Core] API service loaded!
+[23:36:22 INFO]: [Multiverse-Core] [32mVersion 5.5.0 (API v5.5) Enabled - By dumptruckman, Rigby, fernferret, lithium3141, main--, benwoo1110 and Zax71[39m
+[23:36:22 INFO]: [Multiverse-Core] [32mLoving Multiverse-Core? Please consider supporting the project with a small donation: https://github.com/sponsors/Multiverse[39m
+[23:36:22 INFO]: [VoidGen] VoidGen hooked into Multiverse!
+[23:36:22 INFO]: [Essentials] Enabling Essentials v2.22.0-dev+47-faa02b5
+[23:36:23 ERROR]: [Essentials] You are running an unsupported server version!
+[23:36:23 INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[23:36:23 INFO]: [Essentials] No kits found to migrate.
+[23:36:24 INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[23:36:24 INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[23:36:24 INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
+[23:36:24 INFO]: [Essentials] Selected 1.21.4+ Sync Commands Provider as the provider for SyncCommandsProvider
+[23:36:24 INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[23:36:24 INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[23:36:24 INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[23:36:24 INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[23:36:24 INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[23:36:24 INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
+[23:36:24 INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[23:36:24 INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[23:36:24 INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[23:36:24 INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[23:36:24 INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[23:36:24 INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[23:36:24 INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[23:36:24 INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[23:36:24 INFO]: [Essentials] Selected Legacy Biome Name Provider as the provider for BiomeNameProvider
+[23:36:24 INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
+[23:36:24 INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[23:36:24 INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[23:36:24 INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[23:36:24 INFO]: [Essentials] Loaded 45989 items from items.json.
+[23:36:24 INFO]: [Essentials] Using locale en
+[23:36:24 INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[23:36:25 INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[23:36:25 WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
+[23:36:25 WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
+[23:36:25 INFO]: [Essentials] Using superperms-based permissions.
+[23:36:25 INFO]: [VoidSpawn] Enabling VoidSpawn v1.22.0
+[23:36:25 INFO]: [38;2;0;170;170m[[38;2;255;85;255mVoidSpawn[38;2;0;170;170m] [38;2;255;255;85mNo SkyBlock plugins found, disabling island mode support.[0m
+[23:36:25 INFO]: [38;2;0;170;170m[[38;2;255;85;255mVoidSpawn[38;2;0;170;170m] [38;2;255;255;85mv1.22.0 by EnderCrest enabled[0m
+[23:36:25 INFO]: [DeluxeMenus] Enabling DeluxeMenus v1.14.1-Release
+[23:36:25 INFO]: [DeluxeMenus] Successfully hooked into PlaceholderAPI!
+[23:36:26 WARN]: [DeluxeMenus] Option 'hide_attributes' of item 'survival_custom' in menu 'modalidades' is deprecated and will be removed in the future. Replace it with item_flags: [HIDE_ATTRIBUTES].
+[23:36:26 INFO]: [DeluxeMenus] 1 GUI menus loaded!
+[23:36:26 INFO]: [PlaceholderAPI] Successfully registered internal expansion: deluxemenus [1.14.1-Release]
+[23:36:26 INFO]: [DeluxeMenus] You are running the latest version of DeluxeMenus!
+[23:36:26 INFO]: [WorldGuardExtraFlags] Enabling WorldGuardExtraFlags v4.2.4-SNAPSHOT
+[23:36:26 INFO]: [WorldGuard] Registering session handler net.goldtreeservers.worldguardextraflags.wg.handlers.TeleportOnEntryFlagHandler
+[23:36:26 INFO]: [WorldGuard] Registering session handler net.goldtreeservers.worldguardextraflags.wg.handlers.TeleportOnExitFlagHandler
+[23:36:26 INFO]: [WorldGuard] Registering session handler net.goldtreeservers.worldguardextraflags.wg.handlers.WalkSpeedFlagHandler
+[23:36:26 INFO]: [WorldGuard] Registering session handler net.goldtreeservers.worldguardextraflags.wg.handlers.FlySpeedFlagHandler
+[23:36:26 INFO]: [WorldGuard] Registering session handler net.goldtreeservers.worldguardextraflags.wg.handlers.FlyFlagHandler
+[23:36:26 INFO]: [WorldGuard] Registering session handler net.goldtreeservers.worldguardextraflags.wg.handlers.GlideFlagHandler
+[23:36:26 INFO]: [WorldGuard] Registering session handler net.goldtreeservers.worldguardextraflags.wg.handlers.GodmodeFlagHandler
+[23:36:26 INFO]: [WorldGuard] Registering session handler net.goldtreeservers.worldguardextraflags.wg.handlers.PlaySoundsFlagHandler
+[23:36:26 INFO]: [WorldGuard] Registering session handler net.goldtreeservers.worldguardextraflags.wg.handlers.BlockedEffectsFlagHandler
+[23:36:26 INFO]: [WorldGuard] Registering session handler net.goldtreeservers.worldguardextraflags.wg.handlers.GiveEffectsFlagHandler
+[23:36:26 INFO]: [WorldGuard] Registering session handler net.goldtreeservers.worldguardextraflags.wg.handlers.CommandOnEntryFlagHandler
+[23:36:26 INFO]: [WorldGuard] Registering session handler net.goldtreeservers.worldguardextraflags.wg.handlers.CommandOnExitFlagHandler
+[23:36:26 INFO]: [WorldGuard] Registering session handler net.goldtreeservers.worldguardextraflags.wg.handlers.ConsoleCommandOnEntryFlagHandler
+[23:36:26 INFO]: [WorldGuard] Registering session handler net.goldtreeservers.worldguardextraflags.wg.handlers.ConsoleCommandOnExitFlagHandler
+[23:36:26 INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.22.0-dev+47-faa02b5
+[23:36:26 INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
+[23:36:26 INFO]: [EssentialsChat] Enabling EssentialsChat v2.22.0-dev+47-faa02b5
+[23:36:26 INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[23:36:27 INFO]: [spark] Starting background profiler...
+[23:36:28 INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[23:36:28 INFO]: Done preparing level "Lobby" (11.764s)
+[23:36:28 INFO]: Running delayed init tasks
+[23:36:28 INFO]: [Essentials] [38;2;255;170;0mFetching version information...[0m
+[23:36:28 INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[23:36:28 INFO]: [ItemJoin] Hooked into { Multiverse-Core, WorldGuard, PlaceholderAPI }
+[23:36:28 INFO]: [com.fastasyncworldedit.bukkit.regions.WorldGuardFeature] Plugin 'WorldGuard' found. Using it now.
+[23:36:28 INFO]: [com.fastasyncworldedit.bukkit.FaweBukkit] Attempting to use plugin 'WorldGuard'
+[23:36:28 INFO]: [ItemJoin] Checking for updates...
+[23:36:28 INFO]: [ItemJoin] You are up to date!
+[23:36:28 WARN]: [Essentials] [38;2;170;0;0mYou're [38;2;255;85;85m10 [38;2;170;0;0mEssentialsX dev build(s) out of date![0m
+[23:36:28 WARN]: [Essentials] [38;2;170;0;0mDownload it here:[38;2;255;85;85m https://essentialsx.net/downloads.html[0m
+[23:36:28 INFO]: [ItemJoin] 1/1 Custom item(s) loaded!
+[23:36:29 WARN]: [ViaVersion] There is a newer plugin version available: 5.7.1, you're on: 5.5.0
+[23:36:29 INFO]: Done (63.060s)! For help, type "help"
+[23:36:29 INFO]: [38;2;255;170;0m0 placeholder hook(s) registered![0m
+[23:40:46 INFO]: Stopping server
+[23:40:46 INFO]: [EssentialsChat] Disabling EssentialsChat v2.22.0-dev+47-faa02b5
+[23:40:46 INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.22.0-dev+47-faa02b5
+[23:40:46 INFO]: [nLogin] Disabling nLogin v2.0.7
+[23:40:46 INFO]: [nLogin] Successful plugin core shutdown (took 0.05s)
+[23:40:46 INFO]: [ItemJoin] Disabling ItemJoin v6.1.6-RELEASE-b1117
+[23:40:46 INFO]: [WorldGuardExtraFlags] Disabling WorldGuardExtraFlags v4.2.4-SNAPSHOT
+[23:40:46 INFO]: [BungeeGuard] Disabling BungeeGuard v1.4-SNAPSHOT
+[23:40:46 INFO]: [DeluxeMenus] Disabling DeluxeMenus v1.14.1-Release
+[23:40:46 INFO]: [VoidSpawn] Disabling VoidSpawn v1.22.0
+[23:40:46 INFO]: [38;2;0;170;170m[[38;2;255;85;255mVoidSpawn[38;2;0;170;170m] [38;2;255;255;85mv1.22.0 saving config[0m
+[23:40:46 INFO]: [38;2;0;170;170m[[38;2;255;85;255mVoidSpawn[38;2;0;170;170m] [38;2;255;255;85mv1.22.0 disabled[0m
+[23:40:46 INFO]: [Essentials] Disabling Essentials v2.22.0-dev+47-faa02b5
+[23:40:46 INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.9.3
+[23:40:46 INFO]: [Multiverse-Core] Disabling Multiverse-Core v5.5.0
+[23:40:46 INFO]: [Multiverse-Core] - Disabled
+[23:40:46 INFO]: [WorldGuard] Disabling WorldGuard v7.0.14+2339-43997ec
+[23:40:46 INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
+[23:40:46 INFO]: [LuckPerms] Disabling LuckPerms v5.5.0
+[23:40:46 INFO]: [LuckPerms] Starting shutdown process...
+[23:40:46 INFO]: [LuckPerms] Closing storage...
+[23:40:46 INFO]: [LuckPerms] Goodbye!
+[23:40:46 INFO]: [ViaBackwards] Disabling ViaBackwards v5.7.0
+[23:40:46 INFO]: [VoidGen] Disabling VoidGen v2.3.4
+[23:40:46 INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.7
+[23:40:46 INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.14.4-SNAPSHOT-1258+9dd0c7f
+[23:40:46 INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[23:40:46 INFO]: [ViaVersion] Disabling ViaVersion v5.5.0
+[23:40:46 INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[23:40:46 INFO]: Saving players
+[23:40:46 INFO]: Saving worlds
+[23:40:46 INFO]: Saving chunks for level 'ServerLevel[Lobby]'/minecraft:overworld
+[23:40:46 INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'Lobby'
+[23:40:46 INFO]: [ChunkHolderManager] Halted chunk system for world 'Lobby'
+[23:40:46 INFO]: [ChunkHolderManager] Saving all chunkholders for world 'Lobby'
+[23:40:47 INFO]: [ChunkHolderManager] Saved 49 block chunks, 49 entity chunks, 0 poi chunks in world 'Lobby' in 0.59s
+[23:40:47 INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'Lobby'
+[23:40:47 INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'Lobby'
+[23:40:47 INFO]: ThreadedAnvilChunkStorage (Lobby): All chunks are saved
+[23:40:47 INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[23:40:47 INFO]: Waiting for all RegionFile I/O tasks to complete...
+[23:40:47 INFO]: All RegionFile I/O tasks to complete
+[23:40:47 INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[23:40:47 INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

@@ -1,0 +1,147 @@
+info:
+  namespace: blueflame
+items:
+  blueflame_axe:
+    display_name: Blueflame Axe
+    permission: blueflame.axe
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: axe
+  blueflame_battle_axe:
+    display_name: Blueflame Battle Axe
+    permission: blueflame.battle_axe
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: battle_axe
+  blueflame_blade:
+    display_name: Blueflame Blade
+    permission: blueflame.blade
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: blade
+  blueflame_bow:
+    display_name: Blueflame Bow
+    permission: blueflame.bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+  blueflame_chest:
+    display_name: Blueflame Chest
+    permission: blueflame.chest
+    resource:
+      material: PAPER
+      generate: false
+      model_path: chest
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: false
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: false
+  blueflame_crossbow:
+    display_name: Blueflame Crossbow
+    permission: blueflame.crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow
+  blueflame_fishing_rod:
+    display_name: Blueflame Fishing Rod
+    permission: blueflame.fishing_rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+  blueflame_hoe:
+    display_name: Blueflame Hoe
+    permission: blueflame.hoe
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: hoe
+  blueflame_key:
+    display_name: Blueflame Key
+    permission: blueflame.key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: key
+  blueflame_pickaxe:
+    display_name: Blueflame Pickaxe
+    permission: blueflame.pickaxe
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: pickaxe
+  blueflame_shield:
+    display_name: Blueflame Shield
+    permission: blueflame.shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+  blueflame_shovel:
+    display_name: Blueflame Shovel
+    permission: blueflame.shovel
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: shovel
+  blueflame_sickle:
+    display_name: Blueflame Sickle
+    permission: blueflame.sickle
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: sickle
+  blueflame_spear:
+    display_name: Blueflame Spear
+    permission: blueflame.spear
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: spear
+  blueflame_staff:
+    display_name: Blueflame Staff
+    permission: blueflame.staff
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: staff
+  blueflame_sword:
+    display_name: Blueflame Sword
+    permission: blueflame.sword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: sword
+  blueflame_wings:
+    display_name: Blueflame Wings
+    permission: blueflame.wings
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wings
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165
+
+#6d6a89f17823566d406a05035b07c188

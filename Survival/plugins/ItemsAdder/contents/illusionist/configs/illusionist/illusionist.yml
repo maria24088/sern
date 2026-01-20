@@ -1,0 +1,132 @@
+info:
+  namespace: illusionist
+items:
+  mystical_card_illusionist:
+    display_name: "mystical_card_illusionist"
+    permission: mystical_card_illusionist
+    resource:
+      material: STONE_SWORD
+      model_id: 2051
+      generate: false
+      model_path: illusionist_model/mystical_card_illusionist
+  mystical_card_illusionist_shiny:
+    display_name: "mystical_card_illusionist_shiny"
+    permission: mystical_card_illusionist_shiny
+    resource:
+      material: STONE_SWORD
+      model_id: 2052
+      generate: false
+      model_path: illusionist_model/mystical_card_illusionist_shiny
+  icon_card_throw:
+    display_name: "icon_card_throw"
+    permission: icon_card_throw
+    resource:
+      material: COAL
+      model_id: 2160
+      generate: false
+      model_path: illusionist_model/icon_card_throw
+  icon_mirage_slot:
+    display_name: "icon_mirage_slot"
+    permission: icon_mirage_slot
+    resource:
+      material: COAL
+      model_id: 2161
+      generate: false
+      model_path: illusionist_model/icon_mirage_slot
+  icon_mirror_dimension:
+    display_name: "icon_mirror_dimension"
+    permission: icon_mirror_dimension
+    resource:
+      material: COAL
+      model_id: 2162
+      generate: false
+      model_path: illusionist_model/icon_mirror_dimension
+  icon_mirror_needles:
+    display_name: "icon_mirror_needles"
+    permission: icon_mirror_needles
+    resource:
+      material: COAL
+      model_id: 2163
+      generate: false
+      model_path: illusionist_model/icon_mirror_needles
+  icon_mirror_shuriken:
+    display_name: "icon_mirror_shuriken"
+    permission: icon_mirror_shuriken
+    resource:
+      material: COAL
+      model_id: 2164
+      generate: false
+      model_path: illusionist_model/icon_mirror_shuriken
+  icon_phantom_blink:
+    display_name: "icon_phantom_blink"
+    permission: icon_phantom_blink
+    resource:
+      material: COAL
+      model_id: 2165
+      generate: false
+      model_path: illusionist_model/icon_phantom_blink
+  icon_queen_tarot:
+    display_name: "icon_queen_tarot"
+    permission: icon_queen_tarot
+    resource:
+      material: COAL
+      model_id: 2166
+      generate: false
+      model_path: illusionist_model/icon_queen_tarot
+  illusion_impact_1:
+    display_name: "illusion_impact_1"
+    permission: illusion_impact_1
+    resource:
+      material: PAPER
+      model_id: 2873
+      generate: false
+      model_path: illusionist_model/illusion_impact_1
+  illusion_impact_2:
+    display_name: "illusion_impact_2"
+    permission: illusion_impact_2
+    resource:
+      material: PAPER
+      model_id: 2874
+      generate: false
+      model_path: illusionist_model/illusion_impact_2
+  illusion_impact_3:
+    display_name: "illusion_impact_3"
+    permission: illusion_impact_3
+    resource:
+      material: PAPER
+      model_id: 2875
+      generate: false
+      model_path: illusionist_model/illusion_impact_3
+  illusion_impact_4:
+    display_name: "illusion_impact_4"
+    permission: illusion_impact_4
+    resource:
+      material: PAPER
+      model_id: 2876
+      generate: false
+      model_path: illusionist_model/illusion_impact_4
+  illusion_impact_5:
+    display_name: "illusion_impact_5"
+    permission: illusion_impact_5
+    resource:
+      material: PAPER
+      model_id: 2877
+      generate: false
+      model_path: illusionist_model/illusion_impact_5
+  illusion_impact_6:
+    display_name: "illusion_impact_6"
+    permission: illusion_impact_6
+    resource:
+      material: PAPER
+      model_id: 2878
+      generate: false
+      model_path: illusionist_model/illusion_impact_6
+  illusion_impact_7:
+    display_name: "illusion_impact_7"
+    permission: illusion_impact_7
+    resource:
+      material: PAPER
+      model_id: 2879
+      generate: false
+      model_path: illusionist_model/illusion_impact_7
+  

@@ -1,0 +1,47 @@
+Sounds:
+  Enabled: true
+  ProtocolLibSound: false
+  # # More sounds at https://www.spigotmc.org/wiki/cc-sounds-list/
+  Delay: entity_tnt_primed
+  Success: entity_generic_explode
+Titles:
+  Enabled: true # Enable the titles effect feature
+  # # All support %player% %x% %y% and %z% placeholders
+  NoDelay: # Only triggers when there is no delay
+    Title: '&eFinding a safe location...'
+    Subtitle: '&7Hang tight!'
+    SendMessage: true
+  Teleport:
+    Title: '&aYou''ve been teleported!'
+    Subtitle: '&2%x% %y% %z%'
+    SendMessage: true # Allow the teleport success message in chat
+  Delay:
+    Title: '&eFinding a safe location... Don''t move!'
+    Subtitle: '&7Teleporting in &f%time%&7 seconds...'
+    SendMessage: true # Allow the teleport delay message in chat
+  Cancelled:
+    Title: '&cYou moved!'
+    Subtitle: '&7Teleportation has been cancelled.'
+    SendMessage: true # Allow the cancelled message in chat too
+  Loading:
+    Title: '&eFinding a safe location... Don''t move!'
+    Subtitle: '&7We''re just generating some chunks...'
+    SendMessage: true # Allow the loading message in chat
+  Failed:
+    Title: '&cTeleport failed!'
+    Subtitle: '&7No safe spots located'
+    SendMessage: true
+Particles: # Use `rtp info particles` for a list of particles
+  Enabled: false
+  Type: # list of particle types at https://github.com/ByteZ1337/ParticleLib/blob/master/src/main/java/xyz/xenondevs/particle/ParticleEffect.java
+    - EXPLOSION_NORMAL
+    - CRIT
+  Shape: EXPLODE # Types available are "Scan, Teleport and Explode", or use `/rtp info shapes` for a list of shapes
+Invincible: # Amount of time a player should not take damage for
+  Enabled: true
+  Seconds: 5
+Potions: # Use `/rtp info potion_effects` for a list of effects
+  Enabled: false
+  Types: # Format <potion_name>:[duration_ticks]:[amplifier] #Default duration=60, amplifier=1
+    - Blindness:60:3
+    - Invisibility:60:3

@@ -1,0 +1,2010 @@
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║       ░███████╗   ██╗░░░██╗███████╗░██████╗░░█████╗░░██████╗   ░███████╗           ║
+# ║       ██╔██╔══╝   ██║░░░██║██╔════╝██╔════╝░██╔══██╗██╔════╝   ██╔██╔══╝           ║
+# ║       ╚██████╗░   ╚██╗░██╔╝█████╗░░██║░░██╗░███████║╚█████╗░   ╚██████╗░           ║
+# ║       ░╚═██╔██╗   ░╚████╔╝░██╔══╝░░██║░░╚██╗██╔══██║░╚═══██╗   ░╚═██╔██╗           ║
+# ║       ███████╔╝   ░░╚██╔╝░░███████╗╚██████╔╝██║░░██║██████╔╝   ███████╔╝           ║
+# ║       ╚══════╝░   ░░░╚═╝░░░╚══════╝░╚═════╝░╚═╝░░╚═╝╚═════╝░   ╚══════╝░           ║
+# ║                                                                                    ║
+# ║  HELLO, THIS IS A PREMIUM PLUGIN FOR MINECRAFT!                                    ║
+# ║  Author - MyShimado. For all questions in the discord.                             ║
+# ║  All numbers, except slots and model data should be with dot -> 10.0               ║
+# ║                                                                                    ║
+# ║  This plugin is premium. You can buy it here:                                      ║
+# ║  Spigot (find on my profile): https://www.spigotmc.org/members/myshimado.1240004/  ║
+# ║  Polymart: https://polymart.org/resource/fungames.3549                             ║
+# ║  BuildByBit: https://builtbybit.com/resources/vegas-casino-15-game-modes.21237/    ║
+# ║                                                                                    ║
+# ║             !!! TITLE SHOULD BE UNIQUE TO EACH GUI, AND NOT ' ' !!!                ║
+# ║                                                                                    ║
+# ║                   DISCORD: https://discord.com/invite/ahDTQRX6Fb                   ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+# ╔═════════════════════════════════════════╗
+# ║  DO NOT CHANGE! THIS IS UPDATE CONTROL  ║
+# ╚═════════════════════════════════════════╝
+Version: Gargantua v.22
+
+
+# ╔═════════════════════════════════════════════════════╗
+# ║                BASIC GENERAL SETTINGS               ║
+# ║  Languages: en, ru, de, fr, es, pl, ua, ch, cz, ta  ║
+# ╚═════════════════════════════════════════════════════╝
+
+Language: es
+Send message to op (discord support): true
+Send victory message: false
+Spawn fireworks (victory): false
+Use PAPI: true
+Use statistics: true
+Update textures after restart (custom model data): true
+
+
+# ╔═════════════════════════════════════════════════════════════════════╗
+# ║                        WORLD SETTINGS                               ║
+# ║  FORCED LOADING OF WORLDS.                                          ║
+# ║  IF YOU HAVE RENAMED WORLDS AND THEY ARE NOT LOADED - LIST THEM.    ║
+# ║  IF YOU HAVE CUSTOM WORLDS EXCEPT WORLD, NETHER, END - ADD IT HERE  ║
+# ║  YOU CAN DISABLE CLEARING TO AVOID ERROR IN THE CONSOLE             ║
+# ╚═════════════════════════════════════════════════════════════════════╝
+
+Forced loading of worlds: true
+Worlds to force load: []
+Clear all drop near tables (when starting the server): true
+
+
+# ╔════════════════════════════════════════════════════════════════╗
+# ║                      COMMAND GAME NAMES                        ║
+# ║  YOU CAN CHANGE THE NAME OF THE GAMES WHEN USING THE COMMAND.  ║
+# ╚════════════════════════════════════════════════════════════════╝
+
+Roulette command name: Roulette
+Darts command name: Darts
+Drums command name: Drums
+Races command name: Races
+Pyramid command name: Pyramid
+Stairs command name: Stairs
+Lottery command name: Lottery
+Crash command name: Crash
+Classic command name: Classic
+BlackJack command name: BlackJack
+RockPaperScissors command name: RockPaperScissors
+TicTacToe command name: TicTacToe
+DeadMansChest command name: DeadMansChest
+Poker command name: Poker
+Dice command name: Dice
+Minesweeper command name: Minesweeper
+
+
+# ╔═════════════════════════════════════════════════════════════════╗
+# ║                          ECONOMY                                ║
+# ║  IF VAULT IS NOT INSTALLED OR THIS OPTION IS ENABLED            ║
+# ║  THE ECONOMY INSIDE THE PLUGIN WILL BE USED.                    ║
+# ║  PURCHASE AND SELL CURRENCY WILL BE FOR RESOURCES IN GUI SHOP.  ║
+# ╚═════════════════════════════════════════════════════════════════╝
+
+Use vegas economy: false
+Maximum difference coefficient between bets to start the game (for some modes): 20.0
+Transfer all winning money to your balance (not to chips): false
+
+
+# ╔═════════╗
+# ║  CHIPS  ║
+# ╚═════════╝
+
+# ╔════════════════════════════════════════════════════════╗
+# ║  [Material, Price, Enchant or not, Custom model data]  ║
+# ╚════════════════════════════════════════════════════════╝
+
+Chips materials:
+- - DIAMOND
+  - 0.0
+  - true
+  - 5680101
+- - DIAMOND
+  - 200.0
+  - true
+  - 5680102
+- - DIAMOND
+  - 500.0
+  - true
+  - 5680103
+- - DIAMOND
+  - 1000.0
+  - true
+  - 5680104
+- - DIAMOND
+  - 5000.0
+  - true
+  - 5680105
+- - DIAMOND
+  - 10000.0
+  - true
+  - 5680106
+- - DIAMOND
+  - 25000.0
+  - true
+  - 5680107
+- - DIAMOND
+  - 50000.0
+  - true
+  - 5680108
+- - DIAMOND
+  - 100000.0
+  - true
+  - 5680109
+- - DIAMOND
+  - 250000.0
+  - true
+  - 5680110
+Sell chips with a right click: true
+Disable copy chips in creative: false
+Refund chips when inventory is closed: false
+Chip denominations enable: false
+Chip denominations:
+- 100000.0
+- 50000.0
+- 10000.0
+- 5000.0
+- 1000.0
+- 500.0
+- 100.0
+- 50.0
+- 10.0
+- 1.0
+Add balances from the amount to the account (true) or delete (false): true
+
+
+# ╔══════════════════════════════════════════════════╗
+# ║  JACKPOT - CAN BE PICKED IN SINGLE PLAYER MODES  ║
+# ╚══════════════════════════════════════════════════╝
+
+Jackpot enable: false
+Jackpot chance: 0.05
+Jackpot min coefficient: 10.0
+Jackpot max coefficient: 50.0
+
+
+# ╔═════════════════════════════════════════════════════╗
+# ║                       TABLE                         ║
+# ║  YOU CAN EDIT BLOCK OF CASINO TABLE.                ║
+# ║  BY THE WAY - ENDERCHEST, CHEST ARE PERFECT BLOCK.  ║
+# ║  YOU CAN ADD COMMON BLOCKS, BUT YOU WILL NEED       ║
+# ║  TO EDIT ARMOR STAND MOVE Y TO GET GOOD ONE.        ║
+# ╚═════════════════════════════════════════════════════╝
+
+# ╔═════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+# ║  Block material; Custom model data; Name; Carpet color; Concrete color; Animation name; Animation drop  ║
+# ╚═════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+Casino blocks:
+- - BARRIER
+  - 66601
+  - ROULETTE
+  - LIME
+  - RED
+  - VOLCANIC
+  - &id001 []
+- - BARRIER
+  - 66602
+  - DARTS
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66603
+  - DRUMS
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66604
+  - RACES
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66605
+  - PYRAMID
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66606
+  - STAIRS
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66607
+  - LOTTERY
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66608
+  - CRASH
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66609
+  - CLASSIC
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66610
+  - BLACKJACK
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66611
+  - ROCKPAPERSCISSORS
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66612
+  - TICTACTOE
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66613
+  - DEADMANSCHEST
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66614
+  - POKER
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66615
+  - DICE
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66616
+  - MINESWEEPER
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+- - BARRIER
+  - 66617
+  - DOUBLEROULETTE
+  - LIME
+  - RED
+  - VOLCANIC
+  - *id001
+Casino center the custom model: true
+Casino block armor stand move Y: 0
+Spawn glass on the casino table: false
+Spawn carpet on the casino table: false
+Spawn color cells on the casino table: false
+Spawn particles on the casino table: false
+
+
+# ╔═══════════════════════════════════════════════════════════════════╗
+# ║  DON'T TURN IT, IF YOUR SERVER DOESN'T CLEAR NAMED DROPPED ITEMS  ║
+# ╚═══════════════════════════════════════════════════════════════════╝
+
+Spawn drop on the casino table: false
+Casino table drop chance: 0.5
+Number of dropped items on the casino table: 10
+
+
+# ╔═══════════════════════════════════════════════════════╗
+# ║  MYSQL DATABASE FOR STATISTIC (VICTORIES AND LOSSES)  ║
+# ╚═══════════════════════════════════════════════════════╝
+
+MySQL enable: false
+Vault database:
+  host: localhost
+  port: 3306
+  database: db
+  user: username
+  password: password
+
+
+# ╔═════════════════════════════════════════════════════════╗
+# ║                        MAIN GUI                         ║
+# ║  IF YOU WANT TO DISABLE SLOT ENTER: -1 (FOR ARRAY: [])  ║
+# ║  Chip slots: FIRST - SLOT, SECOND - PRICE               ║
+# ╚═════════════════════════════════════════════════════════╝
+
+Hide the game icon in the menu when no access rights are available: false
+Change text color in menus: true
+Change glass color in menus: false
+Change color speed: 5
+Roulette position: 10
+Darts position: 11
+Drums position: 12
+Races position: 13
+Pyramid position: 14
+Stairs position: 15
+Lottery position: 16
+Crash position: 19
+Classic position: 20
+BlackJack position: 21
+RockPaperScissors position: 22
+TicTacToe position: 23
+DeadMansChest position: 24
+Poker position: 25
+Dice position: 28
+Minesweeper position: 29
+Statistics slot: 53
+Shop slot: 45
+
+# [Slot, Material, Custom model data]
+Chips slots:
+- - '48'
+  - STICK
+  - 100.0
+  - true
+  - 5658122
+- - '49'
+  - STICK
+  - 1000.0
+  - true
+  - 5658123
+- - '50'
+  - STICK
+  - 10000.0
+  - true
+  - 5658124
+
+
+# ╔═════════════════════════════════════════════════════════╗
+# ║                  MAIN GUI(FOR ONE GAME)                 ║
+# ║  IF YOU WANT TO DISABLE SLOT ENTER: -1 (FOR ARRAY: [])  ║
+# ║  Chip slots one game: FIRST - SLOT, SECOND - PRICE      ║
+# ╚═════════════════════════════════════════════════════════╝
+
+Open game immediately: false
+Statistics slot one game: 53
+Shop slot one game: 45
+Game slot one game: 22
+
+# [Slot, Material, Custom model data]
+Chips slots one game:
+- - '48'
+  - STICK
+  - 100.0
+  - true
+  - 5658122
+- - '49'
+  - STICK
+  - 1000.0
+  - true
+  - 5658123
+- - '50'
+  - STICK
+  - 10000.0
+  - true
+  - 5658124
+
+# [Slot, Material, Custom model data]
+Main gui for one game empty slots:
+- - 51
+  - DIAMOND
+  - 5660101
+- - 52
+  - DIAMOND
+  - 5660102
+
+
+# ╔═════════════════════════════════════════╗
+# ║              STATISTICS GUI             ║
+# ║  IF YOU WANT TO DISABLE SLOT ENTER: -1  ║
+# ╚═════════════════════════════════════════╝
+
+Statistics icon material: BARRIER
+Statistics icon custom model data: 5600000
+Total games material: BARRIER
+Total games custom model data: 5600000
+Total games slot: 13
+Victories material: BARRIER
+Victories custom model data: 5600000
+Victories slot: 11
+Little victories material: BARRIER
+Little victories custom model data: 5600000
+Little victories slot: -1
+Defeats material: BARRIER
+Defeats custom model data: 5600000
+Defeats slot: 15
+Won money material: BARRIER
+Won money custom model data: 5600000
+Won money slot: 21
+Lost money material: BARRIER
+Lost money custom model data: 5600000
+Lost money slot: 23
+
+# [Slot, Material, Custom model data]
+Statistics menu empty slots:
+- - 44
+  - DIAMOND
+  - 5660105
+- - 53
+  - DIAMOND
+  - 56601
+
+
+# ╔═════════════════════════════════════════════════════════════════════════╗
+# ║                            SHOP GUI                                     ║
+# ║  HERE YOU CAN EXPOSE ITEMS THAT CAN BE SOLD OR BUY.                     ║
+# ║  MONEY WILL BE TAKEN FROM THE MAIN BALANCE OR FROM THE CASINO ACCOUNT.  ║
+# ╚═════════════════════════════════════════════════════════════════════════╝
+
+Shop icon material: BARRIER
+Shop icon custom model data: 5600000
+Shop balance material: BARRIER
+Shop balance custom model data: 5600000
+Shop balance slot: 49
+
+# [Slot, Material, Custom model data]
+Shop menu empty slots:
+- - 44
+  - DIAMOND
+  - 5660103
+- - 53
+  - DIAMOND
+  - 5660104
+
+
+# ╔═══════════════════════════════════════════════╗
+# ║                ROULETTE PARAMS                ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT  ║
+# ╚═══════════════════════════════════════════════╝
+
+Roulette place for bet slot: 11
+Roulette lever slots:
+- 20
+Roulette minimum amount to start: 0.0
+Roulette icon material: STICK
+Roulette lever inactive material: BARRIER
+Roulette lever active material: BARRIER
+Roulette lever rolling material: BARRIER
+Roulette place for bet material: BARRIER
+Roulette icon custom model data: 5658101
+Roulette lever inactive custom model data: 5600000
+Roulette lever active custom model data: 5600000
+Roulette lever rolling custom model data: 5600000
+Roulette place for bet custom model data: 5600000
+Roulette block 1 cell material: STICK
+Roulette block 2 cell material: STICK
+Roulette block 1 cell custom model data: 5610107
+Roulette block 2 cell custom model data: 5610108
+Roulette bonus material: BARRIER
+Roulette bonus custom model data: 5600000
+Roulette bonus prise 1 drop coefficient: 1.0
+Roulette bonus prise 2 drop coefficient: 1.5
+Roulette bonus prise 3 drop coefficient: 0.6
+Roulette easy mode button slot: 16
+Roulette easy mode material: STICK
+Roulette easy mode material (active): STICK
+Roulette easy mode button custom model data: 5610101
+Roulette easy mode button custom model data (active): 5610102
+Roulette medium mode button slot: 25
+Roulette medium mode material: STICK
+Roulette medium mode material (active): STICK
+Roulette medium mode button custom model data: 5610103
+Roulette medium mode button custom model data (active): 5610104
+Roulette hard mode button slot: 34
+Roulette hard mode material: STICK
+Roulette hard mode material (active): STICK
+Roulette hard mode button custom model data: 5610105
+Roulette hard mode button custom model data (active): 5610106
+Roulette easy mode win chance: 22.0
+Roulette medium mode win chance: 12.0
+Roulette hard mode win chance: 7.0
+Roulette easy mode drop coefficient: 3.0
+Roulette medium mode drop coefficient: 6.0
+Roulette hard mode drop coefficient: 10.0
+
+# [Slot, Material, Custom model data]
+Roulette empty slots:
+- - 35
+  - DIAMOND
+  - 5670101
+- - 44
+  - DIAMOND
+  - 5670102
+
+
+# ╔═══════════════════════════════════════════════╗
+# ║                 DARTS PARAMS                  ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT  ║
+# ╚═══════════════════════════════════════════════╝
+
+Darts place for bet slot: 25
+Darts lever slots:
+- 34
+Darts minimum amount to start: 0.0
+Darts icon material: STICK
+Darts lever inactive material: STICK
+Darts lever active material: STICK
+Darts lever rolling material: STICK
+Darts place for bet material: BARRIER
+Darts icon custom model data: 5658102
+Darts lever inactive custom model data: 5611101
+Darts lever active custom model data: 5611102
+Darts lever rolling custom model data: 5611103
+Darts place for bet custom model data: 5600000
+Darts concrete custom model data: 5600000
+
+# [Material, Custom model data]
+Darts moving items:
+- - STICK
+  - 5611108
+- - STICK
+  - 5611104
+- - STICK
+  - 5611106
+- - STICK
+  - 5611107
+- - CREEPER_HEAD
+  - 5611110
+- - STICK
+  - 5611105
+- - STICK
+  - 5611108
+- - STICK
+  - 5611105
+- - PLAYER_HEAD
+  - 5611111
+- - PLAYER_HEAD
+  - 5611109
+- - PLAYER_HEAD
+  - 5611112
+
+Darts speed: 0.6
+Darts drop coefficient: 3.0
+Darts dragon drop coefficient: 10.0
+Darts number of dragon heads in the list: 1
+Darts dragon custom model data: 5611113
+Darts game duration (changes of figures): 60
+
+# [Slot, Material, Custom model data]
+Darts empty slots:
+- - 35
+  - DIAMOND
+  - 5670103
+- - 44
+  - DIAMOND
+  - 5670104
+
+
+# ╔═══════════════════════════════════════════════╗
+# ║                 DRUMS PARAMS                  ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT  ║
+# ╚═══════════════════════════════════════════════╝
+
+Drums place for bet slot: 49
+Drums lever slots:
+- 48
+- 50
+Drums minimum amount to start: 0.0
+Drums icon material: STICK
+Drums lever inactive material: STICK
+Drums lever active material: STICK
+Drums lever rolling material: STICK
+Drums place for bet material: BARRIER
+Drums icon custom model data: 5658103
+Drums lever inactive custom model data: 5612101
+Drums lever active custom model data: 5612102
+Drums lever rolling custom model data: 5612103
+Drums place for bet custom model data: 5600000
+
+# [Material, Custom model data]
+Drums moving items:
+- - STICK
+  - 5612104
+- - DIAMOND
+  - 5612105
+- - EMERALD
+  - 5612106
+- - DIRT
+  - 5612107
+
+Drums speed: 0.1
+Drums cube drop coefficient: 3.5
+Drums horizontal line drop coefficient: 6.0
+Drums horizontal center line drop coefficient: 25.0
+Drums vertical line drop coefficient: 10.0
+Drums obliquely line drop coefficient: 10.0
+Drums 2 obliquely lines (cross) drop coefficient: 50.0
+Drums full 25 drop coefficient: 100.0
+Drums dragon drop coefficient: 5.0
+Drums number of dragon heads in the list: 25
+Drums dragon custom model data: 5612108
+
+# [Slot, Material, Custom model data]
+Drums empty slots:
+- - 44
+  - DIAMOND
+  - 5670105
+- - 53
+  - DIAMOND
+  - 5670106
+
+
+# ╔═══════════════════════════════════════════════╗
+# ║                 RACES PARAMS                  ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT  ║
+# ╚═══════════════════════════════════════════════╝
+
+Races place for bet slot: 49
+Races lever slots:
+- 48
+- 50
+Races minimum amount to start: 0.0
+Races icon material: STICK
+Races lever inactive material: STICK
+Races lever active material: STICK
+Races lever rolling material: STICK
+Races place for bet material: BARRIER
+Races icon custom model data: 5658104
+Races lever inactive custom model data: 5613101
+Races lever active custom model data: 5613101
+Races lever rolling custom model data: 5613102
+Races place for bet custom model data: 5600000
+Races finish block 1 material: STICK
+Races finish block 2 material: STICK
+Races finish block 1 custom model data: 5613103
+Races finish block 2 custom model data: 5613104
+Races horse 1 material: STICK
+Races horse 2 material: STICK
+Races horse 3 material: STICK
+Races horse 4 material: STICK
+Races horse 1 custom model data: 5613105
+Races horse 2 custom model data: 5613106
+Races horse 3 custom model data: 5613107
+Races horse 4 custom model data: 5613108
+Races head number 1 material: STICK
+Races head number 2 material: STICK
+Races head number 3 material: STICK
+Races head number 1 custom model data: 5613109
+Races head number 2 custom model data: 5613110
+Races head number 3 custom model data: 5613111
+Races speed: 0.25
+Races drop coefficient: 3.0
+
+# [Slot, Material, Custom model data]
+Races empty slots:
+- - 52
+  - DIAMOND
+  - 5670107
+- - 53
+  - DIAMOND
+  - 5670108
+- - 49
+  - BARRIER
+  - 5600000
+
+
+# ╔═══════════════════════════════════════════════╗
+# ║                PYRAMID PARAMS                 ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT  ║
+# ╚═══════════════════════════════════════════════╝
+
+Pyramid minimum amount to start: 0.0
+Pyramid icon material: STICK
+Pyramid ball material: STICK
+Pyramid main blocks material: BARRIER
+Pyramid hopper material: BARRIER
+Pyramid tnt material: BARRIER
+Pyramid place for bet material: STICK
+Pyramid rare star material: STICK
+Pyramid icon custom model data: 5658105
+Pyramid place for bet custom model data: 5614101
+Pyramid ball custom model data: 5614102
+Pyramid main blocks custom model data: 5600000
+Pyramid hopper custom model data: 5600000
+Pyramid tnt custom model data: 5600000
+Pyramid rare star custom model data: 5614103
+Pyramid chance to spawn rare head: 5.0
+Pyramid drop coefficient: 3.0
+Pyramid star drop coefficient: 20.0
+
+# [Slot, Material, Custom model data]
+Pyramid empty slots:
+- - 51
+  - DIAMOND
+  - 5670109
+- - 53
+  - DIAMOND
+  - 5670110
+
+
+# ╔═══════════════════════════════════════════════╗
+# ║                 STAIRS PARAMS                 ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT  ║
+# ╚═══════════════════════════════════════════════╝
+
+Stairs place for bet slot: 25
+Stairs lever slots:
+- 34
+Stairs minimum amount to start: 0.0
+Stairs icon material: STICK
+Stairs lever inactive material: STICK
+Stairs lever active material: STICK
+Stairs lever rolling material: STICK
+Stairs place for bet material: BARRIER
+Stairs icon custom model data: 5658106
+Stairs lever inactive custom model data: 5615101
+Stairs lever active custom model data: 5615102
+Stairs lever rolling custom model data: 5615103
+Stairs place for bet custom model data: 5600000
+Stairs opened block material: STICK
+Stairs clicked block material: STICK
+Stairs closed block material: BARRIER
+Stairs tnt block material: STICK
+Stairs opened block custom model data: 5615104
+Stairs clicked block custom model data: 5615105
+Stairs closed block custom model data: 5600000
+Stairs tnt custom model data: 5615106
+Stairs booster 1 material: BARRIER
+Stairs booster 2 material: BARRIER
+Stairs booster 3 material: BARRIER
+Stairs booster 4 material: BARRIER
+Stairs booster 5 material: BARRIER
+Stairs booster 6 material: BARRIER
+Stairs booster 1 custom model data: 5600000
+Stairs booster 2 custom model data: 5600000
+Stairs booster 3 custom model data: 5600000
+Stairs booster 4 custom model data: 5600000
+Stairs booster 5 custom model data: 5600000
+Stairs booster 6 custom model data: 5600000
+Stairs drop 1 level coefficient: 0.3
+Stairs drop 2 level coefficient: 0.5
+Stairs drop 3 level coefficient: 0.8
+Stairs drop 4 level coefficient: 1.3
+Stairs drop 5 level coefficient: 2.0
+Stairs drop 6 level coefficient: 3.0
+
+# [Slot, Material, Custom model data]
+Stairs empty slots:
+- - 44
+  - DIAMOND
+  - 5670111
+- - 53
+  - DIAMOND
+  - 5670112
+
+
+# ╔═══════════════════════════════════════════════════════════════════════════════════╗
+# ║                LOTTERY PARAMS                                                     ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT                                      ║
+# ║  Lottery opened block materials:                                                  ║
+# ║  - [HOW MUCH ELEMENTS IN ARRAY, MATERIAL, COEFFICIENT, TITLE, CUSTOM MODEL DATA]  ║
+# ╚═══════════════════════════════════════════════════════════════════════════════════╝
+
+Lottery place for bet slot: 49
+Lottery lever slots:
+- 48
+- 50
+Lottery minimum amount to start: 0.0
+Lottery icon material: STICK
+Lottery lever inactive material: BARRIER
+Lottery lever active material: BARRIER
+Lottery lever rolling material: BARRIER
+Lottery place for bet material: BARRIER
+Lottery icon custom model data: 5658107
+Lottery lever inactive custom model data: 5600000
+Lottery lever active custom model data: 5600000
+Lottery lever rolling custom model data: 5600000
+Lottery place for bet custom model data: 5600000
+Lottery closed block custom model data: 5600000
+Lottery closed block material: BARRIER
+
+# [How many items can be of this element in the deck, Material, Coefficient, Displayed name, Custom model data]
+Lottery opened block materials:
+- - 100
+  - STICK
+  - 0.0
+  - ''
+  - 5616144
+- - 10
+  - STICK
+  - 0.01
+  - '&b&lx0.01'
+  - 5616101
+- - 10
+  - STICK
+  - 0.02
+  - '&b&lx0.02'
+  - 5616102
+- - 10
+  - STICK
+  - 0.03
+  - '&b&lx0.03'
+  - 5616103
+- - 10
+  - STICK
+  - 0.04
+  - '&b&lx0.04'
+  - 5616104
+- - 10
+  - STICK
+  - 0.05
+  - '&b&lx0.05'
+  - 5616105
+- - 10
+  - STICK
+  - 0.06
+  - '&b&lx0.06'
+  - 5616106
+- - 10
+  - STICK
+  - 0.07
+  - '&b&lx0.07'
+  - 5616107
+- - 10
+  - STICK
+  - 0.08
+  - '&b&lx0.08'
+  - 5616108
+- - 10
+  - STICK
+  - 0.09
+  - '&b&lx0.09'
+  - 5616109
+- - 10
+  - STICK
+  - 0.1
+  - '&b&lx0.10'
+  - 5616110
+- - 10
+  - STICK
+  - 0.11
+  - '&b&lx0.11'
+  - 5616111
+- - 10
+  - STICK
+  - 0.12
+  - '&b&lx0.12'
+  - 5616112
+- - 10
+  - STICK
+  - 0.13
+  - '&b&lx0.13'
+  - 5616113
+- - 10
+  - STICK
+  - 0.14
+  - '&b&lx0.14'
+  - 5616114
+- - 10
+  - STICK
+  - 0.15
+  - '&b&lx0.15'
+  - 5616115
+- - 10
+  - STICK
+  - 0.16
+  - '&b&lx0.16'
+  - 5616116
+- - 10
+  - STICK
+  - 0.17
+  - '&b&lx0.17'
+  - 5616117
+- - 10
+  - STICK
+  - 0.18
+  - '&b&lx0.18'
+  - 5616118
+- - 10
+  - STICK
+  - 0.19
+  - '&b&lx0.19'
+  - 5616119
+- - 10
+  - STICK
+  - 0.2
+  - '&b&lx0.20'
+  - 5616120
+- - 2
+  - STICK
+  - 0.3
+  - '&b&lx0.3'
+  - 5616121
+- - 2
+  - STICK
+  - 0.4
+  - '&b&lx0.4'
+  - 5616122
+- - 2
+  - STICK
+  - 0.5
+  - '&b&lx0.5'
+  - 5616123
+- - 2
+  - STICK
+  - 0.6
+  - '&b&lx0.6'
+  - 5616124
+- - 2
+  - STICK
+  - 0.7
+  - '&b&lx0.7'
+  - 5616125
+- - 2
+  - STICK
+  - 0.8
+  - '&b&lx0.8'
+  - 5616126
+- - 2
+  - STICK
+  - 0.9
+  - '&b&lx0.9'
+  - 5616127
+- - 2
+  - STICK
+  - 1.0
+  - '&b&lx1'
+  - 5616128
+- - 2
+  - STICK
+  - 1.1
+  - '&b&lx1.1'
+  - 5616129
+- - 2
+  - STICK
+  - 1.2
+  - '&b&lx1.2'
+  - 5616130
+- - 2
+  - STICK
+  - 1.3
+  - '&b&lx1.3'
+  - 5616131
+- - 2
+  - STICK
+  - 1.4
+  - '&b&lx1.4'
+  - 5616132
+- - 2
+  - STICK
+  - 1.5
+  - '&b&lx1.5'
+  - 5616133
+- - 2
+  - STICK
+  - 1.6
+  - '&b&lx1.6'
+  - 5616134
+- - 2
+  - STICK
+  - 1.7
+  - '&b&lx1.7'
+  - 5616135
+- - 2
+  - STICK
+  - 1.8
+  - '&b&lx1.8'
+  - 5616136
+- - 2
+  - STICK
+  - 1.9
+  - '&b&lx1.9'
+  - 5616137
+- - 2
+  - STICK
+  - 2.0
+  - '&b&lx2'
+  - 5616138
+- - 1
+  - STICK
+  - 3.0
+  - '&b&lx3'
+  - 5616139
+- - 1
+  - STICK
+  - 4.0
+  - '&b&lx4'
+  - 5616140
+- - 1
+  - STICK
+  - 5.0
+  - '&b&lx5'
+  - 5616141
+- - 1
+  - STICK
+  - 6.0
+  - '&b&lx6'
+  - 5616142
+- - 1
+  - STICK
+  - 7.0
+  - '&b&lx7'
+  - 5616143
+
+# [Slot, Material, Custom model data]
+Lottery empty slots:
+- - 44
+  - DIAMOND
+  - 5670113
+- - 53
+  - DIAMOND
+  - 5670114
+
+
+# ╔════════════════════════════════════════════════════════════════════════════╗
+# ║                 CRASH PARAMS                                               ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT                               ║
+# ║                                                                            ║
+# ║  Crash moving materials:                                                   ║
+# ║  - [STARTS FROM COEFFICIENT, MATERIAL OF THE INTERVAL, CUSTOM MODEL DATA]  ║
+# ║                                                                            ║
+# ║  Crash moving text colors:                                                 ║
+# ║  - [STARTS FROM COEFFICIENT, COLOR OF TEXT]                                ║
+# ║                                                                            ║
+# ║  Crash drop:                                                               ║
+# ║  - [CHANCE, MIN COEFFICIENT, MAX COEFFICIENT]                              ║
+# ╚════════════════════════════════════════════════════════════════════════════╝
+
+Crash place for bet slots:
+- 37
+- 38
+- 39
+- 40
+- 41
+- 42
+- 43
+Crash lever slots:
+- 1
+Crash minimum amount to start: 0.0
+Crash icon material: STICK
+Crash moving lever material: STICK
+Crash place for bet material: BARRIER
+Crash icon custom model data: 5658108
+Crash moving lever custom model data: 5617101
+Crash place for bet custom model data: 5600000
+
+# [What coefficient does the material start with, Material, Custom model data]
+Crash moving materials:
+- - 0.0
+  - STICK
+  - 5617102
+- - 1.0
+  - STICK
+  - 5617103
+- - 2.0
+  - STICK
+  - 5617104
+- - 5.0
+  - STICK
+  - 5617105
+- - 10.0
+  - STICK
+  - 5617106
+- - 25.0
+  - STICK
+  - 5617107
+
+Crash moving text colors:
+- - 0.0
+  - '&a'
+- - 1.0
+  - '&a'
+- - 2.0
+  - '&b'
+- - 5.0
+  - '&e'
+- - 10.0
+  - '&a'
+- - 20.0
+  - '&9'
+
+# Its array of 3 numbers arrays.
+# 1 number is chance to hit this current array.
+# 2 number is min coefficient.
+# 3 number is the max coefficient.
+# Game moves from 1 array to the last. It means, that the game will end with 50% chance with coefficient 0-1.3.
+# If you are lucky the game moves to another line with chance 5%. But if game didn’t hit nothing it will hit with 100% the last line.
+# In this case last line in config has 100 at the first spot.
+Crash drop:
+- - 50.0
+  - 0.0
+  - 1.3
+- - 5.0
+  - 0.0
+  - 0.1
+- - 0.5
+  - 5.0
+  - 25.0
+- - 0.5
+  - 20.0
+  - 25.0
+- - 100.0
+  - 0.8
+  - 5.0
+
+Crash speed: 0.05
+Crash movement interval: 0.01
+Crash waiting time: 10
+Crash empty slots:
+- - 44
+  - DIAMOND
+  - 5670115
+- - 53
+  - DIAMOND
+  - 5670116
+
+
+# ╔═══════════════════════════════════════════════╗
+# ║                 CLASSIC PARAMS                ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT  ║
+# ╚═══════════════════════════════════════════════╝
+
+Classic place for bet slots:
+- 37
+- 38
+- 39
+- 40
+- 41
+- 42
+- 43
+Classic minimum amount to start: 0.0
+Classic icon material: STICK
+Classic info lever material: BARRIER
+Classic place for bet material: BARRIER
+Classic inactive block material: BARRIER
+Classic icon custom model data: 5658109
+Classic info lever custom model data: 5600000
+Classic place for bet custom model data: 5600000
+Classic inactive block custom model data: 5600000
+Classic animation enable: false
+Classic speed: 0.1
+
+# [Slot, Material, Custom model data]
+Classic empty slots:
+- - 44
+  - DIAMOND
+  - 5670117
+- - 53
+  - DIAMOND
+  - 5670118
+
+
+# ╔═══════════════════════════════════════════════╗
+# ║                BLACKJACK PARAMS               ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT  ║
+# ╚═══════════════════════════════════════════════╝
+
+BlackJack place for bet slots:
+- 0
+- 9
+- 18
+BlackJack minimum amount to start: 0.0
+BlackJack icon material: STICK
+BlackJack place for bet material: BARRIER
+BlackJack icon custom model data: 5658110
+BlackJack place for bet custom model data: 5600000
+BlackJack dealer material: BARRIER
+BlackJack hit button material: BARRIER
+BlackJack stay button material: BARRIER
+BlackJack stop button material: BARRIER
+BlackJack double button material: BARRIER
+BlackJack timer material: BARRIER
+BlackJack closed card material: PAPER
+BlackJack tnt material: STICK
+BlackJack draw material: STICK
+BlackJack dealer custom model data: 5600000
+BlackJack hit button custom model data: 5600000
+BlackJack stay button custom model data: 5600000
+BlackJack stop button custom model data: 5600000
+BlackJack double button custom model data: 5600000
+BlackJack timer custom model data: 5600000
+BlackJack tnt custom model data: 5600101
+BlackJack draw custom model data: 5600102
+BlackJack closed card custom model data: 5606101
+BlackJack dealer chance to hit 19 - 21 points: 40.0
+BlackJack dealer bet coefficient: 1.5
+BlackJack leave percent: 30.0
+BlackJack dealer stops on count: 17
+
+# [Slot, Material, Custom model data]
+BlackJack empty slots:
+- - 44
+  - DIAMOND
+  - 5670119
+- - 53
+  - DIAMOND
+  - 5670120
+
+
+# ╔═══════════════════════════════════════════════╗
+# ║           ROCK PAPER SCISSORS PARAMS          ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT  ║
+# ╚═══════════════════════════════════════════════╝
+
+RockPaperScissors place for bet slots:
+- 28
+- 34
+RockPaperScissors minimum amount to start: 0.0
+RockPaperScissors icon material: STICK
+RockPaperScissors place for bet material: BARRIER
+RockPaperScissors rock material: STICK
+RockPaperScissors paper material: STICK
+RockPaperScissors scissors material: STICK
+RockPaperScissors well material: STICK
+RockPaperScissors fire material: STICK
+RockPaperScissors tree material: STICK
+RockPaperScissors timer material: BARRIER
+RockPaperScissors empty head material: ''
+RockPaperScissors tnt material: STICK
+RockPaperScissors draw material: STICK
+RockPaperScissors hit material: STICK
+RockPaperScissors icon custom model data: 5658111
+RockPaperScissors place for bet custom model data: 5600000
+RockPaperScissors rock custom model data: 5620103
+RockPaperScissors paper custom model data: 5620102
+RockPaperScissors scissors custom model data: 5620104
+RockPaperScissors well custom model data: 5620106
+RockPaperScissors fire custom model data: 5620101
+RockPaperScissors tree custom model data: 5620105
+RockPaperScissors timer custom model data: 5600000
+RockPaperScissors empty head custom model data: 0
+RockPaperScissors tnt custom model data: 5600101
+RockPaperScissors draw custom model data: 5600102
+RockPaperScissors hit custom model data: 5600103
+RockPaperScissors only 3 figures: false
+RockPaperScissors number of rounds: 3
+RockPaperScissors score numbers items:
+- - STICK
+  - 5605100
+- - STICK
+  - 5605101
+- - STICK
+  - 5605102
+- - STICK
+  - 5605103
+
+# [Slot, Material, Custom model data]
+RockPaperScissors empty slots:
+- - 35
+  - DIAMOND
+  - 5670121
+- - 44
+  - DIAMOND
+  - 5670122
+
+
+# ╔═══════════════════════════════════════════════╗
+# ║                TICTACTOE PARAMS               ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT  ║
+# ╚═══════════════════════════════════════════════╝
+
+TicTacToe place for bet slots:
+- 19
+- 25
+TicTacToe minimum amount to start: 0.0
+TicTacToe icon material: STICK
+TicTacToe place for bet material: BARRIER
+TicTacToe cross material: STICK
+TicTacToe final cross material: STICK
+TicTacToe zero material: STICK
+TicTacToe final zero material: STICK
+TicTacToe black cell material: BARRIER
+TicTacToe white cell material: BARRIER
+TicTacToe empty head material: ''
+TicTacToe tnt material: STICK
+TicTacToe icon custom model data: 5658112
+TicTacToe place for bet custom model data: 5600000
+TicTacToe cross custom model data: 5621102
+TicTacToe final cross custom model data: 5621104
+TicTacToe zero custom model data: 5621101
+TicTacToe final zero custom model data: 5621103
+TicTacToe black cell custom model data: 5600000
+TicTacToe white cell custom model data: 5600000
+TicTacToe empty head custom model data: 0
+TicTacToe tnt custom model data: 5600101
+
+# [Slot, Material, Custom model data]
+TicTacToe empty slots:
+- - 35
+  - DIAMOND
+  - 5670123
+- - 44
+  - DIAMOND
+  - 5670124
+
+
+# ╔═══════════════════════════════════════════════╗
+# ║            DEAD MAN'S CHEST PARAMS            ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT  ║
+# ╚═══════════════════════════════════════════════╝
+
+DeadMansChest place for bet slot: 49
+DeadMansChest lever slots:
+- 48
+- 50
+DeadMansChest minimum amount to start: 0.0
+DeadMansChest icon material: STICK
+DeadMansChest place for bet material: BARRIER
+DeadMansChest lever inactive material: STICK
+DeadMansChest lever active material: STICK
+DeadMansChest lever rolling material: STICK
+DeadMansChest icon custom model data: 5658113
+DeadMansChest place for bet custom model data: 5622101
+DeadMansChest lever inactive custom model data: 5622110
+DeadMansChest lever active custom model data: 5622110
+DeadMansChest lever rolling custom model data: 5622111
+DeadMansChest chest material: STICK
+DeadMansChest closed chest material: STICK
+DeadMansChest left arrow material: BARRIER
+DeadMansChest right arrow material: BARRIER
+DeadMansChest balance prize material: STICK
+DeadMansChest coefficient prize material: STICK
+DeadMansChest tnt material: STICK
+DeadMansChest chest custom model data: 5622108
+DeadMansChest closed chest custom model data: 5622109
+DeadMansChest left arrow custom model data: 5600000
+DeadMansChest right arrow custom model data: 5600000
+DeadMansChest balance prize custom model data: 5622112
+DeadMansChest coefficient prize custom model data: 5622113
+DeadMansChest tnt custom model data: 5622109
+DeadMansChest easy mode material: STICK
+DeadMansChest medium mode material: STICK
+DeadMansChest hard mode material: STICK
+DeadMansChest easy mode material (active): STICK
+DeadMansChest medium mode material (active): STICK
+DeadMansChest hard mode material (active): STICK
+DeadMansChest easy mode custom model data: 5622102
+DeadMansChest medium mode custom model data: 5622104
+DeadMansChest hard mode custom model data: 5622106
+DeadMansChest easy mode custom model data (active): 5622103
+DeadMansChest medium mode custom model data (active): 5622105
+DeadMansChest hard mode custom model data (active): 5622107
+DeadMansChest minimal price of bet for start game: 1000.0
+DeadMansChest minimal balance for start game: 10000.0
+DeadMansChest level 1 chances:
+  Winnings: 20.0
+  Coefficient: 30.0
+  Items: 40.0
+  Losing: 10.0
+  Resetting the balance: 0.0
+  Minimum winnings rom a bet made (in percent): 20.5
+  Maximum winnings rom a bet made (in percent): 120.5
+  Minimum multiplication of prize money (coefficient): 0.1
+  Maximum multiplication of prize money (coefficient): 1.4
+  List of things that can be obtained and their chance:
+    DIAMOND(4): 10.0
+    EMERALD(3): 10.0
+    COAL(12): 30.0
+    DIAMOND_PICKAXE(1): 20.0
+    DIRT(32): 30.0
+
+DeadMansChest level 2 chances:
+  Winnings: 30.0
+  Coefficient: 30.0
+  Items: 20.0
+  Losing: 20.0
+  Resetting the balance: 0.0
+  Minimum winnings rom a bet made (in percent): 30.0
+  Maximum winnings rom a bet made (in percent): 140.5
+  Minimum multiplication of prize money (coefficient): 0.2
+  Maximum multiplication of prize money (coefficient): 1.5
+  List of things that can be obtained and their chance:
+    DIAMOND(12): 20.0
+    EMERALD(8): 20.0
+    COAL(64): 30.0
+    BEACON(1): 10.0
+    APPLE(64): 20.0
+
+DeadMansChest level 3 chances:
+  Winnings: 30.0
+  Coefficient: 22.0
+  Items: 14.0
+  Losing: 34.0
+  Resetting the balance: 0.0
+  Minimum winnings rom a bet made (in percent): 50.5
+  Maximum winnings rom a bet made (in percent): 150.5
+  Minimum multiplication of prize money (coefficient): 0.5
+  Maximum multiplication of prize money (coefficient): 1.6
+  List of things that can be obtained and their chance:
+    DIAMOND(24): 10.0
+    EMERALD(20): 10.0
+    IRON_INGOT(32): 30.0
+    DIAMOND_PICKAXE(4): 30.0
+    BEACON(2): 20.0
+
+# [Slot, Material, Custom model data]
+DeadMansChest empty slots:
+- - 44
+  - DIAMOND
+  - 5670125
+- - 53
+  - DIAMOND
+  - 5670126
+
+
+# ╔═══════════════════════════════════════════════╗
+# ║                 POKER PARAMS                  ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT  ║
+# ╚═══════════════════════════════════════════════╝
+
+Poker minimum amount to start: 10000.0
+Poker icon material: STICK
+Poker place for bet material: BARRIER
+Poker raise button material: BARRIER
+Poker call button material: BARRIER
+Poker fold button material: BARRIER
+Poker balance material: STICK
+Poker closed card material: PAPER
+Poker fold material: BARRIER
+Poker players bet material: STICK
+Poker game bet material: STICK
+Poker raise balance material: STICK
+Poker icon custom model data: 5658114
+Poker place for bet custom model data: 5600000
+Poker raise button custom model data: 5600000
+Poker call button custom model data: 5600000
+Poker fold button custom model data: 5600000
+Poker balance custom model data: 5623102
+Poker closed card custom model data: 5606101
+Poker fold custom model data: 5600000
+Poker players bet custom model data: 5623102
+Poker game bet custom model data: 5623102
+Poker raise balance custom model data: 5623102
+
+# [Number, Material, Custom model data]
+Poker waiting numbers items:
+- - 1
+  - STICK
+  - 5623104
+- - 2
+  - STICK
+  - 5623105
+- - 3
+  - STICK
+  - 5623106
+- - 4
+  - STICK
+  - 5623107
+- - 5
+  - STICK
+  - 5623108
+
+Poker use bossbar: true
+Poker use chat: true
+Poker use action bar: false
+# Done automatically by a random player
+# Should be several times less than the minimum amount for the game.
+# IT ALSO RAISE BUTTON MIN VALUE, Left click - 1000, Left click + Shift - 5000$
+Poker minimal bet: 1000.0
+
+# [Slot, Material, Custom model data]
+Poker empty slots:
+- - 42
+  - DIAMOND
+  - 5670127
+- - 51
+  - DIAMOND
+  - 5670128
+
+
+# ╔═══════════════════════════════════════════════╗
+# ║                  DICE PARAMS                  ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT  ║
+# ╚═══════════════════════════════════════════════╝
+
+Dice place for bet slots:
+- 19
+- 25
+Dice minimum amount to start: 0.0
+Dice icon material: STICK
+Dice place for bet material: BARRIER
+Dice timer material: BARRIER
+Dice empty head material: ''
+Dice tnt material: STICK
+Dice draw material: STICK
+Dice hit material: STICK
+Dice icon custom model data: 5658115
+Dice timer custom model data: 5600000
+Dice empty head custom model data: 0
+Dice tnt custom model data: 5600101
+Dice draw custom model data: 5600102
+Dice hit custom model data: 5600103
+Dice place for bet custom model data: 5600000
+Dice cube items:
+  '1':
+  - STICK
+  - 5624101
+  '2':
+  - STICK
+  - 5624102
+  '3':
+  - STICK
+  - 5624103
+  '4':
+  - STICK
+  - 5624104
+  '5':
+  - STICK
+  - 5624105
+  '6':
+  - STICK
+  - 5624106
+Dice score items:
+  '2':
+  - STICK
+  - 5605102
+  '3':
+  - STICK
+  - 5605103
+  '4':
+  - STICK
+  - 5605104
+  '5':
+  - STICK
+  - 5605105
+  '6':
+  - STICK
+  - 5605106
+  '7':
+  - STICK
+  - 5605107
+  '8':
+  - STICK
+  - 5605108
+  '9':
+  - STICK
+  - 5605109
+  '10':
+  - STICK
+  - 5605110
+  '11':
+  - STICK
+  - 5605111
+  '12':
+  - STICK
+  - 5605112
+
+# [Slot, Material, Custom model data]
+Dice empty slots:
+- - 44
+  - DIAMOND
+  - 5670129
+- - 35
+  - DIAMOND
+  - 5670130
+
+
+# ╔═══════════════════════════════════════════════╗
+# ║              MINESWEEPER PARAMS               ║
+# ║  CHANCES AND COEFFICIENTS SHOULD BE WITH DOT  ║
+# ╚═══════════════════════════════════════════════╝
+
+Minesweeper place for bet slot: 49
+Minesweeper lever slots:
+- 48
+- 50
+Minesweeper minimum amount to start: 0.0
+Minesweeper icon material: STICK
+Minesweeper lever inactive material: BARRIER
+Minesweeper lever active material: STICK
+Minesweeper place for bet material: BARRIER
+Minesweeper closed block material: BARRIER
+Minesweeper opened block material: STICK
+Minesweeper mine block material: STICK
+Minesweeper withdraw button material: STICK
+Minesweeper icon custom model data: 5658116
+Minesweeper lever inactive custom model data: 5600000
+Minesweeper lever active custom model data: 5625107
+Minesweeper place for bet custom model data: 5600000
+Minesweeper closed block custom model data: 5600000
+Minesweeper opened block custom model data: 5625109
+Minesweeper mine block custom model data: 5625108
+Minesweeper withdraw button custom model data: 5625110
+Minesweeper easy mode slot: 3
+Minesweeper medium mode slot: 4
+Minesweeper hard mode slot: 5
+Minesweeper easy mode material: STICK
+Minesweeper medium mode material: STICK
+Minesweeper hard mode material: STICK
+Minesweeper easy mode material (active): STICK
+Minesweeper medium mode material (active): STICK
+Minesweeper hard mode material (active): STICK
+Minesweeper easy mode custom model data: 5625101
+Minesweeper medium mode custom model data: 5625103
+Minesweeper hard mode custom model data: 5625105
+Minesweeper easy mode custom model data (active): 5625102
+Minesweeper medium mode custom model data (active): 5625104
+Minesweeper hard mode custom model data (active): 5625106
+Minesweeper easy mode chance to lose on click: 25.0
+Minesweeper easy mode coefficient on each click: 25.0
+Minesweeper easy mode mines amount: 5
+Minesweeper medium mode chance to lose on click: 25.0
+Minesweeper medium mode coefficient on each click: 35.0
+Minesweeper medium mode mines amount: 7
+Minesweeper hard mode chance to lose on click: 25.0
+Minesweeper hard mode coefficient on each click: 45.0
+Minesweeper hard mode mines amount: 10
+
+# [Slot, Material, Custom model data]
+Minesweeper empty slots:
+- - 44
+  - DIAMOND
+  - 5670131
+- - 53
+  - DIAMOND
+  - 5670132
+
+
+
+# ╔════════════════════════════════════════════════════════════════════════╗
+# ║                         TOWN BANK SYSTEM                               ║
+# ║  THE MONEY FROM THE PURCHASE OF CHIPS GOES TO                          ║
+# ║  THE PLAYER'S ACCOUNT DESIGNATED AS A BANK ACCOUNT.                    ║
+# ║  WHEN A PLAYER SELLS CHIPS, MONEY IS WITHDRAWN FROM THE BANK ACCOUNT.  ║
+# ║  IF THERE IS NO MONEY IN THE ACCOUNT, THE CHIPS CANNOT BE SOLD.        ║
+# ║  THE PLAYER SHOULD HAVE BEEN ON THE SERVER BEFORE.                     ║
+# ║  ENTER THE PLAYER'S NICKNAME TO ACTIVATE.                              ║
+# ╚════════════════════════════════════════════════════════════════════════╝
+
+Bank account nickname: ''
+
+
+# ╔═══════════════════════════════════════════════════════════════════════════════════╗
+# ║                               BUSINESS PARAMS                                     ║
+# ║  IF TRUE, WHEN THE PLAYER PLACES THE TABLE, ALL THE MONEY FOR THE LOSS            ║
+# ║  OF THE PLAYERS GOES TO HIS ACCOUNT, IF THE PLAYER WINS, HIS BALANCE IS REDUCED.  ║
+# ║  YOU CAN SPECIFY THE MINIMUM BALANCE OF THE OWNER FOR THE PLAYER                  ║
+# ║  TO START PLAYING. THE MORE - THE LESS CHANCE OF DUPES, ETC.                      ║
+# ╚═══════════════════════════════════════════════════════════════════════════════════╝
+
+Loss money goes to whoever set the table: false
+Minimal balance of owner to start play: 10000.0
+
+
+# ╔═════════════════════════════════════════════════════════════════════════╗
+# ║                            DISCORD SETTINGS                             ║
+# ║  YOU CAN SET UP DISCORD MESSAGES TO BE SENT WHEN A PLAYER WIN OR LOSE.  ║
+# ║  FOR THIS YOU NEED A PLUGIN DiscordSRV.                                 ║
+# ╚═════════════════════════════════════════════════════════════════════════╝
+
+Use DiscordSRV: false
+DiscordSRV channel: ''
+Send a victory message to discord: true
+Send a defeat message to discord: true
+Send a little victory message to discord: true
+Send a jackpot message to discord: true
+
+
+# ╔═════════════════════════════════════╗
+# ║  CARD DECK (FOR POKER & BLACKJACK)  ║
+# ╚═════════════════════════════════════╝
+
+Card deck:
+  clubs:
+    '2':
+    - PAPER
+    - 5609102
+    '3':
+    - PAPER
+    - 5609103
+    '4':
+    - PAPER
+    - 5609104
+    '5':
+    - PAPER
+    - 5609105
+    '6':
+    - PAPER
+    - 5609106
+    '7':
+    - PAPER
+    - 5609107
+    '8':
+    - PAPER
+    - 5609108
+    '9':
+    - PAPER
+    - 5609109
+    '10':
+    - PAPER
+    - 5609110
+    jack:
+    - PAPER
+    - 5609111
+    queen:
+    - PAPER
+    - 5609112
+    king:
+    - PAPER
+    - 5609113
+    ace:
+    - PAPER
+    - 5609114
+  diamonds:
+    '2':
+    - PAPER
+    - 5606102
+    '3':
+    - PAPER
+    - 5606103
+    '4':
+    - PAPER
+    - 5606104
+    '5':
+    - PAPER
+    - 5606105
+    '6':
+    - PAPER
+    - 5606106
+    '7':
+    - PAPER
+    - 5606107
+    '8':
+    - PAPER
+    - 5606108
+    '9':
+    - PAPER
+    - 5606109
+    '10':
+    - PAPER
+    - 5606110
+    jack:
+    - PAPER
+    - 5606111
+    queen:
+    - PAPER
+    - 5606112
+    king:
+    - PAPER
+    - 5606113
+    ace:
+    - PAPER
+    - 5606114
+  hearts:
+    '2':
+    - PAPER
+    - 5607102
+    '3':
+    - PAPER
+    - 5607103
+    '4':
+    - PAPER
+    - 5607104
+    '5':
+    - PAPER
+    - 5607105
+    '6':
+    - PAPER
+    - 5607106
+    '7':
+    - PAPER
+    - 5607107
+    '8':
+    - PAPER
+    - 5607108
+    '9':
+    - PAPER
+    - 5607109
+    '10':
+    - PAPER
+    - 5607110
+    jack:
+    - PAPER
+    - 5607111
+    queen:
+    - PAPER
+    - 5607112
+    king:
+    - PAPER
+    - 5607113
+    ace:
+    - PAPER
+    - 5607114
+  spades:
+    '2':
+    - PAPER
+    - 5608102
+    '3':
+    - PAPER
+    - 5608103
+    '4':
+    - PAPER
+    - 5608104
+    '5':
+    - PAPER
+    - 5608105
+    '6':
+    - PAPER
+    - 5608106
+    '7':
+    - PAPER
+    - 5608107
+    '8':
+    - PAPER
+    - 5608108
+    '9':
+    - PAPER
+    - 5608109
+    '10':
+    - PAPER
+    - 5608110
+    jack:
+    - PAPER
+    - 5608111
+    queen:
+    - PAPER
+    - 5608112
+    king:
+    - PAPER
+    - 5608113
+    ace:
+    - PAPER
+    - 5608114
+Developers GUI resource pack enable: false
+DoubleRoulette command name: DoubleRoulette
+Tax on the purchase of chips: 0.0
+Tax on the sale of chips: 0.0
+Use commands instead of dispensing chips (otherwise there will be chips and this commands): false
+Process commands when winning: []
+Process commands when losing: []
+Is it possible to put chips in storage: true
+DoubleRoulette position: 30
+BlackJack victory coefficient(player has blackjack): 2.5
+BlackJack victory coefficient(player has more than the dealer): 2.0
+DoubleRoulette place for black bet slot: 46
+DoubleRoulette place for red bet slot: 52
+DoubleRoulette place for green bet slot: 49
+DoubleRoulette black block slot: 37
+DoubleRoulette red block slot: 43
+DoubleRoulette green block slot: 40
+DoubleRoulette black block coefficient: 2.0
+DoubleRoulette red block coefficient: 2.0
+DoubleRoulette green block coefficient: 15.0
+DoubleRoulette lever slot: 13
+DoubleRoulette minimum amount to start: 0.0
+DoubleRoulette max bet on 1 color: 64000.0
+DoubleRoulette can the player take back the bet: true
+DoubleRoulette time for start (in seconds): 10
+DoubleRoulette icon material: 43dbcd32b55e8bbc363a7497f0757638a7bb078be07f362d11128cf4288a6bcc
+DoubleRoulette place for bet material: BARRIER
+DoubleRoulette black block material: GRAY_CONCRETE
+DoubleRoulette red block material: RED_CONCRETE
+DoubleRoulette green block material: LIME_CONCRETE
+DoubleRoulette lever inactive material: CLOCK
+DoubleRoulette lever active material: CLOCK
+DoubleRoulette lever rolling material: LEVER
+DoubleRoulette rolling black block material: GRAY_CONCRETE
+DoubleRoulette rolling red block material: RED_CONCRETE
+DoubleRoulette rolling green block material: LIME_CONCRETE
+DoubleRoulette place for bet custom model data: 0
+DoubleRoulette black block custom model data: 0
+DoubleRoulette red block custom model data: 0
+DoubleRoulette green block custom model data: 0
+DoubleRoulette lever inactive custom model data: 0
+DoubleRoulette lever active custom model data: 0
+DoubleRoulette lever rolling custom model data: 0
+DoubleRoulette rolling black block custom model data: 0
+DoubleRoulette rolling red block custom model data: 0
+DoubleRoulette rolling green block custom model data: 0
+DoubleRoulette empty slots: []
+Main gui empty slots:
+- - 0
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 1
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 2
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 3
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 4
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 5
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 6
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 7
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 8
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 9
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 17
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 18
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 26
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 27
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 35
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 36
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 37
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 38
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 39
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 40
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 41
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 42
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 43
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 44
+  - PURPLE_STAINED_GLASS_PANE
+  - 0
+- - 45
+  - RED_STAINED_GLASS_PANE
+  - 0
+- - 46
+  - RED_STAINED_GLASS_PANE
+  - 0
+- - 47
+  - RED_STAINED_GLASS_PANE
+  - 0
+- - 48
+  - RED_STAINED_GLASS_PANE
+  - 0
+- - 49
+  - RED_STAINED_GLASS_PANE
+  - 0
+- - 50
+  - RED_STAINED_GLASS_PANE
+  - 0
+- - 51
+  - RED_STAINED_GLASS_PANE
+  - 0
+- - 52
+  - RED_STAINED_GLASS_PANE
+  - 0
+- - 53
+  - RED_STAINED_GLASS_PANE
+  - 0
+

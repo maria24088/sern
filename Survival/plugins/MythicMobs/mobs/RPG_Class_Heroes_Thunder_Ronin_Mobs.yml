@@ -1,0 +1,766 @@
+VFX_Thunder_Impact:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_hit_impact_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation;speed=1} @self ~onSpawn
+  
+  - aura{delay=2;d=6;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=vfx_hit_impact_1;nm=vfx_hit_impact_<caster.var.iteration>;p=ef_asset_impact_v1_1;np=ef_asset_impact_v1_1}
+    - changepart{m=vfx_hit_impact_1;nm=vfx_hit_impact_<caster.var.iteration>;p=ef_asset_impact_v1_2;np=ef_asset_impact_v1_2}
+    - changepart{m=vfx_hit_impact_1;nm=vfx_hit_impact_<caster.var.iteration>;p=ef_asset_impact_v2_1;np=ef_asset_impact_v2_1}
+    - changepart{m=vfx_hit_impact_1;nm=vfx_hit_impact_<caster.var.iteration>;p=ef_asset_impact_v2_2;np=ef_asset_impact_v2_2}
+    - changepart{m=vfx_hit_impact_1;nm=vfx_hit_impact_<caster.var.iteration>;p=ef_asset_impact_mini_1;np=ef_asset_impact_mini_1}
+    - changepart{m=vfx_hit_impact_1;nm=vfx_hit_impact_<caster.var.iteration>;p=ef_asset_impact_mini_2;np=ef_asset_impact_mini_2}
+    - changepart{m=vfx_hit_impact_1;nm=vfx_hit_impact_<caster.var.iteration>;p=ef_asset_impact_mini_3;np=ef_asset_impact_mini_3}
+    - changepart{m=vfx_hit_impact_1;nm=vfx_hit_impact_<caster.var.iteration>;p=ef_asset_impact_mini_4;np=ef_asset_impact_mini_4}
+    - changepart{m=vfx_hit_impact_1;nm=vfx_hit_impact_<caster.var.iteration>;p=ef_asset_impact_mini_5;np=ef_asset_impact_mini_5}
+    - changepart{m=vfx_hit_impact_1;nm=vfx_hit_impact_<caster.var.iteration>;p=ef_asset_impact_mini_6;np=ef_asset_impact_mini_6}
+    - changepart{m=vfx_hit_impact_1;nm=vfx_hit_impact_<caster.var.iteration>;p=vfx_impact;np=vfx_impact}
+    - changepart{m=vfx_hit_impact_1;nm=vfx_hit_impact_<caster.var.iteration>;p=vfx_impact2;np=vfx_impact2}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+VFX_Thunder_Impact_Critical:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_hit_critical_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation;speed=1} @self ~onSpawn
+  
+  - aura{delay=4;d=6;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=vfx_hit_critical_1;nm=vfx_hit_critical_<caster.var.iteration>;p=ef_asset_impact_v1_1;np=ef_asset_impact_v1_1}
+    - changepart{m=vfx_hit_critical_1;nm=vfx_hit_critical_<caster.var.iteration>;p=ef_asset_impact_v1_2;np=ef_asset_impact_v1_2}
+    - changepart{m=vfx_hit_critical_1;nm=vfx_hit_critical_<caster.var.iteration>;p=ef_asset_impact_v2_1;np=ef_asset_impact_v2_1}
+    - changepart{m=vfx_hit_critical_1;nm=vfx_hit_critical_<caster.var.iteration>;p=ef_asset_impact_v2_2;np=ef_asset_impact_v2_2}
+    - changepart{m=vfx_hit_critical_1;nm=vfx_hit_critical_<caster.var.iteration>;p=ef_asset_impact_mini_1;np=ef_asset_impact_mini_1}
+    - changepart{m=vfx_hit_critical_1;nm=vfx_hit_critical_<caster.var.iteration>;p=ef_asset_impact_mini_2;np=ef_asset_impact_mini_2}
+    - changepart{m=vfx_hit_critical_1;nm=vfx_hit_critical_<caster.var.iteration>;p=ef_asset_impact_mini_3;np=ef_asset_impact_mini_3}
+    - changepart{m=vfx_hit_critical_1;nm=vfx_hit_critical_<caster.var.iteration>;p=ef_asset_impact_mini_4;np=ef_asset_impact_mini_4}
+    - changepart{m=vfx_hit_critical_1;nm=vfx_hit_critical_<caster.var.iteration>;p=ef_asset_impact_mini_5;np=ef_asset_impact_mini_5}
+    - changepart{m=vfx_hit_critical_1;nm=vfx_hit_critical_<caster.var.iteration>;p=ef_asset_impact_mini_6;np=ef_asset_impact_mini_6}
+    - changepart{m=vfx_hit_critical_1;nm=vfx_hit_critical_<caster.var.iteration>;p=vfx_impact;np=vfx_impact}
+    - changepart{m=vfx_hit_critical_1;nm=vfx_hit_critical_<caster.var.iteration>;p=vfx_impact2;np=vfx_impact2}
+    - changepart{m=vfx_hit_critical_1;nm=vfx_hit_critical_<caster.var.iteration>;p=vfx_flash_impact1;np=vfx_flash_impact1}
+    - changepart{m=vfx_hit_critical_1;nm=vfx_hit_critical_<caster.var.iteration>;p=vfx_flash_impact2;np=vfx_flash_impact2}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+VFX_Thunder_Strike:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=thunder_strike_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation;speed=1} @self ~onSpawn
+  
+  - aura{delay=1;d=9;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=ef_thunder;np=ef_thunder}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone;np=bone}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone2;np=bone2}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone3;np=bone3}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone4;np=bone4}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone5;np=bone5}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone6;np=bone6}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone7;np=bone7}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone8;np=bone8}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=ef_hit_thunderv1_1;np=ef_hit_thunderv1_1}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=ef_hit_thunderv1_2;np=ef_hit_thunderv1_2}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=ef_hit_thunderv1_3;np=ef_hit_thunderv1_3}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=ef_hit_thunderv2_1;np=ef_hit_thunderv2_1}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=ef_hit_thunderv2_2;np=ef_hit_thunderv2_2}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=ef_hit_thunderv2_3;np=ef_hit_thunderv2_3}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Thunder_Strike_BIG:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=thunder_strike_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation2;speed=1} @self ~onSpawn
+  
+  - aura{delay=1;d=9;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=ef_thunder;np=ef_thunder}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone;np=bone}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone2;np=bone2}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone3;np=bone3}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone4;np=bone4}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone5;np=bone5}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone6;np=bone6}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone7;np=bone7}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=bone8;np=bone8}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=ef_hit_thunderv1_1;np=ef_hit_thunderv1_1}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=ef_hit_thunderv1_2;np=ef_hit_thunderv1_2}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=ef_hit_thunderv1_3;np=ef_hit_thunderv1_3}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=ef_hit_thunderv2_1;np=ef_hit_thunderv2_1}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=ef_hit_thunderv2_2;np=ef_hit_thunderv2_2}
+    - changepart{m=thunder_strike_1;nm=thunder_strike_<caster.var.iteration>;p=ef_hit_thunderv2_3;np=ef_hit_thunderv2_3}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+VFX_Thunder_Reflex:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=lightning_reflex_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation;speed=1} @self ~onSpawn
+  
+  - aura{delay=1;d=5;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=lightning_reflex_1;nm=lightning_reflex_<caster.var.iteration>;p=lightning_reflex_v1_1;np=lightning_reflex_v1_1}
+    - changepart{m=lightning_reflex_1;nm=lightning_reflex_<caster.var.iteration>;p=lightning_reflex_v1_2;np=lightning_reflex_v1_2}
+    - changepart{m=lightning_reflex_1;nm=lightning_reflex_<caster.var.iteration>;p=lightning_reflex_v1_3;np=lightning_reflex_v1_3}
+    - changepart{m=lightning_reflex_1;nm=lightning_reflex_<caster.var.iteration>;p=lightning_reflex_v2_1;np=lightning_reflex_v2_1}
+    - changepart{m=lightning_reflex_1;nm=lightning_reflex_<caster.var.iteration>;p=lightning_reflex_v2_2;np=lightning_reflex_v2_2}
+    - changepart{m=lightning_reflex_1;nm=lightning_reflex_<caster.var.iteration>;p=lightning_reflex_v3_1;np=lightning_reflex_v3_1}
+    - changepart{m=lightning_reflex_1;nm=lightning_reflex_<caster.var.iteration>;p=lightning_reflex_v3_2;np=lightning_reflex_v3_2}
+    - changepart{m=lightning_reflex_1;nm=lightning_reflex_<caster.var.iteration>;p=lightning_reflex_v3_3;np=lightning_reflex_v3_3}
+    - changepart{m=lightning_reflex_1;nm=lightning_reflex_<caster.var.iteration>;p=lightning_reflex_v3_4;np=lightning_reflex_v3_4}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+VFX_Thunder_Slash_LEFT:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=thunder_slash_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  
+  - aura{delay=3;d=6;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_slash;np=thunder_slash}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect1;np=thunder_effect1}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect2;np=thunder_effect2}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect3;np=thunder_effect3}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect5;np=thunder_effect5}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect6;np=thunder_effect6}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect7;np=thunder_effect7}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Thunder_Slash_RIGHT:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=thunder_slash_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill2;speed=1} @self ~onSpawn
+  
+  - aura{delay=3;d=6;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_slash;np=thunder_slash}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect1;np=thunder_effect1}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect2;np=thunder_effect2}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect3;np=thunder_effect3}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect5;np=thunder_effect5}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect6;np=thunder_effect6}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect7;np=thunder_effect7}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Thunder_Slash_DOWN:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=thunder_slash_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill3;speed=1} @self ~onSpawn
+  
+  - aura{delay=3;d=6;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_slash;np=thunder_slash}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect1;np=thunder_effect1}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect2;np=thunder_effect2}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect3;np=thunder_effect3}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect5;np=thunder_effect5}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect6;np=thunder_effect6}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect7;np=thunder_effect7}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Thunder_Slash_UP:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=thunder_slash_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill4;speed=1} @self ~onSpawn
+  
+  - aura{delay=3;d=6;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_slash;np=thunder_slash}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect1;np=thunder_effect1}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect2;np=thunder_effect2}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect3;np=thunder_effect3}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect5;np=thunder_effect5}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect6;np=thunder_effect6}
+    - changepart{m=thunder_slash_1;nm=thunder_slash_<caster.var.iteration>;p=thunder_effect7;np=thunder_effect7}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+
+VFX_Thunder_Slash_LEFT_ULT:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=flaming_thunder_slash_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  
+  - aura{delay=5;d=6;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_slash;np=thunder_slash}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect1;np=thunder_effect1}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect2;np=thunder_effect2}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect3;np=thunder_effect3}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect4;np=thunder_effect4}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect5;np=thunder_effect5}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect6;np=thunder_effect6}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect7;np=thunder_effect7}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect8;np=thunder_effect8}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Thunder_Slash_RIGHT_ULT:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=flaming_thunder_slash_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill2;speed=1} @self ~onSpawn
+  
+  - aura{delay=5;d=6;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_slash;np=thunder_slash}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect1;np=thunder_effect1}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect2;np=thunder_effect2}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect3;np=thunder_effect3}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect4;np=thunder_effect4}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect5;np=thunder_effect5}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect6;np=thunder_effect6}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect7;np=thunder_effect7}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect8;np=thunder_effect8}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Thunder_Slash_DOWN_ULT:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=flaming_thunder_slash_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill3;speed=1} @self ~onSpawn
+  
+  - aura{delay=5;d=6;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_slash;np=thunder_slash}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect1;np=thunder_effect1}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect2;np=thunder_effect2}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect3;np=thunder_effect3}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect4;np=thunder_effect4}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect5;np=thunder_effect5}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect6;np=thunder_effect6}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect7;np=thunder_effect7}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect8;np=thunder_effect8}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Thunder_Slash_UP_ULT:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=flaming_thunder_slash_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill4;speed=1} @self ~onSpawn
+  
+  - aura{delay=5;d=6;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_slash;np=thunder_slash}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect1;np=thunder_effect1}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect2;np=thunder_effect2}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect3;np=thunder_effect3}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect4;np=thunder_effect4}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect5;np=thunder_effect5}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect6;np=thunder_effect6}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect7;np=thunder_effect7}
+    - changepart{m=flaming_thunder_slash_1;nm=flaming_thunder_slash_<caster.var.iteration>;p=thunder_effect8;np=thunder_effect8}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+
+VFX_Thunder_Dash:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=thunderclap_and_flash_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation;speed=1} @self ~onSpawn
+  
+  - aura{delay=3;d=7;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=bone;np=bone}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=bone2;np=bone2}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=bone3;np=bone3}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=bone4;np=bone4}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_thunder;np=ef_thunder}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_dash_thunder1;np=ef_dash_thunder1}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_dash_thunder2;np=ef_dash_thunder2}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_dash_thunder3;np=ef_dash_thunder3}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_dash_thunder4;np=ef_dash_thunder4}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_dash_thunder5;np=ef_dash_thunder5}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_asset_dashv1_1;np=ef_asset_dashv1_1}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_asset_dashv2_1;np=ef_asset_dashv2_1}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_asset_dashv3_1;np=ef_asset_dashv3_1}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Thunder_Dash_REVERSAL:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=thunderclap_and_flash_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation2;speed=1} @self ~onSpawn
+  
+  - aura{delay=3;d=7;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=bone;np=bone}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=bone2;np=bone2}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=bone3;np=bone3}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=bone4;np=bone4}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_thunder;np=ef_thunder}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_dash_thunder1;np=ef_dash_thunder1}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_dash_thunder2;np=ef_dash_thunder2}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_dash_thunder3;np=ef_dash_thunder3}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_dash_thunder4;np=ef_dash_thunder4}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_dash_thunder5;np=ef_dash_thunder5}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_asset_dashv1_1;np=ef_asset_dashv1_1}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_asset_dashv2_1;np=ef_asset_dashv2_1}
+    - changepart{m=thunderclap_and_flash_1;nm=thunderclap_and_flash_<caster.var.iteration>;p=ef_asset_dashv3_1;np=ef_asset_dashv3_1}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Thunder_Dash_ULT:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=flaming_thunder_dash_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation;speed=1} @self ~onSpawn
+  
+  - aura{delay=3;d=7;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=bone;np=bone}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=bone2;np=bone2}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=bone3;np=bone3}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=bone4;np=bone4}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_thunder;np=ef_thunder}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder1;np=ef_dash_thunder1}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder2;np=ef_dash_thunder2}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder3;np=ef_dash_thunder3}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder4;np=ef_dash_thunder4}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder5;np=ef_dash_thunder5}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_asset_dashv1_1;np=ef_asset_dashv1_1}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_asset_dashv2_1;np=ef_asset_dashv2_1}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_asset_dashv3_1;np=ef_asset_dashv3_1}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Thunder_Dash_ULT_L:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=flaming_thunder_dash_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation2;speed=1} @self ~onSpawn
+  
+  - aura{delay=3;d=7;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=bone;np=bone}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=bone2;np=bone2}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=bone3;np=bone3}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=bone4;np=bone4}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_thunder;np=ef_thunder}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder1;np=ef_dash_thunder1}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder2;np=ef_dash_thunder2}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder3;np=ef_dash_thunder3}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder4;np=ef_dash_thunder4}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder5;np=ef_dash_thunder5}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_asset_dashv1_1;np=ef_asset_dashv1_1}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_asset_dashv2_1;np=ef_asset_dashv2_1}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_asset_dashv3_1;np=ef_asset_dashv3_1}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Thunder_Dash_ULT_R:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=flaming_thunder_dash_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation3;speed=1} @self ~onSpawn
+  
+  - aura{delay=3;d=7;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=bone;np=bone}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=bone2;np=bone2}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=bone3;np=bone3}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=bone4;np=bone4}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_thunder;np=ef_thunder}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder1;np=ef_dash_thunder1}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder2;np=ef_dash_thunder2}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder3;np=ef_dash_thunder3}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder4;np=ef_dash_thunder4}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_dash_thunder5;np=ef_dash_thunder5}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_asset_dashv1_1;np=ef_asset_dashv1_1}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_asset_dashv2_1;np=ef_asset_dashv2_1}
+    - changepart{m=flaming_thunder_dash_1;nm=flaming_thunder_dash_<caster.var.iteration>;p=ef_asset_dashv3_1;np=ef_asset_dashv3_1}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+VFX_Crackling_Skyfall_CHARGE:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=crackling_skyfall_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=charge;speed=1} @self ~onSpawn
+  
+  - aura{delay=0;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev1_1;np=ef_thuder_chargev1_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev1_2;np=ef_thuder_chargev1_2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev2_1;np=ef_thuder_chargev2_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev2_2;np=ef_thuder_chargev2_2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev3_1;np=ef_thuder_chargev3_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev3_2;np=ef_thuder_chargev3_2}
+    ]} @self ~onSpawn
+  
+  - aura{delay=8;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev1_1;np=ef_thuder_chargev1_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev1_2;np=ef_thuder_chargev1_2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev2_1;np=ef_thuder_chargev2_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev2_2;np=ef_thuder_chargev2_2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev3_1;np=ef_thuder_chargev3_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev3_2;np=ef_thuder_chargev3_2}
+    ]} @self ~onSpawn
+
+  - aura{delay=16;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev1_1;np=ef_thuder_chargev1_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev1_2;np=ef_thuder_chargev1_2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev2_1;np=ef_thuder_chargev2_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev2_2;np=ef_thuder_chargev2_2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev3_1;np=ef_thuder_chargev3_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev3_2;np=ef_thuder_chargev3_2}
+    ]} @self ~onSpawn
+
+  - aura{delay=24;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev1_1;np=ef_thuder_chargev1_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev1_2;np=ef_thuder_chargev1_2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev2_1;np=ef_thuder_chargev2_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev2_2;np=ef_thuder_chargev2_2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev3_1;np=ef_thuder_chargev3_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thuder_chargev3_2;np=ef_thuder_chargev3_2}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Crackling_Skyfall_SMASH:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=crackling_skyfall_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=impact_floor;speed=1} @self ~onSpawn
+  
+  - aura{delay=1;d=10;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_asset_impactv1_1;np=ef_asset_impactv1_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_asset_impactv1_2;np=ef_asset_impactv1_2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_asset_impactv2_1;np=ef_asset_impactv2_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_asset_impactv2_2;np=ef_asset_impactv2_2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_mini_thunder_v1_1;np=ef_mini_thunder_v1_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_mini_thunder_v2_1;np=ef_mini_thunder_v2_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_mini_thunder_v3_1;np=ef_mini_thunder_v3_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_mini_thunder_v4_1;np=ef_mini_thunder_v4_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_mini_thunder_v1_2;np=ef_mini_thunder_v1_2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_mini_thunder_v2_2;np=ef_mini_thunder_v2_2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_mini_thunder_v3_2;np=ef_mini_thunder_v3_2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_mini_thunder_v4_2;np=ef_mini_thunder_v4_2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_thunder;np=ef_thunder}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_dash_thunder1;np=ef_dash_thunder1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_dash_thunder2;np=ef_dash_thunder2}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_dash_thunder3;np=ef_dash_thunder3}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_dash_thunder4;np=ef_dash_thunder4}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_dash_thunder5;np=ef_dash_thunder5}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_asset_dashv1_1;np=ef_asset_dashv1_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_asset_dashv2_1;np=ef_asset_dashv2_1}
+    - changepart{m=crackling_skyfall_1;nm=crackling_skyfall_<caster.var.iteration>;p=ef_asset_dashv3_1;np=ef_asset_dashv3_1}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+VFX_Thunder_Barrage:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=thunderous_barrage;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  - remove{delay=37} @self ~onSpawn
+
+VFX_Thunder_Dragon:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=flaming_rhunder_god_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=on;speed=1} @self ~onSpawn
+  - state{s=loop;speed=1;delay=14} @self ~onSpawn
+  
+  - aura{delay=6;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=flaming_rhunder_god_1;nm=flaming_rhunder_god_<caster.var.iteration>;p=ef_circle1;np=ef_circle1}
+    - changepart{m=flaming_rhunder_god_1;nm=flaming_rhunder_god_<caster.var.iteration>;p=ef_circle2;np=ef_circle2}
+    - changepart{m=flaming_rhunder_god_1;nm=flaming_rhunder_god_<caster.var.iteration>;p=ef_circle3;np=ef_circle3}
+    - changepart{m=flaming_rhunder_god_1;nm=flaming_rhunder_god_<caster.var.iteration>;p=ef_thuder_chargev1_1;np=ef_thuder_chargev1_1}
+    - changepart{m=flaming_rhunder_god_1;nm=flaming_rhunder_god_<caster.var.iteration>;p=ef_thuder_chargev1_2;np=ef_thuder_chargev1_2}
+    - changepart{m=flaming_rhunder_god_1;nm=flaming_rhunder_god_<caster.var.iteration>;p=ef_thuder_chargev2_1;np=ef_thuder_chargev2_1}
+    - changepart{m=flaming_rhunder_god_1;nm=flaming_rhunder_god_<caster.var.iteration>;p=ef_thuder_chargev2_2;np=ef_thuder_chargev2_2}
+    - changepart{m=flaming_rhunder_god_1;nm=flaming_rhunder_god_<caster.var.iteration>;p=ef_thuder_chargev3_1;np=ef_thuder_chargev3_1}
+    - changepart{m=flaming_rhunder_god_1;nm=flaming_rhunder_god_<caster.var.iteration>;p=ef_thuder_chargev3_2;np=ef_thuder_chargev3_2}
+    - changepart{m=flaming_rhunder_god_1;nm=flaming_rhunder_god_<caster.var.iteration>;p=ef_asset_impactv1_1;np=ef_asset_impactv1_1}
+    - changepart{m=flaming_rhunder_god_1;nm=flaming_rhunder_god_<caster.var.iteration>;p=ef_asset_impactv1_2;np=ef_asset_impactv1_2}
+    - changepart{m=flaming_rhunder_god_1;nm=flaming_rhunder_god_<caster.var.iteration>;p=ef_asset_impactv2_1;np=ef_asset_impactv2_1}
+    - changepart{m=flaming_rhunder_god_1;nm=flaming_rhunder_god_<caster.var.iteration>;p=ef_asset_impactv2_2;np=ef_asset_impactv2_2}
+    ]} @self ~onSpawn
+  
+  - state{s=end;speed=1;delay=200} @self ~onSpawn
+  - remove{delay=215} @self ~onSpawn

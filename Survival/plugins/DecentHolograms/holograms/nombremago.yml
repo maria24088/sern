@@ -1,0 +1,14 @@
+location: SpawnRPG:251.489:68.987:173.418
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&6&l[Comerciante de Hechizos]'
+    height: 0.3
+  - content: '&f&lKray'
+    height: 0.3
+  actions: {}

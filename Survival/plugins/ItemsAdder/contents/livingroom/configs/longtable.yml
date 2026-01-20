@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  longtable:
+    display_name: "Long Table"
+    permission: livingroom.longtable
+    resource:
+      material: PAPER
+      generate: false
+      model_path: longtable
+    behaviours:
+      furniture:
+        light_level: 13

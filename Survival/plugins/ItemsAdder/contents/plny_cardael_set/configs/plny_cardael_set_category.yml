@@ -1,0 +1,32 @@
+info:
+  namespace: plny_cardael_set
+categories:
+  plny_cardael_set:
+    name: Cardael Animated Weapons And Tools Set
+    enabled: true
+    icon: plny_cardael_set:plny_cardael_set_wings
+    permission: ia.menu.plny_cardael_set
+    items:
+    - plny_cardael_set:plny_cardael_sethelmet
+    - plny_cardael_set:plny_cardael_setchestplate
+    - plny_cardael_set:plny_cardael_setleggings
+    - plny_cardael_set:plny_cardael_setboots
+    - plny_cardael_set:plny_cardael_set_helmet
+    - plny_cardael_set:plny_cardael_set_axe
+    - plny_cardael_set:plny_cardael_set_pickaxe
+    - plny_cardael_set:plny_cardael_set_shovel
+    - plny_cardael_set:plny_cardael_set_hoe
+    - plny_cardael_set:plny_cardael_set_fishing_rod
+    - plny_cardael_set:plny_cardael_set_sword
+    - plny_cardael_set:plny_cardael_set_shield
+    - plny_cardael_set:plny_cardael_set_crossbow
+    - plny_cardael_set:plny_cardael_set_bow
+    - plny_cardael_set:plny_cardael_set_staff
+    - plny_cardael_set:plny_cardael_set_trident
+    - plny_cardael_set:plny_cardael_set_hammer
+    - plny_cardael_set:plny_cardael_set_spear
+    - plny_cardael_set:plny_cardael_set_scythe
+    - plny_cardael_set:plny_cardael_set_chest
+    - plny_cardael_set:plny_cardael_set_key
+    - plny_cardael_set:plny_cardael_set_mace
+    - plny_cardael_set:plny_cardael_set_wings

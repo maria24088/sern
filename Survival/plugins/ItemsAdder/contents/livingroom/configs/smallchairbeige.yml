@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  smallchairbeige:
+    display_name: "Small Chair Beige"
+    permission: livingroom.smallchairbeige
+    resource:
+      material: PAPER
+      generate: false
+      model_path: smallchairbeige
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.1

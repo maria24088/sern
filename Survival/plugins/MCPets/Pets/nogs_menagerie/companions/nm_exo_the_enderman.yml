@@ -1,0 +1,11 @@
+Id: nm_exo_the_enderman
+MythicMob: nm_exo_the_enderman
+Permission: pet.exo_the_enderman
+Mountable: false
+Distance: 6
+SpawnRange: 1
+ComingBackRange: 4
+Icon:
+  Name: §dExo the Enderman
+  Material: PAPER
+  CustomModelData: 435022

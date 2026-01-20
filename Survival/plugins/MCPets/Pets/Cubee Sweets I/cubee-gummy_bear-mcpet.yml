@@ -1,0 +1,14 @@
+Id: cubee-gummy_bear
+MythicMob: cubee-gummy_bear
+Permission: mcpet.cubee-gummy_bear
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §e Gummy Bear Cubee
+  Description:
+  - §7"I'm cute, and I'm also delicious! Don't forget to chew me to your heart's content!"
+    §8§o- Gummy Bear Cubee
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191319

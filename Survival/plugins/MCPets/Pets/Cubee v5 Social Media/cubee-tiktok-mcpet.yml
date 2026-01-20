@@ -1,0 +1,15 @@
+Id: cubee-tiktok
+MythicMob: cubee-tiktok
+Permission: mcpet.cubee-tiktok
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §dTiktok §bCubee
+  Description:
+  - §dThis cubee never missed any trend!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191038
+
+# c1d8afcb98ec728e8f78149f12543142

@@ -1,0 +1,336 @@
+info:
+  namespace: materials_2
+
+categories:
+  crafting_materials:
+    enabled: true
+    icon: materials_2:ash_pile
+    name: "Crafting Materials"
+    items:
+      - materials_2:ash_pile
+      - materials_2:banner_fabric
+      - materials_2:battery
+      - materials_2:carved_handle
+      - materials_2:charcoal_dust
+      - materials_2:copper_fragment
+      - materials_2:cotton_tuft
+      - materials_2:dried_leaf
+      - materials_2:feather_bundle
+      - materials_2:gear
+      - materials_2:glue
+      - materials_2:gold_flakes
+      - materials_2:herb_bundle
+      - materials_2:honey_drop
+      - materials_2:iron_shard
+      - materials_2:leather_strip
+      - materials_2:moss_clump
+      - materials_2:nail
+      - materials_2:ore_grains
+      - materials_2:plant_fiber
+      - materials_2:root_fiber
+      - materials_2:rope
+      - materials_2:sap_glob
+      - materials_2:slime_glob
+      - materials_2:soft_clay
+      - materials_2:soot_lump
+      - materials_2:spring
+      - materials_2:stick_bundle
+      - materials_2:stone_fragment
+      - materials_2:stone_powder
+      - materials_2:thread_spool
+      - materials_2:tree_resin
+      - materials_2:twine
+      - materials_2:wax_chunk
+      - materials_2:wooden_peg
+      - materials_2:wool_thread
+
+items:
+  ash_pile:
+    display_name: "Ash Pile"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/ash_pile
+
+  banner_fabric:
+    display_name: "Banner Fabric"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/banner_fabric
+
+  battery:
+    display_name: "Battery"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/battery
+
+  carved_handle:
+    display_name: "Carved Handle"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/carved_handle
+
+  charcoal_dust:
+    display_name: "Charcoal Dust"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/charcoal_dust
+
+  copper_fragment:
+    display_name: "Copper Fragment"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/copper_fragment
+
+  cotton_tuft:
+    display_name: "Cotton Tuft"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/cotton_tuft
+
+  dried_leaf:
+    display_name: "Dried Leaf"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/dried_leaf
+
+  feather_bundle:
+    display_name: "Feather Bundle"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/feather_bundle
+
+  gear:
+    display_name: "Gear"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/gear
+
+  glue:
+    display_name: "Glue"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/glue
+
+  gold_flakes:
+    display_name: "Gold Flakes"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/gold_flakes
+
+  herb_bundle:
+    display_name: "Herb Bundle"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/herb_bundle
+
+  honey_drop:
+    display_name: "Honey Drop"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/honey_drop
+
+  iron_shard:
+    display_name: "Iron Shard"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/iron_shard
+
+  leather_strip:
+    display_name: "Leather Strip"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/leather_strip
+
+  moss_clump:
+    display_name: "Moss Clump"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/moss_clump
+
+  nail:
+    display_name: "Nail"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/nail
+
+  ore_grains:
+    display_name: "Ore Grains"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/ore_grains
+
+  plant_fiber:
+    display_name: "Plant Fiber"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/plant_fiber
+
+  root_fiber:
+    display_name: "Root Fiber"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/root_fiber
+
+  rope:
+    display_name: "Rope"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/rope
+
+  sap_glob:
+    display_name: "Sap Glob"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/sap_glob
+
+  slime_glob:
+    display_name: "Slime Glob"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/slime_glob
+
+  soft_clay:
+    display_name: "Soft Clay"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/soft_clay
+
+  soot_lump:
+    display_name: "Soot Lump"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/soot_lump
+
+  spring:
+    display_name: "Spring"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/spring
+
+  stick_bundle:
+    display_name: "Stick Bundle"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/stick_bundle
+
+  stone_fragment:
+    display_name: "Stone Fragment"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/stone_fragment
+
+  stone_powder:
+    display_name: "Stone Powder"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/stone_powder
+
+  thread_spool:
+    display_name: "Thread Spool"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/thread_spool
+
+  tree_resin:
+    display_name: "Tree Resin"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/tree_resin
+
+  twine:
+    display_name: "Twine"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/twine
+
+  wax_chunk:
+    display_name: "Wax Chunk"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/wax_chunk
+
+  wooden_peg:
+    display_name: "Wooden Peg"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/wooden_peg
+
+  wool_thread:
+    display_name: "Wool Thread"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - crafting_materials/wool_thread
+
+# 96997S

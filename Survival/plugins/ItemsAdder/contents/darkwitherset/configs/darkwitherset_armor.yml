@@ -1,0 +1,73 @@
+armors_rendering:
+  dark_witherarmor:
+    color: '#73ffe0'
+    layer_1: armor/dark_wither_armor_layer_1
+    layer_2: armor/dark_wither_armor_layer_2
+    emissive_1: armor/dark_wither_armor_layer_1_e
+    emissive_2: armor/dark_wither_armor_layer_2_e
+    use_color: false
+info:
+  namespace: darkwitherset
+items:
+  dark_witherhelmet:
+    display_name: §fDark Wither Helmet
+    permission: darkwitherset.helmet
+    resource:
+      generate: true
+      textures:
+      - armor/dark_wither_helmet_icon.png
+    specific_properties:
+      armor:
+        custom_armor: dark_witherarmor
+        slot: head
+    durability:
+      max_custom_durability: 165
+    attribute_modifiers:
+      head:
+        armor: 2
+  dark_witherchestplate:
+    display_name: §fDark Wither Chestplate
+    permission: darkwitherset.chestplate
+    resource:
+      generate: true
+      textures:
+      - armor/dark_wither_chestplate_icon.png
+    specific_properties:
+      armor:
+        custom_armor: dark_witherarmor
+        slot: chest
+    durability:
+      max_custom_durability: 240
+    attribute_modifiers:
+      chest:
+        armor: 6
+  dark_witherleggings:
+    display_name: §fDark Wither Leggings
+    permission: darkwitherset.leggings
+    resource:
+      generate: true
+      textures:
+      - armor/dark_wither_leggings_icon.png
+    specific_properties:
+      armor:
+        custom_armor: dark_witherarmor
+        slot: legs
+    attribute_modifiers:
+      legs:
+        armor: 5
+  dark_witherboots:
+    display_name: §fDark Wither Boots
+    permission: darkwitherset.boots
+    resource:
+      generate: true
+      textures:
+      - armor/dark_wither_boots_icon.png
+    specific_properties:
+      armor:
+        custom_armor: dark_witherarmor
+        slot: feet
+    durability:
+      max_custom_durability: 165
+    attribute_modifiers:
+      feet:
+        armor: 2

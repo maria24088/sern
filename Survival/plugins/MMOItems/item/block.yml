@@ -1,0 +1,1595 @@
+# =============================================================================
+# GRUPO 1: BCOP (IDs 1-4) - OVERWORLD LEGENDARY
+# =============================================================================
+'1':
+  base:
+    material: STONE
+    name: '&fBloque de Bcop'
+    block-id: 1.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL BCOP_INGOT 1..|m MINERAL BCOP_INGOT 1..|m MINERAL BCOP_INGOT 1..
+          - m MINERAL BCOP_INGOT 1..|m MINERAL BCOP_INGOT 1..|m MINERAL BCOP_INGOT 1..
+          - m MINERAL BCOP_INGOT 1..|m MINERAL BCOP_INGOT 1..|m MINERAL BCOP_INGOT 1..
+          hidden: false
+
+'2':
+  base:
+    material: STONE
+    name: '&fMena de Bcop'
+    block-id: 2.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'overworld-legendary'
+
+'3':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Bcop'
+    block-id: 3.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'deepslate-legendary'
+
+'4':
+  base:
+    material: STONE
+    name: '&fBloque de Bcop Bruto'
+    block-id: 4.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL BCOP_RAW 1..|m MINERAL BCOP_RAW 1..|m MINERAL BCOP_RAW 1..
+          - m MINERAL BCOP_RAW 1..|m MINERAL BCOP_RAW 1..|m MINERAL BCOP_RAW 1..
+          - m MINERAL BCOP_RAW 1..|m MINERAL BCOP_RAW 1..|m MINERAL BCOP_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 2: BLUE (IDs 5-8) - OVERWORLD COMMON
+# =============================================================================
+'5':
+  base:
+    material: STONE
+    name: '&fBloque de Blue'
+    block-id: 5.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL BLUE_INGOT 1..|m MINERAL BLUE_INGOT 1..|m MINERAL BLUE_INGOT 1..
+          - m MINERAL BLUE_INGOT 1..|m MINERAL BLUE_INGOT 1..|m MINERAL BLUE_INGOT 1..
+          - m MINERAL BLUE_INGOT 1..|m MINERAL BLUE_INGOT 1..|m MINERAL BLUE_INGOT 1..
+          hidden: false
+
+'6':
+  base:
+    material: STONE
+    name: '&fMena de Blue'
+    block-id: 6.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    gen-template: 'overworld-common'
+
+'7':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Blue'
+    block-id: 7.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    gen-template: 'deepslate-common'
+
+'8':
+  base:
+    material: STONE
+    name: '&fBloque de Blue Bruto'
+    block-id: 8.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL BLUE_RAW 1..|m MINERAL BLUE_RAW 1..|m MINERAL BLUE_RAW 1..
+          - m MINERAL BLUE_RAW 1..|m MINERAL BLUE_RAW 1..|m MINERAL BLUE_RAW 1..
+          - m MINERAL BLUE_RAW 1..|m MINERAL BLUE_RAW 1..|m MINERAL BLUE_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 3: BUBBLE (IDs 9-12) - END EPIC
+# =============================================================================
+'9':
+  base:
+    material: STONE
+    name: '&fBloque Burbuja'
+    block-id: 9.0
+    tier: EPIC
+    required-power: 20
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL BUBBLE_INGOT 1..|m MINERAL BUBBLE_INGOT 1..|m MINERAL BUBBLE_INGOT 1..
+          - m MINERAL BUBBLE_INGOT 1..|m MINERAL BUBBLE_INGOT 1..|m MINERAL BUBBLE_INGOT 1..
+          - m MINERAL BUBBLE_INGOT 1..|m MINERAL BUBBLE_INGOT 1..|m MINERAL BUBBLE_INGOT 1..
+          hidden: false
+
+'10':
+  base:
+    material: STONE
+    name: '&fMena Burbuja'
+    block-id: 10.0
+    tier: EPIC
+    required-power: 20
+    require-power-to-break: true
+    gen-template: 'end-epic'
+
+'11':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra Burbuja'
+    block-id: 11.0
+    tier: EPIC
+    required-power: 20
+    require-power-to-break: true
+    # SIN TEMPLATE (END)
+
+'12':
+  base:
+    material: STONE
+    name: '&fBloque Burbuja Bruto'
+    block-id: 12.0
+    tier: EPIC
+    required-power: 20
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL BUBBLE_RAW 1..|m MINERAL BUBBLE_RAW 1..|m MINERAL BUBBLE_RAW 1..
+          - m MINERAL BUBBLE_RAW 1..|m MINERAL BUBBLE_RAW 1..|m MINERAL BUBBLE_RAW 1..
+          - m MINERAL BUBBLE_RAW 1..|m MINERAL BUBBLE_RAW 1..|m MINERAL BUBBLE_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 4: CGOLD (IDs 13-16) - OVERWORLD LEGENDARY
+# =============================================================================
+'13':
+  base:
+    material: STONE
+    name: '&fBloque de Cgold'
+    block-id: 13.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL CGOLD_INGOT 1..|m MINERAL CGOLD_INGOT 1..|m MINERAL CGOLD_INGOT 1..
+          - m MINERAL CGOLD_INGOT 1..|m MINERAL CGOLD_INGOT 1..|m MINERAL CGOLD_INGOT 1..
+          - m MINERAL CGOLD_INGOT 1..|m MINERAL CGOLD_INGOT 1..|m MINERAL CGOLD_INGOT 1..
+          hidden: false
+
+'14':
+  base:
+    material: STONE
+    name: '&fMena de Cgold'
+    block-id: 14.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'overworld-legendary'
+
+'15':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Cgold'
+    block-id: 15.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'deepslate-legendary'
+
+'16':
+  base:
+    material: STONE
+    name: '&fBloque de Cgold Bruto'
+    block-id: 16.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL CGOLD_RAW 1..|m MINERAL CGOLD_RAW 1..|m MINERAL CGOLD_RAW 1..
+          - m MINERAL CGOLD_RAW 1..|m MINERAL CGOLD_RAW 1..|m MINERAL CGOLD_RAW 1..
+          - m MINERAL CGOLD_RAW 1..|m MINERAL CGOLD_RAW 1..|m MINERAL CGOLD_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 5: CIRON (IDs 17-20) - OVERWORLD LEGENDARY
+# =============================================================================
+'17':
+  base:
+    material: STONE
+    name: '&fBloque de Ciron'
+    block-id: 17.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL CIRON_INGOT 1..|m MINERAL CIRON_INGOT 1..|m MINERAL CIRON_INGOT 1..
+          - m MINERAL CIRON_INGOT 1..|m MINERAL CIRON_INGOT 1..|m MINERAL CIRON_INGOT 1..
+          - m MINERAL CIRON_INGOT 1..|m MINERAL CIRON_INGOT 1..|m MINERAL CIRON_INGOT 1..
+          hidden: false
+
+'18':
+  base:
+    material: STONE
+    name: '&fMena de Ciron'
+    block-id: 18.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'overworld-legendary'
+
+'19':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Ciron'
+    block-id: 19.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'deepslate-legendary'
+
+'20':
+  base:
+    material: STONE
+    name: '&fBloque de Ciron Bruto'
+    block-id: 20.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL CIRON_RAW 1..|m MINERAL CIRON_RAW 1..|m MINERAL CIRON_RAW 1..
+          - m MINERAL CIRON_RAW 1..|m MINERAL CIRON_RAW 1..|m MINERAL CIRON_RAW 1..
+          - m MINERAL CIRON_RAW 1..|m MINERAL CIRON_RAW 1..|m MINERAL CIRON_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 6: CRYSTAL (IDs 21-24) - OVERWORLD EPIC
+# =============================================================================
+'21':
+  base:
+    material: STONE
+    name: '&fBloque de Cristal'
+    block-id: 21.0
+    tier: EPIC
+    required-power: 20
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL CRYSTAL_INGOT 1..|m MINERAL CRYSTAL_INGOT 1..|m MINERAL CRYSTAL_INGOT 1..
+          - m MINERAL CRYSTAL_INGOT 1..|m MINERAL CRYSTAL_INGOT 1..|m MINERAL CRYSTAL_INGOT 1..
+          - m MINERAL CRYSTAL_INGOT 1..|m MINERAL CRYSTAL_INGOT 1..|m MINERAL CRYSTAL_INGOT 1..
+          hidden: false
+
+'22':
+  base:
+    material: STONE
+    name: '&fMena de Cristal'
+    block-id: 22.0
+    tier: EPIC
+    required-power: 20
+    require-power-to-break: true
+    gen-template: 'overworld-epic'
+
+'23':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Cristal'
+    block-id: 23.0
+    tier: EPIC
+    required-power: 20
+    require-power-to-break: true
+    gen-template: 'deepslate-epic'
+
+'24':
+  base:
+    material: STONE
+    name: '&fBloque de Cristal Bruto'
+    block-id: 24.0
+    tier: EPIC
+    required-power: 20
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL CRYSTAL_RAW 1..|m MINERAL CRYSTAL_RAW 1..|m MINERAL CRYSTAL_RAW 1..
+          - m MINERAL CRYSTAL_RAW 1..|m MINERAL CRYSTAL_RAW 1..|m MINERAL CRYSTAL_RAW 1..
+          - m MINERAL CRYSTAL_RAW 1..|m MINERAL CRYSTAL_RAW 1..|m MINERAL CRYSTAL_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 7: CYAN (IDs 25-28) - OVERWORLD RARE
+# =============================================================================
+'25':
+  base:
+    material: STONE
+    name: '&fBloque Cian'
+    block-id: 25.0
+    tier: RARE
+    required-power: 20
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL CYAN_INGOT 1..|m MINERAL CYAN_INGOT 1..|m MINERAL CYAN_INGOT 1..
+          - m MINERAL CYAN_INGOT 1..|m MINERAL CYAN_INGOT 1..|m MINERAL CYAN_INGOT 1..
+          - m MINERAL CYAN_INGOT 1..|m MINERAL CYAN_INGOT 1..|m MINERAL CYAN_INGOT 1..
+          hidden: false
+
+'26':
+  base:
+    material: STONE
+    name: '&fMena Cian'
+    block-id: 26.0
+    tier: RARE
+    required-power: 20
+    require-power-to-break: true
+    gen-template: 'overworld-rare'
+
+'27':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra Cian'
+    block-id: 27.0
+    tier: RARE
+    required-power: 20
+    require-power-to-break: true
+    gen-template: 'deepslate-rare'
+
+'28':
+  base:
+    material: STONE
+    name: '&fBloque Cian Bruto'
+    block-id: 28.0
+    tier: RARE
+    required-power: 20
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL CYAN_RAW 1..|m MINERAL CYAN_RAW 1..|m MINERAL CYAN_RAW 1..
+          - m MINERAL CYAN_RAW 1..|m MINERAL CYAN_RAW 1..|m MINERAL CYAN_RAW 1..
+          - m MINERAL CYAN_RAW 1..|m MINERAL CYAN_RAW 1..|m MINERAL CYAN_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 8: DGOLD (IDs 29-32) - OVERWORLD MYTHIC
+# =============================================================================
+'29':
+  base:
+    material: STONE
+    name: '&fBloque de Dgold'
+    block-id: 29.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL DGOLD_INGOT 1..|m MINERAL DGOLD_INGOT 1..|m MINERAL DGOLD_INGOT 1..
+          - m MINERAL DGOLD_INGOT 1..|m MINERAL DGOLD_INGOT 1..|m MINERAL DGOLD_INGOT 1..
+          - m MINERAL DGOLD_INGOT 1..|m MINERAL DGOLD_INGOT 1..|m MINERAL DGOLD_INGOT 1..
+          hidden: false
+
+'30':
+  base:
+    material: STONE
+    name: '&fMena de Dgold'
+    block-id: 30.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    gen-template: 'overworld-mythic'
+
+'31':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Dgold'
+    block-id: 31.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    gen-template: 'deepslate-mythic'
+
+'32':
+  base:
+    material: STONE
+    name: '&fBloque de Dgold Bruto'
+    block-id: 32.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL DGOLD_RAW 1..|m MINERAL DGOLD_RAW 1..|m MINERAL DGOLD_RAW 1..
+          - m MINERAL DGOLD_RAW 1..|m MINERAL DGOLD_RAW 1..|m MINERAL DGOLD_RAW 1..
+          - m MINERAL DGOLD_RAW 1..|m MINERAL DGOLD_RAW 1..|m MINERAL DGOLD_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 9: DRAGON (IDs 33-36) - NETHER MYTHIC
+# =============================================================================
+'33':
+  base:
+    material: STONE
+    name: '&fBloque Dragón'
+    block-id: 33.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL DRAGON_INGOT 1..|m MINERAL DRAGON_INGOT 1..|m MINERAL DRAGON_INGOT 1..
+          - m MINERAL DRAGON_INGOT 1..|m MINERAL DRAGON_INGOT 1..|m MINERAL DRAGON_INGOT 1..
+          - m MINERAL DRAGON_INGOT 1..|m MINERAL DRAGON_INGOT 1..|m MINERAL DRAGON_INGOT 1..
+          hidden: false
+
+'34':
+  base:
+    material: STONE
+    name: '&fMena Dragón'
+    block-id: 34.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    gen-template: 'nether-mythic'
+
+'35':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra Dragón'
+    block-id: 35.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    # SIN TEMPLATE (NETHER)
+
+'36':
+  base:
+    material: STONE
+    name: '&fBloque Dragón Bruto'
+    block-id: 36.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL DRAGON_RAW 1..|m MINERAL DRAGON_RAW 1..|m MINERAL DRAGON_RAW 1..
+          - m MINERAL DRAGON_RAW 1..|m MINERAL DRAGON_RAW 1..|m MINERAL DRAGON_RAW 1..
+          - m MINERAL DRAGON_RAW 1..|m MINERAL DRAGON_RAW 1..|m MINERAL DRAGON_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 10: GREEN (IDs 37-40) - OVERWORLD COMMON
+# =============================================================================
+'37':
+  base:
+    material: STONE
+    name: '&fBloque Verde'
+    block-id: 37.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL GREEN_INGOT 1..|m MINERAL GREEN_INGOT 1..|m MINERAL GREEN_INGOT 1..
+          - m MINERAL GREEN_INGOT 1..|m MINERAL GREEN_INGOT 1..|m MINERAL GREEN_INGOT 1..
+          - m MINERAL GREEN_INGOT 1..|m MINERAL GREEN_INGOT 1..|m MINERAL GREEN_INGOT 1..
+          hidden: false
+
+'38':
+  base:
+    material: STONE
+    name: '&fMena Verde'
+    block-id: 38.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    gen-template: 'overworld-common'
+
+'39':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra Verde'
+    block-id: 39.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    gen-template: 'deepslate-common'
+
+'40':
+  base:
+    material: STONE
+    name: '&fBloque Verde Bruto'
+    block-id: 40.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL GREEN_RAW 1..|m MINERAL GREEN_RAW 1..|m MINERAL GREEN_RAW 1..
+          - m MINERAL GREEN_RAW 1..|m MINERAL GREEN_RAW 1..|m MINERAL GREEN_RAW 1..
+          - m MINERAL GREEN_RAW 1..|m MINERAL GREEN_RAW 1..|m MINERAL GREEN_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 11: HEART (IDs 41-44) - NETHER MYTHIC
+# =============================================================================
+'41':
+  base:
+    material: STONE
+    name: '&fBloque Corazón'
+    block-id: 41.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL HEART_INGOT 1..|m MINERAL HEART_INGOT 1..|m MINERAL HEART_INGOT 1..
+          - m MINERAL HEART_INGOT 1..|m MINERAL HEART_INGOT 1..|m MINERAL HEART_INGOT 1..
+          - m MINERAL HEART_INGOT 1..|m MINERAL HEART_INGOT 1..|m MINERAL HEART_INGOT 1..
+          hidden: false
+
+'42':
+  base:
+    material: STONE
+    name: '&fMena Corazón'
+    block-id: 42.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    gen-template: 'nether-mythic'
+
+'43':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra Corazón'
+    block-id: 43.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    # SIN TEMPLATE (NETHER)
+
+'44':
+  base:
+    material: STONE
+    name: '&fBloque Corazón Bruto'
+    block-id: 44.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL HEART_RAW 1..|m MINERAL HEART_RAW 1..|m MINERAL HEART_RAW 1..
+          - m MINERAL HEART_RAW 1..|m MINERAL HEART_RAW 1..|m MINERAL HEART_RAW 1..
+          - m MINERAL HEART_RAW 1..|m MINERAL HEART_RAW 1..|m MINERAL HEART_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 12: INFECT (IDs 45-48) - OVERWORLD MYTHIC
+# =============================================================================
+'45':
+  base:
+    material: STONE
+    name: '&fBloque Infectado'
+    block-id: 45.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL INFECT_INGOT 1..|m MINERAL INFECT_INGOT 1..|m MINERAL INFECT_INGOT 1..
+          - m MINERAL INFECT_INGOT 1..|m MINERAL INFECT_INGOT 1..|m MINERAL INFECT_INGOT 1..
+          - m MINERAL INFECT_INGOT 1..|m MINERAL INFECT_INGOT 1..|m MINERAL INFECT_INGOT 1..
+          hidden: false
+
+'46':
+  base:
+    material: STONE
+    name: '&fMena Infectada'
+    block-id: 46.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    gen-template: 'overworld-mythic'
+
+'47':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra Infectada'
+    block-id: 47.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    gen-template: 'deepslate-mythic'
+
+'48':
+  base:
+    material: STONE
+    name: '&fBloque Infectado Bruto'
+    block-id: 48.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL INFECT_RAW 1..|m MINERAL INFECT_RAW 1..|m MINERAL INFECT_RAW 1..
+          - m MINERAL INFECT_RAW 1..|m MINERAL INFECT_RAW 1..|m MINERAL INFECT_RAW 1..
+          - m MINERAL INFECT_RAW 1..|m MINERAL INFECT_RAW 1..|m MINERAL INFECT_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 13: JAG (IDs 49-52) - OVERWORLD EPIC
+# =============================================================================
+'49':
+  base:
+    material: STONE
+    name: '&fBloque de Jag'
+    block-id: 49.0
+    tier: EPIC
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL JAG_INGOT 1..|m MINERAL JAG_INGOT 1..|m MINERAL JAG_INGOT 1..
+          - m MINERAL JAG_INGOT 1..|m MINERAL JAG_INGOT 1..|m MINERAL JAG_INGOT 1..
+          - m MINERAL JAG_INGOT 1..|m MINERAL JAG_INGOT 1..|m MINERAL JAG_INGOT 1..
+          hidden: false
+
+'50':
+  base:
+    material: STONE
+    name: '&fMena de Jag'
+    block-id: 50.0
+    tier: EPIC
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'overworld-epic'
+
+'51':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Jag'
+    block-id: 51.0
+    tier: EPIC
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'deepslate-epic'
+
+'52':
+  base:
+    material: STONE
+    name: '&fBloque de Jag Bruto'
+    block-id: 52.0
+    tier: EPIC
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL JAG_RAW 1..|m MINERAL JAG_RAW 1..|m MINERAL JAG_RAW 1..
+          - m MINERAL JAG_RAW 1..|m MINERAL JAG_RAW 1..|m MINERAL JAG_RAW 1..
+          - m MINERAL JAG_RAW 1..|m MINERAL JAG_RAW 1..|m MINERAL JAG_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 14: LCOP (IDs 53-56) - OVERWORLD LEGENDARY
+# =============================================================================
+'53':
+  base:
+    material: STONE
+    name: '&fBloque de Lcop'
+    block-id: 53.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL LCOP_INGOT 1..|m MINERAL LCOP_INGOT 1..|m MINERAL LCOP_INGOT 1..
+          - m MINERAL LCOP_INGOT 1..|m MINERAL LCOP_INGOT 1..|m MINERAL LCOP_INGOT 1..
+          - m MINERAL LCOP_INGOT 1..|m MINERAL LCOP_INGOT 1..|m MINERAL LCOP_INGOT 1..
+          hidden: false
+
+'54':
+  base:
+    material: STONE
+    name: '&fMena de Lcop'
+    block-id: 54.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'overworld-legendary'
+
+'55':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Lcop'
+    block-id: 55.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'deepslate-legendary'
+
+'56':
+  base:
+    material: STONE
+    name: '&fBloque de Lcop Bruto'
+    block-id: 56.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL LCOP_RAW 1..|m MINERAL LCOP_RAW 1..|m MINERAL LCOP_RAW 1..
+          - m MINERAL LCOP_RAW 1..|m MINERAL LCOP_RAW 1..|m MINERAL LCOP_RAW 1..
+          - m MINERAL LCOP_RAW 1..|m MINERAL LCOP_RAW 1..|m MINERAL LCOP_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 15: LCYAN (IDs 57-60) - OVERWORLD RARE
+# =============================================================================
+'57':
+  base:
+    material: STONE
+    name: '&fBloque Cian Claro'
+    block-id: 57.0
+    tier: RARE
+    required-power: 20
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL LCYAN_INGOT 1..|m MINERAL LCYAN_INGOT 1..|m MINERAL LCYAN_INGOT 1..
+          - m MINERAL LCYAN_INGOT 1..|m MINERAL LCYAN_INGOT 1..|m MINERAL LCYAN_INGOT 1..
+          - m MINERAL LCYAN_INGOT 1..|m MINERAL LCYAN_INGOT 1..|m MINERAL LCYAN_INGOT 1..
+          hidden: false
+
+'58':
+  base:
+    material: STONE
+    name: '&fMena Cian Claro'
+    block-id: 58.0
+    tier: RARE
+    required-power: 20
+    require-power-to-break: true
+    gen-template: 'overworld-rare'
+
+'59':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra Cian Claro'
+    block-id: 59.0
+    tier: RARE
+    required-power: 20
+    require-power-to-break: true
+    gen-template: 'deepslate-rare'
+
+'60':
+  base:
+    material: STONE
+    name: '&fBloque Cian Claro Bruto'
+    block-id: 60.0
+    tier: RARE
+    required-power: 20
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL LCYAN_RAW 1..|m MINERAL LCYAN_RAW 1..|m MINERAL LCYAN_RAW 1..
+          - m MINERAL LCYAN_RAW 1..|m MINERAL LCYAN_RAW 1..|m MINERAL LCYAN_RAW 1..
+          - m MINERAL LCYAN_RAW 1..|m MINERAL LCYAN_RAW 1..|m MINERAL LCYAN_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 16: MAGIC (IDs 61-64) - END EPIC
+# =============================================================================
+'61':
+  base:
+    material: STONE
+    name: '&fBloque de Magic'
+    block-id: 61.0
+    tier: EPIC
+    required-power: 20
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL MAGIC_INGOT 1..|m MINERAL MAGIC_INGOT 1..|m MINERAL MAGIC_INGOT 1..
+          - m MINERAL MAGIC_INGOT 1..|m MINERAL MAGIC_INGOT 1..|m MINERAL MAGIC_INGOT 1..
+          - m MINERAL MAGIC_INGOT 1..|m MINERAL MAGIC_INGOT 1..|m MINERAL MAGIC_INGOT 1..
+          hidden: false
+
+'62':
+  base:
+    material: STONE
+    name: '&fMena de Magic'
+    block-id: 62.0
+    tier: EPIC
+    required-power: 20
+    require-power-to-break: true
+    gen-template: 'end-epic'
+
+'63':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Magic'
+    block-id: 63.0
+    tier: EPIC
+    required-power: 20
+    require-power-to-break: true
+    # SIN TEMPLATE (END)
+
+'64':
+  base:
+    material: STONE
+    name: '&fBloque de Magic Bruto'
+    block-id: 64.0
+    tier: EPIC
+    required-power: 20
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL MAGIC_RAW 1..|m MINERAL MAGIC_RAW 1..|m MINERAL MAGIC_RAW 1..
+          - m MINERAL MAGIC_RAW 1..|m MINERAL MAGIC_RAW 1..|m MINERAL MAGIC_RAW 1..
+          - m MINERAL MAGIC_RAW 1..|m MINERAL MAGIC_RAW 1..|m MINERAL MAGIC_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 17: MATRIX (IDs 65-68) - OVERWORLD MYTHIC
+# =============================================================================
+'65':
+  base:
+    material: STONE
+    name: '&fBloque Matrix'
+    block-id: 65.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL MATRIX_INGOT 1..|m MINERAL MATRIX_INGOT 1..|m MINERAL MATRIX_INGOT 1..
+          - m MINERAL MATRIX_INGOT 1..|m MINERAL MATRIX_INGOT 1..|m MINERAL MATRIX_INGOT 1..
+          - m MINERAL MATRIX_INGOT 1..|m MINERAL MATRIX_INGOT 1..|m MINERAL MATRIX_INGOT 1..
+          hidden: false
+
+'66':
+  base:
+    material: STONE
+    name: '&fMena Matrix'
+    block-id: 66.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    gen-template: 'overworld-mythic'
+
+'67':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra Matrix'
+    block-id: 67.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    gen-template: 'deepslate-mythic'
+
+'68':
+  base:
+    material: STONE
+    name: '&fBloque Matrix Bruto'
+    block-id: 68.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL MATRIX_RAW 1..|m MINERAL MATRIX_RAW 1..|m MINERAL MATRIX_RAW 1..
+          - m MINERAL MATRIX_RAW 1..|m MINERAL MATRIX_RAW 1..|m MINERAL MATRIX_RAW 1..
+          - m MINERAL MATRIX_RAW 1..|m MINERAL MATRIX_RAW 1..|m MINERAL MATRIX_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 18: NEBULA (IDs 69-72) - END MYTHIC
+# =============================================================================
+'69':
+  base:
+    material: STONE
+    name: '&fBloque Nébula'
+    block-id: 69.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL NEBULA_INGOT 1..|m MINERAL NEBULA_INGOT 1..|m MINERAL NEBULA_INGOT 1..
+          - m MINERAL NEBULA_INGOT 1..|m MINERAL NEBULA_INGOT 1..|m MINERAL NEBULA_INGOT 1..
+          - m MINERAL NEBULA_INGOT 1..|m MINERAL NEBULA_INGOT 1..|m MINERAL NEBULA_INGOT 1..
+          hidden: false
+
+'70':
+  base:
+    material: STONE
+    name: '&fMena Nébula'
+    block-id: 70.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    gen-template: 'end-mythic'
+
+'71':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra Nébula'
+    block-id: 71.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    # SIN TEMPLATE (END)
+
+'72':
+  base:
+    material: STONE
+    name: '&fBloque Nébula Bruto'
+    block-id: 72.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL NEBULA_RAW 1..|m MINERAL NEBULA_RAW 1..|m MINERAL NEBULA_RAW 1..
+          - m MINERAL NEBULA_RAW 1..|m MINERAL NEBULA_RAW 1..|m MINERAL NEBULA_RAW 1..
+          - m MINERAL NEBULA_RAW 1..|m MINERAL NEBULA_RAW 1..|m MINERAL NEBULA_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 19: OBSI (IDs 73-76) - OVERWORLD EPIC
+# =============================================================================
+'73':
+  base:
+    material: STONE
+    name: '&fBloque de Obsidiana'
+    block-id: 73.0
+    tier: EPIC
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL OBSI_INGOT 1..|m MINERAL OBSI_INGOT 1..|m MINERAL OBSI_INGOT 1..
+          - m MINERAL OBSI_INGOT 1..|m MINERAL OBSI_INGOT 1..|m MINERAL OBSI_INGOT 1..
+          - m MINERAL OBSI_INGOT 1..|m MINERAL OBSI_INGOT 1..|m MINERAL OBSI_INGOT 1..
+          hidden: false
+
+'74':
+  base:
+    material: STONE
+    name: '&fMena de Obsidiana'
+    block-id: 74.0
+    tier: EPIC
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'overworld-epic'
+
+'75':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Obsidiana'
+    block-id: 75.0
+    tier: EPIC
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'deepslate-epic'
+
+'76':
+  base:
+    material: STONE
+    name: '&fBloque de Obsidiana Bruto'
+    block-id: 76.0
+    tier: EPIC
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL OBSI_RAW 1..|m MINERAL OBSI_RAW 1..|m MINERAL OBSI_RAW 1..
+          - m MINERAL OBSI_RAW 1..|m MINERAL OBSI_RAW 1..|m MINERAL OBSI_RAW 1..
+          - m MINERAL OBSI_RAW 1..|m MINERAL OBSI_RAW 1..|m MINERAL OBSI_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 20: OCOP (IDs 77-80) - OVERWORLD LEGENDARY
+# =============================================================================
+'77':
+  base:
+    material: STONE
+    name: '&fBloque de Ocop'
+    block-id: 77.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL OCOP_INGOT 1..|m MINERAL OCOP_INGOT 1..|m MINERAL OCOP_INGOT 1..
+          - m MINERAL OCOP_INGOT 1..|m MINERAL OCOP_INGOT 1..|m MINERAL OCOP_INGOT 1..
+          - m MINERAL OCOP_INGOT 1..|m MINERAL OCOP_INGOT 1..|m MINERAL OCOP_INGOT 1..
+          hidden: false
+
+'78':
+  base:
+    material: STONE
+    name: '&fMena de Ocop'
+    block-id: 78.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'overworld-legendary'
+
+'79':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Ocop'
+    block-id: 79.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'deepslate-legendary'
+
+'80':
+  base:
+    material: STONE
+    name: '&fBloque de Ocop Bruto'
+    block-id: 80.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL OCOP_RAW 1..|m MINERAL OCOP_RAW 1..|m MINERAL OCOP_RAW 1..
+          - m MINERAL OCOP_RAW 1..|m MINERAL OCOP_RAW 1..|m MINERAL OCOP_RAW 1..
+          - m MINERAL OCOP_RAW 1..|m MINERAL OCOP_RAW 1..|m MINERAL OCOP_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 21: PCOP (IDs 81-84) - NETHER LEGENDARY
+# =============================================================================
+'81':
+  base:
+    material: STONE
+    name: '&fBloque de Pcop'
+    block-id: 81.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL PCOP_INGOT 1..|m MINERAL PCOP_INGOT 1..|m MINERAL PCOP_INGOT 1..
+          - m MINERAL PCOP_INGOT 1..|m MINERAL PCOP_INGOT 1..|m MINERAL PCOP_INGOT 1..
+          - m MINERAL PCOP_INGOT 1..|m MINERAL PCOP_INGOT 1..|m MINERAL PCOP_INGOT 1..
+          hidden: false
+
+'82':
+  base:
+    material: STONE
+    name: '&fMena de Pcop'
+    block-id: 82.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'nether-legendary'
+
+'83':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Pcop'
+    block-id: 83.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    # SIN TEMPLATE (NETHER)
+
+'84':
+  base:
+    material: STONE
+    name: '&fBloque de Pcop Bruto'
+    block-id: 84.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL PCOP_RAW 1..|m MINERAL PCOP_RAW 1..|m MINERAL PCOP_RAW 1..
+          - m MINERAL PCOP_RAW 1..|m MINERAL PCOP_RAW 1..|m MINERAL PCOP_RAW 1..
+          - m MINERAL PCOP_RAW 1..|m MINERAL PCOP_RAW 1..|m MINERAL PCOP_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 22: PINK (IDs 85-88) - OVERWORLD COMMON
+# =============================================================================
+'85':
+  base:
+    material: STONE
+    name: '&fBloque Rosa'
+    block-id: 85.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL PINK_INGOT 1..|m MINERAL PINK_INGOT 1..|m MINERAL PINK_INGOT 1..
+          - m MINERAL PINK_INGOT 1..|m MINERAL PINK_INGOT 1..|m MINERAL PINK_INGOT 1..
+          - m MINERAL PINK_INGOT 1..|m MINERAL PINK_INGOT 1..|m MINERAL PINK_INGOT 1..
+          hidden: false
+
+'86':
+  base:
+    material: STONE
+    name: '&fMena Rosa'
+    block-id: 86.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    gen-template: 'overworld-common'
+
+'87':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra Rosa'
+    block-id: 87.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    gen-template: 'deepslate-common'
+
+'88':
+  base:
+    material: STONE
+    name: '&fBloque Rosa Bruto'
+    block-id: 88.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL PINK_RAW 1..|m MINERAL PINK_RAW 1..|m MINERAL PINK_RAW 1..
+          - m MINERAL PINK_RAW 1..|m MINERAL PINK_RAW 1..|m MINERAL PINK_RAW 1..
+          - m MINERAL PINK_RAW 1..|m MINERAL PINK_RAW 1..|m MINERAL PINK_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 23: PURPLE (IDs 89-92) - OVERWORLD RARE
+# =============================================================================
+'89':
+  base:
+    material: STONE
+    name: '&fBloque de Purple'
+    block-id: 89.0
+    tier: RARE
+    required-power: 20
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL PURPLE_INGOT 1..|m MINERAL PURPLE_INGOT 1..|m MINERAL PURPLE_INGOT 1..
+          - m MINERAL PURPLE_INGOT 1..|m MINERAL PURPLE_INGOT 1..|m MINERAL PURPLE_INGOT 1..
+          - m MINERAL PURPLE_INGOT 1..|m MINERAL PURPLE_INGOT 1..|m MINERAL PURPLE_INGOT 1..
+          hidden: false
+
+'90':
+  base:
+    material: STONE
+    name: '&fMena de Purple'
+    block-id: 90.0
+    tier: RARE
+    required-power: 20
+    require-power-to-break: true
+    gen-template: 'overworld-rare'
+
+'91':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Purple'
+    block-id: 91.0
+    tier: RARE
+    required-power: 20
+    require-power-to-break: true
+    gen-template: 'deepslate-rare'
+
+'92':
+  base:
+    material: STONE
+    name: '&fBloque de Purple Bruto'
+    block-id: 92.0
+    tier: RARE
+    required-power: 20
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL PURPLE_RAW 1..|m MINERAL PURPLE_RAW 1..|m MINERAL PURPLE_RAW 1..
+          - m MINERAL PURPLE_RAW 1..|m MINERAL PURPLE_RAW 1..|m MINERAL PURPLE_RAW 1..
+          - m MINERAL PURPLE_RAW 1..|m MINERAL PURPLE_RAW 1..|m MINERAL PURPLE_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 24: REDDISH (IDs 93-96) - NETHER RARE
+# =============================================================================
+'93':
+  base:
+    material: STONE
+    name: '&fBloque Rojizo'
+    block-id: 93.0
+    tier: RARE
+    required-power: 10
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL REDDISH_INGOT 1..|m MINERAL REDDISH_INGOT 1..|m MINERAL REDDISH_INGOT 1..
+          - m MINERAL REDDISH_INGOT 1..|m MINERAL REDDISH_INGOT 1..|m MINERAL REDDISH_INGOT 1..
+          - m MINERAL REDDISH_INGOT 1..|m MINERAL REDDISH_INGOT 1..|m MINERAL REDDISH_INGOT 1..
+          hidden: false
+
+'94':
+  base:
+    material: STONE
+    name: '&fMena Rojiza'
+    block-id: 94.0
+    tier: RARE
+    required-power: 10
+    require-power-to-break: true
+    gen-template: 'nether-rare'
+
+'95':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra Rojiza'
+    block-id: 95.0
+    tier: RARE
+    required-power: 10
+    require-power-to-break: true
+    # SIN TEMPLATE (NETHER)
+
+'96':
+  base:
+    material: STONE
+    name: '&fBloque Rojizo Bruto'
+    block-id: 96.0
+    tier: RARE
+    required-power: 10
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL REDDISH_RAW 1..|m MINERAL REDDISH_RAW 1..|m MINERAL REDDISH_RAW 1..
+          - m MINERAL REDDISH_RAW 1..|m MINERAL REDDISH_RAW 1..|m MINERAL REDDISH_RAW 1..
+          - m MINERAL REDDISH_RAW 1..|m MINERAL REDDISH_RAW 1..|m MINERAL REDDISH_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 25: SILVER (IDs 97-100) - OVERWORLD COMMON
+# =============================================================================
+'97':
+  base:
+    material: STONE
+    name: '&fBloque de Plata'
+    block-id: 97.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL SILVER_INGOT 1..|m MINERAL SILVER_INGOT 1..|m MINERAL SILVER_INGOT 1..
+          - m MINERAL SILVER_INGOT 1..|m MINERAL SILVER_INGOT 1..|m MINERAL SILVER_INGOT 1..
+          - m MINERAL SILVER_INGOT 1..|m MINERAL SILVER_INGOT 1..|m MINERAL SILVER_INGOT 1..
+          hidden: false
+
+'98':
+  base:
+    material: STONE
+    name: '&fMena de Plata'
+    block-id: 98.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    gen-template: 'overworld-common'
+
+'99':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Plata'
+    block-id: 99.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    gen-template: 'deepslate-common'
+
+'100':
+  base:
+    material: STONE
+    name: '&fBloque de Plata Bruto'
+    block-id: 100.0
+    tier: COMMON
+    required-power: 10
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL SILVER_RAW 1..|m MINERAL SILVER_RAW 1..|m MINERAL SILVER_RAW 1..
+          - m MINERAL SILVER_RAW 1..|m MINERAL SILVER_RAW 1..|m MINERAL SILVER_RAW 1..
+          - m MINERAL SILVER_RAW 1..|m MINERAL SILVER_RAW 1..|m MINERAL SILVER_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 26: SPIKE (IDs 101-104) - END RARE
+# =============================================================================
+'101':
+  base:
+    material: STONE
+    name: '&fBloque de Spike'
+    block-id: 101.0
+    tier: RARE
+    required-power: 10
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL SPIKE_INGOT 1..|m MINERAL SPIKE_INGOT 1..|m MINERAL SPIKE_INGOT 1..
+          - m MINERAL SPIKE_INGOT 1..|m MINERAL SPIKE_INGOT 1..|m MINERAL SPIKE_INGOT 1..
+          - m MINERAL SPIKE_INGOT 1..|m MINERAL SPIKE_INGOT 1..|m MINERAL SPIKE_INGOT 1..
+          hidden: false
+
+'102':
+  base:
+    material: STONE
+    name: '&fMena de Spike'
+    block-id: 102.0
+    tier: RARE
+    required-power: 10
+    require-power-to-break: true
+    gen-template: 'end-rare'
+
+'103':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Spike'
+    block-id: 103.0
+    tier: RARE
+    required-power: 10
+    require-power-to-break: true
+    # SIN TEMPLATE (END)
+
+'104':
+  base:
+    material: STONE
+    name: '&fBloque de Spike Bruto'
+    block-id: 104.0
+    tier: RARE
+    required-power: 10
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL SPIKE_RAW 1..|m MINERAL SPIKE_RAW 1..|m MINERAL SPIKE_RAW 1..
+          - m MINERAL SPIKE_RAW 1..|m MINERAL SPIKE_RAW 1..|m MINERAL SPIKE_RAW 1..
+          - m MINERAL SPIKE_RAW 1..|m MINERAL SPIKE_RAW 1..|m MINERAL SPIKE_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 27: TAXIS (IDs 105-108) - OVERWORLD LEGENDARY
+# =============================================================================
+'105':
+  base:
+    material: STONE
+    name: '&fBloque de Taxis'
+    block-id: 105.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL TAXIS_INGOT 1..|m MINERAL TAXIS_INGOT 1..|m MINERAL TAXIS_INGOT 1..
+          - m MINERAL TAXIS_INGOT 1..|m MINERAL TAXIS_INGOT 1..|m MINERAL TAXIS_INGOT 1..
+          - m MINERAL TAXIS_INGOT 1..|m MINERAL TAXIS_INGOT 1..|m MINERAL TAXIS_INGOT 1..
+          hidden: false
+
+'106':
+  base:
+    material: STONE
+    name: '&fMena de Taxis'
+    block-id: 106.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'overworld-legendary'
+
+'107':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra de Taxis'
+    block-id: 107.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    gen-template: 'deepslate-legendary'
+
+'108':
+  base:
+    material: STONE
+    name: '&fBloque de Taxis Bruto'
+    block-id: 108.0
+    tier: LEGENDARY
+    required-power: 25
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL TAXIS_RAW 1..|m MINERAL TAXIS_RAW 1..|m MINERAL TAXIS_RAW 1..
+          - m MINERAL TAXIS_RAW 1..|m MINERAL TAXIS_RAW 1..|m MINERAL TAXIS_RAW 1..
+          - m MINERAL TAXIS_RAW 1..|m MINERAL TAXIS_RAW 1..|m MINERAL TAXIS_RAW 1..
+          hidden: false
+
+# =============================================================================
+# GRUPO 28: TECH (IDs 109-112) - OVERWORLD MYTHIC
+# =============================================================================
+'109':
+  base:
+    material: STONE
+    name: '&fBloque Tech'
+    block-id: 109.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL TECH_INGOT 1..|m MINERAL TECH_INGOT 1..|m MINERAL TECH_INGOT 1..
+          - m MINERAL TECH_INGOT 1..|m MINERAL TECH_INGOT 1..|m MINERAL TECH_INGOT 1..
+          - m MINERAL TECH_INGOT 1..|m MINERAL TECH_INGOT 1..|m MINERAL TECH_INGOT 1..
+          hidden: false
+
+'110':
+  base:
+    material: STONE
+    name: '&fMena Tech'
+    block-id: 110.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    gen-template: 'overworld-mythic'
+
+'111':
+  base:
+    material: STONE
+    name: '&fMena de Pizarra Tech'
+    block-id: 111.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    gen-template: 'deepslate-mythic'
+
+'112':
+  base:
+    material: STONE
+    name: '&fBloque Tech Bruto'
+    block-id: 112.0
+    tier: MYTHIC
+    required-power: 30
+    require-power-to-break: true
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MINERAL TECH_RAW 1..|m MINERAL TECH_RAW 1..|m MINERAL TECH_RAW 1..
+          - m MINERAL TECH_RAW 1..|m MINERAL TECH_RAW 1..|m MINERAL TECH_RAW 1..
+          - m MINERAL TECH_RAW 1..|m MINERAL TECH_RAW 1..|m MINERAL TECH_RAW 1..
+          hidden: false

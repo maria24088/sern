@@ -1,0 +1,139 @@
+info:
+  namespace: dragonstone_guardians
+items:
+  dragonstone_axe:
+    display_name: Dragonstone Guardians Axe
+    permission: dragonstone_guardians.use
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: axe
+  dragonstone_battle_axe:
+    display_name: Dragonstone Guardians Battle Axe
+    permission: dragonstone_guardians.use
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: battle_axe
+  dragonstone_blade:
+    display_name: Dragonstone Guardians Blade
+    permission: dragonstone_guardians.use
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: blade
+  dragonstone_bow:
+    display_name: Dragonstone Guardians Bow
+    permission: dragonstone_guardians.use
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+  dragonstone_chest:
+    display_name: Dragonstone Guardians Chest
+    permission: dragonstone_guardians.use
+    resource:
+      material: SEA_LANTERN
+      generate: false
+      model_path: chest
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        solid: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+  dragonstone_dagger:
+    display_name: Dragonstone Guardians Dagger
+    permission: dragonstone_guardians.use
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: dagger
+  dragonstone_fishing_rod:
+    display_name: Dragonstone Guardians Fishing Rod
+    permission: dragonstone_guardians.use
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+  dragonstone_halberd:
+    display_name: Dragonstone Guardians Halberd
+    permission: dragonstone_guardians.use
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: halberd
+
+  dragonstone_hoe:
+    display_name: Dragonstone Guardians Hoe
+    permission: dragonstone_guardians.use
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: hoe      
+  dragonstone_key:
+    display_name: Dragonstone Guardians Key
+    permission: dragonstone_guardians.use
+    resource:
+      material: PAPER
+      generate: false
+      model_path: key
+  dragonstone_pickaxe:
+    display_name: Dragonstone Guardians Pickaxe
+    permission: dragonstone_guardians.use
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: pickaxe
+  dragonstone_shield:
+    display_name: Dragonstone Guardians Shield
+    permission: dragonstone_guardians.use
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+  dragonstone_shovel:
+    display_name: Dragonstone Guardians Shovel
+    permission: dragonstone_guardians.use
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: shovel
+  dragonstone_spear:
+    display_name: Dragonstone Guardians Spear
+    permission: dragonstone_guardians.use
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: spear
+  dragonstone_staff:
+    display_name: Dragonstone Guardians Staff
+    permission: dragonstone_guardians.use
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: staff
+  dragonstone_sword:
+    display_name: Dragonstone Guardians Sword
+    permission: dragonstone_guardians.use
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: sword
+  dragonstone_wings:
+    display_name: Dragonstone Guardians Wings
+    permission: dragonstone_guardians.use
+    resource:
+      material: DIAMOND
+      generate: false
+      model_path: wings
+

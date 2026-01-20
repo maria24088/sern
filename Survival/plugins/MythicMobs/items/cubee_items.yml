@@ -1,0 +1,8 @@
+Cubee_Snack:
+  Id: PAPER  # O el material que use tu item en ItemsAdder
+  Display: 'Cubee Snack'
+  # Opción A: Si usas la integración directa (Recomendado)
+  Import: itemsadder:namespace:cubee_snack
+  
+  # Opción B: Si la integración falla, usa el ModelData manual
+  # CustomModelData: 12345 (El numero que tenga en IA)

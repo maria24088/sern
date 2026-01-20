@@ -1,0 +1,135 @@
+info:
+  namespace: customcrops
+items:
+  apple_stage_1:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/apple/stage_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  apple_stage_2:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/apple/stage_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  apple_stage_3:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/apple/stage_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  apple_stage_4:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/apple/stage_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  apple_stage_5:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/apple/stage_5
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  apple_stage_6:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/apple/stage_6
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+categories:
+  customcrops_apple:
+    enabled: true
+    icon: APPLE
+    name: 'Apple'
+    items:
+      - customcrops:apple_stage_1
+      - customcrops:apple_stage_2
+      - customcrops:apple_stage_3
+      - customcrops:apple_stage_4
+      - customcrops:apple_stage_5
+      - customcrops:apple_stage_6

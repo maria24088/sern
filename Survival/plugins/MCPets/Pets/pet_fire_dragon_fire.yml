@@ -1,0 +1,115 @@
+Id: Pet_Fire_Dragon_Fire
+MythicMob: Pet_Fire_Dragon_Fire
+Permission: mcpet.Pet_Fire_Dragon_Fire
+Mountable: false
+Distance: 6
+DismountOnDamaged: false
+SpawnRange: 3
+ComingBackRange: 5
+Icon:
+  Name: §bFire Dragon
+  Material: BRICK
+  CustomModelData: 12003
+  Description:
+  - §fGet your pet Fire Dragon!
+  - ''
+  - §f[§cFlame Shot§f]
+  - §fYour Fire Dragon charges and shoots
+  - §fa fireball at an enemy.
+  - ''
+  - '§7Level up: §a+Damage'
+Skins:
+  Pet_Fire_Dragon_Fire:
+    MythicMob: Pet_Fire_Dragon_Fire
+    Permission: skin.Pet_Fire_Dragon_Fire
+    Icon:
+      Material: BRICK
+      CustomModelData: 12003
+      DisplayName: §bFire Dragon
+      Lore:
+      - §fGet your pet Fire Dragon!
+  Pet_Fire_Dragon_Soulfire:
+    MythicMob: Pet_Fire_Dragon_Soulfire
+    Permission: skin.Pet_Fire_Dragon_Soulfire
+    Icon:
+      Material: BRICK
+      CustomModelData: 12006
+      DisplayName: §bSoulfire Dragon
+      Lore:
+      - §fGet your pet Soulfire Dragon!
+  Pet_Fire_Dragon_Holyfire:
+    MythicMob: Pet_Fire_Dragon_Holyfire
+    Permission: skin.Pet_Fire_Dragon_Holyfire
+    Icon:
+      Material: BRICK
+      CustomModelData: 12004
+      DisplayName: §bHolyfire Dragon
+      Lore:
+      - §fGet your pet Holyfire Dragon!
+  Pet_Fire_Dragon_Shadowflame:
+    MythicMob: Pet_Fire_Dragon_Shadowflame
+    Permission: skin.Pet_Fire_Dragon_Shadowflame
+    Icon:
+      Material: BRICK
+      CustomModelData: 12005
+      DisplayName: §bShadowflame Dragon
+      Lore:
+      - §fGet your pet Shadowflame Dragon!
+Levels:
+  Lvl_Common:
+    Name: §fCommon
+    ExperienceThreshold: 0
+    MaxHealth: 100
+    Regeneration: 0.1
+    ResistanceModifier: 1
+    DamageModifier: 2
+    Power: 1
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+  Lvl_Rare:
+    Name: §aRare
+    ExperienceThreshold: 500
+    MaxHealth: 150
+    Regeneration: 0.12
+    ResistanceModifier: 1
+    DamageModifier: 4
+    Power: 1
+    Cooldowns:
+      Respawn: 14
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &aRare &6level!'
+      Type: CHAT
+  Lvl_Epic:
+    Name: §dEpic
+    ExperienceThreshold: 2000
+    MaxHealth: 200
+    Regeneration: 0.14
+    ResistanceModifier: 1
+    DamageModifier: 6
+    Power: 1
+    Cooldowns:
+      Respawn: 13
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &dEpic &6level!'
+      Type: CHAT
+  Lvl_Legendary:
+    Name: §eLegendary
+    ExperienceThreshold: 5000
+    MaxHealth: 300
+    Regeneration: 0.2
+    ResistanceModifier: 1
+    DamageModifier: 9
+    Power: 1
+    Cooldowns:
+      Respawn: 12
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &eLegendary &6level!'
+      Type: CHAT

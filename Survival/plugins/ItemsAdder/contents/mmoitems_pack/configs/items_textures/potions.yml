@@ -1,0 +1,76 @@
+# For textures only!!!
+info:
+  namespace: mmoitems_pack
+items:
+
+  pot1:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1026
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/potion/small_health_potion
+
+  pot2:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1027
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/potion/health_potion
+
+  pot3:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1028
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/potion/large_health_potion
+
+  pot4:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1029
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/potion/supreme_health_potion
+
+  pot5:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1030
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/potion/small_mana_potion
+
+  pot6:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1031
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/potion/mana_potion
+
+  pot7:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1032
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/potion/large_mana_potion
+
+  pot8:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1033
+      material: GLASS_BOTTLE
+      textures:
+      - hyronic_pack/items/potion/supreme_mana_potion

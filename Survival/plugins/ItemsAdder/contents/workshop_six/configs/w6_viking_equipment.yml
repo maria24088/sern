@@ -1,0 +1,63 @@
+info:
+  namespace: workshop_six
+equipments:
+  viking_armor:
+    type: armor
+    layer_1: viking_equipment/viking_armor_layer_1
+    layer_2: viking_equipment/viking_armor_layer_2
+items:
+  viking_weapon:
+    name: "Viking Weapon"
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: viking_equipment/viking_weapon
+  viking_helmet:
+    name: "Viking Helmet"
+    resource:
+      material: CHAINMAIL_HELMET
+      generate: false
+      model_path: viking_equipment/viking_helmet
+    equipment:
+      slot_attribute_modifiers:
+        armor: 3
+        armor_toughness: 3
+        knockback_resistance: 0.1
+  viking_chestplate:
+    name: "Viking Chestplate"
+    resource:
+      generate: true
+      texture: viking_equipment/viking_chestplate
+      material: CHAINMAIL_CHESTPLATE
+    equipment:
+      id: workshop_six:viking_armor
+      slot_attribute_modifiers:
+        armor: 8
+        armor_toughness: 3
+        knockback_resistance: 0.1
+  viking_leggings:
+    name: "Viking Leggings"
+    resource:
+      generate: true
+      texture: viking_equipment/viking_leggings
+      material: CHAINMAIL_LEGGINGS
+    equipment:
+      id: workshop_six:viking_armor
+      slot_attribute_modifiers:
+        armor: 6
+        armor_toughness: 3
+        knockback_resistance: 0.1
+  viking_boots:
+    name: "Viking Boots"
+    resource:
+      generate: true
+      texture: viking_equipment/viking_boots
+      material: CHAINMAIL_BOOTS
+    equipment:
+      id: workshop_six:viking_armor
+      slot_attribute_modifiers:
+        armor: 3
+        armor_toughness: 3
+        knockback_resistance: 0.1
+
+#UEdJ52UZZFe4oUVGlGbslWaJdFVVFTblVnUGZVRSxmYGpFVjt0Z2Znes1me0VEVMRUZY5WN

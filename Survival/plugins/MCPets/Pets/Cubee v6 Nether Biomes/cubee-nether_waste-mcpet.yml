@@ -1,0 +1,17 @@
+Id: cubee-nether_waste
+MythicMob: cubee-nether_waste
+Permission: mcpet.cubee-nether_waste
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §x§6§7§2§5§2§FN§x§7§3§2§B§2§Fe§x§7§E§3§1§2§Et§x§9§C§5§5§3§Ch§x§C§B§9§8§5§8e§x§F§B§D§A§7§4r
+    §x§F§C§E§6§A§6W§x§F§D§F§3§D§8a§x§F§8§E§A§D§7s§x§E§F§C§D§A§4t§x§E§5§B§0§7§1e §x§B§E§7§E§5§6C§x§9§7§4§D§3§Bu§x§7§E§3§1§2§Eb§x§7§3§2§B§2§Fe§x§6§7§2§5§2§Fe
+  Description:
+  - §fRoaming around the nether,
+  - §fThis cubee is so adventurous!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191049
+
+# 4c55fedd7b128b210d38f1779cf09ee2

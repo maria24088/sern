@@ -1,0 +1,32 @@
+info:
+  namespace: nogs_menagerie
+items:
+  nm_plushie_vex:
+    display_name: '&fVex Plushie'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: plushies/nm_plushie_vex
+    behaviours:
+      furniture:
+        entity: ITEM_FRAME
+        solid: false
+        small: false
+        fixed_rotation: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        sound:
+          place:
+            name: block.wool.place
+          break:
+            name: block.wool.break
+    events:
+      placed_itemframe:
+        interact:
+          play_sound_1:
+            name: minecraft:entity.axolotl.idle_air
+            delay: 0
+            volume: 1.4
+            pitch: 1.2

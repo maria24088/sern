@@ -1,0 +1,80 @@
+# Made by samus2002
+
+menu_title: '&8&lPet Shop'
+open_command:
+  - shop_pet
+size: 45
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: shop_pet.open
+      deny_commands:
+        - "[message] &cYou can't access the Pet Shop yet!"
+items:
+  'GREEN_FROG_PET':
+    material: DROWNED_SPAWN_EGG
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lGreen Frog Pet'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to buy!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$200"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_PET_BUY_1";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    left_click_requirement:
+      requirements:
+        deny1:
+          type: "!has permission"
+          permission: mcpet.Pet_Frog_Green
+      deny_commands:
+        - "[message] &4You already own this item!"
+        - '[sound] ENTITY_ITEM_BREAK'
+  'FIRE_DRAGON_PET':
+    material: STRIDER_SPAWN_EGG
+    slot: 11
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lFire Dragon Pet'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to buy!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$500"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_PET_BUY_2";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    left_click_requirement:
+      requirements:
+        deny1:
+          type: "!has permission"
+          permission: mcpet.Pet_Fire_Dragon_Fire
+      deny_commands:
+        - "[message] &4You already own this item!"
+        - '[sound] ENTITY_ITEM_BREAK'
+
+  'PLAYER':
+    material: ENDER_PEARL
+    slot: 4
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lBalance'
+    lore:
+      - "&a$%vault_eco_balance%"
+#24f35df792b6ddcf3baf6e41e84f2dde

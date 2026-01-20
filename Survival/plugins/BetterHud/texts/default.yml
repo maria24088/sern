@@ -1,0 +1,7 @@
+default:
+  file: minecraft.ttf
+  scale: 16
+  merge-default-bitmap: false
+  use-unifont: false
+  include:
+    - russia

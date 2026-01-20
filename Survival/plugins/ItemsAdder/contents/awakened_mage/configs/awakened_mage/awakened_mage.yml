@@ -1,0 +1,67 @@
+info:
+  namespace: awakened_mage
+items:
+  awakened_mage_runestaff:
+    display_name: "awakened_mage_runestaff"
+    permission: awakened_mage_runestaff
+    resource:
+      material: STONE_SWORD
+      model_id: 2089
+      generate: false
+      model_path: awakened_mage_model/awakened_mage_runestaff
+  icon_blazing_barrage:
+    display_name: "icon_blazing_barrage"
+    permission: icon_blazing_barrage
+    resource:
+      material: COAL
+      model_id: 2308
+      generate: false
+      model_path: awakened_mage_model/icon_blazing_barrage
+  icon_cryo_prison:
+    display_name: "icon_cryo_prison"
+    permission: icon_cryo_prison
+    resource:
+      material: COAL
+      model_id: 2309
+      generate: false
+      model_path: awakened_mage_model/icon_cryo_prison
+  icon_hailpiercer:
+    display_name: "icon_hailpiercer"
+    permission: icon_hailpiercer
+    resource:
+      material: COAL
+      model_id: 2310
+      generate: false
+      model_path: awakened_mage_model/icon_hailpiercer
+  icon_mana_barrier:
+    display_name: "icon_mana_barrier"
+    permission: icon_mana_barrier
+    resource:
+      material: COAL
+      model_id: 2311
+      generate: false
+      model_path: awakened_mage_model/icon_mana_barrier
+  icon_meteor_of_doom:
+    display_name: "icon_meteor_of_doom"
+    permission: icon_meteor_of_doom
+    resource:
+      material: COAL
+      model_id: 2312
+      generate: false
+      model_path: awakened_mage_model/icon_meteor_of_doom
+  icon_sorcery_combo:
+    display_name: "icon_sorcery_combo"
+    permission: icon_sorcery_combo
+    resource:
+      material: COAL
+      model_id: 2313
+      generate: false
+      model_path: awakened_mage_model/icon_sorcery_combo
+  icon_teleport_strike:
+    display_name: "icon_teleport_strike"
+    permission: icon_teleport_strike
+    resource:
+      material: COAL
+      model_id: 2314
+      generate: false
+      model_path: awakened_mage_model/icon_teleport_strike

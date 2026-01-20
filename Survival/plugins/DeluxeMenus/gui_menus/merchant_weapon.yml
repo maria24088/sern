@@ -1,0 +1,84 @@
+# Made by samus2002
+
+menu_title: '&8&lWeapon Shop'
+open_command:
+  - shop_weapon
+size: 45
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: shop_weapon.open
+      deny_commands:
+        - "[message] &cYou can't access the Weapon Shop yet!"
+items:
+  'IRON_SWORD':
+    material: IRON_SWORD
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lIron Sword'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to buy!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$40"
+      - ""
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lRight-click&7 to sell for &a$20!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a1x Iron Sword"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_WEAPON_BUY_1";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    right_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_WEAPON_SELL_1";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+  'DIAMOND_SWORD':
+    material: DIAMOND_SWORD
+    slot: 11
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lDiamond Sword'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to buy!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$80"
+      - ""
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lRight-click&7 to sell for &a$40!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a1x Diamond Sword"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_WEAPON_BUY_2";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    right_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_WEAPON_SELL_2";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+
+  'PLAYER':
+    material: ENDER_PEARL
+    slot: 4
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lBalance'
+    lore:
+      - "&a$%vault_eco_balance%"
+#24f35df792b6ddcf3baf6e41e84f2dde

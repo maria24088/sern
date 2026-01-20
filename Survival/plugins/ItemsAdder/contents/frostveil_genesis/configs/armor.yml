@@ -1,0 +1,70 @@
+info:
+  namespace: frostveil_genesis
+
+equipments:
+  frostveil_genesisarmor:
+    type: armor
+    layer_1: armor/armor_main
+    layer_2: armor/armor_leggings
+    color: '#d372bc'
+
+items:
+  frostveil_genesishelmet:
+    name: Frostveil_genesis Helmet
+    resource:
+      generate: true
+      texture: frostveil_genesis:armor/helmet
+      material: DIAMOND_HELMET
+    durability:
+      max_durability: 363
+    equipment:
+      id: frostveil_genesis:frostveil_genesisarmor
+      slot_attribute_modifiers:
+        armor: 3
+        armor_toughness: 2
+    permission: frostveil_genesis.helmet
+
+  frostveil_genesischestplate:
+    name: Frostveil_genesis Chestplate
+    resource:
+      generate: true
+      texture: frostveil_genesis:armor/chestplate
+      material: DIAMOND_CHESTPLATE
+    durability:
+      max_durability: 528
+    equipment:
+      id: frostveil_genesis:frostveil_genesisarmor
+      slot_attribute_modifiers:
+        armor: 8
+        armor_toughness: 2
+    permission: frostveil_genesis.chestplate
+
+  frostveil_genesisleggings:
+    name: Frostveil_genesis Leggings
+    resource:
+      generate: true
+      texture: frostveil_genesis:armor/leggings
+      material: DIAMOND_LEGGINGS
+    durability:
+      max_durability: 495
+    equipment:
+      id: frostveil_genesis:frostveil_genesisarmor
+      slot_attribute_modifiers:
+        armor: 6
+        armor_toughness: 2
+    permission: frostveil_genesis.leggings
+
+  frostveil_genesisboots:
+    name: Frostveil_genesis Boots
+    resource:
+      generate: true
+      texture: frostveil_genesis:armor/boots
+      material: DIAMOND_BOOTS
+    durability:
+      max_durability: 429
+    equipment:
+      id: frostveil_genesis:frostveil_genesisarmor
+      slot_attribute_modifiers:
+        armor: 3
+        armor_toughness: 2
+    permission: frostveil_genesis.boots

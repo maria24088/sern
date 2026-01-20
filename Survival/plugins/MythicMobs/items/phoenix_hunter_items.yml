@@ -1,0 +1,42 @@
+######## created by samus2002 #########
+  
+phoenix_hunter_hellbow:
+  Id: stone_sword
+  Display: "<gradient:#ff410d:#ffc936:#ff410d>&lHellbow"
+  Model: 2078
+  Lore:
+  - '<gradient:#ff410d:#ffc936:#ff410d>The Hellbow of the Phoenix Hunter'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Flameborn} @self ~onTimer:10
+  - skill{s=Blazing_Feathers} @self ~onSwing
+  - skill{s=Ashdance} @self ~onUse
+  - skill{s=Flameburst_Convergence} @self ~onCrouch
+  - skill{s=Pyroclasmic_Barrage} @self ~onUse
+  - skill{s=Phoenix_Totem} @self ~onTimer:10
+  - skill{s=Phoenix_Rebirth} @self ~onSwing
+  
+phoenix_hunter_soulbow:
+  Id: stone_sword
+  Display: "<gradient:#2eceff:#29ffe2:#2eceff>&lSoulbow"
+  Model: 2079
+  Lore:
+  - '<gradient:#2eceff:#29ffe2:#2eceff>The Soulbow of the Phoenix Hunter'
+  Hide:
+  - ATTRIBUTES
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Skills:
+  - skill{s=Flameborn} @self ~onTimer:10
+  - skill{s=Blazing_Feathers} @self ~onSwing
+  - skill{s=Ashdance} @self ~onUse
+  - skill{s=Flameburst_Convergence} @self ~onCrouch
+  - skill{s=Pyroclasmic_Barrage} @self ~onUse
+  - skill{s=Phoenix_Totem} @self ~onTimer:10
+  - skill{s=Phoenix_Rebirth} @self ~onSwing
+  

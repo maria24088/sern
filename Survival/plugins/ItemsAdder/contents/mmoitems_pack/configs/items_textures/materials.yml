@@ -1,0 +1,509 @@
+# For textures only!!!
+info:
+  namespace: mmoitems_pack
+items:
+  
+  p5:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1001
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/ignetto_alloy
+
+  p6:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1002
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/warden_heart
+
+  p7:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1003
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/divine_geode
+
+  p8:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1004
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/withered_rose
+
+  p9:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1005
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/witch_blood
+
+  p10:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1006
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/hexim_necklace
+
+  p11:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1007
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/mortos_belt
+
+  p12:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1008
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/caeletus_ring
+
+  p13:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1009
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/quinerus_cloak
+
+  p19:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1010
+      material: PAPER
+      textures:
+      - hyronic_pack/items/minerals/titanium_ingot
+
+  p20:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1011
+      material: PAPER
+      textures:
+      - hyronic_pack/items/minerals/mythril_ingot
+
+  p21:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1012
+      material: PAPER
+      textures:
+      - hyronic_pack/items/minerals/orichalcum_ingot
+
+  p23:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1013
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/uncanny_obelisk
+
+  p24:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1014
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/exo_stone
+
+  p25:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1015
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/nightmare_fuel
+
+  p26:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1016
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/nightmare_bar
+
+  p27:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1017
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/calamity_handle
+
+  p28:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1018
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/catastrophe_broken
+
+  p29:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1019
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/cataclysm_handle
+
+  p31:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1020
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/red_candycane
+
+  p32:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1021
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/blue_candycane
+
+  p33:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1022
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/shard_of_true_ice
+
+  p39:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1023
+      material: PAPER
+      textures:
+      - hyronic_pack/items/minerals/uranium_debris
+
+  p40:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1024
+      material: PAPER
+      textures:
+      - hyronic_pack/items/minerals/uranium
+
+  p41:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1025
+      material: PAPER
+      textures:
+      - hyronic_pack/items/minerals/iridium_shard
+
+  p42:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1026
+      material: PAPER
+      textures:
+      - hyronic_pack/items/minerals/iridium_crystal
+
+  p43:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1027
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/dragon_scale
+
+  p44:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1028
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/endercore
+
+  p45:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1029
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/endergem
+
+  p46:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1030
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/null_cell
+
+  p47:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1031
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/bloom_doom
+
+  p48:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1032
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/void_stone
+
+  p49:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1033
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/black_powder
+
+  p50:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1034
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/detached_eye
+
+  p51:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1035
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/prismatic_fruit
+
+  p52:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1036
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/silver_leaf
+
+  p53:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1037
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/slimy_mucus
+
+  p54:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1038
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/teal_mushroom
+
+  p55:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1039
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/bomberry
+
+  p56:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1040
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/broken_hextech
+
+  p57:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1041
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/hextech_crystal
+
+  p58:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1042
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/dark_claw
+
+  p59:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1043
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/enigma_bacteria
+
+  p61:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1044
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/irradiated_metal
+
+  p62:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1045
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/moss_stone
+
+  p63:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1046
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/mutated_fruit
+
+
+  p64:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1047
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/pink_mushroom
+
+  p65:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1048
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/rotting_tissue
+
+  p66:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1049
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/rusted_iron
+
+  p67:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1050
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/omni_blueprint
+
+  adventurer_badge:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1051
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/adventurer_badge
+
+  silver_coin:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1052
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/silver_coin
+
+  pure_diamond:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1053
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/pure_diamond
+
+  perfect_emerald:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1054
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/perfect_emerald
+
+  true_black:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1055
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/true_black
+
+  lost_soul:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1056
+      material: PAPER
+      textures:
+      - hyronic_pack/items/materials/lost_soul

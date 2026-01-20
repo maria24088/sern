@@ -1,0 +1,104 @@
+info:
+  namespace: mmoitems_pack
+
+armors_rendering:
+  uranium:
+    color: '#000002'
+    layer_1: hyronic_pack/items/armor/uranium_armor_layer_1
+    layer_2: hyronic_pack/items/armor/uranium_armor_layer_2
+    use_color: false
+  damned:
+    color: '#000001'
+    layer_1: hyronic_pack/items/armor/damned_armor_layer_1
+    layer_2: hyronic_pack/items/armor/damned_armor_layer_2
+    use_color: false
+
+items:
+  
+  uranium_helmet:
+    resource:
+      generate: true
+      model_id: 2
+      textures:
+      - hyronic_pack/items/armor/uranium_helmet
+    specific_properties:
+      armor:
+        slot: head
+        custom_armor: uranium
+  
+  uranium_chestplate:
+    resource:
+      generate: true
+      model_id: 2
+      textures:
+      - hyronic_pack/items/armor/uranium_chestplate
+    specific_properties:
+      armor:
+        slot: chest
+        custom_armor: uranium
+  
+  uranium_leggings:
+    resource:
+      generate: true
+      model_id: 2
+      textures:
+      - hyronic_pack/items/armor/uranium_leggings
+    specific_properties:
+      armor:
+        slot: legs
+        custom_armor: uranium
+  
+  uranium_boots:
+    resource:
+      generate: true
+      model_id: 2
+      textures:
+      - hyronic_pack/items/armor/uranium_boots
+    specific_properties:
+      armor:
+        slot: feet
+        custom_armor: uranium
+  
+  damned_helmet:
+    resource:
+      generate: true
+      model_id: 1
+      textures:
+      - hyronic_pack/items/armor/damned_helmet
+    specific_properties:
+      armor:
+        slot: head
+        custom_armor: damned
+  
+  damned_chestplate:
+    resource:
+      generate: true
+      model_id: 1
+      textures:
+      - hyronic_pack/items/armor/damned_chestplate
+    specific_properties:
+      armor:
+        slot: chest
+        custom_armor: damned
+  
+  damned_leggings:
+    resource:
+      generate: true
+      model_id: 1
+      textures:
+      - hyronic_pack/items/armor/damned_leggings
+    specific_properties:
+      armor:
+        slot: legs
+        custom_armor: damned
+  
+  damned_boots:
+    resource:
+      generate: true
+      model_id: 1
+      textures:
+      - hyronic_pack/items/armor/damned_boots
+    specific_properties:
+      armor:
+        slot: feet
+        custom_armor: damned

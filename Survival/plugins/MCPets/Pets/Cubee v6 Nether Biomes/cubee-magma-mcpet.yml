@@ -1,0 +1,17 @@
+Id: cubee-magma
+MythicMob: cubee-magma
+Permission: mcpet.cubee-magma
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §x§5§6§2§C§3§EM§x§8§6§3§4§3§Ea§x§B§5§3§C§3§Eg§x§D§6§4§B§2§9m§x§F§1§5§C§0§Ea
+    §x§F§F§7§5§0§EC§x§F§F§9§5§2§9u§x§E§C§9§F§3§Db§x§A§1§6§5§3§Ee§x§5§6§2§C§3§Ee
+  Description:
+  - §fThe scorching molten rock cubee
+  - §fBe careful before petting this cubee!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191047
+
+# 4c55fedd7b128b210d38f1779cf09ee2

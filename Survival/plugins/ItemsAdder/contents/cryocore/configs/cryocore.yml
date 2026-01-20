@@ -1,0 +1,147 @@
+info:
+  namespace: cryocore
+items:
+  cryocore_axe:
+    display_name: Cryocore Axe
+    permission: cryocore.axe
+    resource:
+      generate: false
+      material: IRON_AXE
+      model_path: axe
+  cryocore_battle_axe:
+    display_name: Cryocore Battle Axe
+    permission: cryocore.battle_axe
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: battle_axe
+  cryocore_blade:
+    display_name: Cryocore Blade
+    permission: cryocore.blade
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: blade
+  cryocore_bow:
+    display_name: Cryocore Bow
+    permission: cryocore.bow
+    resource:
+      generate: false
+      material: BOW
+      model_path: bow
+  cryocore_chest:
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: false
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: false
+    display_name: Cryocore Chest
+    permission: cryocore.chest
+    resource:
+      generate: false
+      material: PAPER
+      model_path: chest
+  cryocore_crossbow:
+    display_name: Cryocore Crossbow
+    permission: cryocore.crossbow
+    resource:
+      generate: false
+      material: CROSSBOW
+      model_path: crossbow
+  cryocore_fishingrod:
+    display_name: Cryocore Fishingrod
+    permission: cryocore.fishingrod
+    resource:
+      generate: false
+      material: PAPER
+      model_path: fishingrod
+  cryocore_hoe:
+    display_name: Cryocore Hoe
+    permission: cryocore.hoe
+    resource:
+      generate: false
+      material: IRON_HOE
+      model_path: hoe
+  cryocore_key:
+    display_name: Cryocore Key
+    permission: cryocore.key
+    resource:
+      generate: false
+      material: PAPER
+      model_path: key
+  cryocore_pickaxe:
+    display_name: Cryocore Pickaxe
+    permission: cryocore.pickaxe
+    resource:
+      generate: false
+      material: IRON_PICKAXE
+      model_path: pickaxe
+  cryocore_shield:
+    display_name: Cryocore Shield
+    permission: cryocore.shield
+    resource:
+      generate: false
+      material: SHIELD
+      model_path: shield
+  cryocore_shovel:
+    display_name: Cryocore Shovel
+    permission: cryocore.shovel
+    resource:
+      generate: false
+      material: IRON_SHOVEL
+      model_path: shovel
+  cryocore_sickle:
+    display_name: Cryocore Sickle
+    permission: cryocore.sickle
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: sickle
+  cryocore_spear:
+    display_name: Cryocore Spear
+    permission: cryocore.spear
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: spear
+  cryocore_staff:
+    display_name: Cryocore Staff
+    permission: cryocore.staff
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: staff
+  cryocore_sword:
+    display_name: Cryocore Sword
+    permission: cryocore.sword
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: sword
+  cryocore_wings:
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    display_name: Cryocore Wings
+    durability:
+      max_custom_durability: 165
+    permission: cryocore.wings
+    resource:
+      generate: false
+      material: PAPER
+      model_path: wings
+
+#ADTQd0dqx0cyFFT0F1S4gVMjpmVRxGRVVTSyoFcsdVY4h2VWJUO5oEeMdHUWVVa5EnYntkM

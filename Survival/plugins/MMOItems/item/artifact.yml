@@ -1,0 +1,70 @@
+TalismanVelocidad:
+  base:
+    material: PAPER
+    name: <#ff4c4c>Talisman De Velocidad
+    custom-model-data: 15170
+    lore-format: artefacto
+    unstackable: true
+
+    movement-speed: 0.1
+    
+    lore:
+    - '&f 뀌 '
+    - '&fా ᴀɢɪʟɪᴅᴀᴅ'
+    - '&7Te vuelves &bmas rapido&7,'
+    - '&7aumentando &f᎒ <#c7c4bf>velocidad &7un'
+    - '&7<#ADD8E6>10%'
+    
+    tier: RARE
+
+LAMPARAMAGICA: 
+  base: 
+    material: PAPER 
+    name: <#ff4c4c>Lámpara Mágica 
+    custom-model-data: 15080 
+    lore-format: artefacto 
+    unstackable: true 
+    
+    max-mana: 10.0 
+    parry-rating: 5.0 
+    
+    lore: 
+      - '&f 뀉 ' 
+      - '&f葅 ꜰᴀᴠᴏʀ ᴅᴇʟ ɢᴇɴɪᴏ' 
+      - '&7La magia de la lámpara aumenta tu'
+      - '&7reserva espiritual en &b+10 &7de maná.'
+      - ''
+      - '&f嚸 ᴘʀᴏᴛᴇᴄᴄɪᴏɴ ᴅᴇʟ ɢᴇɴɪᴏ'
+      - '&7Un aura protectora te'
+      - '&7rodea, otorgándote'
+      - '&7&b+5&7 de probabilidad de'
+      - '&7desviar un ataque.'
+
+    tier: RARE
+
+GAFASDEDIAMANTE:
+  base:
+    material: PAPER
+    name: <#ff4c4c>Gafas De Diamante
+    custom-model-data: 15102
+    lore-format: artefacto
+    unstackable: true
+
+
+    critical-strike-power: 10
+    critical-strike-chance: 10
+    skill-critical-strike-chance: 10
+    skill-critical-strike-power: 10
+    magic-damage: 10
+    cooldown-reduction: 10
+   
+    lore:
+    - '&f 뀃 ' 
+    - '&7Estas gafas hechas de diamante refinado'
+    - '&7permiten ver el flujo del maná y los puntos débiles'
+    - '&7de cualquier enemigo, aumentando tus'
+    - 'chances de realizar criticos en 10%, reduciendo'
+    - 'tu cooldown en 10% y aumentando tu ataque'
+    - 'magico en 10%'
+
+    tier: MYTHIC

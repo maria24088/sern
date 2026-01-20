@@ -1,0 +1,152 @@
+info:
+  namespace: customcrops
+items:
+  pineapple_stage_1:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pineapple/stage_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pineapple_stage_2:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pineapple/stage_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pineapple_stage_3:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pineapple/stage_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pineapple_stage_4:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pineapple/stage_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  pineapple_seeds:
+    display_name: "Pineapple Seeds"
+    #display_name: 菠萝种子
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pineapple/pineapple_seeds
+  pineapple:
+    display_name: "Pineapple"
+    #display_name: 菠萝
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/pineapple/pineapple
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  pineapple_silver_star:
+    display_name: "Pineapple (Silver Star)"
+    #display_name: 菠萝(银星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/pineapple/pineapple_silver_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  pineapple_golden_star:
+    display_name: "Pineapple (Golden Star)"
+    #display_name: 菠萝(金星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/pineapple/pineapple_golden_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  gigantic_pineapple:
+    display_name: "Overgrown Pineapple"
+    #display_name: 巨型菠萝
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/pineapple/gigantic_pineapple
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_TRANSPARENT
+categories:
+  customcrops_pineapple:
+    enabled: true
+    icon: pineapple
+    name: 'Pineapple'
+    items:
+      - customcrops:pineapple_seeds
+      - customcrops:pineapple
+      - customcrops:pineapple_silver_star
+      - customcrops:pineapple_golden_star
+      - customcrops:pineapple_stage_1
+      - customcrops:pineapple_stage_2
+      - customcrops:pineapple_stage_3
+      - customcrops:pineapple_stage_4
+      - customcrops:gigantic_pineapple

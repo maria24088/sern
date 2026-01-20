@@ -1,0 +1,34 @@
+info:
+    namespace: darkwitherset
+categories:
+    darkwitherset:
+        name: Dark Wither Animated Weapons And Tools Set
+        enabled: true
+        icon: darkwitherset:dark_wither_trident
+        permission: ia.menu.darkwitherset
+        items:
+        - darkwitherset:dark_witherhelmet
+        - darkwitherset:dark_witherchestplate
+        - darkwitherset:dark_witherleggings
+        - darkwitherset:dark_witherboots
+        - darkwitherset:dark_wither_helmet
+        - darkwitherset:dark_wither_cape
+        - darkwitherset:dark_wither_axe
+        - darkwitherset:dark_wither_pickaxe
+        - darkwitherset:dark_wither_shovel
+        - darkwitherset:dark_wither_hoe
+        - darkwitherset:dark_wither_fishing_rod
+        - darkwitherset:dark_wither_greatsword
+        - darkwitherset:dark_wither_sword
+        - darkwitherset:dark_wither_shield
+        - darkwitherset:dark_wither_crossbow
+        - darkwitherset:dark_wither_bow
+        - darkwitherset:dark_wither_staff
+        - darkwitherset:dark_wither_trident
+        - darkwitherset:dark_wither_hammer
+        - darkwitherset:dark_wither_spear
+        - darkwitherset:dark_wither_scythe
+        - darkwitherset:dark_wither_chest
+        - darkwitherset:dark_wither_key
+
+#QnSERUVsNlWFNFdrVUYqNTaRdVWxkERPJzYE5EMRRlT5NWMV9WO4lmMpRlapVkVmRUT6FUN

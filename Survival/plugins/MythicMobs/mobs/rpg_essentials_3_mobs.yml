@@ -1,0 +1,944 @@
+######## created by samus2002 #########
+
+# Dungeon Stuff #
+
+Healing_Crystal:
+  Type: COW
+  Display: '&f[&aACTIVE&f]'
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: true
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=healing_crystal;d=false;n=name} @self ~onSpawn
+  - model{mid=healing_crystal;d=false;n=name} @self ~onLoad
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Healing_Crystal_Activate} @trigger ~onInteract
+  
+Mob_Ward:
+  Type: COW
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: true
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - effect:sound{s=block.respawn_anchor.ambient;volume=0.8;pitch=0.5} @self ~onTimer:65
+  - model{mid=mob_ward;d=false} @self ~onSpawn
+  - model{mid=mob_ward;d=false} @self ~onLoad
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Mob_Ward_Activate} @trigger ~onTimer:5
+  
+  
+Summoning_Totem:
+  Type: COW
+  Display: '&f[&aACTIVE&f]'
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: true
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=summoning_totem;d=false;n=name} @self ~onSpawn
+  - model{mid=summoning_totem;d=false;n=name} @self ~onLoad
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Summoning_Totem_Activate} @trigger ~onInteract
+  
+  
+Summoning_Totem_Circle:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - skill{s=Summoning_Totem_SummonCircle} ~onSpawn
+  - remove{delay=60} @self ~onSpawn
+  
+# NPC #
+  
+NPC_Miner:
+  Type: COW
+  Display: '&e[NPC] &fMiner'
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: true
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=npc_miner;d=false;n=name} @self ~onSpawn
+  - model{mid=npc_miner;d=false;n=name} @self ~onLoad
+  - skill{s=npc_miner_interact_anim} @trigger ~onInteract
+  - bodyclamp{maxbody=70;playermode=true} @self ~onSpawn
+  
+NPC_Merchant_Red:
+  Type: COW
+  Display: '&e[NPC] &fWeapon Merchant'
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: true
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=npc_merchant_red;d=false;n=name} @self ~onSpawn
+  - model{mid=npc_merchant_red;d=false;n=name} @self ~onLoad
+  - skill{s=npc_merchant_interact_anim} @trigger ~onInteract
+  - bodyclamp{maxbody=70;playermode=true} @self ~onSpawn
+  
+NPC_Merchant_Green:
+  Type: COW
+  Display: '&e[NPC] &fArmor Merchant'
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: true
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=npc_merchant_green;d=false;n=name} @self ~onSpawn
+  - model{mid=npc_merchant_green;d=false;n=name} @self ~onLoad
+  - skill{s=npc_merchant_interact_anim} @trigger ~onInteract
+  - bodyclamp{maxbody=70;playermode=true} @self ~onSpawn
+  
+NPC_Merchant_Blue:
+  Type: COW
+  Display: '&e[NPC] &fScroll Merchant'
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: true
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=npc_merchant_blue;d=false;n=name} @self ~onSpawn
+  - model{mid=npc_merchant_blue;d=false;n=name} @self ~onLoad
+  - skill{s=npc_merchant_interact_anim} @trigger ~onInteract
+  - bodyclamp{maxbody=70;playermode=true} @self ~onSpawn
+  
+NPC_Merchant_Purple:
+  Type: COW
+  Display: '&e[NPC] &fPotion Merchant'
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: true
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=npc_merchant_purple;d=false;n=name} @self ~onSpawn
+  - model{mid=npc_merchant_purple;d=false;n=name} @self ~onLoad
+  - skill{s=npc_merchant_interact_anim} @trigger ~onInteract
+  - bodyclamp{maxbody=70;playermode=true} @self ~onSpawn
+  
+NPC_Merchant_Black:
+  Type: COW
+  Display: '&e[NPC] &fAccessory Merchant'
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: true
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=npc_merchant_black;d=false;n=name} @self ~onSpawn
+  - model{mid=npc_merchant_black;d=false;n=name} @self ~onLoad
+  - skill{s=npc_merchant_interact_anim} @trigger ~onInteract
+  - bodyclamp{maxbody=70;playermode=true} @self ~onSpawn
+  
+NPC_Merchant_Yellow:
+  Type: COW
+  Display: '&e[NPC] &fMount Merchant'
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: true
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=npc_merchant_yellow;d=false;n=name} @self ~onSpawn
+  - model{mid=npc_merchant_yellow;d=false;n=name} @self ~onLoad
+  - skill{s=npc_merchant_interact_anim} @trigger ~onInteract
+  - bodyclamp{maxbody=70;playermode=true} @self ~onSpawn
+  
+NPC_Blacksmith:
+  Type: COW
+  Display: '&e[NPC] &fBlacksmith'
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: true
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=npc_blacksmith;d=false;n=name;lockpitch=true;lockyaw=true} @self ~onSpawn
+  - model{mid=npc_blacksmith;d=false;n=name;lockpitch=true;lockyaw=true} @self ~onLoad
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=npc_blacksmith_interact_anim} @trigger ~onInteract
+  
+NPC_Cook:
+  Type: COW
+  Display: '&e[CHEF]'
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: true
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=npc_cook;d=false;n=name} @self ~onSpawn
+  - model{mid=npc_cook;d=false;n=name} @self ~onLoad
+  - skill{s=npc_cook_interact_anim} @trigger ~onInteract
+  - bodyclamp{maxbody=70;playermode=true} @self ~onSpawn
+
+  
+NPC_Farmer:
+  Type: SKELETON
+  Display: '&eGranjero'
+  Health: 500
+  Damage: 1
+  # Agrega esta línea aquí para que el modelo cargue con la entidad
+  Model: npc_farmer
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+    # Agrega esto para que el esqueleto base sea invisible
+    # Así, si el modelo tarda en cargar, no se ve el esqueleto
+    Invisible: true 
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: §f§lPardo
+    Color: FFFFFF
+  Skills:
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # Mantenemos esto por seguridad, pero el atributo 'Model' arriba hace el trabajo pesado
+  - model{mid=npc_farmer;d=false;n=name} @self ~onSpawn
+  - model{mid=npc_farmer;d=false;n=name} @self ~onLoad
+  - bodyclamp{maxbody=70;playermode=true} @self ~onSpawn
+  - command{c="dm open marketplace <trigger.name>";console=true} @trigger ~onInteract
+  
+NPC_Librarian:
+  Type: COW
+  Display: '&e[NPC] &fLibrarian'
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: true
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=npc_librarian;d=false;n=name;lockpitch=true;lockyaw=true} @self ~onSpawn
+  - model{mid=npc_librarian;d=false;n=name;lockpitch=true;lockyaw=true} @self ~onLoad
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=npc_librarian_interact_anim} @trigger ~onInteract
+  #- bodyclamp{maxbody=70;playermode=true} @self ~onSpawn
+  
+NPC_Healer:
+  Type: COW
+  Display: '&e[NPC] &fHealer'
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: true
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=npc_healer;d=false;n=name} @self ~onSpawn
+  - model{mid=npc_healer;d=false;n=name} @self ~onLoad
+  - skill{s=npc_healer_interact_anim} @trigger ~onInteract
+  - bodyclamp{maxbody=70;playermode=true} @self ~onSpawn
+  
+#IHbitUSGhXOwdDel12YzdjazVlY0klaNFTWE5kMJRlT4VkVVBnZpJGWFhDNFRTWWdES6RzM

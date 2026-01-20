@@ -1,0 +1,55 @@
+armors_rendering:
+  the_eartharmor:
+    color: '#10df99'
+    layer_1: armor/armor_main
+    layer_2: armor/armor_leggings
+    use_color: false
+info:
+  namespace: the_earth
+items:
+  the_earthboots:
+    display_name: The_earth Boots
+    permission: the_earth.boots
+    resource:
+      generate: true
+      textures:
+      - armor/boots.png
+    specific_properties:
+      armor:
+        custom_armor: the_eartharmor
+        slot: feet
+  the_earthchestplate:
+    display_name: The_earth Chestplate
+    permission: the_earth.chestplate
+    resource:
+      generate: true
+      textures:
+      - armor/chestplate.png
+    specific_properties:
+      armor:
+        custom_armor: the_eartharmor
+        slot: chest
+  the_earthleggings:
+    display_name: The_earth Leggings
+    permission: the_earth.leggings
+    resource:
+      generate: true
+      textures:
+      - armor/leggings.png
+    specific_properties:
+      armor:
+        custom_armor: the_eartharmor
+        slot: legs
+  the_earthhelmet:
+    display_name: The_earth Helmet
+    permission: the_earth.Helmet
+    resource:
+      generate: true
+      textures:
+      - armor/helmet.png
+    specific_properties:
+      armor:
+        custom_armor: the_eartharmor
+        slot: head
+
+#96cba1cd434a4400e997d967992b5b1b

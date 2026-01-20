@@ -1,0 +1,44 @@
+ 
+#permissions and alias
+Commands:
+   
+  player:
+    # Use empty for don't need permissions
+    permission: uclans.player.bank
+    # Alias for command.
+    alias: bank
+    # Command cooldown.
+    cooldown: 0
+    # Value to use.
+    value: 0.0
+    disabled_worlds: [
+      ]
+    disabled_regions: [
+      ]
+   
+  # player command
+  bank:
+    help:
+      aliases: help
+      show: <click:suggest_command:"/{_clan} {_bank} "><hover:show_text:'<green>Haz clic para ver más.'> <yellow>/{_clan} {_bank} <dark_gray>-<white> Ampliar comandos del banco.</hover></click> <hover:show_text:'<green>Con subcomandos.'><green>[!]</hover>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_bank} {_help}'
+      error: '%tag% <red>Error al utilizarlo.'
+      success: '%tag% <green>Se ejecutó con éxito.'
+    add:
+      aliases: add
+      show: <click:suggest_command:"/{_clan} {_bank} {_add} "><hover:show_text:'<green>Haz clic para añadir.'> <yellow>/{_clan} {_bank} {_add} <red><valor> <dark_gray>-<white> Añadir dinero al banco.</hover></click>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_bank} {_add} <red><valor>'
+      error: '%tag% <red>Error al añadir.'
+      success: '%tag% <green>Valor añadido al banco correctamente.'
+    withdraw:
+      aliases: withdraw
+      show: <click:suggest_command:"/{_clan} {_bank} {_withdraw} "><hover:show_text:'<green>Haz clic para retirar.'> <yellow>/{_clan} {_bank} {_withdraw} <red><valor> <dark_gray>-<white> Retirar dinero del banco.</hover></click>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_bank} {_withdraw} <red><valor>'
+      error: '%tag% <red>Error al retirar.'
+      success: '%tag% <green>Valor retirado del banco correctamente.'
+    view:
+      aliases: view
+      show: <click:suggest_command:"/{_clan} {_bank} {_view} "><hover:show_text:'<green>Haz clic para ver más.'> <yellow>/{_clan} {_bank} {_view} <light_purple>(-gui) <dark_gray>-<white> Ver banco.</hover></click>
+      usage: '%tag% <red>Error, utiliza: <aqua>/{_clan} {_bank} {_view} <light_purple>(-gui)'
+      error: '%tag% <red>Error.'
+      success: '%tag% <green>Éxito.'

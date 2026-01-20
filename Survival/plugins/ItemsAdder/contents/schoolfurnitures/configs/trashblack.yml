@@ -1,0 +1,13 @@
+info:
+  namespace: schoolfurnitures
+items:
+  trashblack:
+    display_name: "Trash Black"
+    permission: schoolfurnitures.trashblack
+    resource:
+      material: PAPER
+      generate: false
+      model_path: trashblack
+    behaviours:
+      furniture:
+        light_level: 13

@@ -1,0 +1,77 @@
+menu_title: '&8⚡ Selecciona una Modalidad'
+open_command: modalidades
+size: 27
+items:
+  # --- Opción 1: Survival Custom ---
+  'survival_custom':
+    material: GRASS_BLOCK
+    slot: 11
+    display_name: '&a&l⚔ SURVIVAL CUSTOM'
+    lore:
+      - '&7'
+      - '&7Un mundo RPG único con'
+      - '&7misiones y aventuras.'
+      - '&7'
+      - '&eClick para entrar!'
+    # Oculta los atributos (Daño, velocidad, etc) para que se vea limpio
+    hide_attributes: true
+    # Ejecuta el comando como si lo escribiera el jugador
+    left_click_commands:
+      - '[close]'
+      - '[connect] survival'
+    right_click_commands:
+      - '[close]'
+      - '[connect] survival'
+
+  # --- Opción 2: Próximamente ---
+  'proximamente':
+    material: BARRIER
+    slot: 15
+    display_name: '&c&l🔒 PRÓXIMAMENTE'
+    lore:
+      - '&7'
+      - '&7Estamos trabajando en'
+      - '&7nuevas modalidades.'
+      - '&7'
+      - '&cNo disponible.'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_LAND'
+      - '[message] &cEsta modalidad aún no está lista.'
+    right_click_commands:
+      - '[sound] BLOCK_ANVIL_LAND'
+      - '[message] &cEsta modalidad aún no está lista.'
+
+  # --- Decoración (Relleno de cristal gris) ---
+  'relleno':
+    material: GRAY_STAINED_GLASS_PANE
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 12
+      - 13
+      - 14
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+    display_name: '&f'
+    left_click_events:
+      - '[cancel]'
+    right_click_events:
+      - '[cancel]'

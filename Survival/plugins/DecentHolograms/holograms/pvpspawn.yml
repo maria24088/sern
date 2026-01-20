@@ -1,0 +1,29 @@
+location: SpawnRPG:390.500:64.000:107.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&#fb3f00⚔&#fb4300&l &#fb4700&lP&#fc4c00&lV&#fc5000&lP &#fc5400&lA&#fc5800&lR&#fc5c00&lE&#fc6000&lN&#fd6500&lA
+      &#fd6900⚔&#fd6d00&l'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&c&l&oPELIGRO &8- &7&o[MANTENER INVENTARIO: DESACTIVADO]'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&f&oEstás a punto de entrar en la &c&oArena PvP&f&o!'
+    height: 0.3
+  - content: '&f&oAsegúrate de tener &c&oarmadura fuerte&f&o equipada.'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&f&oSi mueres, &c&operderás tus objetos&f&o!'
+    height: 0.3
+  - content: '&f&o¡Buena suerte, &c&o%player_name%&f&o!'
+    height: 0.3
+  actions: {}

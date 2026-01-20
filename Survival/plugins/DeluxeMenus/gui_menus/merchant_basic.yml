@@ -1,0 +1,84 @@
+# Made by samus2002
+
+menu_title: '&8&lShop'
+open_command:
+  - shopMerchant
+size: 45
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: shop.open
+      deny_commands:
+        - "[message] &cYou can't access the Shop yet!"
+items:
+  'ENCHANTED_GOLDEN_APPLE':
+    material: ENCHANTED_GOLDEN_APPLE
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lEnchanted Golden Apple'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to buy!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$50"
+      - ""
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lRight-click&7 to sell for &a$25!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a1x Enchanted Golden Apple"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_BASIC_BUY_1";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    right_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_BASIC_SELL_1";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+  'WATER_BUCKET':
+    material: WATER_BUCKET
+    slot: 11
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lWater Bucket'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to buy!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$35"
+      - ""
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lRight-click&7 to sell for &a$15!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a1x Water Bucket"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_BASIC_BUY_2";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    right_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_BASIC_SELL_2";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+
+  'PLAYER':
+    material: ENDER_PEARL
+    slot: 4
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lBalance'
+    lore:
+      - "&a$%vault_eco_balance%"
+#24f35df792b6ddcf3baf6e41e84f2dde

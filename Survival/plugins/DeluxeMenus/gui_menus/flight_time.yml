@@ -1,0 +1,262 @@
+#  A DeluxeMenus advanced configuration guide
+#=========================================================
+menu_title: 'Coin Shop | Flight Time'
+open_command:
+  - buyflighttime
+open_commands: []
+size: 36
+# as always, only cool people can open this menu :)
+items: 
+
+  'f1_1':
+    material: feather
+    slot: 10
+    priority: 0
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 400"
+    display_name: '&b1 Hour of Flight Time'
+    lore:
+      - '&8Flight Time'
+      - '&r'
+      - '&bDescription:'
+      - '&fGet 1 hour of Flight Time.'
+      - ''
+      - '&e◆ &fPrice: &e400 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[console] coins take %player_name% 400'
+      - '[message] &eCoins &8| &fYou purchased &e1 Hour of Flight Time&f!'
+      - '[console] tempfly give %player_name% 1h'
+      - '[close]'
+  
+  'f1_2':
+    material: feather
+    slot: 10
+    priority: 1
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&b1 Hour of Flight Time'
+    lore:
+      - '&8Flight Time'
+      - '&r'
+      - '&bDescription:'
+      - '&fGet 1 hour of Flight Time.'
+      - ''
+      - '&e◆ &fPrice: &e400 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+
+  
+  'f2_1':
+    material: feather
+    slot: 12
+    priority: 0
+    amount: 6
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 2000"
+    display_name: '&b6 Hours of Flight Time'
+    lore:
+      - '&8Flight Time'
+      - '&r'
+      - '&bDescription:'
+      - '&fGet 6 hours of Flight Time.'
+      - ''
+      - '&e◆ &fPrice: &e2,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[console] coins take %player_name% 2000'
+      - '[message] &eCoins &8| &fYou purchased &e6 Hours of Flight Time&f!'
+      - '[console] tempfly give %player_name% 6h'
+      - '[close]'
+  
+  'f2_2':
+    material: feather
+    slot: 12
+    amount: 6
+    priority: 1
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&b6 Hours of Flight Time'
+    lore:
+      - '&8Flight Time'
+      - '&r'
+      - '&bDescription:'
+      - '&fGet 6 hours of Flight Time.'
+      - ''
+      - '&e◆ &fPrice: &e2,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+  
+  'f3_1':
+    material: feather
+    slot: 14
+    priority: 0
+    amount: 12
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 3600"
+    display_name: '&b12 Hours of Flight Time'
+    lore:
+      - '&8Flight Time'
+      - '&r'
+      - '&bDescription:'
+      - '&fGet 12 hours of Flight Time.'
+      - ''
+      - '&e◆ &fPrice: &e3,600 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[console] coins take %player_name% 3600'
+      - '[message] &eCoins &8| &fYou purchased &e12 Hours of Flight Time&f!'
+      - '[console] tempfly give %player_name% 12h'
+      - '[close]'
+  
+  'f3_2':
+    material: feather
+    slot: 14
+    amount: 12
+    priority: 1
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&b12 Hours of Flight Time'
+    lore:
+      - '&8Flight Time'
+      - '&r'
+      - '&bDescription:'
+      - '&fGet 12 hours of Flight Time.'
+      - ''
+      - '&e◆ &fPrice: &e3,600 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+    
+
+  'f4_1':
+    material: feather
+    slot: 16
+    priority: 0
+    amount: 24
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 6000"
+    display_name: '&b24 Hours of Flight Time'
+    lore:
+      - '&8Flight Time'
+      - '&r'
+      - '&bDescription:'
+      - '&fGet 24 hours of Flight Time.'
+      - ''
+      - '&e◆ &fPrice: &e6,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[console] coins take %player_name% 6000'
+      - '[message] &eCoins &8| &fYou purchased &e24 Hours of Flight Time&f!'
+      - '[console] tempfly give %player_name% 24h'
+      - '[close]'
+  
+  'f4_2':
+    material: feather
+    slot: 16
+    amount: 24
+    priority: 1
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&b24 Hours of Flight Time'
+    lore:
+      - '&8Flight Time'
+      - '&r'
+      - '&bDescription:'
+      - '&fGet 24 hours of Flight Time.'
+      - ''
+      - '&e◆ &fPrice: &e6,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+  
+
+  
+  
+  
+
+  'back':
+    material: flower_banner_pattern
+    slot: 31
+    hide_effects: true
+    display_name: '&cGo Back'
+    lore:
+      - '&fClick to return to the main menu'
+    left_click_commands:
+      - '[openguimenu] coinshop'
+    
+  

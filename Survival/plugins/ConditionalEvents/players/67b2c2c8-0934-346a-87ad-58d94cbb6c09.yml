@@ -1,0 +1,5 @@
+name: GrayVzf
+events:
+  rookie:
+    one_time: true
+    cooldown: 0

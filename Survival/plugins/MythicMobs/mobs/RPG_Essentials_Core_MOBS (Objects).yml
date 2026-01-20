@@ -1,0 +1,332 @@
+######## created by samus2002 #########
+
+# OBJECTS #
+
+# Storage Chest #
+
+Storage_Chest:
+  Type: SKELETON
+  Display: 'Storage_Chest'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=obj_storage_chest;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onSpawn
+  - model{mid=obj_storage_chest;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onLoad
+  - model{mid=obj_storage_chest;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onTimer:100
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onSpawn
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onLoad
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET_LOCK_VERSION} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=OBJ_STORAGE_CHEST_INTERACT} ~onInteract
+
+# Waypoint Gate #
+
+Waypoint_Gate:
+  Type: SKELETON
+  Display: 'Waypoint_Gate'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=obj_waypoint_gate;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onSpawn
+  - model{mid=obj_waypoint_gate;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onLoad
+  - model{mid=obj_waypoint_gate;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onTimer:100
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onSpawn
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onLoad
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET_LOCK_VERSION} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=OBJ_WAYPOINT_GATE_INTERACT} ~onInteract
+
+# Portals #
+
+Portal_Basic:
+  Type: SKELETON
+  Display: 'Portal_Basic'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Color: FFFFFF
+  Skills:
+  - model{mid=obj_portal_basic;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onSpawn
+  - model{mid=obj_portal_basic;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onLoad
+  - model{mid=obj_portal_basic;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onTimer:100
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onSpawn
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onLoad
+  - tint{m=obj_portal_basic;p=colorable;c=#<caster.var.Color>;em=true;damagetint=false} @self ~onSpawn
+  - tint{m=obj_portal_basic;p=colorable;c=#<caster.var.Color>;em=true;damagetint=false} @self ~onLoad
+  - tint{m=obj_portal_basic;p=colorable;c=#<caster.var.Color>;em=true;damagetint=false} @self ~onTimer:100
+  - brightness{m=obj_portal_basic;p=colorable;block=15;sky=15;em=true} @self ~onSpawn
+  - brightness{m=obj_portal_basic;p=colorable;block=15;sky=15;em=true} @self ~onLoad
+  - brightness{m=obj_portal_basic;p=colorable;block=15;sky=15;em=true} @self ~onTimer:100
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET_LOCK_VERSION} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=OBJ_PORTAL_BASIC_INTERACT} ~onInteract
+
+Portal_Dungeon:
+  Type: SKELETON
+  Display: 'Portal_Dungeon'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Color: FFFFFF
+  Skills:
+  - model{mid=obj_portal_dungeon;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onSpawn
+  - model{mid=obj_portal_dungeon;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onLoad
+  - model{mid=obj_portal_dungeon;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onTimer:100
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onSpawn
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onLoad
+  - tint{m=obj_portal_dungeon;p=colorable;c=#<caster.var.Color>;em=true;damagetint=false} @self ~onSpawn
+  - tint{m=obj_portal_dungeon;p=colorable;c=#<caster.var.Color>;em=true;damagetint=false} @self ~onLoad
+  - tint{m=obj_portal_dungeon;p=colorable;c=#<caster.var.Color>;em=true;damagetint=false} @self ~onTimer:100
+  - brightness{m=obj_portal_dungeon;p=colorable;block=15;sky=15;em=true} @self ~onSpawn
+  - brightness{m=obj_portal_dungeon;p=colorable;block=15;sky=15;em=true} @self ~onLoad
+  - brightness{m=obj_portal_dungeon;p=colorable;block=15;sky=15;em=true} @self ~onTimer:100
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET_LOCK_VERSION} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+ 
+  # INTERACT
+  - skill{s=OBJ_PORTAL_DUNGEON_INTERACT} ~onInteract
+
+Portal_Unstable:
+  Type: SKELETON
+  Display: 'Portal_Unstable'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Color: FFFFFF
+  Skills:
+  - model{mid=obj_portal_unstable;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onSpawn
+  - model{mid=obj_portal_unstable;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onLoad
+  - model{mid=obj_portal_unstable;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onTimer:100
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onSpawn
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onLoad
+  - tint{m=obj_portal_unstable;p=colorable;c=#<caster.var.Color>;em=true;damagetint=false} @self ~onSpawn
+  - tint{m=obj_portal_unstable;p=colorable;c=#<caster.var.Color>;em=true;damagetint=false} @self ~onLoad
+  - tint{m=obj_portal_unstable;p=colorable;c=#<caster.var.Color>;em=true;damagetint=false} @self ~onTimer:100
+  - brightness{m=obj_portal_unstable;p=colorable;block=15;sky=15;em=true} @self ~onSpawn
+  - brightness{m=obj_portal_unstable;p=colorable;block=15;sky=15;em=true} @self ~onLoad
+  - brightness{m=obj_portal_unstable;p=colorable;block=15;sky=15;em=true} @self ~onTimer:100
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET_LOCK_VERSION} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  
+  # INTERACT
+  - skill{s=OBJ_PORTAL_UNSTABLE_INTERACT} ~onInteract
+
+Portal_Sanctuary:
+  Type: SKELETON
+  Display: 'Portal_Sanctuary'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Color: FFFFFF
+  Skills:
+  - model{mid=obj_portal_sanctuary;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onSpawn
+  - model{mid=obj_portal_sanctuary;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onLoad
+  - model{mid=obj_portal_sanctuary;step=1;tint=false;usm=true;save=true;lockpitch=true;lockyaw=true} @self ~onTimer:100
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onSpawn
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onLoad
+  - tint{m=obj_portal_sanctuary;p=colorable;c=#<caster.var.Color>;em=true;damagetint=false} @self ~onSpawn
+  - tint{m=obj_portal_sanctuary;p=colorable;c=#<caster.var.Color>;em=true;damagetint=false} @self ~onLoad
+  - tint{m=obj_portal_sanctuary;p=colorable;c=#<caster.var.Color>;em=true;damagetint=false} @self ~onTimer:100
+  - brightness{m=obj_portal_sanctuary;p=colorable;block=15;sky=15;em=true} @self ~onSpawn
+  - brightness{m=obj_portal_sanctuary;p=colorable;block=15;sky=15;em=true} @self ~onLoad
+  - brightness{m=obj_portal_sanctuary;p=colorable;block=15;sky=15;em=true} @self ~onTimer:100
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET_LOCK_VERSION} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  
+  # INTERACT
+  - skill{s=OBJ_PORTAL_SANCTUARY_INTERACT} ~onInteract
+
+
+#24f35df792b6ddcf3baf6e41e84f2dde

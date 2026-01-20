@@ -1,0 +1,84 @@
+{
+  "samus.awakened_warrior.move": {
+    "category": "master",
+    "sounds": [
+      "awakened_warrior:samus/universal/move1",
+      "awakened_warrior:samus/universal/move2"
+    ]
+  },
+  "samus.awakened_warrior.rupture_big": {
+    "category": "master",
+    "sounds": [
+      "awakened_warrior:samus/universal/rupture_big"
+    ]
+  },
+  "samus.awakened_warrior.rupture_quick": {
+    "category": "master",
+    "sounds": [
+      "awakened_warrior:samus/universal/rupture_quick"
+    ]
+  },
+  "samus.awakened_warrior.ult_stomp": {
+    "category": "master",
+    "sounds": [
+      "awakened_warrior:samus/awakened_warrior/ult_stomp"
+    ]
+  },
+  "samus.awakened_warrior.warrior_airdash": {
+    "category": "master",
+    "sounds": [
+      "awakened_warrior:samus/awakened_warrior/warrior_airdash"
+    ]
+  },
+  "samus.awakened_warrior.warrior_charge": {
+    "category": "master",
+    "sounds": [
+      "awakened_warrior:samus/awakened_warrior/warrior_charge"
+    ]
+  },
+  "samus.awakened_warrior.warrior_pierce": {
+    "category": "master",
+    "sounds": [
+      "awakened_warrior:samus/awakened_warrior/warrior_pierce",
+      "awakened_warrior:samus/awakened_warrior/warrior_pierce2"
+    ]
+  },
+  "samus.awakened_warrior.warrior_slash_ult": {
+    "category": "master",
+    "sounds": [
+      "awakened_warrior:samus/awakened_warrior/warrior_slash_ult1",
+      "awakened_warrior:samus/awakened_warrior/warrior_slash_ult2"
+    ]
+  },
+  "samus.awakened_warrior.warrior_slash_ult_slash": {
+    "category": "master",
+    "sounds": [
+      "awakened_warrior:samus/awakened_warrior/warrior_slash_ult3"
+    ]
+  },
+  "samus.awakened_warrior.warrior_slash": {
+    "category": "master",
+    "sounds": [
+      "awakened_warrior:samus/awakened_warrior/warrior_slash1",
+      "awakened_warrior:samus/awakened_warrior/warrior_slash2"
+    ]
+  },
+  "samus.awakened_warrior.warrior_stomp": {
+    "category": "master",
+    "sounds": [
+      "awakened_warrior:samus/awakened_warrior/warrior_stomp"
+    ]
+  },
+  "samus.awakened_warrior.warrior_stomp_charge": {
+    "category": "master",
+    "sounds": [
+      "awakened_warrior:samus/awakened_warrior/warrior_stomp_charge"
+    ]
+  },
+  "samus.awakened_warrior.warrior_wheel_spin": {
+    "category": "master",
+    "sounds": [
+      "awakened_warrior:samus/awakened_warrior/warrior_wheel_spin"
+    ]
+  }
+}

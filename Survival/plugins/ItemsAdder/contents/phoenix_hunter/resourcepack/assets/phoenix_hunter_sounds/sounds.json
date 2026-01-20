@@ -1,0 +1,32 @@
+{
+  "samus.phoenix_hunter.explosion_big": {
+    "category": "master",
+    "sounds": [
+      "phoenix_hunter:samus/phoenix_hunter/explosion_big"
+    ]
+  },
+  "samus.phoenix_hunter.explosion_small": {
+    "category": "master",
+    "sounds": [
+      "phoenix_hunter:samus/phoenix_hunter/explosion_small"
+    ]
+  },
+  "samus.phoenix_hunter.phoenix_feather_shoot": {
+    "category": "master",
+    "sounds": [
+      "phoenix_hunter:samus/phoenix_hunter/phoenix_feather_shoot"
+    ]
+  },
+  "samus.phoenix_hunter.phoenix_form": {
+    "category": "master",
+    "sounds": [
+      "phoenix_hunter:samus/phoenix_hunter/phoenix_form"
+    ]
+  },
+  "samus.phoenix_hunter.phoenix_impact": {
+    "category": "master",
+    "sounds": [
+      "phoenix_hunter:samus/phoenix_hunter/phoenix_impact"
+    ]
+  }
+}

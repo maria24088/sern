@@ -1,0 +1,82 @@
+Id: B_Pet_Necromancer_Cat_Necromancer
+MythicMob: Pet_Necromancer_Cat_Necromancer
+Permission: mcpet.Pet_Necromancer_Cat_Necromancer
+Mountable: false
+Distance: 6
+DismountOnDamaged: false
+SpawnRange: 3
+ComingBackRange: 5
+Icon:
+  Name: §bNecromancer Cat
+  Material: BRICK
+  CustomModelData: 12041
+  Description:
+  - §fGet your pet Necromancer Cat!
+  - ''
+  - §f§l[§c§lSkull Barrage§f§l]
+  - §fFires 3 skulls in a row, slowing hit enemies.
+  - ''
+  - §f§l[§c§lSoul Harvest§f§l]
+  - §fWhen an enemy is slain by the pet or its owner,
+  - §fthey leave a soul in its death location. The
+  - §fowner can harvest the soul and heal themself.
+  - ''
+  - '§7Level up: §a+Damage, +Heal'
+Levels:
+  Lvl_Common:
+    Name: §fCommon
+    ExperienceThreshold: 0
+    MaxHealth: 100
+    Regeneration: 0.1
+    ResistanceModifier: 1
+    DamageModifier: 2
+    Power: 3
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+  Lvl_Rare:
+    Name: §aRare
+    ExperienceThreshold: 500
+    MaxHealth: 150
+    Regeneration: 0.12
+    ResistanceModifier: 1
+    DamageModifier: 4
+    Power: 3.5
+    Cooldowns:
+      Respawn: 14
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &aRare &6level!'
+      Type: CHAT
+  Lvl_Epic:
+    Name: §dEpic
+    ExperienceThreshold: 2000
+    MaxHealth: 200
+    Regeneration: 0.14
+    ResistanceModifier: 1
+    DamageModifier: 6
+    Power: 4
+    Cooldowns:
+      Respawn: 13
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &dEpic &6level!'
+      Type: CHAT
+  Lvl_Legendary:
+    Name: §eLegendary
+    ExperienceThreshold: 5000
+    MaxHealth: 300
+    Regeneration: 0.2
+    ResistanceModifier: 1
+    DamageModifier: 9
+    Power: 4.5
+    Cooldowns:
+      Respawn: 12
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &eLegendary &6level!'
+      Type: CHAT

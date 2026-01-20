@@ -1,0 +1,30 @@
+info:
+  namespace: royal_pack
+categories:
+  royal_pack:
+    enabled: true
+    name: "&fRoyal Pack"
+    title: ""
+    permission: "ia.menu.seecategory.royal_pack"
+    icon: royal_pack:royal_hat
+    items:
+      - royal_pack:royal_helmet
+      - royal_pack:royal_chestplate
+      - royal_pack:royal_leggings
+      - royal_pack:royal_boots
+      - royal_pack:royal_hat
+      - royal_pack:royal_wings
+      - royal_pack:royal_cape
+      - royal_pack:royal_chest
+      - royal_pack:royal_key
+      - royal_pack:royal_sword
+      - royal_pack:royal_pickaxe
+      - royal_pack:royal_axe
+      - royal_pack:royal_hoe
+      - royal_pack:royal_shovel
+      - royal_pack:royal_fishing_rod
+      - royal_pack:royal_shield
+      - royal_pack:royal_bow
+      - royal_pack:royal_staff
+#397d09e0135d4ad502f934e3c4a5fd0b
+#8kWQJUbnNTTrljcLRlVZxURRtWZGFzRjxkQYJFeSZkVGZlMRlHRz0UWzsURBFGVwFXb2gHO

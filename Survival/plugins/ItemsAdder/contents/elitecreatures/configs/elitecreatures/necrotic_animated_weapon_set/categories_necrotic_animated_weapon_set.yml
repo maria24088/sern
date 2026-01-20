@@ -1,0 +1,33 @@
+info:
+  namespace: elitecreatures
+categories:
+  necrotic_animated_weapon_set:
+    enabled: true
+    icon: "elitecreatures:necrotic_animated_weapon_set_hat"
+    name: "Necrotic Animated Weapon Set"
+    permission: "ia.menu.necrotic_animated_weapon_set"
+    items:
+      - "elitecreatures:necrotic_animated_weapon_set_axe"
+      - "elitecreatures:necrotic_animated_weapon_set_backpack"
+      - "elitecreatures:necrotic_animated_weapon_set_bow"
+      - "elitecreatures:necrotic_animated_weapon_set_chest"
+      - "elitecreatures:necrotic_animated_weapon_set_crossbow"
+      - "elitecreatures:necrotic_animated_weapon_set_dagger"
+      - "elitecreatures:necrotic_animated_weapon_set_fishing_rod"
+      - "elitecreatures:necrotic_animated_weapon_set_greatsword"
+      - "elitecreatures:necrotic_animated_weapon_set_hammer"
+      - "elitecreatures:necrotic_animated_weapon_set_hat"
+      - "elitecreatures:necrotic_animated_weapon_set_hoe"
+      - "elitecreatures:necrotic_animated_weapon_set_key"
+      - "elitecreatures:necrotic_animated_weapon_set_mace"
+      - "elitecreatures:necrotic_animated_weapon_set_pickaxe"
+      - "elitecreatures:necrotic_animated_weapon_set_shield"
+      - "elitecreatures:necrotic_animated_weapon_set_shovel"
+      - "elitecreatures:necrotic_animated_weapon_set_spear"
+      - "elitecreatures:necrotic_animated_weapon_set_staff"
+      - "elitecreatures:necrotic_animated_weapon_set_sword"
+      - "elitecreatures:necrotic_animated_weapon_set_wing"
+      - "elitecreatures:necrotic_animated_weapon_set_helmet"
+      - "elitecreatures:necrotic_animated_weapon_set_chestplate"
+      - "elitecreatures:necrotic_animated_weapon_set_leggings"
+      - "elitecreatures:necrotic_animated_weapon_set_boots"

@@ -1,0 +1,34 @@
+location: SpawnRPG:18.560:64.000:-158.433
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:totem_of_undying'
+    height: 0.6
+  - content: '&#ff2f2f&lT&#ff2929&lo&#ff2323&lp &#fe1d1d&lM&#fe1818&lu&#fe1212&le&#fe0c0c&lrt&#fd0606&le&#fd0000&ls'
+    height: 0.3
+  - content: '&4#1 &c%ajlb_lb_statistic_deaths_1_alltime_name% §8- §f%ajlb_lb_statistic_deaths_1_alltime_value%'
+    height: 0.3
+  - content: '&4#2 &c%ajlb_lb_statistic_deaths_2_alltime_name% §8- §f%ajlb_lb_statistic_deaths_2_alltime_value%'
+    height: 0.3
+  - content: '&4#3 &c%ajlb_lb_statistic_deaths_3_alltime_name% §8- §f%ajlb_lb_statistic_deaths_3_alltime_value%'
+    height: 0.3
+  - content: '&4#4 &c%ajlb_lb_statistic_deaths_4_alltime_name% §8- §f%ajlb_lb_statistic_deaths_4_alltime_value%'
+    height: 0.3
+  - content: '&4#5 &c%ajlb_lb_statistic_deaths_5_alltime_name% §8- §f%ajlb_lb_statistic_deaths_5_alltime_value%'
+    height: 0.3
+  - content: '&4#6 &c%ajlb_lb_statistic_deaths_6_alltime_name% §8- §f%ajlb_lb_statistic_deaths_6_alltime_value%'
+    height: 0.3
+  - content: '&4#7 &c%ajlb_lb_statistic_deaths_7_alltime_name% §8- §f%ajlb_lb_statistic_deaths_7_alltime_value%'
+    height: 0.3
+  - content: '&4#8 &c%ajlb_lb_statistic_deaths_8_alltime_name% §8- §f%ajlb_lb_statistic_deaths_8_alltime_value%'
+    height: 0.3
+  - content: '&4#9 &c%ajlb_lb_statistic_deaths_9_alltime_name% §8- §f%ajlb_lb_statistic_deaths_9_alltime_value%'
+    height: 0.3
+  - content: '&4#10 &c%ajlb_lb_statistic_deaths_10_alltime_name% §8- §f%ajlb_lb_statistic_deaths_10_alltime_value%'
+    height: 0.3
+  actions: {}

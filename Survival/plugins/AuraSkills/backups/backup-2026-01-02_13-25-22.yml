@@ -1,0 +1,32 @@
+backup_version: 2
+users:
+    bb2ede77-c3c4-3323-877e-8931495ef075:
+        skills:
+            auraskills/agility: {level: 0, xp: 0.0}
+            auraskills/foraging: {level: 0, xp: 0.0}
+            auraskills/alchemy: {level: 0, xp: 0.0}
+            auraskills/fishing: {level: 0, xp: 0.0}
+            auraskills/mining: {level: 0, xp: 0.0}
+            auraskills/archery: {level: 0, xp: 0.0}
+            auraskills/farming: {level: 0, xp: 0.0}
+            auraskills/fighting: {level: 0, xp: 0.0}
+            auraskills/defense: {level: 0, xp: 0.0}
+            auraskills/excavation: {level: 0, xp: 0.0}
+            auraskills/enchanting: {level: 0, xp: 0.0}
+        mana: 20.0
+    26ed0e51-3dbb-3950-b9ae-1b7db8ac61c6:
+        skills:
+            auraskills/agility: {level: 4, xp: 555.250060000001}
+            auraskills/alchemy: {level: 4, xp: 1450.0}
+            auraskills/foraging: {level: 0, xp: 28.80000000000001}
+            auraskills/fishing: {level: 0, xp: 0.0}
+            auraskills/mining: {level: 67, xp: 191200.96000000002}
+            auraskills/archery: {level: 0, xp: 0.0}
+            auraskills/farming: {level: 0, xp: 0.0}
+            auraskills/defense: {level: 5, xp: 446.33872539996634}
+            auraskills/fighting: {level: 0, xp: 77.0}
+            auraskills/excavation: {level: 0, xp: 5.300000000000001}
+            auraskills/enchanting: {level: 0, xp: 0.0}
+        mana: 52.0
+        trait_modifiers:
+        - {name: mmoitems_max_mana, trait: auraskills/max_mana, operation: ADD, value: 20.0}

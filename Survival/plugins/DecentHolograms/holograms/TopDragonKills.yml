@@ -1,0 +1,45 @@
+location: SpawnRPG:47.500:95.000:41.500
+enabled: false
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:Dragon_egg'
+    height: 0.6
+  - content: '&#bd00ff&lT&#c200fe&lo&#c700fd&lp &#cc00fc&lD&#d100fb&lr&#d600fa&la&#db00f9&lg&#df00f9&lo&#e400f8&ln
+      &#e900f7&lK&#ee00f6&li&#f300f5&ll&#f800f4&ll&#fd00f3&ls'
+    height: 0.3
+  - content: '&5#1 &d%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_1_alltime_name% §8-
+      §f%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_1_alltime_value%'
+    height: 0.3
+  - content: '&5#2 &d%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_2_alltime_name% §8-
+      §f%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_2_alltime_value%'
+    height: 0.3
+  - content: '&5#3 &d%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_3_alltime_name% §8-
+      §f%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_3_alltime_value%'
+    height: 0.3
+  - content: '&5#4 &d%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_4_alltime_name% §8-
+      §f%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_4_alltime_value%'
+    height: 0.3
+  - content: '&5#5 &d%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_5_alltime_name% §8-
+      §f%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_5_alltime_value%'
+    height: 0.3
+  - content: '&5#6 &d%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_6_alltime_name% §8-
+      §f%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_6_alltime_value%'
+    height: 0.3
+  - content: '&5#7 &d%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_7_alltime_name% §8-
+      §f%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_7_alltime_value%'
+    height: 0.3
+  - content: '&5#8 &d%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_8_alltime_name% §8-
+      §f%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_8_alltime_value%'
+    height: 0.3
+  - content: '&5#9 &d%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_9_alltime_name% §8-
+      §f%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_9_alltime_value%'
+    height: 0.3
+  - content: '&5#10 &d%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_10_alltime_name%
+      §8- §f%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_10_alltime_value%'
+    height: 0.3
+  actions: {}

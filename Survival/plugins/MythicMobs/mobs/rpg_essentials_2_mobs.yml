@@ -1,0 +1,769 @@
+
+
+Mushroom_Red:
+  Type: COW
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=mushroom_red;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Mushroom_Red_Hit;sync=true} ~onDamaged
+  - skill{s=Mushroom_Red_Death} @self ~onDeath
+  
+Wild_Berry:
+  Type: COW
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=wild_berry;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Wild_Berry_Hit;sync=true} ~onDamaged
+  - skill{s=Wild_Berry_Death} @self ~onDeath
+  
+Cactus:
+  Type: COW
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=cactus;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Cactus_Hit;sync=true} ~onDamaged
+  - skill{s=Cactus_Death} @self ~onDeath
+  
+Shamrock:
+  Type: COW
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=shamrock;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Shamrock_Hit;sync=true} ~onDamaged
+  - skill{s=Shamrock_Death} @self ~onDeath
+  
+Four_Leaf_Clover:
+  Type: COW
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=four_leaf_clover;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Four_Leaf_Clover_Hit;sync=true} ~onDamaged
+  - skill{s=Four_Leaf_Clover_Death} @self ~onDeath
+  
+Glowing_Mushroom:
+  Type: COW
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=mushroom_glowing;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Glowing_Mushroom_Hit;sync=true} ~onDamaged
+  - skill{s=Glowing_Mushroom_Death} @self ~onDeath
+  
+Magical_Herb:
+  Type: COW
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=magical_herb;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Magical_Herb_Hit;sync=true} ~onDamaged
+  - skill{s=Magical_Herb_Death} @self ~onDeath
+  
+Deathbloom:
+  Type: COW
+  Health: 100
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    Invincible: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - BLOCK_EXPLOSION 0
+  - FALL 0
+  - CONTACT 0
+  - CRAMMING 0
+  - DRAGON_BREATH 0
+  - DROWNING 0
+  - DRYOUT 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FALLING_BLOCK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - FLY_INTO_WALL 0
+  - FREEZE 0
+  - HOT_FLOOR 0
+  - LAVA 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - MELTING 0
+  - POISON 0
+  - PROJECTILE 0
+  - SONIC_BOOM 0
+  - STARVATION 0
+  - SUFFOCATION 0
+  - THORNS 0
+  - VOID 0
+  - WITHER 0
+  - WORLD_BORDER 0
+  - KILL 0
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=deathbloom;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Deathbloom_Hit;sync=true} ~onDamaged
+  - skill{s=Deathbloom_Death} @self ~onDeath
+  
+
+Spike_Trap_Still:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=spike_trap_still;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Spike_Trap_Still_Skill} ~onTimer:10
+
+Spike_Trap_Pop_Up:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=spike_trap_pop_up;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  
+Sawblade_Trap_Short:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=sawblade_trap_short;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Sawblade_Trap_Short_Skill} ~onTimer:5
+  
+Sawblade_Trap_Long:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=sawblade_trap_long;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Sawblade_Trap_Short_Skill} ~onTimer:5
+  
+Spike_Ball_Trap:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=spike_ball_trap;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Spike_Ball_Trap_Skill} ~onTimer:10
+  
+Flame_Trap:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=flame_trap;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  
+
+
+A_Portal_Start_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=portal;n=false;d=false} @self ~onSpawn
+  - tint{m=portal;pid=color;c=FFFFFF} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Portal_Start_1} @trigger ~onInteract
+  
+A_Portal_End_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=portal;n=false;d=false} @self ~onSpawn
+  - tint{m=portal;pid=color;c=FFFFFF} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Portal_End_1} @trigger ~onInteract
+  
+  
+A_Portal_Start_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=portal;n=false;d=false} @self ~onSpawn
+  - tint{m=portal;pid=color;c=c70606} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Portal_Start_1} @trigger ~onInteract
+  
+A_Portal_End_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=portal;n=false;d=false} @self ~onSpawn
+  - tint{m=portal;pid=color;c=c70606} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Portal_End_1} @trigger ~onInteract
+  
+
+B_Portal_Start_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=portal_round;n=false;d=false} @self ~onSpawn
+  - tint{m=portal_round;pid=color;c=FFFFFF} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Portal_Start_2} @trigger ~onInteract
+  
+B_Portal_End_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=portal_round;n=false;d=false} @self ~onSpawn
+  - tint{m=portal_round;pid=color;c=FFFFFF} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Portal_End_2} @trigger ~onInteract
+  
+  
+B_Portal_Start_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=portal_round;n=false;d=false} @self ~onSpawn
+  - tint{m=portal_round;pid=color;c=c70606} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Portal_Start_2} @trigger ~onInteract
+  
+B_Portal_End_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=portal_round;n=false;d=false} @self ~onSpawn
+  - tint{m=portal_round;pid=color;c=c70606} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Portal_End_2} @trigger ~onInteract
+  
+
+Waystone_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=waystone;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Waystone_1;delay=1} @trigger ~onInteract
+  - skill{s=Waystone_1_Lastinteract} @trigger ~onInteract
+  
+Waystone_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    Despawn: persistent
+    Persistent: true
+    Invisible: true
+    Invincible: true
+    HasArms: false
+  Skills:
+  - model{mid=waystone;n=false;d=false} @self ~onSpawn
+  - skill{s=Object_Look} @Trigger ~onInteract
+  - skill{s=Waystone_2;delay=1} @trigger ~onInteract
+  - skill{s=Waystone_2_Lastinteract} @trigger ~onInteract
+  

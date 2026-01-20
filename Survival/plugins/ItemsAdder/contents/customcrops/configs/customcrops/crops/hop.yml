@@ -1,0 +1,140 @@
+info:
+  namespace: customcrops
+items:
+  hop_stage_1:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/hop/stage_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  hop_stage_2:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/hop/stage_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  hop_stage_3:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/hop/stage_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  hop_stage_4:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/hop/stage_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  hop_seeds:
+    display_name: "Hop Seeds"
+    #display_name: 啤酒花种子
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/hop/hop_seeds
+  hop:
+    display_name: "Hop"
+    #display_name: 啤酒花
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/hop/hop
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  hop_silver_star:
+    display_name: "Hop (Silver Star)"
+    #display_name: 啤酒花(银星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/hop/hop_silver_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  hop_golden_star:
+    display_name: "Hop (Golden Star)"
+    #display_name: 啤酒花(金星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/hop/hop_golden_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+categories:
+  customcrops_hop:
+    enabled: true
+    icon: customcrops:hop
+    name: 'Hop'
+    items:
+      - customcrops:hop
+      - customcrops:hop_silver_star
+      - customcrops:hop_golden_star
+      - customcrops:hop_seeds
+      - customcrops:hop_stage_1
+      - customcrops:hop_stage_2
+      - customcrops:hop_stage_3
+      - customcrops:hop_stage_4

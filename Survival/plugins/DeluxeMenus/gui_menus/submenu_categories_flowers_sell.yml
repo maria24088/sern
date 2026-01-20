@@ -1,0 +1,75 @@
+size: 45
+menu_title: '&f%img_offset_-8%%img_submenu_categories_flowers%'
+items:
+  'close':
+    material: itemsadder-invisible_item
+    slot: 16
+    display_name: '&#da5240&lCERRAR'
+    click_commands:
+      - "[openguimenu] marketplace"
+
+  'category_vegetables':
+    material: itemsadder-invisible_item
+    slot: 10
+    display_name: '&#5ed034&lVEGETALES'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_vegetables_sell"
+
+  'category_fruits':
+    material: itemsadder-invisible_item
+    slot: 11
+    display_name: '&#e32f1f&lFRUTAS'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_fruits_sell"
+
+  'category_cereals':
+    material: itemsadder-invisible_item
+    slot: 12
+    display_name: '&#f3bf46&lCEREALES'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_cereals_sell"
+
+  'category_trees':
+    material: itemsadder-invisible_item
+    slot: 13
+    display_name: '&#9a7041&lARBOLES'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_trees_sell"
+
+  'category_bushes':
+    material: itemsadder-invisible_item
+    slot: 14
+    display_name: '&#96c531&lARBUSTOS'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_bushes_sell"
+
+  'category_flowers':
+    material: itemsadder-invisible_item
+    slot: 15
+    display_name: '&#e9c1de&lFLORES'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_flowers_sell"

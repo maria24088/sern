@@ -1,0 +1,149 @@
+
+# TogglePvp By TauCubed <nullvoxel@gmail.com>
+
+# The permission players need to toggle pvp
+Toggle Permission: 'tau.togglepvp.use'
+
+# The permission players need to /togglepvpreload
+Reload Permission: 'tau.togglepvp.reload'
+
+# The delay before a player can toggle their pvp after entering combat
+Delay: 30
+
+# Should this plugin allow pvp by default?
+Default Pvp State: false
+
+# Only works on 1.14+
+# Stores the pvp state in the player's NBT
+Enable Persistent Pvp State: true
+
+# Worlds where PVP is forcefully enabled.
+Force PVP Enabled Worlds:
+- 'pvp_world'
+- 'Example_World'
+- 'Another_Example_World'
+
+# Commands that will run from console when someone turns on pvp
+# %player% will be replaced with the players name
+Pvp Enabled Commands: []
+
+# Commands that will be blocked from execution while a players' combat timer is active
+# All commands should be lowercase
+Blocked Combat Commands: []
+#  - "/somecommand"
+#  - "/someothercommand"
+#  - "/etcetc"
+
+# What potion effects should be considered an attack?
+# A full list of supported potions can be found Here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+# Note: Don't include potion effects such as Instant Damage as that deals damage directly and will be ignored here.
+Banned Potion Effects:
+- 'POISON'
+- 'WITHER'
+- 'BLINDNESS'
+- 'CONFUSION'
+- 'HUNGER'
+- 'SLOW'
+- 'SLOW_DIGGING'
+- 'UNLUCK'
+- 'WEAKNESS'
+
+# Should this plugin protect tamed animals when their owner has PVP disabled or is offline?
+Protect Tameable Animals: false
+
+# Should this plugin protect players with PVP disabled from unknown explosions?
+# An explosion is unknown when the plugin cannot determine who caused it.
+Protect From Unknown Explosions: false
+
+# Should this plugin prevent players from placing fire/lava near players with pvp disabled?
+Protect From Player Hazards: false
+
+# Should attackers get knocked back when they attempt to PVP someone with PVP disabled?
+Enable Knockback: false
+# Set the knockback force
+Knockback Force: 0.5F
+
+############
+# Messages #
+############
+
+# The message to be sent to the player when they try to run a blocked command while in combat
+Blocked Combat Command Message: "&4PvP &8| &fThis command is disabled whilst in combat."
+
+# The message to send to a player that attacks a tamed animal when the owner of that animal is offline
+Animal Owner Offline: "&4PvP &8| &fYou may not attack this Animal as it's owner is offline."
+
+# What message should be sent to players when they toggle their pvp in a forcefully enabled world?
+# NOTE: This does not prevent people from toggling. It simply serves as a warning message.
+MSG In PVP Enabled World ON Pvp CMD: "&4PvP &8| &fWarning: PvP is forcefully enabled in this world."
+
+# What message should be sent to players to instruct them on how to use this plugin?
+MSG Usage:
+- "&4PvP &8| &fUsage: /pvp <on|off>"
+
+# What message should be sent to players that attempt to toggle their pvp while in combat?
+# You may use the placeholders %remainingtime%
+MSG CombatTagged:
+- "&4PvP &8| &fYou cannot toggle your pvp while in combat."
+
+# What messages should be sent to players who attempt to set their pvp state to an existing state?
+MSG Pvp is Already DISABLED: "&4PvP &8| &fYour pvp is already disabled."
+MSG Pvp is Already ENABLED: "&4PvP &8| &fYour pvp is already enabled."
+
+# What messages should be sent to players when their pvp state changes?
+MSG Pvp DISABLED: "&4PvP &8| &fYour PvP mode is now disabled."
+MSG Pvp ENABLED: "&4PvP &8| &fYour PvP mode is now enabled."
+
+# Should messages be sent to attackers when they use non-melee attacks? (Bows, Potions, Explosives etc)
+Send PVP Disabled Messages On Non-Melee: true
+
+# The Message that will be sent to the attacker when either the attacker or the victim have PVP disabled
+MSG Attack Blocked BASE: " &c&lYou can't attack this player"
+
+# The message to send after the BASE message when both the attacker and the victim have PVP disabled.
+MSG Attack Blocked Both Players Disabled: " &fYou and &c%player%&f both have PvP mode disabled."
+# The message to send after the BASE message when the attacker has PVP disabled.
+MSG Attack Blocked You Disabled: " &fYour PvP mode is not enabled."
+# The message to send after the BASE message when the victim has PVP disabled.
+MSG Attack Blocked Other Player Disabled: " &c%player% &fhas their PvP mode disabled."
+
+# When set above 0 it will be used to limit how often attack blocked messages can be sent
+Attack MSG Cooldown: 1.0
+
+# State effects are effects that are applied to a player depending on their pvp state
+State Effects:
+  enabled: false
+  # what colors should players glow depending on their pvp state
+  # For a list of colors see: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/ChatColor.html
+  # set to "" to disable glowing
+  pvp glow color: "RED"
+  pve glow color: ""
+  # how should a players name be displayed in tab depending on their pvp state
+  # use "" to disable
+  pvp tab name: "&c%name%"
+  pve tab name: ""
+
+#Misc Advanced Messages
+
+# miscellaneous messages
+Misc:
+  No Permission: "&cYou do not have permission."
+  ConsoleIsNotPlayer: "&cConsole is not a player."
+  Reload: "&aReloading the plugin..."
+  Reloading: "&aTogglePvP reloaded"
+  ConsoleCannotPvp: "&aConsole can't toggle pvp."
+
+# section for manipulating PAPI placeholders
+placeholders:
+  # the following two values are for the %togglepvp_state% placeholder
+  pvp enabled: "Enabled"
+  pvp disabled: "Disabled"
+  # when inside a WorldGuard region with the "togglepvp-force-pvp" flag enabled.
+  pvp region: "Enabled"
+
+########################
+# END of Configuration #
+########################
+
+# No Touchy
+Config Version: 11

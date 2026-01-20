@@ -1,0 +1,1076 @@
+######## created by samus2002 #########
+
+# NPCS #
+
+NPC_Merchant_Basic:
+  Type: SKELETON
+  Display: 'NPC_Merchant_Basic'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: §f§lRandall
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_merchant_basic;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_merchant_basic;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_merchant_basic;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_basic;p=name;tag="&6&l[Comerciante]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_basic;p=name;tag="&6&l[Comerciante]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_basic;p=name;tag="&6&l[Comerciante]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_merchant_basic;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_basic;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_basic;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_MERCHANT_BASIC_INTERACT} ~onInteract
+  - skill{s=NPC_MERCHANT_BASIC_INTERACT_MENU} ~onInteract
+
+NPC_Merchant_Weapon:
+  Type: SKELETON
+  Display: 'NPC_Merchant_Weapon'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: §f§lAlfred
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_merchant_weapon;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_merchant_weapon;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_merchant_weapon;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_weapon;p=name;tag="&c&l[Comerciante de Armas]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_weapon;p=name;tag="&c&l[Comerciante de Armas]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_weapon;p=name;tag="&c&l[Comerciante de Armas]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_merchant_weapon;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_weapon;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_weapon;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_MERCHANT_WEAPON_INTERACT} ~onInteract
+  - skill{s=NPC_MERCHANT_WEAPON_INTERACT_MENU} ~onInteract
+
+NPC_Merchant_Armor:
+  Type: SKELETON
+  Display: 'NPC_Merchant_Armor'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: §f§lFarrow
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_merchant_armor;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_merchant_armor;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_merchant_armor;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_armor;p=name;tag="&9&l[Comerciante de Armaduras]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_armor;p=name;tag="&9&l[Comerciante de Armaduras]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_armor;p=name;tag="&9&l[Comerciante de Armaduras]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_merchant_armor;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_armor;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_armor;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_MERCHANT_ARMOR_INTERACT} ~onInteract
+  - skill{s=NPC_MERCHANT_ARMOR_INTERACT_MENU} ~onInteract
+
+NPC_Merchant_Jewelry:
+  Type: SKELETON
+  Display: 'NPC_Merchant_Jewelry'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: §f§lEdwin
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_merchant_jewelry;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_merchant_jewelry;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_merchant_jewelry;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_jewelry;p=name;tag="&d&l[Comerciante de Reliquias]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_jewelry;p=name;tag="&d&l[Comerciante de Reliquias]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_jewelry;p=name;tag="&d&l[Comerciante de Reliquias]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_merchant_jewelry;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_jewelry;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_jewelry;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_MERCHANT_JEWELRY_INTERACT} ~onInteract
+  - skill{s=NPC_MERCHANT_JEWELRY_INTERACT_MENU} ~onInteract
+
+NPC_Merchant_Pet:
+  Type: SKELETON
+  Display: 'NPC_Merchant_Pet'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: §f§lLeo
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_merchant_pet;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_merchant_pet;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_merchant_pet;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_pet;p=name;tag="&b&l[Comerciante de Mascotas]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_pet;p=name;tag="&b&l[Comerciante de Mascotas]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_pet;p=name;tag="&b&l[Comerciante de Mascotas]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_merchant_pet;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_pet;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_pet;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_MERCHANT_PET_INTERACT} ~onInteract
+  - skill{s=NPC_MERCHANT_PET_INTERACT_MENU} ~onInteract
+
+NPC_Merchant_Potion:
+  Type: SKELETON
+  Display: 'NPC_Merchant_Potion'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: §f§lElixiron
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_merchant_potion;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_merchant_potion;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_merchant_potion;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_potion;p=name;tag="&a&l[Comerciante De Pociones]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_potion;p=name;tag="&a&l[Comerciante De Pociones]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_potion;p=name;tag="&a&l[Comerciante De Pociones]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_merchant_potion;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_potion;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_potion;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_MERCHANT_POTION_INTERACT} ~onInteract
+  - skill{s=NPC_MERCHANT_POTION_INTERACT_MENU} ~onInteract
+
+NPC_Merchant_Forbidden:
+  Type: SKELETON
+  Display: 'NPC_Merchant_Forbidden'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: §f§lMagnus
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_merchant_forbidden;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_merchant_forbidden;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_merchant_forbidden;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_forbidden;p=name;tag="&4&l[Comerciante Prohibido]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_forbidden;p=name;tag="&4&l[Comerciante Prohibido]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_forbidden;p=name;tag="&4&l[Comerciante Prohibido]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_merchant_forbidden;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_forbidden;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_forbidden;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+  - brightness{m=npc_merchant_forbidden;p=eye;block=15;sky=15;em=false} @self ~onSpawn
+  - brightness{m=npc_merchant_forbidden;p=eye;block=15;sky=15;em=false} @self ~onLoad
+  - brightness{m=npc_merchant_forbidden;p=eye;block=15;sky=15;em=false} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_MERCHANT_FORBIDDEN_INTERACT} ~onInteract
+  - skill{s=NPC_MERCHANT_FORBIDDEN_INTERACT_MENU} ~onInteract
+
+NPC_Merchant_Wandering:
+  Type: SKELETON
+  Display: 'NPC_Merchant_Wandering'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0.18
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: false
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 40
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  - randomstroll
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: §f§lRowan
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_merchant_wandering;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_merchant_wandering;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_merchant_wandering;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_wandering;p=name;tag="&6&l[Comerciante Errante]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_wandering;p=name;tag="&6&l[Comerciante Errante]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_wandering;p=name;tag="&6&l[Comerciante Errante]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_merchant_wandering;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_merchant_wandering;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_merchant_wandering;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_MERCHANT_WANDERING_INTERACT} ~onInteract
+  - skill{s=NPC_MERCHANT_WANDERING_INTERACT_MENU} ~onInteract
+
+NPC_Healing_Fairy:
+  Type: SKELETON
+  Display: 'NPC_Healing_Fairy'
+  Health: 1000
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: §f§lOmega
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_healing_fairy;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_healing_fairy;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_healing_fairy;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_healing_fairy;p=name;tag="&a&l[Espiritu Sanador]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_healing_fairy;p=name;tag="&a&l[Espiritu Sanador]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_healing_fairy;p=name;tag="&a&l[Espiritu Sanador]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_healing_fairy;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_healing_fairy;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_healing_fairy;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+  - brightness{m=npc_healing_fairy;block=15;sky=15} @self ~onSpawn
+  - brightness{m=npc_healing_fairy;block=15;sky=15} @self ~onLoad
+  - brightness{m=npc_healing_fairy;block=15;sky=15} @self ~onTimer:150
+  - tint{m=npc_healing_fairy;c=#<caster.var.Color>;damagetint=false} @self ~onSpawn
+  - tint{m=npc_healing_fairy;c=#<caster.var.Color>;damagetint=false} @self ~onLoad
+  - tint{m=npc_healing_fairy;c=#<caster.var.Color>;damagetint=false} @self ~onTimer:150
+  - tint{m=npc_healing_fairy;p=eye;c=#FFFFFF;damagetint=false;em=false} @self ~onSpawn
+  - tint{m=npc_healing_fairy;p=eye;c=#FFFFFF;damagetint=false;em=false} @self ~onLoad
+  - tint{m=npc_healing_fairy;p=eye;c=#FFFFFF;damagetint=false;em=false} @self ~onTimer:150
+  
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_HEALING_FAIRY_INTERACT} ~onInteract
+
+NPC_Banker:
+  Type: SKELETON
+  Display: 'NPC_Banker'
+  Health: 500
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: §f§lEdric
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_banker;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_banker;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_banker;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_banker;p=name;tag="&6&l[Babquero]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_banker;p=name;tag="&6&l[Babquero]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_banker;p=name;tag="&6&l[Babquero]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_banker;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_banker;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_banker;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_BANKER_INTERACT} ~onInteract
+  - skill{s=NPC_BANKER_INTERACT_MENU} ~onInteract
+
+NPC_Villager_M:
+  Type: SKELETON
+  Display: 'NPC_Villager_M'
+  Health: 1000
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: ''
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_villager_m;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_villager_m;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_villager_m;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_villager_m;p=name;tag="&e&l[Aldeano]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_villager_m;p=name;tag="&e&l[Aldeano]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_villager_m;p=name;tag="&e&l[Aldeano]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_villager_m;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_villager_m;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_villager_m;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_VILLAGER_M_INTERACT} ~onInteract
+
+NPC_Villager_F:
+  Type: SKELETON
+  Display: 'NPC_Villager_F'
+  Health: 1000
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: ''
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_villager_f;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_villager_f;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_villager_f;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_villager_f;p=name;tag="&e&l[Aldeano]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_villager_f;p=name;tag="&e&l[Aldeano]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_villager_f;p=name;tag="&e&l[Aldeano]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_villager_f;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_villager_f;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_villager_f;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_VILLAGER_F_INTERACT} ~onInteract
+
+NPC_Villager_M_SITTING:
+  Type: SKELETON
+  Display: 'NPC_Villager_M_SITTING'
+  Health: 1000
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: ''
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_villager_m_sitting;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_villager_m_sitting;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_villager_m_sitting;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onSpawn
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onLoad
+  - setmodeltag{m=npc_villager_m_sitting;p=name;tag="&e&l[Aldeano]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_villager_m_sitting;p=name;tag="&e&l[Aldeano]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_villager_m_sitting;p=name;tag="&e&l[Aldeano]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_villager_m_sitting;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_villager_m_sitting;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_villager_m_sitting;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET_LOCK_VERSION} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_VILLAGER_M_SITTING_INTERACT} ~onInteract
+  - skill{s=NPC_VIEW_CHECK} ~onTimer:1
+
+NPC_Villager_F_SITTING:
+  Type: SKELETON
+  Display: 'NPC_Villager_F_SITTING'
+  Health: 1000
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: ''
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_villager_f_sitting;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_villager_f_sitting;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_villager_f_sitting;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onSpawn
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onLoad
+  - setmodeltag{m=npc_villager_f_sitting;p=name;tag="&e&l[Aldeano]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_villager_f_sitting;p=name;tag="&e&l[Aldeano]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_villager_f_sitting;p=name;tag="&e&l[Aldeano]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_villager_f_sitting;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_villager_f_sitting;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_villager_f_sitting;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET_LOCK_VERSION} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_VILLAGER_F_SITTING_INTERACT} ~onInteract
+  - skill{s=NPC_VIEW_CHECK} ~onTimer:1
+
+NPC_Mayor:
+  Type: SKELETON
+  Display: 'NPC_Mayor'
+  Health: 1000
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: §f§lGodfrey
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_mayor;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_mayor;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_mayor;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_mayor;p=name;tag="&e&l[Mayor]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_mayor;p=name;tag="&e&l[Mayor]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_mayor;p=name;tag="&e&l[Mayor]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_mayor;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_mayor;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_mayor;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_MAYOR_IDLE} @self ~onTimer:140 0.5
+  - skill{s=NPC_MAYOR_INTERACT} ~onInteract
+
+NPC_Guard:
+  Type: SKELETON
+  Display: 'NPC_Guard'
+  Health: 1000
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: ''
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_guard;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_guard;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_guard;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_guard;p=name;tag="&7&l[Guardia]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_guard;p=name;tag="&7&l[Guardia]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_guard;p=name;tag="&7&l[Guardia]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_guard;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_guard;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_guard;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_GUARD_IDLE} @self ~onTimer:140 0.5
+  - skill{s=NPC_GUARD_INTERACT} ~onInteract
+
+NPC_Guard_PATROL:
+  Type: SKELETON
+  Display: 'NPC_Guard'
+  Health: 1000
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0.19
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: false
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 40
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: ''
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_guard;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_guard;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_guard;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onSpawn
+  - BodyRotation{mh=0;mb=65;player=true} @self ~onLoad
+  - setmodeltag{m=npc_guard;p=name;tag="&7&l[Guardia]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_guard;p=name;tag="&7&l[Guardia]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_guard;p=name;tag="&7&l[Guardia]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_guard;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_guard;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_guard;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET;rot=65} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  
+  # PATROL
+  - setstance{stance=1} @self ~onSpawn
+  - skill{s=NPC_GUARD_PATROL} ~onTimer:30
+
+  # INTERACT
+  - skill{s=NPC_GUARD_IDLE} @self ~onTimer:140 0.5
+
+NPC_Quest_Master:
+  Type: SKELETON
+  Display: 'NPC_Quest_Master'
+  Health: 1000
+  Damage: 1
+  Faction: Essentials
+  Options:
+    MovementSpeed: 0
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    Collidable: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Variables:
+    Name: §f§lTalon
+    Color: FFFFFF
+  Skills:
+  - model{mid=npc_quest_master;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onSpawn
+  - model{mid=npc_quest_master;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onLoad
+  - model{mid=npc_quest_master;step=1;tint=false;usm=true;save=true;lockpitch=false;lockyaw=false} @self ~onTimer:100
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onSpawn
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onLoad
+  - setmodeltag{m=npc_quest_master;p=name;tag="&e&l[Maestro de Misiones]";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_quest_master;p=name;tag="&e&l[Maestro de Misiones]";v=true} @self ~onLoad
+  - setmodeltag{m=npc_quest_master;p=name;tag="&e&l[Maestro de Misiones]";v=true} @self ~onTimer:150
+  - setmodeltag{m=npc_quest_master;p=health;tag="<caster.var.Name>";v=true} @self ~onSpawn
+  - setmodeltag{m=npc_quest_master;p=health;tag="<caster.var.Name>";v=true} @self ~onLoad
+  - setmodeltag{m=npc_quest_master;p=health;tag="<caster.var.Name>";v=true} @self ~onTimer:150
+
+  - cancelevent{sync=true} ~onAttack
+  - cancelevent{sync=true} @self ~onDamaged
+  - setvariable{var=caster.spawnx;value=<caster.l.x>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawny;value=<caster.l.y>;type=FLOAT} @self ~onSpawn
+  - setvariable{var=caster.spawnz;value=<caster.l.z>;type=FLOAT} @self ~onSpawn
+  - tp @Location{x=<caster.var.spawnx>;y=<caster.var.spawny>;z=<caster.var.spawnz>;delay=2} ~onTimer:2 ?!hasaura{n=EDIT_AURA}
+  - look{headOnly=false;immediately=true;f=true;fp=true} @owner ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - tp @Forward{f=2;y=1;ofowner=true} ~onTimer:1 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_EDIT} ~onInteract
+  - skill{s=NPC_SET_LOCK_VERSION} ~onInteract
+  - skill{s=NPC_REMOVE} ~onInteract ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_MODE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_NAME_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+  - skill{s=NPC_COLOR_CHANGE} ~onTimer:10 ?hasaura{n=EDIT_AURA}
+
+  # INTERACT
+  - skill{s=NPC_QUEST_MASTER_IDLE} @self ~onTimer:140 0.5
+  - skill{s=NPC_QUEST_MASTER_INTERACT} ~onInteract
+  - skill{s=NPC_VIEW_CHECK} ~onTimer:1
+#24f35df792b6ddcf3baf6e41e84f2dde

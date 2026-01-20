@@ -1,0 +1,214 @@
+info:
+  namespace: hyronic_ae_configuration
+items:
+  armor_book:
+    display_name: <white>Armor Book
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40002
+      textures:
+        - items/armor_book
+  tool_book:
+    display_name: <white>Tool Book
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40003
+      textures:
+        - items/tool_book
+  weapon_book:
+    display_name: <white>Weapon Book
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40004
+      textures:
+        - items/weapon_book
+  universal_book:
+    display_name: <white>Universal Book
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40005
+      textures:
+        - items/universal_book
+  extraction_rune:
+    display_name: <white>Rune of Extraction
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40006
+      textures:
+        - items/extraction_rune
+  protection_rune:
+    display_name: <white>Rune of Protection
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40007
+      textures:
+        - items/protection_rune
+  soulbound_rune:
+    display_name: <white>Rune of Soulbond
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40008
+      textures:
+        - items/soulbound_rune
+  revelation_rune:
+    display_name: <white>Rune of Revelation
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40009
+      textures:
+        - items/revelation_rune
+  soul_rune:
+    display_name: <white>Rune of Soul
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40010
+      textures:
+        - items/soul_rune
+  fisherman_scroll:
+    display_name: <white>Fisherman Scroll
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40011
+      textures:
+        - items/fisherman_scroll
+  miner_scroll:
+    display_name: <white>Miner Scroll
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40012
+      textures:
+        - items/miner_scroll
+  slayer_scroll:
+    display_name: <white>Slayer Scroll
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40013
+      textures:
+        - items/slayer_scroll
+  warrior_scroll:
+    display_name: <white>Warrior Scroll
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40014
+      textures:
+        - items/warrior_scroll
+  abandon_stone:
+    display_name: <white>Abandon Stone
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40015
+      textures:
+        - items/abandon_stone
+  lucky_gem:
+    display_name: <white>Lucky Gem
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40016
+      textures:
+        - items/lucky_gem
+  soul_gem:
+    display_name: <white>Soul Gem
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40017
+      textures:
+        - items/soul_gem
+  rename_quill:
+    display_name: <white>Rename Quill
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40018
+      textures:
+        - items/rename_quill
+  renewal_totem:
+    display_name: <white>Totem of Renewal
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40019
+      textures:
+        - items/renewal_totem
+  arcane_bundle:
+    display_name: <white>Arcane Bundle
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40020
+      textures:
+        - items/arcane_satchel
+  simple_book:
+    display_name: <white>Simple Book
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40021
+      textures:
+        - items/simple
+  unique_book:
+    display_name: <white>Unique Book
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40022
+      textures:
+        - items/unique
+  elite_book:
+    display_name: <white>Elite Book
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40023
+      textures:
+        - items/elite
+  ultimate_book:
+    display_name: <white>Ultimate Book
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40024
+      textures:
+        - items/ultimate
+  legendary_book:
+    display_name: <white>Legendary Book
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40025
+      textures:
+        - items/legendary
+  fabled_book:
+    display_name: <white>Fabled Book
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40026
+      textures:
+        - items/fabled
+  cosmo_book:
+    display_name: <white>Cosmo Book
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 40027
+      textures:
+        - items/cosmo
+
+
+# 15091I5E

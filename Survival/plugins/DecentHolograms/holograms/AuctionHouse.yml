@@ -1,0 +1,20 @@
+location: SpawnRPGRPG:-36.500:93.000:130.500
+enabled: false
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:SUNFLOWER'
+    height: 0.6
+  - content: '&e&lAuction House'
+    height: 0.3
+  - content: '&rVende tus Items!'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&7Click para Abrir'
+    height: 0.3
+  actions: {}

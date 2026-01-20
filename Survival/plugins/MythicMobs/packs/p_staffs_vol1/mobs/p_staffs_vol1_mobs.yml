@@ -1,0 +1,35 @@
+p_staff_bee:
+  Type: BEE
+  Options:
+    NoAI: true
+    Invincible: true
+    Collidable: false
+    Scale: 0.8
+  Skills:
+  - potion{type=GLOWING;duration=200} @self ~onSpawn
+  - addtag{tag=prop} @self ~onSpawn
+
+p_staff_plasma_start:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Invisible: true
+    Invincible: true
+    NoAI: true
+  Skills:
+  - addtag{tag=prop} @self ~onSpawn
+  - skill{skill=[
+    - projectile{velocity=17;i=1;deathdelay=99;hnp=true;hp=true;hitconditions=[ owner false ];sE=false;sB=false;mr=5;
+      onTick=[
+        - particles{particle=spark;a=4;hs=0.1;vs=0.1;speed=0.2} @origin
+        - particles{particle=redstone;c=#D59CFC;hs=0.1;vs=0.1;a=5;size=0.8} @origin
+      ];
+      onEnd=[
+        - remove @self
+      ];
+      onHit=[
+        - damage{amount=3;pkb=true;pi=true}
+      ]} @sphere{radius=4;points=<random.4to9>}
+    ]} @self ~onSpawn
+#3da47706607c96acf85876189339d6b1
+#oWVwMTeWh1bGNzTUJ1b0pGSZh0T3VERPVTUE90MFRUT4RjMZ9UM4l0NmNjVNZmMBlWciNjM

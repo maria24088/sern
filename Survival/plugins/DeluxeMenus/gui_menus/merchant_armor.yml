@@ -1,0 +1,84 @@
+# Made by samus2002
+
+menu_title: '&8&lArmor Shop'
+open_command:
+  - shop_armor
+size: 45
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: shop_armor.open
+      deny_commands:
+        - "[message] &cYou can't access the Armor Shop yet!"
+items:
+  'IRON_CHESTPLATE':
+    material: IRON_CHESTPLATE
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lIron Chestplate'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to buy!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$50"
+      - ""
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lRight-click&7 to sell for &a$25!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a1x EIron Chestplate"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_ARMOR_BUY_1";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    right_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_ARMOR_SELL_1";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+  'DIAMOND_CHESTPLATE':
+    material: DIAMOND_CHESTPLATE
+    slot: 11
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lDiamond Chestplate'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to buy!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a$100"
+      - ""
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lRight-click&7 to sell for &a$50!"
+      - ""
+      - "&f❖ &6&lRequired:"
+      - "&7- &a1x Diamond Chestplate"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_ARMOR_BUY_2";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+    right_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s NPC_MERCHANT_ARMOR_SELL_2";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[refresh]'
+
+  'PLAYER':
+    material: ENDER_PEARL
+    slot: 4
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lBalance'
+    lore:
+      - "&a$%vault_eco_balance%"
+#24f35df792b6ddcf3baf6e41e84f2dde

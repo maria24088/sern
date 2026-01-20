@@ -1,0 +1,247 @@
+# Guía de configuración avanzada de DeluxeMenus
+#=========================================================
+menu_title: '¡Vota por el Servidor!'
+open_command:
+  - vote
+  - votar
+open_commands: []
+size: 36
+# Como siempre, solo la gente genial puede abrir este menú :)
+items:
+  # Enlaces de Votación (General)
+  'vote':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTk2MGQ2ZmZhZjQ0ZThhZmNiZGY4YjI5YTc3ZDg0Y2UyMmM3MWQwMGM2NGJmZDk5YWYzNDBhNjk1MzViZmQ3In19fQ== # Cabeza de jugador personalizada
+    slot: 15
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&#34eb89Todos los Enlaces de Votación'
+    lore:
+      - '&8Lista Completa'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Vota diariamente para obtener recompensas gratis! Este botón te'
+      - '&fdirigirá a todos nuestros enlaces de votación para Tu Servidor!'
+      - '&f'
+      - '&#34eb89◆ &fVotos Totales: &#34eb89%VotingPlugin_alltimetotal%' # Muestra el total de votos del plugin
+      - ''
+      - '&2→ &a¡Clic para ver todos los Enlaces de Votación!'
+    left_click_commands:
+      - '[message] &r &#34eb89&l✔ ¡Vota por nosotros!'
+      - '[message] &r &#34eb89#1 &fvote1.yourserver.com'
+      - '[message] &r &#34eb89#2 &fvote2.yourserver.com'
+      - '[message] &r &#34eb89#3 &fvote3.yourserver.com'
+      - '[message] &r &#34eb89#4 &fvote4.yourserver.com'
+      - '[message] &r &#34eb89#5 &fvote5.yourserver.com'
+      - '[message] &r &#34eb89#6 &fvote6.yourserver.com'
+      - '[message] &r &#34eb89#7 &fvote7.yourserver.com'
+      - '[message] &r &#34eb89#8 &fvote8.yourserver.com'
+      - '[close]'
+
+  # Enlace de Votación 1
+  'v1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ2NWNlODNmMWFhNWI2ZTg0ZjliMjMzNTk1MTQwZDViNmJlY2ViNjJiNmQwYzY3ZDFhMWQ4MzYyNWZmZCJ9fX0=
+    slot: 10
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#34eb89Enlace de Votación 1'
+    lore:
+      - '&8Sitio de Votación'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Vota diariamente para obtener recompensas gratis! Este enlace'
+      - '&fde votación está dirigido a votesiteurl.com' # Deberías cambiar votesiteurl.com por el sitio real
+      - '&f'
+      - '&#34eb89Recompensas:'
+      - '&#34eb89◆ &f1x Llave de Voto'
+      - '&#34eb89◆ &f$1,000'
+      - '&#34eb89◆ &f2 Minutos de Vuelo'
+      - ''
+      - '&2→ &a¡Clic para obtener el enlace de votación!'
+    left_click_commands:
+      - '[message] &r &#34eb89&l✔ ¡Vota por nosotros!'
+      - '[message] &r &#34eb89#1 &fvote1.yourserver.com'
+      - '[close]'
+
+  # Enlace de Votación 2
+  'v2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGQ1NGQxZjhmYmY5MWIxZTdmNTVmMWJkYjI1ZTJlMzNiYWY2ZjQ2YWQ4YWZiZTA4ZmZlNzU3ZDMwNzVlMyJ9fX0=
+    slot: 11
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#34eb89Enlace de Votación 2'
+    lore:
+      - '&8Sitio de Votación'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Vota diariamente para obtener recompensas gratis! Este enlace'
+      - '&fde votación está dirigido a votesiteurl.com'
+      - '&f'
+      - '&#34eb89Recompensas:'
+      - '&#34eb89◆ &f1x Llave de Voto'
+      - '&#34eb89◆ &f$1,000'
+      - '&#34eb89◆ &f2 Minutos de Vuelo'
+      - ''
+      - '&2→ &a¡Clic para obtener el enlace de votación!'
+    left_click_commands:
+      - '[message] &r &#34eb89&l✔ ¡Vota por nosotros!'
+      - '[message] &r &#34eb89#1 &fvote2.yourserver.com'
+      - '[close]'
+
+  # Enlace de Votación 3
+  'v3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjFlNGVhNTliNTRjYzk5NDE2YmM5ZjYyNDU0OGRkYWMyYTM4ZWVhNmEyZGJmNmU0Y2NkODNjZWM3YWM5NjkifX19
+    slot: 12
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#34eb89Enlace de Votación 3'
+    lore:
+      - '&8Sitio de Votación'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Vota diariamente para obtener recompensas gratis! Este enlace'
+      - '&fde votación está dirigido a votesiteurl.com'
+      - '&f'
+      - '&#34eb89Recompensas:'
+      - '&#34eb89◆ &f1x Llave de Voto'
+      - '&#34eb89◆ &f$1,000'
+      - '&#34eb89◆ &f2 Minutos de Vuelo'
+      - ''
+      - '&2→ &a¡Clic para obtener el enlace de votación!'
+    left_click_commands:
+      - '[message] &r &#34eb89&l✔ ¡Vota por nosotros!'
+      - '[message] &r &#34eb89#1 &fvote3.yourserver.com'
+      - '[close]'
+
+  # Enlace de Votación 4
+  'v4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI1MjdiMjRiNWQyYmNkYzc1NmY5OTVkMzRlYWU1NzlkNzQxNGIwYTVmMjZjNGZmYTRhNTU4ZWNhZjZiNyJ9fX0=
+    slot: 13
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#34eb89Enlace de Votación 4'
+    lore:
+      - '&8Sitio de Votación'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Vota diariamente para obtener recompensas gratis! Este enlace'
+      - '&fde votación está dirigido a votesiteurl.com'
+      - '&f'
+      - '&#34eb89Recompensas:'
+      - '&#34eb89◆ &f1x Llave de Voto'
+      - '&#34eb89◆ &f$1,000'
+      - '&#34eb89◆ &f2 Minutos de Vuelo'
+      - ''
+      - '&2→ &a¡Clic para obtener el enlace de votación!'
+    left_click_commands:
+      - '[message] &r &#34eb89&l✔ ¡Vota por nosotros!'
+      - '[message] &r &#34eb89#1 &fvote4.yourserver.com'
+      - '[close]'
+
+  # Enlace de Votación 5
+  'v5':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODRjOGMzNzEwZGEyNTU5YTI5MWFkYzM5NjI5ZTljY2VhMzFjYTlkM2QzNTg2YmZlYTZlNmUwNjEyNGIzYyJ9fX0=
+    slot: 19
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#34eb89Enlace de Votación 5'
+    lore:
+      - '&8Sitio de Votación'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Vota diariamente para obtener recompensas gratis! Este enlace'
+      - '&fde votación está dirigido a votesiteurl.com'
+      - '&f'
+      - '&#34eb89Recompensas:'
+      - '&#34eb89◆ &f1x Llave de Voto'
+      - '&#34eb89◆ &f$1,000'
+      - '&#34eb89◆ &f2 Minutos de Vuelo'
+      - ''
+      - '&2→ &a¡Clic para obtener el enlace de votación!'
+    left_click_commands:
+      - '[message] &r &#34eb89&l✔ ¡Vota por nosotros!'
+      - '[message] &r &#34eb89#1 &fvote5.yourserver.com'
+      - '[close]'
+
+  # Enlace de Votación 6
+  'v6':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTIxMTNjNjA0YTIyYjIyNGZiZDM1OTdmOTA0YTdmOTIyN2E3YzFhZTUzNDM5Yzk2OTk0YmZhMjNiNTJlYiJ9fX0=
+    slot: 20
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#34eb89Enlace de Votación 6'
+    lore:
+      - '&8Sitio de Votación'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Vota diariamente para obtener recompensas gratis! Este enlace'
+      - '&fde votación está dirigido a votesiteurl.com'
+      - '&f'
+      - '&#34eb89Recompensas:'
+      - '&#34eb89◆ &f1x Llave de Voto'
+      - '&#34eb89◆ &f$1,000'
+      - '&#34eb89◆ &f2 Minutos de Vuelo'
+      - ''
+      - '&2→ &a¡Clic para obtener el enlace de votación!'
+    left_click_commands:
+      - '[message] &r &#34eb89&l✔ ¡Vota por nosotros!'
+      - '[message] &r &#34eb89#1 &fvote6.yourserver.com'
+      - '[close]'
+
+  # Enlace de Votación 7
+  'v7':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRiZGU3OWY4NGZjNWYzZjFmYmM1YmMwMTA3MTA2NmJkMjBjZDI2M2ExNjU0ZDY0ZDYwZDg0MjQ4YmE5Y2QifX19
+    slot: 21
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#34eb89Enlace de Votación 7'
+    lore:
+      - '&8Sitio de Votación'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Vota diariamente para obtener recompensas gratis! Este enlace'
+      - '&fde votación está dirigido a votesiteurl.com'
+      - '&f'
+      - '&#34eb89Recompensas:'
+      - '&#34eb89◆ &f1x Llave de Voto'
+      - '&#34eb89◆ &f$1,000'
+      - '&#34eb89◆ &f2 Minutos de Vuelo'
+      - ''
+      - '&2→ &a¡Clic para obtener el enlace de votación!'
+    left_click_commands:
+      - '[message] &r &#34eb89&l✔ ¡Vota por nosotros!'
+      - '[message] &r &#34eb89#1 &fvote7.yourserver.com'
+      - '[close]'
+
+  # Enlace de Votación 8
+  'v8':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjJlZTEzNzFkOGYwZjVhOGI3NTljMjkxODYzZDcwNGFkYzQyMWFkNTE5ZjE3NDYyYjg3NzA0ZGJmMWM3OGE0In19fQ==
+    slot: 22
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#34eb89Enlace de Votación 8'
+    lore:
+      - '&8Sitio de Votación'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Vota diariamente para obtener recompensas gratis! Este enlace'
+      - '&fde votación está dirigido a votesiteurl.com'
+      - '&f'
+      - '&#34eb89Recompensas:'
+      - '&#34eb89◆ &f1x Llave de Voto'
+      - '&#34eb89◆ &f$1,000'
+      - '&#34eb89◆ &f2 Minutos de Vuelo'
+      - ''
+      - '&2→ &a¡Clic para obtener el enlace de votación!'
+    left_click_commands:
+      - '[message] &r &#34eb89&l✔ ¡Vota por nosotros!'
+      - '[message] &r &#34eb89#1 &fvote8.yourserver.com'
+      - '[close]'

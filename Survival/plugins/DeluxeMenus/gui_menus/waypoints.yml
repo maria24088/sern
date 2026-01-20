@@ -1,0 +1,63 @@
+# Made by samus2002
+
+menu_title: '&8&lWaypoints'
+open_command:
+  - waypoint
+size: 27
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: waypoint.open
+      deny_commands:
+        - "[message] &cYou can't access Waypoints yet!"
+items:
+  'TOWN':
+    material: END_CRYSTAL
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lTown'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to travel to Town!"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s OBJ_WAYPOINT_GATE_TOWN";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[close]'
+  'FARM':
+    material: WHEAT
+    slot: 11
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lFarm'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to travel to Farm!"
+      - ""
+    view_requirement:
+      requirements:
+        waypoint_perm:
+          type: has permission
+          permission: waypoint.farm
+    left_click_commands:
+      - '[player] mm test cast -s OBJ_WAYPOINT_GATE_FARM'
+      - '[close]'
+  'FARM_LOCKED':
+    material: RED_STAINED_GLASS_PANE
+    slot: 11
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&c&lFarm'
+    lore:
+      - "&4&lLOCKED"
+    left_click_commands:
+      - "[message] &4You haven't unlocked &b&lFarm &4yet!"
+      - '[sound] ENTITY_ITEM_BREAK'
+#24f35df792b6ddcf3baf6e41e84f2dde

@@ -1,0 +1,34 @@
+info:
+    namespace: frostbite_set
+categories:
+    frostbite_set:
+        name: Frostbite Animated Weapons And Tools Set
+        enabled: true
+        icon: frostbite_set:frostbite_wings
+        permission: ia.menu.frostbite_set
+        items:
+        - frostbite_set:frostbitehelmet
+        - frostbite_set:frostbitechestplate
+        - frostbite_set:frostbiteleggings
+        - frostbite_set:frostbiteboots
+        - frostbite_set:frostbite_helmet
+        - frostbite_set:frostbite_axe
+        - frostbite_set:frostbite_pickaxe
+        - frostbite_set:frostbite_shovel
+        - frostbite_set:frostbite_hoe
+        - frostbite_set:frostbite_fishing_rod
+        - frostbite_set:frostbite_sword
+        - frostbite_set:frostbite_shield
+        - frostbite_set:frostbite_crossbow
+        - frostbite_set:frostbite_bow
+        - frostbite_set:frostbite_staff
+        - frostbite_set:frostbite_trident
+        - frostbite_set:frostbite_hammer
+        - frostbite_set:frostbite_spear
+        - frostbite_set:frostbite_scythe
+        - frostbite_set:frostbite_chest
+        - frostbite_set:frostbite_key
+        - frostbite_set:frostbite_mace
+        - frostbite_set:frostbite_wings
+
+#g3ZzF3R2QTb10kN0NUeJVUORFjW6tGRNVzY61UeZRlT6VVRSl0YKV3M0MzanB1aVFmMQF1N

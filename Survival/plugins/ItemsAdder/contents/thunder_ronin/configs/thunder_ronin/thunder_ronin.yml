@@ -1,0 +1,67 @@
+info:
+  namespace: thunder_ronin
+items:
+  icon_crackling_skyfall:
+    display_name: "icon_crackling_skyfall"
+    permission: icon_crackling_skyfall
+    resource:
+      material: COAL
+      model_id: 2280
+      generate: false
+      model_path: thunder_ronin_model/icon_crackling_skyfall
+  icon_flaming_thunder_god:
+    display_name: "icon_flaming_thunder_god"
+    permission: icon_flaming_thunder_god
+    resource:
+      material: COAL
+      model_id: 2281
+      generate: false
+      model_path: thunder_ronin_model/icon_flaming_thunder_god
+  icon_flashstorm_reversal:
+    display_name: "icon_flashstorm_reversal"
+    permission: icon_flashstorm_reversal
+    resource:
+      material: COAL
+      model_id: 2282
+      generate: false
+      model_path: thunder_ronin_model/icon_flashstorm_reversal
+  icon_lightning_reflex:
+    display_name: "icon_lightning_reflex"
+    permission: icon_lightning_reflex
+    resource:
+      material: COAL
+      model_id: 2283
+      generate: false
+      model_path: thunder_ronin_model/icon_lightning_reflex
+  icon_thunderclap_and_flash:
+    display_name: "icon_thunderclap_and_flash"
+    permission: icon_thunderclap_and_flash
+    resource:
+      material: COAL
+      model_id: 2285
+      generate: false
+      model_path: thunder_ronin_model/icon_thunderclap_and_flash
+  icon_thunderous_barrage:
+    display_name: "icon_thunderous_barrage"
+    permission: icon_thunderous_barrage
+    resource:
+      material: COAL
+      model_id: 2286
+      generate: false
+      model_path: thunder_ronin_model/icon_thunderous_barrage
+  icon_thunder_slash:
+    display_name: "icon_thunder_slash"
+    permission: icon_thunder_slash
+    resource:
+      material: COAL
+      model_id: 2284
+      generate: false
+      model_path: thunder_ronin_model/icon_thunder_slash
+  thunder_ronin_katana:
+    display_name: "thunder_ronin_katana"
+    permission: thunder_ronin_katana
+    resource:
+      material: STONE_SWORD
+      model_id: 2085
+      generate: false
+      model_path: thunder_ronin_model/thunder_ronin_katana

@@ -1,0 +1,56 @@
+info:
+  namespace: magic_staffs
+
+categories:
+  magic_staffs_collection:
+    name: 'Magic Staffs'
+    enabled: true
+    icon: magic_staffs:plasma_staff
+    permission: ia.menu.magic_staffs
+    items:
+      - magic_staffs:bee_keeper_staff
+      - magic_staffs:plasma_staff
+      - magic_staffs:soul_fire_staff
+      - magic_staffs:spider_queen_staff
+      - magic_staffs:thunder_staff
+
+items:
+  bee_keeper_staff:
+    display_name: 'Bee Keeper Staff'
+    permission: magic_staffs.bee_keeper_staff
+    resource:
+      material: CARROT_ON_A_STICK
+      generate: false
+      model_path: bee_keeper_staff
+  
+  plasma_staff:
+    display_name: 'Plasma Staff'
+    permission: magic_staffs.plasma_staff
+    resource:
+      material: CARROT_ON_A_STICK
+      generate: false
+      model_path: plasma_staff
+
+  soul_fire_staff:
+    display_name: 'Soul Fire Staff'
+    permission: magic_staffs.soul_fire_staff
+    resource:
+      material: CARROT_ON_A_STICK
+      generate: false
+      model_path: soul_fire_staff
+
+  spider_queen_staff:
+    display_name: 'Spider Queen Staff'
+    permission: magic_staffs.spider_queen_staff
+    resource:
+      material: CARROT_ON_A_STICK
+      generate: false
+      model_path: spider_queen_staff
+
+  thunder_staff:
+    display_name: 'Thunder Staff'
+    permission: magic_staffs.thunder_staff
+    resource:
+      material: CARROT_ON_A_STICK
+      generate: false
+      model_path: thunder_staff

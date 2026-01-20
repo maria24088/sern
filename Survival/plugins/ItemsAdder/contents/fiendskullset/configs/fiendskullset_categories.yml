@@ -1,0 +1,36 @@
+info:
+  namespace: fiendskullset
+categories:
+  fiendskullset:
+    enabled: true
+    skip_if_already: false
+    icon: "fiendskullset:fiendskull_sword"
+    name: Fiend Skull Weapons & Tools Set
+    permission: fiendskullset.menu
+    items:
+      - "fiendskullset:fiendskull_sword"
+      - "fiendskullset:fiendskull_knife"
+      - "fiendskullset:fiendskull_spear"
+      - "fiendskullset:fiendskull_trident"
+      - "fiendskullset:fiendskull_hammer"
+      - "fiendskullset:fiendskull_scythe"
+      - "fiendskullset:fiendskull_staff"
+      - "fiendskullset:fiendskull_bow"
+      - "fiendskullset:fiendskull_crossbow"
+      - "fiendskullset:fiendskull_axe"
+      - "fiendskullset:fiendskull_hoe"
+      - "fiendskullset:fiendskull_pickaxe"
+      - "fiendskullset:fiendskull_shovel"
+      - "fiendskullset:fiendskull_fishing_rod"
+      - "fiendskullset:fiendskull_shield"
+      - "fiendskullset:fiendskull_chest"
+      - "fiendskullset:fiendskull_chest_opening"
+      - "fiendskullset:fiendskull_key"
+      - "fiendskullset:fiendskullchestplate"
+      - "fiendskullset:fiendskullleggings"
+      - "fiendskullset:fiendskullboots"
+      - "fiendskullset:fiendskullhelmet"
+      - "fiendskullset:fiendskull_head"
+      - "fiendskullset:fiendskull_cape"
+      - "fiendskullset:fiendskull_backpack"
+    

@@ -1,0 +1,53 @@
+armors_rendering:
+  infernoarmor:
+    color: '#721b38'
+    layer_1: armor/inferno_armor_layer_1
+    layer_2: armor/inferno_armor_layer_2
+    use_color: false
+info:
+  namespace: infernoset
+items:
+  infernoboots:
+    display_name: Inferno Boots
+    permission: inferno.boots
+    resource:
+      generate: true
+      textures:
+      - armor/inferno_boots_icon.png
+    specific_properties:
+      armor:
+        custom_armor: infernoarmor
+        slot: feet
+  infernochestplate:
+    display_name: Inferno Chestplate
+    permission: inferno.chestplate
+    resource:
+      generate: true
+      textures:
+      - armor/inferno_chestplate_icon.png
+    specific_properties:
+      armor:
+        custom_armor: infernoarmor
+        slot: chest
+  infernoleggings:
+    display_name: Inferno Leggings
+    permission: inferno.leggings
+    resource:
+      generate: true
+      textures:
+      - armor/inferno_leggings_icon.png
+    specific_properties:
+      armor:
+        custom_armor: infernoarmor
+        slot: legs
+  infernohelmet:
+    display_name: Inferno Helmet
+    permission: inferno.helmet
+    resource:
+      generate: true
+      textures:
+      - armor/inferno_helmet_icon.png
+    specific_properties:
+      armor:
+        custom_armor: infernoarmor
+        slot: head

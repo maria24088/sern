@@ -1,0 +1,42 @@
+info:
+  namespace: customcrops
+  dictionary-lang: "en"
+dictionary:
+  display-category-customcrops_basics: Basics
+  display-category-customcrops_sprinklers: Sprinklers
+  display-category-customcrops_fertilizers: Fertilizers
+  display-category-customcrops_wateringcans: Watering Cans
+  display-name-dry_pot: Pot
+  display-name-wet_pot: Pot
+  display-name-scarecrow: Scarecrow
+  display-name-greenhouse_glass: Greenhouse Glass
+  display-name-speed_grow_1: Speed-Gro
+  display-name-speed_grow_2: Deluxe Speed-Gro
+  display-name-speed_grow_3: Hyper Speed-Gro
+  display-name-soil_retain_1: Basic Retaining Soil
+  display-name-soil_retain_2: Quality Retaining Soil
+  display-name-soil_retain_3: Deluxe Retaining Soil
+  display-name-quality_1: Basic Fertilizer
+  display-name-quality_2: Quality Fertilizer
+  display-name-quality_3: Deluxe Fertilizer
+  display-name-yield_increase_1: Basic Yield Increasing
+  display-name-yield_increase_2: Quality Yield Increasing
+  display-name-yield_increase_3: Deluxe Yield Increasing
+  display-name-variation_1: Primary Magic Bottle
+  display-name-variation_2: Intermediate Magic Bottle
+  display-name-variation_3: Advanced Magic Bottle
+  display-name-watering_can_1: Copper Watering Can
+  display-name-watering_can_2: Steel Watering Can
+  display-name-watering_can_3: Golden Watering Can
+  display-name-watering_can_4: Iridium Watering Can
+  display-name-sprinkler_1_item: Primitive Sprinkler
+  display-name-sprinkler_2_item: Quality Sprinkler
+  display-name-sprinkler_3_item: Modern Sprinkler
+  # Tomato
+  display-name-tomato: Tomato
+  display-name-tomato_silver_star: Tomato (Silver Star)
+  display-name-tomato_golden_star: Tomato (Golden Star)
+  display-name-tomato_seeds: Tomato Seeds
+  display-name-gigantic_tomato: Overgrown Tomato
+  display-name-golden_tomato: Golden Tomato
+  display-name-soil_surveyor: Soil Surveyor

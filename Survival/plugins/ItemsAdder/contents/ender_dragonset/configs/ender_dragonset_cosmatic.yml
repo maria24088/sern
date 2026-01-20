@@ -1,0 +1,43 @@
+info:
+  namespace: ender_dragonset
+items:
+  ender_dragon_cosmetics_helmet:
+    display_name: Ender Dragon Helmet Cosmetics
+    permission: ender_dragonset.ender_dragon_cosmetics_helmet
+    resource:
+      generate: false
+      model_path: helmet
+      material: POTION
+      model_id: 9723000
+  ender_dragon_cosmetics_wings:
+    display_name: Ender Dragon Wings Cosmetics
+    permission: ender_dragonset.ender_dragon_cosmetics_wings
+    resource:
+      generate: false
+      model_path: wings_cosmetic
+      material: POTION
+      model_id: 9723001
+  ender_dragon_cosmetics_wings_self:
+    display_name: Ender Dragon Wings Cosmetics Self
+    permission: ender_dragonset.ender_dragon_cosmetics_wings_self
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self
+      material: POTION
+      model_id: 9723002
+  ender_dragon_cosmetics_wings_self_2:
+    display_name: Ender Dragon Wings Cosmetics Self 2
+    permission: ender_dragonset.ender_dragon_cosmetics_wings_self_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self_2
+      material: POTION
+      model_id: 9723003
+  ender_dragon_cosmetics_wings_normal_2:
+    display_name: Ender Dragon Wings Cosmetics Normal 2
+    permission: ender_dragonset.ender_dragon_cosmetics_wings_normal_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_normal_2
+      material: POTION
+      model_id: 9723004

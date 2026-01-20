@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  desk:
+    display_name: "Desk"
+    permission: livingroom.desk
+    resource:
+      material: PAPER
+      generate: false
+      model_path: desk
+    behaviours:
+      furniture:
+        light_level: 13

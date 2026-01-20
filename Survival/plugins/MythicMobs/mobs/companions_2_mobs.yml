@@ -1,0 +1,1079 @@
+Pet_Outlaw_Wild_West:
+  Type: wolf
+  Display: '&fWild West Outlaw'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_outlaw_wild_west;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_outlaw_wild_west;usm=true;step=1} @self ~onLoad
+  - brightness{mid=pet_outlaw_wild_west;p=muzzle;em=true;b=15;s=15} @self ~onSpawn
+  - skill{s=Pet_Outlaw_Wild_West_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Outlaw_Wild_West} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+
+Pet_Outlaw_Cyborg:
+  Type: wolf
+  Display: '&fCyborg Outlaw'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_outlaw_cyborg;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_outlaw_cyborg;usm=true;step=1} @self ~onLoad
+  - brightness{mid=pet_outlaw_cyborg;p=muzzle;em=true;b=15;s=15} @self ~onSpawn
+  - skill{s=Pet_Outlaw_Cyborg_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Outlaw_Wild_West} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+
+Pet_Outlaw_Officer:
+  Type: wolf
+  Display: '&fOfficer Outlaw'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_outlaw_officer;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_outlaw_officer;usm=true;step=1} @self ~onLoad
+  - brightness{mid=pet_outlaw_officer;p=muzzle;em=true;b=15;s=15} @self ~onSpawn
+  - skill{s=Pet_Outlaw_Officer_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Outlaw_Wild_West} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+
+Pet_Outlaw_Steampunk:
+  Type: wolf
+  Display: '&fSteampunk Outlaw'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_outlaw_steampunk;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_outlaw_steampunk;usm=true;step=1} @self ~onLoad
+  - brightness{mid=pet_outlaw_steampunk;p=muzzle;em=true;b=15;s=15} @self ~onSpawn
+  - skill{s=Pet_Outlaw_Steampunk_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Outlaw_Wild_West} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+  - skill{s=Pet_Outlaw_Steampunk_FX} ~onTimer:40
+
+VFX_Red_Target:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_red_target} @self ~onSpawn
+  - brightness{mid=vfx_red_target;b=15;s=15} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - tint{m=vfx_red_target;c=ff0f0f} @self ~onSpawn
+  
+VFX_Blue_Target:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_red_target} @self ~onSpawn
+  - brightness{mid=vfx_red_target;b=15;s=15} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - tint{m=vfx_red_target;c=78dbff} @self ~onSpawn
+
+VFX_Yellow_Target:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_red_target} @self ~onSpawn
+  - brightness{mid=vfx_red_target;b=15;s=15} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - tint{m=vfx_red_target;c=ffb60a} @self ~onSpawn
+
+Pet_Griffon_Griffon:
+  Type: wolf
+  Display: '&fGriffon'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_griffon_griffon;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_griffon_griffon;usm=true;step=1} @self ~onLoad
+  - brightness{mid=pet_griffon_griffon;p=ball;em=true;b=15;s=15} @self ~onSpawn
+  - effect:sound{s=entity.parrot.ambient;volume=0.7;pitch=0.9} @self ~onTimer:220 0.35
+  - skill{s=Pet_Griffon_Griffon_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Griffon_Griffon} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+
+Pet_Griffon_Phoenix:
+  Type: wolf
+  Display: '&fPhoenix Griffon'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_Griffon_Phoenix;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_Griffon_Phoenix;usm=true;step=1} @self ~onLoad
+  - brightness{mid=pet_Griffon_Phoenix;p=ball;em=true;b=15;s=15} @self ~onSpawn
+  - effect:sound{s=entity.parrot.ambient;volume=0.7;pitch=0.9} @self ~onTimer:220 0.35
+  - skill{s=Pet_Griffon_Phoenix_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Griffon_Griffon} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+  - skill{s=Pet_Griffon_Phoenix_FX} ~onTimer:40
+
+Pet_Griffon_Rockstar:
+  Type: wolf
+  Display: '&fRockstar Griffon'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_Griffon_Rockstar;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_Griffon_Rockstar;usm=true;step=1} @self ~onLoad
+  - brightness{mid=pet_Griffon_Rockstar;p=ball;em=true;b=15;s=15} @self ~onSpawn
+  - effect:sound{s=entity.parrot.ambient;volume=0.7;pitch=0.9} @self ~onTimer:220 0.35
+  - skill{s=Pet_Griffon_Rockstar_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Griffon_Griffon} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+
+Pet_Griffon_Khonsu:
+  Type: wolf
+  Display: '&fKhonsu Griffon'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_Griffon_Khonsu;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_Griffon_Khonsu;usm=true;step=1} @self ~onLoad
+  - brightness{mid=pet_Griffon_Khonsu;p=ball;em=true;b=15;s=15} @self ~onSpawn
+  - effect:sound{s=entity.parrot.ambient;volume=0.7;pitch=0.9} @self ~onTimer:220 0.35
+  - skill{s=Pet_Griffon_Khonsu_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Griffon_Griffon} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+  - skill{s=Pet_Griffon_Khonsu_FX} ~onTimer:40
+
+Pet_Griffon_Ra:
+  Type: wolf
+  Display: '&fRa Griffon'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_Griffon_Ra;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_Griffon_Ra;usm=true;step=1} @self ~onLoad
+  - brightness{mid=pet_Griffon_Ra;p=ball;em=true;b=15;s=15} @self ~onSpawn
+  - effect:sound{s=entity.parrot.ambient;volume=0.7;pitch=0.9} @self ~onTimer:220 0.35
+  - skill{s=Pet_Griffon_Ra_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Griffon_Griffon} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+  - skill{s=Pet_Griffon_Ra_FX} ~onTimer:40
+
+Pet_Samurai_Shiba_Samurai:
+  Type: wolf
+  Display: '&fSamurai Shiba'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_Samurai_Shiba_Samurai;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_Samurai_Shiba_Samurai;usm=true;step=1} @self ~onLoad
+  - effect:sound{s=entity.wolf.ambient;volume=0.45;pitch=1} @self ~onTimer:220 0.35
+  - skill{s=Pet_Samurai_Shiba_Samurai_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Samurai_Shiba_Samurai} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+
+Pet_Samurai_Shiba_Bamboo:
+  Type: wolf
+  Display: '&fBamboo Samurai Shiba'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_Samurai_Shiba_Bamboo;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_Samurai_Shiba_Bamboo;usm=true;step=1} @self ~onLoad
+  - effect:sound{s=entity.wolf.ambient;volume=0.45;pitch=1} @self ~onTimer:220 0.35
+  - skill{s=Pet_Samurai_Shiba_Bamboo_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Samurai_Shiba_Samurai} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+
+Pet_Samurai_Shiba_Pirate:
+  Type: wolf
+  Display: '&fPirate Samurai Shiba'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_Samurai_Shiba_Pirate;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_Samurai_Shiba_Pirate;usm=true;step=1} @self ~onLoad
+  - effect:sound{s=entity.wolf.ambient;volume=0.45;pitch=1} @self ~onTimer:220 0.35
+  - skill{s=Pet_Samurai_Shiba_Pirate_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Samurai_Shiba_Samurai} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+
+Pet_Samurai_Shiba_New_Year:
+  Type: wolf
+  Display: '&fNew Year Samurai Shiba'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_Samurai_Shiba_New_Year;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_Samurai_Shiba_New_Year;usm=true;step=1} @self ~onLoad
+  - effect:sound{s=entity.wolf.ambient;volume=0.45;pitch=1} @self ~onTimer:220 0.35
+  - skill{s=Pet_Samurai_Shiba_New_Year_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Samurai_Shiba_Samurai} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+  - skill{s=Pet_Samurai_Shiba_New_Year_FX} ~onTimer:40
+
+VFX_SLASH_Pet_Samurai_Shiba_Samurai:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_light_slash_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - brightness{mid=vfx_light_slash_1;b=15;s=15} @self ~onSpawn
+
+  - tint{m=vfx_light_slash_1;c=FFFFFF} @self ~onSpawn
+  - state{s=left-right-horiz} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_3;np=body;delay=3} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_4;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_5;np=body;delay=5} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_6;np=body;delay=6} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_7;np=body;delay=7} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_8;np=body;delay=8} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_9;np=body;delay=9} @self ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+
+VFX_SLASH_Pet_Samurai_Shiba_Bamboo:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_light_slash_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - brightness{mid=vfx_light_slash_1;b=15;s=15} @self ~onSpawn
+
+  - tint{m=vfx_light_slash_1;c=5eff61} @self ~onSpawn
+  - state{s=left-right-horiz} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_3;np=body;delay=3} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_4;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_5;np=body;delay=5} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_6;np=body;delay=6} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_7;np=body;delay=7} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_8;np=body;delay=8} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_9;np=body;delay=9} @self ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+
+VFX_SLASH_Pet_Samurai_Shiba_Pirate:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_light_slash_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - brightness{mid=vfx_light_slash_1;b=15;s=15} @self ~onSpawn
+
+  - tint{m=vfx_light_slash_1;c=2e89ff} @self ~onSpawn
+  - state{s=left-right-horiz} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_3;np=body;delay=3} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_4;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_5;np=body;delay=5} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_6;np=body;delay=6} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_7;np=body;delay=7} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_8;np=body;delay=8} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_9;np=body;delay=9} @self ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+
+VFX_SLASH_Pet_Samurai_Shiba_New_Year:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_light_slash_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - brightness{mid=vfx_light_slash_1;b=15;s=15} @self ~onSpawn
+
+  - tint{m=vfx_light_slash_1;c=ff2205} @self ~onSpawn
+  - state{s=left-right-horiz} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_3;np=body;delay=3} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_4;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_5;np=body;delay=5} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_6;np=body;delay=6} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_7;np=body;delay=7} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_8;np=body;delay=8} @self ~onSpawn
+  - changepart{m=vfx_light_slash_1;p=body;nm=vfx_light_slash_9;np=body;delay=9} @self ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+
+Pet_Necromancer_Cat_Necromancer:
+  Type: wolf
+  Display: '&fNecromancer Cat'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_necromancer_cat_necromancer;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_necromancer_cat_necromancer;usm=true;step=1} @self ~onLoad
+  - effect:sound{s=entity.cat.ambient;volume=0.6;pitch=1} @self ~onTimer:220 0.35
+  - brightness{mid=pet_necromancer_cat_necromancer;p=left_eye;em=true;b=15;s=15} @self ~onSpawn
+  - brightness{mid=pet_necromancer_cat_necromancer;p=right_eye;em=true;b=15;s=15} @self ~onSpawn
+  - skill{s=Pet_Necromancer_Cat_Necromancer_Soul_Harvest} ~onTimer:10
+  - skill{s=Pet_Necromancer_Cat_Necromancer_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Necromancer_Cat_Necromancer} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+
+Pet_Necromancer_Cat_Santa:
+  Type: wolf
+  Display: '&fSanta Necromancer Cat'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_necromancer_Cat_Santa;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_necromancer_Cat_Santa;usm=true;step=1} @self ~onLoad
+  - effect:sound{s=entity.cat.ambient;volume=0.6;pitch=1} @self ~onTimer:220 0.35
+  - brightness{mid=pet_necromancer_Cat_Santa;p=left_eye;em=true;b=15;s=15} @self ~onSpawn
+  - brightness{mid=pet_necromancer_Cat_Santa;p=right_eye;em=true;b=15;s=15} @self ~onSpawn
+  - skill{s=Pet_Necromancer_Cat_Santa_Soul_Harvest} ~onTimer:10
+  - skill{s=Pet_Necromancer_Cat_Santa_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Necromancer_Cat_Necromancer} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+
+Pet_Necromancer_Cat_Fire_Mage:
+  Type: wolf
+  Display: '&fFire Mage Necromancer Cat'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_necromancer_Cat_Fire_Mage;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_necromancer_Cat_Fire_Mage;usm=true;step=1} @self ~onLoad
+  - effect:sound{s=entity.cat.ambient;volume=0.6;pitch=1} @self ~onTimer:220 0.35
+  - brightness{mid=pet_necromancer_Cat_Fire_Mage;p=left_eye;em=true;b=15;s=15} @self ~onSpawn
+  - brightness{mid=pet_necromancer_Cat_Fire_Mage;p=right_eye;em=true;b=15;s=15} @self ~onSpawn
+  - skill{s=Pet_Necromancer_Cat_Fire_Mage_Soul_Harvest} ~onTimer:10
+  - skill{s=Pet_Necromancer_Cat_Fire_Mage_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Necromancer_Cat_Necromancer} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+  - skill{s=Pet_Necromancer_Cat_Fire_Mage_FX} ~onTimer:40
+
+Pet_Necromancer_Cat_Ice_Mage:
+  Type: wolf
+  Display: '&fIce Mage Necromancer Cat'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_necromancer_Cat_Ice_Mage;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_necromancer_Cat_Ice_Mage;usm=true;step=1} @self ~onLoad
+  - effect:sound{s=entity.cat.ambient;volume=0.6;pitch=1} @self ~onTimer:220 0.35
+  - brightness{mid=pet_necromancer_Cat_Ice_Mage;p=left_eye;em=true;b=15;s=15} @self ~onSpawn
+  - brightness{mid=pet_necromancer_Cat_Ice_Mage;p=right_eye;em=true;b=15;s=15} @self ~onSpawn
+  - skill{s=Pet_Necromancer_Cat_Ice_Mage_Soul_Harvest} ~onTimer:10
+  - skill{s=Pet_Necromancer_Cat_Ice_Mage_Skill} ~onTimer:40
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Necromancer_Cat_Necromancer} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+  - skill{s=Pet_Necromancer_Cat_Ice_Mage_FX} ~onTimer:40
+
+VFX_Necrocat_Skull:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_necromancer_cat_skull} @self ~onSpawn
+  - brightness{mid=vfx_necromancer_cat_skull;b=15;s=15} @self ~onSpawn
+  - state{s=loop;speed=1} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - effect:particles{particle=Soul;amount=1;hS=0.01;vS=0.01;speed=0;forwardOffset=0;sideOffset=0;y=0} @modelpart{mid=vfx_necromancer_cat_skull;pid=skull;em=true} ~onTimer:2
+  
+VFX_Necrocat_Gift:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_necromancer_cat_gift} @self ~onSpawn
+  - brightness{mid=vfx_necromancer_cat_gift;b=15;s=15} @self ~onSpawn
+  - state{s=loop;speed=1} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - effect:particles{particle=end_rod;amount=1;hS=0.01;vS=0.01;speed=0;forwardOffset=0;sideOffset=0;y=0} @modelpart{mid=vfx_necromancer_cat_skull;pid=skull;em=true} ~onTimer:2
+  
+VFX_Necrocat_Fireball:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_necromancer_cat_fireball} @self ~onSpawn
+  - brightness{mid=vfx_necromancer_cat_fireball;b=15;s=15} @self ~onSpawn
+  - state{s=loop;speed=1} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - effect:particles{particle=flame;amount=1;hS=0.01;vS=0.01;speed=0;forwardOffset=0;sideOffset=0;y=0} @modelpart{mid=vfx_necromancer_cat_skull;pid=skull;em=true} ~onTimer:2
+  
+VFX_Necrocat_Iceball:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_necromancer_cat_iceball} @self ~onSpawn
+  - brightness{mid=vfx_necromancer_cat_iceball;b=15;s=15} @self ~onSpawn
+  - state{s=loop;speed=1} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - effect:particles{particle=snowflake;amount=1;hS=0.01;vS=0.01;speed=0;forwardOffset=0;sideOffset=0;y=0} @modelpart{mid=vfx_necromancer_cat_skull;pid=skull;em=true} ~onTimer:2
+  
+Pet_Shark_Oceanic:
+  Type: wolf
+  Display: '&fOceanic Shark'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_shark_oceanic;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_shark_oceanic;usm=true;step=1} @self ~onLoad
+  - effect:sound{s=entity.fox.ambient;volume=0.7;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Shark_Oceanic_Blood_Scent} ~onTimer:20
+  - skill{s=Pet_Shark_Oceanic_Jaws_DIGIN} ~onTimer:40
+  - skill{s=Pet_Shark_Oceanic_Jaws_DIGOUT} ~onTimer:10
+  - effect:sound{s=block.rooted_dirt.break;volume=0.5;pitch=1.3} @self ~onTimer:5 ?ismoving ?hasaura{n=DIGIN}
+  - particles{p=block_crack;m=DIRT;amount=10;hS=0.25;vS=0.06;y=0.03;size=1;speed=0} @self ~onTimer:5 ?ismoving ?hasaura{n=DIGIN}
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Shark_Oceanic} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+
+VFX_Blood_Mark:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_blood_mark} @self ~onSpawn
+  - brightness{mid=vfx_blood_mark;b=15;s=15} @self ~onSpawn
+  - state{s=loop;speed=1} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+
+Pet_Shark_Baby_Shark:
+  Type: wolf
+  Display: '&fBaby Shark'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_shark_Baby_Shark;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_shark_Baby_Shark;usm=true;step=1} @self ~onLoad
+  - effect:sound{s=entity.fox.ambient;volume=0.7;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Shark_Baby_Shark_Blood_Scent} ~onTimer:20
+  - skill{s=Pet_Shark_Baby_Shark_Jaws_DIGIN} ~onTimer:40
+  - skill{s=Pet_Shark_Baby_Shark_Jaws_DIGOUT} ~onTimer:10
+  - effect:sound{s=block.rooted_dirt.break;volume=0.5;pitch=1.3} @self ~onTimer:5 ?ismoving ?hasaura{n=DIGIN}
+  - particles{p=block_crack;m=DIRT;amount=10;hS=0.25;vS=0.06;y=0.03;size=1;speed=0} @self ~onTimer:5 ?ismoving ?hasaura{n=DIGIN}
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Shark_Baby_Shark} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+
+Pet_Shark_Chef:
+  Type: wolf
+  Display: '&fChef Shark'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_shark_Chef;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_shark_Chef;usm=true;step=1} @self ~onLoad
+  - effect:sound{s=entity.fox.ambient;volume=0.7;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Shark_Chef_Blood_Scent} ~onTimer:20
+  - skill{s=Pet_Shark_Chef_Jaws_DIGIN} ~onTimer:40
+  - skill{s=Pet_Shark_Chef_Jaws_DIGOUT} ~onTimer:10
+  - effect:sound{s=block.rooted_dirt.break;volume=0.5;pitch=1.3} @self ~onTimer:5 ?ismoving ?hasaura{n=DIGIN}
+  - particles{p=block_crack;m=DIRT;amount=10;hS=0.25;vS=0.06;y=0.03;size=1;speed=0} @self ~onTimer:5 ?ismoving ?hasaura{n=DIGIN}
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Shark_Oceanic} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+
+Pet_Shark_Dragonborn:
+  Type: wolf
+  Display: '&fDragonborn Shark'
+  Health: 60
+  Damage: 2
+  Options:
+    Invisible: true
+    MovementSpeed: 0.33
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 15
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{sync=true;mid=pet_shark_Dragonborn;usm=true;step=1} @self ~onSpawn
+  - model{sync=true;mid=pet_shark_Dragonborn;usm=true;step=1} @self ~onLoad
+  - effect:sound{s=entity.fox.ambient;volume=0.7;pitch=1.2} @self ~onTimer:220 0.35
+  - skill{s=Pet_Shark_Dragonborn_Blood_Scent} ~onTimer:20
+  - skill{s=Pet_Shark_Dragonborn_Jaws_DIGIN} ~onTimer:40
+  - skill{s=Pet_Shark_Dragonborn_Jaws_DIGOUT} ~onTimer:10
+  - effect:sound{s=block.rooted_dirt.break;volume=0.5;pitch=1.3} @self ~onTimer:5 ?ismoving ?hasaura{n=DIGIN}
+  - particles{p=block_crack;m=DIRT;amount=10;hS=0.25;vS=0.06;y=0.03;size=1;speed=0} @self ~onTimer:5 ?ismoving ?hasaura{n=DIGIN}
+  - particles{p=lava;amount=3;hS=0.25;vS=0.06;y=0.03;size=1;speed=0} @self ~onTimer:5 ?ismoving ?hasaura{n=DIGIN}
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=EXP_Gain} ~onTimer:100
+  - skill{s=Pet_Look} ~onTimer:1
+  - skill{s=Pet_Interact_Shark_Oceanic} ~onInteract
+  - setspeed{speed=1.5;type=walking} @self ~onSpawn
+  - skill{s=Pet_Shark_Dragonborn_FX} ~onTimer:40

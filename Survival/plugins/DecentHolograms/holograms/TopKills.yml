@@ -1,0 +1,34 @@
+location: SpawnRPG:18.506:64.000:-150.508
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:DIAMOND_AXE'
+    height: 0.6
+  - content: '&#10ffff&lT&#0ef6ff&lo&#0bedfe&lp &#09e4fe&lK&#07dbfe&li&#05d2fe&ll&#02c9fd&ll&#00c0fd&ls'
+    height: 0.3
+  - content: '&3#1 &b%ajlb_lb_statistic_player_kills_1_alltime_name% §8- §f%ajlb_lb_statistic_player_kills_1_alltime_value%'
+    height: 0.3
+  - content: '&3#2 &b%ajlb_lb_statistic_player_kills_2_alltime_name% §8- §f%ajlb_lb_statistic_player_kills_2_alltime_value%'
+    height: 0.3
+  - content: '&3#3 &b%ajlb_lb_statistic_player_kills_3_alltime_name% §8- §f%ajlb_lb_statistic_player_kills_3_alltime_value%'
+    height: 0.3
+  - content: '&3#4 &b%ajlb_lb_statistic_player_kills_4_alltime_name% §8- §f%ajlb_lb_statistic_player_kills_4_alltime_value%'
+    height: 0.3
+  - content: '&3#5 &b%ajlb_lb_statistic_player_kills_5_alltime_name% §8- §f%ajlb_lb_statistic_player_kills_5_alltime_value%'
+    height: 0.3
+  - content: '&3#6 &b%ajlb_lb_statistic_player_kills_6_alltime_name% §8- §f%ajlb_lb_statistic_player_kills_6_alltime_value%'
+    height: 0.3
+  - content: '&3#7 &b%ajlb_lb_statistic_player_kills_7_alltime_name% §8- §f%ajlb_lb_statistic_player_kills_7_alltime_value%'
+    height: 0.3
+  - content: '&3#8 &b%ajlb_lb_statistic_player_kills_8_alltime_name% §8- §f%ajlb_lb_statistic_player_kills_8_alltime_value%'
+    height: 0.3
+  - content: '&3#9 &b%ajlb_lb_statistic_player_kills_9_alltime_name% §8- §f%ajlb_lb_statistic_player_kills_9_alltime_value%'
+    height: 0.3
+  - content: '&3#10 &b%ajlb_lb_statistic_player_kills_10_alltime_name% §8- §f%ajlb_lb_statistic_player_kills_10_alltime_value%'
+    height: 0.3
+  actions: {}

@@ -1,0 +1,981 @@
+WOOL_BALL:
+  base:
+    material: PAPER
+    name: <#77DD77>Bola de Lana
+    custom-model-data: 10283
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Un suave cúmulo de lana.'
+    - '&7Útil para crafteos.'
+
+MUSHROOM_SPORES:
+  base:
+    material: PAPER
+    name: <#77DD77>Esporas de Champiñón
+    custom-model-data: 10284
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Esporas recolectadas de'
+    - '&7una Vaca Mooshroom.'
+
+GEL:
+  base:
+    material: PAPER
+    name: <#77DD77>Gel
+    custom-model-data: 10285
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Una sustancia pegajosa'
+    - '&7soltada por los slimes.'
+
+ECTOPLASM:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Ectoplasma
+    custom-model-data: 10286
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Residuo de una entidad'
+    - '&7espiritual. Frío al tacto.'
+
+MAGIC_CRYSTALS:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Cristales Mágicos
+    custom-model-data: 10287
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Cristales cargados con'
+    - '&7energía de brujería pura.'
+
+DESERT_CLOTH:
+  base:
+    material: PAPER
+    name: <#77DD77>Tela del Desierto
+    custom-model-data: 10288
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Tela conservada de las'
+    - '&7arenas del desierto.'
+
+WITHER_DUST:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Polvo de Wither
+    custom-model-data: 10289
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Un polvo oscuro que'
+    - '&7marchita todo lo que toca.'
+
+GLOW_SQUID_TENTACLE:
+  base:
+    material: PAPER
+    name: <#77DD77>Tentáculo Brillante
+    custom-model-data: 10290
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Emite una luz tenue'
+    - '&7e hipnótica.'
+
+WARDEN_HEART_MAT:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Corazón de Warden
+    custom-model-data: 10291
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7&oAún late con los sonidos'
+    - '&7&ode la oscuridad profunda.'
+
+HONEY_CRYSTAL:
+  base:
+    material: PAPER
+    name: <#77DD77>Cristal de Miel
+    custom-model-data: 10292
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Miel cristalizada, dulce'
+    - '&7y duradera.'
+
+ENDER_POWDER:
+  base:
+    material: PAPER
+    name: <#77DD77>Polvo de Ender
+    custom-model-data: 10293
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Polvo extraño que parece'
+    - '&7teletransportarse.'
+
+FISH_OIL:
+  base:
+    material: PAPER
+    name: <#77DD77>Aceite de Pescado
+    custom-model-data: 10294
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Aceite apestoso extraído'
+    - '&7de pescado fresco.'
+
+ICE_SHARDS:
+  base:
+    material: PAPER
+    name: <#77DD77>Fragmentos de Hielo
+    custom-model-data: 10295
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Fragmentos helados que'
+    - '&7nunca parecen derretirse.'
+
+BAT_WING:
+  base:
+    material: PAPER
+    name: <#77DD77>Ala de Murciélago
+    custom-model-data: 10296
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Ala correosa usada'
+    - '&7a menudo en alquimia.'
+
+GUARDIAN_SPIKE:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Púa de Guardián
+    custom-model-data: 10297
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Una púa de los guardianes'
+    - '&7de los monumentos oceánicos.'
+
+POISON_SAC:
+  base:
+    material: PAPER
+    name: <#77DD77>Saco de Veneno
+    custom-model-data: 10298
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Manejar con cuidado.'
+    - '&7Lleno de toxinas mortales.'
+
+AXOLOTL_MUCUS:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Moco de Ajolote
+    custom-model-data: 10299
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Baba regenerativa hallada'
+    - '&7en anfibios raros.'
+
+DOLPHIN_FIN:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Aleta de Delfín
+    custom-model-data: 10300
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Aleta aerodinámica que'
+    - '&7otorga agilidad en el agua.'
+
+PHANTOM_SCALE:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Escama de Fantasma
+    custom-model-data: 10301
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Una escama de los terrores'
+    - '&7del cielo nocturno.'
+
+SQUID_TENTACLE:
+  base:
+    material: PAPER
+    name: <#77DD77>Tentáculo de Calamar
+    custom-model-data: 10302
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Viscoso y cubierto de'
+    - '&7ventosas.'
+
+GHAST_EYE:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Ojo de Ghast
+    custom-model-data: 10303
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Parece estar derramando'
+    - '&7una lágrima.'
+
+PARROT_FEATHER:
+  base:
+    material: PAPER
+    name: <#77DD77>Pluma de Loro
+    custom-model-data: 10304
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Una pluma colorida'
+    - '&7de la jungla.'
+
+MAGMA_GEL:
+  base:
+    material: PAPER
+    name: <#77DD77>Gel de Magma
+    custom-model-data: 10305
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Gel ardiente.'
+    - '&7No comer.'
+
+AQUA_ESSENCE:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Esencia Acuática
+    custom-model-data: 10306
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Esencia de los ahogados,'
+    - '&7huele a sal y putrefacción.'
+
+ANIMAL_FAT:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Grasa Animal
+    custom-model-data: 10307
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Grasa densa usada para'
+    - '&7combustible o cocina.'
+
+BAT_WING_LOOT:
+  base:
+    material: PAPER
+    name: <#77DD77>Ala de Murciélago
+    custom-model-data: 10308
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Un ala correosa rasgada.'
+
+BEAR_PELT:
+  base:
+    material: PAPER
+    name: <#77DD77>Piel de Oso
+    custom-model-data: 10309
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Pelaje grueso que protege'
+    - '&7contra el frío intenso.'
+
+CAMEL_HAIR:
+  base:
+    material: PAPER
+    name: <#77DD77>Pelo de Camello
+    custom-model-data: 10310
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Pelo áspero recolectado de'
+    - '&7un viajero del desierto.'
+
+CLAWS:
+  base:
+    material: PAPER
+    name: <#77DD77>Garras
+    custom-model-data: 10311
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Garras afiladas capaces de'
+    - '&7desgarrar carne.'
+
+EGGSHELL_POWDER:
+  base:
+    material: PAPER
+    name: <#77DD77>Polvo de Cáscara
+    custom-model-data: 10312
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Cáscaras trituradas, ricas'
+    - '&7en calcio.'
+
+EXOTIC_FEATHER:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Pluma Exótica
+    custom-model-data: 10313
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Una pluma vibrante con'
+    - '&7colores únicos.'
+
+FAIRY_DUST:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Polvo de Hadas
+    custom-model-data: 10314
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Residuo brillante que'
+    - '&7desafía la gravedad.'
+
+FISH_SCALES:
+  base:
+    material: PAPER
+    name: <#77DD77>Escamas de Pez
+    custom-model-data: 10315
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Escamas brillantes de una'
+    - '&7criatura acuática.'
+
+FLUFFY_TAIL:
+  base:
+    material: PAPER
+    name: <#77DD77>Cola Esponjosa
+    custom-model-data: 10316
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Suave al tacto.'
+
+FOX_PELT:
+  base:
+    material: PAPER
+    name: <#77DD77>Piel de Zorro
+    custom-model-data: 10317
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Pelaje naranja, apreciado'
+    - '&7por los cazadores.'
+
+FUNGI_TUFT:
+  base:
+    material: PAPER
+    name: <#77DD77>Mechón de Hongos
+    custom-model-data: 10318
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Un crecimiento de micelio.'
+
+GOAT_HAIR:
+  base:
+    material: PAPER
+    name: <#77DD77>Pelo de Cabra
+    custom-model-data: 10319
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Pelo lanudo y resistente.'
+
+HAIRBALL:
+  base:
+    material: PAPER
+    name: <#77DD77>Bola de Pelo
+    custom-model-data: 10320
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Asquerosa, pero'
+    - '&7extrañamente compacta.'
+
+HOOF:
+  base:
+    material: PAPER
+    name: <#77DD77>Pezuña
+    custom-model-data: 10321
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Queratina dura de un'
+    - '&7animal con pezuñas.'
+
+JAWBONE:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Mandíbula
+    custom-model-data: 10322
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7El mecanismo triturador de'
+    - '&7un depredador.'
+
+KERATIN:
+  base:
+    material: PAPER
+    name: <#77DD77>Queratina
+    custom-model-data: 10323
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Proteína estructural dura.'
+
+MARROW:
+  base:
+    material: PAPER
+    name: <#77DD77>Tuétano
+    custom-model-data: 10324
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Relleno nutritivo de'
+    - '&7los huesos.'
+
+OCELOT_PELT:
+  base:
+    material: PAPER
+    name: <#77DD77>Piel de Ocelote
+    custom-model-data: 10325
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Pelaje manchado del'
+    - '&7gato de la jungla.'
+
+PIG_BRISTLE:
+  base:
+    material: PAPER
+    name: <#77DD77>Cerdas de Cerdo
+    custom-model-data: 10326
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Pelo rígido usado para'
+    - '&7hacer cepillos.'
+
+ROYAL_JELLY:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Jalea Real
+    custom-model-data: 10327
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Una secreción nutritiva para'
+    - '&7la abeja reina.'
+
+SHARP_TOOTH:
+  base:
+    material: PAPER
+    name: <#77DD77>Diente Afilado
+    custom-model-data: 10328
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Un diente capaz de'
+    - '&7perforar armaduras.'
+
+SMALL_TOOTH:
+  base:
+    material: PAPER
+    name: <#77DD77>Diente Pequeño
+    custom-model-data: 10329
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Diminuto pero afilado.'
+
+SNIFFER_FUR:
+  base:
+    material: PAPER
+    name: <#77DD77>Piel de Sniffer
+    custom-model-data: 10330
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Pelaje antiguo y cubierto de'
+    - '&7musgo.'
+
+STRIDER_SKIN:
+  base:
+    material: PAPER
+    name: <#77DD77>Piel de Strider
+    custom-model-data: 10331
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Piel resistente al calor'
+    - '&7del Nether.'
+
+SWAMPY_OIL:
+  base:
+    material: PAPER
+    name: <#77DD77>Aceite Pantanoso
+    custom-model-data: 10332
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Una sustancia grasa y'
+    - '&7húmeda.'
+
+THICK_FUR:
+  base:
+    material: PAPER
+    name: <#77DD77>Pelaje Grueso
+    custom-model-data: 10333
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Aislamiento pesado.'
+
+PIG_SNOUT:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Hocico de Cerdo
+    custom-model-data: 10334
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Una nariz rosada.'
+
+VILLAGER_BRAIN:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Cerebro de Aldeano
+    custom-model-data: 10335
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7La fuente de intercambios'
+    - '&7terribles.'
+
+WITHERED_BONE:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Hueso de Wither
+    custom-model-data: 10336
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Carbonizado y frágil.'
+
+WITHERED_RIB:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Costilla de Wither
+    custom-model-data: 10337
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Una costilla ennegrecida'
+    - '&7por la descomposición.'
+
+WOLF_CANINE:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Canino de Lobo
+    custom-model-data: 10338
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7El diente grande de un'
+    - '&7alfa.'
+
+WOLF_TAIL:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Cola de Lobo
+    custom-model-data: 10339
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Cola tupida de un lobo.'
+
+ZOMBIE_FLESH:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Carne de Zombi
+    custom-model-data: 10340
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Carne podrida.'
+
+ZOMBIE_PIGLIN_FLESH:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Carne de Zombi Piglin
+    custom-model-data: 10341
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Podrida, pero parcialmente'
+    - '&7cocinada.'
+
+FROG_LEG:
+  base:
+    material: APPLE
+    name: <#77DD77>Anca de Rana
+    custom-model-data: 10000
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Una anca de rana cruda.'
+    - '&7Un manjar en algunas'
+    - '&7culturas.'
+
+WOLF_FANG:
+  base:
+    material: BONE
+    name: <#AEC6CF>Colmillo de Lobo
+    custom-model-data: 10000
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Un diente afilado'
+    - '&7recolectado de un lobo.'
+
+PIG_LEATHER:
+  base:
+    material: LEATHER
+    name: <#77DD77>Cuero de Cerdo
+    custom-model-data: 10000
+    tier: COMMON
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Piel de un cerdo,'
+    - '&7más gruesa de lo habitual.'

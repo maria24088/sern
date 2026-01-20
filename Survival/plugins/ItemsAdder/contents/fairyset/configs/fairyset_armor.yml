@@ -1,0 +1,55 @@
+armors_rendering:
+  fairyarmor:
+    color: '#ae752c'
+    layer_1: armor/fairy_armor_layer_1
+    layer_2: armor/fairy_armor_layer_2
+    use_color: false
+info:
+  namespace: fairyset
+items:
+  fairyboots:
+    display_name: Fairy Boots
+    permission: fairy.boots
+    resource:
+      generate: true
+      textures:
+      - armor/fairy_boots_icon.png
+    specific_properties:
+      armor:
+        custom_armor: fairyarmor
+        slot: feet
+  fairychestplate:
+    display_name: Fairy Chestplate
+    permission: fairy.chestplate
+    resource:
+      generate: true
+      textures:
+      - armor/fairy_chestplate_icon.png
+    specific_properties:
+      armor:
+        custom_armor: fairyarmor
+        slot: chest
+  fairyleggings:
+    display_name: Fairy Leggings
+    permission: fairy.leggings
+    resource:
+      generate: true
+      textures:
+      - armor/fairy_leggings_icon.png
+    specific_properties:
+      armor:
+        custom_armor: fairyarmor
+        slot: legs
+  fairyhelmet:
+    display_name: Fairy Helmet
+    permission: fairy.helmet
+    resource:
+      generate: true
+      textures:
+      - armor/fairy_helmet_icon.png
+    specific_properties:
+      armor:
+        custom_armor: fairyarmor
+        slot: head
+
+# 03283GD1Y32ETDJ

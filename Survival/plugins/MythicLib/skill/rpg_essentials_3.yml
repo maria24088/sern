@@ -1,0 +1,36 @@
+MANA_POTION_MINOR:
+    mythicmobs-skill-id: mana_potion_minor
+
+MANA_POTION_SMALL:
+    mythicmobs-skill-id: mana_potion_small
+    
+MANA_POTION_LARGE:
+    mythicmobs-skill-id: mana_potion_large
+    
+MANA_POTION_SUPERIOR:
+    mythicmobs-skill-id: mana_potion_superior
+    
+MANA_POTION_ETERNAL:
+    mythicmobs-skill-id: mana_potion_eternal
+    
+ELIXIR_WIND:
+    mythicmobs-skill-id: elixir_wind
+    
+ELIXIR_WATER:
+    mythicmobs-skill-id: elixir_water
+    
+ELIXIR_FIRE:
+    mythicmobs-skill-id: elixir_fire
+    
+ELIXIR_EARTH:
+    mythicmobs-skill-id: elixir_earth
+    
+SCROLL_COMMON:
+    mythicmobs-skill-id: scroll_common_MMO
+    
+SCROLL_RARE:
+    mythicmobs-skill-id: scroll_rare_MMO
+    
+SCROLL_EPIC:
+    mythicmobs-skill-id: scroll_epic_MMO
+#IHbitUSGhXOwdDel12YzdjazVlY0klaNFTWE5kMJRlT4VkVVBnZpJGWFhDNFRTWWdES6RzM

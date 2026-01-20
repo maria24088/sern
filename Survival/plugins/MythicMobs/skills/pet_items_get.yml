@@ -1,0 +1,461 @@
+Unlock_Pet_cubee-ebony_cat:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-ebony_cat true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Ebony Cat Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-gothic_hag:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-gothic_hag true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Gothic Hag Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-skelly_warlock:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-skelly_warlock true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Skelly Warlock Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-soul_weaver:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-soul_weaver true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Soul Weaver Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-candy_corn_crab:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-candy_corn_crab true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Candy Corn Crab Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-creamie_cookie_boar:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-creamie_cookie_boar true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Creamie Cookie Boar Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-croissant_shark:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-croissant_shark true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Croissant Shark Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-cupcake_snake:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-cupcake_snake true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Cupcake Snake Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-donut:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-donut true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Donut Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-gummy_bear:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-gummy_bear true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Gummy Bear Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-macarons:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-macarons true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Macarons Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-marshmellow:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-marshmellow true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Marshmellow Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-air_dragon:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-air_dragon true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Air Dragon Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-darkness_dragon:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-darkness_dragon true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Darkness Dragon Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-earth_dragon:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-earth_dragon true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Earth Guard Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-fire_dragon:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-fire_dragon true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Fire Dragon Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-galaxy_dragon:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-galaxy_dragon true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Galaxy Dragon Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-ice_dragon:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-ice_dragon true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Ice Dragon Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-light_dragon:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-light_dragon true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Light Dragon Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-nature_dragon:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-nature_dragon true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Nature Dragon Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-discord:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-discord true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Discord Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-facebook:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-facebook true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Facebook Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-instagram:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-instagram true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Instagram Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-instragram:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-instragram true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Instragram Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-kick:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-kick true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Kick Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-reddit:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-reddit true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Reddit Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-tiktok:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-tiktok true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Tiktok Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-twitch:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-twitch true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Twitch Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-twitter:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-twitter true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Twitter Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-website:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-website true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Website Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-x:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-x true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a X Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-youtube:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-youtube true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Youtube Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-basalt_delta:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-basalt_delta true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Basalt Delta Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-blackstone:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-blackstone true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Blackstone Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-crimson_fungus:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-crimson_fungus true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Crimson Fungus Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-magma:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-magma true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Magma Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-nether_portal:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-nether_portal true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Nether Portal Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-nether_waste:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-nether_waste true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Nether Waste Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-soul_valley:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-soul_valley true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Soul Valley Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_cubee-warped_fungus:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.cubee-warped_fungus true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Warped Fungus Cubee!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_Pet_Cacti_Desert:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Cacti_Desert true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Desert Cacti!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_Pet_Fire_Dragon_Fire:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Fire_Dragon_Fire true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Fire Dragon!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_Pet_Frog_Green:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Frog_Green true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Green Frog!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_A_Pet_Griffon_Griffon:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Griffon_Griffon true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Griffon!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_A_Pet_Griffon_Khonsu:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Griffon_Khonsu true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Khonsu Griffon!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_A_Pet_Griffon_Phoenix:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Griffon_Phoenix true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Phoenix Griffon!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_A_Pet_Griffon_Ra:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Griffon_Ra true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Ra Griffon!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_A_Pet_Griffon_Rockstar:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Griffon_Rockstar true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Rockstar Griffon!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_Pet_Knight_Castle:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Knight_Castle true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Castle Knight!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_B_Pet_Necromancer_Cat_Fire_Mage:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Necromancer_Cat_Fire_Mage true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Fire Mage Necromancer Cat!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_B_Pet_Necromancer_Cat_Ice_Mage:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Necromancer_Cat_Ice_Mage true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Ice Mage Necromancer Cat!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_B_Pet_Necromancer_Cat_Necromancer:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Necromancer_Cat_Necromancer true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Necromancer Cat!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_B_Pet_Necromancer_Cat_Santa:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Necromancer_Cat_Santa true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Santa Necromancer Cat!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_C_Pet_Outlaw_Cyborg:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Outlaw_Cyborg true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Cyborg Outlaw!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_C_Pet_Outlaw_Officer:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Outlaw_Officer true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Officer Outlaw!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_C_Pet_Outlaw_Steampunk:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Outlaw_Steampunk true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Steampunk Outlaw!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_C_Pet_Outlaw_Wild_West:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Outlaw_Wild_West true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Wild West Outlaw!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_D_Pet_Samurai_Shiba_Samurai_Bamboo:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Samurai_Shiba_Samurai_Bamboo true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Bamboo Samurai Shiba!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_D_Pet_Samurai_Shiba_Samurai_New_Year:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Samurai_Shiba_Samurai_New_Year true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a New Year Samurai Shiba!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_D_Pet_Samurai_Shiba_Samurai_Pirate:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Samurai_Shiba_Samurai_Pirate true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Pirate Samurai Shiba!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_D_Pet_Samurai_Shiba_Samurai:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Samurai_Shiba_Samurai true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Samurai Shiba!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_E_Pet_Shark_Baby_Shark:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Shark_Baby_Shark true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Baby Shark!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_E_Pet_Shark_Chef:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Shark_Chef true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Chef Shark!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_E_Pet_Shark_Dragonborn:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Shark_Dragonborn true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Dragonborn Shark!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_E_Pet_Shark_Oceanic:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Shark_Oceanic true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Oceanic Shark!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}
+
+Unlock_Pet_Pet_Unicorn_Heavenly:
+  Skills:
+  - command{c="lp user <target.name> permission set mcpet.Pet_Unicorn_Heavenly true";console=true}
+  - command{c="minecraft:item replace entity <target.name> weapon.mainhand with air";console=true}
+  - message{msg="&a&l¡Has desbloqueado a Heavenly Unicorn!"} @self
+  - effect:sound{s=ui.toast.challenge_complete;v=1;p=1.5}

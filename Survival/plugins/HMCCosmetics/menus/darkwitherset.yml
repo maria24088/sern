@@ -1,0 +1,63 @@
+title: <white>
+rows: 6
+items:
+  dark_wither_cosmetics_cape:
+    slots:
+    - 0
+    item:
+      name: "<white>\xA7fDark Wither Cape"
+      material: POTION
+      model-data: 9923146
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_dark_wither_cosmetics_cape%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_dark_wither_cosmetics_cape%'
+    type: cosmetic
+    cosmetic: dark_wither_cosmetics_cape
+    locked-item:
+      name: "<white>\xA7fDark Wither Cape <red><b>(LOCK)"
+      material: POTION
+      model-data: 9923146
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+  dark_wither_cosmetics_helmet:
+    slots:
+    - 1
+    item:
+      name: "<white>\xA7fDark Wither Helmet"
+      material: POTION
+      model-data: 9923150
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_dark_wither_cosmetics_helmet%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_dark_wither_cosmetics_helmet%'
+    type: cosmetic
+    cosmetic: dark_wither_cosmetics_helmet
+    locked-item:
+      name: "<white>\xA7fDark Wither Helmet <red><b>(LOCK)"
+      material: POTION
+      model-data: 9923150
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+
+#QnSERUVsNlWFNFdrVUYqNTaRdVWxkERPJzYE5EMRRlT5NWMV9WO4lmMpRlapVkVmRUT6FUN

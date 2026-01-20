@@ -1,0 +1,32 @@
+version: 4.0
+players:
+  3d5432ca-b1b9-43f1-bc31-67a521aba1aa:
+    time: 50.0
+    last_daily_bonus: 1726419041941
+    logged_in_flight: false
+    compat_logged_in_flight: true
+  0d45db84-9179-4b23-93b7-38a90642b372:
+    compat_logged_in_flight: true
+    last_daily_bonus: 1766421257593
+    logged_in_flight: false
+    time: 330.0
+  c832f10d-3fc3-3b4e-bff6-a86f8c5759e0:
+    time: 10.0
+    last_daily_bonus: 1766270810790
+    logged_in_flight: false
+    compat_logged_in_flight: false
+  26ed0e51-3dbb-3950-b9ae-1b7db8ac61c6:
+    time: 847.0
+    last_daily_bonus: 1768834344445
+    logged_in_flight: true
+    compat_logged_in_flight: false
+  bb2ede77-c3c4-3323-877e-8931495ef075:
+    last_daily_bonus: 1766694627723
+    logged_in_flight: false
+    time: 10.0
+    compat_logged_in_flight: false
+  67b2c2c8-0934-346a-87ad-58d94cbb6c09:
+    compat_logged_in_flight: false
+    last_daily_bonus: 1767658915937
+    logged_in_flight: false
+    time: 10.0

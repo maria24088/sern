@@ -1,0 +1,159 @@
+info:
+  namespace: ender_dragonset
+items:
+  ender_dragon_axe:
+    display_name: Ender Dragon Axe
+    permission: ender_dragonset.axe
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: axe
+  ender_dragon_bow:
+    display_name: Ender Dragon Bow
+    permission: ender_dragonset.bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+  ender_dragon_chest:
+    display_name: Ender Dragon Chest
+    permission: ender_dragonset.chest
+    resource:
+      material: PAPER
+      generate: false
+      model_path: chest
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+  ender_dragon_crossbow:
+    display_name: Ender Dragon Crossbow
+    permission: ender_dragonset.crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow
+  ender_dragon_fishing_rod:
+    display_name: Ender Dragon Fishing Rod
+    permission: ender_dragonset.fishing_rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+  ender_dragon_gauntlet:
+    display_name: Ender Dragon Gauntlet
+    permission: ender_dragonset.gauntlet
+    resource:
+      material: PAPER
+      generate: false
+      model_path: gauntlet
+  ender_dragon_hammer:
+    display_name: Ender Dragon Hammer
+    permission: ender_dragonset.hammer
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: hammer
+  ender_dragon_helmet:
+    display_name: Ender Dragon Helmet
+    permission: ender_dragonset.helmet
+    resource:
+      material: PAPER
+      generate: false
+      model_path: helmet
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165
+  ender_dragon_hoe:
+    display_name: Ender Dragon Hoe
+    permission: ender_dragonset.hoe
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: hoe
+  ender_dragon_key:
+    display_name: Ender Dragon Key
+    permission: ender_dragonset.key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: key
+  ender_dragon_pickaxe:
+    display_name: Ender Dragon Pickaxe
+    permission: ender_dragonset.pickaxe
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: pickaxe
+  ender_dragon_scythe:
+    display_name: Ender Dragon Scythe
+    permission: ender_dragonset.scythe
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: scythe
+  ender_dragon_shield:
+    display_name: Ender Dragon Shield
+    permission: ender_dragonset.shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+  ender_dragon_shovel:
+    display_name: Ender Dragon Shovel
+    permission: ender_dragonset.shovel
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: shovel
+  ender_dragon_spear:
+    display_name: Ender Dragon Spear
+    permission: ender_dragonset.spear
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: spear
+  ender_dragon_staff:
+    display_name: Ender Dragon Staff
+    permission: ender_dragonset.staff
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: staff
+  ender_dragon_sword:
+    display_name: Ender Dragon Sword
+    permission: ender_dragonset.sword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: sword
+  ender_dragon_trident:
+    display_name: Ender Dragon Trident
+    permission: ender_dragonset.trident
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: trident
+  ender_dragon_wings:
+    display_name: Ender Dragon Wings
+    permission: ender_dragonset.wings
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wings

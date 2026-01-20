@@ -1,0 +1,171 @@
+info:
+  namespace: companions_2
+items:
+  icon_griffon_griffon:
+    display_name: "icon_griffon_griffon"
+    permission: icon_griffon_griffon
+    resource:
+      material: BRICK
+      model_id: 12034
+      generate: false
+      model_path: companions_2_model/icon_griffon_griffon
+  icon_griffon_khonsu:
+    display_name: "icon_griffon_khonsu"
+    permission: icon_griffon_khonsu
+    resource:
+      material: BRICK
+      model_id: 12035
+      generate: false
+      model_path: companions_2_model/icon_griffon_khonsu
+  icon_griffon_phoenix:
+    display_name: "icon_griffon_phoenix"
+    permission: icon_griffon_phoenix
+    resource:
+      material: BRICK
+      model_id: 12036
+      generate: false
+      model_path: companions_2_model/icon_griffon_phoenix
+  icon_griffon_ra:
+    display_name: "icon_griffon_ra"
+    permission: icon_griffon_ra
+    resource:
+      material: BRICK
+      model_id: 12037
+      generate: false
+      model_path: companions_2_model/icon_griffon_ra
+  icon_griffon_rockstar:
+    display_name: "icon_griffon_rockstar"
+    permission: icon_griffon_rockstar
+    resource:
+      material: BRICK
+      model_id: 12038
+      generate: false
+      model_path: companions_2_model/icon_griffon_rockstar
+  icon_necromancer_cat_fire_mage:
+    display_name: "icon_necromancer_cat_fire_mage"
+    permission: icon_necromancer_cat_fire_mage
+    resource:
+      material: BRICK
+      model_id: 12039
+      generate: false
+      model_path: companions_2_model/icon_necromancer_cat_fire_mage
+  icon_necromancer_cat_ice_mage:
+    display_name: "icon_necromancer_cat_ice_mage"
+    permission: icon_necromancer_cat_ice_mage
+    resource:
+      material: BRICK
+      model_id: 12040
+      generate: false
+      model_path: companions_2_model/icon_necromancer_cat_ice_mage
+  icon_necromancer_cat_necromancer:
+    display_name: "icon_necromancer_cat_necromancer"
+    permission: icon_necromancer_cat_necromancer
+    resource:
+      material: BRICK
+      model_id: 12041
+      generate: false
+      model_path: companions_2_model/icon_necromancer_cat_necromancer
+  icon_necromancer_cat_santa:
+    display_name: "icon_necromancer_cat_santa"
+    permission: icon_necromancer_cat_santa
+    resource:
+      material: BRICK
+      model_id: 12042
+      generate: false
+      model_path: companions_2_model/icon_necromancer_cat_santa
+  icon_outlaw_cyborg:
+    display_name: "icon_outlaw_cyborg"
+    permission: icon_outlaw_cyborg
+    resource:
+      material: BRICK
+      model_id: 12043
+      generate: false
+      model_path: companions_2_model/icon_outlaw_cyborg
+  icon_outlaw_officer:
+    display_name: "icon_outlaw_officer"
+    permission: icon_outlaw_officer
+    resource:
+      material: BRICK
+      model_id: 12044
+      generate: false
+      model_path: companions_2_model/icon_outlaw_officer
+  icon_outlaw_steampunk:
+    display_name: "icon_outlaw_steampunk"
+    permission: icon_outlaw_steampunk
+    resource:
+      material: BRICK
+      model_id: 12045
+      generate: false
+      model_path: companions_2_model/icon_outlaw_steampunk
+  icon_outlaw_wild_west:
+    display_name: "icon_outlaw_wild_west"
+    permission: icon_outlaw_wild_west
+    resource:
+      material: BRICK
+      model_id: 12046
+      generate: false
+      model_path: companions_2_model/icon_outlaw_wild_west
+  icon_samurai_shiba_bamboo:
+    display_name: "icon_samurai_shiba_bamboo"
+    permission: icon_samurai_shiba_bamboo
+    resource:
+      material: BRICK
+      model_id: 12047
+      generate: false
+      model_path: companions_2_model/icon_samurai_shiba_bamboo
+  icon_samurai_shiba_new_year:
+    display_name: "icon_samurai_shiba_new_year"
+    permission: icon_samurai_shiba_new_year
+    resource:
+      material: BRICK
+      model_id: 12048
+      generate: false
+      model_path: companions_2_model/icon_samurai_shiba_new_year
+  icon_samurai_shiba_pirate:
+    display_name: "icon_samurai_shiba_pirate"
+    permission: icon_samurai_shiba_pirate
+    resource:
+      material: BRICK
+      model_id: 12049
+      generate: false
+      model_path: companions_2_model/icon_samurai_shiba_pirate
+  icon_samurai_shiba_samurai:
+    display_name: "icon_samurai_shiba_samurai"
+    permission: icon_samurai_shiba_samurai
+    resource:
+      material: BRICK
+      model_id: 12050
+      generate: false
+      model_path: companions_2_model/icon_samurai_shiba_samurai
+  icon_shark_baby_shark:
+    display_name: "icon_shark_baby_shark"
+    permission: icon_shark_baby_shark
+    resource:
+      material: BRICK
+      model_id: 12051
+      generate: false
+      model_path: companions_2_model/icon_shark_baby_shark
+  icon_shark_chef:
+    display_name: "icon_shark_chef"
+    permission: icon_shark_chef
+    resource:
+      material: BRICK
+      model_id: 12052
+      generate: false
+      model_path: companions_2_model/icon_shark_chef
+  icon_shark_dragonborn:
+    display_name: "icon_shark_dragonborn"
+    permission: icon_shark_dragonborn
+    resource:
+      material: BRICK
+      model_id: 12053
+      generate: false
+      model_path: companions_2_model/icon_shark_dragonborn
+  icon_shark_oceanic:
+    display_name: "icon_shark_oceanic"
+    permission: icon_shark_oceanic
+    resource:
+      material: BRICK
+      model_id: 12054
+      generate: false
+      model_path: companions_2_model/icon_shark_oceanic

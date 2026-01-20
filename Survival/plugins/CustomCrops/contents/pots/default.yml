@@ -1,0 +1,114 @@
+default:
+  vanilla-farmland: true
+  max-water-storage: 7
+  base:
+    dry: minecraft:farmland[moisture=0]
+    wet: minecraft:farmland[moisture=7]
+  absorb-rainwater: false
+  absorb-nearby-water: false
+  max-fertilizers: 1
+  fertilized-pots:
+    enable: false
+    quality:
+      dry: dry_pot  # Model ID for dry pot with 'quality' fertilizer effect
+      wet: wet_pot  # Model ID for wet pot with 'quality' fertilizer effect
+    yield_increase:
+      dry: dry_pot  # Model ID for dry pot with 'yield increase' fertilizer effect
+      wet: wet_pot  # Model ID for wet pot with 'yield increase' fertilizer effect
+    variation:
+      dry: dry_pot  # Model ID for dry pot with 'variation' fertilizer effect
+      wet: wet_pot  # Model ID for wet pot with 'variation' fertilizer effect
+    soil_retain:
+      dry: dry_pot  # Model ID for dry pot with 'soil retain' fertilizer effect
+      wet: wet_pot  # Model ID for wet pot with 'soil retain' fertilizer effect
+    speed_grow:
+      dry: dry_pot  # Model ID for dry pot with 'speed grow' fertilizer effect
+      wet: wet_pot  # Model ID for wet pot with 'speed grow' fertilizer effect
+  fill-method:
+    method_1:
+      item: WATER_BUCKET
+      return: BUCKET
+      amount: 3
+      actions:
+        sound_action:
+          type: sound
+          value:
+            source: player
+            key: minecraft:item.bucket.fill
+            volume: 1
+            pitch: 1
+        swing_hand_action:
+          type: swing-hand
+          value: true
+    method_2:
+      item: POTION
+      return: GLASS_BOTTLE
+      amount: 1
+      actions:
+        sound_action:
+          type: sound
+          value:
+            source: player
+            key: minecraft:item.bottle.fill
+            volume: 1
+            pitch: 1
+        swing_hand_action:
+          type: swing-hand
+          value: true
+  water-bar:
+    left: '뀂'   # Left cap character for the water bar
+    full: '뀁뀃' # Character sequence representing a full water segment
+    empty: '뀁뀄' # Character sequence representing an empty water segment
+    right: '뀁뀅' # Right cap character for the water bar
+  events:
+    add_water:
+      particle_action:
+        type: particle
+        value:
+          particle: WATER_SPLASH  # Particle effect when water is added
+          x: 0.5
+          y: 1.3
+          z: 0.5
+          count: 5
+          offset-x: 0.3
+          offset-z: 0.3
+    interact:
+      conditional_action:
+        type: conditional
+        value:
+          conditions:
+            requirement_1:
+              type: item-in-hand
+              value:
+                amount: 1
+                item: soil_surveyor
+          actions:
+            conditional_fertilizer_action:
+              type: conditional
+              value:
+                conditions:
+                  requirement_1:
+                    type: fertilizer
+                    value:
+                      has: true
+                actions:
+                  fertilizer_hologram:
+                    type: hologram
+                    value:
+                      duration: 20  # Duration the hologram remains visible
+                      text: '<font:minecraft:customcrops>{icon}</font> {left_times}/{max_times}'
+                      apply-correction: true
+                      x: 0.5
+                      y: 0.83
+                      z: 0.5
+                      visible-to-all: false
+            water_hologram:
+              type: hologram
+              value:
+                duration: 20  # Duration the hologram remains visible
+                text: '<font:minecraft:customcrops>{water_bar}</font>'
+                apply-correction: true
+                x: 0.5
+                y: 0.6
+                z: 0.5
+                visible-to-all: false

@@ -1,0 +1,160 @@
+size: 45
+menu_title: '&f%img_offset_-8%%img_submenu_daily_deals%%img_offset_-119%
+%utils_parse_changeoutput_>=_input:{servervariables_globalvalue_deal_1_stock}_matcher:1_ifmatch:{changeoutput_>=_input:{vault_eco_balance}_matcher:{utils_parse_math_0:half-up_225*(1-{servervariables_globalvalue_deal_1_discount}/100)}_ifmatch:{img_indicator_gray_row_1}_else:{img_indicator_red_row_1}}_else:&f%%img_offset_-4%
+%utils_parse_changeoutput_>=_input:{servervariables_globalvalue_deal_2_stock}_matcher:1_ifmatch:{changeoutput_>=_input:{vault_eco_balance}_matcher:{utils_parse_math_0:half-up_15*(1-{servervariables_globalvalue_deal_2_discount}/100)}_ifmatch:{img_indicator_gray_row_1}_else:{img_indicator_red_row_1}}_else:&f%%img_offset_-4%
+%utils_parse_changeoutput_>=_input:{servervariables_globalvalue_deal_3_stock}_matcher:1_ifmatch:{changeoutput_>=_input:{vault_eco_balance}_matcher:{utils_parse_math_0:half-up_100*(1-{servervariables_globalvalue_deal_3_discount}/100)}_ifmatch:{img_indicator_gray_row_1}_else:{img_indicator_red_row_1}}_else:&f%'
+
+items:
+  close:
+    material: itemsadder-invisible_item
+    slot: 15
+    display_name: '&#da5240&lCERRAR'
+    click_commands:
+      - "[openguimenu] marketplace"
+
+  item_1_nomoney:
+    material: itemsadder-banana_seeds
+    slot: 30
+    priority: 2
+    update: true
+    display_name: '&fSemillas de Banana'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e2&m225$&8 → &#e1e1e2%utils_parse_math_0:half-up_225*(1-{servervariables_globalvalue_deal_1_discount}/100)%$"
+      - ""
+      - "&#9bd7efStock Actual: &#e1e1e2%servervariables_globalvalue_deal_1_stock%"
+      - ""
+      - "&#e45838❌ No tienes suficiente dinero"
+    view_requirement:
+      requirements:
+        stock:
+          type: '>='
+          input: '%servervariables_globalvalue_deal_1_stock%'
+          output: '1'
+
+  item_1_unlocked:
+    material: itemsadder-banana_seeds
+    slot: 30
+    priority: 1
+    update: true
+    display_name: '&fSemillas de Banana'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e2&m225$&8 → &#e1e1e2%utils_parse_math_0:half-up_225*(1-{servervariables_globalvalue_deal_1_discount}/100)%$"
+      - ""
+      - "&#9bd7efStock Actual: &#e1e1e2%servervariables_globalvalue_deal_1_stock%"
+      - ""
+      - "&#64ba3f%img_left_click_icon% Click-izquierdo para comprar una"
+    left_click_commands:
+      - "[takemoney] %utils_parse_math_0:half-up_225*(1-{servervariables_globalvalue_deal_1_discount}/100)%"
+      - "[console] iagive %player_name% redstone_labs:banana_seeds 1 silent"
+      - "[console] svar reduce deal_1_stock 1"
+      - "[openguimenu] submenu_daily_deals_3"
+    view_requirement:
+      requirements:
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '%utils_parse_math_0:half-up_225*(1-{servervariables_globalvalue_deal_1_discount}/100)%'
+        stock:
+          type: '>='
+          input: '%servervariables_globalvalue_deal_1_stock%'
+          output: '1'
+
+  item_2_nomoney:
+    material: itemsadder-tomato_seeds
+    slot: 31
+    priority: 2
+    update: true
+    display_name: '&fSemillas de Tomate'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e2&m15$&8 → &#e1e1e2%utils_parse_math_0:half-up_15*(1-{servervariables_globalvalue_deal_2_discount}/100)%$"
+      - ""
+      - "&#9bd7efStock Actual: &#e1e1e2%servervariables_globalvalue_deal_2_stock%"
+      - ""
+      - "&#e45838❌ No tienes suficiente dinero"
+    view_requirement:
+      requirements:
+        stock:
+          type: '>='
+          input: '%servervariables_globalvalue_deal_2_stock%'
+          output: '1'
+
+  item_2_unlocked:
+    material: itemsadder-tomato_seeds
+    slot: 31
+    priority: 1
+    update: true
+    display_name: '&fSemillas de Tomate'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e2&m15$&8 → &#e1e1e2%utils_parse_math_0:half-up_15*(1-{servervariables_globalvalue_deal_2_discount}/100)%$"
+      - ""
+      - "&#9bd7efStock Actual: &#e1e1e2%servervariables_globalvalue_deal_2_stock%"
+      - ""
+      - "&#64ba3f%img_left_click_icon% Click-izquierdo para comprar una"
+    left_click_commands:
+      - "[takemoney] %utils_parse_math_0:half-up_15*(1-{servervariables_globalvalue_deal_2_discount}/100)%"
+      - "[console] iagive %player_name% redstone_labs:tomato_seeds 1 silent"
+      - "[console] svar reduce deal_2_stock 1"
+      - "[openguimenu] submenu_daily_deals_3"
+    view_requirement:
+      requirements:
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '%utils_parse_math_0:half-up_15*(1-{servervariables_globalvalue_deal_2_discount}/100)%'
+        stock:
+          type: '>='
+          input: '%servervariables_globalvalue_deal_2_stock%'
+          output: '1'
+
+  item_3_nomoney:
+    material: itemsadder-speed_grow_fertilizer
+    slot: 32
+    priority: 2
+    update: true
+    display_name: '&fFertilizante de Crecimiento Rápido'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e2&m100$&8 → &#e1e1e2%utils_parse_math_0:half-up_100*(1-{servervariables_globalvalue_deal_3_discount}/100)%$"
+      - ""
+      - "&#9bd7efStock Actual: &#e1e1e2%servervariables_globalvalue_deal_3_stock%"
+      - ""
+      - "&#e45838❌ No tienes suficiente dinero"
+    view_requirement:
+      requirements:
+        stock:
+          type: '>='
+          input: '%servervariables_globalvalue_deal_3_stock%'
+          output: '1'
+
+  item_3_unlocked:
+    material: itemsadder-speed_grow_fertilizer
+    slot: 32
+    priority: 1
+    update: true
+    display_name: '&fFertilizante de Crecimiento Rápido'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e2&m100$&8 → &#e1e1e2%utils_parse_math_0:half-up_100*(1-{servervariables_globalvalue_deal_3_discount}/100)%$"
+      - ""
+      - "&#9bd7efStock Actual: &#e1e1e2%servervariables_globalvalue_deal_3_stock%"
+      - ""
+      - "&#64ba3f%img_left_click_icon% Click-izquierdo para comprar uno"
+    left_click_commands:
+      - "[takemoney] %utils_parse_math_0:half-up_100*(1-{servervariables_globalvalue_deal_3_discount}/100)%"
+      - "[console] iagive %player_name% redstone_labs:speed_grow_fertilizer 1 silent"
+      - "[console] svar reduce deal_3_stock 1"
+      - "[openguimenu] submenu_daily_deals_3"
+    view_requirement:
+      requirements:
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '%utils_parse_math_0:half-up_100*(1-{servervariables_globalvalue_deal_3_discount}/100)%'
+        stock:
+          type: '>='
+          input: '%servervariables_globalvalue_deal_3_stock%'
+          output: '1'

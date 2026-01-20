@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  flowerpot:
+    display_name: "Flower Pot"
+    permission: livingroom.flowerpot
+    resource:
+      material: PAPER
+      generate: false
+      model_path: flowerpot
+    behaviours:
+      furniture:
+        light_level: 13

@@ -1,0 +1,91 @@
+######## created by samus2002 #########
+  
+mystical_card_illusionist:
+  Id: stone_sword
+  Display: "<gradient:#91f2ff:#ffffff:#91f2ff>&lMystical Card of Illusionist"
+  Model: 2051
+  Lore:
+  - '<gradient:#91f2ff:#ffffff:#91f2ff>The mystical card of the Illusionist'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Queen_Tarot} @self ~onTimer:30
+  - skill{s=Card_Throw} @self ~onSwing
+  - skill{s=Phantom_Blink} @self ~onUse
+  - skill{s=Mirror_Shuriken} @self ~onCrouch
+  - skill{s=Mirage_Slot} @self ~onUse
+  - skill{s=Mirror_Needles} @self ~onTimer:10
+  - skill{s=Mirror_Dimension} @self ~onSwing
+  
+mystical_card_illusionist_shiny:
+  Id: stone_sword
+  Display: "<gradient:#91f2ff:#fff891:#91f2ff>&lShiny Mystical Card of Illusionist"
+  Model: 2052
+  Lore:
+  - '<gradient:#91f2ff:#ffffff:#91f2ff>The mystical card of the Illusionist'
+  Hide:
+  - ATTRIBUTES
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Skills:
+  - skill{s=Queen_Tarot} @self ~onTimer:30
+  - skill{s=Card_Throw} @self ~onSwing
+  - skill{s=Phantom_Blink} @self ~onUse
+  - skill{s=Mirror_Shuriken} @self ~onCrouch
+  - skill{s=Mirage_Slot} @self ~onUse
+  - skill{s=Mirror_Needles} @self ~onTimer:10
+  - skill{s=Mirror_Dimension} @self ~onSwing
+  
+illusion_impact_1:
+  Id: paper
+  Display: "&6"
+  Model: 2873
+  Hide:
+  - ATTRIBUTES
+ 
+illusion_impact_2:
+  Id: paper
+  Display: "&6"
+  Model: 2874
+  Hide:
+  - ATTRIBUTES
+
+illusion_impact_3:
+  Id: paper
+  Display: "&6"
+  Model: 2875
+  Hide:
+  - ATTRIBUTES
+  
+illusion_impact_4:
+  Id: paper
+  Display: "&6"
+  Model: 2876
+  Hide:
+  - ATTRIBUTES
+  
+illusion_impact_5:
+  Id: paper
+  Display: "&6"
+  Model: 2877
+  Hide:
+  - ATTRIBUTES
+  
+illusion_impact_6:
+  Id: paper
+  Display: "&6"
+  Model: 2878
+  Hide:
+  - ATTRIBUTES
+  
+illusion_impact_7:
+  Id: paper
+  Display: "&6"
+  Model: 2879
+  Hide:
+  - ATTRIBUTES
+  

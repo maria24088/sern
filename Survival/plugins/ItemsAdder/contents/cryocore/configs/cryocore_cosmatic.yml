@@ -1,0 +1,35 @@
+info:
+  namespace: cryocore
+items:
+  cryocore_cosmetics_wings:
+    display_name: Cryocore Wings Cosmetics
+    permission: cryocore.cryocore_cosmetics_wings
+    resource:
+      generate: false
+      material: POTION
+      model_id: 9925257
+      model_path: wings_cosmetic
+  cryocore_cosmetics_wings_normal_2:
+    display_name: Cryocore Wings Cosmetics Normal 2
+    permission: cryocore.cryocore_cosmetics_wings_normal_2
+    resource:
+      generate: false
+      material: POTION
+      model_id: 9925260
+      model_path: wings_cosmetic_normal_2
+  cryocore_cosmetics_wings_self:
+    display_name: Cryocore Wings Cosmetics Self
+    permission: cryocore.cryocore_cosmetics_wings_self
+    resource:
+      generate: false
+      material: POTION
+      model_id: 9925258
+      model_path: wings_cosmetic_self
+  cryocore_cosmetics_wings_self_2:
+    display_name: Cryocore Wings Cosmetics Self 2
+    permission: cryocore.cryocore_cosmetics_wings_self_2
+    resource:
+      generate: false
+      material: POTION
+      model_id: 9925259
+      model_path: wings_cosmetic_self_2

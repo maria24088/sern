@@ -1,0 +1,30 @@
+info:
+  namespace: akiraset
+categories:
+  akiraset:
+    enabled: true
+    skip_if_already: false
+    icon: "akiraset:akira_sword"
+    name: Akira Weapons & Tools Set
+    permission: ia.menu
+    items:
+      - "akiraset:akira_sword"
+      - "akiraset:akira_greatsword"
+      - "akiraset:akira_spear"
+      - "akiraset:akira_scythe"
+      - "akiraset:akira_staff"
+      - "akiraset:akira_bow"
+      - "akiraset:akira_axe"
+      - "akiraset:akira_hoe"
+      - "akiraset:akira_pickaxe"
+      - "akiraset:akira_shovel"
+      - "akiraset:akira_fishing_rod"
+      - "akiraset:akira_shield"
+      - "akiraset:akira_chest"
+      - "akiraset:akira_chest_opening"
+      - "akiraset:akira_key"
+      - "akiraset:akirachestplate"
+      - "akiraset:akiraleggings"
+      - "akiraset:akiraboots"
+      - "akiraset:akira_helmet"
+      - "akiraset:akira_wings"

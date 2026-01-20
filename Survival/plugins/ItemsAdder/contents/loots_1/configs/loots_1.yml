@@ -1,0 +1,75 @@
+info:
+  namespace: loots_1
+
+categories:
+  animal_loots_1:
+    enabled: true
+    icon: loots_1:pig_snout
+    name: "Animal Loots 1"
+    items:
+      - loots_1:pig_snout
+      - loots_1:villager_brain
+      - loots_1:withered_bone
+      - loots_1:withered_rib
+      - loots_1:wolf_canine
+      - loots_1:wolf_tail
+      - loots_1:zombie_flesh
+      - loots_1:zombie_piglin_flesh
+
+items:
+  pig_snout:
+    display_name: Pig Snout
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - pig_snout
+  villager_brain:
+    display_name: Villager Brain
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - villager_brain
+  withered_bone:
+    display_name: Withered Bone
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - withered_bone
+  withered_rib:
+    display_name: Withered Rib
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - withered_rib
+  wolf_canine:
+    display_name: Wolf Canine
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - wolf_canine
+  wolf_tail:
+    display_name: Wolf Tail
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - wolf_tail
+  zombie_flesh:
+    display_name: Zombie Flesh
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - zombie_flesh
+  zombie_piglin_flesh:
+    display_name: Zombie Piglin Flesh
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - zombie_piglin_flesh

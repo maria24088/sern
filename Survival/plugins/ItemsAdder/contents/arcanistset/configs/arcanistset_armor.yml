@@ -1,0 +1,54 @@
+armors_rendering:
+  arcanistarmor:
+    color: '#0099db'
+    layer_1: armor/arcanist_armor_layer_1
+    layer_2: armor/arcanist_armor_layer_2
+    use_color: false
+info:
+  namespace: arcanistset
+items:
+  arcanistboots:
+    display_name: Arcanist Boots
+    permission: arcanistset.boots
+    resource:
+      generate: true
+      textures:
+      - armor/arcanist_boots_icon.png
+    specific_properties:
+      armor:
+        custom_armor: arcanistarmor
+        slot: feet
+  arcanistchestplate:
+    display_name: Arcanist Chestplate
+    permission: arcanistset.chestplate
+    resource:
+      generate: true
+      textures:
+      - armor/arcanist_chestplate_icon.png
+    specific_properties:
+      armor:
+        custom_armor: arcanistarmor
+        slot: chest
+  arcanistleggings:
+    display_name: Arcanist Leggings
+    permission: arcanistset.leggings
+    resource:
+      generate: true
+      textures:
+      - armor/arcanist_leggings_icon.png
+    specific_properties:
+      armor:
+        custom_armor: arcanistarmor
+        slot: legs
+  arcanisthelmet:
+    display_name: Arcanist Helmet
+    permission: arcanistset.helmet
+    resource:
+      generate: true
+      textures:
+      - armor/arcanist_helmet_icon.png
+    specific_properties:
+      armor:
+        custom_armor: arcanistarmor
+        slot: head
+#Y3dnJ3MwIUMGRXO0MVYBFnaJ1GV3dmeORTQU1EMRRlT5F1MhJmepdUevhXaaJlYMJmawIUN

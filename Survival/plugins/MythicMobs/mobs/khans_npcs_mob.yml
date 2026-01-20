@@ -1,0 +1,138 @@
+khansnpcs_quindle_the_mage:
+  Type: PIG
+  Display: 'Quindle'
+  Faction: KHANS_NPCS
+  Health: 999
+  Damage: 0
+  # NoAI hace que se quede quieto como una estatua y optimiza el server
+  Options:
+    NoAI: true
+    KnockbackResistance: 1
+    Silent: true
+    Invincible: true
+    Collidable: false
+    PreventSunburn: true
+    PreventBlockInfection: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventJockeyMounts: true
+    MovementSpeed: 0
+    ShowHealth: false
+    AlwaysShowName: false
+    Despawn: PERSISTENT
+    NoGravity: true
+    Invincible: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Skills:
+  - model{mid=khansnpcs_quindle_the_mage;n=false;step=1;damagetint=false;save=true} @self ~onSpawn
+  - model{mid=khansnpcs_quindle_the_mage;n=false;step=1;damagetint=false;save=true} @self ~onLoad
+  - partvisibility{model=khansnpcs_quindle_the_mage;pid=red_fire;v=false;child=true} @self ~onSpawn
+  - partvisibility{model=khansnpcs_quindle_the_mage;pid=red_fire;v=false;child=true} @self ~onLoad
+  - brightness{mid=khansnpcs_quindle_the_mage;b=15;s=15} @self ~onSpawn
+  - brightness{mid=khansnpcs_quindle_the_mage;b=15;s=15} @self ~onLoad
+  - skill{s=khansnpcs_quindle_the_mage_emotes} @self ~onTimer:260
+  - skill{s=khansnpcs_quindle_the_mage_interact} ~onInteract
+  - teleport @CasterSpawnLocation ~onTimer:140
+  - command{c="ae open <trigger.name> enchanter";console=true} @trigger ~onInteract
+  - cancelEvent @self ~onDamaged
+
+khansnpcs_bromnar_the_blacksmith:
+  Type: PIG
+  Display: 'Bromnar'
+  Faction: KHANS_NPCS
+  Health: 999
+  Damage: 0
+  AIGoalSelectors:
+  -  clear
+  -  lookatplayers{r=4}
+  Options:
+    KnockbackResistance: 1
+    Silent: true
+    Invincible: true
+    Despawn: persistent
+    Movementspeed: 0
+    Collidable: false
+    PreventSunburn: true
+    PreventBlockInfection: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventJockeyMounts: true
+  Skills:
+  - model{mid=khansnpcs_bromnar_the_blacksmith;n=false;step=1;damagetint=false;save=true} @self ~onSpawn
+  - model{mid=khansnpcs_bromnar_the_blacksmith;n=false;step=1;damagetint=false;save=true} @self ~onLoad
+  - brightness{mid=khansnpcs_bromnar_the_blacksmith;b=15;s=15} @self ~onSpawn
+  - brightness{mid=khansnpcs_bromnar_the_blacksmith;b=15;s=15} @self ~onLoad
+  - skill{s=khansnpcs_bromnar_the_blacksmith_emotes} @self ~onTimer:260
+  - skill{s=khansnpcs_bromnar_the_blacksmith_interact} ~onInteract
+  - velocity{m=set;x=0;y=0;z=0;delay=1} @self ~onDamaged
+  - heal{amount=999} @self ~onDamaged
+  - teleport @CasterSpawnLocation ~onTimer:140
+
+khansnpcs_mizzlewick_the_alchemist:
+  Type: PIG
+  Display: 'Mizzlewick'
+  Faction: KHANS_NPCS
+  Health: 999
+  Damage: 0
+  AIGoalSelectors:
+  -  clear
+  -  lookatplayers{r=4}
+  Options:
+    KnockbackResistance: 1
+    Silent: true
+    Movementspeed: 0
+    Despawn: persistent
+    Invincible: true
+    Collidable: false
+    PreventSunburn: true
+    PreventBlockInfection: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventJockeyMounts: true
+  Skills:
+  - model{usestatemachine=true;mid=khansnpcs_mizzlewick_the_alchemist;damagetint=false;save=true} @self ~onSpawn
+  - model{usestatemachine=true;mid=khansnpcs_mizzlewick_the_alchemist;damagetint=false;save=true} @self ~onLoad
+  - brightness{mid=khansnpcs_mizzlewick_the_alchemist;b=15;s=15} @self ~onSpawn
+  - brightness{mid=khansnpcs_mizzlewick_the_alchemist;b=15;s=15} @self ~onLoad
+  - skill{s=khansnpcs_mizzlewick_the_alchemist_emotes} @self ~onTimer:260
+  - skill{s=khansnpcs_mizzlewick_the_alchemist_interact} ~onInteract
+  - velocity{m=set;x=0;y=0;z=0;delay=1} @self ~onDamaged
+  - heal{amount=999} @self ~onDamaged
+  - teleport @CasterSpawnLocation ~onTimer:140
+
+khansnpcs_cedric_coincloak_the_banker:
+  Type: PIG
+  Display: 'Cedric Coincloak'
+  Faction: KHANS_NPCS
+  Health: 999
+  Damage: 0
+  AIGoalSelectors:
+  -  clear
+  Options:
+    KnockbackResistance: 1
+    Silent: true
+    Despawn: persistent
+    Invincible: true
+    Collidable: false
+    Movementspeed: 0
+    PreventSunburn: true
+    PreventBlockInfection: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventJockeyMounts: true
+  Skills:
+  - model{usestatemachine=true;mid=khansnpcs_cedric_coincloak_the_banker;damagetint=false;save=true} @self ~onSpawn
+  - model{usestatemachine=true;mid=khansnpcs_cedric_coincloak_the_banker;damagetint=false;save=true} @self ~onLoad
+  - brightness{mid=khansnpcs_cedric_coincloak_the_banker;b=15;s=15} @self ~onSpawn
+  - brightness{mid=khansnpcs_cedric_coincloak_the_banker;b=15;s=15} @self ~onLoad
+  - skill{s=khansnpcs_cedric_coincloak_the_banker_emotes} @self ~onTimer:260
+  - skill{s=khansnpcs_cedric_coincloak_the_banker_interact} ~onInteract
+  - velocity{m=set;x=0;y=0;z=0;delay=1} @self ~onDamaged
+  - heal{amount=999} @self ~onDamaged
+  - teleport @CasterSpawnLocation ~onTimer:140
+  - rotatetowards{yaw=true;pitch=true;uel=true;maxyaw=500;maxpitch=500} @NearestPlayer ~onSpawn
+
+# 72401W9XWUR0S45XC320VVCY20

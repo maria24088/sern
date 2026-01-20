@@ -1,0 +1,35 @@
+location: SpawnRPG:54.051:64.769:48.514
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:gold_ingot'
+    height: 0.6
+  - content: '&#fbe200★ &#fbe400&lS&#fbe500&lE&#fce700&lR&#fce800&lV&#fcea00&lE&#fceb00&lR
+      &#fced00&lN&#fcee00&lA&#fdf000&lM&#fdf100&lE &#fdf300★'
+    height: 0.4
+  - content: '&f'
+    height: 0.2
+  - content: '&e&o&lSURVIVAL &8&o- &7&o[1.21]'
+    height: 0.3
+  - content: '&f'
+    height: 0.2
+  - content: '&f&o¡Bienvenido de vuelta, &e&o%player_name%&f&o!'
+    height: 0.3
+  - content: '&f&o¡Nos alegra verte de nuevo!'
+    height: 0.3
+  - content: '&f'
+    height: 0.2
+  - content: '&f&oUsa &e&o/rtp&f&o para comenzar tu aventura'
+    height: 0.3
+  - content: '&f&o¡Reclama tierra y expande tu &e&oimperio&f&o!'
+    height: 0.3
+  - content: '&f&oRecompensas diarias: &e&o/rewards'
+    height: 0.3
+  - content: '&f&o¿Dudas? Usa &e&o/help'
+    height: 0.3
+  actions: {}

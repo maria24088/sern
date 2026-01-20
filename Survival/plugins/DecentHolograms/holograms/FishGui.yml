@@ -1,0 +1,23 @@
+# Si quieres cambiar la ubicación, usa /dh move tienda_pesca dentro del juego
+location: SpawnRPG:282.169:67.408:-431.362
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:FISHING_ROD'
+    height: 0.7
+  - content: '&#0099ff&lTIENDA DE PESCA'
+    height: 0.3
+  - content: '&f¡Consigue tu &bCaña Profesional&f!'
+    height: 0.3
+  - content: '&7(Soporta Cebos y mejoras)'
+    height: 0.3
+  - content: '&r'
+    height: 0.2
+  - content: Usa &e/tiendapesca
+    height: 0.3
+  actions: {}

@@ -1,0 +1,18 @@
+skeleton_horse_animated_weapon_set_hat:
+  slot: HELMET
+  permission: "elitecreatures.hat"
+  dyeable: false
+  item:
+    material: itemsadder:skeleton_horse_animated_weapon_set_hat
+    name: "[Skeleton Horse] Hat"
+    amount: 1
+skeleton_horse_animated_weapon_set_wing:
+  slot: BACKPACK
+  permission: "elitecreatures.wing"
+  item:
+    material: itemsadder:skeleton_horse_animated_weapon_set_wing
+    name: "[Skeleton Horse] Wing"
+    amount: 1
+  firstperson-item:
+    material: itemsadder:skeleton_horse_animated_weapon_set_wing
+    amount: 1

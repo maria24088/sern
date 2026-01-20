@@ -1,0 +1,21 @@
+## LOWER_FIRST: Selects the format with the lowest priority that the user has
+## HIGHER_FIRST: Selects the format with the highest priority that the user has
+default-priority-ordering: LOWER_FIRST
+formats:
+  - ==: new-chat-format
+    name: default
+    priority: 99999
+    chat-color: '&f'
+    permission: ''
+    use-placeholder-api: true
+    parts:
+      - ==: chat-part
+        display: '&e%vault_suffix%%vault_groupprefix%{displayName} %deluxetags_tag%'
+        ## Supported values:
+        ## EXECUTE, SUGGEST, OPEN
+        click-action: '[SUGGEST] /msg {name}'
+        tooltip: []
+      - ==: chat-part
+        display: '&8➠ '
+        click-action: '[NONE] '
+        tooltip: []

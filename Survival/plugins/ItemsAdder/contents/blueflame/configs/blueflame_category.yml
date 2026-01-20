@@ -1,0 +1,32 @@
+info:
+    namespace: blueflame
+categories:
+    blueflame:
+        name: Blueflame Weapons And Tools Set
+        enabled: true
+        icon: blueflame:blueflame_wings
+        permission: ia.menu.blueflame
+        items:
+        - blueflame:blueflamehelmet
+        - blueflame:blueflamechestplate
+        - blueflame:blueflameleggings
+        - blueflame:blueflameboots
+        - blueflame:blueflame_axe
+        - blueflame:blueflame_pickaxe
+        - blueflame:blueflame_shovel
+        - blueflame:blueflame_hoe
+        - blueflame:blueflame_fishing_rod
+        - blueflame:blueflame_sword
+        - blueflame:blueflame_shield
+        - blueflame:blueflame_crossbow
+        - blueflame:blueflame_bow
+        - blueflame:blueflame_staff
+        - blueflame:blueflame_spear
+        - blueflame:blueflame_chest
+        - blueflame:blueflame_key
+        - blueflame:blueflame_battle_axe
+        - blueflame:blueflame_blade
+        - blueflame:blueflame_sickle
+        - blueflame:blueflame_wings
+
+#6d6a89f17823566d406a05035b07c188

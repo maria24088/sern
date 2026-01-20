@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "hyronic_pack/items/bow/sniper_sight_0"
+  }
+}

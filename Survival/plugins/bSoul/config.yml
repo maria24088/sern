@@ -1,0 +1,54 @@
+SETTINGS:
+  BLACKLIST_SLOTS:
+  - 9
+  - 10
+  - 11
+  - 12
+  DEFAULT_SOUL: 5
+  DEFAULT_SOUL_MAX: 1000000
+  DEBUG: false
+  EARN_BLACKLIST_WORLD:
+  - example_world
+REHIBILITATE:
+  ENABLE: false
+  TIME: 300
+  SOUL: 2
+DEATH:
+  SOUL_LOST: 10
+  SKIP_DEATH_SCREEN: true
+  LOSE_ITEM_WHEN_DEATH: true
+  LOSE_ALL_ITEM: false
+  MIN_SOUL_TO_LOSE: 3
+  DROP_ITEM: true
+  PREVENT_MAIN_HAND: true
+  DROP:
+    INCLUDE_ARMOR: true
+    INCLUDE_OFFHAND: true
+    MORE_DROP:
+      ENABLE: true
+      SOUL_3: 3
+      SOUL_2: 5
+      SOUL_1: 7
+PVP:
+  ENABLE: true
+  KILL_SOUL: 10
+  CHANCE: 75.0
+ITEM:
+  SOUL:
+    ENABLE: false
+    MATERIAL: EMERALD
+    SLOT: 8
+    DATA: 0
+    NAME: '&9%soul% Soul'
+    UNBREAK: true
+    GLOW: true
+    HIDE_FLAG: true
+    LORE:
+    - '&7You have %soul% Soul'
+MOBS:
+  ENABLE: true # Kill mob to get soul
+  ANIMAL: true # true -> Enable kill animal can get soul
+  MONSTER: true
+HOOK:
+  MYTHICMOBS: true # You need bSoulMMAddon for this!
+

@@ -1,0 +1,805 @@
+######## created by samus2002 #########
+
+
+# NPCs #
+
+
+# MERCHANTS
+
+NPC_MERCHANT_INVX:
+  Skills:
+  - message{m="&4You don't have enough space in your inventory!"} @self
+  - sound{sound=entity.item.break;volume=0.8;pitch=0.9} @self
+NPC_MERCHANT_ITEMX:
+  Skills:
+  - message{m="&4Requirements not met!"} @self
+  - sound{sound=entity.item.break;volume=0.8;pitch=0.9} @self
+
+# ITEM
+NPC_MERCHANT_BUY:
+  Conditions:
+  - hasinventoryspace orelsecast NPC_MERCHANT_INVX
+  Skills:
+  - sound{sound=entity.experience_orb.pickup;volume=0.8;pitch=1.4} @self
+  - sound{sound=item.armor.equip_netherite;volume=1;pitch=1.5} @self
+  - takecurrency{a=<skill.price>} @self
+  - delay 1
+  - giveitem{i=<skill.item> 1} @self
+  - message{m="&fSuccessfully purchased &a1x <skill.itemname> &ffor &c$<skill.price>!"} @self
+NPC_MERCHANT_SELL:
+  Skills:
+  - sound{sound=entity.experience_orb.pickup;volume=0.8;pitch=1.4} @self
+  - sound{sound=item.armor.equip_netherite;volume=1;pitch=1.5} @self
+  - givecurrency{a=<skill.sellprice>} @self
+  - message{m="&fSuccessfully sold &c1x <skill.itemname> &ffor &a$<skill.sellprice>!"} @self
+
+# PERMISSION NODE
+NPC_MERCHANT_PERMISSION_BUY:
+  Skills:
+  - sound{sound=entity.experience_orb.pickup;volume=0.8;pitch=1.4} @self
+  - sound{sound=item.armor.equip_netherite;volume=1;pitch=1.5} @self
+  - takecurrency{a=<skill.price>} @self
+  - delay 1
+  - command{c='lp user %player_name% permission set <skill.permission> true';asCaster=true;asTarget=false;asOp=true} @self
+  - message{m="&fSuccessfully purchased &a1x <skill.itemname> &ffor &c$<skill.price>!"} @self
+
+
+
+# MERCHANT - BASIC
+
+NPC_MERCHANT_BASIC_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - state{s=interact;lo=10;speed=1} @self
+  - delay 14
+  #bow
+  - sound{sound=entity.villager.ambient;volume=0.8;pitch=<random.float.1.3to1.4>} @self
+NPC_MERCHANT_BASIC_INTERACT_MENU:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - sudoskill{s=NPC_MERCHANT_BASIC_INTERACT_COMMAND;cat=true} @trigger
+NPC_MERCHANT_BASIC_INTERACT_COMMAND:
+  Skills:
+  - command{c='dm open merchant_basic';asCaster=true;asTarget=false;asOp=true}
+
+# MERCHANT - BASIC (ITEMS)
+
+NPC_MERCHANT_BASIC_BUY_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=50}
+  - skill{s=NPC_MERCHANT_BUY;price=50;item=ENCHANTED_GOLDEN_APPLE;itemname="Enchanted Golden Apple"} ?hascurrency{a=50}
+NPC_MERCHANT_BASIC_SELL_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hasitem{i=ENCHANTED_GOLDEN_APPLE;amount=>0}
+  - skill{s=NPC_MERCHANT_SELL;sellprice=25;itemname="Enchanted Golden Apple"} ?hasitem{i=ENCHANTED_GOLDEN_APPLE;amount=>0}
+  - takeitem{i=ENCHANTED_GOLDEN_APPLE;a=1} @self ?hasitem{i=ENCHANTED_GOLDEN_APPLE;amount=>0}
+
+NPC_MERCHANT_BASIC_BUY_2:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=35}
+  - skill{s=NPC_MERCHANT_BUY;price=35;item=WATER_BUCKET;itemname="Water Bucket"} ?hascurrency{a=35}
+NPC_MERCHANT_BASIC_SELL_2:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hasitem{i=WATER_BUCKET;amount=>0}
+  - skill{s=NPC_MERCHANT_SELL;sellprice=15;itemname="Water Bucket"} ?hasitem{i=WATER_BUCKET;amount=>0}
+  - takeitem{i=WATER_BUCKET;a=1} @self ?hasitem{i=WATER_BUCKET;amount=>0}
+
+
+
+
+# MERCHANT - WEAPON
+
+NPC_MERCHANT_WEAPON_MEG_SFX_1:
+  Skills:
+  - sound{sound=item.axe.scrape;volume=0.7;pitch=0.7} @self
+NPC_MERCHANT_WEAPON_MEG_SFX_2:
+  Skills:
+  - sound{sound=entity.evoker.ambient;volume=0.7;pitch=0.8} @self
+
+NPC_MERCHANT_WEAPON_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - state{s=interact;li=10;lo=10;speed=1} @self
+NPC_MERCHANT_WEAPON_INTERACT_MENU:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - sudoskill{s=NPC_MERCHANT_WEAPON_INTERACT_COMMAND;cat=true} @trigger
+NPC_MERCHANT_WEAPON_INTERACT_COMMAND:
+  Skills:
+  - command{c='dm open merchant_weapon';asCaster=true;asTarget=false;asOp=true}
+
+# MERCHANT - WEAPON (ITEMS)
+
+NPC_MERCHANT_WEAPON_BUY_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=40}
+  - skill{s=NPC_MERCHANT_BUY;price=40;item=IRON_SWORD;itemname="Iron Sword"} ?hascurrency{a=40}
+NPC_MERCHANT_WEAPON_SELL_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hasitem{i=IRON_SWORD;amount=>0}
+  - skill{s=NPC_MERCHANT_SELL;sellprice=20;itemname="Iron Sword"} ?hasitem{i=IRON_SWORD;amount=>0}
+  - takeitem{i=IRON_SWORD;a=1} @self ?hasitem{i=IRON_SWORD;amount=>0}
+
+NPC_MERCHANT_WEAPON_BUY_2:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=80}
+  - skill{s=NPC_MERCHANT_BUY;price=80;item=DIAMOND_SWORD;itemname="Diamond Sword"} ?hascurrency{a=80}
+NPC_MERCHANT_WEAPON_SELL_2:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hasitem{i=DIAMOND_SWORD;amount=>0}
+  - skill{s=NPC_MERCHANT_SELL;sellprice=40;itemname="Diamond Sword"} ?hasitem{i=DIAMOND_SWORD;amount=>0}
+  - takeitem{i=DIAMOND_SWORD;a=1} @self ?hasitem{i=DIAMOND_SWORD;amount=>0}
+
+
+
+# MERCHANT - ARMOR
+
+NPC_MERCHANT_ARMOR_MEG_SFX_1:
+  Skills:
+  - sound{sound=entity.iron_golem.step;volume=0.7;pitch=1} @self
+NPC_MERCHANT_ARMOR_MEG_SFX_2:
+  Skills:
+  - sound{sound=entity.evoker.ambient;volume=0.7;pitch=0.8} @self
+
+NPC_MERCHANT_ARMOR_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - state{s=interact;lo=10;speed=1} @self
+NPC_MERCHANT_ARMOR_INTERACT_MENU:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - sudoskill{s=NPC_MERCHANT_ARMOR_INTERACT_COMMAND;cat=true} @trigger
+NPC_MERCHANT_ARMOR_INTERACT_COMMAND:
+  Skills:
+  - command{c='dm open merchant_ARMOR';asCaster=true;asTarget=false;asOp=true}
+
+# MERCHANT - ARMOR (ITEMS)
+
+NPC_MERCHANT_ARMOR_BUY_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=50}
+  - skill{s=NPC_MERCHANT_BUY;price=50;item=IRON_CHESTPLATE;itemname="Iron Chestplate"} ?hascurrency{a=50}
+NPC_MERCHANT_ARMOR_SELL_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hasitem{i=IRON_CHESTPLATE;amount=>0}
+  - skill{s=NPC_MERCHANT_SELL;sellprice=25;itemname="Iron Chestplate"} ?hasitem{i=IRON_CHESTPLATE;amount=>0}
+  - takeitem{i=IRON_CHESTPLATE;a=1} @self ?hasitem{i=IRON_CHESTPLATE;amount=>0}
+
+NPC_MERCHANT_ARMOR_BUY_2:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=100}
+  - skill{s=NPC_MERCHANT_BUY;price=100;item=DIAMOND_CHESTPLATE;itemname="Diamond Chestplate"} ?hascurrency{a=100}
+NPC_MERCHANT_ARMOR_SELL_2:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hasitem{i=DIAMOND_CHESTPLATE;amount=>0}
+  - skill{s=NPC_MERCHANT_SELL;sellprice=50;itemname="Diamond Chestplate"} ?hasitem{i=DIAMOND_CHESTPLATE;amount=>0}
+  - takeitem{i=DIAMOND_CHESTPLATE;a=1} @self ?hasitem{i=DIAMOND_CHESTPLATE;amount=>0}
+
+
+
+# MERCHANT - JEWELRY
+
+NPC_MERCHANT_JEWELRY_MEG_SFX_1:
+  Skills:
+  - sound{sound=item.armor.equip_chain;volume=0.4;pitch=0.8} @self
+NPC_MERCHANT_JEWELRY_MEG_SFX_2:
+  Skills:
+  - sound{sound=entity.evoker.ambient;volume=0.7;pitch=0.8} @self
+
+NPC_MERCHANT_JEWELRY_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - state{s=interact;lo=10;speed=1} @self
+NPC_MERCHANT_JEWELRY_INTERACT_MENU:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - sudoskill{s=NPC_MERCHANT_JEWELRY_INTERACT_COMMAND;cat=true} @trigger
+NPC_MERCHANT_JEWELRY_INTERACT_COMMAND:
+  Skills:
+  - command{c='dm open merchant_JEWELRY';asCaster=true;asTarget=false;asOp=true}
+
+# MERCHANT - JEWELRY (ITEMS)
+
+NPC_MERCHANT_JEWELRY_BUY_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=50}
+  - skill{s=NPC_MERCHANT_BUY;price=50;item=AMETHYST_SHARD;itemname="Amethyst Shard"} ?hascurrency{a=50}
+NPC_MERCHANT_JEWELRY_SELL_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hasitem{i=AMETHYST_SHARD;amount=>0}
+  - skill{s=NPC_MERCHANT_SELL;sellprice=25;itemname="Amethyst Shard"} ?hasitem{i=AMETHYST_SHARD;amount=>0}
+  - takeitem{i=AMETHYST_SHARD;a=1} @self ?hasitem{i=AMETHYST_SHARD;amount=>0}
+
+NPC_MERCHANT_JEWELRY_BUY_2:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=35}
+  - skill{s=NPC_MERCHANT_BUY;price=35;item=PRISMARINE_SHARD;itemname="Prismarine Shard"} ?hascurrency{a=35}
+NPC_MERCHANT_JEWELRY_SELL_2:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hasitem{i=PRISMARINE_SHARD;amount=>0}
+  - skill{s=NPC_MERCHANT_SELL;sellprice=15;itemname="Prismarine Shard"} ?hasitem{i=PRISMARINE_SHARD;amount=>0}
+  - takeitem{i=PRISMARINE_SHARD;a=1} @self ?hasitem{i=PRISMARINE_SHARD;amount=>0}
+
+
+
+# MERCHANT - PET
+
+NPC_MERCHANT_PET_MEG_SFX_1:
+  Skills:
+  - sound{sound=block.basalt.hit;volume=0.25;pitch=1.4} @self
+NPC_MERCHANT_PET_MEG_SFX_2:
+  Skills:
+  - sound{sound=entity.parrot.ambient;volume=0.6;pitch=1} @self
+NPC_MERCHANT_PET_MEG_SFX_3:
+  Skills:
+  - sound{sound=entity.ender_dragon.flap;volume=0.25;pitch=1.5} @self
+
+NPC_MERCHANT_PET_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - state{s=interact;lo=10;speed=1} @self
+NPC_MERCHANT_PET_INTERACT_MENU:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - sudoskill{s=NPC_MERCHANT_PET_INTERACT_COMMAND;cat=true} @trigger
+NPC_MERCHANT_PET_INTERACT_COMMAND:
+  Skills:
+  - command{c='dm open merchant_PET';asCaster=true;asTarget=false;asOp=true}
+
+# MERCHANT - PET (ITEMS)
+
+NPC_MERCHANT_PET_BUY_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=200}
+  - skill{s=NPC_MERCHANT_PERMISSION_BUY;price=200;permission=mcpet.Pet_Frog_Green;itemname="Green Frog Pet"} ?hascurrency{a=200}
+
+NPC_MERCHANT_PET_BUY_2:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=500}
+  - skill{s=NPC_MERCHANT_PERMISSION_BUY;price=500;permission=mcpet.Pet_Fire_Dragon_Fire;itemname="Fire Dragon Pet"} ?hascurrency{a=500}
+
+
+
+# MERCHANT - POTION
+
+NPC_MERCHANT_POTION_MEG_SFX_1:
+  Skills:
+  - sound{sound=entity.witch.drink;volume=0.5;pitch=1.3} @self
+NPC_MERCHANT_POTION_MEG_SFX_2:
+  Skills:
+  - sound{sound=entity.witch.throw;volume=0.5;pitch=1.3} @self
+NPC_MERCHANT_POTION_MEG_SFX_3:
+  Skills:
+  - sound{sound=entity.villager.yes;volume=0.65;pitch=1.3} @self
+
+NPC_MERCHANT_POTION_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - state{s=interact;lo=10;speed=1} @self
+NPC_MERCHANT_POTION_INTERACT_MENU:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - sudoskill{s=NPC_MERCHANT_POTION_INTERACT_COMMAND;cat=true} @trigger
+
+NPC_MERCHANT_POTION_INTERACT_COMMAND:
+  Skills:
+  # El jugador ejecuta el comando para abrir la tienda 'potions'
+  - command{c='shop potions';asCaster=true;asTarget=false;asOp=true}
+
+# MERCHANT - POTION (ITEMS)
+
+NPC_MERCHANT_POTION_BUY_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=50}
+  - skill{s=NPC_MERCHANT_BUY;price=50;item=POTION_SPEED;itemname="Speed Potion"} ?hascurrency{a=50}
+NPC_MERCHANT_POTION_SELL_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hasitem{i=POTION_SPEED;amount=>0}
+  - skill{s=NPC_MERCHANT_SELL;sellprice=25;itemname="Speed Potion"} ?hasitem{i=POTION_SPEED;amount=>0}
+  - takeitem{i=POTION_SPEED;a=1} @self ?hasitem{i=POTION_SPEED;amount=>0}
+
+NPC_MERCHANT_POTION_BUY_2:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=60}
+  - skill{s=NPC_MERCHANT_BUY;price=60;item=POTION_RESISTANCE;itemname="Resistance Potion"} ?hascurrency{a=60}
+NPC_MERCHANT_POTION_SELL_2:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hasitem{i=POTION_RESISTANCE;amount=>0}
+  - skill{s=NPC_MERCHANT_SELL;sellprice=30;itemname="Resistance Potion"} ?hasitem{i=POTION_RESISTANCE;amount=>0}
+  - takeitem{i=POTION_RESISTANCE;a=1} @self ?hasitem{i=POTION_RESISTANCE;amount=>0}
+
+
+
+# MERCHANT - FORBIDDEN
+
+NPC_MERCHANT_FORBIDDEN_MEG_SFX_1:
+  Skills:
+  - sound{sound=block.chain.hit;volume=0.6;pitch=0.7} @self
+NPC_MERCHANT_FORBIDDEN_MEG_SFX_2:
+  Skills:
+  - sound{sound=entity.wither_skeleton.ambient;volume=0.7;pitch=0.7} @self
+
+NPC_MERCHANT_FORBIDDEN_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - state{s=interact;lo=10;speed=1} @self
+NPC_MERCHANT_FORBIDDEN_INTERACT_MENU:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - sudoskill{s=NPC_MERCHANT_FORBIDDEN_INTERACT_COMMAND;cat=true} @trigger
+NPC_MERCHANT_FORBIDDEN_INTERACT_COMMAND:
+  Skills:
+  - command{c='dm open merchant_FORBIDDEN';asCaster=true;asTarget=false;asOp=true}
+
+# MERCHANT - FORBIDDEN (ITEMS)
+
+NPC_MERCHANT_FORBIDDEN_BUY_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=450}
+  - skill{s=NPC_MERCHANT_BUY;price=450;item=TOTEM_OF_UNDYING;itemname="Totem of Undying"} ?hascurrency{a=450}
+NPC_MERCHANT_FORBIDDEN_SELL_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hasitem{i=TOTEM_OF_UNDYING;amount=>0}
+  - skill{s=NPC_MERCHANT_SELL;sellprice=200;itemname="Totem of Undying"} ?hasitem{i=TOTEM_OF_UNDYING;amount=>0}
+  - takeitem{i=TOTEM_OF_UNDYING;a=1} @self ?hasitem{i=TOTEM_OF_UNDYING;amount=>0}
+
+NPC_MERCHANT_FORBIDDEN_BUY_2:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=800}
+  - skill{s=NPC_MERCHANT_PERMISSION_BUY;price=800;permission=mcpet.Pet_Demon;itemname="Demon Pet"} ?hascurrency{a=800}
+
+
+
+# MERCHANT - WANDERING
+
+NPC_MERCHANT_WANDERING_MEG_SFX_1:
+  Skills:
+  - sound{sound=entity.witch.throw;volume=0.5;pitch=1} @self
+NPC_MERCHANT_WANDERING_MEG_SFX_2:
+  Skills:
+  - sound{sound=entity.goat.step;volume=0.35;pitch=1} @self
+NPC_MERCHANT_WANDERING_MEG_SFX_3:
+  Skills:
+  - sound{sound=item.armor.equip_iron;volume=0.7;pitch=0.7} @self
+  - sound{sound=entity.villager.trade;volume=0.7;pitch=0.75} @self
+
+NPC_MERCHANT_WANDERING_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - state{s=interact;lo=10;speed=1} @self
+NPC_MERCHANT_WANDERING_INTERACT_MENU:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - sudoskill{s=NPC_MERCHANT_WANDERING_INTERACT_COMMAND;cat=true} @trigger
+NPC_MERCHANT_WANDERING_INTERACT_COMMAND:
+  Skills:
+  - command{c='dm open merchant_WANDERING';asCaster=true;asTarget=false;asOp=true}
+
+# MERCHANT - WANDERING (ITEMS)
+
+NPC_MERCHANT_WANDERING_BUY_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=50}
+  - skill{s=NPC_MERCHANT_BUY;price=50;item=IRON_HORSE_ARMOR;itemname="Iron Horse Armor"} ?hascurrency{a=50}
+NPC_MERCHANT_WANDERING_SELL_1:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hasitem{i=IRON_HORSE_ARMOR;amount=>0}
+  - skill{s=NPC_MERCHANT_SELL;sellprice=25;itemname="Iron Horse Armor"} ?hasitem{i=IRON_HORSE_ARMOR;amount=>0}
+  - takeitem{i=IRON_HORSE_ARMOR;a=1} @self ?hasitem{i=IRON_HORSE_ARMOR;amount=>0}
+
+NPC_MERCHANT_WANDERING_BUY_2:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hascurrency{a=70}
+  - skill{s=NPC_MERCHANT_BUY;price=70;item=ENDER_EYE;itemname="Eye of Ender"} ?hascurrency{a=70}
+NPC_MERCHANT_WANDERING_SELL_2:
+  Skills:
+  - skill{s=NPC_MERCHANT_ITEMX} ?!hasitem{i=ENDER_EYE;amount=>0}
+  - skill{s=NPC_MERCHANT_SELL;sellprice=35;itemname="Eye of Ender"} ?hasitem{i=ENDER_EYE;amount=>0}
+  - takeitem{i=ENDER_EYE;a=1} @self ?hasitem{i=ENDER_EYE;amount=>0}
+
+
+
+# HEALING FAIRY
+
+NPC_HEALING_FAIRY_INTERACT:
+  Cooldown: 2
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - state{s=interact;lo=10;speed=1} @self
+  - effect:sound{s=entity.allay.ambient_without_item;volume=0.8;pitch=1.3} @self
+  - delay 20
+  #heal
+  - heal{a=99999} @trigger
+  - particles{p=totem;amount=30;hS=0.2;vS=0.75;y=0.7;size=1;speed=0} @trigger
+  - effect:sound{s=block.trial_spawner.spawn_item_begin;volume=1;pitch=1.2} @trigger
+
+
+# BANKER
+
+NPC_BANKER_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - state{s=interact;lo=10;speed=1} @self
+  - delay 11
+  #flip
+  - sound{sound=block.amethyst_cluster.place;volume=0.8;pitch=<random.float.1.6to1.7>} @self
+  - delay 16
+  #catch
+  - sound{sound=block.amethyst_cluster.place;volume=0.8;pitch=<random.float.1.2to1.3>} @self
+NPC_BANKER_INTERACT_MENU:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - sudoskill{s=NPC_BANKER_INTERACT_COMMAND;cat=true} @trigger
+NPC_BANKER_INTERACT_COMMAND:
+  Skills:
+  - command{c='dm open bank';asCaster=true;asTarget=false;asOp=true}
+
+
+
+NPC_BANKER_COIN_TO_STACKED_COIN:
+  Skills:
+  - skill{s=NPC_BANKER_COIN_TO_STACKED_COIN_SKILL_INVX}
+NPC_BANKER_COIN_TO_STACKED_COIN_SKILL_INVX:
+  Conditions:
+  - hasinventoryspace castinstead NPC_BANKER_COIN_TO_STACKED_COIN_SKILL_ALLO
+  Skills:
+  - message{m="&4You don't have enough space in your inventory!"} @self
+  - sound{sound=entity.item.break;volume=0.8;pitch=0.9} @self
+NPC_BANKER_COIN_TO_STACKED_COIN_SKILL_ALLO:
+  Skills:
+  - sound{sound=entity.experience_orb.pickup;volume=0.8;pitch=1.4} @self
+  - sound{sound=item.armor.equip_netherite;volume=1;pitch=1.5} @self
+  - command{c="mi take MISCELLANEOUS COIN %player_name% 64"} @self
+  - delay 1
+  - command{c="mi give MISCELLANEOUS STACKED_COIN %player_name% 1 0 100 0 silent"} @self
+  - message{m="&fSuccessfully converted &c64x Coin &fto &a1x Stacked Coin!"} @self
+
+
+
+NPC_BANKER_COIN_BUNDLE_TO_STACKED_COIN:
+  Skills:
+  - skill{s=NPC_BANKER_COIN_BUNDLE_TO_STACKED_COIN_SKILL_INVX}
+NPC_BANKER_COIN_BUNDLE_TO_STACKED_COIN_SKILL_INVX:
+  Conditions:
+  - hasinventoryspace castinstead NPC_BANKER_COIN_BUNDLE_TO_STACKED_COIN_SKILL_ALLO
+  Skills:
+  - message{m="&4You don't have enough space in your inventory!"} @self
+  - sound{sound=entity.item.break;volume=0.8;pitch=0.9} @self
+NPC_BANKER_COIN_BUNDLE_TO_STACKED_COIN_SKILL_ALLO:
+  Skills:
+  - sound{sound=entity.experience_orb.pickup;volume=0.8;pitch=1.4} @self
+  - sound{sound=item.armor.equip_netherite;volume=1;pitch=1.5} @self
+  - command{c="mi take MISCELLANEOUS COIN_BUNDLE %player_name% 1"} @self
+  - delay 1
+  - command{c="mi give MISCELLANEOUS STACKED_COIN %player_name% 64 0 100 0 silent"} @self
+  - message{m="&fSuccessfully converted &c1x Coin Bundle &fto &a64x Stacked Coin!"} @self
+
+
+
+NPC_BANKER_STACKED_COIN_TO_COIN:
+  Skills:
+  - skill{s=NPC_BANKER_STACKED_COIN_TO_COIN_SKILL_INVX}
+NPC_BANKER_STACKED_COIN_TO_COIN_SKILL_INVX:
+  Conditions:
+  - hasinventoryspace castinstead NPC_BANKER_STACKED_COIN_TO_COIN_SKILL_ALLO
+  Skills:
+  - message{m="&4You don't have enough space in your inventory!"} @self
+  - sound{sound=entity.item.break;volume=0.8;pitch=0.9} @self
+NPC_BANKER_STACKED_COIN_TO_COIN_SKILL_ALLO:
+  Skills:
+  - sound{sound=entity.experience_orb.pickup;volume=0.8;pitch=1.4} @self
+  - sound{sound=item.armor.equip_netherite;volume=1;pitch=1.5} @self
+  - command{c="mi take MISCELLANEOUS STACKED_COIN %player_name% 1"} @self
+  - delay 1
+  - command{c="mi give MISCELLANEOUS COIN %player_name% 64 0 100 0 silent"} @self
+  - message{m="&fSuccessfully converted &c1x Stacked Coin &fto &a64x Coin!"} @self
+
+
+NPC_BANKER_STACKED_COIN_TO_COIN_BUNDLE:
+  Skills:
+  - skill{s=NPC_BANKER_STACKED_COIN_TO_COIN_BUNDLE_SKILL_INVX}
+NPC_BANKER_STACKED_COIN_TO_COIN_BUNDLE_SKILL_INVX:
+  Conditions:
+  - hasinventoryspace castinstead NPC_BANKER_STACKED_COIN_TO_COIN_BUNDLE_SKILL_ALLO
+  Skills:
+  - message{m="&4You don't have enough space in your inventory!"} @self
+  - sound{sound=entity.item.break;volume=0.8;pitch=0.9} @self
+NPC_BANKER_STACKED_COIN_TO_COIN_BUNDLE_SKILL_ALLO:
+  Skills:
+  - sound{sound=entity.experience_orb.pickup;volume=0.8;pitch=1.4} @self
+  - sound{sound=item.armor.equip_netherite;volume=1;pitch=1.5} @self
+  - command{c="mi take MISCELLANEOUS STACKED_COIN %player_name% 64"} @self
+  - delay 1
+  - command{c="mi give MISCELLANEOUS COIN_BUNDLE %player_name% 1 0 100 0 silent"} @self
+  - message{m="&fSuccessfully converted &c64x Stacked Coin &fto &a1x Coin Bundle!"} @self
+
+
+NPC_BANKER_WITHDRAW_COIN:
+  Skills:
+  - skill{s=NPC_BANKER_WITHDRAW_COIN_SKILL_INVX}
+NPC_BANKER_WITHDRAW_COIN_SKILL_INVX:
+  Conditions:
+  - hasinventoryspace castinstead NPC_BANKER_WITHDRAW_COIN_SKILL_ITEMX
+  Skills:
+  - message{m="&4You don't have enough space in your inventory!"} @self
+  - sound{sound=entity.item.break;volume=0.8;pitch=0.9} @self
+NPC_BANKER_WITHDRAW_COIN_SKILL_ITEMX:
+  Conditions:
+  - hascurrency{a=1} castinstead NPC_BANKER_WITHDRAW_COIN_SKILL_ALLO
+  Skills:
+  - message{m="&4Requirements not met!"} @self
+  - sound{sound=entity.item.break;volume=0.8;pitch=0.9} @self
+NPC_BANKER_WITHDRAW_COIN_SKILL_ALLO:
+  Skills:
+  - sound{sound=entity.experience_orb.pickup;volume=0.8;pitch=1.4} @self
+  - sound{sound=item.armor.equip_netherite;volume=1;pitch=1.5} @self
+  - command{c="mi give MISCELLANEOUS COIN %player_name% 1 0 100 0 silent"} @self
+  - currencytake{amount=1} @self
+  - message{m="&fSuccessfully withdrawn &a$1!"} @self
+
+NPC_BANKER_WITHDRAW_STACKED_COIN:
+  Skills:
+  - skill{s=NPC_BANKER_WITHDRAW_STACKED_COIN_SKILL_INVX}
+NPC_BANKER_WITHDRAW_STACKED_COIN_SKILL_INVX:
+  Conditions:
+  - hasinventoryspace castinstead NPC_BANKER_WITHDRAW_STACKED_COIN_SKILL_ITEMX
+  Skills:
+  - message{m="&4You don't have enough space in your inventory!"} @self
+  - sound{sound=entity.item.break;volume=0.8;pitch=0.9} @self
+NPC_BANKER_WITHDRAW_STACKED_COIN_SKILL_ITEMX:
+  Conditions:
+  - hascurrency{a=64} castinstead NPC_BANKER_WITHDRAW_STACKED_COIN_SKILL_ALLO
+  Skills:
+  - message{m="&4Requirements not met!"} @self
+  - sound{sound=entity.item.break;volume=0.8;pitch=0.9} @self
+NPC_BANKER_WITHDRAW_STACKED_COIN_SKILL_ALLO:
+  Skills:
+  - sound{sound=entity.experience_orb.pickup;volume=0.8;pitch=1.4} @self
+  - sound{sound=item.armor.equip_netherite;volume=1;pitch=1.5} @self
+  - command{c="mi give MISCELLANEOUS STACKED_COIN %player_name% 1 0 100 0 silent"} @self
+  - currencytake{amount=64} @self
+  - message{m="&fSuccessfully withdrawn &a$64!"} @self
+
+NPC_BANKER_WITHDRAW_COIN_BUNDLE:
+  Skills:
+  - skill{s=NPC_BANKER_WITHDRAW_COIN_BUNDLE_SKILL_INVX}
+NPC_BANKER_WITHDRAW_COIN_BUNDLE_SKILL_INVX:
+  Conditions:
+  - hasinventoryspace castinstead NPC_BANKER_WITHDRAW_COIN_BUNDLE_SKILL_ITEMX
+  Skills:
+  - message{m="&4You don't have enough space in your inventory!"} @self
+  - sound{sound=entity.item.break;volume=0.8;pitch=0.9} @self
+NPC_BANKER_WITHDRAW_COIN_BUNDLE_SKILL_ITEMX:
+  Conditions:
+  - hascurrency{a=4096} castinstead NPC_BANKER_WITHDRAW_COIN_BUNDLE_SKILL_ALLO
+  Skills:
+  - message{m="&4Requirements not met!"} @self
+  - sound{sound=entity.item.break;volume=0.8;pitch=0.9} @self
+NPC_BANKER_WITHDRAW_COIN_BUNDLE_SKILL_ALLO:
+  Skills:
+  - sound{sound=entity.experience_orb.pickup;volume=0.8;pitch=1.4} @self
+  - sound{sound=item.armor.equip_netherite;volume=1;pitch=1.5} @self
+  - command{c="mi give MISCELLANEOUS COIN_BUNDLE %player_name% 1 0 100 0 silent"} @self
+  - currencytake{amount=4096} @self
+  - message{m="&fSuccessfully withdrawn &a$4096!"} @self
+
+  
+
+
+
+# VILLAGERS
+
+NPC_VILLAGER_M_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - state{s=interact;lo=10;speed=1} @self
+  - delay 10
+  - sound{sound=entity.witch.throw;volume=0.8;pitch=<random.float.0.9to1.1>} @self
+  - delay 2
+  - sound{sound=entity.villager.ambient;volume=0.8;pitch=<random.float.0.7to0.8>} @self
+NPC_VILLAGER_F_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - state{s=interact;lo=10;speed=1} @self
+  - delay 10
+  - sound{sound=entity.witch.throw;volume=0.8;pitch=<random.float.0.9to1.1>} @self
+  - delay 2
+  - sound{sound=entity.villager.ambient;volume=0.8;pitch=<random.float.1.3to1.4>} @self
+
+NPC_VIEW_CHECK:
+  Skills:
+  - projectile{fo=true;origin=@modelpart{p=p1;z=-1;y=-1};onHit=NPC_VILLAGER_M_SITTING_CHECK_HIT;v=8;i=1;hR=1;vR=1;mr=7;hnp=false;hO=-22.5;sE=true;sB=false;hs=false;hfs=0;sfo=0;syo=1.5;tyo=1.5;drawhitbox=false} @modelpart{p=p1;z=-5;y=-1}
+  - projectile{fo=true;origin=@modelpart{p=p1;z=-1;y=-1};onHit=NPC_VILLAGER_M_SITTING_CHECK_HIT;v=8;i=1;hR=1;vR=1;mr=7;hnp=false;hO=22.5;sE=true;sB=false;hs=false;hfs=0;sfo=0;syo=1.5;tyo=1.5;drawhitbox=false} @modelpart{p=p1;z=-5;y=-1}
+  - projectile{fo=true;origin=@modelpart{p=p1;z=-1;y=-1};onHit=NPC_VILLAGER_M_SITTING_CHECK_HIT;v=8;i=1;hR=1;vR=1;mr=7;hnp=false;hO=-45;sE=true;sB=false;hs=false;hfs=0;sfo=0;syo=1.5;tyo=1.5;drawhitbox=false} @modelpart{p=p1;z=-5;y=-1}
+  - projectile{fo=true;origin=@modelpart{p=p1;z=-1;y=-1};onHit=NPC_VILLAGER_M_SITTING_CHECK_HIT;v=8;i=1;hR=1;vR=1;mr=7;hnp=false;hO=45;sE=true;sB=false;hs=false;hfs=0;sfo=0;syo=1.5;tyo=1.5;drawhitbox=false} @modelpart{p=p1;z=-5;y=-1}
+  - projectile{fo=true;origin=@modelpart{p=p1;z=-1;y=-1};onHit=NPC_VILLAGER_M_SITTING_CHECK_HIT;v=8;i=1;hR=1;vR=1;mr=7;hnp=false;hO=0;sE=true;sB=false;hs=false;hfs=0;sfo=0;syo=1.5;tyo=1.5;drawhitbox=false} @modelpart{p=p1;z=-5;y=-1}
+NPC_VILLAGER_M_SITTING_CHECK_HIT:
+  Skills:
+  - look @PlayersNearOrigin{r=3;sort=NEAREST;limit=1}
+NPC_VILLAGER_M_SITTING_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - state{s=interact;lo=7;speed=1} @self
+  - delay 2
+  - sound{sound=entity.villager.ambient;volume=0.8;pitch=<random.float.0.7to0.8>} @self
+  - delay 1
+  - sound{sound=entity.witch.throw;volume=0.8;pitch=<random.float.0.9to1.1>} @self
+NPC_VILLAGER_F_SITTING_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - state{s=interact;lo=7;speed=1} @self
+  - delay 2
+  - sound{sound=entity.villager.ambient;volume=0.8;pitch=<random.float.1.3to1.4>} @self
+  - delay 1
+  - sound{sound=entity.witch.throw;volume=0.8;pitch=<random.float.0.9to1.1>} @self
+
+NPC_MAYOR_IDLE:
+  Cooldown: 12
+  Conditions:
+  - offgcd
+  Skills:
+  - state{s=squint;li=7;lo=7;speed=1} @self
+  - delay 7
+  - delay 17
+  - sound{sound=item.book.page_turn;volume=0.6;pitch=<random.float.0.9to1.1>} @self
+  - delay 55
+  - sound{sound=item.book.page_turn;volume=0.6;pitch=<random.float.0.9to1.1>} @self
+NPC_MAYOR_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - gcd{t=30}
+  - state{s=interact;lo=10;speed=1} @self
+  - delay 6
+  - sound{sound=entity.evoker.ambient;volume=0.8;pitch=<random.float.0.7to0.8>} @self
+
+NPC_GUARD_IDLE:
+  Cooldown: 12
+  Conditions:
+  - offgcd
+  Skills:
+  - state{s=look_around;li=7;lo=7;speed=1} @self
+  - delay 7
+  - delay 5
+  - sound{sound=entity.witch.throw;volume=0.8;pitch=<random.float.0.9to1.1>} @self
+  - delay 22
+  - sound{sound=entity.witch.throw;volume=0.8;pitch=<random.float.0.9to1.1>} @self
+NPC_GUARD_INTERACT:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - gcd{t=30}
+  - state{s=interact;lo=10;speed=1} @self
+  - delay 12
+  - sound{sound=block.bone_block.hit;volume=0.8;pitch=<random.float.0.9to1.1>} @self
+  - delay 8
+  - sound{sound=entity.witch.throw;volume=0.8;pitch=<random.float.0.9to1.1>} @self
+  - delay 2
+  - sound{sound=entity.pillager.ambient;volume=0.8;pitch=<random.float.0.7to0.8>} @self
+
+
+NPC_GUARD_PATROL:
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  - distanceFromLocation{x=1646;y=67;z=-776;distance=<2} cast NPC_GUARD_PATROL1
+  - distanceFromLocation{x=1646;y=67;z=-758;distance=<2} cast NPC_GUARD_PATROL2
+  Skills:
+  - goto{speedModifier=1;sh=0;sv=0} @location{c=1646,67,-776} ?stance{s=2}
+  - goto{speedModifier=1;sh=0;sv=0} @location{c=1646,67,-758} ?stance{s=1}
+NPC_GUARD_PATROL1:
+  Skills:
+  - setstance{stance=1} @self
+NPC_GUARD_PATROL2:
+  Skills:
+  - setstance{stance=2} @self
+
+
+NPC_QUEST_MASTER_IDLE:
+  Cooldown: 12
+  Conditions:
+  - offgcd
+  Skills:
+  - state{s=twitch;li=7;lo=7;speed=1} @self
+  - delay 7
+  - delay 4
+  - sound{sound=entity.witch.throw;volume=0.8;pitch=<random.float.1.1to1.2>} @self
+  - delay 12
+  - sound{sound=entity.witch.throw;volume=0.8;pitch=<random.float.1.1to1.2>} @self
+  - delay 18
+  - sound{sound=entity.parrot.ambient;volume=0.8;pitch=<random.float.1to1.2>;repeat=1;repeati=3} @self
+NPC_QUEST_MASTER_INTERACT:
+  Cooldown: 3
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  TriggerConditions:
+  - crouching false
+  Skills:
+  - gcd{t=30}
+  - state{s=interact;lo=10;speed=1} @self
+  - delay 3
+  - sound{sound=entity.parrot.ambient;volume=0.8;pitch=<random.float.1to1.2>} @self
+  - sound{sound=entity.phantom.flap;volume=0.8;pitch=<random.float.1.7to1.9>} @self
+  - delay 3
+  - sound{sound=entity.phantom.flap;volume=0.8;pitch=<random.float.1.7to1.9>} @self
+  - delay 4
+  - sound{sound=entity.phantom.flap;volume=0.8;pitch=<random.float.1.7to1.9>} @self
+#24f35df792b6ddcf3baf6e41e84f2dde

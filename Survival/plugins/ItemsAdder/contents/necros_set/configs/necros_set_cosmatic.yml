@@ -1,0 +1,45 @@
+info:
+  namespace: necros_set
+items:
+  necros_cosmetics_helmet:
+    display_name: Necros Helmet Cosmetics
+    permission: necros_set.necros_cosmetics_helmet
+    resource:
+      generate: false
+      model_path: helmet
+      material: POTION
+      model_id: 9924749
+  necros_cosmetics_wings:
+    display_name: Necros Wings Cosmetics
+    permission: necros_set.necros_cosmetics_wings
+    resource:
+      generate: false
+      model_path: wings_cosmetic
+      material: POTION
+      model_id: 9924750
+  necros_cosmetics_wings_self:
+    display_name: Necros Wings Cosmetics Self
+    permission: necros_set.necros_cosmetics_wings_self
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self
+      material: POTION
+      model_id: 9924751
+  necros_cosmetics_wings_self_2:
+    display_name: Necros Wings Cosmetics Self 2
+    permission: necros_set.necros_cosmetics_wings_self_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self_2
+      material: POTION
+      model_id: 9924752
+  necros_cosmetics_wings_normal_2:
+    display_name: Necros Wings Cosmetics Normal 2
+    permission: necros_set.necros_cosmetics_wings_normal_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_normal_2
+      material: POTION
+      model_id: 9924753
+
+#30d4610397b833f341e6d8c0581961d8

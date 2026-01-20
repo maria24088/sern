@@ -1,0 +1,161 @@
+info:
+  namespace: fiendskullset
+items:
+  fiendskull_axe:
+    display_name: Fiend Skull Axe
+    permission: fiendskull.axe
+    resource:
+      generate: false
+      material: IRON_AXE
+      model_path: axe
+  fiendskull_bow:
+    display_name: Fiend Skull Bow
+    permission: fiendskull.bow
+    resource:
+      generate: false
+      material: BOW
+      model_path: bow
+  fiendskull_chest:
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+    display_name: Fiend Skull Chest
+    permission: fiendskull.chest
+    resource:
+      generate: false
+      material: SEA_LANTERN
+      model_path: chest
+
+  fiendskull_crossbow:
+    display_name: Fiend Skull Crossbow
+    permission: fiendskull.crossbow
+    resource:
+      generate: false
+      material: CROSSBOW
+      model_path: crossbow
+  fiendskull_fishing_rod:
+    display_name: Fiend Skull Fishing Rod
+    permission: fiendskull.fishing_rod
+    resource:
+      generate: false
+      material: FISHING_ROD
+      model_path: fishing_rod
+  fiendskull_knife:
+    display_name: Fiend Skull Knife
+    permission: fiendskull.knife
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: knife
+  fiendskull_hammer:
+    display_name: Fiend Skull Hammer
+    permission: fiendskull.hammer
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: hammer
+  fiendskull_hoe:
+    display_name: Fiend Skull Hoe
+    permission: fiendskull.hoe
+    resource:
+      generate: false
+      material: IRON_HOE
+      model_path: hoe
+  fiendskull_key:
+    display_name: Fiend Skull Key
+    permission: fiendskull.key
+    resource:
+      generate: false
+      material: PAPER
+      model_path: key
+  fiendskull_pickaxe:
+    display_name: Fiend Skull Pickaxe
+    permission: fiendskull.pickaxe
+    resource:
+      generate: false
+      material: IRON_PICKAXE
+      model_path: pickaxe
+  fiendskull_scythe:
+    display_name: Fiend Skull Scythe
+    permission: fiendskull.scythe
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: scythe
+  fiendskull_shield:
+    display_name: Fiend Skull Shield
+    permission: fiendskull.shield
+    resource:
+      generate: false
+      material: SHIELD
+      model_path: shield
+  fiendskull_shovel:
+    display_name: Fiend Skull Shovel
+    permission: fiendskull.shovel
+    resource:
+      generate: false
+      material: IRON_SHOVEL
+      model_path: shovel
+  fiendskull_spear:
+    display_name: Fiend Skull Spear
+    permission: fiendskull.spear
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: spear
+  fiendskull_staff:
+    display_name: Fiend Skull Staff
+    permission: fiendskull.staff
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: staff
+  fiendskull_sword:
+    display_name: Fiend Skull Sword
+    permission: fiendskull.sword
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: sword
+  fiendskull_trident:
+    display_name: Fiend Skull Trident
+    permission: fiendskull.trident
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: trident
+  fiendskull_backpack:
+    display_name: Fiend Skull Backpack
+    permission: fiendskull.backpack
+    resource:
+      generate: false
+      material: PAPER
+      model_path: backpack
+  fiendskull_cape:
+    display_name: Fiend Skull Cape
+    permission: fiendskull.cape
+    resource:
+      generate: false
+      material: PAPER
+      model_path: cape
+  fiendskull_head:
+    behaviours:
+      hat: true
+    display_name: Fiend Skull Head
+    permission: fiendskull.head
+    resource:
+      generate: false
+      material: PAPER
+      model_path: helmet

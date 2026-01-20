@@ -1,0 +1,30 @@
+# Made by samus2002
+
+menu_title: '&8&lAdmin Tool'
+open_command:
+  - admin
+size: 27
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: "*"
+      deny_commands:
+        - "[message] &cYou can't access the Admin Tool!"
+items:
+  'CORE':
+    material: NETHER_STAR
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lRPG Essentials | Core'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to open the &aCore Menu&7!"
+      - ""
+    left_click_commands:
+      - '[openguimenu] admin_core'
+      - '[sound] BLOCK_NOTE_BLOCK_XYLOPHONE'
+#24f35df792b6ddcf3baf6e41e84f2dde

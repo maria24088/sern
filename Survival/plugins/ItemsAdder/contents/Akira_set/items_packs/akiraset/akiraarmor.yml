@@ -1,0 +1,42 @@
+info:
+  namespace: akiraset
+armors_rendering:
+  akiraarmor:
+    color: '#c94024'
+    layer_1: armor/akira_chestplate
+    layer_2: armor/akira_leggings
+    use_color: false
+items:
+  akirachestplate:
+    display_name: Akira Chestplate
+    permission: simple
+    resource:
+      generate: true
+      textures:
+      - armor/akira_chestplate_icon.png
+    specific_properties:
+      armor:
+        slot: chest
+        custom_armor: akiraarmor
+  akiraleggings:
+    display_name: Akira Leggings
+    permission: simple
+    resource:
+      generate: true
+      textures:
+      - armor/akira_leggings_icon.png
+    specific_properties:
+      armor:
+        slot: legs
+        custom_armor: akiraarmor
+  akiraboots:
+    display_name: Akira Boots
+    permission: simple
+    resource:
+      generate: true
+      textures:
+      - armor/akira_boots_icon.png
+    specific_properties:
+      armor:
+        slot: feet
+        custom_armor: akiraarmor

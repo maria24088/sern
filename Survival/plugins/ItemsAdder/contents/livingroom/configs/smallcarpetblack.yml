@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  smallcarpetblack:
+    display_name: "Small Carpet Black"
+    permission: livingroom.smallcarpetblack
+    resource:
+      material: PAPER
+      generate: false
+      model_path: smallcarpetblack
+    behaviours:
+      furniture:
+        light_level: 13

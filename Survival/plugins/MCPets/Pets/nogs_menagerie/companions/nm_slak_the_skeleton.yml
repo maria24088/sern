@@ -1,0 +1,11 @@
+Id: nm_slak_the_skeleton
+MythicMob: nm_slak_the_skeleton
+Permission: pet.slak_the_skeleton
+Mountable: false
+Distance: 6
+SpawnRange: 1
+ComingBackRange: 4
+Icon:
+  Name: §7Slak the Skeleton
+  Material: PAPER
+  CustomModelData: 435023

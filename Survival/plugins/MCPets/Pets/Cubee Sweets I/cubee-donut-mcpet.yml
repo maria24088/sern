@@ -1,0 +1,14 @@
+Id: cubee-donut
+MythicMob: cubee-donut
+Permission: mcpet.cubee-donut
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §e Donut Cubee
+  Description:
+  - §7"Even though I look like I'm hiding, I just want to say that I'm incredibly
+    delicious!" §8§o- Donut Cubee
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191318

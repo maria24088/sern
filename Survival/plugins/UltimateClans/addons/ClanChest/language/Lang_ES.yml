@@ -1,0 +1,85 @@
+COMUM:
+  player donthave clan: '%tag% <red>Este jugador no tiene un clan.'
+  gui error: '%tag% <red>Este menú contiene un error y no se puede abrir.'
+  disabled function: '%tag% <red>Esta función está desactivada o deshabilitada.'
+  chan does not exists: '%tag% <red>Este clan no existe.'
+  chest in use: '%tag% <red>El cofre del clan ya está siendo utilizado por otro jugador, para evitar duplicaciones solo un jugador puede usar el cofre a la vez.'
+  chest name: <green>Cofre de %uclans_tag_color% dark_gray>[%page%/%pages%]
+  chest limit: <red>¡Este es el límite para tu clan!
+  chest limit reached: '%tag% <red>El límite para tu clan es de %pages% cofres.'
+  no permission: '%tag% <red>No tienes permisos para esto.'
+  no data to export: '%tag% <red>No hay datos para exportar.'
+  warn reexport: ' <red>- Ten cuidado, si reexportas, la base de datos se sobrescribirá y los cofres existentes cambiarán. Si esto funcionó correctamente, se recomienda eliminar el archivo de almacenamiento de cofres antiguos.'
+  help clan header subcommand: '<newline><white><bold>Ayuda con los subcomandos:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatorio <gray>| <light_purple>() <gray>opcional <newline> '
+  help list empty: ' <red>- No hay nada en esta lista.'
+  clan dont permission role: '%tag% <red>No puedes hacer esto con tu rol actual.'
+  need money hook: '%tag% <red>No hay métodos de dinero habilitados.'
+  no permission buy extra: '%tag% <red>No puedes comprar más páginas para el cofre.'
+  header help: '<green><bold>Admin chest Commands:'
+  closed by admin: '%tag% <red>The chest was opened by an administrator and needed to be closed!'
+  chest extra error: <red>¡Error al comprar!
+  chest extra needmoney gui: <red>No tienes suficiente dinero para comprar.
+  chest extra needmoney: <red>Necesitas más dinero para comprar
+  chest extra buyed: <aqua>¡Comprado exitosamente!
+  chest items count: '%tag% <red>¡Los objetos solo se pueden ver en el menú del cofre!'
+  chest unlocked false: <red>¡Error al desbloquear!
+  chest unlocked true: <green>¡Desbloqueado exitosamente!
+  chest locked false: <red>¡Error al bloquear!
+  chest locked true: <aqua>¡Bloqueado exitosamente!
+  chest error save drop: '%tag% <red>Se produjo un error al guardar uno o más objetos en el cofre. ¡El objeto se ha soltado en el suelo!'
+  player dont have money: '%tag% <red>Necesitas <green>$%amount% <red>para esto.'
+  player dont have money gui: <red>Necesitas <green>$%amount%
+  player debited money: '%tag% <yellow>Se debitaron <green>%amount% <yellow>de tu cuenta.'
+  player deposited money: '%tag% <green>$%amount% <yellow>se ha depositado en tu cuenta.'
+  disabled world chest: '%tag% <red>No puedes usar cofres en este mundo.'
+  disabled region chest: '%tag% <red>No puedes usar cofres en esta región.'
+  command by player: '%tag% <red>Este comando debe ser utilizado por un jugador.'
+  logger clanchestupgradeevent: <green>%uclans_player% <yellow>compró cofres adicionales, ahora tiene <aqua>%amount% cofre(s)
+LANGUAGE:
+  clan chest in limit: '%tag% <red>Tu clan ha alcanzado el límite de cofres y necesita ganar niveles para desbloquear más páginas de cofres. Tu límite actual de clan es <aqua>%uclans_limit_chest%'
+ 
+ 
+# CHEST GUI
+ 
+ 
+GUI:
+  chest load_chest title: <dark_gray>Cargando items...
+  chest load_chest items fill name: ' '
+  chest load_chest items fill lore: [
+    ]
+  chest load_chest items fill2 name: <red>Cargando...
+  chest load_chest items fill2 lore: [
+    ]
+  chest buy_chest title: <dark_gray>¿Confirmar?
+  chest buy_chest items fill name: ' '
+  chest buy_chest items fill lore: [
+    ]
+  chest buy_chest items confirm name: <green>Confirmar
+  chest buy_chest items confirm lore:
+  - <yellow>► ¡Haga click para ir a confirmar!
+  chest buy_chest items cancel name: <red>Cancelar
+  chest buy_chest items cancel lore:
+  - <yellow>► ¡Haga click para ir a cancelar!
+  chest chest title: <dark_gray>☀ Cofre Compartido
+  chest chest items fill name: ' '
+  chest chest items fill lore: [
+    ]
+  chest chest items back name: <red>Regresar
+  chest chest items back lore: [
+    ]
+  chest chest items sort name: <green>Organizar.
+  chest chest items sort lore:
+  - <yellow>► ¡Haga click para organizar!
+  chest chest items previous name: <green>Página Anterior
+  chest chest items previous lore:
+  - <yellow>► ¡Haga click para ir a la pagina anterior!
+  chest chest items next name: <green>Página Siguiente
+  chest chest items next lore:
+  - <yellow>► ¡Haga click para ir a la siguiente pagina!
+  chest chest items buy name: <green>Compra cofres
+  chest chest items buy lore:
+  - ' '
+  - ' <dark_gray>• <white>Precio: <green>$%price%'
+  - ' <dark_gray>• <white>Limite: <aqua>%clan_extra%<gray>/<aqua>%clan_limit%'
+  - ' '
+  - <yellow>► ¡Haga click para comprar!

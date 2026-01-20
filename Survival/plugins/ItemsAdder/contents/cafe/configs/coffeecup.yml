@@ -1,0 +1,13 @@
+info:
+  namespace: cafe
+items:
+  coffeecup:
+    display_name: "Coffee Cup"
+    permission: cafe.coffeecup
+    resource:
+      material: PAPER
+      generate: false
+      model_path: coffeecup
+    behaviours:
+      furniture:
+        light_level: 13

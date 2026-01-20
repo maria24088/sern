@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  radiowooden:
+    display_name: "Radio Wooden"
+    permission: livingroom.radiowooden
+    resource:
+      material: PAPER
+      generate: false
+      model_path: radiowooden
+    behaviours:
+      furniture:
+        light_level: 13

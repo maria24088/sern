@@ -1,0 +1,25 @@
+location: SpawnRPG:282.513:100.143:565.179
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: EMERALD'
+    height: 0.6
+  - content: '&#FFD700&l★ &#FBBC05&lC&#F7A109&lA&#F3870E&lS&#F06C12&lI&#EC5117&lN&#E8371B&lO
+      &#FFD700&l★'
+    height: 0.4
+  - content: '&f¡Prueba tu suerte y gana increíbles premios!'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&7Intercambia tus &eFichas &7aquí'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&#a5ff9a&l[ CLICK DERECHO PARA VENDER ]'
+    height: 0.4
+  actions: {}

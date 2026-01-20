@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  singlecouchpink:
+    display_name: "Single Couch Pink"
+    permission: livingroom.singlecouchpink
+    resource:
+      material: PAPER
+      generate: false
+      model_path: singlecouchpink
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.1

@@ -1,0 +1,73 @@
+# ========================================================
+# CONFIGURACIÓN DE RECOMPENSAS TOTALES
+# Este archivo de configuración define las recompensas para los jugadores
+# basándose en el número total de misiones que han completado.
+# Incluye tanto recompensas por el total global como recompensas
+# por totales específicos de cada categoría.
+# ========================================================
+enabled: false # Pon esto en 'true' para activar las recompensas totales
+
+# ========================================================
+# RECOMPENSAS POR TOTAL GLOBAL DE MISIONES
+# Recompensas otorgadas cuando un jugador completa un número total
+# de misiones, sin importar la categoría.
+# ========================================================
+global_total_rewards:
+  50:
+    reward_type: COMMAND
+    message: "&a¡Felicidades %player%! ¡Has completado 50 misiones y has ganado una recompensa!"
+    commands:
+      - "eco give %player% 1000"
+  100:
+    reward_type: COMMAND
+    message: "&a¡Felicidades %player%! ¡Has completado 100 misiones y has ganado una recompensa!"
+    commands:
+      - "eco give %player% 2500"
+  200:
+    reward_type: COMMAND
+    message: "&a¡Felicidades %player%! ¡Has completado 200 misiones y has ganado una recompensa!"
+    commands:
+      - "eco give %player% 5000"
+
+# ========================================================
+# RECOMPENSAS POR TOTAL DE MISIONES DE CATEGORÍA
+# Recompensas otorgadas cuando un jugador completa un número total
+# de misiones dentro de una categoría específica.
+# ========================================================
+category_total_rewards:
+
+  easy:
+    10:
+      reward_type: COMMAND
+      message: "&a¡Felicidades %player%! ¡Has completado 10 misiones en la categoría fácil y has ganado una recompensa!"
+      commands:
+        - "eco give %player% 500"
+    50:
+      reward_type: COMMAND
+      message: "&a¡Felicidades %player%! ¡Has completado 50 misiones en la categoría fácil y has ganado una recompensa!"
+      commands:
+        - "eco give %player% 1000"
+
+  medium:
+    10:
+      reward_type: COMMAND
+      message: "&a¡Felicidades %player%! ¡Has completado 10 misiones en la categoría media y has ganado una recompensa!"
+      commands:
+        - "eco give %player% 1000"
+    50:
+      reward_type: COMMAND
+      message: "&a¡Felicidades %player%! ¡Has completado 50 misiones en la categoría media y has ganado una recompensa!"
+      commands:
+        - "eco give %player% 2000"
+
+  hard:
+    10:
+      reward_type: COMMAND
+      message: "&a¡Felicidades %player%! ¡Has completado 10 misiones en la categoría difícil y has ganado una recompensa!"
+      commands:
+        - "eco give %player% 2000"
+    50:
+      reward_type: COMMAND
+      message: "&a¡Felicidades %player%! ¡Has completado 50 misiones en la categoría difícil y has ganado una recompensa!"
+      commands:
+        - "eco give %player% 4000"

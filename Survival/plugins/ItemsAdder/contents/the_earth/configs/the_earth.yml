@@ -1,0 +1,286 @@
+info:
+  namespace: the_earth
+items:
+  the_earth_axe:
+    display_name: The_earth Axe
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: axe
+      model_id: 23008
+  the_earth_bow:
+    display_name: The_earth Bow
+    permission: pack.the_earth
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+      model_id: 23544
+  the_earth_chest:
+    display_name: The_earth Chest
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: chest
+      model_id: 21480
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+  the_earth_crossbow:
+    display_name: The_earth Crossbow
+    permission: pack.the_earth
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow
+      model_id: 19748
+  the_earth_dagger:
+    display_name: The_earth Dagger
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: dagger
+      model_id: 24962
+  the_earth_fishing_rod:
+    display_name: The_earth Fishing_rod
+    permission: pack.the_earth
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+      model_id: 23076
+  the_earth_hammer:
+    display_name: The_earth Hammer
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: hammer
+      model_id: 21001
+  the_earth_hat:
+    display_name: The_earth Hat
+    permission: pack.the_earth
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hat
+      model_id: 19812
+    behaviours:
+      hat: true
+  the_earth_hoe:
+    display_name: The_earth Hoe
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_HOE
+      generate: false
+      model_path: hoe
+      model_id: 19995
+  the_earth_key:
+    display_name: The_earth Key
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: key
+      model_id: 22623
+  the_earth_pickaxe:
+    display_name: The_earth Pickaxe
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_PICKAXE
+      generate: false
+      model_path: pickaxe
+      model_id: 18051
+  the_earth_rapier_sword:
+    display_name: The_earth Rapier_sword
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: rapier_sword
+      model_id: 24175
+  the_earth_scythe:
+    display_name: The_earth Scythe
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: scythe
+      model_id: 17731
+  the_earth_shield:
+    display_name: The_earth Shield
+    permission: pack.the_earth
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+      model_id: 18355
+  the_earth_shovel:
+    display_name: The_earth Shovel
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_SHOVEL
+      generate: false
+      model_path: shovel
+      model_id: 23628
+  the_earth_spear:
+    display_name: The_earth Spear
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: spear
+      model_id: 21547
+  the_earth_staff:
+    display_name: The_earth Staff
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: staff
+      model_id: 23225
+  the_earth_sword:
+    display_name: The_earth Sword
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: sword
+      model_id: 21985
+  the_earth_trident:
+    display_name: The_earth Trident
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: trident
+      model_id: 22504
+  the_earth_wing:
+    display_name: The_earth Wing
+    permission: pack.the_earth
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wing
+      model_id: 18632
+  the_earth_bow_0:
+    display_name: The_earth Bow_0
+    permission: pack.the_earth
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow_0
+      model_id: 24653
+  the_earth_bow_1:
+    display_name: The_earth Bow_1
+    permission: pack.the_earth
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow_1
+      model_id: 24942
+  the_earth_bow_2:
+    display_name: The_earth Bow_2
+    permission: pack.the_earth
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow_2
+      model_id: 24528
+  the_earth_crossbow_0:
+    display_name: The_earth Crossbow_0
+    permission: pack.the_earth
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow_0
+      model_id: 18037
+  the_earth_crossbow_1:
+    display_name: The_earth Crossbow_1
+    permission: pack.the_earth
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow_1
+      model_id: 24195
+  the_earth_crossbow_2:
+    display_name: The_earth Crossbow_2
+    permission: pack.the_earth
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow_2
+      model_id: 21935
+  the_earth_crossbow_charged:
+    display_name: The_earth Crossbow_charged
+    permission: pack.the_earth
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow_charged
+      model_id: 22202
+  the_earth_fishing_rod_cast:
+    display_name: The_earth Fishing_rod_cast
+    permission: pack.the_earth
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: fishing_rod_cast
+      model_id: 18058
+  the_earth_shield_blocking:
+    display_name: The_earth Shield_blocking
+    permission: pack.the_earth
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield_blocking
+      model_id: 19403
+categories:
+  the_earth:
+    enabled: true
+    skip_if_already: false
+    icon: the_earth:the_earth_chest
+    name: the_earth set
+    permission: ia.menu
+    items:
+    - the_earth:the_earth_axe
+    - the_earth:the_earth_bow
+    - the_earth:the_earth_chest
+    - the_earth:the_earth_crossbow
+    - the_earth:the_earth_dagger
+    - the_earth:the_earth_fishing_rod
+    - the_earth:the_earth_hammer
+    - the_earth:the_earth_hat
+    - the_earth:the_earth_hoe
+    - the_earth:the_earth_key
+    - the_earth:the_earth_pickaxe
+    - the_earth:the_earth_rapier_sword
+    - the_earth:the_earth_scythe
+    - the_earth:the_earth_shield
+    - the_earth:the_earth_shovel
+    - the_earth:the_earth_spear
+    - the_earth:the_earth_staff
+    - the_earth:the_earth_sword
+    - the_earth:the_earth_trident
+    - the_earth:the_earth_wing
+    - the_earth:the_earthboots
+    - the_earth:the_earthchestplate
+    - the_earth:the_earthleggings
+    - the_earth:the_earthhelmet
+
+#96cba1cd434a4400e997d967992b5b1b

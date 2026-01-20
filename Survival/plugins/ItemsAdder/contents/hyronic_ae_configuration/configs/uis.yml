@@ -1,0 +1,183 @@
+info:
+  namespace: hyronic_ae_configuration
+font_images:
+  gui_enchanter:
+    symbol: ᪐
+    path: guis/enchanter
+    scale_ratio: 256
+    y_position: 19
+  gui_confirm:
+    symbol: ᪑
+    path: guis/confirm
+    scale_ratio: 256
+    y_position: 19
+  gui_alchemist:
+    symbol: ᪒
+    path: guis/alchemist
+    scale_ratio: 256
+    y_position: 19
+  gui_tinkerer:
+    symbol: ᪓
+    path: guis/tinkerer
+    scale_ratio: 256
+    y_position: 19
+  gui_enchantdex:
+    symbol: ᪔
+    path: guis/enchantdex
+    scale_ratio: 256
+    y_position: 19
+  gui_enchantdex_list:
+    symbol: ᪕
+    path: guis/enchantdex_list
+    scale_ratio: 256
+    y_position: 19
+  gui_enchantdex_detail:
+    symbol: ᪖
+    path: guis/enchantdex_detail
+    scale_ratio: 256
+    y_position: 19
+  lb_simple:
+    symbol: ᪗
+    path: labels/simple
+    y_position: 7
+    scale_ratio: 8
+  lb_unique:
+    symbol: ᪘
+    path: labels/unique
+    y_position: 7
+    scale_ratio: 8
+  lb_elite:
+    symbol: ᪙
+    path: labels/elite
+    y_position: 7
+    scale_ratio: 8
+  lb_ultimate:
+    symbol: ᪚
+    path: labels/ultimate
+    y_position: 7
+    scale_ratio: 8
+  lb_legendary:
+    symbol: ᪛
+    path: labels/legendary
+    y_position: 7
+    scale_ratio: 8
+  lb_fabled:
+    symbol: ᪜
+    path: labels/fabled
+    y_position: 7
+    scale_ratio: 8
+  lb_maigc:
+    symbol: ᪝
+    path: labels/magic
+    y_position: 7
+    scale_ratio: 8
+  lb_i:
+    symbol: ᪞
+    path: labels/i
+    y_position: 7
+    scale_ratio: 8
+  lb_e:
+    symbol: ᪟
+    path: labels/e
+    y_position: 7
+    scale_ratio: 8
+  exp:
+    symbol: ᪠
+    path: exp
+    scale_ratio: 12
+    y_position: 11
+  sword:
+    symbol: ᪡
+    path: types/sword
+    scale_ratio: 11
+    y_position: 8
+  crossbow:
+    symbol: ᪢
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/crossbow
+  shovel:
+    symbol: ᪣
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/shovel
+  axe:
+    symbol: ᪤
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/axe
+  leggings:
+    symbol: ᪥
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/leggings
+  elytra:
+    symbol: ᪦
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/elytra
+  hoe:
+    symbol: ᪧ
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/hoe
+  shield:
+    symbol: ᪨
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/shield
+  pickaxe:
+    symbol: ᪩
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/pickaxe
+  bow:
+    symbol: ᪪
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/bow
+  helmet:
+    symbol: ᪫
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/helmet
+  boots:
+    symbol: ᪬
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/boots
+  food:
+    symbol: ᪭
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/food
+  chestplate:
+    symbol: ᪮
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/chestplate
+  trident:
+    symbol: ᪯
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/trident
+  fishing_rod:
+    symbol: ᪰
+    suggest_in_command: false
+    y_position: 8
+    scale_ratio: 11
+    path: types/fishing_rod

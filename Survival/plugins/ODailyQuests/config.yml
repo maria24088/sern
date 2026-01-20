@@ -1,0 +1,172 @@
+# Si el plugin no funciona como se espera, pon debug en true y envía el archivo de registro (log) al desarrollador.
+debug: false
+
+# Nunca toques esta línea
+version: 3.0.1
+
+# Prefijo del plugin para los mensajes
+prefix: ''
+
+# Modo de almacenamiento para misiones y progreso
+# MODOS DISPONIBLES: YAML, MySQL, H2
+# RECOMENDADO: H2
+storage_mode: SQLite
+
+# Conexión a Base de Datos MySQL
+database:
+  name: MyDatabase # Nombre de la base de datos
+  host: 127.0.0.1 # Host de la base de datos
+  user: admin # Usuario de la base de datos
+  password: '1234' # Contraseña de la base de datos
+  port: '3306' # Puerto de la base de datos
+
+# Selecciona el modo de marca de tiempo (timestamp).
+# ============================================================================
+# 1 : Las misiones se recargarán a medianoche para todos los jugadores.
+# ============================================================================
+# 2 : Las misiones del jugador se recargarán si las activas son más antiguas
+# que la duración seleccionada en el modo de temporalidad.
+# Esto significa que cada jugador tendrá nuevas misiones en un momento de inicio de sesión diferente.
+# ============================================================================
+# La marca de tiempo depende de la máquina en la que está instalado tu servidor.
+# ¡Configura la zona horaria correcta!
+# ============================================================================
+# Necesitas reiniciar los progresos si cambias este modo.
+timestamp_mode: 1
+
+# Iniciales que se mostrarán
+# entre los valores en los marcadores de posición (placeholders).
+# ej: 6d9h24m
+temporality_initials:
+  days: d
+  hours: h
+  minutes: m
+  few_seconds: Pocos segundos
+
+# Recompensa Global
+# Se entregará cuando el jugador haya completado todas sus misiones diarias.
+# La sintaxis es la misma que para las recompensas de misiones.
+global_reward:
+  enabled: true
+  reward_type: COMMAND
+  commands:
+  - eco give %player% 5000
+
+# Si un jugador tiene dos misiones del mismo tipo y con el mismo ítem/entidad,
+# elige si deben progresar simultáneamente
+# o si la primera debe completarse antes de que la segunda progrese.
+synchronised_progression: false
+
+# Establece un título que se mostrará cuando un jugador complete una misión.
+# Recordatorio: 20 ticks equivalen a un segundo.
+# Placeholders disponibles: %player% , %questName%
+title:
+  enabled: true
+  fadeIn: 10 # Número predeterminado de ticks para que aparezca el título.
+  stay: 70 # Número predeterminado de ticks para que el título permanezca.
+  fadeOut: 20 # Número predeterminado de ticks para que el título desaparezca.
+  text: '&a¡Bien hecho, %player%!'
+  subtitle: '&a¡Has completado la misión %questName%&a!' # Deja este campo en blanco si no quieres subtítulo
+
+# Establece un mensaje que se mostrará en la barra de acción (actionbar) cuando un jugador complete una misión.
+# Placeholders disponibles: %player% , %questName%
+actionbar:
+  enabled: false
+  text: '&e¡Nada mal para un veterano!'
+
+# Deshabilita el progreso de las misiones donde tienes que matar una entidad si esta proviene de un Generador (Spawner).
+disable_spawners_progression: false
+
+# Determina si el jugador pierde los ítems requeridos al completar una misión de tipo OBTENER (GET).
+take_items_for_get_quests: false
+
+# ===========================================================
+# PARTE ANTI-GLITCH (ANTI-ABUSO)
+# Aquí puedes prevenir algunos abusos de los jugadores, almacenando los ítems que han usado.
+# ===========================================================
+
+# Todos los bloques colocados por un jugador no contarán para el progreso de una misión de ROMPER (BREAK).
+store_placed_blocks: true
+
+# Todos los bloques rotos por un jugador no contarán para el progreso de una misión de COLOCAR (PLACE).
+#
+# Advertencia: esta opción añade una etiqueta NBT al ítem(s) soltado por el bloque.
+# Esto significa que su firma cambia, y ya no será posible apilarlos con ítems no afectados del mismo tipo.
+# Sin embargo, estos ítems siguen siendo utilizables normalmente.
+store_broken_blocks: false
+
+# Todos los ítems soltados por un jugador no contarán para el progreso de una misión de RECOGER (PICKUP).
+#
+# Advertencia: esta opción añade una etiqueta NBT al ítem soltado por el jugador.
+# Esto significa que su firma cambia, y ya no será posible apilarlos con ítems no afectados del mismo tipo.
+# Sin embargo, estos ítems siguen siendo utilizables normalmente.
+store_dropped_items: false
+
+# ===========================================================
+
+# Configuración de interfaces (menús)
+interfaces:
+  next_item_name: '&a&lSiguiente Página'
+  previous_item_name: '&e&lPágina Anterior'
+  global:
+    inventory_name: Misiones - Global
+    empty_item: BLACK_STAINED_GLASS_PANE
+  easy:
+    inventory_name: Misiones - Fácil
+    empty_item: GREEN_STAINED_GLASS_PANE
+  medium:
+    inventory_name: Misiones - Medio
+    empty_item: YELLOW_STAINED_GLASS_PANE
+  hard:
+    inventory_name: Misiones - Difícil
+    empty_item: RED_STAINED_GLASS_PANE
+
+# Puedes deshabilitar el progreso de misiones en ciertos mundos.
+# Debes poner aquí el nombre del mundo (en teoría el nombre de su carpeta).
+# Si no quieres deshabilitar mundos, solo pon una línea sin nombre (- "").
+# Además, puedes deshabilitar algunos mundos para cada misión. Por favor revisa la Wiki.
+disabled_worlds:
+- test
+
+# Implementación de Citizens (NPCs)
+# Aquí puedes seleccionar los nombres de los NPCs para cada categoría.
+# El jugador tiene que interactuar con el NPC para abrir una interfaz.
+npcs:
+  player: '&7Misiones de Jugador'
+  global: '&4Misiones Globales'
+  easy: '&a&lMisiones &mFáciles'
+  medium: '&e&lMisiones &rMedias'
+  hard: '&cMisiones &b&lDifíciles'
+
+# Si usas WildStacker en tu servidor para agrupar mobs, pon este parámetro en "true".
+use_wildstacker: false
+use_itemsadder: true
+use_custom_furnace_results: false
+disable_logs: false
+use_oraxen: false
+reroll_only_if_not_achieved: false
+shared_mobs: false
+progress_bar:
+  symbol: '|'
+  completed_color: '&a'
+  remaining_color: '&7'
+  amount_of_symbols: 20
+safety_mode: true
+join_message_delay: 1.0
+use_nexo: false
+renew_time: 00:00
+check_for_update: true
+player_data_load_delay: 0.5
+use_rosestacker: false
+complete_only_on_click: false
+toast:
+  enabled: false
+  frame: CHALLENGE
+  icon: BOOK
+  text: '&b&l¡Misión completada!\n%questName%'
+renew_interval: 1d
+quests_per_category:
+  easy: 4
+  medium: 4
+  hard: 4
+database_version: '2'

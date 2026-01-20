@@ -1,0 +1,13 @@
+info:
+  namespace: cafe
+items:
+  cafecounter2:
+    display_name: "Cafe Counter 2"
+    permission: cafe.cafecounter2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cafecounter2
+    behaviours:
+      furniture:
+        light_level: 13

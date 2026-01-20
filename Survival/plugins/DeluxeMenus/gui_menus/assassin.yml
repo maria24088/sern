@@ -1,0 +1,127 @@
+menu_title: '&fṭṜ'
+open_command:
+   - jobs
+   - assassin
+size: 54
+items:
+  'left':
+    material: PAPER
+    model_data: 7822
+    slot: 36
+    display_name: "&e&lᴀɴᴛᴇʀɪᴏʀ"
+    click_commands:
+       - '[openguimenu] alchemist'
+  'miner':
+    material: PAPER
+    model_data: 7824
+    slot: 37
+    display_name: "&fṺ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] miner'
+  'smelter':
+    material: PAPER
+    model_data: 7826
+    slot: 38
+    display_name: "&fṻ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] smelter'
+  'alchemist':
+    material: PAPER
+    model_data: 7812
+    slot: 39
+    display_name: "&fṯ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] alchemist'
+  'jobjoin':
+    material: PAPER
+    model_data: 7813
+    slot: 40
+    priority: 1
+    display_name: "&f Ṱ"
+    lore:
+       - " "
+       - " &8• &#249fdeGana dinero"
+       - "  &#249fdematando enemigos"
+       - " "
+       - " &8• &7Trabajadores&8: &f%jobsr_totalplayers_assassin%"
+       - " &8• &7Nivel&8: &f%jobsr_user_jlevel_assassin%/%jobsr_maxlvl_assassin%"
+       - " &8• &7EXP&8: &f%jobsr_user_jexp_assassin%/%jobsr_user_jmaxexp_assassin% &8(&#59c135+%jobsr_user_jmexp_assassin%&fṩ&8)"
+       - " "
+       - " &8• &7Progreso&8: &f"
+       - "%progress_bar_{jobsr_user_jexp_assassin}_c:&fṪ_p:&fṪ_r:&fṨ_l:10_m:{jobsr_user_jmaxexp_assassin}_fullbar:&fṨṨṨṨṨṨṨṨṨṨ%"
+       - " "
+       - " &fṫ &eᴘᴀʀᴀ ᴜɴɪʀᴛᴇ ᴀʟ ᴛʀᴀʙᴀᴊᴏ"
+       - " "
+    left_click_commands:
+       - '[player] jobs join assassin'
+       - '[refresh]'
+  'jobleave':
+    material: PAPER
+    model_data: 7813
+    slot: 40
+    priority: 0
+    display_name: "&f Ṱ"
+    lore:
+       - " "
+       - " &8• &#249fdeGana dinero"
+       - "  &#249fdematando enemigos"
+       - " "
+       - " &8• &7Rango&8: &f%jobsr_user_title_assassin%"
+       - " &8• &7Trabajadores&8: &f%jobsr_totalplayers_assassin%"
+       - " &8• &7Nivel&8: &f%jobsr_user_jlevel_assassin%/%jobsr_maxlvl_assassin%"
+       - " &8• &7EXP&8: &f%jobsr_user_jexp_assassin%/%jobsr_user_jmaxexp_assassin% &8(&#59c135+%jobsr_user_jmexp_assassin%&fṩ&8)"
+       - " "
+       - " &8• &7Progreso&8: &f"
+       - "%progress_bar_{jobsr_user_jexp_assassin}_c:&fṪ_p:&fṪ_r:&fṨ_l:10_m:{jobsr_user_jmaxexp_assassin}_fullbar:&fṨṨṨṨṨṨṨṨṨṨ%"
+       - " "
+       - " &fṬ &eᴘᴀʀᴀ ᴅᴇᴊᴀʀ ᴇʟ ᴛʀᴀʙᴀᴊᴏ"
+       - " "
+    view_requirement:
+      requirements:
+        jobs_requirement:
+          type: string contains
+          input: "%jobsr_user_isin_assassin%"
+          output: 'True'
+    right_click_commands:
+       - '[player] jobs leave assassin'
+       - '[refresh]'
+  'blacksmith':
+    material: PAPER
+    model_data: 7814
+    slot: 41
+    display_name: "&fṱ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] blacksmith'
+  'builder':
+    material: PAPER
+    model_data: 7815
+    slot: 42
+    display_name: "&fṲ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] builder'
+  'crafter':
+    material: PAPER
+    model_data: 7816
+    slot: 43
+    display_name: "&fṳ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] crafter'
+  'right':
+    material: PAPER
+    model_data: 7825
+    slot: 44
+    display_name: "&e&lsɪɢᴜɪᴇɴᴛᴇ"
+    click_commands:
+       - '[openguimenu] blacksmith'

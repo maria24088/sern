@@ -1,0 +1,1651 @@
+custom-fish:
+  default:
+    name: "&7A Fish" # The display name of the fish
+    item: PUFFERFISH # The Minecraft item type to use for this fish
+    base-price: 100 # The base price of the fish (final price = base-price * (weight + size))
+    min-size: 1.0 # Minimum size of the fish in inches/centimeters
+    max-size: 3.0 # Maximum size of the fish in inches/centimeters
+    min-weight: 1 # Minimum weight of the fish in pounds/kilograms
+    max-weight: 3 # Maximum weight of the fish in pounds/kilograms
+    speed: 1.0 # How fast the fish swims (affects difficulty of catching)
+    model-data: 1 # Custom model data for resource packs (used for custom textures)
+    rarity: COMMON # Rarity of the fish (COMMON, UNCOMMON, RARE, EPIC, LEGENDARY)
+    min-rod-luck: 0 # Minimum luck needed on the fishing rod to catch this fish
+    loot-table-weight: 90 # How likely this fish is to be caught (higher = more likely)
+    numeric-rarity: 1.0 # A numeric representation of rarity (used for calculations)
+    forbidden-biomes: # Biomes where this fish cannot be caught
+      - END_MIDLANDS
+    forbidden-weather: # Weather conditions where this fish cannot be caught
+      - DOWNFALL
+    # Additionally you can use the following:
+    # allowed-biomes: # Biomes where this fish can be caught
+    #   - RIVER
+    #   - PLAINS
+    # allowed-weather: # Weather conditions where this fish can be caught
+    #   - CLEAR
+    # But if you use allowed-biomes or allowed-weather, the fish will only be catchable in those biomes or weather conditions
+    additional-catalog-lore: # Additional description lines shown in the fish catalog
+      - "&7Rarity: &fCommon"
+      - "&7A very common fish."
+    min-time: 0 # Minimum time of day this fish can be caught (0-24000, 0 = midnight)
+    max-time: 24000 # Maximum time of day this fish can be caught (0-24000, 24000 = midnight)
+    parent-fish: none # The fish that displays if not evaluated (none = none)
+    skill-xp: 15 # The amount of XP you receive when using supported plugins
+    min-skill-level: 0 # Minimal skill level required before the fish can be caught
+    # min-y: 0 # Minimum Y level this fish can be caught at
+    # max-y: 255 # Maximum Y level this fish can be caught at
+    # allowed-spots:
+    #  - spot1
+    #  - spot2
+    # forbidden-spots:
+    #  - spot3
+    #  - spot4
+  tuna-fish:
+    name: "&fTuna"
+    item: COD
+    base-price: 100
+    min-size: 2.5
+    max-size: 8.0
+    min-weight: 2
+    max-weight: 15
+    speed: 1.8
+    model-data: 50001
+    rarity: COMMON
+    min-rod-luck: 0
+    loot-table-weight: 90
+    numeric-rarity: 1.0
+    additional-catalog-lore:
+      - "&7Rarity: &fCommon"
+      - "&7A tuna fish."
+    min-time: 6000
+    max-time: 18000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-tuna-fish:
+    name: "&fSilver Tuna"
+    item: COD
+    base-price: 250
+    min-size: 3.0
+    max-size: 9.0
+    min-weight: 3
+    max-weight: 18
+    speed: 2.0
+    model-data: 50002
+    rarity: UNCOMMON
+    min-rod-luck: 1
+    loot-table-weight: 50
+    numeric-rarity: 1.15
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A silver tuna fish."
+    min-time: 4000
+    max-time: 20000
+    parent-fish: tuna-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-tuna-fish:
+    name: "&fGolden Tuna"
+    item: COD
+    base-price: 500
+    min-size: 3.5
+    max-size: 10.0
+    min-weight: 4
+    max-weight: 22
+    speed: 2.2
+    model-data: 50003
+    rarity: RARE
+    min-rod-luck: 2
+    loot-table-weight: 25
+    numeric-rarity: 1.3
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A golden tuna fish."
+    min-time: 2000
+    max-time: 22000
+    parent-fish: tuna-fish
+    skill-xp: 60
+    min-skill-level: 20
+
+  pike-fish:
+    name: "&fPike"
+    item: COD
+    base-price: 100
+    min-size: 1.5
+    max-size: 4.5
+    min-weight: 1
+    max-weight: 8
+    speed: 1.5
+    model-data: 50004
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A pike fish."
+    min-time: 8000
+    max-time: 16000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-pike-fish:
+    name: "&fSilver Pike"
+    item: COD
+    base-price: 250
+    min-size: 2.0
+    max-size: 5.5
+    min-weight: 2
+    max-weight: 10
+    speed: 1.7
+    model-data: 50005
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver pike fish."
+    min-time: 6000
+    max-time: 18000
+    parent-fish: pike-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-pike-fish:
+    name: "&fGolden Pike"
+    item: COD
+    base-price: 500
+    min-size: 2.5
+    max-size: 6.5
+    min-weight: 3
+    max-weight: 12
+    speed: 1.9
+    model-data: 50006
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden pike fish."
+    min-time: 4000
+    max-time: 20000
+    parent-fish: pike-fish
+    skill-xp: 60
+    min-skill-level: 20
+
+  gold-fish:
+    name: "&fGold Fish"
+    item: COD
+    base-price: 100
+    min-size: 0.5
+    max-size: 2.0
+    min-weight: 1
+    max-weight: 3
+    speed: 1.2
+    model-data: 50007
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A gold fish."
+    min-time: 10000
+    max-time: 14000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-gold-fish:
+    name: "&fSilver Gold Fish"
+    item: COD
+    base-price: 250
+    min-size: 0.7
+    max-size: 2.5
+    min-weight: 1
+    max-weight: 4
+    speed: 1.4
+    model-data: 50008
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver gold fish."
+    min-time: 8000
+    max-time: 16000
+    parent-fish: gold-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-gold-fish:
+    name: "&fGolden Gold Fish"
+    item: COD
+    base-price: 500
+    min-size: 1.0
+    max-size: 3.0
+    min-weight: 2
+    max-weight: 5
+    speed: 1.6
+    model-data: 50009
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden gold fish."
+    min-time: 6000
+    max-time: 18000
+    parent-fish: gold-fish
+    skill-xp: 60
+    min-skill-level: 20
+
+  perch-fish:
+    name: "&fPerch"
+    item: COD
+    base-price: 100
+    min-size: 0.8
+    max-size: 3.5
+    min-weight: 1
+    max-weight: 5
+    speed: 1.3
+    model-data: 50010
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A perch fish."
+    min-time: 12000
+    max-time: 22000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-perch-fish:
+    name: "&fSilver Perch"
+    item: COD
+    base-price: 250
+    min-size: 1.2
+    max-size: 4.0
+    min-weight: 2
+    max-weight: 6
+    speed: 1.5
+    model-data: 50011
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver perch fish."
+    min-time: 10000
+    max-time: 20000
+    parent-fish: perch-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-perch-fish:
+    name: "&fGolden Perch"
+    item: COD
+    base-price: 500
+    min-size: 1.5
+    max-size: 4.5
+    min-weight: 3
+    max-weight: 7
+    speed: 1.7
+    model-data: 50012
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden perch fish."
+    min-time: 8000
+    max-time: 18000
+    parent-fish: perch-fish
+    skill-xp: 60
+    min-skill-level: 20
+
+  mullet-fish:
+    name: "&fMullet"
+    item: COD
+    base-price: 100
+    min-size: 1.0
+    max-size: 3.0
+    min-weight: 1
+    max-weight: 4
+    speed: 1.4
+    model-data: 50013
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A mullet fish."
+    min-time: 5000
+    max-time: 19000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-mullet-fish:
+    name: "&fSilver Mullet"
+    item: COD
+    base-price: 250
+    min-size: 1.3
+    max-size: 3.5
+    min-weight: 2
+    max-weight: 5
+    speed: 1.6
+    model-data: 50014
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver mullet fish."
+    min-time: 3000
+    max-time: 21000
+    parent-fish: mullet-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-mullet-fish:
+    name: "&fGolden Mullet"
+    item: COD
+    base-price: 500
+    min-size: 1.6
+    max-size: 4.0
+    min-weight: 3
+    max-weight: 6
+    speed: 1.8
+    model-data: 50015
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden mullet fish."
+    min-time: 1000
+    max-time: 23000
+    parent-fish: mullet-fish
+    skill-xp: 60
+    min-skill-level: 20
+
+  sardine-fish:
+    name: "&fSardine"
+    item: COD
+    base-price: 100
+    min-size: 0.3
+    max-size: 1.5
+    min-weight: 1
+    max-weight: 2
+    speed: 1.1
+    model-data: 50016
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A sardine fish."
+    min-time: 14000
+    max-time: 22000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-sardine-fish:
+    name: "&fSilver Sardine"
+    item: COD
+    base-price: 250
+    min-size: 0.4
+    max-size: 1.8
+    min-weight: 1
+    max-weight: 3
+    speed: 1.3
+    model-data: 50017
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver sardine fish."
+    min-time: 12000
+    max-time: 20000
+    parent-fish: sardine-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-sardine-fish:
+    name: "&fGolden Sardine"
+    item: COD
+    base-price: 500
+    min-size: 0.5
+    max-size: 2.0
+    min-weight: 2
+    max-weight: 4
+    speed: 1.5
+    model-data: 50018
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden sardine fish."
+    min-time: 10000
+    max-time: 18000
+    parent-fish: sardine-fish
+    skill-xp: 60
+    min-skill-level: 20
+
+  carp-fish:
+    name: "&fCarp"
+    item: COD
+    base-price: 100
+    min-size: 1.5
+    max-size: 5.0
+    min-weight: 2
+    max-weight: 10
+    speed: 1.2
+    model-data: 50019
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A carp fish."
+    min-time: 4000
+    max-time: 20000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-carp-fish:
+    name: "&fSilver Carp"
+    item: COD
+    base-price: 250
+    min-size: 2.0
+    max-size: 6.0
+    min-weight: 3
+    max-weight: 12
+    speed: 1.4
+    model-data: 50020
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver carp fish."
+    min-time: 2000
+    max-time: 22000
+    parent-fish: carp-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-carp-fish:
+    name: "&fGolden Carp"
+    item: COD
+    base-price: 500
+    min-size: 2.5
+    max-size: 7.0
+    min-weight: 4
+    max-weight: 15
+    speed: 1.6
+    model-data: 50021
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden carp fish."
+    min-time: 0
+    max-time: 24000
+    parent-fish: carp-fish
+    skill-xp: 60
+    min-skill-level: 20
+
+  catfish-fish:
+    name: "&fCatfish"
+    item: COD
+    base-price: 100
+    min-size: 2.0
+    max-size: 6.0
+    min-weight: 2
+    max-weight: 12
+    speed: 1.3
+    model-data: 50022
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A catfish."
+    min-time: 18000
+    max-time: 6000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-catfish-fish:
+    name: "&fSilver Catfish"
+    item: COD
+    base-price: 250
+    min-size: 2.5
+    max-size: 7.0
+    min-weight: 3
+    max-weight: 15
+    speed: 1.5
+    model-data: 50023
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver catfish."
+    min-time: 16000
+    max-time: 8000
+    parent-fih: catfish-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-catfish-fish:
+    name: "&fGolden Catfish"
+    item: COD
+    base-price: 500
+    min-size: 3.0
+    max-size: 8.0
+    min-weight: 4
+    max-weight: 18
+    speed: 1.7
+    model-data: 50024
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden catfish."
+    min-time: 14000
+    max-time: 10000
+    parent-fish: catfish-fish
+    skill-xp: 60
+    min-skill-level: 20
+
+  octopus-fish:
+    name: "&fOctopus"
+    item: COD
+    base-price: 100
+    min-size: 0.5
+    max-size: 3.0
+    min-weight: 1
+    max-weight: 8
+    speed: 1.4
+    model-data: 50025
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7An octopus."
+    min-time: 20000
+    max-time: 4000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-octopus-fish:
+    name: "&fSilver Octopus"
+    item: COD
+    base-price: 250
+    min-size: 0.7
+    max-size: 3.5
+    min-weight: 2
+    max-weight: 10
+    speed: 1.6
+    model-data: 50026
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver octopus."
+    min-time: 18000
+    max-time: 6000
+    parent-fish: octopus-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-octopus-fish:
+    name: "&fGolden Octopus"
+    item: COD
+    base-price: 500
+    min-size: 1.0
+    max-size: 4.0
+    min-weight: 3
+    max-weight: 12
+    speed: 1.8
+    model-data: 50027
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden octopus."
+    min-time: 16000
+    max-time: 8000
+    parent-fish: octopus-fish
+    skill-xp: 30
+    min-skill-level: 20
+
+  sunfish-fish:
+    name: "&fSunfish"
+    item: COD
+    base-price: 100
+    min-size: 1.5
+    max-size: 5.0
+    min-weight: 2
+    max-weight: 15
+    speed: 1.2
+    model-data: 50028
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A sunfish."
+    min-time: 6000
+    max-time: 18000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-sunfish-fish:
+    name: "&fSilver Sunfish"
+    item: COD
+    base-price: 250
+    min-size: 2.0
+    max-size: 6.0
+    min-weight: 3
+    max-weight: 18
+    speed: 1.4
+    model-data: 50029
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver sunfish."
+    min-time: 4000
+    max-time: 20000
+    parent-fish: sunfish-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-sunfish-fish:
+    name: "&fGolden Sunfish"
+    item: COD
+    base-price: 500
+    min-size: 2.5
+    max-size: 7.0
+    min-weight: 4
+    max-weight: 22
+    speed: 1.6
+    model-data: 50030
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden sunfish."
+    min-time: 2000
+    max-time: 22000
+    parent-fish: sunfish-fish
+    skill-xp: 60
+    min-skill-level: 20
+
+  red-snapper-fish:
+    name: "&fRed Snapper"
+    item: COD
+    base-price: 100
+    min-size: 1.0
+    max-size: 4.0
+    min-weight: 1
+    max-weight: 10
+    speed: 1.5
+    model-data: 50031
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A red snapper fish."
+    min-time: 8000
+    max-time: 16000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-red-snapper-fish:
+    name: "&fSilver Red Snapper"
+    item: COD
+    base-price: 250
+    min-size: 1.5
+    max-size: 5.0
+    min-weight: 2
+    max-weight: 12
+    speed: 1.7
+    model-data: 50032
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver red snapper fish."
+    min-time: 6000
+    max-time: 18000
+    parent-fish: red-snappper-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-red-snapper-fish:
+    name: "&fGolden Red Snapper"
+    item: COD
+    base-price: 500
+    min-size: 2.0
+    max-size: 6.0
+    min-weight: 3
+    max-weight: 15
+    speed: 1.9
+    model-data: 50033
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden red snapper fish."
+    min-time: 4000
+    max-time: 20000
+    parent-fish: red-snappper-fish
+    skill-xp: 60
+    min-skill-level: 20
+
+  salmon-void-fish:
+    name: "&fSalmon Void"
+    item: COD
+    base-price: 100
+    min-size: 1.5
+    max-size: 5.0
+    min-weight: 2
+    max-weight: 12
+    speed: 1.6
+    model-data: 50034
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A salmon void fish."
+    min-time: 22000
+    max-time: 2000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-salmon-void-fish:
+    name: "&fSilver Salmon Void"
+    item: COD
+    base-price: 250
+    min-size: 2.0
+    max-size: 6.0
+    min-weight: 3
+    max-weight: 15
+    speed: 1.8
+    model-data: 50035
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver salmon void fish."
+    min-time: 20000
+    max-time: 4000
+    parent-fish: salmon-void-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-salmon-void-fish:
+    name: "&fGolden Salmon Void"
+    item: COD
+    base-price: 500
+    min-size: 2.5
+    max-size: 7.0
+    min-weight: 4
+    max-weight: 18
+    speed: 2.0
+    model-data: 50036
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden salmon void fish."
+    min-time: 18000
+    max-time: 6000
+    parent-fish: salmon-void-fish
+    skill-xp: 60
+    min-skill-level: 20
+
+  woodskip-fish:
+    name: "&fWoodskip"
+    item: COD
+    base-price: 100
+    min-size: 0.8
+    max-size: 3.0
+    min-weight: 1
+    max-weight: 6
+    speed: 1.3
+    model-data: 50037
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A woodskip fish."
+    min-time: 10000
+    max-time: 14000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-woodskip-fish:
+    name: "&fSilver Woodskip"
+    item: COD
+    base-price: 250
+    min-size: 1.2
+    max-size: 3.5
+    min-weight: 2
+    max-weight: 8
+    speed: 1.5
+    model-data: 50038
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver woodskip fish."
+    min-time: 8000
+    max-time: 16000
+    parent-fish: woodskip-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-woodskip-fish:
+    name: "&fGolden Woodskip"
+    item: COD
+    base-price: 500
+    min-size: 1.5
+    max-size: 4.0
+    min-weight: 3
+    max-weight: 10
+    speed: 1.7
+    model-data: 50039
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden woodskip fish."
+    min-time: 6000
+    max-time: 18000
+    parent-fish: woodskip-fish
+    skill-xp: 60
+    min-skill-level: 20
+
+  sturgeon-fish:
+    name: "&fSturgeon"
+    item: COD
+    base-price: 100
+    min-size: 2.5
+    max-size: 8.0
+    min-weight: 3
+    max-weight: 20
+    speed: 1.4
+    model-data: 50040
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A sturgeon fish."
+    min-time: 12000
+    max-time: 20000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-sturgeon-fish:
+    name: "&fSilver Sturgeon"
+    item: COD
+    base-price: 250
+    min-size: 3.0
+    max-size: 9.0
+    min-weight: 4
+    max-weight: 25
+    speed: 1.6
+    model-data: 50041
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver sturgeon fish."
+    min-time: 10000
+    max-time: 22000
+    parent-fish: sturgeon-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-sturgeon-fish:
+    name: "&fGolden Sturgeon"
+    item: COD
+    base-price: 500
+    min-size: 3.5
+    max-size: 10.0
+    min-weight: 5
+    max-weight: 30
+    speed: 1.8
+    model-data: 50042
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden sturgeon fish."
+    min-time: 8000
+    max-time: 0
+    parent-fish: sturgeon-fish
+    skill-xp: 60
+    min-skill-level: 20
+
+  blue-jellyfish-fish:
+    name: "&fBlue Jellyfish"
+    item: COD
+    base-price: 100
+    min-size: 0.3
+    max-size: 1.5
+    min-weight: 1
+    max-weight: 3
+    speed: 0.8
+    model-data: 50043
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A blue jellyfish."
+    min-time: 18000
+    max-time: 6000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-blue-jellyfish-fish:
+    name: "&fSilver Blue Jellyfish"
+    item: COD
+    base-price: 250
+    min-size: 0.4
+    max-size: 1.8
+    min-weight: 1
+    max-weight: 4
+    speed: 1.0
+    model-data: 50044
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver blue jellyfish."
+    min-time: 16000
+    max-time: 8000
+    parent-fish: blue-jellyfish-fish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-blue-jellyfish-fish:
+    name: "&fGolden Blue Jellyfish"
+    item: COD
+    base-price: 500
+    min-size: 0.5
+    max-size: 2.0
+    min-weight: 2
+    max-weight: 5
+    speed: 1.2
+    model-data: 50045
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden blue jellyfish."
+    min-time: 14000
+    max-time: 10000
+    parent-fish: blue-jellyfish-fish
+    skill-xp: 60
+    min-skill-level: 20
+
+  pink-jellyfish:
+    name: "&fPink Jellyfish"
+    item: COD
+    base-price: 100
+    min-size: 0.3
+    max-size: 1.5
+    min-weight: 1
+    max-weight: 3
+    speed: 0.9
+    model-data: 50046
+    rarity: UNCOMMON
+    min-rod-luck: 0
+    loot-table-weight: 75
+    numeric-rarity: 1.1
+    additional-catalog-lore:
+      - "&7Rarity: &aUncommon"
+      - "&7A pink jellyfish."
+    min-time: 20000
+    max-time: 4000
+    parent-fish: none
+    skill-xp: 15
+    min-skill-level: 0
+
+  silver-pink-jellyfish:
+    name: "&fSilver Pink Jellyfish"
+    item: COD
+    base-price: 250
+    min-size: 0.4
+    max-size: 1.8
+    min-weight: 1
+    max-weight: 4
+    speed: 1.1
+    model-data: 50047
+    rarity: RARE
+    min-rod-luck: 1
+    loot-table-weight: 40
+    numeric-rarity: 1.25
+    additional-catalog-lore:
+      - "&7Rarity: &bRare"
+      - "&7A silver pink jellyfish."
+    min-time: 18000
+    max-time: 6000
+    parent-fish: pink-jellyfish
+    skill-xp: 30
+    min-skill-level: 10
+
+  golden-pink-jellyfish:
+    name: "&fGolden Pink Jellyfish"
+    item: COD
+    base-price: 500
+    min-size: 0.5
+    max-size: 2.0
+    min-weight: 2
+    max-weight: 5
+    speed: 1.3
+    model-data: 50048
+    rarity: EPIC
+    min-rod-luck: 2
+    loot-table-weight: 20
+    numeric-rarity: 1.4
+    additional-catalog-lore:
+      - "&7Rarity: &5Epic"
+      - "&7A golden pink jellyfish."
+    min-time: 16000
+    max-time: 8000
+    parent-fish: pink-jellyfish
+    skill-xp: 60
+    min-skill-level: 20
+
+  amethyst-blue-jellyfish:
+    name: "&fAmethyst Blue Jellyfish"
+    item: COD
+    base-price: 1000
+    min-size: 0.6
+    max-size: 2.5
+    min-weight: 2
+    max-weight: 6
+    speed: 1.5
+    model-data: 50049
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst blue jellyfish."
+    min-time: 0
+    max-time: 24000
+    parent-fish: blue-jellyfish-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-carp-fish:
+    name: "&fAmethyst Carp"
+    item: COD
+    base-price: 1000
+    min-size: 3.0
+    max-size: 8.0
+    min-weight: 5
+    max-weight: 20
+    speed: 1.7
+    model-data: 50050
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst carp fish."
+    min-time: 12000
+    max-time: 12000
+    parent-fish: carp-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-catfish-fish:
+    name: "&fAmethyst Catfish"
+    item: COD
+    base-price: 1000
+    min-size: 3.5
+    max-size: 9.0
+    min-weight: 5
+    max-weight: 22
+    speed: 1.8
+    model-data: 50051
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst catfish."
+    min-time: 22000
+    max-time: 2000
+    parent-fish: catfish-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-gold-fish:
+    name: "&fAmethyst Gold Fish"
+    item: COD
+    base-price: 1000
+    min-size: 1.2
+    max-size: 3.5
+    min-weight: 3
+    max-weight: 7
+    speed: 1.9
+    model-data: 50052
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst gold fish."
+    min-time: 6000
+    max-time: 18000
+    parent-fish: gold-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-golden-fish:
+    name: "&fAmethyst Golden Fish"
+    item: COD
+    base-price: 1000
+    min-size: 1.5
+    max-size: 4.0
+    min-weight: 3
+    max-weight: 8
+    speed: 2.0
+    model-data: 50053
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst golden fish."
+    min-time: 4000
+    max-time: 20000
+    parent-fish: golden-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-mullet-fish:
+    name: "&fAmethyst Mullet"
+    item: COD
+    base-price: 1000
+    min-size: 2.0
+    max-size: 5.0
+    min-weight: 4
+    max-weight: 10
+    speed: 2.1
+    model-data: 50054
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst mullet fish."
+    min-time: 2000
+    max-time: 22000
+    parent-fish: mullet-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-octopus-fish:
+    name: "&fAmethyst Octopus"
+    item: COD
+    base-price: 1000
+    min-size: 1.5
+    max-size: 5.0
+    min-weight: 4
+    max-weight: 15
+    speed: 2.0
+    model-data: 50055
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst octopus."
+    min-time: 18000
+    max-time: 6000
+    parent-fish: octopus-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-perch-fish:
+    name: "&fAmethyst Perch"
+    item: COD
+    base-price: 1000
+    min-size: 2.0
+    max-size: 5.5
+    min-weight: 4
+    max-weight: 12
+    speed: 2.2
+    model-data: 50056
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst perch fish."
+    min-time: 8000
+    max-time: 16000
+    parent-fish: perch-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-pike-fish:
+    name: "&fAmethyst Pike"
+    item: COD
+    base-price: 1000
+    min-size: 3.0
+    max-size: 7.5
+    min-weight: 5
+    max-weight: 18
+    speed: 2.3
+    model-data: 50057
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst pike fish."
+    min-time: 10000
+    max-time: 14000
+    parent-fish: pike-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-pink-jellyfish:
+    name: "&fAmethyst Pink Jellyfish"
+    item: COD
+    base-price: 1000
+    min-size: 0.7
+    max-size: 2.8
+    min-weight: 2
+    max-weight: 7
+    speed: 1.6
+    model-data: 50058
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst pink jellyfish."
+    min-time: 20000
+    max-time: 4000
+    parent-fish: pink-jellyfish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-red-snapper-fish:
+    name: "&fAmethyst Red Snapper"
+    item: COD
+    base-price: 1000
+    min-size: 2.5
+    max-size: 7.0
+    min-weight: 4
+    max-weight: 20
+    speed: 2.1
+    model-data: 50059
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst red snapper fish."
+    min-time: 6000
+    max-time: 18000
+    parent-fish: red-snapper-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-salmon-void-fish:
+    name: "&fAmethyst Salmon Void"
+    item: COD
+    base-price: 1000
+    min-size: 3.0
+    max-size: 8.0
+    min-weight: 5
+    max-weight: 22
+    speed: 2.2
+    model-data: 50060
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst salmon void fish."
+    min-time: 22000
+    max-time: 2000
+    parent-fish: salmon-void-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-sardine-fish:
+    name: "&fAmethyst Sardine"
+    item: COD
+    base-price: 1000
+    min-size: 0.8
+    max-size: 2.5
+    min-weight: 2
+    max-weight: 5
+    speed: 1.8
+    model-data: 50061
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst sardine fish."
+    min-time: 14000
+    max-time: 10000
+    parent-fish: sardine-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-sturgeon-fish:
+    name: "&fAmethyst Sturgeon"
+    item: COD
+    base-price: 1000
+    min-size: 4.0
+    max-size: 12.0
+    min-weight: 7
+    max-weight: 40
+    speed: 2.0
+    model-data: 50062
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst sturgeon fish."
+    min-time: 2000
+    max-time: 22000
+    parent-fish: sturgeon-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-sunfish-fish:
+    name: "&fAmethyst Sunfish"
+    item: COD
+    base-price: 1000
+    min-size: 3.0
+    max-size: 8.0
+    min-weight: 5
+    max-weight: 25
+    speed: 1.9
+    model-data: 50063
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst sunfish."
+    min-time: 8000
+    max-time: 16000
+    parent-fish: sunfish-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-tuna-fish:
+    name: "&fAmethyst Tuna"
+    item: COD
+    base-price: 1000
+    min-size: 4.0
+    max-size: 12.0
+    min-weight: 6
+    max-weight: 35
+    speed: 2.4
+    model-data: 50064
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst tuna fish."
+    min-time: 4000
+    max-time: 20000
+    parent-fish: tuna-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  amethyst-woodskip-fish:
+    name: "&fAmethyst Woodskip"
+    item: COD
+    base-price: 1000
+    min-size: 2.0
+    max-size: 5.0
+    min-weight: 4
+    max-weight: 15
+    speed: 1.9
+    model-data: 50065
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7An amethyst woodskip fish."
+    min-time: 12000
+    max-time: 12000
+    parent-fish: woodskip-fish
+    skill-xp: 90
+    min-skill-level: 50
+
+  rainbow-fish:
+    name: "&fRainbow Fish"
+    item: COD
+    base-price: 1000
+    min-size: 1.5
+    max-size: 4.5
+    min-weight: 3
+    max-weight: 12
+    speed: 2.5
+    model-data: 50100
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7A rainbow fish."
+    min-time: 22000
+    max-time: 24000
+    parent-fish: none
+    skill-xp: 90
+    min-skill-level: 50
+
+  golden-fish:
+    name: "&fGolden Fish"
+    item: COD
+    base-price: 1000
+    min-size: 2.0
+    max-size: 5.0
+    min-weight: 3
+    max-weight: 10
+    speed: 1.8
+    model-data: 50066
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 5
+    numeric-rarity: 1.8
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7A golden fish."
+    min-time: 0
+    max-time: 24000
+    parent-fish: none
+    skill-xp: 90
+    min-skill-level: 50
+
+  golden-fish-gold-star:
+    name: "&fGolden Fish (Gold Star)"
+    item: COD
+    base-price: 1200
+    min-size: 2.5
+    max-size: 6.0
+    min-weight: 4
+    max-weight: 12
+    speed: 2.0
+    model-data: 50067
+    rarity: LEGENDARY
+    min-rod-luck: 4
+    loot-table-weight: 4
+    numeric-rarity: 1.9
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7A golden fish with a gold star."
+    min-time: 0
+    max-time: 24000
+    parent-fish: golden-fish
+    skill-xp: 120
+    min-skill-level: 60
+
+  golden-fish-silver-star:
+    name: "&fGolden Fish (Silver Star)"
+    item: COD
+    base-price: 1100
+    min-size: 2.2
+    max-size: 5.5
+    min-weight: 3
+    max-weight: 11
+    speed: 1.9
+    model-data: 50068
+    rarity: LEGENDARY
+    min-rod-luck: 3
+    loot-table-weight: 4
+    numeric-rarity: 1.85
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7A golden fish with a silver star."
+    min-time: 0
+    max-time: 24000
+    parent-fish: golden-fish
+    skill-xp: 240
+    min-skill-level: 75
+
+  radioactive-fish:
+    name: "&fRadioactive Fish"
+    item: COD
+    base-price: 1500
+    min-size: 3.0
+    max-size: 7.0
+    min-weight: 5
+    max-weight: 20
+    speed: 2.5
+    model-data: 50000
+    rarity: LEGENDARY
+    min-rod-luck: 4
+    loot-table-weight: 3
+    numeric-rarity: 2.0
+    additional-catalog-lore:
+      - "&7Rarity: &dLegendary"
+      - "&7A highly radioactive fish."
+    min-time: 22000
+    max-time: 24000
+    parent-fish: none
+    skill-xp: 360
+    min-skill-level: 90

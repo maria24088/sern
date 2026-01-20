@@ -1,0 +1,31 @@
+Tables:
+  '1':
+    World: Spawn
+    X: 12.0
+    Y: 88.0
+    Z: 38.0
+    Yaw: -306.83809661865234
+    Pitch: 33.399677
+    Style: CRASH
+    Game: Crash
+    Player: Bruno240707
+  '2':
+    World: Spawn
+    X: -50.0
+    Y: 88.0
+    Z: 61.0
+    Yaw: -71.5949935913086
+    Pitch: 39.522736
+    Style: BLACKJACK
+    Game: BlackJack
+    Player: Bruno240707
+  '3':
+    World: Spawn
+    X: -31.0
+    Y: 87.0
+    Z: 94.0
+    Yaw: -189.39119052886963
+    Pitch: 27.410448
+    Style: BLACKJACK
+    Game: BlackJack
+    Player: Bruno240707

@@ -1,0 +1,192 @@
+info:
+  namespace: mob_loots_expansion
+items:
+  wool_ball:
+    display_name: "&fWool Ball"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - wool_ball.png
+  mushroom_spores:
+    display_name: "&fMushroom Spores"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - mushroom_spores.png
+  gel:
+    display_name: "&fGel"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - gel.png
+  ectoplasm:
+    display_name: "&fEctoplasm"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ectoplasm.png
+  frog_leg:
+    display_name: "&fFrog Leg"
+    resource:
+      material: APPLE
+      generate: true
+      textures:
+        - frog_leg.png
+  magic_crystals:
+    display_name: "&fMagic Crystals"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - magic_crystals.png
+  desert_cloth:
+    display_name: "&fDesert Cloth"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - desert_cloth.png
+  wither_dust:
+    display_name: "&fWither Dust"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - wither_dust.png
+  glow_squid_tentacle:
+    display_name: "&fGlow Squid Tentacle"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - glow_squid_tentacle.png
+  warden_heart:
+    display_name: "&fWarden Heart"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - warden_heart.png
+  honey_crystal:
+    display_name: "&fHoney Crystal"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - honey_crystal.png
+  ender_powder:
+    display_name: "&fEnder Powder"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ender_powder.png
+  wolf_fang:
+    display_name: "&fWolf Fang"
+    resource:
+      material: BONE
+      generate: true
+      textures:
+        - wolf_fang.png
+  fish_oil:
+    display_name: "&fFish Oil"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - fish_oil.png
+  ice_shards:
+    display_name: "&fIce Shards"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ice_shards.png
+  bat_wing:
+    display_name: "&fBat Wing"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - bat_wing.png
+  guardian_spike:
+    display_name: "&fGuardian Spike"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - guardian_spike.png
+  pig_leather:
+    display_name: "&fPig Leather"
+    resource:
+      material: LEATHER
+      generate: true
+      textures:
+        - pig_leather.png
+  poison_sac:
+    display_name: "&fPoison Sac"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - poison_sac.png
+  axolotl_mucus:
+    display_name: "&fAxolotl Mucus"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - axolotl_mucus.png
+  dolphin_fin:
+    display_name: "&fDolphin Fin"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - dolphin_fin.png
+  phantom_scale:
+    display_name: "&fPhantom Scale"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - phantom_scale.png
+  squid_tentacle:
+    display_name: "&fSquid Tentacle"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - squid_tentacle.png
+  ghast_eye:
+    display_name: "&fGhast Eye"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ghast_eye.png
+  parrot_feather:
+    display_name: "&fParrot Feather"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - parrot_feather.png
+  magma_gel:
+    display_name: "&fMagma Gel"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - magma_gel.png
+  aqua_essence:
+    display_name: "&fAqua Essence"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - aqua_essence.png

@@ -1,0 +1,146 @@
+COMUM:
+  player dont have clan: '%tag% <red>Este jugador no tiene un clan.'
+  gui error: '%tag% <red>Este menú contiene un error y no se puede abrir.'
+  disabled function: '%tag% <red>Esta función está desactivada o deshabilitada.'
+  chan does not exists: '%tag% <red>Este clan no existe.'
+  command by player: '%tag% <red>Este comando debe ser utilizado por un jugador.'
+  no permission: '%tag% <red>No tienes permisos para esto.'
+  player deposited money: '%tag% <yellow>Se han depositado %uclans_money_currency%%amount% <yellow>en tu cuenta.'
+  player dont have money: '%tag% <red>Necesitas %uclans_money_currency%%amount%'
+  player dont have money gui: <red>Necesitas %uclans_money_currency%%amount%
+  player debited money: '%tag% <yellow>Se debitaron <red>%amount% <yellow>de tu cuenta.'
+  player money nozero: '%tag% <red>El valor debe ser mayor que cero.'
+  help clan header subcommand: '<newline><white><bold>Ayuda con los subcomandos:</bold> <newline> <green>[!] <gray>subcmd <gray>| <red><> <gray>obligatorio <gray>| <light_purple>() <gray>opcional <newline> '
+  help list empty: ' <red>- No hay nada en esta lista.'
+  clan dont permission role: '%tag% <red>No puedes hacer esto con tu rol actual.'
+  bank limit: '%tag% <red>Se ha alcanzado el límite.'
+  bank limit gui: <red>Se ha alcanzado el límite.
+  bank value max title: <dark_red>! <red>Valor máximo de <green>%uclans_money_currency%%max%
+  bank value min title: <dark_red>! <red>Valor mínimo de <green>%uclans_money_currency%%min%
+  bank value max: '%tag% <red>Valor máximo de <green>%uclans_money_currency%%max%'
+  bank value min: '%tag% <red>Valor mínimo de <green>%uclans_money_currency%%min%'
+  bank add error gui: <red>¡Error de transacción!
+  bank add success gui: <green>¡Éxito!
+  bank need: '%tag% <red>El banco del clan necesita %uclans_money_currency%%amount%'
+  bank need gui: <red>El banco necesita %uclans_money_currency%%amount%
+  bank view: '%tag% <yellow>El banco del clan ahora tiene %uclans_money_currency%%amount%'
+  logger clanbankwithdrawevent: <red><bold>-</bold> Se retiraron <green>%uclans_money_currency%%amount% <yellow>del banco por <green>%uclans_player%
+  logger clanbankaddevent: <green><bold>+</bold> Se añadieron <green>%uclans_money_currency%%amount% <yellow>al banco por <green>%uclans_player%
+GUI:
+  Bank home_bank title: <dark_gray>☀ Banco | %uclans_tag_color%
+  Bank home_bank items fill name: ' '
+  Bank home_bank items fill lore: [
+    ]
+  Bank home_bank items fill2 name: ' '
+  Bank home_bank items fill2 lore: [
+    ]
+  Bank home_bank items balance name: <green>Saldo del Clan
+  Bank home_bank items balance lore:
+  - <dark_gray>Objeto Informativo
+  - ''
+  - ' <dark_gray>● <white>Total: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ''
+  - ' <yellow>¡Selecciona la acción a continuación!'
+  Bank home_bank items add name: <green>Depositar %uclans_money_current_formated% en el Banco
+  Bank home_bank items add lore:
+  - <dark_gray>Banco de Clan
+  - ' '
+  - <dark_gray> ● <white>Deposita tus fondos en el
+  - <gray>   <white>banco del clan para ahorrar.
+  - ' '
+  - <yellow>► ¡Haz clic para depositar!
+  Bank home_bank items withdraw name: <green>Retirar %uclans_money_current_formated% del Banco
+  Bank home_bank items withdraw lore:
+  - <dark_gray>Banco de Clan
+  - ' '
+  - <dark_gray> ● <white>Retira fondos del banco
+  - <gray>   <white>del clan para su uso.
+  - ' '
+  - <yellow>► ¡Haz clic para retirar!
+  Bank home_bank items back name: <red>Regresar
+  Bank home_bank items back lore: [
+    ]
+  Bank bank_withdraw title: '<dark_gray>☀ Banco | <red>Retirar: <dark_gray>%uclans_money_currency%%amount%'
+  Bank bank_withdraw items fill name: ' '
+  Bank bank_withdraw items fill lore: [
+    ]
+  Bank bank_withdraw items fill2 name: ' '
+  Bank bank_withdraw items fill2 lore: [
+    ]
+  Bank bank_withdraw items balance name: <green>Dinero del Clan
+  Bank bank_withdraw items balance lore:
+  - <dark_gray>Objeto Informativo
+  - ''
+  - ' <dark_gray>● <white>Dinero Total: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ''
+  - <yellow> ¡Añada o remueve dinero!
+  Bank bank_withdraw items player name: '<green>Información de: %uclans_player%'
+  Bank bank_withdraw items player lore:
+  - <dark_gray>Objeto Informativo
+  - ''
+  - ' <white>%uclans_money_current_formated%: <yellow>%uclans_money_currency%%uclans_money_player%'
+  - ''
+  Bank bank_withdraw items add name: <green><bold>+</bold> <green>%uclans_money_currency%%add%
+  Bank bank_withdraw items add lore: [
+    ]
+  Bank bank_withdraw items add2 name: <green><bold>+</bold> <green>%uclans_money_currency%%add%
+  Bank bank_withdraw items add2 lore: [
+    ]
+  Bank bank_withdraw items remove name: <red><bold>-</bold>%uclans_money_currency%%remove%
+  Bank bank_withdraw items remove lore: [
+    ]
+  Bank bank_withdraw items remove2 name: <red><bold>-</bold>%uclans_money_currency%%remove%
+  Bank bank_withdraw items remove2 lore: [
+    ]
+  Bank bank_withdraw items go name: <green>Retirar <green>%uclans_money_currency%%amount%
+  Bank bank_withdraw items go lore:
+  - ''
+  - <dark_gray> ●<white> Esta opción no se puede deshacer y
+  - <white>   dejará registros para el líder.
+  - ''
+  - <yellow>► ¡Haz clic para retirar %uclans_money_currency%%amount%!
+  Bank bank_withdraw items back name: <red>Regresar
+  Bank bank_withdraw items back lore: [
+    ]
+  Bank bank_add title: '<dark_gray>☀ Banco | <green>Añadir: <dark_gray>%uclans_money_currency%%amount%'
+  Bank bank_add items fill name: ' '
+  Bank bank_add items fill lore: [
+    ]
+  Bank bank_add items fill2 name: ' '
+  Bank bank_add items fill2 lore: [
+    ]
+  Bank bank_add items balance name: <green>Saldo del Clan
+  Bank bank_add items balance lore:
+  - <dark_gray>Objeto Informativo
+  - ''
+  - ' <dark_gray>● <white>Dinero Total: <green>%uclans_money_currency%%uclans_bank_balance%'
+  - ''
+  - <yellow> ¡Selecciona la acción a continuación!
+  Bank bank_add items player name: '<green>Información de: %uclans_player%'
+  Bank bank_add items player lore:
+  - <dark_gray>Objeto Informativo
+  - ''
+  - ' <white>%uclans_money_current_formated%: <yellow>%uclans_money_currency%%uclans_money_player%'
+  - ''
+  Bank bank_add items add name: <green><bold>+</bold> <green>%uclans_money_currency%%add%
+  Bank bank_add items add lore: [
+    ]
+  Bank bank_add items add2 name: <green><bold>+</bold> <green>%uclans_money_currency%%add%
+  Bank bank_add items add2 lore: [
+    ]
+  Bank bank_add items remove name: <red><bold>-</bold>%uclans_money_currency%%remove%
+  Bank bank_add items remove lore: [
+    ]
+  Bank bank_add items remove2 name: <red><bold>-</bold>%uclans_money_currency%%remove%
+  Bank bank_add items remove2 lore: [
+    ]
+  Bank bank_add items go name: <green>Añadir <green>%uclans_money_currency%%amount%
+  Bank bank_add items go lore:
+  - ''
+  - <dark_gray> ●<white> Esta opción no se puede deshacer y
+  - <white>   dejará registros para el líder.
+  - ''
+  - '&e► ¡Haga click para agregar %uclans_money_currency%%amount%<yellow>!'
+  Bank bank_add items back name: <red>Regresar
+  Bank bank_add items back lore: [
+    ]

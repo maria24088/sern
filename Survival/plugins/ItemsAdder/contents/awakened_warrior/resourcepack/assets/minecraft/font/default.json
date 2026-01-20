@@ -1,0 +1,53 @@
+{
+  "providers":[
+     {
+        "file":"awakened_warrior:awakened_assassin_texture/vfx_dusk_impact_1.png",
+        "chars":["ក"],
+        "ascent": 85,
+        "height": 180,
+        "type":"bitmap"
+     },
+     {
+        "file":"awakened_warrior:awakened_assassin_texture/vfx_dusk_impact_2.png",
+        "chars":["ខ"],
+        "ascent": 85,
+        "height": 180,
+        "type":"bitmap"
+     },
+     {
+        "file":"awakened_warrior:awakened_assassin_texture/vfx_dusk_impact_3.png",
+        "chars":["គ"],
+        "ascent": 85,
+        "height": 180,
+        "type":"bitmap"
+     },
+     {
+        "file":"awakened_warrior:awakened_assassin_texture/vfx_dusk_impact_4.png",
+        "chars":["ឃ"],
+        "ascent": 85,
+        "height": 180,
+        "type":"bitmap"
+     },
+     {
+        "file":"awakened_warrior:awakened_assassin_texture/vfx_dusk_impact_5.png",
+        "chars":["ង"],
+        "ascent": 85,
+        "height": 180,
+        "type":"bitmap"
+     },
+     {
+        "file":"awakened_warrior:awakened_assassin_texture/vfx_dusk_impact_6.png",
+        "chars":["ច"],
+        "ascent": 85,
+        "height": 180,
+        "type":"bitmap"
+     },
+     {
+        "file":"awakened_warrior:awakened_assassin_texture/vfx_dusk_impact_7.png",
+        "chars":["ឆ"],
+        "ascent": 85,
+        "height": 180,
+        "type":"bitmap"
+     }
+  ]
+}

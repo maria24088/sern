@@ -1,0 +1,166 @@
+info:
+  namespace: little_unicorn_set
+items:
+  little_unicorn_axe:
+    display_name: §fLittle Unicorn Axe
+    permission: little_unicorn_set.axe
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: axe
+  little_unicorn_bow:
+    display_name: §fLittle Unicorn Bow
+    permission: little_unicorn_set.bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+  little_unicorn_chest:
+    display_name: §fLittle Unicorn Chest
+    permission: little_unicorn_set.chest
+    resource:
+      material: PAPER
+      generate: false
+      model_path: chest
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+  little_unicorn_crossbow:
+    display_name: §fLittle Unicorn Crossbow
+    permission: little_unicorn_set.crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow
+  little_unicorn_fishing_rod:
+    display_name: §fLittle Unicorn Fishing Rod
+    permission: little_unicorn_set.fishing_rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+  little_unicorn_hammer:
+    display_name: §fLittle Unicorn Hammer
+    permission: little_unicorn_set.hammer
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: hammer
+  little_unicorn_helmet:
+    display_name: §fLittle Unicorn Helmet
+    permission: little_unicorn_set.helmet
+    resource:
+      material: PAPER
+      generate: false
+      model_path: helmet
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165
+  little_unicorn_hoe:
+    display_name: §fLittle Unicorn Hoe
+    permission: little_unicorn_set.hoe
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: hoe
+  little_unicorn_key:
+    display_name: §fLittle Unicorn Key
+    permission: little_unicorn_set.key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: key
+  little_unicorn_knife:
+    display_name: §fLittle Unicorn Knife
+    permission: little_unicorn_set.knife
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: knife
+  little_unicorn_pickaxe:
+    display_name: §fLittle Unicorn Pickaxe
+    permission: little_unicorn_set.pickaxe
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: pickaxe
+  little_unicorn_scythe:
+    display_name: §fLittle Unicorn Scythe
+    permission: little_unicorn_set.scythe
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: scythe
+  little_unicorn_shield:
+    display_name: §fLittle Unicorn Shield
+    permission: little_unicorn_set.shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+  little_unicorn_shovel:
+    display_name: §fLittle Unicorn Shovel
+    permission: little_unicorn_set.shovel
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: shovel
+  little_unicorn_spear:
+    display_name: §fLittle Unicorn Spear
+    permission: little_unicorn_set.spear
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: spear
+  little_unicorn_staff:
+    display_name: §fLittle Unicorn Staff
+    permission: little_unicorn_set.staff
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: staff
+  little_unicorn_sword:
+    display_name: §fLittle Unicorn Sword
+    permission: little_unicorn_set.sword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: sword
+  little_unicorn_trident:
+    display_name: §fLittle Unicorn Trident
+    permission: little_unicorn_set.trident
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: trident
+  little_unicorn_wings:
+    display_name: §fLittle Unicorn Wings
+    permission: little_unicorn_set.wings
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wings
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165

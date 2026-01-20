@@ -1,0 +1,21 @@
+######## created by samus2002 #########
+  
+death_knight_necroslayer:
+  Id: stone_sword
+  Display: "<gradient:#b3ffda:#78ffed:#b3ffda>&lNecroslayer"
+  Model: 2082
+  Lore:
+  - '<gradient:#b3ffda:#78ffed:#b3ffda>The Necroslayer of the Death Knight'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Cursed_Seal} @self ~onTimer:10
+  - skill{s=Death_Strike_ST} @self ~onSwing
+  - skill{s=Phantom_Charge} @self ~onUse
+  - skill{s=Wraithbound_Chains} @self ~onCrouch
+  - skill{s=Soul_Barrier} @self ~onTimer:10
+  - skill{s=Necrotic_Whirlwind} @self ~onUse
+  - skill{s=Death_Sentence} @self ~onSwing

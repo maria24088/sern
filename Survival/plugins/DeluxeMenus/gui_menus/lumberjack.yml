@@ -1,0 +1,125 @@
+menu_title: '&fṭṥ'
+open_command: lumberjack
+size: 54
+items:
+  'left':
+    material: PAPER
+    model_data: 7822
+    slot: 36
+    display_name: "&e&lᴀɴᴛᴇʀɪᴏʀ"
+    click_commands:
+       - '[openguimenu] hunter'
+  'farmer':
+    material: PAPER
+    model_data: 7819
+    slot: 37
+    display_name: "&fṶ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] farmer'
+  'fisherman':
+    material: PAPER
+    model_data: 7820
+    slot: 38
+    display_name: "&fṷ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] fisherman'
+  'hunter':
+    material: PAPER
+    model_data: 7821
+    slot: 39
+    display_name: "&fṸ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] hunter'
+  'jobjoin':
+    material: PAPER
+    model_data: 7823
+    slot: 40
+    priority: 1
+    display_name: "&f ṹ"
+    lore:
+       - " "
+       - " &8• &#249fdeGana dinero"
+       - "  &#249fdetalando y plantando árboles"
+       - " "
+       - " &8• &7Trabajadores&8: &f%jobsr_totalplayers_lumberjack%"
+       - " &8• &7Nivel&8: &f%jobsr_user_jlevel_lumberjack%/%jobsr_maxlvl_lumberjack%"
+       - " &8• &7EXP&8: &f%jobsr_user_jexp_lumberjack%/%jobsr_user_jmaxexp_lumberjack% &8(&#59c135+%jobsr_user_jmexp_lumberjack%&fṩ&8)"
+       - " "
+       - " &8• &7Progreso&8: &f"
+       - "%progress_bar_{jobsr_user_jexp_lumberjack}_c:&fṪ_p:&fṪ_r:&fṨ_l:10_m:{jobsr_user_jmaxexp_lumberjack}_fullbar:&fṨṨṨṨṨṨṨṨṨṨ%"
+       - " "
+       - " &fṫ &eᴘᴀʀᴀ ᴜɴɪʀᴛᴇ ᴀʟ ᴛʀᴀʙᴀᴊᴏ"
+       - " "
+    left_click_commands:
+       - '[player] jobs join lumberjack'
+       - '[refresh]'
+  'jobleave':
+    material: PAPER
+    model_data: 7823
+    slot: 40
+    priority: 0
+    display_name: "&f ṹ"
+    lore:
+       - " "
+       - " &8• &#249fdeGana dinero"
+       - "  &#249fdetalando y plantando árboles"
+       - " "
+       - " &8• &7Rango&8: &f%jobsr_user_title_lumberjack%"
+       - " &8• &7Trabajadores&8: &f%jobsr_totalplayers_lumberjack%"
+       - " &8• &7Nivel&8: &f%jobsr_user_jlevel_lumberjack%/%jobsr_maxlvl_lumberjack%"
+       - " &8• &7EXP&8: &f%jobsr_user_jexp_lumberjack%/%jobsr_user_jmaxexp_lumberjack% &8(&#59c135+%jobsr_user_jmexp_lumberjack%&fṩ&8)"
+       - " "
+       - " &8• &7Progreso&8: &f"
+       - "%progress_bar_{jobsr_user_jexp_lumberjack}_c:&fṪ_p:&fṪ_r:&fṨ_l:10_m:{jobsr_user_jmaxexp_lumberjack}_fullbar:&fṨṨṨṨṨṨṨṨṨṨ%"
+       - " "
+       - " &fṬ &eᴘᴀʀᴀ ᴅᴇᴊᴀʀ ᴇʟ ᴛʀᴀʙᴀᴊᴏ"
+       - " "
+    view_requirement:
+      requirements:
+        jobs_requirement:
+          type: string contains
+          input: "%jobsr_user_isin_lumberjack%"
+          output: 'True'
+    right_click_commands:
+       - '[player] jobs leave lumberjack'
+       - '[refresh]'
+  'miner':
+    material: PAPER
+    model_data: 7824
+    slot: 41
+    display_name: "&fṺ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] miner'
+  'smelter':
+    material: PAPER
+    model_data: 7826
+    slot: 42
+    display_name: "&fṻ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] smelter'
+  'alchemist':
+    material: PAPER
+    model_data: 7812
+    slot: 43
+    display_name: "&fṯ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] alchemist'
+  'right':
+    material: PAPER
+    model_data: 7825
+    slot: 44
+    display_name: "&e&lsɪɢᴜɪᴇɴᴛᴇ"
+    click_commands:
+       - '[openguimenu] miner'

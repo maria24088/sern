@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  longcarpetred:
+    display_name: "Long Carpet Red"
+    permission: livingroom.longcarpetred
+    resource:
+      material: PAPER
+      generate: false
+      model_path: longcarpetred
+    behaviours:
+      furniture:
+        light_level: 13

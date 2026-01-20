@@ -1,0 +1,26 @@
+the_earth_wing:
+  slot: BACKPACK
+  permission: hmccosmetics.wing
+  dyeable: true
+  item:
+    material: PAPER
+    model-data: 18632
+    name: <gradient:#FFB6C1:#87CEEB>The_earth Wing</gradient>
+    lore:
+    - ''
+    - <gray>The_earth Wing!
+    amount: 1
+the_earth_hat:
+  slot: HELMET
+  permission: hmccosmetics.hat
+  dyeable: true
+  item:
+    material: PAPER
+    model-data: 19812
+    name: <rainbow>The_earth Hat</rainbow>
+    lore:
+    - ''
+    - <gray>The_earth Hat!
+    amount: 1
+
+#96cba1cd434a4400e997d967992b5b1b

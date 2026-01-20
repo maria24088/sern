@@ -1,0 +1,42 @@
+cat << 'EOF' > .gitignore
+# --- TUS REGLAS ORIGINALES ---
+/tailscale-cs
+/work_area*
+composer.*
+/Python*
+*.output
+/Modgest
+/thanos
+/vendor
+/bkdir
+java/
+*.exe
+*.msi
+*.pyc
+*.msp
+*.msx
+msx.py
+
+# --- NUEVAS REGLAS PARA MINECRAFT (Importante) ---
+# Ignorar librerias y versiones (se descargan solas al iniciar)
+*/libraries/
+*/versions/
+*/cache/
+*/.gradle/
+
+# Ignorar Logs y reportes de crash (ocupan espacio inútil)
+*.log
+*.log.gz
+*/logs/
+*/crash-reports/
+
+# Ignorar archivos de bloqueo y sistema
+*.lock
+.DS_Store
+
+# Ignorar backups automáticos dentro de las carpetas (para no duplicar)
+*/backups/
+EOF
+
+Survival/plugins/FastAsyncWorldEdit/clipboard/
+*.bd

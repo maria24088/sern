@@ -1,0 +1,30 @@
+npc: true
+last-account-name: Ricardo
+money: '0'
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: ''
+afk: false
+socialspy: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1765906316851
+  login: 0
+logoutlocation:
+  world: 0c52527c-f895-4989-828f-80caa9f6e8b5
+  world-name: Spawn
+  x: -11.509423358292503
+  y: 87.0
+  z: 75.48185131440485
+  yaw: 179.8107452392578
+  pitch: -2.246981143951416

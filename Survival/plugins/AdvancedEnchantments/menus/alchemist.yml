@@ -1,0 +1,88 @@
+# General settings related to alchemist inventory system.
+general:
+  settings:
+    # The alchemist should accept books.
+    # If false, the alchemist will not accept books.
+    combine-books: true
+    # The alchemist should accept dust.
+    # If false, the alchemist will not accept dusts.
+    combine-dust: true
+    books:
+      # This method adds chances together and splits by 2 (x+y/2)
+      add-up-chances: true
+      pre-set-chances:
+        enabled: false
+        success: 50
+        destroy: 50
+    dusts:
+      # This method just adds up chances together
+      add-up: true
+    price:
+      economy: EXP # MONEY, EXP, LEVEL
+      # If true the plugin will calculate the price.
+      let-plugin-count: true
+      # Your custom price here.
+      # Only works if let-plugin-count is false.
+      custom-price: 250
+    other-items-slot:
+      first-item-slot: 10
+      second-item-slot: 12
+
+# Options for customization of alchemist inventory.
+inventory:
+  # Set to "none' to disable
+  # the sound when opening the inventory.
+  open-sound: "BLOCK_CHEST_OPEN"
+
+  # The title of the inventory.
+  name: "&f᪄᪒"
+
+  # The size of the inventory.
+  # Must be a multiple of 9. (9, 18, 27, 36, 45, 54)
+  size: 27
+
+  items:
+    preview-item:
+      type: FEATHER
+      damage: 0
+      custom-model-data: 9999
+      slot: 14
+      name: "&fResult Item Preview"
+      lore:
+        - ""
+        - "{#dff9fb}A preview of item you will"
+        - "{#dff9fb}receive from the Alchemist"
+        - "{#dff9fb}will be displayed here."
+    explanation-item:
+      type: FEATHER
+      damage: 16
+      custom-model-data: 9999
+      slot: 16
+      name: "&7The Alchemist will Exchange:"
+      lore:
+        - ""
+        - "&b&l* &f2X Enchantment Books"
+        - "&7(of the same type & level)"
+        - "&d= &f1X Enchantment Book"
+        - "&7(of higher level)"
+        - ""
+        - "&b&l* &f2X Lucky Gem"
+        - "&7(of the same rarity)"
+        - "&d= &f1X Lucky Gem"
+        - "&7(of higher chances)"
+    confirm-item:
+      type: FEATHER
+      damage: 16
+      custom-model-data: 9999
+      slot: 16
+      name: "&fClick confirm to exchange"
+      lore:
+        - "&7Exchange Price: {#c0e45a}%price%&f᪠"
+    filler-item:
+      # Enable or disable the filler item.
+      enabled: true
+      type: FEATHER
+      custom-model-data: 9999
+      damage: 15
+      name: " "
+      lore: []

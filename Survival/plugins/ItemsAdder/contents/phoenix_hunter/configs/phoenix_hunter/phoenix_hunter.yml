@@ -1,0 +1,75 @@
+info:
+  namespace: phoenix_hunter
+items:
+  icon_ashdance:
+    display_name: "icon_ashdance"
+    permission: icon_ashdance
+    resource:
+      material: COAL
+      model_id: 2245
+      generate: false
+      model_path: phoenix_hunter_model/icon_ashdance
+  icon_blazing_feathers:
+    display_name: "icon_blazing_feathers"
+    permission: icon_blazing_feathers
+    resource:
+      material: COAL
+      model_id: 2246
+      generate: false
+      model_path: phoenix_hunter_model/icon_blazing_feathers
+  icon_flameborn:
+    display_name: "icon_flameborn"
+    permission: icon_flameborn
+    resource:
+      material: COAL
+      model_id: 2247
+      generate: false
+      model_path: phoenix_hunter_model/icon_flameborn
+  icon_flameburst_convergence:
+    display_name: "icon_flameburst_convergence"
+    permission: icon_flameburst_convergence
+    resource:
+      material: COAL
+      model_id: 2248
+      generate: false
+      model_path: phoenix_hunter_model/icon_flameburst_convergence
+  icon_phoenix_rebirth:
+    display_name: "icon_phoenix_rebirth"
+    permission: icon_phoenix_rebirth
+    resource:
+      material: COAL
+      model_id: 2249
+      generate: false
+      model_path: phoenix_hunter_model/icon_phoenix_rebirth
+  icon_phoenix_totem:
+    display_name: "icon_phoenix_totem"
+    permission: icon_phoenix_totem
+    resource:
+      material: COAL
+      model_id: 2250
+      generate: false
+      model_path: phoenix_hunter_model/icon_phoenix_totem
+  icon_pyroclasmic_barrage:
+    display_name: "icon_pyroclasmic_barrage"
+    permission: icon_pyroclasmic_barrage
+    resource:
+      material: COAL
+      model_id: 2251
+      generate: false
+      model_path: phoenix_hunter_model/icon_pyroclasmic_barrage
+  phoenix_hunter_hellbow:
+    display_name: "phoenix_hunter_hellbow"
+    permission: phoenix_hunter_hellbow
+    resource:
+      material: STONE_SWORD
+      model_id: 2078
+      generate: false
+      model_path: phoenix_hunter_model/phoenix_hunter_hellbow
+  phoenix_hunter_soulbow:
+    display_name: "phoenix_hunter_soulbow"
+    permission: phoenix_hunter_soulbow
+    resource:
+      material: STONE_SWORD
+      model_id: 2079
+      generate: false
+      model_path: phoenix_hunter_model/phoenix_hunter_soulbow

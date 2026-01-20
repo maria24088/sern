@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  lcouchyellow:
+    display_name: "L Couch Yellow"
+    permission: livingroom.lcouchyellow
+    resource:
+      material: PAPER
+      generate: false
+      model_path: lcouchyellow
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.1

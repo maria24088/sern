@@ -1,0 +1,588 @@
+info:
+  namespace: materials_1
+
+categories:
+  materials_1_category:
+    enabled: true
+    icon: materials_1:ancient_netherite
+    name: "Crafting Materials"
+    items:
+      - materials_1:ancient_mushroom
+      - materials_1:ancient_netherite
+      - materials_1:ancient_slime_string
+      - materials_1:aquamarine_shard
+      - materials_1:binding_gel_common
+      - materials_1:binding_gel_epic
+      - materials_1:binding_gel_legendary
+      - materials_1:binding_gel_rare
+      - materials_1:binding_gel_uncommon
+      - materials_1:bottle_of_soul
+      - materials_1:clam_blue
+      - materials_1:clam_pink
+      - materials_1:clam_white
+      - materials_1:cotton
+      - materials_1:crocodile_tooth
+      - materials_1:dungeon_key_amethyst
+      - materials_1:dungeon_key_crimson
+      - materials_1:dungeon_key_gold
+      - materials_1:dungeon_shard
+      - materials_1:exotic_leather_asorted
+      - materials_1:exotic_leather_blue
+      - materials_1:exotic_leather_brown
+      - materials_1:exotic_leather_cyan
+      - materials_1:exotic_leather_magenta
+      - materials_1:exotic_leather_purple
+      - materials_1:fine_string
+      - materials_1:forge_catalyst
+      - materials_1:gear
+      - materials_1:gear_sticky_common
+      - materials_1:gear_sticky_epic
+      - materials_1:gear_sticky_legendary
+      - materials_1:gear_sticky_rare
+      - materials_1:gear_sticky_uncommon
+      - materials_1:glue
+      - materials_1:key_fragment_common
+      - materials_1:key_fragment_epic
+      - materials_1:key_fragment_legendary
+      - materials_1:key_fragment_rare
+      - materials_1:key_fragment_uncommon
+      - materials_1:key_golden
+      - materials_1:key_silver
+      - materials_1:lucky_horseshoe
+      - materials_1:lucky_horseshoe_enchanted
+      - materials_1:magic_mushroom
+      - materials_1:magic_mushroom_enchanted
+      - materials_1:paint_bucket
+      - materials_1:pencil
+      - materials_1:plastic
+      - materials_1:powershard_epic
+      - materials_1:powershard_legendary
+      - materials_1:powershard_rare
+      - materials_1:powershard_uncommon
+      - materials_1:rocks
+      - materials_1:rubber_bands
+      - materials_1:screw
+      - materials_1:soul_blaze
+      - materials_1:soul_chicken
+      - materials_1:soul_magmacube
+      - materials_1:soul_pig
+      - materials_1:soul_sheep
+      - materials_1:soul_skeleton
+      - materials_1:soul_spider
+      - materials_1:soul_zombie
+      - materials_1:spawner_fragment
+      - materials_1:steel
+      - materials_1:sulfur_crystal
+      - materials_1:tangled_yarn
+      - materials_1:vibrant_feather_1
+      - materials_1:vibrant_feather_2
+      - materials_1:vibrant_feather_3
+      - materials_1:worn_cloth
+      - materials_1:wrench
+
+items:
+  ancient_mushroom:
+    display_name: "Ancient Mushroom"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/ancient_mushroom.png
+  ancient_netherite:
+    display_name: "Ancient Netherite"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/ancient_netherite.png
+  ancient_slime_string:
+    display_name: "Ancient Slime String"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/ancient_slime_string.png
+  aquamarine_shard:
+    display_name: "Aquamarine Shard"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/aquamarine_shard.png
+  binding_gel_common:
+    display_name: "Common Binding Gel"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/binding_gel_common.png
+  binding_gel_epic:
+    display_name: "Epic Binding Gel"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/binding_gel_epic.png
+  binding_gel_legendary:
+    display_name: "Legendary Binding Gel"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/binding_gel_legendary.png
+  binding_gel_rare:
+    display_name: "Rare Binding Gel"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/binding_gel_rare.png
+  binding_gel_uncommon:
+    display_name: "Uncommon Binding Gel"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/binding_gel_uncommon.png
+  bottle_of_soul:
+    display_name: "Bottle of Soul"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/bottle_of_soul.png
+  clam_blue:
+    display_name: "Blue Clam"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/clam_blue.png
+  clam_pink:
+    display_name: "Pink Clam"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/clam_pink.png
+  clam_white:
+    display_name: "White Clam"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/clam_white.png
+  cotton:
+    display_name: "Cotton"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/cotton.png
+  crocodile_tooth:
+    display_name: "Crocodile Tooth"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/crocodile_tooth.png
+  dungeon_key_amethyst:
+    display_name: "Amethyst Dungeon Key"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/dungeon_key_amethyst.png
+  dungeon_key_crimson:
+    display_name: "Crimson Dungeon Key"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/dungeon_key_crimson.png
+  dungeon_key_gold:
+    display_name: "Gold Dungeon Key"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/dungeon_key_gold.png
+  dungeon_shard:
+    display_name: "Dungeon Shard"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/dungeon_shard.png
+  exotic_leather_asorted:
+    display_name: "Asorted Exotic Leather"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/exotic_leather_asorted.png
+  exotic_leather_blue:
+    display_name: "Blue Exotic Leather"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/exotic_leather_blue.png
+  exotic_leather_brown:
+    display_name: "Brown Exotic Leather"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/exotic_leather_brown.png
+  exotic_leather_cyan:
+    display_name: "Cyan Exotic Leather"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/exotic_leather_cyan.png
+  exotic_leather_magenta:
+    display_name: "Magenta Exotic Leather"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/exotic_leather_magenta.png
+  exotic_leather_purple:
+    display_name: "Purple Exotic Leather"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/exotic_leather_purple.png
+  fine_string:
+    display_name: "Fine String"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/fine_string.png
+  forge_catalyst:
+    display_name: "Forge Catalyst"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/forge_catalyst.png
+  gear:
+    display_name: "Gear"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/gear.png
+  gear_sticky_common:
+    display_name: "Common Sticky Gear"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/gear_sticky_common.png
+  gear_sticky_epic:
+    display_name: "Epic Sticky Gear"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/gear_sticky_epic.png
+  gear_sticky_legendary:
+    display_name: "Legendary Sticky Gear"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/gear_sticky_legendary.png
+  gear_sticky_rare:
+    display_name: "Rare Sticky Gear"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/gear_sticky_rare.png
+  gear_sticky_uncommon:
+    display_name: "Uncommon Sticky Gear"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/gear_sticky_uncommon.png
+  glue:
+    display_name: "Glue"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/glue.png
+  key_fragment_common:
+    display_name: "Common Key Fragment"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/key_fragment_common.png
+  key_fragment_epic:
+    display_name: "Epic Key Fragment"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/key_fragment_epic.png
+  key_fragment_legendary:
+    display_name: "Legendary Key Fragment"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/key_fragment_legendary.png
+  key_fragment_rare:
+    display_name: "Rare Key Fragment"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/key_fragment_rare.png
+  key_fragment_uncommon:
+    display_name: "Uncommon Key Fragment"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/key_fragment_uncommon.png
+  key_golden:
+    display_name: "Golden Key"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/key_golden.png
+  key_silver:
+    display_name: "Silver Key"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/key_silver.png
+  lucky_horseshoe:
+    display_name: "Lucky Horseshoe"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/lucky_horseshoe.png
+  lucky_horseshoe_enchanted:
+    display_name: "Enchanted Lucky Horseshoe"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/lucky_horseshoe_enchanted.png
+  magic_mushroom:
+    display_name: "Magic Mushroom"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/magic_mushroom.png
+  magic_mushroom_enchanted:
+    display_name: "Enchanted Magic Mushroom"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/magic_mushroom_enchanted.png
+  paint_bucket:
+    display_name: "Paint Bucket"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/paint_bucket.png
+  pencil:
+    display_name: "Pencil"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/pencil.png
+  plastic:
+    display_name: "Plastic"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/plastic.png
+  powershard_epic:
+    display_name: "Epic Powershard"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/powershard_epic.png
+  powershard_legendary:
+    display_name: "Legendary Powershard"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/powershard_legendary.png
+  powershard_rare:
+    display_name: Rare Powershard
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/powershard_rare.png
+  powershard_uncommon:
+    display_name: "Uncommon Powershard"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/powershard_uncommon.png
+  rocks:
+    display_name: "Rocks"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/rocks.png
+  rubber_bands:
+    display_name: "Rubber Bands"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/rubber_bands.png
+  screw:
+    display_name: "Screw"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/screw.png
+  soul_blaze:
+    display_name: "Blaze Soul"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/soul_blaze.png
+  soul_chicken:
+    display_name: "Chicken Soul"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/soul_chicken.png
+  soul_magmacube:
+    display_name: "Magma Cube Soul"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/soul_magmacube.png
+  soul_pig:
+    display_name: "Pig Soul"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/soul_pig.png
+  soul_sheep:
+    display_name: "Sheep Soul"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/soul_sheep.png
+  soul_skeleton:
+    display_name: "Skeleton Soul"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/soul_skeleton.png
+  soul_spider:
+    display_name: "Spider Soul"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/soul_spider.png
+  soul_zombie:
+    display_name: "Zombie Soul"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/soul_zombie.png
+  spawner_fragment:
+    display_name: "Spawner Fragment"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/spawner_fragment.png
+  steel:
+    display_name: "Steel"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/steel.png
+  sulfur_crystal:
+    display_name: "Sulfur Crystal"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/sulfur_crystal.png
+  tangled_yarn:
+    display_name: "Tangled Yarn"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/tangled_yarn.png
+  vibrant_feather_1:
+    display_name: "Vibrant Feather (1)"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/vibrant_feather_1.png
+  vibrant_feather_2:
+    display_name: "Vibrant Feather (2)"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/vibrant_feather_2.png
+  vibrant_feather_3:
+    display_name: "Vibrant Feather (3)"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/vibrant_feather_3.png
+  worn_cloth:
+    display_name: "Worn Cloth"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/worn_cloth.png
+  wrench:
+    display_name: "Wrench"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - crafting_materials/wrench.png
+#o0bSRjM25WUFljRFZ2YXdTZFVkUxElaNpXRU1EMRRlT5FUMVJFR6ZHTOBXMDJmWNdjUGNWN

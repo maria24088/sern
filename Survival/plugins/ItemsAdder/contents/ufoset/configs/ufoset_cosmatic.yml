@@ -1,0 +1,40 @@
+  
+info:
+  namespace: ufoset
+items:
+
+  ufo_cosmetics_backpack_1:
+    display_name: UFO Backpack 1 Cosmetics
+    permission: ufo.backpack_1_cosmetics
+    resource:
+      generate: false
+      material: POTION
+      model_path: backpack_cosmetics
+      model_id: 3500001
+  ufo_cosmetics_backpack_1_self:
+    display_name: UFO Backpack 1 Cosmetics Self
+    permission: ufo.backpack_1_cosmetics_self
+    resource:
+      generate: false
+      material: POTION
+      model_path: backpack_cosmetics_self
+      model_id: 3500002      
+
+
+  ufo_cosmetics_backpack_2:
+    display_name: UFO Backpack 2 Cosmetics
+    permission: ufo.backpack_2_cosmetics
+    resource:
+      generate: false
+      material: POTION
+      model_path: backpack_2_cosmetics
+      model_id: 3500003
+  ufo_cosmetics_backpack_2_self:
+    display_name: UFO Backpack 2 Cosmetics Self
+    permission: ufo.backpack_2_cosmetics_self
+    resource:
+      generate: false
+      material: POTION
+      model_path: backpack_2_cosmetics_self
+      model_id: 3500004      
+

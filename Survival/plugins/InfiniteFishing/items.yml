@@ -1,0 +1,100 @@
+custom-items:
+  leather_boots:
+    name: "&6Waterlogged Boots"
+    item: LEATHER_BOOTS # ensure this uses proper "Material" value
+    model-data: 0
+    loot-table-weight: 30
+    rarity: UNCOMMON
+    description:
+      - "&7A pair of old, soggy leather boots."
+      - "&7May be repairable or used for leather."
+  golden-apple:
+    name: "&6Enchanted Golden Apple"
+    item: ENCHANTED_GOLDEN_APPLE
+    model-data: 0
+    loot-table-weight: 1
+    rarity: LEGENDARY
+    description:
+      - "&7A rare and powerful fruit."
+      - "&7Grants significant bonuses when consumed."
+  fish-finder:
+    name: "&b&lFish Finder"
+    item: PAPER
+    model-data: 50080
+    loot-table-weight: 10
+    rarity: RARE
+    description:
+      - "&7An advanced tool for locating fish."
+      - "&7Increases your chances of a good catch."
+  prismarine-crystals:
+    name: "&aPrismarine Crystals"
+    item: PRISMARINE_CRYSTALS
+    model-data: 0
+    loot-table-weight: 30
+    rarity: UNCOMMON
+    description:
+      - "&7Shimmering crystals from the ocean depths."
+      - "&7Useful for crafting and trading."
+  nautilus-shell:
+    name: "&fNautilus Shell"
+    item: NAUTILUS_SHELL
+    model-data: 0
+    loot-table-weight: 20
+    rarity: RARE
+    description:
+      - "&7A perfectly preserved nautilus shell."
+      - "&7Key component for crafting a Conduit."
+  trident:
+    name: "&b&lTrident"
+    item: TRIDENT
+    model-data: 0
+    loot-table-weight: 1
+    rarity: LEGENDARY
+    description:
+      - "&7A powerful weapon of the seas."
+      - "&7Throw it to strike enemies from afar."
+  tropical-fish:
+    name: "&d&lExotic Tropical Fish"
+    item: TROPICAL_FISH
+    model-data: 0
+    loot-table-weight: 40
+    rarity: UNCOMMON
+    description:
+      - "&7A vibrantly colored tropical fish."
+      - "&7Prized by collectors and aquarium enthusiasts."
+  heart-of-the-sea:
+    name: "&b&lHeart of the Sea"
+    item: HEART_OF_THE_SEA
+    model-data: 0
+    loot-table-weight: 5
+    rarity: EPIC
+    description:
+      - "&7A mystical artifact from the ocean's core."
+      - "&7Essential for creating a Conduit."
+  name-tag:
+    name: "&e&lMystic Name Tag"
+    item: NAME_TAG
+    model-data: 0
+    loot-table-weight: 15
+    rarity: RARE
+    description:
+      - "&7A peculiar tag with naming powers."
+      - "&7Use it to name any creature or pet."
+  enchanted-book:
+    name: "&d&lEnchanted Fishing Tome"
+    item: ENCHANTED_BOOK
+    model-data: 0
+    loot-table-weight: 25
+    rarity: RARE
+    description:
+      - "&7A book imbued with aquatic enchantments."
+      - "&7May contain powerful fishing-related enchants."
+  diamond:
+    name: "&b&lOcean's Diamond"
+    item: DIAMOND
+    model-data: 0
+    loot-table-weight: 3
+    rarity: EPIC
+    description:
+      - "&7A flawless diamond from the sea floor."
+      - "&7Extremely valuable and rare."

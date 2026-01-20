@@ -1,0 +1,63 @@
+# Made by samus2002
+
+menu_title: '&8&lSanctuary Portal'
+open_command:
+  - portal_sanctuary
+size: 27
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: portal_sanctuary.open
+      deny_commands:
+        - "[message] &cYou can't access Sanctuary Portals yet!"
+items:
+  'GRIMHOLT_FOREST':
+    material: OAK_LEAVES
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lGrimholt Forest'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to travel to &b&lGrimholt Forest!"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s OBJ_PORTAL_SANCTUARY_GRIMHOLT_FOREST";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[close]'
+  'EMBERWOOD_FOREST':
+    material: CRIMSON_STEM
+    slot: 11
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lEmberwood Forest'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to travel to &b&lEmberwood Forest!"
+      - ""
+    view_requirement:
+      requirements:
+        portal_perm:
+          type: has permission
+          permission: portal.emberwood_forest
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s OBJ_PORTAL_SANCTUARY_EMBERWOOD_FOREST";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[close]'
+  'EMBERWOOD_FOREST_LOCKED':
+    material: RED_STAINED_GLASS_PANE
+    slot: 11
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&c&lEmberwood Forest'
+    lore:
+      - "&4&lLOCKED"
+    left_click_commands:
+      - "[message] &4You haven't unlocked &b&lEmberwood Forest &4yet!"
+      - '[sound] ENTITY_ITEM_BREAK'
+#24f35df792b6ddcf3baf6e41e84f2dde

@@ -1,0 +1,21 @@
+  
+thunder_ronin_katana:
+  Id: stone_sword
+  Display: "<gradient:#86ffe5:#f7ff8b:#86ffe5>&lThunder Katana"
+  Model: 2085
+  Lore:
+  - '<gradient:#86ffe5:#f7ff8b:#86ffe5>The Thunder Katana of the Thunder Ronin'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Lightning_Reflex} @self ~onDamaged
+  - skill{s=Thunder_Slash} @self ~onSwing
+  - skill{s=Thunderclap_And_Flash} @self ~onUse
+  - skill{s=Flashstorm_Reversal} @self ~onCrouch
+  - skill{s=Crackling_Skyfall} @self ~onTimer:10
+  - skill{s=Thunderous_Barrage} @self ~onUse
+  - skill{s=Flaming_Thunder_God} @self ~onSwing
+#YGZ4A1SPNVWOZVcXZUUxhXdrRUVPZFRTdkUsRFeRZkVzJ1VhVTNsFEOk5EbIFEVzFjR1YFO

@@ -1,0 +1,63 @@
+title: <white>
+rows: 6
+items:
+  little_unicorn_cosmetics_wings:
+    slots:
+    - 0
+    item:
+      name: "<white>\xA7fLittle Unicorn Wings"
+      material: POTION
+      model-data: 9923117
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_little_unicorn_cosmetics_wings%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_little_unicorn_cosmetics_wings%'
+    type: cosmetic
+    cosmetic: little_unicorn_cosmetics_wings
+    locked-item:
+      name: "<white>\xA7fLittle Unicorn Wings <red><b>(LOCK)"
+      material: POTION
+      model-data: 9923117
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+  little_unicorn_cosmetics_helmet:
+    slots:
+    - 1
+    item:
+      name: "<white>\xA7fLittle Unicorn Helmet"
+      material: POTION
+      model-data: 9923116
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_little_unicorn_cosmetics_helmet%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_little_unicorn_cosmetics_helmet%'
+    type: cosmetic
+    cosmetic: little_unicorn_cosmetics_helmet
+    locked-item:
+      name: "<white>\xA7fLittle Unicorn Helmet <red><b>(LOCK)"
+      material: POTION
+      model-data: 9923116
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+
+#YHd4E3YzUnMw4UV0FjNGV2a31WZ3lEVPlXWU1EejRUTwsGSPNzU5wEMJRmWZVjdWRmWshFO

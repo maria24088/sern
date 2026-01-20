@@ -1,0 +1,55 @@
+info:
+  namespace: "custom_esc"
+font_images:
+  top_logo_1:
+    path: "top_logo_1.png"
+    y_position: 53
+    scale_ratio: 64
+    suggest_in_command: false
+    show_in_gui: false
+  top_logo_2:
+    path: "top_logo_2.png"
+    y_position: 53
+    scale_ratio: 64
+    suggest_in_command: false
+    show_in_gui: false
+  bottom_news:
+    path: "bottom_news.png"
+    y_position: -1
+    suggest_in_command: false
+    show_in_gui: false
+  quit_button:
+    path: "quit_button.png"
+    y_position: 27
+    suggest_in_command: false
+    show_in_gui: false
+  back_button:
+    path: "back_button.png"
+    y_position: 22
+    suggest_in_command: false
+    show_in_gui: false
+  options_button:
+    path: "options_icon_button.png"
+    y_position: 14
+    suggest_in_command: false
+    show_in_gui: false
+  preport_button:
+    path: "preport_icon_button.png"
+    y_position: 14
+    suggest_in_command: false
+    show_in_gui: false
+  rbugs_button:
+    path: "rbugs_icon_button.png"
+    y_position: 14
+    suggest_in_command: false
+    show_in_gui: false
+  feedback_button:
+    path: "feedback_icon_button.png"
+    y_position: 38
+    suggest_in_command: false
+    show_in_gui: false
+  stats_button:
+    path: "stats_icon_button.png"
+    y_position: 14
+    suggest_in_command: false
+    show_in_gui: false

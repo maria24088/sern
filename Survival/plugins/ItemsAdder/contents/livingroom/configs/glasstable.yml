@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  glasstable:
+    display_name: "Glass Table"
+    permission: livingroom.glasstable
+    resource:
+      material: PAPER
+      generate: false
+      model_path: glasstable
+    behaviours:
+      furniture:
+        light_level: 13

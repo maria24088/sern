@@ -1,0 +1,37 @@
+dark_wither_cosmetics_cape:
+  height: 4
+  permission: cosmetics.dark_wither_cosmetics_cape
+  dyeable: false
+  slot: BACKPACK
+  item:
+    material: POTION
+    model-data: 9923149
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+  firstperson-item:
+    material: POTION
+    model-data: 9923148
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+dark_wither_cosmetics_helmet:
+  height: 0
+  permission: cosmetics.dark_wither_cosmetics_helmet
+  dyeable: false
+  slot: HELMET
+  item:
+    material: POTION
+    model-data: 9923150
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES

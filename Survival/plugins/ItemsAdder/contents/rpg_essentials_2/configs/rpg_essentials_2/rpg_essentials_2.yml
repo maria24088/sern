@@ -1,0 +1,124 @@
+info:
+  namespace: rpg_essentials_2
+items:
+  cactus:
+    display_name: "cactus"
+    permission: cactus
+    resource:
+      material: FEATHER
+      model_id: 2030
+      generate: false
+      model_path: rpg_essentials_2_model/cactus
+  deathbloom:
+    display_name: "deathbloom"
+    permission: deathbloom
+    resource:
+      material: FEATHER
+      model_id: 2031
+      generate: false
+      model_path: rpg_essentials_2_model/deathbloom
+  four_leaf_clover:
+    display_name: "four_leaf_clover"
+    permission: four_leaf_clover
+    resource:
+      material: FEATHER
+      model_id: 2032
+      generate: false
+      model_path: rpg_essentials_2_model/four_leaf_clover
+  magical_herb:
+    display_name: "magical_herb"
+    permission: magical_herb
+    resource:
+      material: FEATHER
+      model_id: 2033
+      generate: false
+      model_path: rpg_essentials_2_model/magical_herb
+  mushroom_glowing:
+    display_name: "mushroom_glowing"
+    permission: mushroom_glowing
+    resource:
+      material: FEATHER
+      model_id: 2034
+      generate: false
+      model_path: rpg_essentials_2_model/mushroom_glowing
+  mushroom_red:
+    display_name: "mushroom_red"
+    permission: mushroom_red
+    resource:
+      material: FEATHER
+      model_id: 2035
+      generate: false
+      model_path: rpg_essentials_2_model/mushroom_red
+  potion_eternal:
+    display_name: "potion_eternal"
+    permission: potion_eternal
+    resource:
+      material: FEATHER
+      model_id: 2036
+      generate: false
+      model_path: rpg_essentials_2_model/potion_eternal
+  potion_large:
+    display_name: "potion_large"
+    permission: potion_large
+    resource:
+      material: FEATHER
+      model_id: 2037
+      generate: false
+      model_path: rpg_essentials_2_model/potion_large
+  potion_minor:
+    display_name: "potion_minor"
+    permission: potion_minor
+    resource:
+      material: FEATHER
+      model_id: 2038
+      generate: false
+      model_path: rpg_essentials_2_model/potion_minor
+  potion_small:
+    display_name: "potion_small"
+    permission: v
+    resource:
+      material: FEATHER
+      model_id: 2039
+      generate: false
+      model_path: rpg_essentials_2_model/potion_small
+  potion_superior:
+    display_name: "potion_superior"
+    permission: potion_superior
+    resource:
+      material: FEATHER
+      model_id: 2040
+      generate: false
+      model_path: rpg_essentials_2_model/potion_superior
+  scroll_return:
+    display_name: "scroll_return"
+    permission: scroll_return
+    resource:
+      material: FEATHER
+      model_id: 2041
+      generate: false
+      model_path: rpg_essentials_2_model/scroll_return
+  scroll_teleport:
+    display_name: "scroll_teleport"
+    permission: scroll_teleport
+    resource:
+      material: FEATHER
+      model_id: 2042
+      generate: false
+      model_path: rpg_essentials_2_model/scroll_teleport
+  shamrock:
+    display_name: "shamrock"
+    permission: shamrock
+    resource:
+      material: FEATHER
+      model_id: 2043
+      generate: false
+      model_path: rpg_essentials_2_model/shamrock
+  wild_berry:
+    display_name: "wild_berry"
+    permission: wild_berry
+    resource:
+      material: FEATHER
+      model_id: 2044
+      generate: false
+      model_path: rpg_essentials_2_model/wild_berry
+  

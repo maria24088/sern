@@ -1,0 +1,21 @@
+﻿#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+LR_gravita_staff_fx:
+  Type: ARMOR_STAND
+  Display: "FX"
+  Options:
+    Marker: true
+    Collidable: false
+  Skills:
+  - model{mid=gravita_staff_fx;usm=true;scale=3;showhitbox=false;h=false} @self ~onSpawn
+  - model{mid=gravita_staff_fx;usm=true;scale=3;showhitbox=false;h=false} @self ~onLoad
+  - bodyrotation{md=0;mb=0;rde=0;rdu=0} @self ~onSpawn
+  - bodyrotation{md=0;mb=0;rde=0;rdu=0} @self ~onLoad
+  - brightness{b=15;s=15} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onLoad
+  - setrotation{relative=relative;yaw=<random.float.-90to90>} @self ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+
+# 2735NOKRM6PK6

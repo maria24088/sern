@@ -1,0 +1,20 @@
+location: SpawnRPG:-8.500:91.000:75.500
+enabled: false
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:GRASS_BLOCK'
+    height: 0.6
+  - content: '&#F9CD40§lBloques'
+    height: 0.3
+  - content: §fTienda Oficial de Items!
+    height: 0.3
+  - content: §r
+    height: 0.3
+  - content: §7Click para Abrir
+    height: 0.3
+  actions: {}

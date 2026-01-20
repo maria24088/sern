@@ -1,0 +1,152 @@
+info:
+  namespace: customcrops
+items:
+  cabbage_stage_1:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/cabbage/stage_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  cabbage_stage_2:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/cabbage/stage_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  cabbage_stage_3:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/cabbage/stage_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  cabbage_stage_4:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/cabbage/stage_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  cabbage_seeds:
+    display_name: "Cabbage Seeds"
+    #display_name: 卷心菜种子
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/cabbage/cabbage_seeds
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  cabbage:
+    display_name: "Cabbage"
+    #display_name: 卷心菜
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/cabbage/cabbage
+  cabbage_silver_star:
+    display_name: "Cabbage (Silver Star)"
+    #display_name: 卷心菜(银星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/cabbage/cabbage_silver_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  cabbage_golden_star:
+    display_name: "Cabbage (Golden Star)"
+    #display_name: 卷心菜(金星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/cabbage/cabbage_golden_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  gigantic_cabbage:
+    display_name: "Overgrown Cabbage"
+    #display_name: 巨型卷心菜
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/cabbage/gigantic_cabbage
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_TRANSPARENT
+categories:
+  customcrops_cabbage:
+    enabled: true
+    icon: customcrops:cabbage
+    name: 'Cabbage'
+    items:
+      - customcrops:cabbage
+      - customcrops:cabbage_silver_star
+      - customcrops:cabbage_golden_star
+      - customcrops:cabbage_seeds
+      - customcrops:cabbage_stage_1
+      - customcrops:cabbage_stage_2
+      - customcrops:cabbage_stage_3
+      - customcrops:cabbage_stage_4
+      - customcrops:gigantic_cabbage

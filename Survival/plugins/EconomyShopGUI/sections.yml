@@ -1,0 +1,172 @@
+#File Generated: 20220724-2137 | MCversion: 1.19 | ESGUI ver: 4.8.0
+#Please Check out the wiki for more information about configuring these files!
+#@ https://gpplugins.gitbook.io/economyshopgui/
+
+ShopSections:
+
+  Combat:
+    enable: true
+    material: SHIELD
+    displayname: '&2Combat'
+    slot: 25
+    lore:
+    - '&8Shop Category'
+    - '&r'
+    - '&fMust-have gear for your'
+    - '&fPvP battles!'
+    - ''
+    - '&2&l→ &aClick to view!'
+
+  Blocks:
+    enable: true
+    material: GRASS_BLOCK
+    displayname: '&2Blocks Shop'
+    slot: 19
+    lore:
+    - '&8Shop Category'
+    - '&r'
+    - '&fBlocks used for building'
+    - '&for decorating your town!'
+    - ''
+    - '&2&l→ &aClick to view!'
+
+  1_20Blocks:
+    enable: true
+    material: pearlescent_froglight
+    displayname: '&21.20 Blocks'
+    slot: 21
+    lore:
+    - '&8Shop Category'
+    - '&r'
+    - '&fBrand new 1.20 blocks!'
+    - '&fExplore the new update!'
+    - ''
+    - '&2&l→ &aClick to view!'
+
+
+  Redstone:
+    enable: true
+    material: REDSTONE_BLOCK
+    displayname: '&2Redstone'
+    slot: 22
+    lore:
+    - '&8Shop Category'
+    - '&r'
+    - '&fTechnology used for'
+    - '&fcomputing and auto farms.'
+    - ''
+    - '&2&l→ &aClick to view!'
+
+  Decorations:
+    enable: true
+    material: ITEM_FRAME
+    displayname: '&2Decorations'
+    slot: 23
+    lore:
+    - '&8Shop Category'
+    - '&r'
+    - '&fBlocks and items useful'
+    - '&for decorating your town!'
+    - ''
+    - '&2&l→ &aClick to view!'
+
+  Wood:
+    enable: true
+    material: OAK_WOOD
+    displayname: '&2Wood'
+    slot: 24
+    lore:
+    - '&8Shop Category'
+    - '&r'
+    - '&fWooden blocks and items'
+    - '&fused as a base for crafting'
+    - ''
+    - '&2&l→ &aClick to view!'
+
+  Farm_and_Food:
+    enable: true
+    material: BREAD
+    displayname: '&2Farm and Food'
+    slot: 20
+    lore:
+    - '&8Shop Category'
+    - '&r'
+    - '&fSeeds and food that can'
+    - '&fbe replanted for profit'
+    - ''
+    - '&2&l→ &aClick to view!'
+
+
+  Mob_Drops:
+    enable: true
+    material: ROTTEN_FLESH
+    displayname: '&2Mob Drops'
+    slot: 29
+    lore:
+    - '&8Shop Category'
+    - '&r'
+    - '&fLoot obtained from mobs'
+    - '&fthat can be sold to the shop.'
+    - ''
+    - '&2&l→ &aClick to view!'
+
+
+  Ores:
+    enable: true
+    material: DIAMOND
+    displayname: '&2Ores'
+    slot: 30
+    lore:
+    - '&8Shop Category'
+    - '&r'
+    - '&fValuable minerals that the'
+    - '&fshop pays big bucks for.'
+    - ''
+    - '&2&l→ &aClick to view!'
+
+
+  Miscellaneous:
+    enable: true
+    material: SADDLE
+    displayname: '&2Miscellaneous'
+    slot: 31
+    lore:
+    - '&8Shop Category'
+    - '&r'
+    - '&fA collection of useful'
+    - '&fand requested items.'
+    - ''
+    - '&2&l→ &aClick to view!'
+
+  Brewing:
+    enable: true
+    material: BREWING_STAND
+    displayname: '&2Brewing'
+    slot: 32
+    lore:
+    - '&8Shop Category'
+    - '&r'
+    - '&fMaterials needed to brew'
+    - '&fextremely potent potions.'
+    - ''
+    - '&2&l→ &aClick to view!'
+
+  Potions:
+    enable: true
+    material: POTION
+    displayname: '&2Potions'
+    slot: 33
+    lore:
+    - '&8Shop Category'
+    - '&r'
+    - '&fPotions used for combat'
+    - '&fin raids or PvP!'
+    - ''
+    - '&2&l→ &aClick to view!'
+
+
+Fill-item:
+  material: GRAY_STAINED_GLASS_PANE
+  name: ' '
+  enable: false
+

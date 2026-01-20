@@ -1,0 +1,253 @@
+info:
+  namespace: loots_2
+
+categories:
+  animal_loots:
+    enabled: true
+    icon: loots_2:animal_fat
+    name: "Animal Loots"
+    items:
+      - loots_2:animal_fat
+      - loots_2:bat_wing
+      - loots_2:bear_pelt
+      - loots_2:camel_hair
+      - loots_2:claws
+      - loots_2:eggshell_powder
+      - loots_2:exotic_feather
+      - loots_2:fairy_dust
+      - loots_2:fish_scales
+      - loots_2:fluffy_tail
+      - loots_2:fox_pelt
+      - loots_2:fungi_tuft
+      - loots_2:goat_hair
+      - loots_2:hairball
+      - loots_2:hoof
+      - loots_2:jawbone
+      - loots_2:keratin
+      - loots_2:marrow
+      - loots_2:ocelot_pelt
+      - loots_2:pig_bristle
+      - loots_2:royal_jelly
+      - loots_2:sharp_tooth
+      - loots_2:small_tooth
+      - loots_2:sniffer_fur
+      - loots_2:strider_skin
+      - loots_2:swampy_oil
+      - loots_2:thick_fur
+
+items:
+  animal_fat:
+    display_name: "Animal Fat"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/animal_fat
+
+  bat_wing:
+    display_name: "Bat Wing"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/bat_wing
+
+  bear_pelt:
+    display_name: "Bear Pelt"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/bear_pelt
+
+  camel_hair:
+    display_name: "Camel Hair"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/camel_hair
+
+  claws:
+    display_name: "Claws"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/claws
+
+  eggshell_powder:
+    display_name: "Eggshell Powder"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/eggshell_powder
+
+  exotic_feather:
+    display_name: "Exotic Feather"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/exotic_feather
+
+  fairy_dust:
+    display_name: "Fairy Dust"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/fairy_dust
+
+  fish_scales:
+    display_name: "Fish Scales"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/fish_scales
+
+  fluffy_tail:
+    display_name: "Fluffy Tail"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/fluffy_tail
+
+  fox_pelt:
+    display_name: "Fox Pelt"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/fox_pelt
+
+  fungi_tuft:
+    display_name: "Fungi Tuft"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/fungi_tuft
+
+  goat_hair:
+    display_name: "Goat Hair"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/goat_hair
+
+  hairball:
+    display_name: "Hairball"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/hairball
+
+  hoof:
+    display_name: "Hoof"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/hoof
+
+  jawbone:
+    display_name: "Jawbone"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/jawbone
+
+  keratin:
+    display_name: "Keratin"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/keratin
+
+  marrow:
+    display_name: "Marrow"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/marrow
+
+  ocelot_pelt:
+    display_name: "Ocelot Pelt"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/ocelot_pelt
+
+  pig_bristle:
+    display_name: "Pig Bristle"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/pig_bristle
+
+  royal_jelly:
+    display_name: "Royal Jelly"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/royal_jelly
+
+  sharp_tooth:
+    display_name: "Sharp Tooth"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/sharp_tooth
+
+  small_tooth:
+    display_name: "Small Tooth"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/small_tooth
+
+  sniffer_fur:
+    display_name: "Sniffer Fur"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/sniffer_fur
+
+  strider_skin:
+    display_name: "Strider Skin"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/strider_skin
+
+  swampy_oil:
+    display_name: "Swampy Oil"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/swampy_oil
+
+  thick_fur:
+    display_name: "Thick Fur"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - animal_loots/thick_fur

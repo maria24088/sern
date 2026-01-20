@@ -1,0 +1,125 @@
+menu_title: '&fṭṦ'
+open_command: miner
+size: 54
+items:
+  'left':
+    material: PAPER
+    model_data: 7822
+    slot: 36
+    display_name: "&e&lᴀɴᴛᴇʀɪᴏʀ"
+    click_commands:
+       - '[openguimenu] lumberjack'
+  'fisherman':
+    material: PAPER
+    model_data: 7820
+    slot: 37
+    display_name: "&fṷ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] fisherman'
+  'hunter':
+    material: PAPER
+    model_data: 7821
+    slot: 38
+    display_name: "&fṸ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] hunter'
+  'lumberjack':
+    material: PAPER
+    model_data: 7823
+    slot: 39
+    display_name: "&fṹ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] lumberjack'
+  'jobjoin':
+    material: PAPER
+    model_data: 7824
+    slot: 40
+    priority: 1
+    display_name: "&f Ṻ"
+    lore:
+       - " "
+       - " &8• &#249fdeGana dinero"
+       - "  &#249fdeminando minerales"
+       - " "
+       - " &8• &7Trabajadores&8: &f%jobsr_totalplayers_miner%"
+       - " &8• &7Nivel&8: &f%jobsr_user_jlevel_miner%/%jobsr_maxlvl_miner%"
+       - " &8• &7EXP&8: &f%jobsr_user_jexp_miner%/%jobsr_user_jmaxexp_miner% &8(&#59c135+%jobsr_user_jmexp_miner%&fṩ&8)"
+       - " "
+       - " &8• &7Progreso&8: &f"
+       - "%progress_bar_{jobsr_user_jexp_miner}_c:&fṪ_p:&fṪ_r:&fṨ_l:10_m:{jobsr_user_jmaxexp_miner}_fullbar:&fṨṨṨṨṨṨṨṨṨṨ%"
+       - " "
+       - " &fṫ &eᴘᴀʀᴀ ᴜɴɪʀᴛᴇ ᴀʟ ᴛʀᴀʙᴀᴊᴏ"
+       - " "
+    left_click_commands:
+       - '[player] jobs join miner'
+       - '[refresh]'
+  'jobleave':
+    material: PAPER
+    model_data: 7824
+    slot: 40
+    priority: 0
+    display_name: "&f Ṻ"
+    lore:
+       - " "
+       - " &8• &#249fdeGana dinero"
+       - "  &#249fdeminando minerales"
+       - " "
+       - " &8• &7Rango&8: &f%jobsr_user_title_miner%"
+       - " &8• &7Trabajadores&8: &f%jobsr_totalplayers_miner%"
+       - " &8• &7Nivel&8: &f%jobsr_user_jlevel_miner%/%jobsr_maxlvl_miner%"
+       - " &8• &7EXP&8: &f%jobsr_user_jexp_miner%/%jobsr_user_jmaxexp_miner% &8(&#59c135+%jobsr_user_jmexp_miner%&fṩ&8)"
+       - " "
+       - " &8• &7Progreso&8: &f"
+       - "%progress_bar_{jobsr_user_jexp_miner}_c:&fṪ_p:&fṪ_r:&fṨ_l:10_m:{jobsr_user_jmaxexp_miner}_fullbar:&fṨṨṨṨṨṨṨṨṨṨ%"
+       - " "
+       - " &fṬ &eᴘᴀʀᴀ ᴅᴇᴊᴀʀ ᴇʟ ᴛʀᴀʙᴀᴊᴏ"
+       - " "
+    view_requirement:
+      requirements:
+        jobs_requirement:
+          type: string contains
+          input: "%jobsr_user_isin_miner%"
+          output: 'True'
+    right_click_commands:
+       - '[player] jobs leave miner'
+       - '[refresh]'
+  'smelter':
+    material: PAPER
+    model_data: 7826
+    slot: 41
+    display_name: "&fṻ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] smelter'
+  'alchemist':
+    material: PAPER
+    model_data: 7812
+    slot: 42
+    display_name: "&fṯ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] alchemist'
+  'assassin':
+    material: PAPER
+    model_data: 7813
+    slot: 43
+    display_name: "&fṰ"
+    lore:
+       - "&7ᴀᴘʀᴇɴᴅᴇ ᴍᴀs sᴏʙʀᴇ ᴇsᴛᴇ ᴛʀᴀʙᴀᴊᴏ"
+    click_commands:
+       - '[openguimenu] assassin'
+  'right':
+    material: PAPER
+    model_data: 7825
+    slot: 44
+    display_name: "&e&lsɪɢᴜɪᴇɴᴛᴇ"
+    click_commands:
+       - '[openguimenu] smelter'

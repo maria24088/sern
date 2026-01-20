@@ -1,0 +1,240 @@
+menu_title: 'Private Vaults | Select a Vault'
+open_command:
+  - vaults
+  - vault
+  - pv
+  - playervaults
+  - storage
+size: 27
+update_interval: 1
+items:
+  'v1_unlocked':
+    material: CHEST
+    slot: 11
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playervaults.amount.1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&a&lVault #1'
+    lore:
+      - '&8Storage Vault'
+      - '&r'
+      - '&aDescription:'
+      - '&fStore your personal belongings inside'
+      - '&fthis private, virtual vault!'
+      - '&r'
+      - '&a◆ &fSlots: &a54'
+      - ''
+      - '&a&l→ CLICK&a to open this vault!'
+    left_click_commands:
+    - '[player] pv 1'
+  
+  'v1_locked':
+    material: RED_DYE
+    slot: 11
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&c&lVault #1&r &7(&cLocked&7)'
+    lore:
+      - '&8Storage Vault'
+      - '&r'
+      - '&cDescription:'
+      - '&fStore your personal belongings inside'
+      - '&fthis private, virtual vault!'
+      - '&r'
+      - '&c◆ &fSlots: &c54'
+      - '&r'
+      - '&#ff69e3Purchase ranks from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&c&l→ FOX&c rank required to open!'
+  
+  'v2_unlocked':
+    material: CHEST
+    slot: 12
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playervaults.amount.3
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&a&lVault #2'
+    lore:
+      - '&8Storage Vault'
+      - '&r'
+      - '&aDescription:'
+      - '&fStore your personal belongings inside'
+      - '&fthis private, virtual vault!'
+      - '&r'
+      - '&a◆ &fSlots: &a54'
+      - ''
+      - '&a&l→ CLICK&a to open this vault!'
+    left_click_commands:
+    - '[player] pv 2'
+  
+  'v2_locked':
+    material: RED_DYE
+    slot: 12
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&c&lVault #2&r &7(&cLocked&7)'
+    lore:
+      - '&8Storage Vault'
+      - '&r'
+      - '&cDescription:'
+      - '&fStore your personal belongings inside'
+      - '&fthis private, virtual vault!'
+      - '&r'
+      - '&c◆ &fSlots: &c54'
+      - '&r'
+      - '&#ff69e3Purchase ranks from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&c&l→ SQUID&c rank required to open!'
+  
+  'v3_unlocked':
+    material: CHEST
+    slot: 13
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playervaults.amount.3
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&a&lVault #3'
+    lore:
+      - '&8Storage Vault'
+      - '&r'
+      - '&aDescription:'
+      - '&fStore your personal belongings inside'
+      - '&fthis private, virtual vault!'
+      - '&r'
+      - '&a◆ &fSlots: &a54'
+      - ''
+      - '&a&l→ CLICK&a to open this vault!'
+    left_click_commands:
+    - '[player] pv 3'
+  
+  'v3_locked':
+    material: RED_DYE
+    slot: 13
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&c&lVault #3&r &7(&cLocked&7)'
+    lore:
+      - '&8Storage Vault'
+      - '&r'
+      - '&cDescription:'
+      - '&fStore your personal belongings inside'
+      - '&fthis private, virtual vault!'
+      - '&r'
+      - '&c◆ &fSlots: &c54'
+      - '&r'
+      - '&#ff69e3Purchase ranks from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&c&l→ SQUID&c rank required to open!'
+  
+  'v4_unlocked':
+    material: CHEST
+    slot: 14
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playervaults.amount.5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&a&lVault #4'
+    lore:
+      - '&8Storage Vault'
+      - '&r'
+      - '&aDescription:'
+      - '&fStore your personal belongings inside'
+      - '&fthis private, virtual vault!'
+      - '&r'
+      - '&a◆ &fSlots: &a54'
+      - ''
+      - '&a&l→ CLICK&a to open this vault!'
+    left_click_commands:
+    - '[player] pv 4'
+  
+  'v4_locked':
+    material: RED_DYE
+    slot: 14
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&c&lVault #4&r &7(&cLocked&7)'
+    lore:
+      - '&8Storage Vault'
+      - '&r'
+      - '&cDescription:'
+      - '&fStore your personal belongings inside'
+      - '&fthis private, virtual vault!'
+      - '&r'
+      - '&c◆ &fSlots: &c54'
+      - '&r'
+      - '&#ff69e3Purchase ranks from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&c&l→ GOAT&c rank required to open!'
+  
+  'v5_unlocked':
+    material: CHEST
+    slot: 15
+    priority: 0
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playervaults.amount.5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&a&lVault #5'
+    lore:
+      - '&8Storage Vault'
+      - '&r'
+      - '&aDescription:'
+      - '&fStore your personal belongings inside'
+      - '&fthis private, virtual vault!'
+      - '&r'
+      - '&a◆ &fSlots: &a54'
+      - ''
+      - '&a&l→ CLICK&a to open this vault!'
+    left_click_commands:
+    - '[player] pv 5'
+  
+  'v5_locked':
+    material: RED_DYE
+    slot: 15
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&c&lVault #5&r &7(&cLocked&7)'
+    lore:
+      - '&8Storage Vault'
+      - '&r'
+      - '&cDescription:'
+      - '&fStore your personal belongings inside'
+      - '&fthis private, virtual vault!'
+      - '&r'
+      - '&c◆ &fSlots: &c54'
+      - '&r'
+      - '&#ff69e3Purchase ranks from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - ''
+      - '&c&l→ GOAT&c rank required to open!'
+  

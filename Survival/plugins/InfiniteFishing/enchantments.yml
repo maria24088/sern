@@ -1,0 +1,48 @@
+everlastingbait:
+  name: "Everlasting Bait"
+  description: "Bait has a chance not to be consumed upon use."
+versatilebait:
+  name: "Versatile Bait"
+  description: "Bait has a chance to attract different types of fish."
+longcast:
+  name: "Long Cast"
+  description: "Makes your cast land further away."
+swiftcast:
+  name: "Swift Cast"
+  description: "Decreases the time it takes to cast and reel in the line."
+stormfisher:
+  name: "Storm Fisher"
+  description: "Increases chances of catching rare fish during rainy weather."
+bountifullure:
+  name: "Bountiful Lure"
+  description: "Increases the chance of catching rare fish."
+magneticlure:
+  name: "Magnetic Lure"
+  description: "Attracts fish from wider radius."
+mysticbite:
+  name: "Mystic Bite"
+  description: "Increases the chance of catching rare items."
+powerfulreel:
+  name: "Powerful Reel"
+  description: "Increases the chances of successfully reeling in bigger and stronger fish."
+quickreel:
+  name: "Quick Reel"
+  description: "Reel in fish faster."
+fishersbond:
+  name: "Fisher's Bond"
+  description: "Increases effectiveness when fishing in a group."
+sharedbounty:
+  name: "Shared Bounty"
+  description: "Shares the bounty with nearby players."
+monsterrepellent:
+  name: "Monster Repellent"
+  description: "Repels monsters from attacking you while fishing."
+treasurehunter:
+  name: "Treasure Hunter"
+  description: "Increases the chances of finding treasure."
+autobait:
+  name: "Auto Bait"
+  description: "Automatically attaches a new bait from the inventory when the current bait is used up."
+linemender:
+  name: "Line Mender"
+  description: "Repairs the line of the fishing rod."

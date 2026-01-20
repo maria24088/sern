@@ -1,0 +1,68 @@
+#  A DeluxeMenus advanced configuration guide
+#=========================================================
+menu_title: 'Random Teleport'
+open_command:
+  - randomtp
+  - rtp
+open_commands: []
+size: 27
+# as always, only cool people can open this menu :)
+items: 
+
+  'nether':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDIzMTMwNDI4NjkxYTk5NGZhODQ1ZjM3ZjRmNjdhNjhiNDA5NDYyNWI4OTRjMWE4ZjI4M2NlNzQ5MTViNTg1MiJ9fX0=
+    slot: 11
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&c&lNether'
+    lore:
+      - '&8Random Teleportation'
+      - '&r'
+      - '&cInformation:'
+      - '&c ┃ &fYou will be teleported to a random'
+      - '&c ┃ &flocation in the Nether!'
+      - ''
+      - '&e→ &lCLICK &r&eto Teleport!'
+    left_click_commands:
+      - '[close]'
+      - '[player] betterrtp world world_nether'
+  
+  'end':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQ4ZDc5NjhjMjNkNTM3YmZlYWVkNmRlN2NkYmU3MzMwYWZlNDA1ZTAwYzViZDNlZWQ4YWIyOTFmZDU5YzVlZCJ9fX0=
+    slot: 15
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&e&lEnd'
+    lore:
+      - '&8Random Teleportation'
+      - '&r'
+      - '&eInformation:'
+      - '&e ┃ &fYou will be teleported to a random'
+      - '&e ┃ &flocation in the End!'
+      - ''
+      - '&e→ &lCLICK &r&eto Teleport!'
+    left_click_commands:
+      - '[close]'
+      - '[player] betterrtp world world_the_end'
+  'worldwide':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc5ZTU0Y2JlODc4NjdkMTRiMmZiZGYzZjE4NzA4OTQzNTIwNDhkZmVjZDk2Mjg0NmRlYTg5M2IyMTU0Yzg1In19fQ==
+    slot: 13
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&a&lOverworld'
+    lore:
+      - '&8Random Teleporation'
+      - '&r'
+      - '&aInformation:'
+      - '&a ┃ &fYou will be teleported to a random'
+      - '&a ┃ &flocation across the entire world.'
+      - ''
+      - '&e→ &lCLICK &r&eto Teleport!'
+    left_click_commands:
+      - '[close]'
+      - '[player] betterrtp'
+  
+

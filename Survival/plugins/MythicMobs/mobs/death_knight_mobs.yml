@@ -1,0 +1,632 @@
+######## created by samus2002 #########
+
+#### VFX ####
+
+# Impact #
+
+VFX_Death_Impact:
+  Type: text_display
+  DisplayOptions:
+    Text: ""
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+    Billboard: CENTER
+    #ShadowStrength: 0
+    BackgroundColor: 0,0,0,0
+    Translation: 0,0,0
+    ViewRange: 5
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - settextdisplay{text="Ⰰ";delay=0} @self ~onSpawn
+  - settextdisplay{text="Ⰱ";delay=2} @self ~onSpawn
+  - settextdisplay{text="Ⰲ";delay=4} @self ~onSpawn
+  - settextdisplay{text="Ⰳ";delay=6} @self ~onSpawn
+  - settextdisplay{text="Ⰴ";delay=8} @self ~onSpawn
+  - settextdisplay{text="Ⰵ";delay=10} @self ~onSpawn
+  - settextdisplay{text="Ⰶ";delay=12} @self ~onSpawn
+  - settextdisplay{text="Ⰷ";delay=14} @self ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+
+VFX_Cursed_Seal:
+  Type: text_display
+  DisplayOptions:
+    Text: ""
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+    Billboard: CENTER
+    #ShadowStrength: 0
+    BackgroundColor: 0,0,0,0
+    Translation: 0,0,0
+    ViewRange: 5
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - settextdisplay{text="Ⰹ"} @self ~onSpawn
+VFX_Cursed_Seal1:
+  Type: text_display
+  DisplayOptions:
+    Text: ""
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+    Billboard: CENTER
+    #ShadowStrength: 0
+    BackgroundColor: 0,0,0,0
+    Translation: 0,0,0
+    ViewRange: 5
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - settextdisplay{text="Ⰺ"} @self ~onSpawn
+VFX_Cursed_Seal2:
+  Type: text_display
+  DisplayOptions:
+    Text: ""
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+    Billboard: CENTER
+    #ShadowStrength: 0
+    BackgroundColor: 0,0,0,0
+    Translation: 0,0,0
+    ViewRange: 5
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - settextdisplay{text="Ⰻ"} @self ~onSpawn
+VFX_Cursed_Seal3:
+  Type: text_display
+  DisplayOptions:
+    Text: ""
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+    Billboard: CENTER
+    #ShadowStrength: 0
+    BackgroundColor: 0,0,0,0
+    Translation: 0,0,0
+    ViewRange: 5
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - settextdisplay{text="Ⰼ"} @self ~onSpawn
+
+VFX_Death_Strike_1:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_strike_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=left-right-diag;speed=0.8} @self ~onSpawn
+  
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_2;np=bone2;delay=2} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_3;np=bone2;delay=4} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_4;np=bone2;delay=6} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_5;np=bone2;delay=8} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_6;np=bone2;delay=10} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_7;np=bone2;delay=12} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_8;np=bone2;delay=14} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_9;np=bone2;delay=16} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+VFX_Death_Strike_2:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_strike_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=right-left-diag;speed=0.8} @self ~onSpawn
+  
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_2;np=bone2;delay=2} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_3;np=bone2;delay=4} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_4;np=bone2;delay=6} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_5;np=bone2;delay=8} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_6;np=bone2;delay=10} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_7;np=bone2;delay=12} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_8;np=bone2;delay=14} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_9;np=bone2;delay=16} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+VFX_Death_Strike_4:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_strike_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=up-down-vert;speed=0.8} @self ~onSpawn
+  
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_2;np=bone2;delay=2} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_3;np=bone2;delay=4} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_4;np=bone2;delay=6} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_5;np=bone2;delay=8} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_6;np=bone2;delay=10} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_7;np=bone2;delay=12} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_8;np=bone2;delay=14} @self ~onSpawn
+  - changepart{m=vfx_death_strike_1;p=bone2;nm=vfx_death_strike_9;np=bone2;delay=16} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+VFX_Death_Strike_4_WAVE:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_shockwave;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  #- effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=2;hS=0.04;size=1.25;vS=0.2;speed=0;repeat=5;repeati=10} @modelpart{mid=vfx_death_shockwave;pid=p;location=0,0,0;em=false;offset=LOCAL} ~onTimer:1
+
+VFX_Death_Chains:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_chain;lockpitch=false} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=pull;speed=1} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+
+  - partvis{m=vfx_death_chain;p=bone8;v=false;em=true;child=true;delay=12} @self ~onSpawn
+  - partvis{m=vfx_death_chain;p=bone7;v=false;em=true;child=true;delay=13} @self ~onSpawn
+  - partvis{m=vfx_death_chain;p=bone6;v=false;em=true;child=true;delay=14} @self ~onSpawn
+  - partvis{m=vfx_death_chain;p=bone5;v=false;em=true;child=true;delay=15} @self ~onSpawn
+  - partvis{m=vfx_death_chain;p=bone4;v=false;em=true;child=true;delay=16} @self ~onSpawn
+  - partvis{m=vfx_death_chain;p=bone3;v=false;em=true;child=true;delay=17} @self ~onSpawn
+VFX_Death_Chains2:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_chain;lockpitch=false} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=grapple_2;speed=1} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+VFX_Death_Chains3:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_chain;lockpitch=false} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=grapple_3;speed=1} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+VFX_Death_Chains4:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_chain;lockpitch=false} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=grapple_4;speed=1} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+VFX_Death_Chains5:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_chain;lockpitch=false} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=grapple_5;speed=1} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+VFX_Death_Chains6:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_chain;lockpitch=false} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=grapple_6;speed=1} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+VFX_Death_Chains7:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_chain;lockpitch=false} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=grapple_7;speed=1} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+VFX_Death_Chains8:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_chain;lockpitch=false} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=grapple_8;speed=1} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+
+Death_Chains_DISTANCECHECK:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - sudoskill{s=Death_Chains_DISTANCECHECK_CHANGE;cat=true;delay=1} @owner ~onSpawn
+  - pull{to=true;velocity=6;repeat=3;repeati=10;delay=10} @owner{conditions=[ - hasaura{aura=LATCHED} true  ]} ~onSpawn
+  - remove{delay=60} @self ~onSpawn
+
+VFX_Death_Wings_Phantom_Charge:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - aura{d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    - model{sync=true;usestatemachine=true;mid=vfx_death_wings_1;lockpitch=true}
+    - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0}
+    - brightness{mid=vfx_death_wings_1;b=15;s=15}
+    - state{s=dash}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"} ?!varequals{var=caster.iteration;val=8}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=right_wing;np=right_wing} ?!varequals{var=caster.iteration;val=8}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=right_wing_mid;np=right_wing_mid} ?!varequals{var=caster.iteration;val=8}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=right_wing_end;np=right_wing_end} ?!varequals{var=caster.iteration;val=8}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=left_wing;np=left_wing} ?!varequals{var=caster.iteration;val=8}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=left_wing_mid;np=left_wing_mid} ?!varequals{var=caster.iteration;val=8}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=left_wing_end;np=left_wing_end} ?!varequals{var=caster.iteration;val=8}
+    ]} @self ~onSpawn
+
+  - aura{d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=7;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>-1"} ?!varequals{var=caster.iteration;val=0}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=right_wing;np=right_wing} ?!varequals{var=caster.iteration;val=0}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=right_wing_mid;np=right_wing_mid} ?!varequals{var=caster.iteration;val=0}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=right_wing_end;np=right_wing_end} ?!varequals{var=caster.iteration;val=0}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=left_wing;np=left_wing} ?!varequals{var=caster.iteration;val=0}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=left_wing_mid;np=left_wing_mid} ?!varequals{var=caster.iteration;val=0}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=left_wing_end;np=left_wing_end} ?!varequals{var=caster.iteration;val=0}
+    ];delay=30} @self ~onSpawn
+
+VFX_Soul_Barrier:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_necro_shield;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=loop;speed=1} @self ~onSpawn
+
+VFX_Necrotic_Whirlwind:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_whirlwind;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=horiz;speed=1} @self ~onSpawn
+
+  
+
+VFX_Necrotic_Whirlwind_CLAW:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_necro_hand_slasher;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  
+VFX_Wraithbound_Chains12:
+  Type: WOLF
+  Display: '&f'
+  Health: 2000
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+    Invincible: true
+    NoDamageTicks: 1
+    Collidable: false
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_chain;lockpitch=false} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  #- sudoskill{s=Wraithbound_Chains_PRO_SUDO1;cat=true} @owner ~onSpawn
+  - state{s=pull_slow;speed=1} @self ~onSpawn
+  - skill{s=Wraithbound_Chains_REMOVE;delay=7} @owner ~onSpawn
+  - remove{delay=62} @self ~onSpawn
+  - look{headOnly=false;immediately=true;force=true} @EIR{r=5;sort=FURTHEST;limit=1} ~onTimer:1
+
+
+VFX_Wraithbound_Chains1:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_chain;lockpitch=false} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=pull_start;speed=1} @self ~onSpawn
+  - skill{s=Wraithbound_Chains_REMOVE;delay=7} @owner ~onSpawn
+  - skill{s=Wraithbound_Chains_SUC;delay=7} @owner ~onSpawn
+  - remove{delay=62} @self ~onSpawn
+VFX_Wraithbound_Chains2:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_chain;lockpitch=false} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=pull_start2;speed=1} @self ~onSpawn
+  - skill{s=Wraithbound_Chains_REMOVE2;delay=7} @owner ~onSpawn
+  - skill{s=Wraithbound_Chains_SUC2;delay=7} @owner ~onSpawn
+  - remove{delay=62} @self ~onSpawn
+VFX_Wraithbound_Chains3:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_death_chain;lockpitch=false} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=pull_start3;speed=1} @self ~onSpawn
+  - skill{s=Wraithbound_Chains_REMOVE3;delay=7} @owner ~onSpawn
+  - skill{s=Wraithbound_Chains_SUC3;delay=7} @owner ~onSpawn
+  - remove{delay=62} @self ~onSpawn
+
+VFX_Necrohand_Grabber:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_necro_hand_grabber;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  - state{s=remove;speed=1;delay=60} @self ~onSpawn
+  - effect:sound{s=block.sculk_sensor.place;volume=1.3;pitch=0.4;delay=3} @self ~onSpawn
+  - effect:sound{s=particle.soul_escape;volume=1;pitch=1;delay=3} @self ~onSpawn
+  - effect:sound{s=block.sculk_sensor.place;volume=1.3;pitch=0.4;delay=73} @self ~onSpawn
+  - effect:sound{s=entity.wither.hurt;volume=0.3;pitch=0.7;delay=16} @self ~onSpawn
+  #- remove{delay=82} @self ~onSpawn
+
+VFX_Death_Wings_Death_Sentence:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - aura{d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    - model{sync=true;usestatemachine=true;mid=vfx_death_wings_1;lockpitch=true}
+    - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0}
+    - brightness{mid=vfx_death_wings_1;b=15;s=15}
+    - state{s=ultimate}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"} ?!varequals{var=caster.iteration;val=8}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=right_wing;np=right_wing} ?!varequals{var=caster.iteration;val=8}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=right_wing_mid;np=right_wing_mid} ?!varequals{var=caster.iteration;val=8}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=right_wing_end;np=right_wing_end} ?!varequals{var=caster.iteration;val=8}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=left_wing;np=left_wing} ?!varequals{var=caster.iteration;val=8}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=left_wing_mid;np=left_wing_mid} ?!varequals{var=caster.iteration;val=8}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=left_wing_end;np=left_wing_end} ?!varequals{var=caster.iteration;val=8}
+    ]} @self ~onSpawn
+
+  - aura{d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=7;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>-1"} ?!varequals{var=caster.iteration;val=0}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=right_wing;np=right_wing} ?!varequals{var=caster.iteration;val=0}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=right_wing_mid;np=right_wing_mid} ?!varequals{var=caster.iteration;val=0}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=right_wing_end;np=right_wing_end} ?!varequals{var=caster.iteration;val=0}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=left_wing;np=left_wing} ?!varequals{var=caster.iteration;val=0}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=left_wing_mid;np=left_wing_mid} ?!varequals{var=caster.iteration;val=0}
+    - changepart{m=vfx_death_wings_1;nm=vfx_death_wings_<caster.var.iteration>;p=left_wing_end;np=left_wing_end} ?!varequals{var=caster.iteration;val=0}
+    ];delay=106} @self ~onSpawn
+VFX_Soul_Blade:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_soul_blade;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+
+  - partvis{m=vfx_soul_blade;p=bone;v=false;em=true;child=true} @self ~onSpawn
+  - partvis{m=vfx_soul_blade;p=bone;v=true;em=true;child=true;delay=42} @self ~onSpawn
+
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=40;repeati=10;delay=2} @modelpart{mid=vfx_soul_blade;pid=p1;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=38;repeati=10;delay=4} @modelpart{mid=vfx_soul_blade;pid=p2;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=36;repeati=10;delay=6} @modelpart{mid=vfx_soul_blade;pid=p3;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=34;repeati=10;delay=8} @modelpart{mid=vfx_soul_blade;pid=p4;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=32;repeati=10;delay=10} @modelpart{mid=vfx_soul_blade;pid=p5;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=32;repeati=10;delay=10} @modelpart{mid=vfx_soul_blade;pid=p6;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=30;repeati=10;delay=12} @modelpart{mid=vfx_soul_blade;pid=p7;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=30;repeati=10;delay=12} @modelpart{mid=vfx_soul_blade;pid=p8;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=28;repeati=10;delay=14} @modelpart{mid=vfx_soul_blade;pid=p9;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=28;repeati=10;delay=14} @modelpart{mid=vfx_soul_blade;pid=p10;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=32;repeati=10;delay=10} @modelpart{mid=vfx_soul_blade;pid=p11;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=30;repeati=10;delay=12} @modelpart{mid=vfx_soul_blade;pid=p12;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=28;repeati=10;delay=14} @modelpart{mid=vfx_soul_blade;pid=p13;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=26;repeati=10;delay=16} @modelpart{mid=vfx_soul_blade;pid=p14;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=24;repeati=10;delay=18} @modelpart{mid=vfx_soul_blade;pid=p15;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#a2f8cb;color2=#05090a;amount=3;hS=0.15;size=1.25;vS=0.05;speed=0;repeat=22;repeati=10;delay=20} @modelpart{mid=vfx_soul_blade;pid=p16;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  
+  - sound{sound=event.mob_effect.bad_omen;volume=0.9;pitch=0.5;delay=22} @self ~onSpawn
+
+VFX_Death_Sentence_X:
+  Type: text_display
+  DisplayOptions:
+    Text: ""
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1.3,1.3,1.3
+    Billboard: CENTER
+    #ShadowStrength: 0
+    BackgroundColor: 0,0,0,0
+    Translation: 0,0,0
+    ViewRange: 5
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - settextdisplay{text="Ⰽ";delay=0} @self ~onSpawn
+  - settextdisplay{text="Ⰾ";delay=8} @self ~onSpawn
+  - settextdisplay{text="Ⰿ";delay=10} @self ~onSpawn
+  - settextdisplay{text="Ⱀ";delay=12} @self ~onSpawn
+  - settextdisplay{text="Ⱁ";delay=14} @self ~onSpawn
+  - settextdisplay{text="Ⱂ";delay=16} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+
+VFX_Death_Sentence_Rupture:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_earthquake_rupture_1;lockpitch=true;scale=1.5} @self ~onSpawn
+  - brightness{mid=vfx_earthquake_rupture_1;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill2} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=57ffc1;em=false} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=37e6c0;em=false;delay=22} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=22c7b6;em=false;delay=24} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=0b8385;em=false;delay=26} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=035354;em=false;delay=30} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=000000;em=false;delay=32} @self ~onSpawn
+  
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_2;np=body;delay=64} @self ~onSpawn
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_3;np=body;delay=66} @self ~onSpawn
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_4;np=body;delay=68} @self ~onSpawn
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_5;np=body;delay=70} @self ~onSpawn
+  - remove{delay=72} @self ~onSpawn

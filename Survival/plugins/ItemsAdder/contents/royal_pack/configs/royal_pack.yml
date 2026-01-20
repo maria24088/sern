@@ -1,0 +1,307 @@
+info:
+  namespace: royal_pack
+items:
+  royal_sword:
+    enabled: true
+    display_name: Royal Sword
+    permission: royal_pack.pack.royal_sword
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: pack/royal_sword
+
+  royal_pickaxe:
+    enabled: true
+    display_name: Royal Pickaxe
+    permission: royal_pack.pack.royal_pickaxe
+    resource:
+      material: DIAMOND_PICKAXE
+      generate: false
+      model_path: pack/royal_pickaxe
+
+  royal_axe:
+    enabled: true
+    display_name: Royal Axe
+    permission: royal_pack.pack.royal_axe
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: pack/royal_axe
+
+  royal_shovel:
+    enabled: true
+    display_name: Royal Shovel
+    permission: royal_pack.pack.royal_shovel
+    resource:
+      material: DIAMOND_SHOVEL
+      generate: false
+      model_path: pack/royal_shovel
+
+  royal_hoe:
+    enabled: true
+    display_name: Royal Hoe
+    permission: royal_pack.pack.royal_hoe
+    resource:
+      material: DIAMOND_HOE
+      generate: false
+      model_path: pack/royal_hoe
+
+  royal_hat:
+    enabled: true
+    display_name: Royal Hat
+    permission: royal_pack.pack.royal_hat
+    resource:
+      material: PAPER
+      generate: false
+      model_path: pack/royal_hat
+    behaviours:
+      hat: true
+
+  royal_wings:
+    enabled: true
+    display_name: Royal Wings
+    resource:
+      material: PAPER
+      generate: false
+      model_path: pack/royal_wings
+    behaviours:
+      hat: true
+
+  royal_wings_normal:
+    enabled: true
+    display_name: Royal Wings Normal
+    resource:
+      material: PAPER
+      generate: false
+      model_path: pack/royal_wings_normal
+    behaviours:
+      hat: true
+
+  royal_wings_normal_2:
+    enabled: true
+    display_name: Royal Wings Normal 2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: pack/royal_wings_normal_2
+    behaviours:
+      hat: true
+
+  royal_wings_self:
+    enabled: true
+    display_name: Royal Wings Self
+    resource:
+      material: PAPER
+      generate: false
+      model_path: pack/royal_wings_self
+    behaviours:
+      hat: true
+
+  royal_wings_self_2:
+    enabled: true
+    display_name: Royal Wings Self 2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: pack/royal_wings_self_2
+    behaviours:
+      hat: true
+
+  royal_cape:
+    enabled: true
+    display_name: Royal Cape
+    resource:
+      material: PAPER
+      generate: false
+      model_path: pack/royal_cape
+    behaviours:
+      hat: true
+
+  royal_cape_normal:
+    enabled: true
+    display_name: Royal Cape Normal
+    resource:
+      material: PAPER
+      generate: false
+      model_path: pack/royal_cape_normal
+    behaviours:
+      hat: true
+
+  royal_cape_normal_2:
+    enabled: true
+    display_name: Royal Cape Normal 2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: pack/royal_cape_normal_2
+    behaviours:
+      hat: true
+
+  royal_cape_self:
+    enabled: true
+    display_name: Royal Cape Self
+    resource:
+      material: PAPER
+      generate: false
+      model_path: pack/royal_cape_self
+    behaviours:
+      hat: true
+
+  royal_cape_self_2:
+    enabled: true
+    display_name: Royal Cape Self 2
+    resource:
+      material: PAPER
+      generate: false
+      model_path: pack/royal_cape_self_2
+    behaviours:
+      hat: true
+
+  royal_chest:
+    display_name: Royal Chest
+    permissions: royal_pack.pack.royal_chest
+    resource:
+      material: PAPER
+      generate: false
+      model_path: pack/royal_chest
+    behaviours:
+      furniture:
+        entity: item_frame
+        small: true
+        solid: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+
+  royal_key:
+    enabled: true
+    display_name: Royal Key
+    permission: royal_pack.pack.royal_key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: pack/royal_key
+
+  royal_bow:
+    enabled: true
+    display_name: Royal Bow
+    permission: royal_pack.pack.royal_bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: pack/royal_bow
+
+  royal_shield:
+    enabled: true
+    display_name: Royal Shield
+    permission: royal_pack.pack.royal_shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: pack/royal_shield
+
+  royal_fishing_rod:
+    enabled: true
+    display_name: Royal Fishing Rod
+    permission: royal_pack.pack.royal_fishing_rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: pack/royal_fishing_rod
+
+  royal_staff:
+    enabled: true
+    display_name: Royal Staff
+    permission: royal_pack.pack.royal_staff
+    resource:
+      material: PAPER
+      generate: false
+      model_path: pack/royal_staff
+      
+  royal_helmet:
+    display_name: Royal Helmet
+    resource:
+      generate: true
+      textures:
+      - pack/armors/royal_helmet.png
+      - pack/armorsroyal_helmet.png
+    durability:
+      max_custom_durability: 363
+    specific_properties:
+      armor:
+        slot: head
+        custom_armor: dragon
+    attribute_modifiers:
+      head:
+        armor: 3
+        armorToughness: 2
+
+  royal_chestplate:
+    display_name: Royal Chestplate
+    resource:
+      generate: true
+      textures:
+      - pack/armors/royal_chestplate.png
+      - pack/armors/royal_chestplate.png
+    durability:
+      max_custom_durability: 528
+    specific_properties:
+      armor:
+        slot: chest
+        custom_armor: dragon
+    attribute_modifiers:
+      chest:
+        armor: 8
+        armorToughness: 2
+
+  royal_leggings:
+    display_name: Royal Leggings
+    resource:
+      generate: true
+      textures:
+      - pack/armors/royal_leggings.png
+      - pack/armors/royal_leggings.png
+    durability:
+      max_custom_durability: 495
+    specific_properties:
+      armor:
+        slot: legs
+        custom_armor: dragon
+    attribute_modifiers:
+      legs:
+        armor: 6
+        armorToughness: 2
+
+  royal_boots:
+    display_name: Royal Boots
+    resource:
+      generate: true
+      textures:
+      - pack/armors/royal_boots.png
+      - pack/armors/royal_boots.png
+    durability:
+      max_custom_durability: 429
+    specific_properties:
+      armor:
+        slot: feet
+        custom_armor: dragon
+    attribute_modifiers:
+      feet:
+        armor: 3
+        armorToughness: 2
+
+armors_rendering:
+  dragon:
+    color: '#d60000'
+    layer_1: pack/armors/royal_armor_layer_1
+    layer_2: pack/armors/royal_armor_layer_2
+    use_color: false
+#397d09e0135d4ad502f934e3c4a5fd0b

@@ -1,0 +1,25 @@
+cryocore_cosmetics_wings:
+  height: 4
+  permission: cosmetics.cryocore_cosmetics_wings
+  dyeable: false
+  slot: BACKPACK
+  item:
+    material: POTION
+    model-data: 9925260
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+  firstperson-item:
+    material: POTION
+    model-data: 9925259
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+
+#ADTQd0dqx0cyFFT0F1S4gVMjpmVRxGRVVTSyoFcsdVY4h2VWJUO5oEeMdHUWVVa5EnYntkM

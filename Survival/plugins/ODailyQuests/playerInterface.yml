@@ -1,0 +1,108 @@
+# ======================================================
+# Aquí puedes crear tu propia interfaz de misiones de jugador.
+#
+# NUNCA BORRES UNA %variable%
+# %progress% se reemplaza por el progreso de la misión.
+# %required% se reemplaza por la cantidad requerida para completar la misión.
+# %achieved% se reemplaza por el número de misiones completadas.
+# %drawIn% se reemplaza por el tiempo restante antes del próximo sorteo de misiones.
+# ======================================================
+player_interface:
+  size: 27
+  use_placeholders: true
+  inventory_name: '&f%img_offset_-8%%img_daily_quest%'
+  progress: '&fᴘʀᴏɢʀᴇsᴏ: #b82b2b%progress%&8/#64ba3f%required%'
+  status: ''
+  achieved: '&fᴘʀᴏɢʀᴇsᴏ: #64ba3fᴄᴏᴍᴘʟᴇᴛᴀᴅᴏ'
+  glowing_if_achieved: false
+  complete_get_type: ' #64ba3f→ ᴄʟɪᴄ ᴘᴀʀᴀ ᴄᴏᴍᴘʟᴇᴛᴀʀ ʟᴀ ᴍɪsɪóɴ'
+  player_head:
+    enabled: true
+    use_placeholders: true
+    slot: 1
+    item_name: '&6Perfil de Misiones'
+    custom_model_data: 1
+    item_description:
+    - '&fᴍɪsɪᴏɴᴇs ᴄᴏᴍᴘʟᴇᴛᴀᴅᴀs: #64ba3f%odailyquests_total%'
+    - '#a5d0e9Muestra el total de misiones'
+    - '#a5d0e9que has completado en total'
+    - ''
+    - '&fᴛᴜ ɪɴsɪɢɴɪᴀ: #c372de%luckperms_meta_badge%'
+    - '&7ᴍɪsɪᴏɴᴇs ᴅᴇ ʜᴏʏ: &6%achieved%&8/&612'
+    - '%progress_bar_{odailyquests_achieved}_c:&f{img_offset_-2}#98b23d{img_xp_bar_white}_p:&f{img_offset_-2}#323232{img_xp_bar_white}_r:&f{img_offset_-2}#323232{img_xp_bar_white}_l:12_m:12_fullbar:&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}%'
+    - ''
+    - '&fʀᴇɪɴɪᴄɪᴏ ᴇɴ: #dc3333%drawIn%'
+  # ========================================================
+  # Available types : FILL, PLAYER_COMMAND, CONSOLE_COMMAND
+  # Placeholders : %player%
+  # More info on Wiki.
+  # ========================================================
+  quests: # define la posición de los ítems de misiones
+    '1': 4
+    '2': 5
+    '3': 6
+    '4': 7
+    '5': 13
+    '6': 14
+    '7': 15
+    '8': 16
+    '9': 22
+    '10': 23
+    '11': 24
+    '12': 25
+  items:
+    '0':
+      type: CONSOLE_COMMAND
+      use_placeholders: true
+      item:
+        material: SUGAR
+        name: '&6Top Misiones'
+        lore:
+        - '#a1aab7Muestra el top 10'
+        - '#a1aab7de jugadores globales.'
+        - ''
+        - '&fᴛᴜ ᴘᴜᴇsᴛᴏ: #c372de%ajlb_position_odailyquests_total_alltime%'
+        - ''
+        - ' #64ba3f→ ᴄʟɪᴄ ᴘᴀʀᴀ ᴀʙʀɪʀ ᴇʟ ʀᴀɴᴋɪɴɢ'
+        slot: 9
+        custom_model_data: 1101
+      commands:
+      - dm open quest_leaderboard %player%
+    '1':
+      type: CONSOLE_COMMAND
+      use_placeholders: true
+      item:
+        material: SUGAR
+        name: '&6Insignias'
+        lore:
+        - '#a1aab7Muestra qué insignias'
+        - '#a1aab7están desbloqueadas.'
+        - ''
+        - '&fᴛᴜ ɪɴsɪɢɴɪᴀ: #c372de%luckperms_meta_badge%'
+        - ''
+        - ' #64ba3f→ ᴄʟɪᴄ ᴘᴀʀᴀ ᴠᴇʀ ɪɴsɪɢɴɪᴀs'
+        slot: 18
+        custom_model_data: 1102
+      commands:
+      - dm open quest_badges %player%
+    '2':
+      type: CONSOLE_COMMAND
+      use_placeholders: true
+      item:
+        material: SUGAR
+        name: '&6Perfil de Misiones'
+        lore:
+        - '&fᴍɪsɪᴏɴᴇs ᴄᴏᴍᴘʟᴇᴛᴀᴅᴀs: #64ba3f%odailyquests_total%'
+        - '#a5d0e9Muestra el total de misiones'
+        - '#a5d0e9que has completado en total'
+        - ''
+        - '&fᴛᴜ ɪɴsɪɢɴɪᴀ: #c372de%luckperms_meta_badge%'
+        - '&7ᴍɪsɪᴏɴᴇs ᴅᴇ ʜᴏʏ: &6%odailyquests_achieved%&8/&612'
+        - '%progress_bar_{odailyquests_achieved}_c:&f{img_offset_-2}#98b23d{img_xp_bar_white}_p:&f{img_offset_-2}#323232{img_xp_bar_white}_r:&f{img_offset_-2}#323232{img_xp_bar_white}_l:12_m:12_fullbar:&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}&f{img_offset_-2}#98b23d{img_xp_bar_white}%'
+        - ''
+        - '&fʀᴇɪɴɪᴄɪᴏ ᴇɴ: #dc3333%odailyquests_drawin%'
+        slot: 2
+        custom_model_data: 1100
+      commands:
+      - dm open quest_badges %player%
+  disable_status: false

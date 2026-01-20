@@ -1,0 +1,34 @@
+title: <white>
+rows: 6
+items:
+  cryocore_cosmetics_wings:
+    slots:
+    - 0
+    item:
+      name: <white>Cryocore Wings
+      material: POTION
+      model-data: 9925257
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_cryocore_cosmetics_wings%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_cryocore_cosmetics_wings%'
+    type: cosmetic
+    cosmetic: cryocore_cosmetics_wings
+    locked-item:
+      name: <white>Cryocore Wings <red><b>(LOCK)
+      material: POTION
+      model-data: 9925257
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available

@@ -1,0 +1,43 @@
+info:
+  namespace: plny_aceruin_set
+items:
+  plny_aceruin_set_cosmetics_helmet:
+    display_name: Aceruin Helmet Cosmetics
+    permission: plny_aceruin_set.plny_aceruin_set_cosmetics_helmet
+    resource:
+      generate: false
+      model_path: helmet
+      material: POTION
+      model_id: 9925463
+  plny_aceruin_set_cosmetics_wings:
+    display_name: Aceruin Wings Cosmetics
+    permission: plny_aceruin_set.plny_aceruin_set_cosmetics_wings
+    resource:
+      generate: false
+      model_path: wings_cosmetic
+      material: POTION
+      model_id: 9925464
+  plny_aceruin_set_cosmetics_wings_self:
+    display_name: Aceruin Wings Cosmetics Self
+    permission: plny_aceruin_set.plny_aceruin_set_cosmetics_wings_self
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self
+      material: POTION
+      model_id: 9925465
+  plny_aceruin_set_cosmetics_wings_self_2:
+    display_name: Aceruin Wings Cosmetics Self 2
+    permission: plny_aceruin_set.plny_aceruin_set_cosmetics_wings_self_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self_2
+      material: POTION
+      model_id: 9925466
+  plny_aceruin_set_cosmetics_wings_normal_2:
+    display_name: Aceruin Wings Cosmetics Normal 2
+    permission: plny_aceruin_set.plny_aceruin_set_cosmetics_wings_normal_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_normal_2
+      material: POTION
+      model_id: 9925467

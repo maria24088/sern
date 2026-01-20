@@ -1,0 +1,118 @@
+Config:
+  version: '1'
+  # available: [EN, TR, BR, RU, PL]
+  language: ES
+   
+  #It is very important to use Mysql if possible due to the large data traffic caused
+  #by clan chests, or even think about having a moderate amount of enabled pages per clan.
+  Chest:
+    #If disabled this does not appear in the menu and the command is marked as disabled.
+    enabled: true
+    forge_open-gui: true
+    extra_chest_limit: 3
+    extra_chest_price: 250000.0
+    extra_chest_price_multiplier: 2.5
+    extra_chest_permission_buy: uclans.player.vip
+     
+    #You can configure active saving of chests, time is counted in seconds
+    #If active save is turned off the chest is only saved when the inventory is closed or the page is changed
+    save:
+      active: true
+      time: 5
+     
+    #On-demand loading loads the chests only when they are needed.
+    #In case of errors use in 'false'
+    load:
+      ondemand: true
+      animated: true
+      tick_sound: BLOCK_LAVA_POP
+    default: 1
+    # format: CLAN_CHESTS/REQUIRED_LEVEL
+    #You can add multiple chests for various clan levels.
+    #example:
+    #    unlocker:
+    #      '1': 1 #The clan can have 1 chest if it is level 1
+    #      '5': 10 #The clan can have 5 chest if it is level 10
+    #      '10': 30 #The clan can have 10 chest if it is level 30
+    #
+    #Use '1': 0 to not need levels for 1 chest
+    unlocker: [
+      ]
+    #in ticks. recommended above 20 ticks. (do not use 0). for sync recommended double ...high.sync_delay
+    time_to_open: 20
+   
+  Icon:
+    click_sound: ''
+    material: PLAYER_HEAD
+    name: <green>Cofre compartido
+    lore:
+    - <dark_gray>Cofre del Clan
+    - ' '
+    - ' <dark_gray>● <white>Desde el rol <bold>MIEMBRO</bold> <reset><white>pueden acceder'
+    - '   <white>Al cofre compartido, puede cambiar esto'
+    - '   <white>En los ajustes de roles. '
+    - ' '
+    - ' <dark_gray>● <white>Acceso rapido: <green>/clan chest open'
+    - ' '
+    - <yellow>► ¡Haga click para abrir el menú!
+    glow: false
+    slot: 37
+    texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjliMThiMDI0NTNkYjFiYTI1NjRjMWY5Yzk2N2ZkYWE0ZjNmOGY5NWQ2OTcyNjVkNGJkZTY2MjBkNjhkZWVhYiJ9fX0=
+    # avaliable: TOP, BOTTOM, BORDER, ALL or numeric list
+    mimeslots: [
+      ]
+    nbt:
+      string: [
+        ]
+    model: 0
+    left_click_action:
+    - /{_clan} {_chest} {_open}
+    right_click_action:
+    - /{_clan} {_chest} {_open}
+   
+  #Permissions are for advanced connoisseurs, be careful when editing this!
+  Permissions:
+    buy:
+      name: Chest-Buy
+      default_value: true
+      applicable_roles:
+      - moderator
+      - coleader
+    open:
+      name: Chest-Open
+      default_value: true
+      applicable_roles:
+      - member
+      - moderator
+      - coleader
+   
+  logger:
+    enable_colors: true
+    plugin_material: CHEST
+    plugin_name: Chest
+    events:
+      ClanChestUpgradeEvent: true
+ 
+# CHEST STORAGE
+Storage:
+  #mysql/sqlite (It is highly recommended to use mysql for better performance!!!)
+  type: sqlite
+  mysql:
+    host: localhost
+    port: 3306
+    base: YOUR-BASE-PRE-CREATED
+    #SSL is only valid for MYSQL, most servers are not necessary to use it as true.
+    useSSL: false
+  # Used for Mysql mandatory and optional for H2 and Sqlite (default: root)
+  user: root
+  # Used for Mysql mandatory and optional for H2 and Sqlite (default is empty)
+  pass: ''
+  databases:
+    chest_items_table: uclans_chest-items
+    chest_info_table: uclans_chest-info
+  # https://github.com/brettwooldridge/HikariCP#popular-datasource-class-names
+  datasource:
+    mysql: jdbc:mysql://
+    mysql_class: ''
+    sqlite: 'jdbc:sqlite:'
+    sqlite_class: org.sqlite.JDBC

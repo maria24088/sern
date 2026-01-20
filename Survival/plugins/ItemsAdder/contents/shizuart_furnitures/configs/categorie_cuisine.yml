@@ -1,0 +1,36 @@
+info:
+  namespace: shizuart_furnitures
+
+categories:
+  cuisine:
+    enabled: true
+    icon: "shizuart_furnitures:cuisiniere"
+    name: "%#cba57d%Kitchen"
+    items:
+    - "shizuart_furnitures:assiette"
+    - "shizuart_furnitures:bocal"
+    - "shizuart_furnitures:bocaux"
+    - "shizuart_furnitures:lot_assiettes"
+    - "shizuart_furnitures:pot_ustensils"
+    - "shizuart_furnitures:pots_epices"
+    - "shizuart_furnitures:blender"
+    - "shizuart_furnitures:cuisiniere"
+    - "shizuart_furnitures:placard_cuisine"
+    - "shizuart_furnitures:tiroirs_cuisine"
+    - "shizuart_furnitures:evier_cuisine"
+    - "shizuart_furnitures:placard_haut_cuisine"
+    - "shizuart_furnitures:frigo_cuisine"
+    - "shizuart_furnitures:placard_haut_verre_cuisine"
+    - "shizuart_furnitures:trio_bouteilles"
+    - "shizuart_furnitures:bocal_miel"
+    - "shizuart_furnitures:pot_confiture"
+    - "shizuart_furnitures:conserves"
+    - "shizuart_furnitures:microondes"
+    - "shizuart_furnitures:casserole"
+    - "shizuart_furnitures:etagere"
+    - "shizuart_furnitures:meuble_angle"
+    - "shizuart_furnitures:etageres"
+    - "shizuart_furnitures:tabouret_cuisine"
+    - "shizuart_furnitures:poubelle_cuisine"
+    - "shizuart_furnitures:cuisine_lampe"
+    - "shizuart_furnitures:egouttoir"

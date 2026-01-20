@@ -1,0 +1,63 @@
+# Made by samus2002
+
+menu_title: '&8&lDungeon Portal'
+open_command:
+  - portal_dungeon
+size: 27
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: portal_dungeon.open
+      deny_commands:
+        - "[message] &cYou can't access Dungeon Portals yet!"
+items:
+  'GOBLIN_DUNGEON':
+    material: ZOMBIE_HEAD
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lGoblin Dungeon'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to travel to &b&lGoblin Dungeon!"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s OBJ_PORTAL_DUNGEON_GOBLIN";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[close]'
+  'SKELETON_DUNGEON':
+    material: SKELETON_SKULL
+    slot: 11
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lSkeleton Dungeon'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to travel to &b&lSkeleton Dungeon!"
+      - ""
+    view_requirement:
+      requirements:
+        portal_perm:
+          type: has permission
+          permission: portal.skeleton
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s OBJ_PORTAL_DUNGEON_SKELETON";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[close]'
+  'SKELETON_DUNGEON_LOCKED':
+    material: RED_STAINED_GLASS_PANE
+    slot: 11
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&c&lSkeleton Dungeon'
+    lore:
+      - "&4&lLOCKED"
+    left_click_commands:
+      - "[message] &4You haven't unlocked &b&lSkeleton Dungeon &4yet!"
+      - '[sound] ENTITY_ITEM_BREAK'
+#24f35df792b6ddcf3baf6e41e84f2dde

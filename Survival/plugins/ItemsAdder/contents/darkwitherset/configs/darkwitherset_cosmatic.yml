@@ -1,0 +1,43 @@
+info:
+  namespace: darkwitherset
+items:
+  dark_wither_cosmetics_cape:
+    display_name: §fDark Wither Cape Cosmetics
+    permission: darkwitherset.dark_wither_cosmetics_cape
+    resource:
+      generate: false
+      model_path: cape_cosmetic
+      material: POTION
+      model_id: 9923146
+  dark_wither_cosmetics_cape_self:
+    display_name: §fDark Wither Cape Cosmetics Self
+    permission: darkwitherset.dark_wither_cosmetics_cape_self
+    resource:
+      generate: false
+      model_path: cape_cosmetic_self
+      material: POTION
+      model_id: 9923147
+  dark_wither_cosmetics_cape_self_2:
+    display_name: §fDark Wither Cape Cosmetics Self 2
+    permission: darkwitherset.dark_wither_cosmetics_cape_self_2
+    resource:
+      generate: false
+      model_path: cape_cosmetic_self_2
+      material: POTION
+      model_id: 9923148
+  dark_wither_cosmetics_cape_normal_2:
+    display_name: §fDark Wither Cape Cosmetics Normal 2
+    permission: darkwitherset.dark_wither_cosmetics_cape_normal_2
+    resource:
+      generate: false
+      model_path: cape_cosmetic_normal_2
+      material: POTION
+      model_id: 9923149
+  dark_wither_cosmetics_helmet:
+    display_name: §fDark Wither Helmet Cosmetics
+    permission: darkwitherset.dark_wither_cosmetics_helmet
+    resource:
+      generate: false
+      model_path: helmet
+      material: POTION
+      model_id: 9923150

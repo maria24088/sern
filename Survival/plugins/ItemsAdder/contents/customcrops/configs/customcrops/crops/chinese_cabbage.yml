@@ -1,0 +1,140 @@
+info:
+  namespace: customcrops
+items:
+  chinese_cabbage_stage_1:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/chinese_cabbage/stage_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  chinese_cabbage_stage_2:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/chinese_cabbage/stage_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  chinese_cabbage_stage_3:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/chinese_cabbage/stage_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  chinese_cabbage_stage_4:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/chinese_cabbage/stage_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  chinese_cabbage_seeds:
+    display_name: "Chinese Cabbage Seeds"
+    #display_name: 白菜种子
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/chinese_cabbage/chinese_cabbage_seeds
+  chinese_cabbage:
+    display_name: "Chinese Cabbage"
+    #display_name: 白菜
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/chinese_cabbage/chinese_cabbage
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  chinese_cabbage_silver_star:
+    display_name: "Chinese Cabbage (Silver Star)"
+    #display_name: 白菜(银星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/chinese_cabbage/chinese_cabbage_silver_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  chinese_cabbage_golden_star:
+    display_name: "Chinese Cabbage (Golden Star)"
+    #display_name: 白菜(金星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/chinese_cabbage/chinese_cabbage_golden_star
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+categories:
+  customcrops_chinese_cabbage:
+    enabled: true
+    icon: customcrops:chinese_cabbage
+    name: 'Chinese Cabbage'
+    items:
+      - customcrops:chinese_cabbage
+      - customcrops:chinese_cabbage_silver_star
+      - customcrops:chinese_cabbage_golden_star
+      - customcrops:chinese_cabbage_seeds
+      - customcrops:chinese_cabbage_stage_1
+      - customcrops:chinese_cabbage_stage_2
+      - customcrops:chinese_cabbage_stage_3
+      - customcrops:chinese_cabbage_stage_4

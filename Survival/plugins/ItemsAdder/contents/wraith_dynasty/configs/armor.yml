@@ -1,0 +1,55 @@
+armors_rendering:
+  wraith_dynastyarmor:
+    color: '#eb02b3'
+    layer_1: armor/armor_main
+    layer_2: armor/armor_leggings
+    use_color: false
+info:
+  namespace: wraith_dynasty
+items:
+  wraith_dynastyboots:
+    display_name: Wraith_dynasty Boots
+    permission: wraith_dynasty.boots
+    resource:
+      generate: true
+      textures:
+      - armor/boots.png
+    specific_properties:
+      armor:
+        custom_armor: wraith_dynastyarmor
+        slot: feet
+  wraith_dynastychestplate:
+    display_name: Wraith_dynasty Chestplate
+    permission: wraith_dynasty.chestplate
+    resource:
+      generate: true
+      textures:
+      - armor/chestplate.png
+    specific_properties:
+      armor:
+        custom_armor: wraith_dynastyarmor
+        slot: chest
+  wraith_dynastyleggings:
+    display_name: Wraith_dynasty Leggings
+    permission: wraith_dynasty.leggings
+    resource:
+      generate: true
+      textures:
+      - armor/leggings.png
+    specific_properties:
+      armor:
+        custom_armor: wraith_dynastyarmor
+        slot: legs
+  wraith_dynastyhelmet:
+    display_name: Wraith_dynasty Helmet
+    permission: wraith_dynasty.Helmet
+    resource:
+      generate: true
+      textures:
+      - armor/helmet.png
+    specific_properties:
+      armor:
+        custom_armor: wraith_dynastyarmor
+        slot: head
+
+#Q0TwUGOiNmMQpkYJdWS5F1cFREZykUbXlGaE9UNrV1U0ZFMhR3QZtGUQZTbi5WSalTczhDO

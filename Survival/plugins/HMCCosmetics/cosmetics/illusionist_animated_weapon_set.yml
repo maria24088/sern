@@ -1,0 +1,30 @@
+illusionist_animated_weapon_set_hat:
+  slot: HELMET
+  permission: "elitecreatures.hat"
+  dyeable: false
+  item:
+    material: itemsadder:illusionist_animated_weapon_set_hat
+    name: "[Illusionist] Hat"
+    amount: 1
+illusionist_animated_weapon_set_backpack:
+  slot: BACKPACK
+  permission: "elitecreatures.backpack"
+  item:
+    material: itemsadder:illusionist_animated_weapon_set_backpack
+    name: "[Illusionist] Backpack"
+    amount: 1
+  firstperson-item:
+    material: itemsadder:illusionist_animated_weapon_set_backpack
+    amount: 1
+illusionist_animated_weapon_set_wing:
+  slot: BACKPACK
+  permission: "elitecreatures.wing"
+  item:
+    material: itemsadder:illusionist_animated_weapon_set_wing
+    name: "[Illusionist] Wing"
+    amount: 1
+  firstperson-item:
+    material: itemsadder:illusionist_animated_weapon_set_wing
+    amount: 1
+
+#IXVqRjTwQTZTFGbtpkTPpFanJTYEh3aVFGcxE1dOJTW6VFRkV0SQVlZCN0MIJ1YJBnWlxEO

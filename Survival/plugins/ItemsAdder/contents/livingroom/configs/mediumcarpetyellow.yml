@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  mediumcarpetyellow:
+    display_name: "Medium Carpet Yellow"
+    permission: livingroom.mediumcarpetyellow
+    resource:
+      material: PAPER
+      generate: false
+      model_path: mediumcarpetyellow
+    behaviours:
+      furniture:
+        light_level: 13

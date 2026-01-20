@@ -1,0 +1,36 @@
+SoulFire_Lantern:
+  Skills:
+  - sound{s=entity.blaze.shoot;p=1.7;v=0.3} @origin
+  - playAnimation{animation=0} @self{targetCreative=true}
+  - projectile{v=19;hnp=true;hp=true;sB=true;sE=true;i=1;mr=15;hitconditions=[ - hasTag{tag=prop} false ];onStart=SoulFire_Lantern_Start;onTick=SoulFire_Lantern_Tick;onEnd=SoulFire_Lantern_End;onHit=SoulFire_Lantern_Hit} @targetlocation
+
+SoulFire_Lantern_Start:
+  Skills:
+  - particle{particle=sculk_soul;a=1;hs=0.2;vs=0.2} @origin
+  - sound{sound=particle.soul_escape;p=1.7;v=0.3} @origin
+
+SoulFire_Lantern_Tick:
+  Skills:
+  - particles{p=soul_fire_flame;a=10;hs=0.25;vs=0.25;speed=0.3;directional=true;fo=true} @ProjectileForward{f=2}
+  - particles{p=SMOKE;a=1;hs=0.05;vs=0.05;speed=0.01} @ProjectileForward{f=-0.2}
+
+SoulFire_Lantern_End:
+  Skills:
+  - particles{p=SMOKE_LARGE;a=2;hs=0.05;vs=0.05;speed=0.09} @origin
+  - sound{s=block.fire.extinguish;p=<random.float.1to2>;v=0.1} @origin
+  - blockMask{duration=5;material=SOUL_FIRE} @blocksnearorigin{radius=0;limit=1;sort=NEAREST;onlyair=true;noair=false}
+  - particles{p=ITEM;m=SCULK;a=8;hs=0.05;vs=0.05;speed=0.09;y=0.8} @origin
+
+SoulFire_Lantern_Hit:
+  Skills:
+  - delay 2
+  - randomskill{skills=[ - damage{a=8;pkb=true;pi=tru} ] 1,[ - damage{a=16;pkb=true;pi=tru} ] 0.07}
+  - ignite{d=40}
+  - delay 2
+  - randomskill{skills=[ - damage{a=8;pkb=true;pi=tru} ] 1,[ - damage{a=16;pkb=true;pi=tru} ] 0.07}
+  - ignite{d=40}
+  - delay 2
+  - randomskill{skills=[ - damage{a=8;pkb=true;pi=tru} ] 1,[ - damage{a=16;pkb=true;pi=tru} ] 0.07}
+  - ignite{d=40}
+  # Nota: He desglosado el repeat del projectile aquí para hacerlo manual y asegurar compatibilidad, 
+  # pero si prefieres usar el repeat interno del onHit en el projectile principal, no uses este sub-skill.

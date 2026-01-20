@@ -1,0 +1,361 @@
+# Guía de configuración avanzada de DeluxeMenus
+#=========================================================
+menu_title: "&0             Almas de Mobs"
+open_command:
+  - almas
+register_command: true
+open_commands:
+  - "[sound] BLOCK_CHEST_OPEN" # Sonido de apertura de cofre
+size: 54
+update_interval: 1
+items:
+  # Paneles de decoración
+  "pane":
+    material: GRAY_STAINED_GLASS_PANE # Panel de cristal gris
+    priority: 1000
+    slots:
+      - 0-8
+      - 9
+      - 17
+      - 18
+      - 26
+      - 27
+      - 35
+      - 36
+      - 44
+  "pane2":
+    material: BLACK_STAINED_GLASS_PANE # Panel de cristal negro
+    priority: 1000
+    slots:
+      - 45-53
+      
+  # Botón de Regreso
+  "previous_page":
+    material: arrow # Flecha
+    display_name: "&c⤾ Volver"
+    slot: 48
+    click_commands:
+      - "[openguimenu] souls_shop" # Abre el menú de la tienda de almas
+
+  # Botón de Cierre
+  "close":
+    material: BARRIER # Barrera
+    priority: 2
+    slot: 50
+    display_name: "&4✘ Cerrar &7(Click)"
+    left_click_commands:
+      - "[close]"
+      - "[sound] BLOCK_ANVIL_HIT" # Sonido de golpe de yunque
+    right_click_commands:
+      - "[close]"
+      - "[sound] BLOCK_ANVIL_HIT"
+
+  # Información de Mobs (Lista de Mobs)
+
+  # Mob 1: Pollo (Chicken)
+  "item1":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2EzNTgyY2U0ODg5MzMzZGFkMzI5ZTRlMjQzNzJhMDNhNWRhYTJjMzQyODBjNTYyNTZhZjUyODNlZGIwNDNmOCJ9fX0="
+    slot: 10
+    display_name: "&#0073FBMob &8» &7Pollo"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &71"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &710%"
+
+  # Mob 2: Cerdo (Pig)
+  "item2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVlODUxNDg5MmYzZDc4YTMyZTg0NTZmY2JiOGM2MDgxZTIxYjI0NmQ4MmYzOThiZDk2OWZlYzE5ZDNjMjdiMyJ9fX0="
+    slot: 11
+    display_name: "&#0073FBMob &8» &7Cerdo"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &71"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &720%"
+
+  # Mob 3: Oveja (Sheep)
+  "item3":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjMxZjljY2M2YjNlMzJlY2YxM2I4YTExYWMyOWNkMzNkMThjOTVmYzczZGI4YTY2YzVkNjU3Y2NiOGJlNzAifX19"
+    slot: 12
+    display_name: "&#0073FBMob &8» &7Oveja"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &71"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &720%"
+
+  # Mob 4: Vaca (Cow)
+  "item4":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY1NTE4NDA5NTVmNTI0MzY3NTgwZjExYjM1MjI4OTM4YjY3ODYzOTdhOGYyZThjOGNjNmIwZWIwMWI1ZGIzZCJ9fX0="
+    slot: 13
+    display_name: "&#0073FBMob &8» &7Vaca"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &71"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &720%"
+
+  # Mob 5: Caballo (Horse)
+  "item5":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk5MDgyMTk1MWZkOWFiOTMwMWFlYmY1ZDc2YTliNjBmMTVlYmY2MTllMWM5ZThkNjY4OTE5ZDM5NGQ5YTkzMyJ9fX0="
+    slot: 14
+    display_name: "&#0073FBMob &8» &7Caballo"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &71"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &720%"
+
+  # Mob 6: Abeja (Bee)
+  "item6":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTliZjVlOTI3NDQ5YmZlOGIwZGU1NzhiN2IxZDU4MjU5NWQ5ZmNlMjM1NGI1Mjg0Yjk4ODJjNTZlYmNjOTMzYSJ9fX0="
+    slot: 15
+    display_name: "&#0073FBMob &8» &7Abeja"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &72"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &720%"
+
+  # Mob 7: Tortuga (Turtle)
+  "item7":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGE0MDUwZTdhYWNjNDUzOTIwMjY1OGZkYzMzOWRkMTgyZDdlMzIyZjlmYmNjNGQ1Zjk5YjU3MThhIn19fQ=="
+    slot: 16
+    display_name: "&#0073FBMob &8» &7Tortuga"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &72"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &720%"
+
+  # Mob 8: Bruja (Witch)
+  "item8":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBlMTNkMTg0NzRmYzk0ZWQ1NWFlYjcwNjk1NjZlNDY4N2Q3NzNkYWMxNmY0YzNmODcyMmZjOTViZjlmMmRmYSJ9fX0="
+    slot: 19
+    display_name: "&#0073FBMob &8» &7Bruja"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &73"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &740%"
+
+  # Mob 9: Piglin
+  "item9":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDcxYjNhZWUxODJiOWE5OWVkMjZjYmY1ZWNiNDdhZTkwYzJjM2FkYzA5MjdkZGUxMDJjN2IzMGZkZjdmNDU0NSJ9fX0="
+    slot: 20
+    display_name: "&#0073FBMob &8» &7Piglin"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &73"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &740%"
+
+  # Mob 10: Zombi (Zombie)
+  "item10":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ1MjhiMzIyOTY2MGYzZGZhYjQyNDE0ZjU5ZWU4ZmQwMWU4MDA4MWRkM2RmMzA4Njk1MzZiYTliNDE0ZTA4OSJ9fX0="
+    slot: 21
+    display_name: "&#0073FBMob &8» &7Zombi"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &73"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &740%"
+
+  # Mob 11: Esqueleto (Skeleton)
+  "item11":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmNhNDQ1NzQ5MjUxYmRkODk4ZmI4M2Y2Njc4NDRlMzhhMWRmZjc5YTE1MjlmNzlhNDI0NDdhMDU5OTMxMGVhNCJ9fX0="
+    slot: 22
+    display_name: "&#0073FBMob &8» &7Esqueleto"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &73"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &740%"
+
+  # Mob 12: Creeper
+  "item12":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQyNTQ4MzhjMzNlYTIyN2ZmY2EyMjNkZGRhYWJmZTBiMDIxNWY3MGRhNjQ5ZTk0NDQ3N2Y0NDM3MGNhNjk1MiJ9fX0="
+    slot: 23
+    display_name: "&#0073FBMob &8» &7Creeper"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &73"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &740%"
+
+  # Mob 13: Hoglin
+  "item13":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWJiOWJjMGYwMWRiZDc2MmEwOGQ5ZTc3YzA4MDY5ZWQ3Yzk1MzY0YWEzMGNhMTA3MjIwODU2MWI3MzBlOGQ3NSJ9fX0="
+    slot: 24
+    display_name: "&#0073FBMob &8» &7Hoglin"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &74"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &750%"
+
+  # Mob 14: Bruto (Brute)
+  "item14":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2UzMDBlOTAyNzM0OWM0OTA3NDk3NDM4YmFjMjllM2E0Yzg3YTg0OGM1MGIzNGMyMTI0MjcyN2I1N2Y0ZTFjZiJ9fX0="
+    slot: 25
+    display_name: "&#0073FBMob &8» &7Bruto"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &74"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &750%"
+
+  # Mob 15: Enderman
+  "item15":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E1OWJiMGE3YTMyOTY1YjNkOTBkOGVhZmE4OTlkMTgzNWY0MjQ1MDllYWRkNGU2YjcwOWFkYTUwYjljZiJ9fX0="
+    slot: 28
+    display_name: "&#0073FBMob &8» &7Enderman"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &74"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &760%"
+
+  # Mob 16: Guardián (Guardian)
+  "item16":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM3OTc0ODJhMTRiZmNiODc3MjU3Y2IyY2ZmMWI2ZTZhOGI4NDEzMzM2ZmZiNGMyOWE2MTM5Mjc4YjQzNmIifX19"
+    slot: 29
+    display_name: "&#0073FBMob &8» &7Guardián"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &74"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &760%"
+
+  # Mob 17: Blaze
+  "item17":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIwNjU3ZTI0YjU2ZTFiMmY4ZmMyMTlkYTFkZTc4OGMwYzI0ZjM2Mzg4YjFhNDA5ZDBjZDJkOGRiYTQ0YWEzYiJ9fX0="
+    slot: 30
+    display_name: "&#0073FBMob &8» &7Blaze"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &74"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &760%"
+
+  # Mob 18: Rana (Frog)
+  "item18":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNjZTZmOTk5OGVkMmRhNzU3ZDFlNjM3MmYwNGVmYTIwZTU3ZGZjMTdjM2EwNjQ3ODY1N2JiZGY1MWMyZjJhMiJ9fX0="
+    slot: 31
+    display_name: "&#0073FBMob &8» &7Rana"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &75"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &770%"
+
+  # Mob 19: Allay
+  "item19":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVlYTg0NWNjMGI1OGZmNzYzZGVjZmZlMTFjZDFjODQ1YzVkMDljM2IwNGZlODBiMDY2M2RhNWM3YzY5OWViMyJ9fX0="
+    slot: 32
+    display_name: "&#0073FBMob &8» &7Allay"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &75"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &770%"
+
+  # Mob 20: Golem de Hierro (Iron Golem)
+  "item20":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTEzZjM0MjI3MjgzNzk2YmMwMTcyNDRjYjQ2NTU3ZDY0YmQ1NjJmYTlkYWIwZTEyYWY1ZDIzYWQ2OTljZjY5NyJ9fX0="
+    slot: 33
+    display_name: "&#0073FBMob &8» &7Golem de Hierro"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &75"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &770%"
+
+  # Mob 21: Axolote (Axolotl)
+  "item21":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGViZjJiMTEzZjRhODEzNzBhMWNmOWQyNTA0ZTg3NTZiNjZkZWVmNzllOTQzMzE4N2RhNzc0Yjk2YzlmMzViYSJ9fX0="
+    slot: 34
+    display_name: "&#0073FBMob &8» &7Axolote"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &75"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &770%"
+
+  # Mob 22: Husck (Zombie del Desierto)
+  "item22":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWI5ZGE2YjhkMDZjZDI4ZDQ0MTM5OGI5Njc2NmMzYjRmMzcwZGU4NWM3ODk4MjA1ZTVjNDI5ZjE3OGEyNDU5NyJ9fX0="
+    slot: 37
+    display_name: "&#0073FBMob &8» &7Husck"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &73"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &740%"
+
+  # Mob 23: Ghast
+  "item23":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E4YjcxNGQzMmQ3ZjZjZjhiMzdlMjIxYjc1OGI5YzU5OWZmNzY2NjdjN2NkNDViYmM0OWM1ZWYxOTg1ODY0NiJ9fX0="
+    slot: 38
+    display_name: "&#0073FBMob &8» &7Ghast"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &73"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &760%"
+
+  # Mob 24: Araña (Spider)
+  "item24":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q1NDE1NDFkYWFmZjUwODk2Y2QyNThiZGJkZDRjZjgwYzNiYTgxNjczNTcyNjA3OGJmZTM5MzkyN2U1N2YxIn19fQ=="
+    slot: 39
+    display_name: "&#0073FBMob &8» &7Araña"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &73"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &730%"
+
+  # Mob 25: Magma (Cubo de Magma)
+  "item25":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFjOTdhMDZlZmRlMDRkMDAyODdiZjIwNDE2NDA0YWIyMTAzZTEwZjA4NjIzMDg3ZTFiMGMxMjY0YTFjMGYwYyJ9fX0="
+    slot: 40
+    display_name: "&#0073FBMob &8» &7Magma"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &73"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &760%"
+
+  # Mob 26: Saqueador (Pillager)
+  "item26":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFlZTZiYjM3Y2JmYzkyYjBkODZkYjVhZGE0NzkwYzY0ZmY0NDY4ZDY4Yjg0OTQyZmRlMDQ0MDVlOGVmNTMzMyJ9fX0="
+    slot: 41
+    display_name: "&#0073FBMob &8» &7Saqueador"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &74"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &770%"
+
+  # Mob 27: Esqueleto Wither (Wither Skeleton)
+  "item27":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjVlYzk2NDY0NWE4ZWZhYzc2YmUyZjE2MGQ3Yzk5NTYzNjJmMzJiNjUxNzM5MGM1OWMzMDg1MDM0ZjA1MGNmZiJ9fX0="
+    slot: 42
+    display_name: "&#0073FBMob &8» &7Esqueleto Wither"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &75"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &775%"
+
+  # Mob 28: Jugador (Player)
+  "item28":
+    material: "player_head" # Cabeza de jugador
+    slot: 43
+    display_name: "&#0073FBMob &8» &7Jugador"
+    lore:
+      - "&8Información de Almas"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcAlmas Otorgadas: &710"
+      - "&#0073FB&l▬ &#fcfcfcProbabilidad de Alma: &775%"

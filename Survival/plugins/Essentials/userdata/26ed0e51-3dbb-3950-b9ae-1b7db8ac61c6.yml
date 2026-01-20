@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.19.211.102
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1768845692418
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1768866399176
+  login: 1768866393740
+money: '100000'
+last-account-name: Bruno240707
+lastlocation:
+  world: 140696f2-dab0-45e1-a385-d9402c4b481b
+  world-name: SpawnRPG
+  x: 8.322763481804136
+  y: 68.06432288841602
+  z: -12.545127826049965
+  yaw: 157.9935302734375
+  pitch: 10.739496231079102
+logoutlocation:
+  world: 140696f2-dab0-45e1-a385-d9402c4b481b
+  world-name: SpawnRPG
+  x: 8.777771170655514
+  y: 58.0
+  z: -8.477057158049194
+  yaw: 83.70474243164062
+  pitch: 10.321061134338379
+homes:
+  home:
+    world: 140696f2-dab0-45e1-a385-d9402c4b481b
+    world-name: SpawnRPG
+    x: -318.31128786311626
+    y: 62.0
+    z: -337.40305703319115
+    yaw: 179.87913513183594
+    pitch: 9.782882690429688

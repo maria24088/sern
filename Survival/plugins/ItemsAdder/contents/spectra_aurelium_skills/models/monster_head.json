@@ -1,0 +1,27 @@
+{
+	"credit": "213213 / 1587DHR8",
+	"textures": {
+		"0": "spectra_aurelium_skills:monster_head",
+		"particle": "spectra_aurelium_skills:monster_head"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [18, 30, 0],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#missing"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"south": {"uv": [5, 1, 14, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#missing"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"gui": {
+			"translation": [-37, -43.5, 0]
+		}
+	}
+}

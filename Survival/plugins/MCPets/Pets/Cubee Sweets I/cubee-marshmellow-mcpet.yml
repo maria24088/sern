@@ -1,0 +1,14 @@
+Id: cubee-marshmellow
+MythicMob: cubee-marshmellow
+Permission: mcpet.cubee-marshmellow
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §e Marshmellow Cubee
+  Description:
+  - §7"I'm ready to melt in your mouth! Would you like to toast me over a campfire?"
+    §8§o- Marshmellow Cubee
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191321

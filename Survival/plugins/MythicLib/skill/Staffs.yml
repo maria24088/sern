@@ -1,0 +1,51 @@
+ACID_SPRAY:
+  mythicmobs-skill-id: Acid_Spray
+  modifiers: []
+
+DOOMSDAY:
+  mythicmobs-skill-id: Doomsday
+  modifiers: []
+
+CELESTIAL_AID:
+  mythicmobs-skill-id: Celestial_Aid
+  modifiers: []
+
+OVERLOADED_SPHERE:
+  mythicmobs-skill-id: OverloadedSphere
+  modifiers: []
+
+COMET:
+  mythicmobs-skill-id: Comet
+  modifiers: []
+  
+BLOODBURST:
+  mythicmobs-skill-id: Bloodburst
+  modifiers: []
+
+DARK_RITUAL:
+  mythicmobs-skill-id: Dark_Ritual
+  modifiers: []
+
+ICE_FURY:
+  mythicmobs-skill-id: Icy_Fury
+  modifiers: []
+
+SWARM_STRIKE:
+  mythicmobs-skill-id: BeeKeeper_SwarmStrike
+  modifiers: []
+
+SPIDER_ROULETTE:
+  mythicmobs-skill-id: SpiderQueen_Roulette
+  modifiers: []
+
+PLASMA_BLAST:
+  mythicmobs-skill-id: Plasma_Blast
+  modifiers: []
+
+SOUL_LANTERN:
+  mythicmobs-skill-id: SoulFire_Lantern
+  modifiers: []
+
+THUNDER_CLAP:
+  mythicmobs-skill-id: Thunder_Clap
+  modifiers: []

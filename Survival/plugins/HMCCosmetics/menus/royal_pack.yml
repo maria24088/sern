@@ -1,0 +1,91 @@
+title: <white>
+rows: 6
+items:
+  royal_hat:
+    slots:
+    - 0
+    item:
+      name: <white>Royal Hat
+      material: POTION
+      model-data: 400091
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#759bba>%HMCCosmetics_equipped_royal_hat%'
+      - '<gray>Allowed: <#759bba>%HMCCosmetics_unlocked_royal_hat%'
+    type: cosmetic
+    cosmetic: royal_hat
+    locked-item:
+      name: <white>Royal Hat <red><b>(LOCK)
+      material: POTION
+      model-data: 400091
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+  royal_wings:
+    slots:
+    - 1
+    item:
+      name: <white>Royal Wings
+      material: POTION
+      model-data: 400092
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#759bba>%HMCCosmetics_equipped_royal_wings%'
+      - '<gray>Allowed: <#759bba>%HMCCosmetics_unlocked_royal_wings%'
+    type: cosmetic
+    cosmetic: royal_wings
+    locked-item:
+      name: <white>Royal Wings <red><b>(LOCK)
+      material: POTION
+      model-data: 400092
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+  royal_cape:
+    slots:
+    - 1
+    item:
+      name: <white>Royal Cape
+      material: POTION
+      model-data: 400097
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#759bba>%HMCCosmetics_equipped_royal_cape%'
+      - '<gray>Allowed: <#759bba>%HMCCosmetics_unlocked_royal_cape%'
+    type: cosmetic
+    cosmetic: royal_cape
+    locked-item:
+      name: <white>Royal Cape <red><b>(LOCK)
+      material: POTION
+      model-data: 400097
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+#397d09e0135d4ad502f934e3c4a5fd0b

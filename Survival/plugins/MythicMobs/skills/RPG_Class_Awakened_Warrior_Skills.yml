@@ -1,0 +1,521 @@
+Bulwark_Instinct:
+  Cooldown: 10
+  Skills:
+  - skill{s=Bulwark_Instinct_RES}
+Bulwark_Instinct_RES:
+  Cooldown: 0
+  Conditions:
+  - hasAura{aura=NOAVOID} false
+  - hasAura{aura=VFX_Bloodbound_Barrier} false
+  Skills:
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_airdash;volume=0.7;pitch=<random.float.0.7to0.8>} @self
+  - potion{type=RESISTANCE;duration=100;level=2;hasParticles=false} @self
+  - particlering{particle=dust_color_transition;color1=#ff7f17;color2=#ff2802;radius=0.7;size=0.6;points=50;amount=1;hS=0;vS=0.3;y=0.05;repeat=48;repeati=2} @self
+  - particlering{particle=dust_color_transition;color1=#ff5e00;color2=#c70000;radius=1.5;size=0.6;points=50;amount=1;hS=0;vS=0.05;y=0.05;repeat=48;repeati=2} @self
+
+
+Brutal_Combo:
+  Cooldown: 0.3
+  Conditions:
+  - crouching false
+  - hasAura{aura=CASTING} false
+  Skills:
+  - skill{s=Brutal_Combo_ST_CAST}
+Brutal_Combo_ST_CAST:
+  Conditions:
+  - hasAura{aura=Strike_Of_Fury_AURA} false
+  Skills:
+  - skill{s=Brutal_Combo_ST_1;damage=4}
+  - skill{s=Brutal_Combo_ST_2;damage=4}
+  - skill{s=Brutal_Combo_ST_3;damage=4}
+  - skill{s=Brutal_Combo_ST_4;damage=4}
+  - skill{s=Brutal_Combo_ST_5;damage=4}
+
+
+Brutal_Combo_ST_1:
+  Conditions:
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=1} false
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=2} false
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=3} false
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=4} false
+  Skills:
+  - Aura{auraName=Brutal_Combo_Stack;duration=300;maxStacks=4;delay=1} @self
+  - projectile{onHit=Brutal_Combo_DAMAGE_D2;i=10;v=30;hR=2;vR=2;mr=1.5;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=true}
+  - summon{type=VFX_Brutal_Combo_SLASH_LD;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0.2;y=1.4;sideOffset=0;lockpitch=true}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_slash;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+
+
+Brutal_Combo_ST_2:
+  Conditions:
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=1} true
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=2} false
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=3} false
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=4} false
+  Skills:
+  - Aura{auraName=Brutal_Combo_Stack;duration=300;maxStacks=4;delay=1} @self
+  - projectile{onHit=Brutal_Combo_DAMAGE_D2;i=10;v=30;hR=2;vR=2;mr=1.5;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=true}
+  - summon{type=VFX_Brutal_Combo_SLASH_RD;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0.2;y=1.4;sideOffset=0;lockpitch=true}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_slash;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+
+
+Brutal_Combo_ST_3:
+  Conditions:
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=1} false
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=2} true
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=3} false
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=4} false
+  Skills:
+  - Aura{auraName=Brutal_Combo_Stack;duration=300;maxStacks=4;delay=1} @self
+  - projectile{onHit=Brutal_Combo_DAMAGE_D2;i=10;v=30;hR=1;vR=1;mr=5.5;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0.1;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=true}
+
+  - lunge{velocity=0.4;velocityY=-0.05;repeat=1;repeati=10} @forward{f=5;y=-0.05;lockpitch=true}
+
+  - delay 2
+
+  - summon{type=VFX_Brutal_Combo_PIERCE;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0.2;y=1.4;sideOffset=0;lockpitch=true}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_pierce;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+
+
+Brutal_Combo_ST_4:
+  Conditions:
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=1} false
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=2} false
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=3} true
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=4} false
+  Skills:
+  - Aura{auraName=Brutal_Combo_Stack;duration=300;maxStacks=4;delay=1} @self
+  - projectile{onHit=Brutal_Combo_DAMAGE_D_UP;i=10;v=30;hR=1.5;vR=3;mr=1;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=true}
+  
+  - lunge{velocity=0.5;velocityY=0.45;repeat=5;repeati=10} @Forward{f=0.5;y=5;lockpitch=true;sideOffset=0}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.move;volume=0.7;pitch=<random.float.0.7to0.8>} @self
+  - orbital{auraName=VFX_Brutal_Combo_SPIN;bulletType=MOB;mob=VFX_Brutal_Combo_SPIN;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=10;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - orbital{delay=6;auraName=VFX_Brutal_Combo_SPIN2;bulletType=MOB;mob=VFX_Brutal_Combo_SPIN;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=10;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_wheel_spin;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+  
+  - delay 6
+
+  - projectile{onHit=Brutal_Combo_DAMAGE_D_UP;i=10;v=30;hR=1.5;vR=3;mr=1;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=true}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_wheel_spin;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+
+Brutal_Combo_ST_5:
+  Conditions:
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=1} false
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=2} false
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=3} false
+  - hasaurastacks{auraName=Brutal_Combo_Stack;stacks=4} true
+  Skills:
+  - auraremove{aura=Brutal_Combo_Stack;delay=1} @self
+  - lunge{velocity=0.4;velocityY=-3} @Forward{f=2;y=-5;lockpitch=true;sideOffset=0}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.move;volume=0.7;pitch=<random.float.0.7to0.8>} @self
+  - onDamaged{auraName=NOAVOID;d=15;cE=true;damagemods=FALL;delay=0} @self
+  - projectile{onHit=Brutal_Combo_DAMAGE_D_DOWN;i=10;v=30;hR=3;vR=1.5;mr=1;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=true}
+  - summon{type=VFX_Brutal_Combo_SLASH_DOWN;amount=1;radius=0;yRadius=0;onSurface=false;delay=3} @forward{f=0.2;y=1.4;sideOffset=0;lockpitch=true}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_slash;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+  - delay 4
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.rupture_quick;volume=0.7;pitch=<random.float.0.75to0.9>;delay=2} @self
+
+  - delay 4
+  - summon{type=VFX_SW_Rupture_Small;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2;y=0.05;lockpitch=true}
+  - summon{type=VFX_SW_Rubbles_Small;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2;y=0.05;lockpitch=true}
+  - particles{p=Campfire_Cosy_Smoke;amount=7;hS=1;vS=0.1;y=0;size=1;speed=0} @forward{f=3;y=0.05;lockpitch=true}
+  - particles{p=block_crack;m=DIRT;amount=25;hS=1;vS=0.2;y=0;size=1;speed=0} @forward{f=3;y=0.05;lockpitch=true}
+  - projectile{onHit=Brutal_Combo_DAMAGE_D_UP;i=10;v=30;hR=3;vR=1.5;mr=1;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=true}
+  
+
+Brutal_Combo_DAMAGE_D2:
+  Skills:
+  - skill{s=Brutal_Combo_DAMAGE} @EntitiesNearOrigin{r=3;limit=6;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+Brutal_Combo_DAMAGE_D:
+  Skills:
+  - skill{s=Brutal_Combo_DAMAGE} @EntitiesNearOrigin{r=5;limit=6;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+Brutal_Combo_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_SW_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+
+Brutal_Combo_DAMAGE_D_UP:
+  Skills:
+  - skill{s=Brutal_Combo_DAMAGE_UP} @EntitiesNearOrigin{r=3;limit=6;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+Brutal_Combo_DAMAGE_UP:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - throw{velocity=0;velocityY=6}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_SW_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+
+Brutal_Combo_DAMAGE_D_DOWN:
+  Skills:
+  - skill{s=Brutal_Combo_DAMAGE_DOWN} @EntitiesNearOrigin{r=3;limit=6;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+Brutal_Combo_DAMAGE_DOWN:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - throw{velocity=0;velocityY=-10}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_SW_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+
+
+
+
+Berserkers_Leap:
+  Conditions:
+  - crouching false
+  - onground true
+  Skills:
+  - skill{s=Berserkers_Leap_CAST;damage=5}
+
+Berserkers_Leap_CAST:
+  Cooldown: 1
+  Conditions:
+  - hasAura{aura=CASTING} false
+  Skills:
+  - aura{auraName=CASTING;duration=15} @self
+
+  - projectile{onHit=Berserkers_Leap_DAMAGE_D;i=10;v=30;hR=1;vR=1;mr=6;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0.1;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=true}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_slash;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.rupture_quick;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+  - summon{type=VFX_Berserkers_Leap_LINE;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0.7;y=0;sideOffset=0;lockpitch=true}
+  - summon{type=VFX_Brutal_Combo_SLASH_UP;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0;y=1.4;sideOffset=0;lockpitch=true}
+
+  - delay 10
+
+  - lunge{velocity=1.4;velocityY=1;repeat=1;repeati=10} @Forward{f=6;y=3;lockpitch=true;sideOffset=0}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.move;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+  - delay 8
+  - lunge{velocity=0.4;velocityY=-1.5} @Forward{f=2;y=-4;lockpitch=true;sideOffset=0}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_airdash;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+  - onDamaged{auraName=NOAVOID;d=15;cE=true;damagemods=FALL;delay=0} @self
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.rupture_quick;volume=0.9;pitch=<random.float.0.9to1.1>;delay=3} @self
+  - delay 5
+  - summon{type=VFX_Brutal_Combo_SLASH_DOWN;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0.2;y=1.4;sideOffset=0;lockpitch=true}
+  - summon{type=VFX_SW_Rupture_Small;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2;y=0.05;lockpitch=true}
+  - summon{type=VFX_SW_Rubbles_Small;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2;y=0.05;lockpitch=true}
+  - particles{p=Campfire_Cosy_Smoke;amount=7;hS=1;vS=0.1;y=0;size=1;speed=0} @forward{f=3;y=0.05;lockpitch=true}
+  - particles{p=block_crack;m=DIRT;amount=25;hS=1;vS=0.2;y=0;size=1;speed=0} @forward{f=3;y=0.05;lockpitch=true}
+  
+  - delay 1
+
+  - projectile{onHit=Berserkers_Leap_DAMAGE_D2;i=10;v=30;hR=3;vR=1.5;mr=1;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=true}
+  
+
+Berserkers_Leap_DAMAGE_D:
+  Skills:
+  - skill{s=Berserkers_Leap_DAMAGE} @EntitiesNearOrigin{r=2.5;limit=6;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+Berserkers_Leap_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_SW_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - throw{velocity=7;velocityY=0}
+
+Berserkers_Leap_DAMAGE_D2:
+  Skills:
+  - skill{s=Berserkers_Leap_DAMAGE2} @EntitiesNearOrigin{r=3;limit=6;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+Berserkers_Leap_DAMAGE2:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_SW_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+
+
+
+Relentless_Whirlwind:
+  Conditions:
+  - hasaurastacks{auraName=Relentless_Whirlwind_aura} castinstead Relentless_Whirlwind_SKILL
+  Skills:
+  - Aura{auraName=Relentless_Whirlwind_aura;interval=1;duration=5} @self
+
+Relentless_Whirlwind_SKILL:
+  Conditions:
+  - onground true
+  Skills:
+  - skill{s=Relentless_Whirlwind_CAST;damage=4}
+Relentless_Whirlwind_CAST:
+  Cooldown: 1
+  Conditions:
+  - hasAura{aura=CASTING} false
+  Skills:
+  - aura{auraName=CASTING;duration=40} @self
+  
+  - lunge{velocity=0.25;velocityY=0;repeat=25;repeati=10} @forward{f=5;y=0;lockpitch=true}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_wheel_spin;volume=0.7;pitch=<random.float.0.8to1.1>;repeat=5;repeati=5} @self
+  - orbital{auraName=VFX_Relentless_Whirlwind_SPIN;bulletType=MOB;mob=VFX_Relentless_Whirlwind_SPIN;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=30;oy=2.6;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - skill{s=Relentless_Whirlwind_DAMAGE_D;repeat=4;repeati=7}
+  - delay 32
+
+  - lunge{velocity=-1.15;velocityY=-0.05;repeat=2;repeati=10} @forward{f=-5;y=-0.05;lockpitch=true}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.move;volume=0.7;pitch=<random.float.0.7to0.8>} @self
+  
+  - delay 5
+
+  - lunge{velocity=0.7;velocityY=-0.05;repeat=1;repeati=10} @forward{f=5;y=-0.05;lockpitch=true}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.move;volume=0.7;pitch=<random.float.0.7to0.8>} @self
+  - delay 2
+  - projectile{onHit=Relentless_Whirlwind_DAMAGE_PIERCE_D;i=10;v=30;hR=1;vR=1;mr=7;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0.8;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=true}
+  - orbital{auraName=VFX_Relentless_Whirlwind_PIERCE;bulletType=MOB;mob=VFX_Relentless_Whirlwind_PIERCE;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=10;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_pierce;volume=0.7;pitch=<random.float.0.7to0.9>} @self
+
+  - delay 3
+
+  - lunge{velocity=0.5;velocityY=-0.05;repeat=1;repeati=10} @forward{f=5;y=-0.05;lockpitch=true}
+  - delay 2
+  - projectile{onHit=Relentless_Whirlwind_DAMAGE_PIERCE_D;i=10;v=30;hR=1;vR=1;mr=7;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0.8;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=true}
+  - orbital{auraName=VFX_Relentless_Whirlwind_PIERCE2;bulletType=MOB;mob=VFX_Relentless_Whirlwind_PIERCE;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=10;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_pierce;volume=0.7;pitch=<random.float.0.7to0.9>} @self
+
+Relentless_Whirlwind_DAMAGE_D:
+  Skills:
+  - skill{s=Relentless_Whirlwind_DAMAGE} @EIR{r=5.5;limit=8;conditions=[ - isLiving true ]}
+Relentless_Whirlwind_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true;delay=1}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_SW_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - throw{velocity=0;velocityY=4}
+  - throw{velocity=0;velocityY=-4;delay=3}
+
+Relentless_Whirlwind_DAMAGE_PIERCE_D:
+  Skills:
+  - skill{s=Relentless_Whirlwind_DAMAGE_PIERCE} @EntitiesNearOrigin{r=3;limit=8;conditions=[ - isLiving true ]}
+Relentless_Whirlwind_DAMAGE_PIERCE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true;delay=1}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_SW_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - throw{velocity=5;velocityY=0}
+
+
+Bloodbound_Barrier:
+  Cooldown: 0
+  Conditions:
+  - crouching castinstead Bloodbound_Barrier_STACK
+  Skills:
+  - auraremove{aura=Bloodbound_Barrier_STACK} @self
+Bloodbound_Barrier_STACK:
+  Conditions:
+  - hasaurastacks{auraName=Bloodbound_Barrier_STACK;stacks=2} castinstead Bloodbound_Barrier_Skill
+  Skills:
+  - Aura{auraName=Bloodbound_Barrier_STACK;duration=120;maxStacks=2} @self
+Bloodbound_Barrier_Skill:
+  Cooldown: 3
+  Conditions:
+  - hasAura{aura=CASTING} false
+  Skills:
+  - skill{s=Bloodbound_Barrier_CAST;duration=10;damage=4}
+
+Bloodbound_Barrier_CAST:
+  Skills:
+  - auraremove{aura=Bloodbound_Barrier_STACK} @self
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_airdash;volume=0.7;pitch=<random.float.0.4to0.6>} @self
+  - onDamaged{auraName=Bloodbound_Barrier;od=Bloodbound_Barrier_BLOCK;c=5;cE=true;d=<skill.duration> * 20} @self
+  - orbital{auraName=VFX_Bloodbound_Barrier;bulletType=MOB;mob=VFX_Bloodbound_Barrier;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=<skill.duration> * 20;oy=1.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+Bloodbound_Barrier_BLOCK:
+  Skills:
+  - aura{auraName=Bloodbound_Barrier_RESET;duration=<skill.duration> * 20;maxStacks=5} @self
+  - effect:sound{s=entity.elder_guardian.hurt;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=block.trial_spawner.spawn_item_begin;volume=1;pitch=1} @self
+  - sudoskill{s=Bloodbound_Barrier_BLOCK_SU;cat=true} @MobsInRadius{r=3;types=VFX_Bloodbound_Barrier;limit=1;sort=NEAREST}
+  - auraremove{aura=VFX_Bloodbound_Barrier} @self ?hasaurastacks{n=Bloodbound_Barrier_RESET;s=5}
+  - auraremove{aura=Bloodbound_Barrier_RESET} @self ?hasaurastacks{n=Bloodbound_Barrier_RESET;s=5}
+  - skill{s=Bloodbound_Barrier_DAMAGE} @EIR{r=5.5;limit=8;conditions=[ - isLiving true - hasaura{n=immunedelay} false ]}
+  - skill{s=Bloodbound_Barrier_RING_OUT} @self
+Bloodbound_Barrier_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true;delay=1}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_SW_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - throw{velocity=5;velocityY=0}
+Bloodbound_Barrier_BLOCK_SU:
+  Skills:
+  - state{s=hit;speed=1;pr=2} @self
+
+Bloodbound_Barrier_RING_OUT:
+  Skills:
+  - effect:particlering{p=dust_color_transition;color1=#ff1808;color2=#6b0505;radius=7;points=80;amount=5;hS=0.1;vS=0.1;y=0.1;speed=0;size=0.55;delay=6}
+  - effect:particlering{p=dust_color_transition;color1=#ff1808;color2=#6b0505;radius=6;points=80;amount=5;hS=0.1;vS=0.1;y=0.1;speed=0;size=0.55;delay=5}
+  - effect:particlering{p=dust_color_transition;color1=#ff1808;color2=#6b0505;radius=5;points=80;amount=5;hS=0.1;vS=0.1;y=0.1;speed=0;size=0.55;delay=4}
+  - effect:particlering{p=dust_color_transition;color1=#ff1808;color2=#6b0505;radius=4;points=80;amount=5;hS=0.1;vS=0.1;y=0.1;speed=0;size=0.55;delay=3}
+  - effect:particlering{p=dust_color_transition;color1=#ff1808;color2=#6b0505;radius=3;points=80;amount=5;hS=0.1;vS=0.1;y=0.1;speed=0;size=0.55;delay=2}
+  - effect:particlering{p=dust_color_transition;color1=#ff1808;color2=#6b0505;radius=2;points=80;amount=5;hS=0.1;vS=0.1;y=0.1;speed=0;size=0.55;delay=1}
+  - effect:particlering{p=dust_color_transition;color1=#ff1808;color2=#6b0505;radius=1;points=80;amount=5;hS=0.1;vS=0.1;y=0.1;speed=0;size=0.55;delay=0}
+
+
+Vicious_Strike:
+  Cooldown: 3
+  Conditions:
+  - crouching true
+  - hasAura{aura=CASTING} false
+  Skills:
+  - skill{s=Vicious_Strike_CAST;damage=5}
+Vicious_Strike_CAST:
+  Skills:
+  - aura{auraName=CASTING;duration=25} @self
+  
+  - potion{type=SLOW;duration=25;level=50;hasParticles=false} @self
+  - orbital{auraName=VFX_Vicious_Strike_CHARGE;bulletType=MOB;mob=VFX_Vicious_Strike_CHARGE;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=25;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_stomp_charge;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+
+  - delay 25
+  
+  - projectile{onHit=Vicious_Strike_DAMAGE_D;i=10;v=40;hR=1;vR=1;mr=14;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0.4;syo=0;tyo=0;sso=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=true}
+  - summon{type=VFX_Vicious_Strike_LINE_LONG;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0.7;y=0;sideOffset=0;lockpitch=true}
+  - summon{type=VFX_Brutal_Combo_SLASH_UP2;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0;y=1.4;sideOffset=0;lockpitch=true}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_stomp;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.rupture_big;volume=0.7;pitch=<random.float.0.9to1.1>;delay=2} @self
+
+Vicious_Strike_DAMAGE_D:
+  Skills:
+  - skill{s=Vicious_Strike_DAMAGE} @EntitiesNearOrigin{r=2.5;limit=9;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+Vicious_Strike_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_SW_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - throw{velocity=12;velocityY=0}
+
+
+Strike_Of_Fury:
+  Cooldown: 3
+  Conditions:
+  - crouching true
+  - hasAura{aura=CASTING} false
+  Skills:
+  - skill{s=Strike_Of_Fury_CAST;damage=7}
+Strike_Of_Fury_CAST:
+  Skills:
+  - aura{auraName=CASTING;duration=100} @self
+  - skill{s=Strike_Of_Fury_SPHERE} @selflocation{y=0.9}
+
+  - orbital{auraName=VFX_Strike_Of_Fury_SWORD;bulletType=MOB;mob=VFX_Strike_Of_Fury_SWORD;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=100;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_charge;volume=0.8;pitch=1} @self
+  - potion{type=LEVITATION;duration=40;level=0;hasParticles=false} @self
+  - stun{d=25;f=true;CancelOnTakeDamage=false;CancelOnDeath=true;delay=40} @self
+  
+  - delay 40
+  
+  - orbital{auraName=VFX_Strike_Of_Fury_SWORD_SLASH1;bulletType=MOB;mob=VFX_Strike_Of_Fury_SWORD_SLASH1;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=9;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - projectile{onHit=Strike_Of_Fury_DAMAGE_D;i=10;v=30;hR=5;vR=1;mr=4;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=false}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_slash_ult;volume=0.7;pitch=<random.float.0.6to0.7>} @self
+
+  - delay 5
+  
+  - orbital{auraName=VFX_Strike_Of_Fury_SWORD_SLASH2;bulletType=MOB;mob=VFX_Strike_Of_Fury_SWORD_SLASH2;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=9;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - projectile{onHit=Strike_Of_Fury_DAMAGE_D;i=10;v=30;hR=5;vR=1;mr=4;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=false}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_slash_ult;volume=0.7;pitch=<random.float.0.8to0.9>} @self
+
+  - delay 5
+  
+  - orbital{auraName=VFX_Strike_Of_Fury_SWORD_SLASH1;bulletType=MOB;mob=VFX_Strike_Of_Fury_SWORD_SLASH1;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=9;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - projectile{onHit=Strike_Of_Fury_DAMAGE_D;i=10;v=30;hR=5;vR=1;mr=4;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=false}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_slash_ult_slash;volume=0.7;pitch=<random.float.1to1.1>} @self
+
+  - delay 5
+  
+  - orbital{auraName=VFX_Strike_Of_Fury_SWORD_SLASH2;bulletType=MOB;mob=VFX_Strike_Of_Fury_SWORD_SLASH2;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=9;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - projectile{onHit=Strike_Of_Fury_DAMAGE_D;i=10;v=30;hR=5;vR=1;mr=4;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=false}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_slash_ult_slash;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+
+  - delay 10
+
+  - lunge{velocity=1.4;velocityY=1.4;repeat=1;repeati=10} @Forward{f=6;y=4;lockpitch=true;sideOffset=0}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.move;volume=0.7;pitch=<random.float.0.7to0.8>} @self
+  - delay 12
+  - lunge{velocity=0.4;velocityY=-2} @Forward{f=2.5;y=-4;lockpitch=true;sideOffset=0}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_airdash;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+  - onDamaged{auraName=NOAVOID;d=30;cE=true;damagemods=FALL;delay=0} @self
+  - delay 8
+  
+  - summon{type=VFX_Strike_Of_Fury_RUPTURE;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1;sideOffset=0;lockpitch=true}
+  - projectile{onHit=Strike_Of_Fury_DAMAGE_D_CRACK;i=10;v=30;hR=5;vR=3;mr=1;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=false;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} @forward{f=5;y=0;lockpitch=true}
+  - skill{s=SOF_PRO;origin=@forward{f=0;y=0;lockpitch=true}} @forward{f=5;y=0;lockpitch=true}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.rupture_quick;volume=0.7;pitch=<random.float.0.6to0.7>} @origin
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.ult_stomp;volume=0.7;pitch=<random.float.0.9to1.1>} @origin
+  
+  - delay 10
+  
+  - lunge{velocity=-1.6;velocityY=1.4;repeat=1;repeati=10} @Forward{f=-7;y=4;lockpitch=true;sideOffset=0}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.move;volume=0.7;pitch=<random.float.0.7to0.8>} @self
+  - delay 12
+  - lunge{velocity=-0.4;velocityY=-2} @Forward{f=-2.5;y=-4;lockpitch=true;sideOffset=0}
+  - effect:sound{s=awakened_warrior_sounds:samus.awakened_warrior.warrior_airdash;volume=0.7;pitch=<random.float.0.9to1.1>} @self
+  - onDamaged{auraName=NOAVOID;d=30;cE=true;damagemods=FALL;delay=0} @self
+
+Strike_Of_Fury_DAMAGE_D:
+  Skills:
+  - skill{s=Strike_Of_Fury_DAMAGE} @EntitiesNearOrigin{r=4;sort=NEAREST;conditions=[ - isLiving true  ]}
+Strike_Of_Fury_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_SW_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - throw{velocity=1;velocityY=0}
+  
+Strike_Of_Fury_DAMAGE_D_CRACK:
+  Skills:
+  - skill{s=Strike_Of_Fury_DAMAGE_CRACK} @EntitiesNearOrigin{r=4;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+Strike_Of_Fury_DAMAGE_CRACK:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_SW_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+
+SOF_PRO:
+  Skills:
+  - projectile{delay=20;onHit=Strike_Of_Fury_DAMAGE_D_DESTROY;i=10;v=30;hR=7;vR=4;mr=1;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+  
+Strike_Of_Fury_DAMAGE_D_DESTROY:
+  Skills:
+  - skill{s=Strike_Of_Fury_DAMAGE_DESTROY} @EntitiesNearOrigin{r=4;sort=NEAREST;conditions=[ - isLiving true - hasaura{aura=immunedelay} false  ]}
+Strike_Of_Fury_DAMAGE_DESTROY:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - aura{auraName=immunedelay;duration=5}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true}
+  - projectile{targetisorigin=true;bulletType=MOB;mob=VFX_SW_Impact;v=0;i=10;hR=0;vR=0;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.2;tyo=1.2;sso=0;fo=true;byo=0;ham=true}
+  - skill{s=Strike_Of_Fury_DAMAGE_STUN}
+
+Strike_Of_Fury_DAMAGE_STUN:
+  Skills:
+  - stun{d=80;f=true;CancelOnTakeDamage=false;CancelOnDeath=true}
+  - orbital{onTick=Strike_Of_Fury_STUN_FX;r=0.5;points=22;i=10;duration=80;oy=2.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+Strike_Of_Fury_STUN_FX:
+  Skills:
+  - particles{p=crit;amount=1;hS=0;vS=0;y=0;size=0.4;speed=0} @origin
+
+Strike_Of_Fury_SPHERE:
+  Skills:
+  - sound{sound=entity.breeze.inhale;volume=0.8;pitch=0.7} @self
+  - sound{sound=particle.soul_escape;volume=0.8;pitch=1} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#ff5e00;color2=#c70000;radius=0.5;size=0.55;amount=40;y=0.6;delay=9} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#ff5e00;color2=#c70000;radius=1;size=0.55;y=0.6;amount=70;delay=8} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#ff5e00;color2=#c70000;radius=1.5;size=0.55;y=0.6;amount=160;delay=7} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#ff5e00;color2=#c70000;radius=2;size=0.55;y=0.6;amount=180;delay=6} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#ff5e00;color2=#c70000;radius=2.5;size=0.55;y=0.6;amount=200;delay=5} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#ff5e00;color2=#c70000;radius=3;size=0.55;y=0.6;amount=220;delay=4} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#ff5e00;color2=#c70000;radius=3.5;size=0.55;y=0.6;amount=240;delay=3} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#ff5e00;color2=#c70000;radius=4;size=0.55;y=0.6;amount=270;delay=2} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#ff5e00;color2=#c70000;radius=4.5;size=0.55;y=0.6;amount=300;delay=1} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#ff5e00;color2=#c70000;radius=5;size=0.55;y=0.6;amount=330} @self

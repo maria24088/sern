@@ -1,0 +1,518 @@
+VFX_AwakenedArcher_FIRSTIMPACT:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_first_hit_impact;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation;speed=1.2} @self ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+VFX_AwakenedArcher_Impact:
+  Type: text_display
+  DisplayOptions:
+    Text: ""
+    BlockLight: 15
+    SkyLight: 15
+    Scale: 1,1,1
+    Billboard: CENTER
+    BackgroundColor: 0,0,0,0
+    Translation: 0,0,0
+    ViewRange: 5
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - settextdisplay{text="ក";delay=0} @self ~onSpawn
+  - settextdisplay{text="ខ";delay=1} @self ~onSpawn
+  - settextdisplay{text="គ";delay=2} @self ~onSpawn
+  - settextdisplay{text="ឃ";delay=3} @self ~onSpawn
+  - settextdisplay{text="ង";delay=4} @self ~onSpawn
+  - settextdisplay{text="ច";delay=5} @self ~onSpawn
+  - settextdisplay{text="ឆ";delay=6} @self ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+
+VFX_AwakenedArcher_SHOOTIMPACT:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_awakened_arrow_impact;scale=0.7} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=impact;speed=1.4} @self ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+VFX_AwakenedArcher_SHOOTIMPACT_PIERCING:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_awakened_arrow_impact;scale=1} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - tint{c=ff7b47;damagetint=false} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=impact;speed=1.4} @self ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+VFX_AwakenedArcher_SHOOTIMPACT_FIXED:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_awakened_arrow_impact;scale=0.7;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=impact2;speed=1.4} @self ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+VFX_AwakenedArcher_Arrow:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_awakened_arrow} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=shoot;p=1} @self ~onSpawn
+  - state{s=shoot_end;delay=20;p=2} @self ~onSpawn
+VFX_AwakenedArcher_Arrow_SHAKING:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_awakened_arrow} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=shoot_shaking;p=1} @self ~onSpawn
+  - state{s=shoot_end;delay=20;p=2} @self ~onSpawn
+VFX_AwakenedArcher_Arrow_PIERCING:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_awakened_arrow} @self ~onSpawn
+  - tint{c=ff7b47;damagetint=false} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=shoot2;p=1} @self ~onSpawn
+  - state{s=shoot_end;delay=20;p=2} @self ~onSpawn
+
+
+VFX_Blasting_Combo_Roll_Dummy:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - skill{s=Blasting_Combo_dash_skill} ~onSpawn 
+  - remove{delay=15} @self ~onSpawn
+VFX_Blasting_Combo_ROLL_VFX:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=quick_dash_vfx_1;lockpitch=true;delay=0} @self ~onSpawn
+  - look{force=true;delay=0} @owner ~onSpawn
+  - brightness{b=15;s=15;delay=0} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0;delay=0} @self ~onSpawn
+  - state{s=back_roll;speed=1;delay=0} @self ~onSpawn
+  
+  - aura{delay=1;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev1_1;np=ef_dash_smokev1_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev2_1;np=ef_dash_smokev2_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev3_1;np=ef_dash_smokev3_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev3_2;np=ef_dash_smokev3_2}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_1;np=ef_dash_smokev4_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_2;np=ef_dash_smokev4_2}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_3;np=ef_dash_smokev4_3}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_4;np=ef_dash_smokev4_4}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev5_1;np=ef_dash_smokev5_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev5_2;np=ef_dash_smokev5_2}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+VFX_Blasting_Combo_ROLL_BACK:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=quick_dash_vfx_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=back_roll;speed=1} @self ~onSpawn
+  
+  - aura{delay=1;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev1_1;np=ef_dash_smokev1_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev2_1;np=ef_dash_smokev2_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev3_1;np=ef_dash_smokev3_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev3_2;np=ef_dash_smokev3_2}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_1;np=ef_dash_smokev4_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_2;np=ef_dash_smokev4_2}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_3;np=ef_dash_smokev4_3}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_4;np=ef_dash_smokev4_4}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev5_1;np=ef_dash_smokev5_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev5_2;np=ef_dash_smokev5_2}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Blasting_Combo_ROLL_SIDE:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=quick_dash_vfx_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=side_roll;speed=1} @self ~onSpawn
+  
+  - aura{delay=1;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev1_1;np=ef_dash_smokev1_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev2_1;np=ef_dash_smokev2_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev3_1;np=ef_dash_smokev3_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev3_2;np=ef_dash_smokev3_2}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_1;np=ef_dash_smokev4_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_2;np=ef_dash_smokev4_2}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_3;np=ef_dash_smokev4_3}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_4;np=ef_dash_smokev4_4}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev5_1;np=ef_dash_smokev5_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev5_2;np=ef_dash_smokev5_2}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Blasting_Combo_ROLL_JUMP:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=quick_dash_vfx_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=jump;speed=1} @self ~onSpawn
+  
+  - aura{delay=1;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev1_1;np=ef_dash_smokev1_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev2_1;np=ef_dash_smokev2_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev3_1;np=ef_dash_smokev3_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev3_2;np=ef_dash_smokev3_2}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_1;np=ef_dash_smokev4_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_2;np=ef_dash_smokev4_2}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_3;np=ef_dash_smokev4_3}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev4_4;np=ef_dash_smokev4_4}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev5_1;np=ef_dash_smokev5_1}
+    - changepart{m=quick_dash_vfx_1;nm=quick_dash_vfx_<caster.var.iteration>;p=ef_dash_smokev5_2;np=ef_dash_smokev5_2}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+
+
+VFX_AwakenedArcher_FOURTH_CHARGE:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_shot_charging;syncbody=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=charging_and_shoot;speed=1.5} @self ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+VFX_AwakenedArcher_FOURTH_CHARGE_IMPACT:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_shot_charging;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=shoot_impact} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+
+VFX_AwakenedArcher_Rupture_Small:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_earthquake_rupture_1;lockpitch=true} @self ~onSpawn
+  - brightness{mid=vfx_earthquake_rupture_1;b=15;s=15} @self ~onSpawn
+  - brightness{mid=vfx_earthquake_rupture_1;b=13;s=13;delay=22} @self ~onSpawn
+  - brightness{mid=vfx_earthquake_rupture_1;b=11;s=11;delay=26} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill2} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=c7ff57;em=false} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=69ff29;em=false;delay=22} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=0dff00;em=false;delay=24} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=00ab22;em=false;delay=26} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=005e13;em=false;delay=30} @self ~onSpawn
+  - tint{m=vfx_earthquake_rupture_1;c=000000;em=false;delay=32} @self ~onSpawn
+  
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_2;np=body;delay=44} @self ~onSpawn
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_3;np=body;delay=46} @self ~onSpawn
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_4;np=body;delay=48} @self ~onSpawn
+  - changepart{m=vfx_earthquake_rupture_1;p=body;nm=vfx_earthquake_rupture_5;np=body;delay=50} @self ~onSpawn
+  - remove{delay=52} @self ~onSpawn
+VFX_AwakenedArcher_Rubbles_Small:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_rubbles;lockpitch=true} @self ~onSpawn
+  - setrotation{relative=true;yaw=<random.0to359>} @self ~onSpawn
+  - brightness{b=12;s=12} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  - remove{delay=45} @self ~onSpawn
+
+
+
+VFX_Blasting_Combo_EVASIVE_SHOT_DASH:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills: 
+  - model{sync=true;usestatemachine=true;mid=evasive_shot_1;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=back_roll;speed=1} @self ~onSpawn
+  
+  - aura{delay=1;d=8;i=10;
+    os=[
+    - setvariable{var=caster.iteration;val=1;type=INTEGER}
+    ];
+    ot=[
+    - setvariable{var=caster.iteration;val="<caster.var.iteration>+1"}
+    - changepart{m=evasive_shot_1;nm=evasive_shot_<caster.var.iteration>;p=ef_dash_smokev1_1;np=ef_dash_smokev1_1}
+    - changepart{m=evasive_shot_1;nm=evasive_shot_<caster.var.iteration>;p=ef_dash_smokev2_1;np=ef_dash_smokev2_1}
+    - changepart{m=evasive_shot_1;nm=evasive_shot_<caster.var.iteration>;p=ef_dash_smokev3_1;np=ef_dash_smokev3_1}
+    - changepart{m=evasive_shot_1;nm=evasive_shot_<caster.var.iteration>;p=ef_dash_smokev3_2;np=ef_dash_smokev3_2}
+    - changepart{m=evasive_shot_1;nm=evasive_shot_<caster.var.iteration>;p=ef_dash_smokev4_1;np=ef_dash_smokev4_1}
+    - changepart{m=evasive_shot_1;nm=evasive_shot_<caster.var.iteration>;p=ef_dash_smokev4_2;np=ef_dash_smokev4_2}
+    - changepart{m=evasive_shot_1;nm=evasive_shot_<caster.var.iteration>;p=ef_dash_smokev4_3;np=ef_dash_smokev4_3}
+    - changepart{m=evasive_shot_1;nm=evasive_shot_<caster.var.iteration>;p=ef_dash_smokev4_4;np=ef_dash_smokev4_4}
+    - changepart{m=evasive_shot_1;nm=evasive_shot_<caster.var.iteration>;p=ef_dash_smokev5_1;np=ef_dash_smokev5_1}
+    - changepart{m=evasive_shot_1;nm=evasive_shot_<caster.var.iteration>;p=ef_dash_smokev5_2;np=ef_dash_smokev5_2}
+    - changepart{m=evasive_shot_1;nm=evasive_shot_<caster.var.iteration>;p=ef_circle;np=ef_circle}
+    - changepart{m=evasive_shot_1;nm=evasive_shot_<caster.var.iteration>;p=ef_circle2;np=ef_circle2}
+    ];
+    oe=[ - remove @self ]} @self ~onSpawn
+VFX_Blasting_Combo_EVASIVE_SHOT_ARROWS:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=evasive_shot_arrows;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=evasive_shot;speed=1} @self ~onSpawn
+  - remove{delay=35} @self ~onSpawn
+
+VFX_Blasting_Combo_VOLLEY_OF_ARROWS1:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_volley_of_arrow;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation3;speed=1} @self ~onSpawn
+  - remove{delay=24} @self ~onSpawn
+VFX_Blasting_Combo_VOLLEY_OF_ARROWS2:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_volley_of_arrow;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=animation2;speed=1} @self ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+
+VFX_Blasting_Combo_PIERCING_SKYFALL_SHOOTMULTIPLE:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=piercing_skyfall;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=firing_multiple_arrows;speed=1} @self ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+VFX_Blasting_Combo_PIERCING_SKYFALL_RANDOMARROW:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=piercing_skyfall;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - partvis{p=trail;v=false;em=true;child=true;delay=5} @self ~onSpawn
+  - randomskill{skills=
+    [- state{s=arrow_rain_1;speed=1}],
+    [- state{s=arrow_rain_2;speed=1}],
+    [- state{s=arrow_rain_3;speed=1}],
+    [- state{s=arrow_rain_4;speed=1}],
+    [- state{s=arrow_rain_5;speed=1}],
+    [- state{s=arrow_rain_6;speed=1}],
+    [- state{s=arrow_rain_7;speed=1}],
+    [- state{s=arrow_rain_8;speed=1}],
+    [- state{s=arrow_rain_9;speed=1}],
+    [- state{s=arrow_rain_10;speed=1}]} @self ~onSpawn
+  - remove{delay=30} @self ~onSpawn
+
+
+VFX_SOD_CHARGE:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_shot_of_destruction;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=chrage;speed=1} @self ~onSpawn
+  - remove{delay=41} @self ~onSpawn
+VFX_SOD_THEARROW:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_shot_of_destruction;lockpitch=true;delay=2} @self ~onSpawn
+  - lockmodel{sync=true;delay=7} @self ~onSpawn
+  - brightness{p=bone;em=false;b=15;s=15;delay=2} @self ~onSpawn
+  - brightness{p=trail;em=false;b=15;s=15;delay=2} @self ~onSpawn
+  - brightness{p=body;em=false;b=15;s=15;delay=2} @self ~onSpawn
+  - brightness{p=aura;em=false;b=15;s=15;delay=2} @self ~onSpawn
+  - brightness{p=partical;em=false;b=15;s=15;delay=2} @self ~onSpawn
+  - brightness{p=ball;em=false;b=15;s=15;delay=2} @self ~onSpawn
+  - brightness{p=circle;em=false;b=15;s=15;delay=2} @self ~onSpawn
+  - brightness{p=stone;em=false;b=9;s=9;delay=2} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0;delay=2} @self ~onSpawn
+  - state{s=arrow_destruction;speed=1;delay=2} @self ~onSpawn
+
+VFX_SOD_RUBBLES:
+  Type: block_display
+  DisplayOptions:
+    Block: AIR
+    Billboard: FIXED
+  Options:
+    Invincible: true
+    Collidable: false
+  Skills:
+  - model{sync=true;usestatemachine=true;mid=vfx_sod_rubble;lockpitch=true} @self ~onSpawn
+  - brightness{b=9;s=9} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - randomskill{skills=
+    [- state{s=rub1;speed=1}],
+    [- state{s=rub2;speed=1}],
+    [- state{s=rub3;speed=1}],
+    [- state{s=rub4;speed=1}]} @self ~onSpawn
+  - state{s=remove;speed=1;p=2;delay=60} @self ~onSpawn
+  - particles{p=Campfire_Cosy_Smoke;amount=5;hS=0.6;vS=0.1;y=0;size=1;speed=0.1} @modelpart{pid=allef_stone;location=0,0.2,0;em=true} ~onSpawn
+  - remove{delay=69} @self ~onSpawn

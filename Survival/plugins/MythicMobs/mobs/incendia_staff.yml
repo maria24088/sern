@@ -1,0 +1,51 @@
+﻿#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+incendia_staff_fx:
+  Type: TEXT_DISPLAY
+  Display: "PARTICLE"
+  DisplayOptions:
+    Text: "⛿"
+    BackgroundColor: 0000000000
+    BlockLight: 15
+    SkyLight: 15
+    Billboard: CENTER
+    Scale: 4,4,4
+  Skills:
+  - displaytransformation{action=set;transformation=translation;value=<random.float.-0.15to0.15>,<random.float.-0.15to0.15>,<random.float.-0.15to0.15>} @self ~onSpawn
+  - settextdisplay{text="⛾";delay=2} @self ~onSpawn
+  - settextdisplay{text="⛽";delay=4} @self ~onSpawn
+  - settextdisplay{text="⛼";delay=6} @self ~onSpawn
+  - settextdisplay{text="⛻";delay=8} @self ~onSpawn
+  - settextdisplay{text="⛺";delay=10} @self ~onSpawn
+  - settextdisplay{text="⛹";delay=12} @self ~onSpawn
+  - settextdisplay{text="⛸";delay=14} @self ~onSpawn
+  - settextdisplay{text="🁉";delay=16} @self ~onSpawn
+  - settextdisplay{text="🁊";delay=18} @self ~onSpawn
+  - settextdisplay{text=" ";delay=20} @self ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+
+incendia_staff_fireball_fx:
+  Type: TEXT_DISPLAY
+  Display: "PARTICLE"
+  DisplayOptions:
+    Text: "⛿"
+    BackgroundColor: 0000000000
+    BlockLight: 15
+    SkyLight: 15
+    Billboard: CENTER
+    Scale: 4,4,4
+  Skills:
+  - displaytransformation{action=set;transformation=translation;value=<random.float.-0.15to0.15>,<random.float.-0.15to0.15>,<random.float.-0.15to0.15>} @self ~onSpawn
+  - settextdisplay{text="⛾";delay=1} @self ~onSpawn
+  - settextdisplay{text="⛽";delay=2} @self ~onSpawn
+  - settextdisplay{text="⛼";delay=3} @self ~onSpawn
+  - settextdisplay{text="⛻";delay=4} @self ~onSpawn
+  - settextdisplay{text="⛺";delay=5} @self ~onSpawn
+  - settextdisplay{text="⛹";delay=6} @self ~onSpawn
+  - settextdisplay{text="⛸";delay=7} @self ~onSpawn
+  - settextdisplay{text="🁉";delay=8} @self ~onSpawn
+  - settextdisplay{text="🁊";delay=9} @self ~onSpawn
+  - settextdisplay{text=" ";delay=10} @self ~onSpawn
+  - remove{delay=11} @self ~onSpawn

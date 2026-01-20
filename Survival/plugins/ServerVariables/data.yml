@@ -1,0 +1,8 @@
+variables:
+  deal_2_discount: '14'
+  deal_3_stock: '101'
+  current_deal: '1'
+  deal_1_discount: '18'
+  deal_2_stock: '93'
+  deal_3_discount: '17'
+  deal_1_stock: '85'

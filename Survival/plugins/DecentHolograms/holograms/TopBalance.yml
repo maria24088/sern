@@ -1,0 +1,34 @@
+location: SpawnRPG:17.532:64.000:-147.527
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:sunflower'
+    height: 0.6
+  - content: '&#faff00&lT&#faf900&lo&#fbf200&lp &#fbec00&lB&#fbe500&la&#fcdf00&ll&#fcd800&la&#fcd200&ln&#fdcb00&lc&#fdc500&le'
+    height: 0.3
+  - content: '&6#1 &e%ajlb_lb_vault_eco_balance_1_alltime_name% &8- &f$%ajlb_lb_vault_eco_balance_1_alltime_value%'
+    height: 0.3
+  - content: '&6#2 &e%ajlb_lb_vault_eco_balance_2_alltime_name% &8- &f$%ajlb_lb_vault_eco_balance_2_alltime_value%'
+    height: 0.3
+  - content: '&6#3 &e%ajlb_lb_vault_eco_balance_3_alltime_name% &8- &f$%ajlb_lb_vault_eco_balance_3_alltime_value%'
+    height: 0.3
+  - content: '&6#4 &e%ajlb_lb_vault_eco_balance_4_alltime_name% &8- &f$%ajlb_lb_vault_eco_balance_4_alltime_value%'
+    height: 0.3
+  - content: '&6#5 &e%ajlb_lb_vault_eco_balance_5_alltime_name% &8- &f$%ajlb_lb_vault_eco_balance_5_alltime_value%'
+    height: 0.3
+  - content: '&6#6 &e%ajlb_lb_vault_eco_balance_6_alltime_name% &8- &f$%ajlb_lb_vault_eco_balance_6_alltime_value%'
+    height: 0.3
+  - content: '&6#7 &e%ajlb_lb_vault_eco_balance_7_alltime_name% &8- &f$%ajlb_lb_vault_eco_balance_7_alltime_value%'
+    height: 0.3
+  - content: '&6#8 &e%ajlb_lb_vault_eco_balance_8_alltime_name% &8- &f$%ajlb_lb_vault_eco_balance_8_alltime_value%'
+    height: 0.3
+  - content: '&6#9 &e%ajlb_lb_vault_eco_balance_9_alltime_name% &8- &f$%ajlb_lb_vault_eco_balance_9_alltime_value%'
+    height: 0.3
+  - content: '&6#10 &e%ajlb_lb_vault_eco_balance_10_alltime_name% &8- &f$%ajlb_lb_vault_eco_balance_10_alltime_value%'
+    height: 0.3
+  actions: {}

@@ -1,0 +1,69 @@
+info:
+  namespace: cubees
+items:
+
+  cubees-icon-air_dragon:
+    display_name: &e
+    resource:
+      material: GOLDEN_HORSE_ARMOR
+      generate: true
+      textures: 
+      - dragons/cubee-air_dragon
+      model_id: 7191281
+  cubees-icon-darkness_dragon:
+    display_name: &e
+    resource:
+      material: GOLDEN_HORSE_ARMOR
+      generate: true
+      textures: 
+      - dragons/cubee-darkness_dragon
+      model_id: 7191282
+  cubees-icon-earth_dragon:
+    display_name: &e
+    resource:
+      material: GOLDEN_HORSE_ARMOR
+      generate: true
+      textures: 
+      - dragons/cubee-earth_dragon
+      model_id: 7191142
+  cubees-icon-fire_dragon:
+    display_name: &e
+    resource:
+      material: GOLDEN_HORSE_ARMOR
+      generate: true
+      textures: 
+      - dragons/cubee-fire_dragon
+      model_id: 7191143
+  cubees-icon-galaxy_dragon:
+    display_name: &e
+    resource:
+      material: GOLDEN_HORSE_ARMOR
+      generate: true
+      textures: 
+      - dragons/cubee-galaxy_dragon
+      model_id: 7191144
+  cubees-icon-ice_dragon:
+    display_name: &e
+    resource:
+      material: GOLDEN_HORSE_ARMOR
+      generate: true
+      textures: 
+      - dragons/cubee-ice_dragon
+      model_id: 7191145
+  cubees-icon-light_dragon:
+    display_name: &e
+    resource:
+      material: GOLDEN_HORSE_ARMOR
+      generate: true
+      textures: 
+      - dragons/cubee-light_dragon
+      model_id: 7191146
+  cubees-icon-nature_dragon:
+    display_name: &e
+    resource:
+      material: GOLDEN_HORSE_ARMOR
+      generate: true
+      textures: 
+      - dragons/cubee-nature_dragon
+      model_id: 7191147
+

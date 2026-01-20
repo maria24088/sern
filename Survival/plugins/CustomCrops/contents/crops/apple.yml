@@ -1,0 +1,164 @@
+apple:
+  type: FURNITURE
+  pot-whitelist:
+  - default
+  seed: APPLE
+  random-rotation: true
+  events:
+    plant:
+      action_1:
+        type: sound
+        value:
+          source: player
+          key: minecraft:item.hoe.till
+          volume: 1
+          pitch: 1
+    break:
+      action_1:
+        type: sound
+        value:
+          source: player
+          key: minecraft:block.wood.break
+          volume: 1
+          pitch: 1
+  max-points: 8
+  points:
+    '0':
+      model: customcrops:apple_stage_1
+      hologram-offset-correction: -0.4
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              item: STICK
+              min: 1
+              max: 1
+            chance: 0.3
+    '1':
+      model: customcrops:apple_stage_2
+      hologram-offset-correction: 0.1
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              item: STICK
+              min: 1
+              max: 1
+            chance: 0.5
+    '3':
+      model: customcrops:apple_stage_3
+      hologram-offset-correction: 0.8
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              item: STICK
+              min: 1
+              max: 1
+            chance: 0.8
+    '4':
+      model: customcrops:apple_stage_4
+      hologram-offset-correction: 1.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              item: OAK_LOG
+              min: 1
+              max: 2
+            chance: 1
+    '6':
+      model: customcrops:apple_stage_5
+      hologram-offset-correction: 1.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              item: OAK_LOG
+              min: 1
+              max: 2
+            chance: 1
+    '8':
+      model: customcrops:apple_stage_6
+      hologram-offset-correction: 1.2
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              item: OAK_LOG
+              min: 1
+              max: 2
+            chance: 1
+          action_2:
+            type: drop-item
+            value:
+              ignore-fertilizer: false
+              item: APPLE
+              min: 1
+              max: 4
+            chance: 1
+        interact:
+          empty_hand_action:
+            type: conditional
+            value:
+              conditions:
+                requirement_empty_hand:
+                  type: item-in-hand
+                  value:
+                    item: AIR
+              actions:
+                action_0:
+                  type: swing-hand
+                  value: true
+                action_1:
+                  type: break
+                  value: false
+                action_2:
+                  type: plant
+                  value:
+                    point: 4
+                    crop: apple
+                action_3:
+                  type: drop-item
+                  value:
+                    ignore-fertilizer: false
+                    item: APPLE
+                    min: 1
+                    max: 4
+                  chance: 1
+  grow-conditions: {}
+  death-conditions: {}
+  custom-bone-meal:
+    bone_meal_1:
+      item: BONE_MEAL
+      chance:
+        '2': 0.2
+        '1': 0.6
+      actions:
+        swing_action:
+          type: swing-hand
+          value: true
+        particle_action:
+          type: particle
+          value:
+            particle: VILLAGER_HAPPY
+            count: 5
+            x: 0.5
+            y: 0.5
+            z: 0.5
+            offset-x: 0.3
+            offset-y: 0.3
+            offset-z: 0.3
+        sound_action:
+          type: sound
+          value:
+            key: minecraft:item.bone_meal.use
+            source: player
+            volume: 1
+            pitch: 1

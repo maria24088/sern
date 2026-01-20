@@ -1,0 +1,70 @@
+info:
+  namespace: spectra_trade_ui
+minecraft_lang_overwrite:
+  disable_inventory_text:
+    entries:
+      "container.inventory": ""
+    languages:
+      - ALL
+font_images:
+  trade_not_ready:
+    permission: "menu2.admin"
+    show_in_gui: false
+    suggest_in_command: false
+    path: "spectra_trade_ui:trade_not_ready.png"
+    y_position: -48
+    scale_ratio: 15
+  trade_ready:
+    permission: "menu2.admin"
+    show_in_gui: false
+    suggest_in_command: false
+    path: "spectra_trade_ui:trade_ready.png"
+    y_position: -48
+    scale_ratio: 15
+  trade_ui:
+    permission: "menu2.admin"
+    show_in_gui: false
+    suggest_in_command: false
+    path: "spectra_trade_ui:trade_ui.png"
+    y_position: 48
+    scale_ratio: 256
+  accept_button:
+    permission: "menu2.admin"
+    show_in_gui: false
+    suggest_in_command: false
+    path: "spectra_trade_ui:accept_button.png"
+    y_position: 15
+    scale_ratio: 15
+  deny_button:
+    permission: "menu2.admin"
+    show_in_gui: false
+    suggest_in_command: false
+    path: "spectra_trade_ui:deny_button.png"
+    y_position: 15
+    scale_ratio: 15
+  trade_icon:
+    permission: "menu2.admin"
+    show_in_gui: false
+    suggest_in_command: false
+    path: "spectra_trade_ui:trade_icon.png"
+    y_position: 5
+    scale_ratio: 32
+  
+
+items:
+  trade_empty_slot:
+    display_name: "&f"
+    resource:
+      material: BRICK
+      model_id: 89500
+      generate: true
+      textures:
+      - spectra_trade_ui:empty_slot
+
+  head_display:
+    display_name: Display Head
+    resource:
+      material: PLAYER_HEAD
+      generate: false
+      model_id: 205
+      model_path: spectra_trade_ui:head_small

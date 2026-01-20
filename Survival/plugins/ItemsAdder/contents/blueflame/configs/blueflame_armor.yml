@@ -1,0 +1,74 @@
+armors_rendering:
+  blueflamearmor:
+    color: '#fe8229'
+    layer_1: armor/blueflame_armor_layer_1
+    layer_2: armor/blueflame_armor_layer_2
+    use_color: false
+info:
+  namespace: blueflame
+items:
+  blueflamehelmet:
+    display_name: Blueflame Helmet
+    permission: blueflame.helmet
+    resource:
+      generate: true
+      textures:
+      - armor/blueflame_helmet_icon.png
+    specific_properties:
+      armor:
+        custom_armor: blueflamearmor
+        slot: head
+    durability:
+      max_custom_durability: 165
+    attribute_modifiers:
+      head:
+        armor: 2
+  blueflamechestplate:
+    display_name: Blueflame Chestplate
+    permission: blueflame.chestplate
+    resource:
+      generate: true
+      textures:
+      - armor/blueflame_chestplate_icon.png
+    specific_properties:
+      armor:
+        custom_armor: blueflamearmor
+        slot: chest
+    durability:
+      max_custom_durability: 240
+    attribute_modifiers:
+      chest:
+        armor: 6
+  blueflameleggings:
+    display_name: Blueflame Leggings
+    permission: blueflame.leggings
+    resource:
+      generate: true
+      textures:
+      - armor/blueflame_leggings_icon.png
+    specific_properties:
+      armor:
+        custom_armor: blueflamearmor
+        slot: legs
+    attribute_modifiers:
+      legs:
+        armor: 5
+  blueflameboots:
+    display_name: Blueflame Boots
+    permission: blueflame.boots
+    resource:
+      generate: true
+      textures:
+      - armor/blueflame_boots_icon.png
+    specific_properties:
+      armor:
+        custom_armor: blueflamearmor
+        slot: feet
+    durability:
+      max_custom_durability: 165
+    attribute_modifiers:
+      feet:
+        armor: 2
+
+#6d6a89f17823566d406a05035b07c188
+#IUYXV1cC5EaYpldnxWak1WVw02VykERNBTUE5UNjRlTwQjMVhnQ1AXUqZjTUt0QVFmVjxUO

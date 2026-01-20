@@ -1,0 +1,16 @@
+info:
+  namespace: custom_esc
+minecraft_lang_overwrite:
+  esc_menu_texts:
+    entries:
+      "menu.game": ":top_logo_1::offset_-2::top_logo_2:"
+      "menu.disconnect": ":offset_-256::offset_-19::quit_button::offset_-236::offset_10::bottom_news::offset_-256:"
+      "resourcePack.server.name": ":offset_-256::offset_-34::resourcepack_menu_background::offset_-100:"
+      "menu.returnToGame": ":offset_-256::offset_17::back_button::offset_-256:"
+      "menu.options": ":offset_-256::offset_1::options_button::offset_-256:"
+      "menu.playerReporting": ":offset_-256::offset_1::preport_button::offset_-256:"
+      "menu.reportBugs": ":offset_-256::offset_1::rbugs_button::offset_-256:"
+      "menu.sendFeedback": ":offset_-256::offset_1::feedback_button::offset_-256:"
+      "gui.stats": ":offset_-256::offset_1::stats_button::offset_-256:"
+    languages:
+      - ALL

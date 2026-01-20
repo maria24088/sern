@@ -1,0 +1,102 @@
+{
+  "providers":[
+     {
+        "file":"terramancer_texture/vfx_earth_dust_1.png",
+        "chars":["À"],
+        "ascent": 250,
+        "height": 400,
+        "type":"bitmap"
+     },
+     {
+        "file":"terramancer_texture/vfx_earth_dust_2.png",
+        "chars":["Á"],
+        "ascent": 250,
+        "height": 400,
+        "type":"bitmap"
+     },
+     {
+        "file":"terramancer_texture/vfx_earth_dust_3.png",
+        "chars":["Â"],
+        "ascent": 250,
+        "height": 400,
+        "type":"bitmap"
+     },
+     {
+        "file":"terramancer_texture/vfx_earth_dust_4.png",
+        "chars":["Ã"],
+        "ascent": 250,
+        "height": 400,
+        "type":"bitmap"
+     },
+     {
+        "file":"terramancer_texture/vfx_earth_dust_5.png",
+        "chars":["Ä"],
+        "ascent": 250,
+        "height": 400,
+        "type":"bitmap"
+     },
+     {
+        "file":"terramancer_texture/vfx_earth_dust_6.png",
+        "chars":["Å"],
+        "ascent": 250,
+        "height": 400,
+        "type":"bitmap"
+     },
+     {
+        "file":"terramancer_texture/vfx_earth_dust_7.png",
+        "chars":["Æ"],
+        "ascent": 250,
+        "height": 400,
+        "type":"bitmap"
+     },
+     {
+        "file":"terramancer_texture/vfx_earth_dust_8.png",
+        "chars":["Ç"],
+        "ascent": 250,
+        "height": 400,
+        "type":"bitmap"
+     },
+     {
+        "file":"terramancer_texture/vfx_earth_dust_9.png",
+        "chars":["È"],
+        "ascent": 250,
+        "height": 400,
+        "type":"bitmap"
+     },
+     {
+        "file":"terramancer_texture/vfx_earth_impact_1.png",
+        "chars":["Ò"],
+        "ascent": 85,
+        "height": 180,
+        "type":"bitmap"
+     },
+     {
+        "file":"terramancer_texture/vfx_earth_impact_2.png",
+        "chars":["Ó"],
+        "ascent": 85,
+        "height": 180,
+        "type":"bitmap"
+     },
+     {
+        "file":"terramancer_texture/vfx_earth_impact_3.png",
+        "chars":["Ô"],
+        "ascent": 85,
+        "height": 180,
+        "type":"bitmap"
+     },
+     {
+        "file":"terramancer_texture/vfx_earth_impact_4.png",
+        "chars":["Õ"],
+        "ascent": 85,
+        "height": 180,
+        "type":"bitmap"
+     },
+     {
+        "file":"terramancer_texture/vfx_earth_impact_5.png",
+        "chars":["Ö"],
+        "ascent": 85,
+        "height": 180,
+        "type":"bitmap"
+     }
+  ]
+}

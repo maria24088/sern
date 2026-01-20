@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  smallcarpetgray:
+    display_name: "Small Carpet Gray"
+    permission: livingroom.smallcarpetgray
+    resource:
+      material: PAPER
+      generate: false
+      model_path: smallcarpetgray
+    behaviours:
+      furniture:
+        light_level: 13

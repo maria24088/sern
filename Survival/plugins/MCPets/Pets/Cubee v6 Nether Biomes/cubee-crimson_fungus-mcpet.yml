@@ -1,0 +1,18 @@
+Id: cubee-crimson_fungus
+MythicMob: cubee-crimson_fungus
+Permission: mcpet.cubee-crimson_fungus
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §x§6§A§3§2§4§4C§x§7§0§3§3§4§2r§x§7§5§3§4§3§Fi§x§7§B§3§5§3§Dm§x§8§1§3§6§3§Bs§x§8§6§3§6§3§9o§x§9§1§3§A§3§4n
+    §x§A§6§4§2§2§AF§x§B§A§4§A§2§0u§x§C§F§5§2§1§7n§x§E§3§5§A§0§Dg§x§F§8§6§2§0§3u§x§F§F§6§D§0§7s
+    §x§F§F§7§A§1§2C§x§F§F§8§7§1§Du§x§F§F§9§4§2§7b§x§F§F§A§0§3§2e§x§F§F§A§D§3§De
+  Description:
+  - §fPlaying around the Crimson Forest,
+  - §fThis cubee just want to say HI!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191046
+
+# 4c55fedd7b128b210d38f1779cf09ee2

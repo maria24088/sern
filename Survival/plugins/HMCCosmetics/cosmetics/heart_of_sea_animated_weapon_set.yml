@@ -1,0 +1,31 @@
+heart_of_sea_animated_weapon_set_hat:
+  slot: HELMET
+  permission: "elitecreatures.hat"
+  dyeable: false
+  item:
+    material: itemsadder:heart_of_sea_animated_weapon_set_hat
+    name: "[Heart Of Sea] Hat"
+    amount: 1
+heart_of_sea_animated_weapon_set_backpack:
+  slot: BACKPACK
+  permission: "elitecreatures.backpack"
+  item:
+    material: itemsadder:heart_of_sea_animated_weapon_set_backpack
+    name: "[Heart Of Sea] Backpack"
+    amount: 1
+  firstperson-item:
+    material: itemsadder:heart_of_sea_animated_weapon_set_backpack
+    amount: 1
+heart_of_sea_animated_weapon_set_wing:
+  slot: BACKPACK
+  permission: "elitecreatures.wing"
+  item:
+    material: itemsadder:heart_of_sea_animated_weapon_set_wing
+    name: "[Heart Of Sea] Backpack"
+    amount: 1
+  firstperson-item:
+    material: itemsadder:heart_of_sea_animated_weapon_set_wing
+    amount: 1
+
+#1561c4a5be435268c1bd9c782108ea9d
+#wkbycDeBl0Uhd1ZChTRuJjcBpHZrZEVhdEZqRGcGRVZHBnbk5maShHNwYnRkZWMVl2NIlXO

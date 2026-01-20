@@ -1,0 +1,166 @@
+info:
+  namespace: demon_edgeset
+items:
+  demon_edge_axe:
+    display_name: Demon Edge Axe
+    permission: demon_edgeset.axe
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: axe
+  demon_edge_backpack:
+    display_name: Demon Edge Backpack
+    permission: demon_edgeset.backpack
+    resource:
+      material: PAPER
+      generate: false
+      model_path: backpack
+  demon_edge_bow:
+    display_name: Demon Edge Bow
+    permission: demon_edgeset.bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+  demon_edge_chest:
+    display_name: Demon Edge Chest
+    permission: demon_edgeset.chest
+    resource:
+      material: SEA_LANTERN
+      generate: false
+      model_path: chest
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+  demon_edge_crossbow:
+    display_name: Demon Edge Crossbow
+    permission: demon_edgeset.crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow
+  demon_edge_fishing_rod:
+    display_name: Demon Edge Fishing Rod
+    permission: demon_edgeset.fishing_rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+  demon_edge_greatsword:
+    display_name: Demon Edge Greatsword
+    permission: demon_edgeset.greatsword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: greatsword
+  demon_edge_hammer:
+    display_name: Demon Edge Hammer
+    permission: demon_edgeset.hammer
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: hammer
+  demon_edge_helmet:
+    display_name: Demon Edge Helmet
+    permission: demon_edgeset.helmet
+    resource:
+      material: PAPER
+      generate: false
+      model_path: helmet
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165
+  demon_edge_hoe:
+    display_name: Demon Edge Hoe
+    permission: demon_edgeset.hoe
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: hoe
+  demon_edge_key:
+    display_name: Demon Edge Key
+    permission: demon_edgeset.key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: key
+  demon_edge_pickaxe:
+    display_name: Demon Edge Pickaxe
+    permission: demon_edgeset.pickaxe
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: pickaxe
+  demon_edge_scythe:
+    display_name: Demon Edge Scythe
+    permission: demon_edgeset.scythe
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: scythe
+  demon_edge_shield:
+    display_name: Demon Edge Shield
+    permission: demon_edgeset.shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+  demon_edge_shovel:
+    display_name: Demon Edge Shovel
+    permission: demon_edgeset.shovel
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: shovel
+  demon_edge_spear:
+    display_name: Demon Edge Spear
+    permission: demon_edgeset.spear
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: spear
+  demon_edge_staff:
+    display_name: Demon Edge Staff
+    permission: demon_edgeset.staff
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: staff
+  demon_edge_sword:
+    display_name: Demon Edge Sword
+    permission: demon_edgeset.sword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: sword
+  demon_edge_trident:
+    display_name: Demon Edge Trident
+    permission: demon_edgeset.trident
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: trident
+  demon_edge_wings:
+    display_name: Demon Edge Wings
+    permission: demon_edgeset.wings
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wings

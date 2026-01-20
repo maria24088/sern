@@ -1,0 +1,157 @@
+# BetterRTP plugin by SuperRonanCraft! (Join my Public Server mc.RonanCraft.net) #
+# Need help? go to https://ronancraft.net/discord! #
+
+Language-File: es.yml # <--- CONFIGURACIÓN EN ESPAÑOL
+
+Settings:
+  Logger:
+    Enabled: true
+    LogToConsole: false
+    Format: yyyy-MM-dd HH:mm:ss
+  Queue:
+    Enabled: true
+  Respect:
+    MinePlots: false
+    Pueblos: false
+    SaberFactions: false
+    HuskTowns: false
+    FactionsBridge: false
+    CrashClaim: false
+    # # Respect WorldGuard areas (https://dev.bukkit.org/projects/worldguard)
+    WorldGuard: false
+    # # Respect GriefPrevention areas (https://www.spigotmc.org/resources/griefprevention.1884/)
+    GriefPrevention: true
+    # # Respect Towny areas (https://www.spigotmc.org/resources/towny.72694/)
+    Towny: false
+    # # Respect RedProtect areas (https://www.spigotmc.org/resources/redprotect.15841/)
+    RedProtect: false
+    # # Respect FactionsUUID areas (https://www.spigotmc.org/resources/factionsuuid.1035/)
+    FactionsUUID: false
+    # # Respect Lands areas (https://www.spigotmc.org/resources/lands.53313/)
+    Lands: false
+    # # Respect Residence areas (https://www.spigotmc.org/resources/residence.11480/)
+    Residence: false
+    # # Respect KingdomsX areas (https://www.spigotmc.org/resources/kingdomsx.77670/)
+    KingdomsX: false
+    hClaims: false
+    GriefDefender: false
+    UltimateClaims: false
+  
+  # # Output to console some debugging info
+  Debugger: false
+  # # Amount of chunks to preload around a safe location
+  PreloadRadius: 5
+  # # Maximum amount of tries before BetterRTP gives up and sends a NotSafeMessage #
+  MaxAttempts: 50
+  RtpOnFirstJoin:
+    Enabled: false
+    World: world
+    SetAsRespawn: false
+  Cooldown:
+    PerWorld: false
+    Enabled: true
+    LockAfter: 0
+    Time: 300
+  # # Time between command and actually rtp'ing, time is in SECONDS. Set to "0" to disable delay timer #
+  Delay:
+    Enabled: true
+    Time: 5
+    CancelOnMove: false
+  DisableUpdater: true
+
+Default:
+  RTPOnDeath: false
+  MaxY: 320
+  MinY: 0
+  UseWorldBorder: true
+  # # "Biomes: []" means all biomes are allowed! #
+  Biomes: []
+  MaxRadius: 3000
+  MinRadius: 100
+  # # If "UseWorldBorder" is set to true above, Center X and Z will be ignored! #
+  CenterX: 0
+  CenterZ: 0
+  Shape: square
+
+# # Blocks BetterRTP will NOT teleport onto. More Blocks at: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html #
+BlacklistedBlocks:
+- stationary_water
+- stationary_lava
+- water
+- flowing_water
+- lava
+- flowing_lava
+- cactus
+- leaves
+- leaves_2
+- air
+- void_air
+- bedrock
+- oak_leaves
+- jungle_leaves
+
+# # Worlds to NOT allow /rtp in, unless there is an override to another enabled world #
+DisabledWorlds:
+- SpawnRPG
+
+#
+# ❗ IMPORTANTE ❗
+# Esta sección fue limpiada. Si necesita radios especiales,
+# configure world_nether y world_the_end aquí como si fueran 'CustomWorlds'.
+# Sin embargo, como el WorldType está abajo, solo los necesita si desea un radio diferente al 'Default'.
+#
+CustomWorlds:
+- custom_world_1:
+    UseWorldBorder: false
+    MaxRadius: 1000
+    MinRadius: 100
+    CenterX: 0
+    CenterZ: 0
+    Price: 50
+    Shape: square
+- other_custom_world:
+    MaxRadius: 10000
+    MinRadius: 150
+    CenterX: 123
+    CenterZ: -123
+    Price: 0
+    Biomes:
+    - desert
+    - forest
+    Shape: circle
+
+# # Override a world and rtp a player executing the command in one world, to another
+# # Se mantuvo la anulación de 'Spawn' si el mundo 'Spawn' existe y debe enviar a 'world'.
+Overrides:
+- SpawnRPG: world
+- Spawn: world
+
+#
+# ✅ MUNDOS PRINCIPALES CONFIGURADOS CORRECTAMENTE
+# Esto asegura que el RTP sepa cómo comportarse en cada mundo.
+#
+WorldType:
+- world: NORMAL
+- world_nether: NETHER
+- world_the_end: NORMAL
+
+PermissionGroup:
+  Enabled: false
+  Groups:
+  - vip:
+    - Build_World:
+        MaxRadius: 10000
+        MinRadius: 1000
+        Price: 100
+    - Survival_World:
+        UseWorldBorder: false
+        MaxRadius: 5000
+        MinRadius: 1000
+        CenterX: 10
+        CenterZ: 10
+        Price: 10
+  - vip2:
+    - Build_World:
+        MaxRadius: 25000
+        MinRadius: 10000
+        Price: 15

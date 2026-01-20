@@ -1,0 +1,44 @@
+{
+  "samus.terramancer.earth_break": {
+    "category": "master",
+    "sounds": [
+      "terramancer:samus/terramancer/earth_break"
+    ]
+  },
+  "samus.terramancer.earth_emerge_1": {
+    "category": "master",
+    "sounds": [
+      "terramancer:samus/terramancer/earth_emerge_1"
+    ]
+  },
+  "samus.terramancer.earth_emerge_2": {
+    "category": "master",
+    "sounds": [
+      "terramancer:samus/terramancer/earth_emerge_2"
+    ]
+  },
+  "samus.terramancer.earth_into_ground": {
+    "category": "master",
+    "sounds": [
+      "terramancer:samus/terramancer/earth_into_ground"
+    ]
+  },
+  "samus.terramancer.earth_shoot": {
+    "category": "master",
+    "sounds": [
+      "terramancer:samus/terramancer/earth_shoot"
+    ]
+  },
+  "samus.terramancer.earth_smash": {
+    "category": "master",
+    "sounds": [
+      "terramancer:samus/terramancer/earth_smash"
+    ]
+  },
+  "samus.terramancer.earth_withdraw": {
+    "category": "master",
+    "sounds": [
+      "terramancer:samus/terramancer/earth_withdraw"
+    ]
+  }
+}

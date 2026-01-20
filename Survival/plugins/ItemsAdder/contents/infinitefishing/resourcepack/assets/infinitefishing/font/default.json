@@ -1,0 +1,283 @@
+{
+    "providers": [
+        {
+            "file": "infinitefishing:font/bars/pointer.png",
+            "chars": [
+                "\ub001"
+            ],
+            "height": 30,
+            "ascent": 22,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar1.png",
+            "chars": [
+                "\ub002"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/bars/bar2.png",
+            "chars": [
+                "\ub003"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar3.png",
+            "chars": [
+                "\ub004"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar4.png",
+            "chars": [
+                "\ub005"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar5.png",
+            "chars": [
+                "\ub006"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar6.png",
+            "chars": [
+                "\ub007"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar7.png",
+            "chars": [
+                "\ub008"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar8.png",
+            "chars": [
+                "\ub009"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar9.png",
+            "chars": [
+                "\ub00a"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar_rainbow.png",
+            "chars": [
+                "\ub00b"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/bars/bar10.png",
+            "chars": [
+                "\ub00c"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/bars/fish_icon.png",
+            "chars": [
+                "\ub00d"
+            ],
+            "height": 5,
+            "ascent": 4,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/bars/struggling_fish_icon.png",
+            "chars": [
+                "\ub00e"
+            ],
+            "height": 5,
+            "ascent": 5,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/bars/struggling_fish_icon.png",
+            "chars": [
+                "\ub00f"
+            ],
+            "height": 5,
+            "ascent": 4,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/bars/struggling_fish_icon.png",
+            "chars": [
+                "\ub010"
+            ],
+            "height": 5,
+            "ascent": 3,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/bars/bar11.png",
+            "chars": [
+                "\ub011"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/judgment_area_easy.png",
+            "chars": [
+                "\ub012"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/judgment_area_normal.png",
+            "chars": [
+                "\ub013"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/judgment_area_hard.png",
+            "chars": [
+                "\ub014"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar_color_1.png",
+            "chars": [
+                "\ub015"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+		{
+            "file": "infinitefishing:font/bars/bar_color_2.png",
+            "chars": [
+                "\ub016"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar_color_3.png",
+            "chars": [
+                "\ub017"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar_color_4.png",
+            "chars": [
+                "\ub018"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar_color_5.png",
+            "chars": [
+                "\ub019"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar_color_6.png",
+            "chars": [
+                "\ub020"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar_color_7.png",
+            "chars": [
+                "\ub021"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar_color_8.png",
+            "chars": [
+                "\ub022"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar_color_9.png",
+            "chars": [
+                "\ub023"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+        {
+            "file": "infinitefishing:font/bars/bar_color_rainbow.png",
+            "chars": [
+                "\ub024"
+            ],
+            "height": 128,
+            "ascent": 48,
+            "type": "bitmap"
+        },
+		{
+			"file": "infinitefishing:font/base/char.png",
+			"chars": [
+			    "\u0060"
+			],
+			"height": 1,
+			"ascent": 1,
+			"type": "bitmap"
+		}
+    ]
+}

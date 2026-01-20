@@ -1,0 +1,286 @@
+info:
+  namespace: wraith_dynasty
+items:
+  wraith_dynasty_axe:
+    display_name: Wraith_dynasty Axe
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: axe
+      model_id: 17768
+  wraith_dynasty_bow:
+    display_name: Wraith_dynasty Bow
+    permission: pack.wraith_dynasty
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+      model_id: 18298
+  wraith_dynasty_chest:
+    display_name: Wraith_dynasty Chest
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: chest
+      model_id: 19093
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+  wraith_dynasty_crossbow:
+    display_name: Wraith_dynasty Crossbow
+    permission: pack.wraith_dynasty
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow
+      model_id: 24236
+  wraith_dynasty_dagger:
+    display_name: Wraith_dynasty Dagger
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: dagger
+      model_id: 19813
+  wraith_dynasty_fishing_rod:
+    display_name: Wraith_dynasty Fishing_rod
+    permission: pack.wraith_dynasty
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+      model_id: 24999
+  wraith_dynasty_hammer:
+    display_name: Wraith_dynasty Hammer
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: hammer
+      model_id: 22424
+  wraith_dynasty_hat:
+    display_name: Wraith_dynasty Hat
+    permission: pack.wraith_dynasty
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hat
+      model_id: 24629
+    behaviours:
+      hat: true
+  wraith_dynasty_hoe:
+    display_name: Wraith_dynasty Hoe
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_HOE
+      generate: false
+      model_path: hoe
+      model_id: 20553
+  wraith_dynasty_key:
+    display_name: Wraith_dynasty Key
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: key
+      model_id: 17744
+  wraith_dynasty_pickaxe:
+    display_name: Wraith_dynasty Pickaxe
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_PICKAXE
+      generate: false
+      model_path: pickaxe
+      model_id: 19858
+  wraith_dynasty_rapier_sword:
+    display_name: Wraith_dynasty Rapier_sword
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: rapier_sword
+      model_id: 19306
+  wraith_dynasty_scythe:
+    display_name: Wraith_dynasty Scythe
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: scythe
+      model_id: 23590
+  wraith_dynasty_shield:
+    display_name: Wraith_dynasty Shield
+    permission: pack.wraith_dynasty
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+      model_id: 20461
+  wraith_dynasty_shove:
+    display_name: Wraith_dynasty Shove
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: shove
+      model_id: 20404
+  wraith_dynasty_spear:
+    display_name: Wraith_dynasty Spear
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: spear
+      model_id: 19151
+  wraith_dynasty_staff:
+    display_name: Wraith_dynasty Staff
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: staff
+      model_id: 18604
+  wraith_dynasty_sword:
+    display_name: Wraith_dynasty Sword
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: sword
+      model_id: 17641
+  wraith_dynasty_trident:
+    display_name: Wraith_dynasty Trident
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: trident
+      model_id: 20939
+  wraith_dynasty_wing:
+    display_name: Wraith_dynasty Wing
+    permission: pack.wraith_dynasty
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wing
+      model_id: 23027
+  wraith_dynasty_bow_0:
+    display_name: Wraith_dynasty Bow_0
+    permission: pack.wraith_dynasty
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow_0
+      model_id: 19365
+  wraith_dynasty_bow_1:
+    display_name: Wraith_dynasty Bow_1
+    permission: pack.wraith_dynasty
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow_1
+      model_id: 24186
+  wraith_dynasty_bow_2:
+    display_name: Wraith_dynasty Bow_2
+    permission: pack.wraith_dynasty
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow_2
+      model_id: 22834
+  wraith_dynasty_crossbow_0:
+    display_name: Wraith_dynasty Crossbow_0
+    permission: pack.wraith_dynasty
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow_0
+      model_id: 23107
+  wraith_dynasty_crossbow_1:
+    display_name: Wraith_dynasty Crossbow_1
+    permission: pack.wraith_dynasty
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow_1
+      model_id: 19566
+  wraith_dynasty_crossbow_2:
+    display_name: Wraith_dynasty Crossbow_2
+    permission: pack.wraith_dynasty
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow_2
+      model_id: 24250
+  wraith_dynasty_crossbow_charged:
+    display_name: Wraith_dynasty Crossbow_charged
+    permission: pack.wraith_dynasty
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow_charged
+      model_id: 24717
+  wraith_dynasty_fishing_rod_cast:
+    display_name: Wraith_dynasty Fishing_rod_cast
+    permission: pack.wraith_dynasty
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: fishing_rod_cast
+      model_id: 21668
+  wraith_dynasty_shield_blocking:
+    display_name: Wraith_dynasty Shield_blocking
+    permission: pack.wraith_dynasty
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield_blocking
+      model_id: 19595
+categories:
+  wraith_dynasty:
+    enabled: true
+    skip_if_already: false
+    icon: wraith_dynasty:wraith_dynasty_chest
+    name: wraith_dynasty set
+    permission: ia.menu
+    items:
+    - wraith_dynasty:wraith_dynasty_axe
+    - wraith_dynasty:wraith_dynasty_bow
+    - wraith_dynasty:wraith_dynasty_chest
+    - wraith_dynasty:wraith_dynasty_crossbow
+    - wraith_dynasty:wraith_dynasty_dagger
+    - wraith_dynasty:wraith_dynasty_fishing_rod
+    - wraith_dynasty:wraith_dynasty_hammer
+    - wraith_dynasty:wraith_dynasty_hat
+    - wraith_dynasty:wraith_dynasty_hoe
+    - wraith_dynasty:wraith_dynasty_key
+    - wraith_dynasty:wraith_dynasty_pickaxe
+    - wraith_dynasty:wraith_dynasty_rapier_sword
+    - wraith_dynasty:wraith_dynasty_scythe
+    - wraith_dynasty:wraith_dynasty_shield
+    - wraith_dynasty:wraith_dynasty_shove
+    - wraith_dynasty:wraith_dynasty_spear
+    - wraith_dynasty:wraith_dynasty_staff
+    - wraith_dynasty:wraith_dynasty_sword
+    - wraith_dynasty:wraith_dynasty_trident
+    - wraith_dynasty:wraith_dynasty_wing
+    - wraith_dynasty:wraith_dynastyboots
+    - wraith_dynasty:wraith_dynastychestplate
+    - wraith_dynasty:wraith_dynastyleggings
+    - wraith_dynasty:wraith_dynastyhelmet
+
+#Q0TwUGOiNmMQpkYJdWS5F1cFREZykUbXlGaE9UNrV1U0ZFMhR3QZtGUQZTbi5WSalTczhDO

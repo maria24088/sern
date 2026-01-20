@@ -1,0 +1,175 @@
+kits:
+  chicken:
+    delay: 172800
+    items:
+    - diamond_helmet 1 mending:1 protection_environmental:2 durability:2
+    - diamond_chestplate 1 mending:1 protection_environmental:2 durability:2
+    - diamond_leggings 1 mending:1 protection_environmental:2 durability:2
+    - diamond_boots 1 mending:1 protection_environmental:2 durability:2
+    - diamond_sword 1 damage_all:2 durability:2
+    - diamond_pickaxe 1 dig_speed:2 durability:2
+    - diamond_axe 1 dig_speed:2 durability:2
+    - diamond_shovel 1 dig_speed:2 durability:2
+    - diamond_hoe 1 durability:2
+    - experience_bottle 32
+    - cooked_beef 64
+    - golden_apple 3
+  fox:
+    delay: 172800
+    items:
+    - diamond_helmet 1 mending:1 protection_environmental:3 durability:2
+    - diamond_chestplate 1 mending:1 protection_environmental:3 durability:2
+    - diamond_leggings 1 mending:1 protection_environmental:3 durability:2
+    - diamond_boots 1 mending:1 protection_environmental:3 durability:2
+    - diamond_sword 1 damage_all:3 durability:3
+    - diamond_pickaxe 1 dig_speed:3 durability:3
+    - diamond_axe 1 dig_speed:3 durability:3
+    - diamond_shovel 1 dig_speed:3 durability:3
+    - diamond_hoe 1 durability:3
+    - experience_bottle 48
+    - cooked_beef 64
+    - golden_apple 8
+  witch:
+    delay: 172800
+    items:
+    - diamond_helmet 1 mending:1 protection_environmental:4 durability:2
+    - diamond_chestplate 1 mending:1 protection_environmental:4 durability:2
+    - diamond_leggings 1 mending:1 protection_environmental:4 durability:2
+    - diamond_boots 1 mending:1 protection_environmental:4 durability:2
+    - diamond_sword 1 damage_all:4 durability:3
+    - diamond_pickaxe 1 dig_speed:4 durability:3
+    - diamond_axe 1 dig_speed:4 durability:3
+    - diamond_shovel 1 dig_speed:4 durability:3
+    - diamond_hoe 1 durability:3
+    - experience_bottle 64
+    - cooked_beef 64
+    - golden_apple 10
+    - enchanted_golden_apple 2
+  squid:
+    delay: 172800
+    items:
+    - diamond_helmet 1 mending:1 protection_environmental:4 durability:3
+    - diamond_chestplate 1 mending:1 protection_environmental:4 durability:3
+    - diamond_leggings 1 mending:1 protection_environmental:4 durability:3
+    - diamond_boots 1 mending:1 protection_environmental:4 durability:3
+    - diamond_sword 1 damage_all:5 durability:3
+    - diamond_pickaxe 1 dig_speed:5 durability:3
+    - diamond_axe 1 dig_speed:5 durability:3
+    - diamond_shovel 1 dig_speed:5 durability:3
+    - diamond_hoe 1 durability:3
+    - experience_bottle 64
+    - experience_bottle 32
+    - cooked_beef 64
+    - golden_apple 15
+    - enchanted_golden_apple 4
+  creeper:
+    delay: 172800
+    items:
+    - netherite_helmet 1 mending:1 protection_environmental:3 durability:3
+    - netherite_chestplate 1 mending:1 protection_environmental:3 durability:3
+    - netherite_leggings 1 mending:1 protection_environmental:3 durability:3
+    - netherite_boots 1 mending:1 protection_environmental:3 durability:3
+    - netherite_sword 1 damage_all:4 durability:3
+    - netherite_pickaxe 1 dig_speed:4 durability:3
+    - netherite_axe 1 dig_speed:4 durability:3
+    - netherite_shovel 1 dig_speed:4 durability:3
+    - netherite_hoe 1 durability:4
+    - experience_bottle 64
+    - experience_bottle 32
+    - cooked_beef 64
+    - firework_rocket 32
+    - golden_apple 20
+    - enchanted_golden_apple 7
+  goat:
+    delay: 172800
+    items:
+    - netherite_helmet 1 water_worker:1 mending:1 protection_environmental:4 durability:3
+    - netherite_chestplate 1 mending:1 protection_environmental:4 thorns:3 durability:3
+    - netherite_leggings 1 mending:1 protection_environmental:4 durability:3
+    - netherite_boots 1 protection_fall:4 mending:1 protection_environmental:4 durability:3
+    - netherite_sword 1 fire_aspect:2 mending:1 damage_all:5 durability:3
+    - netherite_pickaxe 1 dig_speed:5 loot_bonus_blocks:2 mending:1 durability:3
+    - netherite_axe 1 dig_speed:5 mending:1 durability:3
+    - netherite_shovel 1 dig_speed:5 mending:1 durability:3
+    - netherite_hoe 1 dig_speed:5 mending:1 durability:3
+    - experience_bottle 64
+    - experience_bottle 64
+    - experience_bottle 32
+    - cooked_beef 64
+    - firework_rocket 64
+    - golden_apple 30
+    - enchanted_golden_apple 10
+  starter:
+    delay: 172800
+    items:
+    - leather_helmet 1 color:10511680
+    - leather_chestplate 1 color:10511680
+    - leather_leggings 1 color:10511680
+    - leather_boots 1 color:10511680
+    - iron_sword 1
+    - iron_pickaxe 1
+    - iron_axe 1
+    - iron_hoe 1
+    - iron_shovel 1
+    - cooked_beef 16
+    - oak_log 16
+    - golden_shovel 1
+  claiming:
+    delay: 3600
+    items:
+    - golden_shovel 1 name:&eClaim_Shovel itemflags:HIDE_ATTRIBUTES lore:&4Owned_By:_{USERNAME}
+    - stick 1 name:&eSpectating_Stick lore:&4Owned_By:_{USERNAME}
+  soulsitems:
+    delay: 0
+    items:
+    - netherite_sword 1 name:&#0073FB☠_&#0D78FBS&#197DFCo&#2682FCu&#3387FCl&#3F8CFDs_&#4C92FDS&#5897FEw&#659CFEo&#72A1FEr&#7EA6FFd_&#8BABFF☠
+      lore:&#0073FB&lE&#0C78FB&lX&#177CFC&lC&#2381FC&lL&#2E86FC&lU&#3A8AFD&lS&#468FFD&lI&#5194FD&lV&#5D98FE&lE_&#689DFE&lI&#74A2FE&lT&#7FA6FF&lE&#8BABFF&lM|&fThis_item_can_only_be_obtained|&fform_the_soul_shop.
+      fire_aspect:2 loot_bonus_mobs:4 mending:1 damage_all:7 damage_undead:1 durability:4
+    - netherite_pickaxe 1 name:&#0073FB☠_&#0B77FBS&#157CFCo&#2080FCu&#2B84FCl&#3589FDs_&#408DFDP&#4B91FDi&#5695FDc&#609AFEk&#6B9EFEa&#76A2FEx&#80A7FFe_&#8BABFF☠
+      lore:&#0073FB&lE&#0C78FB&lX&#177CFC&lC&#2381FC&lL&#2E86FC&lU&#3A8AFD&lS&#468FFD&lI&#5194FD&lV&#5D98FE&lE_&#689DFE&lI&#74A2FE&lT&#7FA6FF&lE&#8BABFF&lM|&fThis_items_can_be_only_obtained|&ffrom_the_souls_shop.
+      dig_speed:7 loot_bonus_blocks:4 mending:1 durability:4
+    - netherite_axe 1 name:&#0073FB☠_&#0F79FBS&#1F7FFCo&#2E86FCu&#3E8CFDl&#4D92FDs_&#5D98FEA&#6C9FFEx&#7CA5FFe_&#8BABFF☠
+      lore:&#0073FB&lE&#0C78FB&lX&#177CFC&lC&#2381FC&lL&#2E86FC&lU&#3A8AFD&lS&#468FFD&lI&#5194FD&lV&#5D98FE&lE_&#689DFE&lI&#74A2FE&lT&#7FA6FF&lE&#8BABFF&lM|&fThis_items_can_be_only_obtained|&ffrom_the_souls_shop.
+      dig_speed:7 loot_bonus_blocks:4 mending:1 damage_all:5 durability:4
+    - netherite_shovel 1 name:&#0073FB☠_&#0C78FBS&#177CFCo&#2381FCu&#2E86FCl&#3A8AFDs_&#468FFDS&#5194FDh&#5D98FEo&#689DFEv&#74A2FEe&#7FA6FFl_&#8BABFF☠
+      lore:&#0073FB&lE&#0C78FB&lX&#177CFC&lC&#2381FC&lL&#2E86FC&lU&#3A8AFD&lS&#468FFD&lI&#5194FD&lV&#5D98FE&lE_&#689DFE&lI&#74A2FE&lT&#7FA6FF&lE&#8BABFF&lM|&fThis_items_can_be_only_obtained|&ffrom_the_souls_shop.
+      dig_speed:5 mending:1 silk_touch:1 durability:4
+    - netherite_hoe 1 name:&#0073FB☠_&#0F79FBS&#1F7FFCo&#2E86FCu&#3E8CFDl&#4D92FDs_&#5D98FEH&#6C9FFEo&#7CA5FFe_&#8BABFF☠
+      lore:&#0073FB&lE&#0C78FB&lX&#177CFC&lC&#2381FC&lL&#2E86FC&lU&#3A8AFD&lS&#468FFD&lI&#5194FD&lV&#5D98FE&lE_&#689DFE&lI&#74A2FE&lT&#7FA6FF&lE&#8BABFF&lM|&fThis_items_can_be_only_obtained|&ffrom_the_souls_shop.
+      dig_speed:3 loot_bonus_blocks:4 mending:1 durability:4
+    - netherite_helmet 1 name:&#0073FB☠_&#0C78FBS&#177CFCo&#2381FCu&#2E86FCl&#3A8AFDs_&#468FFDH&#5194FDe&#5D98FEl&#689DFEm&#74A2FEe&#7FA6FFt_&#8BABFF☠
+      lore:&#0073FB&lE&#0C78FB&lX&#177CFC&lC&#2381FC&lL&#2E86FC&lU&#3A8AFD&lS&#468FFD&lI&#5194FD&lV&#5D98FE&lE_&#689DFE&lI&#74A2FE&lT&#7FA6FF&lE&#8BABFF&lM|&fThis_items_can_be_only_obtained|&ffrom_the_souls_shop.
+      water_worker:6 protection_explosions:3 protection_fire:3 mending:1 protection_projectile:3
+      protection_environmental:5 durability:5
+    - netherite_chestplate 1 name:&#0073FB☠_&#0977FBS&#117AFCo&#1A7EFCu&#2381FCl&#2B85FCs_&#3488FDC&#3D8CFDh&#468FFDe&#4E93FDs&#5796FEt&#609AFEp&#689DFEl&#71A1FEa&#7AA4FFt&#82A8FFe_&#8BABFF☠
+      lore:&#0073FB&lE&#0C78FB&lX&#177CFC&lC&#2381FC&lL&#2E86FC&lU&#3A8AFD&lS&#468FFD&lI&#5194FD&lV&#5D98FE&lE_&#689DFE&lI&#74A2FE&lT&#7FA6FF&lE&#8BABFF&lM|&fThis_items_can_be_only_obtained|&ffrom_the_souls_shop.
+      protection_explosions:3 protection_fire:3 mending:1 protection_environmental:5
+      thorns:3 durability:5
+    - netherite_leggings 1 name:&#0073FB☠_&#0A77FBS&#147BFCo&#1E7FFCu&#2883FCl&#3287FCs_&#3C8BFDL&#468FFDe&#4F93FDg&#5997FEg&#639BFEi&#6D9FFEn&#77A3FEg&#81A7FFs_&#8BABFF☠
+      lore:&#0073FB&lE&#0C78FB&lX&#177CFC&lC&#2381FC&lL&#2E86FC&lU&#3A8AFD&lS&#468FFD&lI&#5194FD&lV&#5D98FE&lE_&#689DFE&lI&#74A2FE&lT&#7FA6FF&lE&#8BABFF&lM|&fThis_items_can_be_only_obtained|&ffrom_the_souls_shop.
+      protection_explosions:3 protection_fire:3 mending:1 protection_environmental:5
+      thorns:3 durability:4
+    - netherite_boots 1 name:&#0073FB☠_&#0D78FBS&#197DFCo&#2682FCu&#3387FCl&#3F8CFDs_&#4C92FDB&#5897FEo&#659CFEo&#72A1FEt&#7EA6FFs_&#8BABFF☠
+      lore:&#0073FB&lE&#0C78FB&lX&#177CFC&lC&#2381FC&lL&#2E86FC&lU&#3A8AFD&lS&#468FFD&lI&#5194FD&lV&#5D98FE&lE_&#689DFE&lI&#74A2FE&lT&#7FA6FF&lE&#8BABFF&lM|&fThis_items_can_be_only_obtained|&ffrom_the_souls_shop.
+      protection_explosions:3 protection_fall:5 protection_fire:3 mending:1 protection_environmental:5
+      thorns:3 durability:4
+    - crossbow 1 name:&#0073FB☠_&#0A77FBS&#147BFCo&#1E7FFCu&#2883FCl&#3287FCs_&#3C8BFDC&#468FFDr&#4F93FDo&#5997FEs&#639BFEs&#6D9FFEb&#77A3FEo&#81A7FFw_&#8BABFF☠
+      lore:&#0073FB&lE&#0C78FB&lX&#177CFC&lC&#2381FC&lL&#2E86FC&lU&#3A8AFD&lS&#468FFD&lI&#5194FD&lV&#5D98FE&lE_&#689DFE&lI&#74A2FE&lT&#7FA6FF&lE&#8BABFF&lM|&fThis_items_can_be_only_obtained|&ffrom_the_souls_shop.
+      mending:1 multishot:1 arrow_damage:6 quick_charge:5 durability:4
+    - bow 1 name:&#0073FB☠_&#0F79FBS&#1F7FFCo&#2E86FCu&#3E8CFDl&#4D92FDs_&#5D98FEB&#6C9FFEo&#7CA5FFw_&#8BABFF☠
+      lore:&#0073FB&lE&#0C78FB&lX&#177CFC&lC&#2381FC&lL&#2E86FC&lU&#3A8AFD&lS&#468FFD&lI&#5194FD&lV&#5D98FE&lE_&#689DFE&lI&#74A2FE&lT&#7FA6FF&lE&#8BABFF&lM|&fThis_items_can_be_only_obtained|&ffrom_the_souls_shop.
+      arrow_fire:1 arrow_infinite:1 arrow_damage:6 durability:5
+    - trident 1 name:&#0073FB☠_&#0B77FBS&#157CFCo&#2080FCu&#2B84FCl&#3589FDs_&#408DFDT&#4B91FDr&#5695FDi&#609AFEd&#6B9EFEe&#76A2FEn&#80A7FFt_&#8BABFF☠
+      lore:&#0073FB&lE&#0C78FB&lX&#177CFC&lC&#2381FC&lL&#2E86FC&lU&#3A8AFD&lS&#468FFD&lI&#5194FD&lV&#5D98FE&lE_&#689DFE&lI&#74A2FE&lT&#7FA6FF&lE&#8BABFF&lM|&fThis_items_can_be_only_obtained|&ffrom_the_souls_shop.
+      channeling:1 impaling:5 mending:1 riptide:4 durability:5
+    - fishing_rod 1 name:&#0073FB☠_&#0977FBS&#117AFCo&#1A7EFCu&#2381FCl&#2B85FCs_&#3488FDF&#3D8CFDi&#468FFDs&#4E93FDh&#5796FEi&#609AFEn&#689DFEg_&#71A1FER&#7AA4FFo&#82A8FFd_&#8BABFF☠
+      lore:&#0073FB&lE&#0C78FB&lX&#177CFC&lC&#2381FC&lL&#2E86FC&lU&#3A8AFD&lS&#468FFD&lI&#5194FD&lV&#5D98FE&lE_&#689DFE&lI&#74A2FE&lT&#7FA6FF&lE&#8BABFF&lM|&fThis_items_can_be_only_obtained|&ffrom_the_souls_shop.
+      luck:5 lure:5 mending:1 durability:4
+    - elytra 1 name:&#0073FB☠_&#0C78FBS&#177CFCo&#2381FCu&#2E86FCl&#3A8AFDs_&#468FFDE&#5194FDl&#5D98FEy&#689DFEt&#74A2FEr&#7FA6FFa_&#8BABFF☠
+      lore:&#0073FB&lE&#0C78FB&lX&#177CFC&lC&#2381FC&lL&#2E86FC&lU&#3A8AFD&lS&#468FFD&lI&#5194FD&lV&#5D98FE&lE_&#689DFE&lI&#74A2FE&lT&#7FA6FF&lE&#8BABFF&lM|&fThis_item_can_be_only_obtained|&ffrom_the_soul_shop
+      mending:1 protection_environmental:6 durability:5
+  cana_pesca:
+    delay: 0
+    items:
+    - fishing_rod 1 name:&a&lApprentice_Angler's_Rod lore:&7A_sturdy_rod_for_budding_fishermen.|&7Slightly_better_than_the_standard_rod.|_|&fCommon
+      custom-model-data:50081

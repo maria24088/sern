@@ -1,0 +1,35 @@
+info:
+  namespace: elitecreatures
+categories:
+  skeleton_horse_animated_weapon_set:
+    enabled: true
+    icon: "elitecreatures:skeleton_horse_animated_weapon_set_fishing_rod"
+    name: "Skeleton Horse Animated Weapon Set"
+    permission: "ia.menu.skeleton_horse_animated_weapon_set"
+    items:
+      - "elitecreatures:skeleton_horse_animated_weapon_set_axe"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_bow"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_chest"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_crossbow"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_dagger"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_fishing_rod"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_glove"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_hammer"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_hat"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_hoe"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_key"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_pickaxe"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_scythe"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_shield"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_shovel"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_spear"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_staff"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_sword"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_trident"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_wing"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_helmet"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_chestplate"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_leggings"
+      - "elitecreatures:skeleton_horse_animated_weapon_set_boots"
+
+#oFeERkY5MVOhZXT3EGbxhXRVdUV6p0aRdXRtFlUGZVVo5UVjFHcVFnQ0Z3c0FWU44mQ3BDN

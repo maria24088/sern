@@ -1,0 +1,545 @@
+info:
+  namespace: mmoitems_stats_icon
+font_images:
+  armor_toughness:
+    symbol: "囖"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: armor_toughness
+  armor:
+    symbol: "囕"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: aromr
+  arrow_potion_effects:
+    symbol: "皛"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: arrow_potion_effects
+  attack_damage:
+    symbol: "霅"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: attack_damage
+  attack_speed:
+    symbol: "甦"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: attack_speed
+  block_cooldown_reduction:
+    symbol: "囐"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: block_cooldown_reduction
+  block_power:
+    symbol: "葅"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: block_power
+  block_rating:
+    symbol: "囒"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: block_rating
+  blunt_power:
+    symbol: "撉"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: blunt_power
+  blunt_rating:
+    symbol: "遯"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: blunt_rating
+  bouncing_crack:
+    symbol: "鯈"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: bouncing_crack
+  can_deconstruct:
+    symbol: "囏"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: can_deconstruct
+  can_deskin:
+    symbol: "囎"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: can_deskin
+  can_identify:
+    symbol: "囋"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: can_identify
+  command:
+    symbol: "孁"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: command
+  cooldown_reduction:
+    symbol: "隺"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: cooldown_reduction
+  critical_strike_chance:
+    symbol: "寠"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: critical_strike_chance
+  critical_strike_power:
+    symbol: "漡"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: critical_strike_power
+  damage_reduction:
+    symbol: "櫋"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: damage_reduction
+  defense:
+    symbol: "倣"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: defense
+  dodge_cooldown_reduction:
+    symbol: "囇"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: dodge_cooldown_reduction
+  dodge_rating:
+    symbol: "囆"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: dodge_rating
+  empty_gem_socket:
+    symbol: "鵼"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: empty_gem_socket
+  faction_damage_undead:
+    symbol: "囄"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: faction_damage_undead
+  fall_damage_reduction:
+    symbol: "縗"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: fall_damage_reduction
+  filled_gem_socket:
+    symbol: "黇"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: filled_gem_socket
+  fire_damage_reduction:
+    symbol: "囃"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: fire_damage_reduction
+  handworn:
+    symbol: "敊"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: handworn
+  health_regeneration:
+    symbol: "嚿"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: health_regeneration
+  item_cooldown:
+    symbol: "埆"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: item_cooldown
+  knockback:
+    symbol: "讉"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: knockback
+  knockback_resistance:
+    symbol: "頺"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: knockback_resistance
+  lifesteal:
+    symbol: "嚽"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: lifesteal
+  magic_damage:
+    symbol: "醗"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: magic_damage
+  magic_damage_reduction:
+    symbol: "藅"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: magic_damage_reduction
+  mana_cost:
+    symbol: "灋"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: mana_cost
+  max_health:
+    symbol: "嚻"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: max_health
+  max_mana:
+    symbol: "龘"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: max_mana
+  max_stamina:
+    symbol: "龖"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: max_stamina
+  movement_speed:
+    symbol: "嚺"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: movement_speed
+  note_weight:
+    symbol: "幒"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: note_weight
+  parry_cooldown_reduction:
+    symbol: "噧"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: parry_cooldown_reduction
+  parry_rating:
+    symbol: "嚸"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: parry_rating
+  physical_damage:
+    symbol: "嚵"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: physical_damage
+  physical_damage_reduction:
+    symbol: "揾"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: physical_damage_reduction
+  pickaxe_power:
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: pickaxe_power
+  projectile_damage:
+    symbol: "嚱"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: projectile_damage
+  projectile_damage_reduction:
+    symbol: "亸"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: projectile_damage_reduction
+  pve_damage:
+    symbol: "嚩"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: pve_damage
+  pve_damage_reduction:
+    symbol: "嚬"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: pve_damage_reduction
+  pvp_damage:
+    symbol: "嚫"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: pvp_damage
+  pvp_damage_reduction:
+    symbol: "嚪"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: pvp_damage_reduction
+  range:
+    symbol: "鷭"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: range
+  recoil:
+    symbol: "矦"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: recoil
+  repair:
+    symbol: "嚧"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: repair
+  repair_percent:
+    symbol: "嚠"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: repair_percent
+  restore_food:
+    symbol: "嚛"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: restore_food
+  restore_health:
+    symbol: "掵"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: restore_health
+  restore_mana:
+    symbol: "茷"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: restore_mana
+  restore_saturation:
+    symbol: "翮"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: restore_saturation
+  restore_stamina:
+    symbol: "嚘"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: restore_stamina
+  skill_critical_strike_chance:
+    symbol: "嚋"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: skill_critical_strike_chance
+  skill_critical_strike_power:
+    symbol: "丄"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: skill_critical_strike_power
+  skill_damage:
+    symbol: "奤"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: skill_damage
+  spell_vampirism:
+    symbol: "觷"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: spell_vampirism
+  arrow_velocity:
+    symbol: "嚉"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: arrow_velocity
+  stamina_cost:
+    symbol: "曍"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: stamina_cost
+  stamina_regeneration:
+    symbol: "嚈"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: stamina_regeneration
+  tier:
+    symbol: "噾"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: tier
+  two_handed:
+    symbol: "鷞"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: two_handed
+  undead_damage:
+    symbol: "尩"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: undead_damage
+  weapon_damage:
+    symbol: "噷"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: weapon_damage
+  mana_regeneration:
+    symbol: "瞂"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: mana_regeneration
+  #以下新装
+  soulbinding_break_chance:
+    symbol: "😅"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: soulbinding_break_chance
+  soulbinding_chance:
+    symbol: "🤣"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: soulbinding_chance
+  soulbound_level:
+    symbol: "😆"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: soulbound_level
+  gem_stone_lore:
+    symbol: "😁"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: gem_stone_lore
+  autosmelt:
+    symbol: "😂"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: autosmelt
+  durability:
+    symbol: "熋"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: durability
+  additional_experience:
+    symbol: "顡"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: additional_experience
+  pickaxe_power:
+    symbol: "😃"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: pickaxe_power
+  artifact:
+    symbol: "🙂"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: artifact
+  common:
+    symbol: "🫠"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: common
+  epic:
+    symbol: "😉"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: epic
+  legendary:
+    symbol: "😊"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: legendary
+  masterwork:
+    symbol: "😇"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: masterwork
+  poor:
+    symbol: "🥰"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: poor
+  rare:
+    symbol: "😍"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: rare
+  superior:
+    symbol: "🤩"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: superior
+  uncommon:
+    symbol: "😘"
+    show_in_gui: true
+    y_position: 7
+    scale_ratio: 8
+    path: uncommon
+    
+# 571437704493481688654908

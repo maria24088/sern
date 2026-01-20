@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.19.211.102
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1765585247622
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1765594212642
+  login: 1765594194220
+money: '0'
+last-account-name: sdads
+lastlocation:
+  world: 84574fde-df87-47b2-b7b6-fba349c79632
+  world-name: world
+  x: -1186.9806540701738
+  y: 63.0
+  z: -1933.5005579078652
+  yaw: -144.068359375
+  pitch: 17.80374526977539
+logoutlocation:
+  world: f9f42665-d084-4921-862b-ce7d2039b3ff
+  world-name: spawnImportar
+  x: -339.65923267010515
+  y: 56.9375
+  z: -339.63893196883436
+  yaw: -117.51679992675781
+  pitch: 22.98476219177246

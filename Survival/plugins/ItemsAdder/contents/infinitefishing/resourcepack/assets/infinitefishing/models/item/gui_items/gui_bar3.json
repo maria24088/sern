@@ -1,0 +1,13 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "infinitefishing:item/gui_item/gui_bar3"
+	},
+	"display": {
+		"gui": {
+			"translation": [-0.5, -0.75, 0],
+			"scale": [1.06836, 1.09961, 1]
+		}
+	}
+}

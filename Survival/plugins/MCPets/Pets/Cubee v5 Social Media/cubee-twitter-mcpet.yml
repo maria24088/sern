@@ -1,0 +1,15 @@
+Id: cubee-twitter
+MythicMob: cubee-twitter
+Permission: mcpet.cubee-twitter
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §bTwitter §fCubee
+  Description:
+  - §fThis cubee really loves DRAMA!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191040
+
+# c1d8afcb98ec728e8f78149f12543142

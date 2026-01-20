@@ -1,0 +1,28 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Bruno240707",
+      "uniqueId": "0d45db84-9179-4b23-93b7-38a90642b372"
+    },
+    "time": 1766262212446,
+    "type": "Heap dump summary",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/Pz18vpikBL"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Bruno240707",
+      "uniqueId": "0d45db84-9179-4b23-93b7-38a90642b372"
+    },
+    "time": 1766262127946,
+    "type": "Heap dump summary",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/G1QHfZ2qLB"
+    }
+  }
+]

@@ -1,0 +1,14 @@
+Id: cubee-macarons
+MythicMob: cubee-macarons
+Permission: mcpet.cubee-macarons
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §e Macarons Cubee
+  Description:
+  - §7"We come in many colors and flavors, but together, we're the most delicious!
+    Try a bite of every layer!" §8§o- Macarons Cubee
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191320

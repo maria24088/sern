@@ -1,0 +1,383 @@
+# Configuración para el Encantador (Enchanter)
+# Cambia los comandos para acceder a él en la parte superior de config.yml
+
+# establece en "none" para desactivar
+open-sound: ENDERDRAGON_WINGS
+# En qué mundos está desactivado el encantador
+disabled-in-worlds:
+  - bad_world
+messages:
+  sound: ENTITY_PLAYER_LEVELUP
+right-click-to-view-enchants: true
+go-back-item:
+  enabled: true
+  item:
+    type: FEATHER
+    id: 0
+    custom-model-data: 9999
+  name: "&c&lVolver Atrás"
+  lore: []
+# ¿Debería el encantador permanecer abierto después de comprar un objeto?
+keep-open: true
+# Tamaño del inventario del Encantador
+# 9-18-27-36-45-54
+#
+# Variables (Placeholders):
+#  %group-enchant-count% - número de encantamientos en el grupo
+#  %price% - precio
+#  %left% - experiencia restante necesaria hasta que el jugador pueda comprar el objeto
+# Economía:
+# exp, money, level, souls (funciona con items que se sostienen al abrir el inventario), diamonds, gold (gold ingots), emeralds
+inventory:
+  size: 44
+  name: "&f᪄᪐"
+  settings:
+    # ¿Qué nivel de libros debería dar el encantador?
+    # "ALL" - da todos los niveles
+    # <número> - Da un nivel específico de encantamiento
+    enchanterBookLevel: ALL
+  items:
+    "1":
+      item:
+        type: FEATHER
+        id: 0
+        custom-model-data: 9999
+        force-glow: false
+      enchant-group: SIMPLE
+      price: level:5
+      sound: BLOCK_ANVIL_LAND
+      name: "&f᪗ Encantamiento Aleatorio"
+      lore:
+        - ""
+        - "{#dff9fb}Un libro con un espíritu misterioso,"
+        - "{#dff9fb}que oculta magia oscura en su"
+        - "{#dff9fb}interior, emitiendo una luz extraña."
+        - ""
+        - "&8Recibirás un libro aleatorio"
+        - "&8basado en la rareza al usarlo."
+        - ""
+        - "&7PRECIO: {#c0e45a}%price%&f᪠"
+        - "&7RAREZA: &f᪗"
+        - ""
+        - "&f→ &7Click para comprar este libro"
+    "3":
+      item:
+        type: FEATHER
+        id: 5
+        custom-model-data: 9999
+        force-glow: false
+      enchant-group: UNIQUE
+      sound: BLOCK_ANVIL_LAND
+      price: level:10
+      name: "&f᪘ Encantamiento Aleatorio"
+      lore:
+        - ""
+        - "{#dff9fb}Un libro con un espíritu misterioso,"
+        - "{#dff9fb}que oculta magia oscura en su"
+        - "{#dff9fb}interior, emitiendo una luz extraña."
+        - ""
+        - "&8Recibirás un libro aleatorio"
+        - "&8basado en la rareza al usarlo."
+        - ""
+        - "&7PRECIO: {#c0e45a}%price%&f᪠"
+        - "&7RAREZA: &f᪘"
+        - ""
+        - "&f→ &7Click para comprar este libro"
+    "5":
+      item:
+        type: FEATHER
+        id: 3
+        custom-model-data: 9999
+        force-glow: false
+      enchant-group: ELITE
+      price: level:25
+      sound: BLOCK_ANVIL_LAND
+      name: "&f᪙ Encantamiento Aleatorio"
+      lore:
+        - ""
+        - "{#dff9fb}Un libro con un espíritu misterioso,"
+        - "{#dff9fb}que oculta magia oscura en su"
+        - "{#dff9fb}interior, emitiendo una luz extraña."
+        - ""
+        - "&8Recibirás un libro aleatorio"
+        - "&8basado en la rareza al usarlo."
+        - ""
+        - "&7PRECIO: {#c0e45a}%price%&f᪠"
+        - "&7RAREZA: &f᪙"
+        - ""
+        - "&f→ &7Click para comprar este libro"
+    "7":
+      item:
+        type: FEATHER
+        id: 4
+        custom-model-data: 9999
+        force-glow: false
+      enchant-group: ULTIMATE
+      price: level:35
+      sound: BLOCK_ANVIL_LAND
+      name: "&f᪚ Encantamiento Aleatorio"
+      lore:
+        - ""
+        - "{#dff9fb}Un libro con un espíritu misterioso,"
+        - "{#dff9fb}que oculta magia oscura en su"
+        - "{#dff9fb}interior, emitiendo una luz extraña."
+        - ""
+        - "&8Recibirás un libro aleatorio"
+        - "&8basado en la rareza al usarlo."
+        - ""
+        - "&7PRECIO: {#c0e45a}%price%&f᪠"
+        - "&7RAREZA: &f᪚"
+        - ""
+        - "&f→ &7Click para comprar este libro"
+    "19":
+      item:
+        type: FEATHER
+        id: 1
+        custom-model-data: 9999
+        force-glow: false
+      enchant-group: LEGENDARY
+      price: level:50
+      sound: BLOCK_ANVIL_LAND
+      name: "&f᪛ Encantamiento Aleatorio"
+      lore:
+        - ""
+        - "{#dff9fb}Un libro con un espíritu misterioso,"
+        - "{#dff9fb}que oculta magia oscura en su"
+        - "{#dff9fb}interior, emitiendo una luz extraña."
+        - ""
+        - "&8Recibirás un libro aleatorio"
+        - "&8basado en la rareza al usarlo."
+        - ""
+        - "&7PRECIO: {#c0e45a}%price%&f᪠"
+        - "&7RAREZA: &f᪛"
+        - ""
+        - "&f→ &7Click para comprar este libro"
+    "21":
+      item:
+        type: FEATHER
+        id: 6
+        custom-model-data: 9999
+        force-glow: false
+      enchant-group: FABLED
+      price: level:70
+      sound: BLOCK_ANVIL_LAND
+      name: "&f᪜ Encantamiento Aleatorio"
+      lore:
+        - ""
+        - "{#dff9fb}Un libro con un espíritu misterioso,"
+        - "{#dff9fb}que oculta magia oscura en su"
+        - "{#dff9fb}interior, emitiendo una luz extraña."
+        - ""
+        - "&8Recibirás un libro aleatorio"
+        - "&8basado en la rareza al usarlo."
+        - ""
+        - "&7PRECIO: {#c0e45a}%price%&f᪠"
+        - "&7RAREZA: &f᪜"
+        - ""
+        - "&f→ &7Click para comprar este libro"
+
+    "23":
+      item:
+        type: PAPER
+        id: 0
+        custom-model-data: 40027
+        force-glow: false
+      sound: BLOCK_ANVIL_USE
+      player-command:
+        - "buy_random_enchantrcbook"
+      name: "&f᪝ Encantamiento Aleatorio"
+      lore:
+        - ""
+        - "{#dff9fb}Un libro con un espíritu misterioso,"
+        - "{#dff9fb}que oculta magia oscura en su"
+        - "{#dff9fb}interior, emitiendo una luz extraña."
+        - ""
+        - "{#f7d794}Recibirás un libro aleatorio"
+        - "{#f7d794}con rareza aleatoria al usarlo."
+        - ""
+        - "&7PRECIO: {#c0e45a}40&f᪠"
+        - "&7RAREZA: &fAleatoria"
+        - ""
+        - "&f→ &7Click para comprar este libro"
+
+    "25":
+      item:
+        type: PAPER
+        id: 0
+        custom-model-data: 40020
+        force-glow: false
+      sound: BLOCK_ANVIL_USE
+      player-command:
+        - "buy_arcane_satchel"
+      name: "&f᪝ Bolsa Arcana"
+      lore:
+        - ""
+        - "{#e2ace5}Una bolsa misteriosa, que al"
+        - "{#e2ace5}abrirse tiene la probabilidad de"
+        - "{#e2ace5}contener una {#d696d6}Gema de la Suerte."
+        - ""
+        - "&7PRECIO: {#c0e45a}20&f᪠"
+        - ""
+        - "&f→ &7Click para comprar esto"
+
+    "36":
+      item:
+        type: FEATHER
+        id: 0
+        custom-model-data: 9999
+        force-glow: false
+      sound: BLOCK_ANVIL_USE
+      player-command:
+        - tinkerer
+      name: "&f᪞ Menú del Chatarrero"
+      lore:
+        - ""
+        - "{#dff9fb}Convierte tus libros de"
+        - "{#dff9fb}encantamiento en Gemas Secretas"
+        - "{#dff9fb}y Botellas de Experiencia"
+        - ""
+        - "&f→&7 Abrir menú del chatarrero"
+    "37":
+      item:
+        type: FEATHER
+        id: 0
+        custom-model-data: 9999
+        force-glow: false
+      sound: BLOCK_ANVIL_USE
+      player-command:
+        - tinkerer
+      name: "&f᪞ Menú del Chatarrero"
+      lore:
+        - ""
+        - "{#dff9fb}Convierte tus libros de"
+        - "{#dff9fb}encantamiento en Gemas Secretas"
+        - "{#dff9fb}y Botellas de Experiencia"
+        - ""
+        - "&f→&7 Abrir menú del chatarrero"
+    "38":
+      item:
+        type: FEATHER
+        id: 0
+        custom-model-data: 9999
+        force-glow: false
+      sound: BLOCK_ANVIL_USE
+      player-command:
+        - tinkerer
+      name: "&f᪞ Menú del Chatarrero"
+      lore:
+        - ""
+        - "{#dff9fb}Convierte tus libros de"
+        - "{#dff9fb}encantamiento en Gemas Secretas"
+        - "{#dff9fb}y Botellas de Experiencia"
+        - ""
+        - "&f→&7 Abrir menú del chatarrero"
+
+    "39":
+      item:
+        type: FEATHER
+        id: 0
+        custom-model-data: 9999
+        force-glow: false
+      sound: ENTITY_ARROW_HIT
+      player-command:
+        - alchemist
+      name: "&f᪞ Menú del Alquimista"
+      lore:
+        - ""
+        - "{#dff9fb}Combina dos libros de"
+        - "{#dff9fb}encantamiento o Gemas de Suerte"
+        - "{#dff9fb}en uno mejor."
+        - ""
+        - "&f→&7 Abrir menú del alquimista"
+    "40":
+      item:
+        type: FEATHER
+        id: 0
+        custom-model-data: 9999
+        force-glow: false
+      sound: ENTITY_ARROW_HIT
+      player-command:
+        - alchemist
+      name: "&f᪞ Menú del Alquimista"
+      lore:
+        - ""
+        - "{#dff9fb}Combina dos libros de"
+        - "{#dff9fb}encantamiento o Gemas de Suerte"
+        - "{#dff9fb}en uno mejor."
+        - ""
+        - "&f→&7 Abrir menú del alquimista"
+
+    "41":
+      item:
+        type: FEATHER
+        id: 0
+        custom-model-data: 9999
+        force-glow: false
+      sound: ITEM_BOOK_PAGE_TURN
+      player-command:
+        - enchants
+      name: "&f᪞ Diccionario de Encantamientos"
+      lore:
+        - ""
+        - "{#dff9fb}Ver toda la información sobre"
+        - "{#dff9fb}los encantamientos disponibles"
+        - "{#dff9fb}en el servidor."
+        - ""
+        - "&f→&7 Abrir el diccionario"
+    "42":
+      item:
+        type: FEATHER
+        id: 0
+        custom-model-data: 9999
+        force-glow: false
+      sound: ITEM_BOOK_PAGE_TURN
+      player-command:
+        - enchants
+      name: "&f᪞ Diccionario de Encantamientos"
+      lore:
+        - ""
+        - "{#dff9fb}Ver toda la información sobre"
+        - "{#dff9fb}los encantamientos disponibles"
+        - "{#dff9fb}en el servidor."
+        - ""
+        - "&f→&7 Abrir el diccionario"
+
+    "43":
+      item:
+        type: FEATHER
+        id: 0
+        custom-model-data: 9999
+        force-glow: false
+      console-command:
+        - closeinv %player%
+      name: "&fCerrar Menú"
+      lore: []
+    "44":
+      item:
+        type: FEATHER
+        id: 0
+        custom-model-data: 9999
+        force-glow: false
+      console-command:
+        - closeinv %player%
+      name: "&fCerrar Menú"
+      lore: []
+
+# Inventario de confirmación para los pagos del encantador
+# Confirma o deniega la transacción, actúa como una confirmación de 2 pasos
+confirmation-inventory:
+  enabled: true
+  name: "&f᪄᪑"
+  accept:
+    material: FEATHER
+    custom-model-data: 9999
+    name: "&aAceptar transacción"
+    lore:
+      - "&7→ Costo: {#c0e45a}%price%&f᪠"
+    damage: 5
+  cancel:
+    material: FEATHER
+    custom-model-data: 9999
+    name: "&cCancelar transacción."
+    lore: []
+    damage: 14

@@ -1,0 +1,187 @@
+info:
+  namespace: elitecreatures
+armors_rendering:
+  reddragon_animated_weapon_v1:
+    color: '#8c196b'
+    layer_1: reddragon_animated_weapon_v1/reddragon_armor_layer_1
+    layer_2: reddragon_animated_weapon_v1/reddragon_armor_layer_2
+    use_color: false
+items:
+  reddragon_animated_weapon_v1_chestplate:
+    display_name: Red Dagon Chestplate
+    resource:
+      generate: true
+      textures:
+      - reddragon_animated_weapon_v1/reddragon_chestplate.png
+    specific_properties:
+      armor:
+        slot: chest
+        custom_armor: reddragon_animated_weapon_v1
+  reddragon_animated_weapon_v1_leggings:
+    display_name: Red Dagon Leggings
+    resource:
+      generate: true
+      textures:
+      - reddragon_animated_weapon_v1/reddragon_leggings.png
+    specific_properties:
+      armor:
+        slot: legs
+        custom_armor: reddragon_animated_weapon_v1
+  reddragon_animated_weapon_v1_boots:
+    display_name: Red Dagon Boots
+    resource:
+      generate: true
+      textures:
+      - reddragon_animated_weapon_v1/reddragon_boots.png
+    specific_properties:
+      armor:
+        slot: FEET
+        custom_armor: reddragon_animated_weapon_v1
+  reddragon_animated_weapon_v1_axe:
+    display_name: Axe
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: reddragon_animated_weapon_v1/axe
+  reddragon_animated_weapon_v1_bow:
+    display_name: Bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: reddragon_animated_weapon_v1/bow
+  reddragon_animated_weapon_v1_chest:
+    display_name: Chest
+    resource:
+      material: PAPER
+      generate: false
+      model_path: reddragon_animated_weapon_v1/chest
+    behaviours:
+      furniture:
+        solid: true
+        fixed_rotation: true
+        entity: armor_stand
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  reddragon_animated_weapon_v1_club:
+    display_name: Club
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: reddragon_animated_weapon_v1/club
+  reddragon_animated_weapon_v1_crossbow:
+    display_name: Crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: reddragon_animated_weapon_v1/crossbow
+  reddragon_animated_weapon_v1_dagger:
+    display_name: Dagger
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: reddragon_animated_weapon_v1/dagger
+  reddragon_animated_weapon_v1_fishing_rod:
+    display_name: Fishing Rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: reddragon_animated_weapon_v1/fishing_rod
+  reddragon_animated_weapon_v1_greatsword:
+    display_name: Greatsword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: reddragon_animated_weapon_v1/greatsword
+  reddragon_animated_weapon_v1_hammer:
+    display_name: Hammer
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: reddragon_animated_weapon_v1/hammer
+  reddragon_animated_weapon_v1_helmet:
+    display_name: Helmet
+    resource:
+      material: PAPER
+      generate: false
+      model_path: reddragon_animated_weapon_v1/helmet
+    behaviours:
+      hat: true
+    events:
+      interact:
+        right:
+          equip_head: true
+  reddragon_animated_weapon_v1_hoe:
+    display_name: Hoe
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: reddragon_animated_weapon_v1/hoe
+  reddragon_animated_weapon_v1_key:
+    display_name: Key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: reddragon_animated_weapon_v1/key
+  reddragon_animated_weapon_v1_mace:
+    display_name: Mace
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: reddragon_animated_weapon_v1/mace
+  reddragon_animated_weapon_v1_pickaxe:
+    display_name: Pickaxe
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: reddragon_animated_weapon_v1/pickaxe
+  reddragon_animated_weapon_v1_scythe:
+    display_name: Scythe
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: reddragon_animated_weapon_v1/scythe
+  reddragon_animated_weapon_v1_shield:
+    display_name: Shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: reddragon_animated_weapon_v1/shield
+  reddragon_animated_weapon_v1_shovel:
+    display_name: Shovel
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: reddragon_animated_weapon_v1/shovel
+  reddragon_animated_weapon_v1_spear:
+    display_name: Spear
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: reddragon_animated_weapon_v1/spear
+  reddragon_animated_weapon_v1_staff:
+    display_name: Staff
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: reddragon_animated_weapon_v1/staff
+  reddragon_animated_weapon_v1_sword:
+    display_name: Sword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: reddragon_animated_weapon_v1/sword
+  reddragon_animated_weapon_v1_wing:
+    display_name: Wing
+    resource:
+      material: PAPER
+      generate: false
+      model_path: reddragon_animated_weapon_v1/wing

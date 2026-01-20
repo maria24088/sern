@@ -1,0 +1,325 @@
+size: 45
+menu_title: '&f%img_offset_-8%%img_submenu_categories_vegetables%%img_offset_-155%
+%changeoutput_>=_input:{vault_eco_balance}_matcher:10_ifmatch:{img_indicator_gray_row_1}_else:{img_indicator_red_row_1}%%img_offset_-4%
+%changeoutput_>=_input:{vault_eco_balance}_matcher:15_ifmatch:{img_indicator_gray_row_1}_else:{img_indicator_red_row_1}%%img_offset_-4%
+%changeoutput_>=_input:{vault_eco_balance}_matcher:20_ifmatch:{img_indicator_gray_row_1}_else:{img_indicator_red_row_1}%%img_offset_-4%
+%utils_parse_changeoutput_>=_input:{servervariables_value_marketplace_level}_matcher:2_ifmatch:{changeoutput_>=_input:{vault_eco_balance}_matcher:25_ifmatch:{img_indicator_gray_row_1}_else:{img_indicator_red_row_1}}_else:&f%%img_offset_-4%
+%utils_parse_changeoutput_>=_input:{servervariables_value_marketplace_level}_matcher:2_ifmatch:{changeoutput_>=_input:{vault_eco_balance}_matcher:30_ifmatch:{img_indicator_gray_row_1}_else:{img_indicator_red_row_1}}_else:&f%'
+items:
+  'close':
+    material: itemsadder-invisible_item
+    slot: 16
+    display_name: '&#da5240&lCERRAR'
+    click_commands:
+      - "[openguimenu] marketplace"
+
+  'category_vegetables':
+    material: itemsadder-invisible_item
+    slot: 10
+    display_name: '&#5ed034&lVEGETALES'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_vegetables_seeds"
+
+  'category_fruits':
+    material: itemsadder-invisible_item
+    slot: 11
+    display_name: '&#e32f1f&lFRUTAS'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_fruits_seeds"
+
+  'category_cereals':
+    material: itemsadder-invisible_item
+    slot: 12
+    display_name: '&#f3bf46&lCEREALES'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_cereals_seeds"
+
+  'category_trees':
+    material: itemsadder-invisible_item
+    slot: 13
+    display_name: '&#9a7041&lARBOLES'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_trees_seeds"
+
+  'category_bushes':
+    material: itemsadder-invisible_item
+    slot: 14
+    display_name: '&#96c531&lARBUSTOS'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_bushes_seeds"
+
+  'category_flowers':
+    material: itemsadder-invisible_item
+    slot: 15
+    display_name: '&#e9c1de&lFLORES'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_flowers_seeds"
+
+
+  'item_lettuce_locked':
+    material: itemsadder-lettuce_seeds
+    slot: 28
+    priority: 2
+    display_name: '&fSemillas de Lechuga'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e210$"
+      - "&#e7c86bPrecio por stack: &#e1e1e2640$"
+      - ""
+      - "&#e45838❌ No tienes suficiente dinero"
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '1'
+
+  'item_lettuce_unlocked':
+    material: itemsadder-lettuce_seeds
+    slot: 28
+    priority: 1
+    display_name: '&fSemillas de Lechuga'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e210$"
+      - "&#e7c86bPrecio por stack: &#e1e1e2640$"
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para comprar una"
+      - "&f%img_shift_icon% %img_shift_left_click_icon% &#709ed3Shift + Click-izq para comprar stack"
+    left_click_commands:
+      - "[takemoney] 10"
+      - "[console] iagive %player_name% redstone_labs:lettuce_seeds 1 silent"
+      - "[openguimenu] submenu_categories_vegetables_seeds"
+    shift_left_click_commands:
+      - "[takemoney] 640"
+      - "[console] iagive %player_name% redstone_labs:lettuce_seeds 64 silent"
+      - "[openguimenu] submenu_categories_vegetables_seeds"
+    view_requirement:
+      requirements:
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '10'
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '1'
+
+  'item_tomato_locked':
+    material: itemsadder-tomato_seeds
+    slot: 29
+    priority: 2
+    display_name: '&fSemillas de Tomate'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e215$"
+      - "&#e7c86bPrecio por stack: &#e1e1e2960$"
+      - ""
+      - "&#e45838❌ No tienes suficiente dinero"
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '1'
+
+  'item_tomato_unlocked':
+    material: itemsadder-tomato_seeds
+    slot: 29
+    priority: 1
+    display_name: '&fSemillas de Tomate'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e215$"
+      - "&#e7c86bPrecio por stack: &#e1e1e2960$"
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para comprar una"
+      - "&f%img_shift_icon% %img_shift_left_click_icon% &#709ed3Shift + Click-izq para comprar stack"
+    left_click_commands:
+      - "[takemoney] 15"
+      - "[console] iagive %player_name% redstone_labs:tomato_seeds 1 silent"
+      - "[openguimenu] submenu_categories_vegetables_seeds"
+    shift_left_click_commands:
+      - "[takemoney] 960"
+      - "[console] iagive %player_name% redstone_labs:tomato_seeds 64 silent"
+      - "[openguimenu] submenu_categories_vegetables_seeds"
+    view_requirement:
+      requirements:
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '15'
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '1'
+
+  'item_onion_locked':
+    material: itemsadder-onion_seeds
+    slot: 30
+    priority: 2
+    display_name: '&fSemillas de Cebolla'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e215$"
+      - "&#e7c86bPrecio por stack: &#e1e1e2960$"
+      - ""
+      - "&#e45838❌ No tienes suficiente dinero"
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '1'
+
+  'item_onion_unlocked':
+    material: itemsadder-onion_seeds
+    slot: 30
+    priority: 1
+    display_name: '&fSemillas de Cebolla'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e215$"
+      - "&#e7c86bPrecio por stack: &#e1e1e2960$"
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para comprar una"
+      - "&f%img_shift_icon% %img_shift_left_click_icon% &#709ed3Shift + Click-izq para comprar stack"
+    left_click_commands:
+      - "[takemoney] 15"
+      - "[console] iagive %player_name% redstone_labs:onion_seeds 1 silent"
+      - "[openguimenu] submenu_categories_vegetables_seeds"
+    shift_left_click_commands:
+      - "[takemoney] 960"
+      - "[console] iagive %player_name% redstone_labs:onion_seeds 64 silent"
+      - "[openguimenu] submenu_categories_vegetables_seeds"
+    view_requirement:
+      requirements:
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '15'
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '1'
+  'item_chilli_locked':
+    material: itemsadder-chilli_seeds
+    slot: 31
+    priority: 2
+    display_name: '&fSemillas de Chile'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e225$"
+      - "&#e7c86bPrecio por stack: &#e1e1e21600$"
+      - ""
+      - "&#e45838❌ No tienes suficiente dinero"
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '2'
+
+  'item_chilli_unlocked':
+    material: itemsadder-chilli_seeds
+    slot: 31
+    priority: 1
+    display_name: '&fSemillas de Chile'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e225$"
+      - "&#e7c86bPrecio por stack: &#e1e1e21600$"
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para comprar una"
+      - "&f%img_shift_icon% %img_shift_left_click_icon% &#709ed3Shift + Click-izq para comprar stack"
+    left_click_commands:
+      - "[takemoney] 25"
+      - "[console] iagive %player_name% redstone_labs:chilli_seeds 1 silent"
+      - "[openguimenu] submenu_categories_vegetables_seeds"
+    shift_left_click_commands:
+      - "[takemoney] 1600"
+      - "[console] iagive %player_name% redstone_labs:chilli_seeds 64 silent"
+      - "[openguimenu] submenu_categories_vegetables_seeds"
+    view_requirement:
+      requirements:
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '25'
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '2'
+
+  'item_eggplant_locked':
+    material: itemsadder-eggplant_seeds
+    slot: 32
+    priority: 2
+    display_name: '&fSemillas de Berenjena'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e230$"
+      - "&#e7c86bPrecio por stack: &#e1e1e21920$"
+      - ""
+      - "&#e45838❌ No tienes suficiente dinero"
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '2'
+
+  'item_eggplant_unlocked':
+    material: itemsadder-eggplant_seeds
+    slot: 32
+    priority: 1
+    display_name: '&fSemillas de Berenjena'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e230$"
+      - "&#e7c86bPrecio por stack: &#e1e1e21920$"
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para comprar una"
+      - "&f%img_shift_icon% %img_shift_left_click_icon% &#709ed3Shift + Click-izq para comprar stack"
+    left_click_commands:
+      - "[takemoney] 30"
+      - "[console] iagive %player_name% redstone_labs:eggplant_seeds 1 silent"
+      - "[openguimenu] submenu_categories_vegetables_seeds"
+    shift_left_click_commands:
+      - "[takemoney] 1920"
+      - "[console] iagive %player_name% redstone_labs:eggplant_seeds 64 silent"
+      - "[openguimenu] submenu_categories_vegetables_seeds"
+    view_requirement:
+      requirements:
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '30'
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '2'

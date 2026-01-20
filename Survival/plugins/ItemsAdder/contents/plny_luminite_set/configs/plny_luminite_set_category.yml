@@ -1,0 +1,32 @@
+info:
+  namespace: plny_luminite_set
+categories:
+  plny_luminite_set:
+    name: Luminite Animated Weapons And Tools Set
+    enabled: true
+    icon: plny_luminite_set:luminite_set_wings
+    permission: ia.menu.plny_luminite_set
+    items:
+    - plny_luminite_set:luminite_sethelmet
+    - plny_luminite_set:luminite_setchestplate
+    - plny_luminite_set:luminite_setleggings
+    - plny_luminite_set:luminite_setboots
+    - plny_luminite_set:luminite_set_helmet
+    - plny_luminite_set:luminite_set_axe
+    - plny_luminite_set:luminite_set_pickaxe
+    - plny_luminite_set:luminite_set_shovel
+    - plny_luminite_set:luminite_set_hoe
+    - plny_luminite_set:luminite_set_fishing_rod
+    - plny_luminite_set:luminite_set_sword
+    - plny_luminite_set:luminite_set_shield
+    - plny_luminite_set:luminite_set_crossbow
+    - plny_luminite_set:luminite_set_bow
+    - plny_luminite_set:luminite_set_staff
+    - plny_luminite_set:luminite_set_trident
+    - plny_luminite_set:luminite_set_hammer
+    - plny_luminite_set:luminite_set_spear
+    - plny_luminite_set:luminite_set_scythe
+    - plny_luminite_set:luminite_set_chest
+    - plny_luminite_set:luminite_set_key
+    - plny_luminite_set:luminite_set_mace
+    - plny_luminite_set:luminite_set_wings

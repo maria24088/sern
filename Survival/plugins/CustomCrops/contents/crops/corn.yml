@@ -1,0 +1,167 @@
+corn:
+  type: FURNITURE
+  pot-whitelist:
+  - default
+  seed: customcrops:corn_seeds
+  random-rotation: true
+  requirements:
+    plant:
+      requirement_1:
+        type: season
+        value:
+        - Summer
+        - Autumn
+        not-met-actions:
+          actionbar_action:
+            type: actionbar
+            value: <red><bold>[X] It's not a good season to plant corn
+  events:
+    plant:
+      action_1:
+        type: sound
+        value:
+          source: player
+          key: minecraft:item.hoe.till
+          volume: 1
+          pitch: 1
+    break:
+      action_1:
+        type: sound
+        value:
+          source: player
+          key: minecraft:block.crop.break
+          volume: 1
+          pitch: 1
+  max-points: 3
+  points:
+    '0':
+      model: customcrops:corn_stage_1
+      hologram-offset-correction: -0.4
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              item: customcrops:corn_seeds
+              min: 1
+              max: 1
+            chance: 0.3
+    '1':
+      model: customcrops:corn_stage_2
+      hologram-offset-correction: -0.1
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              item: customcrops:corn_seeds
+              min: 1
+              max: 1
+            chance: 0.5
+    '2':
+      model: customcrops:corn_stage_3
+      hologram-offset-correction: 0.6
+      events:
+        break:
+          action_1:
+            type: drop-item
+            value:
+              item: customcrops:corn_seeds
+              min: 1
+              max: 1
+            chance: 0.8
+    '3':
+      model: customcrops:corn_stage_4
+      hologram-offset-correction: 0.7
+      events:
+        break:
+          action_1:
+            type: quality-crops
+            value:
+              min: 1
+              max: 1
+              items:
+                '1': customcrops:corn
+                '2': customcrops:corn_silver_star
+                '3': customcrops:corn_golden_star
+          action_2:
+            type: drop-item
+            value:
+              item: customcrops:corn_seeds
+              min: 1
+              max: 2
+            chance: 1
+        interact:
+          empty_hand_action:
+            type: conditional
+            value:
+              conditions:
+                requirement_empty_hand:
+                  type: item-in-hand
+                  value:
+                    item: AIR
+              actions:
+                action_0:
+                  type: swing-hand
+                  value: true
+                action_1:
+                  type: break
+                  value: true
+  grow-conditions:
+    default:
+      point: 1
+      conditions:
+        condition_1:
+          type: suitable-season
+          value:
+          - Summer
+          - Autumn
+        condition_2:
+          type: water-more-than
+          value: 0
+  death-conditions:
+    unsuitable_season:
+      model: customcrops:crop_stage_death
+      conditions:
+        condition_1:
+          type: unsuitable-season
+          value:
+          - Winter
+          - Spring
+    crow_attack:
+      conditions:
+        condition_1:
+          type: crow-attack
+          value:
+            chance: 0.01
+            fly-model: customcrops:crow_fly
+            stand-model: customcrops:crow_stand
+      delay: 150
+  custom-bone-meal:
+    bone_meal_1:
+      item: BONE_MEAL
+      chance:
+        '2': 0.2
+        '1': 0.6
+      actions:
+        swing_action:
+          type: swing-hand
+          value: true
+        particle_action:
+          type: particle
+          value:
+            particle: VILLAGER_HAPPY
+            count: 5
+            x: 0.5
+            y: 0.5
+            z: 0.5
+            offset-x: 0.3
+            offset-y: 0.3
+            offset-z: 0.3
+        sound_action:
+          type: sound
+          value:
+            key: minecraft:item.bone_meal.use
+            source: player
+            volume: 1
+            pitch: 1

@@ -1,0 +1,15 @@
+Id: cubee-kick
+MythicMob: cubee-kick
+Permission: mcpet.cubee-kick
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §bKick §2Cubee
+  Description:
+  - §fThis cubee will make you feel so cool!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191036
+
+# c1d8afcb98ec728e8f78149f12543142

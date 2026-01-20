@@ -1,0 +1,29 @@
+info:
+  namespace: rpg_essentials_core
+items:
+  coin:
+    display_name: "coin"
+    permission: coin
+    resource:
+      material: PAPER
+      model_id: 50000
+      generate: false
+      model_path: rpg_essentials_core_models/coin
+  coin_bundle:
+    display_name: "coin_bundle"
+    permission: coin_bundle
+    resource:
+      material: PAPER
+      model_id: 50002
+      generate: false
+      model_path: rpg_essentials_core_models/coin_bundle
+  coin_stacked:
+    display_name: "coin_stacked"
+    permission: coin_stacked
+    resource:
+      material: PAPER
+      model_id: 50001
+      generate: false
+      model_path: rpg_essentials_core_models/coin_stacked
+
+#24f35df792b6ddcf3baf6e41e84f2dde

@@ -1,0 +1,35 @@
+location: SpawnRPG:18.457:64.000:-154.515
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:Clock'
+    height: 0.6
+  - content: '&#ffa800&lT&#ffad00&lo&#ffb100&lp &#feb600&lT&#feba00&li&#febf00&le&#fec300&lm&#fec800&lp&#fdcc00&lo
+      &#fdd100&lJ&#fdd500&luego'
+    height: 0.3
+  - content: '&e#1 &6%ajlb_lb_statistic_time_played_1_alltime_name% §8- §f%ajlb_lb_statistic_time_played_1_alltime_value%'
+    height: 0.3
+  - content: '&e#2 &6%ajlb_lb_statistic_time_played_2_alltime_name% §8- §f%ajlb_lb_statistic_time_played_2_alltime_value%'
+    height: 0.3
+  - content: '&e#3 &6%ajlb_lb_statistic_time_played_3_alltime_name% §8- §f%ajlb_lb_statistic_time_played_3_alltime_value%'
+    height: 0.3
+  - content: '&e#4 &6%ajlb_lb_statistic_time_played_4_alltime_name% §8- §f%ajlb_lb_statistic_time_played_4_alltime_value%'
+    height: 0.3
+  - content: '&e#5 &6%ajlb_lb_statistic_time_played_5_alltime_name% §8- §f%ajlb_lb_statistic_time_played_5_alltime_value%'
+    height: 0.3
+  - content: '&e#6 &6%ajlb_lb_statistic_time_played_6_alltime_name% §8- §f%ajlb_lb_statistic_time_played_6_alltime_value%'
+    height: 0.3
+  - content: '&e#7 &6%ajlb_lb_statistic_time_played_7_alltime_name% §8- §f%ajlb_lb_statistic_time_played_7_alltime_value%'
+    height: 0.3
+  - content: '&e#8 &6%ajlb_lb_statistic_time_played_8_alltime_name% §8- §f%ajlb_lb_statistic_time_played_8_alltime_value%'
+    height: 0.3
+  - content: '&e#9 &6%ajlb_lb_statistic_time_played_9_alltime_name% §8- §f%ajlb_lb_statistic_time_played_9_alltime_value%'
+    height: 0.3
+  - content: '&e#10 &6%ajlb_lb_statistic_time_played_10_alltime_name% §8- §f%ajlb_lb_statistic_time_played_10_alltime_value%'
+    height: 0.3
+  actions: {}

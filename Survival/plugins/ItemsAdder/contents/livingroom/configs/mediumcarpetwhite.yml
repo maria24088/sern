@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  mediumcarpetwhite:
+    display_name: "Medium Carpet White"
+    permission: livingroom.mediumcarpetwhite
+    resource:
+      material: PAPER
+      generate: false
+      model_path: mediumcarpetwhite
+    behaviours:
+      furniture:
+        light_level: 13

@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/ink_sac"
+  },
+    "overrides": [
+		{"predicate": {"custom_model_data":13370007}, "model": "littleroom_staff_pack:gravita_staff_off"},
+		{"predicate": {"custom_model_data":13370008}, "model": "littleroom_staff_pack:gravita_staff_on"},
+		{"predicate": {"custom_model_data":13370009}, "model": "littleroom_staff_pack:incendia_staff_off"},
+		{"predicate": {"custom_model_data":13370010}, "model": "littleroom_staff_pack:incendia_staff_on"},
+		{"predicate": {"custom_model_data":13370011}, "model": "littleroom_staff_pack:ice_staff_off"},
+		{"predicate": {"custom_model_data":13370012}, "model": "littleroom_staff_pack:ice_staff_on"},
+		{"predicate": {"custom_model_data":13370013}, "model": "littleroom_staff_pack:incendia_fireball"},
+		{"predicate": {"custom_model_data":13370014}, "model": "littleroom_staff_pack:ice_staff_icespike_1"},
+		{"predicate": {"custom_model_data":13370015}, "model": "littleroom_staff_pack:ice_staff_icespike_2"},
+		{"predicate": {"custom_model_data":13370016}, "model": "littleroom_staff_pack:ice_staff_icespike_3"},
+		{"predicate": {"custom_model_data":13370017}, "model": "littleroom_staff_pack:noxus_staff_off"},
+		{"predicate": {"custom_model_data":13370018}, "model": "littleroom_staff_pack:noxus_staff_on"},
+		{"predicate": {"custom_model_data":13370019}, "model": "littleroom_staff_pack:blood_staff_off"},
+		{"predicate": {"custom_model_data":13370020}, "model": "littleroom_staff_pack:blood_staff_on"}
+        ]
+}

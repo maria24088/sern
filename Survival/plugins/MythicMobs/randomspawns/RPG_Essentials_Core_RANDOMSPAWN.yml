@@ -1,0 +1,15 @@
+######## created by samus2002 #########
+
+NPC_Merchant_Wandering_Random:
+  MobType: NPC_Merchant_Wandering
+  Worlds: world
+  Chance: 0.001
+  Priority: 25
+  Action: ADD
+  Conditions:
+  - mobsinchunk{a=<1} true
+  - outside true
+  - onblock{b=GRASS_BLOCK,DIRT,SAND,STONE}
+  - biome TAIGA,SNOWY_PLAINS,FROZEN_RIVER,ICE_SPIKES,SNOWY_TAIGA,SNOWY_BEACH,GROVE,SNOWY_SLOPES,JAGGED_PEAKS,FROZEN_PEAKS false
+  
+#24f35df792b6ddcf3baf6e41e84f2dde

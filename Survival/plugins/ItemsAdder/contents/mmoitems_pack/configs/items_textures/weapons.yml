@@ -1,0 +1,275 @@
+# For textures only!!!
+info:
+  namespace: mmoitems_pack
+items:
+
+  sword2:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1001
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/harbinger_of_death
+
+  sword3:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1002
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/ark_of_the_cosmos
+
+  sword4:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1003
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/absolute_zero
+
+  sword5:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1004
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/the_trickster
+
+  sword6:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1005
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/calamity
+
+  sword7:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1006
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/mythril_greatsword
+
+  sword8:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1007
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/orichalcum_sword
+
+  sword9:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1008
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/titanium_blade
+
+  sword10:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1009
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/immolus
+
+  sword11:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1010
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/securus
+
+  sword12:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1011
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/daedalus_replica
+
+  sword13:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1012
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/cobra
+
+  sword14:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1013
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/wind_blade
+
+  sword15:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1014
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/flesh_flayer
+
+  sword16:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1015
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/fury_katana
+
+  sword17:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1016
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/paladin_hammer
+
+  sword18:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1017
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/hemophobia
+
+  sword19:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1018
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/fearmonger
+
+  sword20:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1019
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/deathbringer
+
+  sword21:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1020
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/executioner_blade
+
+  sword22:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1021
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/shadow
+
+  sword23:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1022
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/rememberence
+
+  sword24:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1023
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/silverlight
+
+  sword25:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1024
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/sub_zero
+
+  sword26:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1025
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/duskshadow
+
+  sword27:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1026
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/earthbound
+
+
+  sword28:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1027
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/guillotine
+
+  sword29:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1028
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/last_breath
+
+  sword30:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1029
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/withered
+
+  sword31:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1030
+      material: IRON_SWORD
+      textures:
+      - hyronic_pack/items/sword/justice

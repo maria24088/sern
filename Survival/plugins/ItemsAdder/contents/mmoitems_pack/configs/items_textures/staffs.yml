@@ -1,0 +1,112 @@
+# For textures only!!!
+info:
+  namespace: mmoitems_pack
+items:
+
+  staff1:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1000
+      material: STICK
+      textures:
+      - hyronic_pack/items/staff/cataclysm
+
+  staff2:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1001
+      material: STICK
+      textures:
+      - hyronic_pack/items/staff/frigid
+
+  staff3:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1002
+      material: STICK
+      textures:
+      - hyronic_pack/items/staff/scorpio
+
+  staff4:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1003
+      material: STICK
+      textures:
+      - hyronic_pack/items/staff/starcaller
+
+  staff5:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1004
+      material: STICK
+      textures:
+      - hyronic_pack/items/staff/witchcraft
+
+  staff6:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1005
+      material: STICK
+      textures:
+      - hyronic_pack/items/staff/continuum
+
+  staff7:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1006
+      material: STICK
+      textures:
+      - hyronic_pack/items/staff/smite
+
+  staff8:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1007
+      material: STICK
+      textures:
+      - hyronic_pack/items/staff/voidwalker
+
+  staff9:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1008
+      material: STICK
+      textures:
+      - hyronic_pack/items/staff/disrupter
+
+  staff10:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1009
+      material: STICK
+      textures:
+      - hyronic_pack/items/staff/blightspore
+
+  staff11:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1010
+      material: STICK
+      textures:
+      - hyronic_pack/items/staff/event_horizon
+
+  staff12:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1011
+      material: STICK
+      textures:
+      - hyronic_pack/items/staff/voodoo

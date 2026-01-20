@@ -1,0 +1,35 @@
+info:
+  namespace: 3b_soul_skull
+items:
+  soul_skull_cosmetics_wings:
+    display_name: Soul Skull Wings Cosmetics
+    permission: 3b_soul_skull.soul_skull_cosmetics_wings
+    resource:
+      generate: false
+      model_path: wings_cosmetic
+      material: POTION
+      model_id: 9926717
+  soul_skull_cosmetics_wings_self:
+    display_name: Soul Skull Wings Cosmetics Self
+    permission: 3b_soul_skull.soul_skull_cosmetics_wings_self
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self
+      material: POTION
+      model_id: 9926718
+  soul_skull_cosmetics_wings_self_2:
+    display_name: Soul Skull Wings Cosmetics Self 2
+    permission: 3b_soul_skull.soul_skull_cosmetics_wings_self_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self_2
+      material: POTION
+      model_id: 9926719
+  soul_skull_cosmetics_wings_normal_2:
+    display_name: Soul Skull Wings Cosmetics Normal 2
+    permission: 3b_soul_skull.soul_skull_cosmetics_wings_normal_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_normal_2
+      material: POTION
+      model_id: 9926720

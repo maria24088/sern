@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  singlecouchyellow:
+    display_name: "Single Couch Yellow"
+    permission: livingroom.singlecouchyellow
+    resource:
+      material: PAPER
+      generate: false
+      model_path: singlecouchyellow
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.1

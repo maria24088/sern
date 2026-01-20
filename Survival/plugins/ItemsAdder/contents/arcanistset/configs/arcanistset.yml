@@ -1,0 +1,160 @@
+info:
+  namespace: arcanistset
+items:
+  arcanist_axe:
+    display_name: Arcanist Axe
+    permission: arcanistset.axe
+    resource:
+      generate: false
+      material: IRON_AXE
+      model_path: axe
+  arcanist_bow:
+    display_name: Arcanist Bow
+    permission: arcanistset.bow
+    resource:
+      generate: false
+      material: BOW
+      model_path: bow
+  arcanist_chest:
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+    display_name: Arcanist Chest
+    permission: arcanistset.chest
+    resource:
+      generate: false
+      material: SEA_LANTERN
+      model_path: chest
+  arcanist_crossbow:
+    display_name: Arcanist Crossbow
+    permission: arcanistset.crossbow
+    resource:
+      generate: false
+      material: CROSSBOW
+      model_path: crossbow
+  arcanist_fishing_rod:
+    display_name: Arcanist Fishing Rod
+    permission: arcanistset.fishing_rod
+    resource:
+      generate: false
+      material: FISHING_ROD
+      model_path: fishing_rod
+  arcanist_greatsword:
+    display_name: Arcanist Greatsword
+    permission: arcanistset.greatsword
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: greatsword
+  arcanist_hammer:
+    display_name: Arcanist Hammer
+    permission: arcanistset.hammer
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: hammer
+  arcanist_hat:
+    behaviours:
+      hat: true
+    display_name: Arcanist Hat
+    permission: arcanistset.hat
+    resource:
+      generate: false
+      material: PAPER
+      model_path: helmet
+  arcanist_hoe:
+    display_name: Arcanist Hoe
+    permission: arcanistset.hoe
+    resource:
+      generate: false
+      material: IRON_HOE
+      model_path: hoe
+  arcanist_key:
+    display_name: Arcanist Key
+    permission: arcanistset.key
+    resource:
+      generate: false
+      material: PAPER
+      model_path: key
+  arcanist_pickaxe:
+    display_name: Arcanist Pickaxe
+    permission: arcanistset.pickaxe
+    resource:
+      generate: false
+      material: IRON_PICKAXE
+      model_path: pickaxe
+  arcanist_scythe:
+    display_name: Arcanist Scythe
+    permission: arcanistset.scythe
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: scythe
+  arcanist_shield:
+    display_name: Arcanist Shield
+    permission: arcanistset.shield
+    resource:
+      generate: false
+      material: SHIELD
+      model_path: shield
+  arcanist_shovel:
+    display_name: Arcanist Shovel
+    permission: arcanistset.shovel
+    resource:
+      generate: false
+      material: IRON_SHOVEL
+      model_path: shovel
+  arcanist_spear:
+    display_name: Arcanist Spear
+    permission: arcanistset.spear
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: spear
+  arcanist_staff:
+    display_name: Arcanist Staff
+    permission: arcanistset.staff
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: staff
+  arcanist_sword:
+    display_name: Arcanist Sword
+    permission: arcanistset.sword
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: sword
+  arcanist_trident:
+    display_name: Arcanist Trident
+    permission: arcanistset.trident
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: trident
+  arcanist_wings:
+    display_name: Arcanist Wings
+    permission: arcanistset.wings
+    resource:
+      generate: false
+      material: PAPER
+      model_path: wings
+  arcanist_backpack:
+    display_name: Arcanist Backpack
+    permission: arcanistset.backpack
+    resource:
+      generate: false
+      material: PAPER
+      model_path: backpack

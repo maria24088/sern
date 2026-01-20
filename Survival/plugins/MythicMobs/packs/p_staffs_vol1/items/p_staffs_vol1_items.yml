@@ -1,0 +1,202 @@
+p_staff_bee_keeper:
+  Display: '<b><#FFC863>Bee Keeper Staff'
+  Lore:
+  - '<gray>12 magic damage'
+  - '<gray>15% critical chance'
+  - '<gray>Fast speed'
+  - '<gray>Average knockback'
+  - '<white>Swarm Strike <gold>[RMB]'
+  Id: CARROT_ON_A_STICK
+  Model: 1001
+  Generation: item/bee_keeper_staff
+  Skills:
+  - skill{skill=[
+    - projectile{v=14;hnp=true;hp=true;sB=true;sE=true;i=1;bullettype=MOB;mob=p_staff_bee;bulletmatchdirection=true;bulletyoffset=0;forwardoffset=1;hitself=false;hitconditions=[ - hasTag{tag=prop} false ];maxrange=25;
+                onStart=[
+                - playAnimation{animation=0} @self{targetCreative=true}
+                - sound{s=entity.evoker.cast_spell;p=1.7;v=0.1} @origin
+                - sound{sound=block.beehive.exit;p=<random.float.1to2>;v=0.2} @origin
+                ];
+                onTick=[
+                - particles{p=DUST_COLOR_TRANSITION;c1=#FFC863;c2=#3C241B;size=1;a=4;hs=0.05;vs=0.05;speed=0.01} @origin
+                ];
+                onEnd=[
+                - particles{p=BLOCK_CRACK;m=HONEY_BLOCK;a=8;hs=0.05;vs=0.05;speed=0.09} @origin
+                - particles{p=POOF;a=2;hs=0.05;vs=0.05;speed=0.09} @origin
+                - sound{sound=entity.bee.death;p=<random.float.1to2>;v=0.3} @origin
+                ];
+                onHit=[
+                - particles{particle=spell_mob_ambient;a=3;speed=0.6;hs=0.2;vs=0.2;color=#23670D} @origin
+                - itemspray{items=STICK;amount=1;d=4;force=0.1;radius=0} @origin
+                - potion{type=POISON;duration=60;force=true;level=1}
+                - randomskill{skills=
+                  [ - damage{a=12} ] 1,
+                  [ - damage{a=25} ] 0.15}
+                ]} @targetlocation
+    ];cd=0.3} @origin ~onUse
+p_staff_spider_queen:
+  Display: '<b><#840000>Spider Queen Staff'
+  Lore:
+  - '<gray>10 magic damage'
+  - '<gray>7% critical chance'
+  - '<gray>Fast speed'
+  - '<gray>Average knockback'
+  - '<white>Spider''s Roulette <gold>[RMB]'
+  Id: CARROT_ON_A_STICK
+  Model: 1002
+  Generation: item/spider_queen_staff
+  Skills:
+  - skill{skill=[
+    - randomskill{skills=[
+      - projectile{v=20;hnp=true;hp=true;sB=true;sE=true;i=1;bulletType=DISPLAY;bulletMaterial=COBWEB;bulletScale="0.7";ty=-0.2;forwardoffset=1;hitself=false;maxrange=25;hitconditions=[ - hasTag{tag=prop} false ];
+                onStart=[
+                - playAnimation{animation=0} @self{targetCreative=true}
+                - sound{s=entity.evoker.cast_spell;p=1.7;v=0.1} @origin
+                ];
+                onTick=[
+                - particles{p=instant_effect;a=5;hs=0.05;vs=0.05;speed=0} @origin
+                - particles{p=BLOCK_CRACK;m=COBWEB;a=5;hs=0.05;vs=0.05;speed=0} @origin
+                ];
+                onEnd=[
+                - particles{p=instant_effect;a=1;hs=0.15;vs=0.15;speed=0.02} @origin
+                - particles{p=BLOCK_CRACK;m=COBWEB;a=12;hs=0.15;vs=0.15} @origin
+                - sound{s=block.grass.place;p=<random.float.1to2>;v=0.2} @origin
+                - particles{p=REDSTONE;c=#FFFFFF;a=3;hs=0.15;vs=0.15} @origin
+                - itemspray{i=COBWEB;a=2;r=0.1;v=0.2} @origin
+                - itemspray{i=STRING;a=10;r=0.1;v=0.3} @origin
+                ];
+                onHit=[
+                - potion{type=SLOWNESS;duration=60;force=true;level=1}
+                - damage{amount="10 * <random.1to2>"}
+                ]} @targetlocation
+      ],
+      [
+      - projectile{v=20;hnp=true;hp=true;sB=true;sE=true;i=1;bulletType=DISPLAY;bulletMaterial=FERMENTED_SPIDER_EYE;bulletScale="0.7";ty=-0.2;forwardoffset=1;hitself=false;maxrange=25;hitconditions=[ - hasTag{tag=prop} false ];
+                onStart=[
+                - playAnimation{animation=0} @self{targetCreative=true}
+                - sound{s=entity.evoker.cast_spell;p=1.7;v=0.1} @origin
+                - sound{sound=entity.spider.hurt;p=1.7;v=0.2} @origin
+                ];
+                onTick=[
+                - particles{p=witch;a=4;hs=0.05;vs=0.05;speed=0} @origin
+                - particles{p=REDSTONE;c=#660066;a=3;hs=0.15;vs=0.15} @origin
+                ];
+                onEnd=[
+                - particles{p=instant_effect;a=1;hs=0.15;vs=0.15;speed=0.02} @origin
+                - sound{sound=entity.spider.death;p=<random.float.1to2>;v=0.2} @origin
+                - particles{p=REDSTONE;c=#660066;a=3;hs=0.15;vs=0.15} @origin
+                - itemspray{i=SPIDER_EYE;a=2;r=0.1;v=0.2} @origin
+                ];
+                onHit=[
+                - potion{type=POISON;duration=60;force=true;level=1}
+                - setvar{var=skill.x;value=}
+                - damage{amount="10 * <random.1to2>"}
+                ]} @targetlocation
+      ]}
+    ];cd=0.3} @origin ~onUse
+p_staff_plasma:
+  Display: '<b><#FF00FF>Plasma Staff'
+  Lore:
+  - '<gray>18 magic damage'
+  - '<gray>10% critical chance'
+  - '<gray>Fast speed'
+  - '<gray>Average knockback'
+  - '<white>Blast <gold>[RMB]'
+  Id: CARROT_ON_A_STICK
+  Model: 1003
+  Generation: item/plasma_staff
+  Skills:
+  - skill{skill=[
+    - playAnimation{animation=0} @self{targetCreative=true}
+    - sound{s=entity.evoker.cast_spell;p=1.7;v=0.1} @origin
+    - raytrace{
+      entitySkill=[
+        - randomskill{skills=
+          [ - damage{a=18} ] 1,
+          [ - damage{a=36} ] 0.1}
+      ];
+      locationSkill=[
+        - particleline{particle=spark;fromorigin=true;origin=@Origin;startyoffset=-0.3;speed=0.2} 
+        - particleline{particle=redstone;c=#D59CFC;hs=0.1;vs=0.1;a=3;size=0.8;fromorigin=true;origin=@Origin;startyoffset=-0.3}
+        - particles{p=firework;a=10;speed=0.15;vspread=0.3;hs=0.3}
+        - sound{s=block.amethyst_block.break;p=<random.float.1to2>;v=0.4}
+        - summon{type=p_staff_plasma_start}
+      ];maxdistance=25;} @targetlocation
+    ];cd=0.3} @origin ~onUse
+p_staff_soul_fire:
+  Display: '<b><#00FFFF>Soul Fire Staff'
+  Lore:
+  - '<gray>8 magic damage'
+  - '<gray>5% critical chance'
+  - '<gray>Extremely Fast speed'
+  - '<gray>No knockback'
+  - '<white>Soul Lantern <gold>[RMB]'
+  Id: CARROT_ON_A_STICK
+  Model: 1004
+  Generation: item/soul_fire_staff
+  Skills:
+  - skill{skill=[
+    - sound{s=entity.blaze.shoot;p=1.7;v=0.3} @origin
+    - playAnimation{animation=0} @self{targetCreative=true}
+    - projectile{v=19;hnp=true;hp=true;sB=true;sE=true;i=1;mr=15;hitconditions=[ - hasTag{tag=prop} false ];
+                onStart=[
+                - particle{particle=sculk_soul;a=1;hs=0.2;vs=0.2} @origin
+                - sound{sound=particle.soul_escape;p=1.7;v=0.3} @origin
+                ];
+                onTick=[
+                - particles{p=soul_fire_flame;a=10;hs=0.25;vs=0.25;speed=0.3;directional=true;fo=true} @ProjectileForward{f=2}
+                - particles{p=SMOKE;a=1;hs=0.05;vs=0.05;speed=0.01} @ProjectileForward{f=-0.2}
+                ];
+                onEnd=[
+                - particles{p=SMOKE_LARGE;a=2;hs=0.05;vs=0.05;speed=0.09} @origin
+                - sound{s=block.fire.extinguish;p=<random.float.1to2>;v=0.1} @origin
+                - blockMask{duration=5;material=SOUL_FIRE} @blocksnearorigin{radius=0;limit=1;sort=NEAREST;onlyair=true;noair=false}
+                - particles{p=ITEM;m=SCULK;a=8;hs=0.05;vs=0.05;speed=0.09;y=0.8} @origin
+                ];
+                onHit=[
+                - randomskill{skills=
+                  [ - damage{a=8;pkb=true;pi=tru} ] 1,
+                  [ - damage{a=16;pkb=true;pi=tru} ] 0.07}
+                - ignite{d=40}
+                ];repeat=3;repeatinterval=2} @targetlocation
+    ];cd=0.3} @origin ~onUse
+p_staff_thunder:
+  Display: '<b><b><#FFD700>Thunder Staff'
+  Lore:
+  - '<gray>15 magic damage'
+  - '<gray>20% critical chance'
+  - '<gray>Fast speed'
+  - '<gray>Average knockback'
+  - '<white>Thunder Clap <gold>[RMB]'
+  Id: CARROT_ON_A_STICK
+  Model: 1005
+  Generation: item/thunder_staff
+  Skills:
+  - skill{skill=[
+    - projectile{v=30;hnp=true;hp=true;sB=true;sE=true;i=1;forwardoffset=1;hitself=false;maxrange=25;bulletScale=1;bullettype=DISPLAY;bulletmaterial=CARROT_ON_A_STICK;bulletmodel=1005;pitch=1.2;yaw=3;hitconditions=[ - hasTag{tag=prop} false ];
+      onStart=[
+      - playAnimation{animation=0} @self{targetCreative=true}
+      - sound{s=entity.evoker.cast_spell;p=1.7;v=0.1} @origin
+      - sound{sound=item.trident.throw;p=<random.float.1to2>;v=0.2} @origin
+      ];
+      onTick=[
+      - particleline{p=DUST_COLOR_TRANSITION;color1=#f0fb3e;color2=#FFFFFF;size=0.5;fromOrigin=true;origin=@projectileforward{f=-3};zigzag=true;zigzags=2;zzo=0.2;syo=<caster.var.syo>;tyo=<caster.var.tyo>} @projectileforward{f=2}
+      ];
+      onEnd=[
+      - randomskill{skills=
+        [ - damage{a=15;pi=true} ] 1,
+        [ - damage{a=30;pi=true} ] 0.07} @entitiesNearOrigin{radius=3.5}
+      - particleline{p=DUST_COLOR_TRANSITION;color1=#f0fb3e;color2=#FFFFFF;size=0.5;fromOrigin=true;origin=@origin{yoffset=15;sideOffset=<random.float.-5to5>;forwardOffset=<random.float.-5to5>};zigzag=true;zigzags=10;zzo=0.2} @ProjectileForward{f=0.01}
+      - particleline{p=DUST_COLOR_TRANSITION;color1=#f0fb3e;color2=#FFFFFF;size=0.5;fromOrigin=true;origin=@origin{yoffset=15;sideOffset=<random.float.-5to5>;forwardOffset=<random.float.-5to5>};zigzag=true;zigzags=10;zzo=0.2} @ProjectileForward{f=0.01}
+      - particleline{p=SPARK;color1=#f0fb3e;color2=#FFFFFF;size=0.5;fromOrigin=true;origin=@origin{yoffset=15;sideOffset=<random.float.-5to5>;forwardOffset=<random.float.-5to5>};zigzag=true;zigzags=10;zzo=0.2} @ProjectileForward{f=0.01}
+      - particleline{p=SPARK;color1=#f0fb3e;color2=#FFFFFF;size=0.5;fromOrigin=true;origin=@origin{yoffset=15;sideOffset=<random.float.-5to5>;forwardOffset=<random.float.-5to5>};zigzag=true;zigzags=10;zzo=0.2} @ProjectileForward{f=0.01}
+      - particles{p=FLASH;y=2;a=1} @origin
+      - particles{p=END_ROD;a=10;hs=0.5;vs=0.5;y=1.2;speed=0.15} @origin
+      - particles{p=FIREWORK;a=10;hs=0.5;vs=0.5;y=1.2;speed=0.2} @origin
+      - sound{s=entity.firework_rocket.blast_far;p=2.0;v=0.8} @origin
+      ];
+      onHit=[
+      ]} @targetlocation
+    ];cd=0.3} @origin ~onUse
+#3da47706607c96acf85876189339d6b1
+#oWVwMTeWh1bGNzTUJ1b0pGSZh0T3VERPVTUE90MFRUT4RjMZ9UM4l0NmNjVNZmMBlWciNjM

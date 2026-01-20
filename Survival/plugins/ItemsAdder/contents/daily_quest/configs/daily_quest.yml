@@ -1,0 +1,209 @@
+info:
+  namespace: daily_quest
+items:
+  reward:
+    display_name: Recompensa
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1000
+      textures:
+      - reward.png
+  easy_quest:
+    display_name: Misión Fácil
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1001
+      textures:
+      - easy_quest.png
+  medium_quest:
+    display_name: Misión Media
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1002
+      textures:
+      - medium_quest.png
+  hard_quest:
+    display_name: Misión Difícil
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1003
+      textures:
+      - hard_quest.png
+  rookie_badge:
+    display_name: Insignia de Novato
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1004      
+      textures:
+      - rookie_badge.png
+  beginner_badge:
+    display_name: Insignia de Principiante
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1005
+      textures:
+      - beginner_badge.png
+  advanced_badge:
+    display_name: Insignia de Avanzado
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1006      
+      textures:
+      - advanced_badge.png
+  locked_badge:
+    display_name: Insignia Bloqueada
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1008
+      textures:
+      - locked_badge.png
+  pro_badge:
+    display_name: Insignia Profesional
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1009
+      textures:
+      - pro_badge.png
+  expert_badge:
+    display_name: Insignia de Experto
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1010
+      textures:
+      - expert_badge.png
+  skilled_badge:
+    display_name: Insignia de Habilidoso
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1011
+      textures:
+      - skilled_badge.png
+  legend_badge:
+    display_name: Insignia de Leyenda de Misiones
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1012
+      model_path: legend_of_quests_badge
+      textures:
+      - legend_of_quests_badge.png
+  master_badge:
+    display_name: Insignia de Maestro de Misiones
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1013
+      textures:
+      - master_of_quests_badge.png
+  quest_board:
+    display_name: Tablón de Misiones
+    resource:
+      material: PAPER
+      generate: false
+      model_path: quest_board
+    behaviours:
+      furniture:
+        solid: true
+        entity: item_frame
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 3
+          height: 3
+    events:
+      placed_itemframe:
+        interact:
+          execute_commands:
+            cmd1:
+              command: 'quests'
+              as_console: false
+              delay: 0
+  empty:
+    display_name: Vacío
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1100      
+      textures:
+      - empty.png
+  button_leaderboard:
+    display_name: Clasificación
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1101
+      textures:
+      - button_leaderboard.png
+  button_badges:
+    display_name: Insignias
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1102      
+      textures:
+      - button_badges.png
+  arrow_left:
+    display_name: Flecha Izquierda
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1103
+      textures:
+      - arrow_left.png
+  arrow_right:
+    display_name: Flecha Derecha
+    resource:
+      material: SUGAR
+      generate: true
+      model_id: 1104
+      textures:
+      - arrow_right.png
+  questhead:
+    display_name: Cabeza de Misión
+    resource:
+      material: PLAYER_HEAD
+      generate: false
+      model_id: 1
+      model_path: questhead
+  leaderboardhead:
+    display_name: Cabeza de Clasificación
+    resource:
+      material: PLAYER_HEAD
+      generate: false
+      model_id: 2
+      model_path: leaderboardhead
+font_images:
+  daily_quest:
+    path: "daily_quest"
+    scale_ratio: 256
+    y_position: 21
+  quest_leaderboard:
+    path: "quest_leaderboard"
+    scale_ratio: 256
+    y_position: 23
+  quest_badges:
+    path: "quest_badges"
+    scale_ratio: 256
+    y_position: 23
+  xp_bar_white:
+    path: "xp_bar_white"
+    scale_ratio: 5
+    y_position: 5
+  badges_progress_bar:
+    path: "badges_progress_bar"
+    scale_ratio: 3
+    y_position: -50

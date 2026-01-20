@@ -1,0 +1,34 @@
+info:
+  namespace: plny_aceruin_set
+categories:
+  plny_aceruin_set:
+    name: Aceruin Animated Weapons And Tools Set
+    enabled: true
+    icon: plny_aceruin_set:plny_aceruin_set_wings
+    permission: ia.menu.plny_aceruin_set
+    items:
+    - plny_aceruin_set:plny_aceruin_sethelmet
+    - plny_aceruin_set:plny_aceruin_setchestplate
+    - plny_aceruin_set:plny_aceruin_setleggings
+    - plny_aceruin_set:plny_aceruin_setboots
+    - plny_aceruin_set:plny_aceruin_set_helmet
+    - plny_aceruin_set:plny_aceruin_set_axe
+    - plny_aceruin_set:plny_aceruin_set_pickaxe
+    - plny_aceruin_set:plny_aceruin_set_shovel
+    - plny_aceruin_set:plny_aceruin_set_hoe
+    - plny_aceruin_set:plny_aceruin_set_fishing_rod
+    - plny_aceruin_set:plny_aceruin_set_sword
+    - plny_aceruin_set:plny_aceruin_set_shield
+    - plny_aceruin_set:plny_aceruin_set_crossbow
+    - plny_aceruin_set:plny_aceruin_set_bow
+    - plny_aceruin_set:plny_aceruin_set_staff
+    - plny_aceruin_set:plny_aceruin_set_trident
+    - plny_aceruin_set:plny_aceruin_set_hammer
+    - plny_aceruin_set:plny_aceruin_set_spear
+    - plny_aceruin_set:plny_aceruin_set_scythe
+    - plny_aceruin_set:plny_aceruin_set_chest
+    - plny_aceruin_set:plny_aceruin_set_key
+    - plny_aceruin_set:plny_aceruin_set_mace
+    - plny_aceruin_set:plny_aceruin_set_wings
+
+#EkdJBzaVRmexJ2V0lXaXpENjZ1YtplMhlGdX9EdspmWpFzRWVmV240ZIhlU5JWOB1WcrZWN

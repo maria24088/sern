@@ -1,0 +1,37 @@
+little_unicorn_cosmetics_wings:
+  height: 4
+  permission: cosmetics.little_unicorn_cosmetics_wings
+  dyeable: false
+  slot: BACKPACK
+  item:
+    material: POTION
+    model-data: 9923120
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+  firstperson-item:
+    material: POTION
+    model-data: 9923119
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+little_unicorn_cosmetics_helmet:
+  height: 0
+  permission: cosmetics.little_unicorn_cosmetics_helmet
+  dyeable: false
+  slot: HELMET
+  item:
+    material: POTION
+    model-data: 9923116
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES

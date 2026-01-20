@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  lcouchpink:
+    display_name: "L Couch Pink"
+    permission: livingroom.lcouchpink
+    resource:
+      material: PAPER
+      generate: false
+      model_path: lcouchpink
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.1

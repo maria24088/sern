@@ -1,0 +1,46 @@
+DisplayName: Companions !
+IconName: Companions !
+DefaultCategory: false
+Icon:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4440
+  id: minecraft:golden_horse_armor
+  count: 1
+  components:
+    minecraft:lore: '[{extra:["- Ebony Cat Cubee"],text:""},{extra:["- Gothic Hag
+      Cubee"],text:""},{extra:["- Skelly Warlock Cubee"],text:""},{extra:["- Soul
+      Weaver Cubee"],text:""}]'
+    minecraft:custom_name: '{extra:["Companions"],text:""}'
+    minecraft:custom_model_data: '{floats:[12016.0f]}'
+  schema_version: 1
+Pets:
+- Pet_Cacti_Desert
+- Pet_Fire_Dragon_Fire
+- Pet_Frog_Green
+- A_Pet_Griffon_Griffon
+- A_Pet_Griffon_Khonsu
+- A_Pet_Griffon_Phoenix
+- A_Pet_Griffon_Ra
+- A_Pet_Griffon_Rockstar
+- Pet_Knight_Castle
+- B_Pet_Necromancer_Cat_Fire_Mage
+- B_Pet_Necromancer_Cat_Ice_Mage
+- B_Pet_Necromancer_Cat_Necromancer
+- B_Pet_Necromancer_Cat_Santa
+- C_Pet_Outlaw_Officer
+- C_Pet_Outlaw_Cyborg
+- C_Pet_Outlaw_Steampunk
+- C_Pet_Outlaw_Wild_West
+- D_Pet_Samurai_Shiba_Bamboo
+- D_Pet_Samurai_Shiba_New_Year
+- D_Pet_Samurai_Shiba_Pirate
+- E_Pet_Shark_Baby_Shark
+- E_Pet_Shark_Chef
+- E_Pet_Shark_Dragonborn
+- E_Pet_Shark_Oceanic
+- Pet_Unicorn_Heavenly
+
+Id: cubee-category-companions
+ExcludedCategories: []
+
+

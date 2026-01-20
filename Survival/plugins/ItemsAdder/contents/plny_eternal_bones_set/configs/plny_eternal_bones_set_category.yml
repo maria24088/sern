@@ -1,0 +1,32 @@
+info:
+  namespace: plny_eternal_bones_set
+categories:
+  plny_eternal_bones_set:
+    name: Eternal Bones Animated Weapons And Tools Set
+    enabled: true
+    icon: plny_eternal_bones_set:plny_eternal_bones_set_wings
+    permission: ia.menu.plny_eternal_bones_set
+    items:
+    - plny_eternal_bones_set:plny_eternal_bones_sethelmet
+    - plny_eternal_bones_set:plny_eternal_bones_setchestplate
+    - plny_eternal_bones_set:plny_eternal_bones_setleggings
+    - plny_eternal_bones_set:plny_eternal_bones_setboots
+    - plny_eternal_bones_set:plny_eternal_bones_set_helmet
+    - plny_eternal_bones_set:plny_eternal_bones_set_axe
+    - plny_eternal_bones_set:plny_eternal_bones_set_pickaxe
+    - plny_eternal_bones_set:plny_eternal_bones_set_shovel
+    - plny_eternal_bones_set:plny_eternal_bones_set_hoe
+    - plny_eternal_bones_set:plny_eternal_bones_set_fishing_rod
+    - plny_eternal_bones_set:plny_eternal_bones_set_sword
+    - plny_eternal_bones_set:plny_eternal_bones_set_shield
+    - plny_eternal_bones_set:plny_eternal_bones_set_crossbow
+    - plny_eternal_bones_set:plny_eternal_bones_set_bow
+    - plny_eternal_bones_set:plny_eternal_bones_set_staff
+    - plny_eternal_bones_set:plny_eternal_bones_set_trident
+    - plny_eternal_bones_set:plny_eternal_bones_set_hammer
+    - plny_eternal_bones_set:plny_eternal_bones_set_spear
+    - plny_eternal_bones_set:plny_eternal_bones_set_scythe
+    - plny_eternal_bones_set:plny_eternal_bones_set_chest
+    - plny_eternal_bones_set:plny_eternal_bones_set_key
+    - plny_eternal_bones_set:plny_eternal_bones_set_mace
+    - plny_eternal_bones_set:plny_eternal_bones_set_wings

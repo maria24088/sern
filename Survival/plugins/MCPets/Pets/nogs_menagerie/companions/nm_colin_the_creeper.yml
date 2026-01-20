@@ -1,0 +1,13 @@
+Id: nm_colin_the_creeper
+MythicMob: nm_colin_the_creeper
+Permission: pet.colin_the_creeper
+Mountable: false
+Distance: 6
+SpawnRange: 1
+ComingBackRange: 4
+Icon:
+  Name: §aColin the Creeper
+  Material: PAPER
+  CustomModelData: 435021
+
+# IWNxEmaulUUFp1YypGMjdlQvhVW1UkMVNDbU9EcspHZ2ETRiZVZ1IFdQF2UEpXOxkWbHdXN

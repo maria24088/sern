@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  smallchairwhite:
+    display_name: "Small Chair White"
+    permission: livingroom.smallchairwhite
+    resource:
+      material: PAPER
+      generate: false
+      model_path: smallchairwhite
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.1

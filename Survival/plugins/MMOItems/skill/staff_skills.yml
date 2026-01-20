@@ -1,0 +1,94 @@
+SWARM_STRIKE:
+  name: Swarm Strike
+  modifier:
+    timer:
+      name: Timer
+      default-value: 0
+    delay:
+      name: Delay
+      default-value: 0
+    mana:
+      name: Mana
+      default-value: 0
+    stamina:
+      name: Stamina
+      default-value: 0
+    cooldown:
+      name: Cooldown
+      default-value: 0
+
+SPIDER_ROULETTE:
+  name: Spider's Roulette
+  modifier:
+    timer:
+      name: Timer
+      default-value: 0
+    delay:
+      name: Delay
+      default-value: 0
+    mana:
+      name: Mana
+      default-value: 0
+    stamina:
+      name: Stamina
+      default-value: 0
+    cooldown:
+      name: Cooldown
+      default-value: 0
+
+PLASMA_BLAST:
+  name: Plasma Blast
+  modifier:
+    timer:
+      name: Timer
+      default-value: 0
+    delay:
+      name: Delay
+      default-value: 0
+    mana:
+      name: Mana
+      default-value: 0
+    stamina:
+      name: Stamina
+      default-value: 0
+    cooldown:
+      name: Cooldown
+      default-value: 0
+
+SOUL_LANTERN:
+  name: Soul Lantern
+  modifier:
+    timer:
+      name: Timer
+      default-value: 0
+    delay:
+      name: Delay
+      default-value: 0
+    mana:
+      name: Mana
+      default-value: 0
+    stamina:
+      name: Stamina
+      default-value: 0
+    cooldown:
+      name: Cooldown
+      default-value: 0
+
+THUNDER_CLAP:
+  name: Thunder Clap
+  modifier:
+    timer:
+      name: Timer
+      default-value: 0
+    delay:
+      name: Delay
+      default-value: 0
+    mana:
+      name: Mana
+      default-value: 0
+    stamina:
+      name: Stamina
+      default-value: 0
+    cooldown:
+      name: Cooldown
+      default-value: 

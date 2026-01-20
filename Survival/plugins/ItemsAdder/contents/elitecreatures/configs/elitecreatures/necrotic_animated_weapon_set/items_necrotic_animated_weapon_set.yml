@@ -1,0 +1,189 @@
+info:
+  namespace: elitecreatures
+armors_rendering:
+  necrotic_animated_weapon_set:
+    color: '#8c1973'
+    layer_1: necrotic_animated_weapon_set/armor/necrotic_armor_layer_1
+    layer_2: necrotic_animated_weapon_set/armor/necrotic_armor_layer_2
+    use_color: false
+items:
+
+  necrotic_animated_weapon_set_helmet:
+    display_name: Necrotic Helmet
+    resource:
+      generate: true
+      textures:
+      - necrotic_animated_weapon_set/armor/necrotic_helmet.png
+    specific_properties:
+      armor:
+        slot: head
+        custom_armor: necrotic_animated_weapon_set
+  necrotic_animated_weapon_set_chestplate:
+    display_name: Necrotic Chestplate
+    resource:
+      generate: true
+      textures:
+      - necrotic_animated_weapon_set/armor/necrotic_chestplate.png
+    specific_properties:
+      armor:
+        slot: chest
+        custom_armor: necrotic_animated_weapon_set
+  necrotic_animated_weapon_set_leggings:
+    display_name: Necrotic Leggings
+    resource:
+      generate: true
+      textures:
+      - necrotic_animated_weapon_set/armor/necrotic_leggings.png
+    specific_properties:
+      armor:
+        slot: legs
+        custom_armor: necrotic_animated_weapon_set
+  necrotic_animated_weapon_set_boots:
+    display_name: Necrotic Boots
+    resource:
+      generate: true
+      textures:
+      - necrotic_animated_weapon_set/armor/necrotic_boots.png
+    specific_properties:
+      armor:
+        slot: FEET
+        custom_armor: necrotic_animated_weapon_set
+  
+  necrotic_animated_weapon_set_axe:
+    display_name: Axe
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: necrotic_animated_weapon_set/axe
+  necrotic_animated_weapon_set_backpack:
+    display_name: Backpack
+    resource:
+      material: PAPER
+      generate: false
+      model_path: necrotic_animated_weapon_set/backpack
+  necrotic_animated_weapon_set_bow:
+    display_name: Bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: necrotic_animated_weapon_set/bow
+  necrotic_animated_weapon_set_chest:
+    display_name: Chest
+    resource:
+      material: PAPER
+      generate: false
+      model_path: necrotic_animated_weapon_set/chest
+    behaviours:
+      furniture:
+        solid: true
+        fixed_rotation: true
+        entity: armor_stand
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  necrotic_animated_weapon_set_crossbow:
+    display_name: Crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: necrotic_animated_weapon_set/crossbow
+  necrotic_animated_weapon_set_dagger:
+    display_name: Dagger
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: necrotic_animated_weapon_set/dagger
+  necrotic_animated_weapon_set_fishing_rod:
+    display_name: Fishing Rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: necrotic_animated_weapon_set/fishing_rod
+  necrotic_animated_weapon_set_greatsword:
+    display_name: Greatsword
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: necrotic_animated_weapon_set/greatsword
+  necrotic_animated_weapon_set_hammer:
+    display_name: Hammer
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: necrotic_animated_weapon_set/hammer
+  necrotic_animated_weapon_set_hat:
+    display_name: Hat
+    resource:
+      material: PAPER
+      generate: false
+      model_path: necrotic_animated_weapon_set/hat
+    behaviours:
+      hat: true
+  necrotic_animated_weapon_set_hoe:
+    display_name: Hoe
+    resource:
+      material: DIAMOND_HOE
+      generate: false
+      model_path: necrotic_animated_weapon_set/hoe
+  necrotic_animated_weapon_set_key:
+    display_name: Key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: necrotic_animated_weapon_set/key
+  necrotic_animated_weapon_set_mace:
+    display_name: Mace
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: necrotic_animated_weapon_set/mace
+  necrotic_animated_weapon_set_pickaxe:
+    display_name: Pickaxe
+    resource:
+      material: DIAMOND_PICKAXE
+      generate: false
+      model_path: necrotic_animated_weapon_set/pickaxe
+  necrotic_animated_weapon_set_shield:
+    display_name: Shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: necrotic_animated_weapon_set/shield
+  necrotic_animated_weapon_set_shovel:
+    display_name: Shovel
+    resource:
+      material: DIAMOND_SHOVEL
+      generate: false
+      model_path: necrotic_animated_weapon_set/shovel
+  necrotic_animated_weapon_set_spear:
+    display_name: Spear
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: necrotic_animated_weapon_set/spear
+  necrotic_animated_weapon_set_staff:
+    display_name: Staff
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: necrotic_animated_weapon_set/staff
+  necrotic_animated_weapon_set_sword:
+    display_name: Sword
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: necrotic_animated_weapon_set/sword
+  necrotic_animated_weapon_set_wing:
+    display_name: Wing
+    resource:
+      material: PAPER
+      generate: false
+      model_path: necrotic_animated_weapon_set/wing

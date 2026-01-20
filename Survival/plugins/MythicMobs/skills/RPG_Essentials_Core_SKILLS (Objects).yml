@@ -1,0 +1,287 @@
+######## created by samus2002 #########
+
+
+# OBJECTS #
+
+
+# Storage Chest #
+
+OBJ_STORAGE_CHEST_INTERACT:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  Skills:
+  - state{s=open;speed=1} @self
+  - sound{sound=block.chest.open;volume=0.7;pitch=0.9} @self
+  - sudoskill{s=OBJ_STORAGE_CHEST_INTERACT_COMMAND;cat=true} @trigger
+OBJ_STORAGE_CHEST_INTERACT_COMMAND:
+  Skills:
+  - command{c='enderchest';asCaster=true;asTarget=false;asOp=true}
+
+
+
+
+
+# Waypoint Gate #
+
+OBJ_WAYPOINT_GATE_INTERACT:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  Skills:
+  - sound{sound=block.end_portal_frame.fill;volume=0.7;pitch=0.9} @self
+  - sudoskill{s=OBJ_WAYPOINT_GATE_INTERACT_COMMAND;cat=true} @trigger
+OBJ_WAYPOINT_GATE_INTERACT_COMMAND:
+  Skills:
+  - command{c='dm open waypoints';asCaster=true;asTarget=false;asOp=true}
+
+# TOWN WAYPOINT
+OBJ_WAYPOINT_GATE_TOWN:
+  Skills:
+  - skill{s=OBJ_WAYPOINT_GATE_TOWN_SKILL;world=medieval2;positionx=1640.494;positiony=66;positionz=-773.373}
+OBJ_WAYPOINT_GATE_TOWN_SKILL:
+  Skills:
+  - potion{type=SLOW;duration=60;level=50;hasParticles=false;ow=true} @self
+  - message{m="&f&lTeleporting to &b&lTown &f&lin 3 seconds..."} @self
+  - sound{sound=block.portal.trigger;volume=0.8;pitch=1.25} @self
+  - delay 20
+  - skill{s=OBJ_WAYPOINT_CANCELLED} ?moving
+  - cancelSkill ?moving
+  - delay 10
+  - skill{s=OBJ_WAYPOINT_CANCELLED} ?moving
+  - cancelSkill ?moving
+  - delay 10
+  - skill{s=OBJ_WAYPOINT_CANCELLED} ?moving
+  - cancelSkill ?moving
+  - delay 10
+  - skill{s=OBJ_WAYPOINT_CANCELLED} ?moving
+  - cancelSkill ?moving
+  - delay 10
+  - skill{s=OBJ_WAYPOINT_CANCELLED} ?moving
+  - cancelSkill ?moving
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0} @self
+  - delay 1
+  - teleportto{world=<skill.world>;location=<skill.positionx>,<skill.positiony>,<skill.positionz>} @self
+  - sound{sound=entity.fox.teleport;volume=0.8;pitch=0.9} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0;delay=1} @self
+
+# FARM WAYPOINT
+OBJ_WAYPOINT_GATE_FARM:
+  Skills:
+  - skill{s=OBJ_WAYPOINT_GATE_FARM_SKILL;world=medieval2;positionx=1670.449;positiony=71;positionz=-915.538}
+OBJ_WAYPOINT_GATE_FARM_SKILL:
+  Skills:
+  - potion{type=SLOW;duration=60;level=50;hasParticles=false;ow=true} @self
+  - message{m="&f&lTeleporting to &b&lFarm &f&lin 3 seconds..."} @self
+  - sound{sound=block.portal.trigger;volume=0.8;pitch=1.25} @self
+  - delay 20
+  - skill{s=OBJ_WAYPOINT_CANCELLED} ?moving
+  - cancelSkill ?moving
+  - delay 10
+  - skill{s=OBJ_WAYPOINT_CANCELLED} ?moving
+  - cancelSkill ?moving
+  - delay 10
+  - skill{s=OBJ_WAYPOINT_CANCELLED} ?moving
+  - cancelSkill ?moving
+  - delay 10
+  - skill{s=OBJ_WAYPOINT_CANCELLED} ?moving
+  - cancelSkill ?moving
+  - delay 10
+  - skill{s=OBJ_WAYPOINT_CANCELLED} ?moving
+  - cancelSkill ?moving
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0} @self
+  - delay 1
+  - teleportto{world=<skill.world>;location=<skill.positionx>,<skill.positiony>,<skill.positionz>} @self
+  - sound{sound=entity.fox.teleport;volume=0.8;pitch=0.9} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0;delay=1} @self
+
+
+OBJ_WAYPOINT_CANCELLED:
+  Skills:
+  - sound{sound=entity.item.break;volume=0.8;pitch=0.9} @self
+  - stopsound{s=block.portal.trigger} @self
+  - message{m="&c&lTeleportation cancelled!"} @self
+  - potionclear{type=SLOW} @self
+
+
+
+
+# Portals #
+
+
+# BASIC PORTAL
+
+OBJ_PORTAL_BASIC_INTERACT:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  Skills:
+  - sound{sound=block.end_portal_frame.fill;volume=0.7;pitch=0.9} @self
+  - sudoskill{s=OBJ_PORTAL_BASIC_INTERACT_COMMAND;cat=true} @trigger
+OBJ_PORTAL_BASIC_INTERACT_COMMAND:
+  Skills:
+  - command{c='dm open portal_basic';asCaster=true;asTarget=false;asOp=true}
+
+# WILDS
+OBJ_PORTAL_BASIC_WILDS:
+  Skills:
+  - skill{s=OBJ_PORTAL_BASIC_WILDS_SKILL;world=world;positionx=599.5;positiony=77;positionz=1324.5}
+OBJ_PORTAL_BASIC_WILDS_SKILL:
+  Skills:
+  - message{m="&f&lTeleporting to &b&lWild..."} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0} @self
+  - delay 1
+  - teleportto{world=<skill.world>;location=<skill.positionx>,<skill.positiony>,<skill.positionz>} @self
+  - sound{sound=entity.fox.teleport;volume=0.8;pitch=0.9} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0;delay=1} @self
+# NETHER
+OBJ_PORTAL_BASIC_NETHER:
+  Skills:
+  - skill{s=OBJ_PORTAL_BASIC_NETHER_SKILL;world=world_nether;positionx=-302.753;positiony=80;positionz=-336.348}
+OBJ_PORTAL_BASIC_NETHER_SKILL:
+  Skills:
+  - message{m="&f&lTeleporting to &b&lNether..."} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0} @self
+  - delay 1
+  - teleportto{world=<skill.world>;location=<skill.positionx>,<skill.positiony>,<skill.positionz>} @self
+  - sound{sound=entity.fox.teleport;volume=0.8;pitch=0.9} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0;delay=1} @self
+
+
+
+
+# DUNGEON PORTAL
+
+OBJ_PORTAL_DUNGEON_INTERACT:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  Skills:
+  - sound{sound=block.end_portal_frame.fill;volume=0.7;pitch=0.9} @self
+  - sudoskill{s=OBJ_PORTAL_DUNGEON_INTERACT_COMMAND;cat=true} @trigger
+OBJ_PORTAL_DUNGEON_INTERACT_COMMAND:
+  Skills:
+  - command{c='dm open portal_dungeon';asCaster=true;asTarget=false;asOp=true}
+
+# GOBLIN
+OBJ_PORTAL_DUNGEON_GOBLIN:
+  Skills:
+  - skill{s=OBJ_PORTAL_DUNGEON_GOBLIN_SKILL;world=world;positionx=599.5;positiony=77;positionz=1324.5}
+OBJ_PORTAL_DUNGEON_GOBLIN_SKILL:
+  Skills:
+  - message{m="&f&lTeleporting to &b&lGoblin Dungeon..."} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0} @self
+  - delay 1
+  - teleportto{world=<skill.world>;location=<skill.positionx>,<skill.positiony>,<skill.positionz>} @self
+  - sound{sound=entity.fox.teleport;volume=0.8;pitch=0.9} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0;delay=1} @self
+# SKELETON
+OBJ_PORTAL_DUNGEON_SKELETON:
+  Skills:
+  - skill{s=OBJ_PORTAL_DUNGEON_SKELETON_SKILL;world=world;positionx=-302.753;positiony=80;positionz=-336.348}
+OBJ_PORTAL_DUNGEON_SKELETON_SKILL:
+  Skills:
+  - message{m="&f&lTeleporting to &b&lSkeleton Dungeon..."} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0} @self
+  - delay 1
+  - teleportto{world=<skill.world>;location=<skill.positionx>,<skill.positiony>,<skill.positionz>} @self
+  - sound{sound=entity.fox.teleport;volume=0.8;pitch=0.9} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0;delay=1} @self
+
+
+
+
+# UNSTABLE PORTAL
+
+OBJ_PORTAL_UNSTABLE_INTERACT:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  Skills:
+  - sound{sound=block.end_portal_frame.fill;volume=0.7;pitch=0.9} @self
+  - sudoskill{s=OBJ_PORTAL_UNSTABLE_INTERACT_COMMAND;cat=true} @trigger
+OBJ_PORTAL_UNSTABLE_INTERACT_COMMAND:
+  Skills:
+  - command{c='dm open portal_unstable';asCaster=true;asTarget=false;asOp=true}
+
+# UNSTABLE WILDS
+OBJ_PORTAL_UNSTABLE_WILDS:
+  Skills:
+  - skill{s=OBJ_PORTAL_UNSTABLE_WILDS_SKILL;world=world;positionx=599.5;positiony=77;positionz=1324.5}
+OBJ_PORTAL_UNSTABLE_WILDS_SKILL:
+  Skills:
+  - message{m="&f&lTeleporting to &4&lUnstable Wild..."} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0} @self
+  - delay 1
+  - teleportto{world=<skill.world>;location=<skill.positionx>,<skill.positiony>,<skill.positionz>} @self
+  - sound{sound=entity.fox.teleport;volume=0.8;pitch=0.9} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0;delay=1} @self
+# UNSTABLE NETHER
+OBJ_PORTAL_UNSTABLE_NETHER:
+  Skills:
+  - skill{s=OBJ_PORTAL_UNSTABLE_NETHER_SKILL;world=world;positionx=-302.753;positiony=80;positionz=-336.348}
+OBJ_PORTAL_UNSTABLE_NETHER_SKILL:
+  Skills:
+  - message{m="&f&lTeleporting to &4&lUnstable Nether..."} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0} @self
+  - delay 1
+  - teleportto{world=<skill.world>;location=<skill.positionx>,<skill.positiony>,<skill.positionz>} @self
+  - sound{sound=entity.fox.teleport;volume=0.8;pitch=0.9} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0;delay=1} @self
+
+
+
+
+# SANCTUARY PORTAL
+
+OBJ_PORTAL_SANCTUARY_INTERACT:
+  Cooldown: 1
+  TriggerConditions:
+  - crouching false
+  Conditions:
+  - hasaura{n=EDIT_AURA} false
+  Skills:
+  - sound{sound=block.end_portal_frame.fill;volume=0.7;pitch=0.9} @self
+  - sudoskill{s=OBJ_PORTAL_SANCTUARY_INTERACT_COMMAND;cat=true} @trigger
+OBJ_PORTAL_SANCTUARY_INTERACT_COMMAND:
+  Skills:
+  - command{c='dm open portal_sanctuary';asCaster=true;asTarget=false;asOp=true}
+
+# GRIMHOLT FOREST
+OBJ_PORTAL_SANCTUARY_GRIMHOLT_FOREST:
+  Skills:
+  - skill{s=OBJ_PORTAL_SANCTUARY_GRIMHOLT_FOREST_SKILL;world=world;positionx=599.5;positiony=77;positionz=1324.5}
+OBJ_PORTAL_SANCTUARY_GRIMHOLT_FOREST_SKILL:
+  Skills:
+  - message{m="&f&lTeleporting to &b&lGrimholt Forest..."} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0} @self
+  - delay 1
+  - teleportto{world=<skill.world>;location=<skill.positionx>,<skill.positiony>,<skill.positionz>} @self
+  - sound{sound=entity.fox.teleport;volume=0.8;pitch=0.9} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0;delay=1} @self
+# EMBERWOOD FOREST
+OBJ_PORTAL_SANCTUARY_EMBERWOOD_FOREST:
+  Skills:
+  - skill{s=OBJ_PORTAL_SANCTUARY_EMBERWOOD_FOREST_SKILL;world=world_nether;positionx=-302.753;positiony=80;positionz=-336.348}
+OBJ_PORTAL_SANCTUARY_EMBERWOOD_FOREST_SKILL:
+  Skills:
+  - message{m="&f&lTeleporting to &b&lEmberwood Forest..."} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0} @self
+  - delay 1
+  - teleportto{world=<skill.world>;location=<skill.positionx>,<skill.positiony>,<skill.positionz>} @self
+  - sound{sound=entity.fox.teleport;volume=0.8;pitch=0.9} @self
+  - particles{p=portal;amount=20;hS=0.3;vS=0.7;y=0.7;size=1;speed=0;delay=1} @self
+
+
+
+#24f35df792b6ddcf3baf6e41e84f2dde

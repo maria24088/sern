@@ -1,0 +1,218 @@
+SNIPER_SIGHT:
+  base:
+    material: BOW
+    name: '        <#FFC0CB>Mira de Francotirador'
+    attack-damage: 20.0
+    critical-strike-chance: 25.0
+    critical-strike-power: 50.0
+    tooltip-style: epic
+    lore:
+    - '&f丬 ᴛᴇʀʀᴇɴᴏ ᴇʟᴇᴠᴀᴅᴏ'
+    - '&7Dañar a un enemigo a &610 bloques'
+    - '&7de distancia inflige un daño'
+    - '&7extra de &c+15%&7.'
+    arrow-velocity: 4.0
+    ability:
+      ability1:
+        type: HIGH_GROUND
+        mode: ARROW_HIT
+    custom-model-data: 10017
+
+DIVINETTO:
+  base:
+    material: BOW
+    name: '               <#E7D27C>Divenetto'
+    max-durability: 852.0
+    attack-damage: 10.0
+    critical-strike-chance: 15.0
+    critical-strike-power: 30.0
+    tooltip-style: legendary
+    lore:
+    - '&fｰ ᴇɴꜰᴏǫᴜᴇ! &8(Click-Izq)'
+    - '&7Mejora el &6🏹 Daño de Proyectil'
+    - '&7en un &6100%&7 pero también aumenta'
+    - '&7todo el daño que recibes en un'
+    - '&c35%&7!'
+    - '&8 | &f<#AEC6CF>⌚20s &b✎30 &8|'
+    arrow-velocity: 1.5
+    ability:
+      ability1:
+        type: FOCUS
+        mode: LEFT_CLICK
+        mana: 30.0
+        cooldown: 20.0
+    custom-model-data: 10021
+    crafting:
+      smithing:
+        '1':
+          input: v BOW - 1.0..|m MATERIAL DIVINE_GEODE 1.0..
+
+THE_HUNT:
+  base:
+    material: BOW
+    name: '              <#E7D27C>La Cacería'
+    attack-damage: 1.0
+    tooltip-style: legendary
+    lore:
+    - '&f丨 ᴍᴀʀᴄᴀ ᴅᴇʟ ᴄᴀᴢᴀᴅᴏʀ'
+    - '&7Dañar a un enemigo lo &6marca'
+    - '&7como &ccazado&7, aumentando el'
+    - '&7daño del siguiente ataque en un'
+    - '&c100%&7!'
+    - '&8 | &f<#AEC6CF>⌚2s &8|'
+    arrow-velocity: 4.0
+    ability:
+      ability1:
+        type: WEAKEN_TARGET
+        mode: ATTACK
+        extra-damage: 3.5
+        duration: 10.0
+    custom-model-data: 10007
+
+STARFLAME:
+  base:
+    material: BOW
+    name: '             <#E7D27C>Llama Estelar'
+    attack-damage: 20.0
+    critical-strike-chance: 25.0
+    critical-strike-power: 50.0
+    tooltip-style: legendary
+    lore:
+    - '&f丫 ᴇxᴘʟᴏꜱɪᴏɴ ᴇꜱᴛᴇʟᴀʀ'
+    - '&7Dañar enemigos les inflige'
+    - '<#ff6961>Marca Estelar&7. Si mueren'
+    - '&7teniendo el efecto, <#FAC898>explotan&7,'
+    - '&7causando &c250&7 de daño a enemigos'
+    - '&7cercanos, e inmovilizándolos.'
+    arrow-velocity: 4.0
+    ability:
+      ability1:
+        type: STARMARKED
+        mode: ARROW_HIT
+    custom-model-data: 10004
+
+
+THE_PREDATOR:
+  base:
+    material: BOW
+    name: '            <#915ace>El Depredador'
+    attack-damage: 10.0
+    critical-strike-chance: 15.0
+    critical-strike-power: 30.0
+    tooltip-style: mythic
+    lore:
+    - '&f丩 ᴍᴀʀᴄᴀ ᴅᴇʟ ᴅᴇᴘʀᴇᴅᴀᴅᴏʀ'
+    - '&7Dañar a un enemigo lo &6marca'
+    - '&7como &ccazado&7, aumentando el'
+    - '&7daño del siguiente ataque en un'
+    - '&c350%&7!'
+    - '&8 | &f<#AEC6CF>⌚2s &8|'
+    arrow-velocity: 4.0
+    ability:
+      ability1:
+        type: WEAKEN_TARGET
+        mode: ATTACK
+        extra-damage: 3.5
+        duration: 10.0
+    custom-model-data: 10005
+
+BRAVERY:
+  base:
+    material: BOW
+    custom-model-data: 10014
+    attack-damage: 24.0
+    critical-strike-chance: 35.0
+    critical-strike-power: 100.0
+    arrow-velocity: 2.0
+    tooltip-style: mythic
+    unbreakable: true
+    unstackable: true
+    movement-speed: 0.02
+    lore:
+    - 丳 ᴄᴏᴍʙᴀᴛᴇ ᴄᴇʀᴄᴀɴᴏ
+    - '&7Dañar a un enemigo a menos de &c7'
+    - '&7bloques de ti inflige &c+50%'
+    - '&7de daño.'
+    name: '                <#915ace>Valentía'
+    ability:
+      ability1:
+        type: CLOSE_CALL
+        mode: ARROW_HIT
+
+END_NEMESIS:
+  base:
+    material: BOW
+    custom-model-data: 10010
+    attack-damage: 24.0
+    critical-strike-chance: 35.0
+    critical-strike-power: 100.0
+    arrow-velocity: 2.0
+    tooltip-style: mythic
+    unbreakable: true
+    unstackable: true
+    movement-speed: 0.02
+    lore:
+    - '&6Arco Corto: &fDispara al instante!'
+    - ''
+    - 丱 ᴀꜱᴇꜱɪɴᴏ ᴅᴇ ᴅʀᴀɢᴏɴᴇꜱ
+    - '&7Tus ataques contra el &dEnder'
+    - '&dDragon &7se modifican para causar'
+    - '&c+250% &7de daño.'
+    name: '            <#915ace>Némesis del End'
+    ability: {}
+
+INFERNO:
+  base:
+    material: BOW
+    name: '                <#915ace>Inferno'
+    attack-damage: 50.0
+    tooltip-style: mythic
+    lore:
+    - '&f中 ᴇꜱᴘᴇᴄᴛʀᴏ ɪɴꜰᴇʀɴᴀʟ'
+    - '&7Disparar con tu arco desatará'
+    - '&7un &4espectro infernal&7 que'
+    - '&7persigue a un objetivo cercano'
+    - '&7causando &c150&7 de daño.'
+    ability:
+      ability1:
+        type: HELLWRAITH
+        mode: SHOOT_BOW
+        cooldown: 2.0
+    custom-model-data: 10024
+    mana-cost: 10.0
+    critical-strike-chance: 100.0
+    lifesteal: 1.5
+
+CATASTROPHE:
+  base:
+    material: BOW
+    custom-model-data: 10023
+    attack-damage: 24.0
+    critical-strike-chance: 35.0
+    critical-strike-power: 100.0
+    arrow-velocity: 2.0
+    tooltip-style: mythic
+    unbreakable: true
+    unstackable: true
+    movement-speed: 0.02
+    lore:
+    - ポ ᴜɴᴏ ᴄᴏɴ ᴇʟ ᴠᴀᴄɪᴏ
+    - '&7Golpear enemigos con flechas'
+    - '&7inflige &fポ <#9469a2>Maldición&7, causando'
+    - '&c35 &7de daño por segundo. Cuando'
+    - '&7mueren con el efecto, se'
+    - '&7transforman en un <#98687e>Voidling&7,'
+    - '&7atacando mobs cercanos.'
+    name: '             <#915ace>La Catástrofe'
+    arrow-particles:
+      particle: SOUL
+      speed: 0.2
+      amount: 2
+    ability:
+      ability1:
+        type: OWTV
+        mode: ARROW_HIT
+    upgrade:
+      template: damned
+      reference: damned
+      max: 5

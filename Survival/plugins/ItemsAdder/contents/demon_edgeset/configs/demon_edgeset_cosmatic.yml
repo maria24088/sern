@@ -1,0 +1,75 @@
+info:
+  namespace: demon_edgeset
+items:
+  demon_edge_cosmetics_backpack:
+    display_name: Demon Edge Backpack Cosmetics
+    permission: demon_edgeset.demon_edge_cosmetics_backpack
+    resource:
+      generate: false
+      model_path: backpack_cosmetic
+      material: POTION
+      model_id: 8400001
+  demon_edge_cosmetics_backpack_self:
+    display_name: Demon Edge Backpack Cosmetics Self
+    permission: demon_edgeset.demon_edge_cosmetics_backpack_self
+    resource:
+      generate: false
+      model_path: backpack_cosmetic_self
+      material: POTION
+      model_id: 8400002
+  demon_edge_cosmetics_backpack_self_2:
+    display_name: Demon Edge Backpack Cosmetics Self 2
+    permission: demon_edgeset.demon_edge_cosmetics_backpack_self_2
+    resource:
+      generate: false
+      model_path: backpack_cosmetic_self_2
+      material: POTION
+      model_id: 8400003
+  demon_edge_cosmetics_backpack_normal_2:
+    display_name: Demon Edge Backpack Cosmetics Normal 2
+    permission: demon_edgeset.demon_edge_cosmetics_backpack_normal_2
+    resource:
+      generate: false
+      model_path: backpack_cosmetic_normal_2
+      material: POTION
+      model_id: 8400004
+  demon_edge_cosmetics_helmet:
+    display_name: Demon Edge Helmet Cosmetics
+    permission: demon_edgeset.demon_edge_cosmetics_helmet
+    resource:
+      generate: false
+      model_path: helmet
+      material: POTION
+      model_id: 8400005
+  demon_edge_cosmetics_wings:
+    display_name: Demon Edge Wings Cosmetics
+    permission: demon_edgeset.demon_edge_cosmetics_wings
+    resource:
+      generate: false
+      model_path: wings_cosmetic
+      material: POTION
+      model_id: 8400006
+  demon_edge_cosmetics_wings_self:
+    display_name: Demon Edge Wings Cosmetics Self
+    permission: demon_edgeset.demon_edge_cosmetics_wings_self
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self
+      material: POTION
+      model_id: 8400007
+  demon_edge_cosmetics_wings_self_2:
+    display_name: Demon Edge Wings Cosmetics Self 2
+    permission: demon_edgeset.demon_edge_cosmetics_wings_self_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self_2
+      material: POTION
+      model_id: 8400008
+  demon_edge_cosmetics_wings_normal_2:
+    display_name: Demon Edge Wings Cosmetics Normal 2
+    permission: demon_edgeset.demon_edge_cosmetics_wings_normal_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_normal_2
+      material: POTION
+      model_id: 8400009

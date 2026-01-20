@@ -1,0 +1,12 @@
+&r
+&r
+&r
+&r
+ &#fbc400&lY&#fbca00&lo&#fad100&lu&#fad700&lr &#fadd00&lS&#f9e400&le&#f9ea00&lr&#f9f000&lv&#f8f700&le&#f8fd00&lr &7- &#fbc400Survival
+&r
+&#fbc400 ◆ &fDiscord: &#fbc400https://yourserver.com/discord
+&#fbc400 ◆ &fForums: &#fbc400https://yourserver.com/forums
+&#fbc400 ◆ &fStore: &#fbc400https://store.yourserver.com
+&r
+&f We hope you enjoy your stay, &#fbc400{PLAYER}&f!
+&r

@@ -1,0 +1,155 @@
+title: '<white>:offset_-20: %img_skills_menu_book%'
+size: 6
+fill:
+  enabled: false
+  material: black_stained_glass_pane
+items:
+  stats:
+    pos: 0,1
+    material: BRICK
+    nbt:
+      CustomModelData: 40051
+    display_name: <white><bold>{{stats}}
+    lore:
+    - <gray>{{stats_desc}}
+    - ' '
+    - <#FFD738> → {{stats_click}}
+templates:
+  skill:
+    contexts:
+      archery:
+        pos: 23
+        material: brick
+        nbt:
+          CustomModelData: 40060
+      fighting:
+        pos: 15
+        material: brick
+        nbt:
+          CustomModelData: 40064
+      defense:
+        pos: 24
+        material: brick
+        nbt:
+          CustomModelData: 40061
+      farming:
+        pos: 30
+        material: brick
+        nbt:
+          CustomModelData: 40048
+      foraging:
+        pos: 32
+        material: brick
+        nbt:
+          CustomModelData: 40049
+      mining:
+        pos: 11
+        material: brick
+        nbt:
+          CustomModelData: 40067
+      agility:
+        pos: 21
+        material: brick
+        nbt:
+          CustomModelData: 40063
+      alchemy:
+        pos: 12
+        material: brick
+        nbt:
+          CustomModelData: 40066
+      enchanting:
+        pos: 14
+        material: brick
+        nbt:
+          CustomModelData: 40065
+      fishing:
+        pos: 29
+        material: brick
+        nbt:
+          CustomModelData: 40059
+      excavation:
+        pos: 20
+        material: brick
+        nbt:
+          CustomModelData: 40062
+    groups:
+      first_row:
+        start: 1,0
+        end: 1,7
+        align: right
+      second_row:
+        start: 2,0
+        end: 2,7
+        align: right
+      third_row:
+        start: 3,0
+        end: 3,7
+        align: right
+    display_name: <bold><white>{skill} <#82CD47>Lvl {level}
+    lore:
+    - text: '{desc}'
+      wrap: true
+      style: <gray>
+    - component: stats_leveled
+    - component: ability_levels
+    - component: mana_ability_info
+    - component: skill_job_active
+    - ' '
+    - component: progress
+    - component: max_level
+    - ' '
+    - <gray>{{skill_click}}
+components:
+  stats_leveled:
+    context: Skill
+    lore:
+    - ' '
+    - ' <gray>{{stats_leveled}}:'
+    - '   {entries[<gray>\n   ]}'
+  ability_levels:
+    context: Skill
+    lore:
+    - ' '
+    - ' <gray>{{ability_levels}}:{entries[  ]}'
+  mana_ability_info:
+    context: Skill
+    lore:
+    - ' '
+    - ' <gray>{{mana_ability}}: \n   <#6574cd>{name} {level}'
+    - '   {entries[\n   ]}'
+  progress:
+    context: Skill
+    lore:
+    - ' <gray>▪ {{progress_to_level}} {next_level}'
+    - '   {bar}'
+    - '   <gray>{current_xp}/{level_xp} {xp_unit}'
+  max_level:
+    context: Skill
+    lore:
+    - ' <gold>{{max_level}}'
+  skill_job_active:
+    context: Skill
+    lore:
+    - ''
+    - ' <gray>▪ Job'
+    - <gray>    ▸ <#82CD47>%tinify_{{active_job}}%
+formats:
+  stat_leveled_entry: <#82CD47>+ <white>{stat}<gray>
+  unlocked_ability_entry: \n   <#82CD47>+ <white>{name} <#86A7FC>%tinify_{level}%
+    <dark_gray>({info})
+  locked_ability_entry: \n   <bold><#DF2E38>x</bold> <dark_gray>{name}
+  duration_entry: '<#82CD47>+ <white>{{duration}}: <#86A7FC>{duration}s '
+  mana_cost_entry: '<#82CD47>+ <white>{{mana_cost}}: <#86A7FC>{mana_cost} '
+  cooldown_entry: '<#82CD47>+ <white>{{cooldown}}: <#86A7FC>{cooldown}s '
+  damage_entry: '<#82CD47>+ <white>{{damage}}: <#86A7FC>{value} '
+  damage_per_mana_entry: '<#82CD47>+ <white>{{damage}}: <#e3342f>+{value}% / Mana '
+  max_mana_cost_entry: '<#82CD47>+ <white>{{max_mana_cost}}: <#86A7FC>{mana_cost} '
+  attack_speed_entry: '<#82CD47>+ <white>{{attack_speed}}: <#86A7FC>+{value}% '
+  bar_completed: '<#ffd556>%img_offset_-2%%img_xp_bar_white_lore% '
+  bar_current: '<#ffd556>%img_offset_-2%%img_xp_bar_white_lore% '
+  bar_remaining: '<white>%img_offset_-2%%img_xp_bar_white_lore% '
+options:
+  bar_length: 10
+  current_xp_format: '#.##'
+  percent_format: '#.##'
+file_version: 1

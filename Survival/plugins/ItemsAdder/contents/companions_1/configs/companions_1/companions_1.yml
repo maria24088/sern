@@ -1,0 +1,163 @@
+info:
+  namespace: companions_1
+items:
+  icon_cacti_desert:
+    display_name: "icon_cacti_desert"
+    permission: icon_cacti_desert
+    resource:
+      material: BRICK
+      model_id: 12000
+      generate: false
+      model_path: companions_1_model/icon_cacti_desert
+  icon_cacti_frozen:
+    display_name: "icon_cacti_frozen"
+    permission: icon_cacti_frozen
+    resource:
+      material: BRICK
+      model_id: 12001
+      generate: false
+      model_path: companions_1_model/icon_cacti_frozen
+  icon_cacti_sculk:
+    display_name: "icon_cacti_sculk"
+    permission: icon_cacti_sculk
+    resource:
+      material: BRICK
+      model_id: 12002
+      generate: false
+      model_path: companions_1_model/icon_cacti_sculk
+  icon_fire_dragon_fire:
+    display_name: "icon_fire_dragon_fire"
+    permission: icon_fire_dragon_fire
+    resource:
+      material: BRICK
+      model_id: 12003
+      generate: false
+      model_path: companions_1_model/icon_fire_dragon_fire
+  icon_fire_dragon_holyfire:
+    display_name: "icon_fire_dragon_holyfire"
+    permission: icon_fire_dragon_holyfire
+    resource:
+      material: BRICK
+      model_id: 12004
+      generate: false
+      model_path: companions_1_model/icon_fire_dragon_holyfire
+  icon_fire_dragon_shadowflame:
+    display_name: "icon_fire_dragon_shadowflame"
+    permission: icon_fire_dragon_shadowflame
+    resource:
+      material: BRICK
+      model_id: 12005
+      generate: false
+      model_path: companions_1_model/icon_fire_dragon_shadowflame
+  icon_fire_dragon_soulfire:
+    display_name: "icon_fire_dragon_soulfire"
+    permission: icon_fire_dragon_soulfire
+    resource:
+      material: BRICK
+      model_id: 12006
+      generate: false
+      model_path: companions_1_model/icon_fire_dragon_soulfire
+  icon_frog_golden:
+    display_name: "icon_frog_golden"
+    permission: icon_frog_golden
+    resource:
+      material: BRICK
+      model_id: 12007
+      generate: false
+      model_path: companions_1_model/icon_frog_golden
+  icon_frog_green:
+    display_name: "icon_frog_green"
+    permission: icon_frog_green
+    resource:
+      material: BRICK
+      model_id: 12008
+      generate: false
+      model_path: companions_1_model/icon_frog_green
+  icon_frog_mushroom:
+    display_name: "icon_frog_mushroom"
+    permission: icon_frog_mushroom
+    resource:
+      material: BRICK
+      model_id: 12009
+      generate: false
+      model_path: companions_1_model/icon_frog_mushroom
+  icon_frog_nether:
+    display_name: "icon_frog_nether"
+    permission: icon_frog_nether
+    resource:
+      material: BRICK
+      model_id: 12010
+      generate: false
+      model_path: companions_1_model/icon_frog_nether
+  icon_frog_stone:
+    display_name: "icon_frog_stone"
+    permission: icon_frog_stone
+    resource:
+      material: BRICK
+      model_id: 12011
+      generate: false
+      model_path: companions_1_model/icon_frog_stone
+  icon_knight_castle:
+    display_name: "icon_knight_castle"
+    permission: icon_knight_castle
+    resource:
+      material: BRICK
+      model_id: 12012
+      generate: false
+      model_path: companions_1_model/icon_knight_castle
+  icon_knight_ender:
+    display_name: "icon_knight_ender"
+    permission: icon_knight_ender
+    resource:
+      material: BRICK
+      model_id: 12013
+      generate: false
+      model_path: companions_1_model/icon_knight_ender
+  icon_knight_glacial:
+    display_name: "icon_knight_glacial"
+    permission: icon_knight_glacial
+    resource:
+      material: BRICK
+      model_id: 12014
+      generate: false
+      model_path: companions_1_model/icon_knight_glacial
+  icon_knight_holy:
+    display_name: "icon_knight_holy"
+    permission: icon_knight_holy
+    resource:
+      material: BRICK
+      model_id: 12015
+      generate: false
+      model_path: companions_1_model/icon_knight_holy
+  icon_unicorn_heavenly:
+    display_name: "icon_unicorn_heavenly"
+    permission: icon_unicorn_heavenly
+    resource:
+      material: BRICK
+      model_id: 12016
+      generate: false
+      model_path: companions_1_model/icon_unicorn_heavenly
+  icon_unicorn_nature:
+    display_name: "icon_unicorn_nature"
+    permission: icon_unicorn_nature
+    resource:
+      material: BRICK
+      model_id: 12017
+      generate: false
+      model_path: companions_1_model/icon_unicorn_nature
+  icon_unicorn_rainbow:
+    display_name: "icon_unicorn_rainbow"
+    permission: icon_unicorn_rainbow
+    resource:
+      material: BRICK
+      model_id: 12018
+      generate: false
+      model_path: companions_1_model/icon_unicorn_rainbow
+  icon_unicorn_undead:
+    display_name: "icon_unicorn_undead"
+    permission: icon_unicorn_undead
+    resource:
+      material: BRICK
+      model_id: 12019
+      generate: false
+      model_path: companions_1_model/icon_unicorn_undead

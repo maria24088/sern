@@ -1,0 +1,182 @@
+size: 45
+menu_title: '&f%img_offset_-8%%img_submenu_categories_misc_fertilizers%%img_offset_-155%
+%utils_parse_changeoutput_>=_input:{servervariables_value_marketplace_level}_matcher:2_ifmatch:{changeoutput_>=_input:{vault_eco_balance}_matcher:100_ifmatch:{img_indicator_gray_row_1}_else:{img_indicator_red_row_1}}_else:&f%%img_offset_-4%
+%utils_parse_changeoutput_>=_input:{servervariables_value_marketplace_level}_matcher:4_ifmatch:{changeoutput_>=_input:{vault_eco_balance}_matcher:400_ifmatch:{img_indicator_gray_row_1}_else:{img_indicator_red_row_1}}_else:&f%%img_offset_-4%
+%utils_parse_changeoutput_>=_input:{servervariables_value_marketplace_level}_matcher:5_ifmatch:{changeoutput_>=_input:{vault_eco_balance}_matcher:800_ifmatch:{img_indicator_gray_row_1}_else:{img_indicator_red_row_1}}_else:&f%'
+items:
+  'close':
+    material: itemsadder-invisible_item
+    slot: 16
+    display_name: '&#da5240&lCERRAR'
+    click_commands:
+      - "[openguimenu] marketplace"
+
+  'category_fertilizers':
+    material: itemsadder-invisible_item
+    slot: 10
+    display_name: '&#c6985d&lFERTILIZANTES'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_misc_fertilizers"
+
+  'category_gears':
+    material: itemsadder-invisible_item
+    slot: 11
+    display_name: '&#acacac&lMECANISMOS'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_misc_gears"
+
+
+  'item_speedgrow_locked':
+    material: itemsadder-speed_grow_fertilizer
+    slot: 28
+    priority: 2
+    display_name: '&fFertilizante de Crecimiento Rápido'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e2100$"
+      - "&#e7c86bPrecio por stack: &#e1e1e2640$"
+      - ""
+      - "&#e45838❌ No tienes suficiente dinero"
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '2'
+
+  'item_speedgrow_unlocked':
+    material: itemsadder-speed_grow_fertilizer
+    slot: 28
+    priority: 1
+    display_name: '&fFertilizante de Crecimiento Rápido'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e2100$"
+      - "&#e7c86bPrecio por stack: &#e1e1e2640$"
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para comprar uno"
+      - "&f%img_shift_icon% %img_shift_left_click_icon% &#709ed3Shift + Click-izq para comprar stack"
+    left_click_commands:
+      - "[takemoney] 100"
+      - "[console] iagive %player_name% redstone_labs:speed_grow_fertilizer 1 silent"
+      - "[openguimenu] submenu_categories_misc_fertilizers"
+    shift_left_click_commands:
+      - "[takemoney] 6400"
+      - "[console] iagive %player_name% redstone_labs:speed_grow_fertilizer 64 silent"
+      - "[openguimenu] submenu_categories_misc_fertilizers"
+    view_requirement:
+      requirements:
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '100'
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '2'
+
+  'item_yield_increase_locked':
+    material: itemsadder-yield_increase_fertilizer
+    slot: 29
+    priority: 2
+    display_name: '&fFertilizante de Producción'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e2400$"
+      - "&#e7c86bPrecio por stack: &#e1e1e225600$"
+      - ""
+      - "&#e45838❌ No tienes suficiente dinero"
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '4'
+
+  'item_yield_increase_unlocked':
+    material: itemsadder-yield_increase_fertilizer
+    slot: 29
+    priority: 1
+    display_name: '&fFertilizante de Producción'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e2400$"
+      - "&#e7c86bPrecio por stack: &#e1e1e225600$"
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para comprar uno"
+      - "&f%img_shift_icon% %img_shift_left_click_icon% &#709ed3Shift + Click-izq para comprar stack"
+    left_click_commands:
+      - "[takemoney] 400"
+      - "[console] iagive %player_name% redstone_labs:yield_increase_fertilizer 1 silent"
+      - "[openguimenu] submenu_categories_misc_fertilizers"
+    shift_left_click_commands:
+      - "[takemoney] 25600"
+      - "[console] iagive %player_name% redstone_labs:yield_increase_fertilizer 64 silent"
+      - "[openguimenu] submenu_categories_misc_fertilizers"
+    view_requirement:
+      requirements:
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '400'
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '4'
+
+  'item_overgrown_locked':
+    material: itemsadder-overgrown_fertilizer
+    slot: 30
+    priority: 2
+    display_name: '&fFertilizante de Gigantes'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e2800$"
+      - "&#e7c86bPrecio por stack: &#e1e1e251200$"
+      - ""
+      - "&#e45838❌ No tienes suficiente dinero"
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '5'
+
+  'item_overgrown_unlocked':
+    material: itemsadder-overgrown_fertilizer
+    slot: 30
+    priority: 1
+    display_name: '&fFertilizante de Gigantes'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e2800$"
+      - "&#e7c86bPrecio por stack: &#e1e1e251200$"
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para comprar uno"
+      - "&f%img_shift_icon% %img_shift_left_click_icon% &#709ed3Shift + Click-izq para comprar stack"
+    left_click_commands:
+      - "[takemoney] 800"
+      - "[console] iagive %player_name% redstone_labs:overgrown_fertilizer 1 silent"
+      - "[openguimenu] submenu_categories_misc_fertilizers"
+    shift_left_click_commands:
+      - "[takemoney] 51200"
+      - "[console] iagive %player_name% redstone_labs:overgrown_fertilizer 64 silent"
+      - "[openguimenu] submenu_categories_misc_fertilizers"
+    view_requirement:
+      requirements:
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '800'
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '5'

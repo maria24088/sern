@@ -1,0 +1,13 @@
+info:
+  namespace: schoolfurnitures
+items:
+  trashgray:
+    display_name: "Trash Gray"
+    permission: schoolfurnitures.trashgray
+    resource:
+      material: PAPER
+      generate: false
+      model_path: trashgray
+    behaviours:
+      furniture:
+        light_level: 13

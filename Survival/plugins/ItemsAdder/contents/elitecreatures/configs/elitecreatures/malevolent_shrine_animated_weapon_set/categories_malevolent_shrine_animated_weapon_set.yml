@@ -1,0 +1,35 @@
+info:
+  namespace: elitecreatures
+categories:
+  malevolent_shrine_animated_weapon_set:
+    enabled: true
+    icon: "elitecreatures:malevolent_shrine_animated_weapon_set_axe"
+    name: "Malevolent Shrine Metal Animated Set"
+    permission: "ia.menu.malevolent_shrine_animated_weapon_set"
+    items:
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_axe"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_backpack"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_bow"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_chest"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_crossbow"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_dagger"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_fishing_rod"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_greatsword"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_hammer"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_hat"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_hoe"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_key"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_mace"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_pickaxe"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_shield"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_shovel"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_spear"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_staff"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_sword"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_wing"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_helmet"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_chestplate"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_leggings"
+      - "elitecreatures:malevolent_shrine_animated_weapon_set_boots"
+
+#glMDRkR4wmYwcWWC5UcCtGSFhVY3l1RN1mSwI1RatmURpFRVFlZ2JGaBREMtNlRmBlQHFjM

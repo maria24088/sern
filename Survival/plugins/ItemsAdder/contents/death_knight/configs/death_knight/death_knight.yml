@@ -1,0 +1,67 @@
+info:
+  namespace: death_knight
+items:
+  death_knight_necroslayer:
+    display_name: "death_knight_necroslayer"
+    permission: death_knight_necroslayer
+    resource:
+      material: STONE_SWORD
+      model_id: 2082
+      generate: false
+      model_path: death_knight_model/death_knight_necroslayer
+  icon_cursed_seal:
+    display_name: "icon_cursed_seal"
+    permission: icon_cursed_seal
+    resource:
+      material: COAL
+      model_id: 2259
+      generate: false
+      model_path: death_knight_model/icon_cursed_seal
+  icon_death_sentence:
+    display_name: "icon_death_sentence"
+    permission: icon_death_sentence
+    resource:
+      material: COAL
+      model_id: 2260
+      generate: false
+      model_path: death_knight_model/icon_death_sentence
+  icon_death_strike:
+    display_name: "icon_death_strike"
+    permission: icon_death_strike
+    resource:
+      material: COAL
+      model_id: 2261
+      generate: false
+      model_path: death_knight_model/icon_death_strike
+  icon_necrotic_whirlwind:
+    display_name: "icon_necrotic_whirlwind"
+    permission: icon_necrotic_whirlwind
+    resource:
+      material: COAL
+      model_id: 2262
+      generate: false
+      model_path: death_knight_model/icon_necrotic_whirlwind
+  icon_phantom_charge:
+    display_name: "icon_phantom_charge"
+    permission: icon_phantom_charge
+    resource:
+      material: COAL
+      model_id: 2263
+      generate: false
+      model_path: death_knight_model/icon_phantom_charge
+  icon_soul_barrier:
+    display_name: "icon_soul_barrier"
+    permission: icon_soul_barrier
+    resource:
+      material: COAL
+      model_id: 2264
+      generate: false
+      model_path: death_knight_model/icon_soul_barrier
+  icon_wraithbound_chains:
+    display_name: "icon_wraithbound_chains"
+    permission: icon_wraithbound_chains
+    resource:
+      material: COAL
+      model_id: 2265
+      generate: false
+      model_path: death_knight_model/icon_wraithbound_chains

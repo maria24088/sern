@@ -1,0 +1,43 @@
+# Downloaded from https://nullforums.net/resources/rpg-class-series-barbarian-v1-1.6445/
+  
+axe_barbarian:
+  Id: stone_sword
+  Display: "<gradient:#520a05:#c40e0e:#520a05>&lAxe of Barbarian"
+  Model: 2056
+  Lore:
+  - '<gradient:#520a05:#c40e0e:#520a05>The axe of the Barbarian'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Bloodlust} @self ~onTimer:10
+  - skill{s=Rageblade} @self ~onSwing
+  - skill{s=Primal_Axe} @self ~onUse
+  - skill{s=War_Cry} @self ~onCrouch
+  - skill{s=Relentless_Leap} @self ~onUse
+  - skill{s=Double_Edge} @self ~onTimer:10
+  - skill{s=Eternal_Fury} @self ~onSwing
+  
+axe_barbarian_shiny:
+  Id: stone_sword
+  Display: "<gradient:#520a05:#f5e093:#520a05>&lShiny Axe of Barbarian"
+  Model: 2057
+  Lore:
+  - '<gradient:#520a05:#f5e093:#520a05>The axe of the Barbarian'
+  Hide:
+  - ATTRIBUTES
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Skills:
+  - skill{s=Bloodlust} @self ~onTimer:10
+  - skill{s=Rageblade} @self ~onSwing
+  - skill{s=Primal_Axe} @self ~onUse
+  - skill{s=War_Cry} @self ~onCrouch
+  - skill{s=Relentless_Leap} @self ~onUse
+  - skill{s=Double_Edge} @self ~onTimer:10
+  - skill{s=Eternal_Fury} @self ~onSwing
+  
+# a170b77c875ddb1ca77fad9c86a9cf4f278453d3 . 43849

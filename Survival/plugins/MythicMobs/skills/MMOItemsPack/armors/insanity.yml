@@ -1,0 +1,4 @@
+Berserk:
+  Skills:
+  - command{c="mythiclib tempstat add %player_name% WEAPON_DAMAGE 1 60"} @self
+  - command{c="mythiclib tempstat add %player_name% LIFESTEAL 0.1 60"} @self

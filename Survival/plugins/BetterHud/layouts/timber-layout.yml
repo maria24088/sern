@@ -1,0 +1,114 @@
+timber_hud_top:
+  conditions:
+    1:
+      first: gamemode
+      second: "'SPECTATOR'"
+      operation: "!="
+  images:
+    1:
+      name: money_background
+      x: -30
+      y: 117
+    2:
+      name: icon_money
+      x: 16
+      y: 114
+    3:
+      name: player_name_background
+      x: -50
+      y: 90
+  heads:
+    1:
+      name: head
+      x: -22
+      y: 66
+      layer: 2
+  texts:
+    1:
+      layer: 4
+      scale: 0.7
+      name: default
+      pattern: <gold>[papi:vault_eco_balance]
+      x: -6
+      y: 117
+      align: center
+    2:
+      layer: 4
+      scale: 0.5
+      name: default
+      pattern: <white>[papi:player_name]
+      x: -8
+      y: 92
+      align: center
+timber_hud_bottom:
+  images:
+    1:
+      name: timber_hotbar_left
+      x: -76
+      y: 9
+    2:
+      name: timber_hotbar_right
+      x: 78
+      y: 9
+    3:
+      name: timber_hotbar_armor
+      x: -20
+      y: 0
+      conditions:
+        1:
+          first: armor
+          second: 0
+          operation: "!="
+timber_hud_bottom_fills:
+  images:
+    ## Experience
+    1:
+      name: timber_hotbar_experience
+      x: 1
+      y: 25
+    ## Water  
+    2:
+      name: timber_hotbar_water
+      x: 5
+      y: 17
+    ## Food  
+    3:
+      name: timber_hotbar_food
+      x: 119
+      y: 17
+    ## Health  
+    4:
+      name: timber_hotbar_health
+      x: -60
+      y: 20
+    ## Mana
+    5:
+      name: timber_hotbar_mana
+      x: 211
+      y: 20
+    ## Armor
+    6:
+      name: timber_hotbar_armor_fill
+      x: 5
+      y: 3
+      conditions:
+        1:
+          first: armor
+          second: 0
+          operation: "!="
+  texts:
+    1:
+      layer: 4
+      scale: 0.6
+      name: default
+      pattern: <white>[level]
+      x: 90
+      y: 16
+      align: left
+fondo_layout:
+  images:
+    1:
+      name: fondo_left
+      x: -108
+      layer: -20
+      y: 36

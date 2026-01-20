@@ -1,0 +1,37 @@
+ender_dragon_cosmetics_wings:
+  height: 4
+  permission: cosmetics.ender_dragon_cosmetics_wings
+  dyeable: false
+  slot: BACKPACK
+  item:
+    material: POTION
+    model-data: 9723004
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+  firstperson-item:
+    material: POTION
+    model-data: 9723003
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+ender_dragon_cosmetics_helmet:
+  height: 0
+  permission: cosmetics.ender_dragon_cosmetics_helmet
+  dyeable: false
+  slot: HELMET
+  item:
+    material: POTION
+    model-data: 9723000
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES

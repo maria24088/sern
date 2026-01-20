@@ -1,0 +1,75 @@
+info:
+  namespace: terramancer
+items:
+  icon_earth_clap:
+    display_name: "icon_earth_clap"
+    permission: icon_earth_clap
+    resource:
+      material: COAL
+      model_id: 2252
+      generate: false
+      model_path: terramancer_model/icon_earth_clap
+  icon_earth_ring:
+    display_name: "icon_earth_ring"
+    permission: icon_earth_ring
+    resource:
+      material: COAL
+      model_id: 2253
+      generate: false
+      model_path: terramancer_model/icon_earth_ring
+  icon_earth_rubble:
+    display_name: "icon_earth_rubble"
+    permission: icon_earth_rubble
+    resource:
+      material: COAL
+      model_id: 2254
+      generate: false
+      model_path: terramancer_model/icon_earth_rubble
+  icon_earth_shift:
+    display_name: "icon_earth_shift"
+    permission: icon_earth_shift
+    resource:
+      material: COAL
+      model_id: 2255
+      generate: false
+      model_path: terramancer_model/icon_earth_shift
+  icon_earth_shockwave:
+    display_name: "icon_earth_shockwave"
+    permission: icon_earth_shockwave
+    resource:
+      material: COAL
+      model_id: 2256
+      generate: false
+      model_path: terramancer_model/icon_earth_shockwave
+  icon_earth_spikes:
+    display_name: "icon_earth_spikes"
+    permission: icon_earth_spikes
+    resource:
+      material: COAL
+      model_id: 2257
+      generate: false
+      model_path: terramancer_model/icon_earth_spikes
+  icon_earth_wave:
+    display_name: "icon_earth_wave"
+    permission: icon_earth_wave
+    resource:
+      material: COAL
+      model_id: 2258
+      generate: false
+      model_path: terramancer_model/icon_earth_wave
+  terramancer_earthweaver:
+    display_name: "terramancer_earthweaver"
+    permission: terramancer_earthweaver
+    resource:
+      material: STONE_SWORD
+      model_id: 2080
+      generate: false
+      model_path: terramancer_model/terramancer_earthweaver
+  terramancer_slateweaver:
+    display_name: "terramancer_slateweaver"
+    permission: terramancer_slateweaver
+    resource:
+      material: STONE_SWORD
+      model_id: 2081
+      generate: false
+      model_path: terramancer_model/terramancer_slateweaver

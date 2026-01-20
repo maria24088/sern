@@ -1,0 +1,52 @@
+info:
+  namespace: jackolantern
+items:
+  scythe_jackolantern:
+    display_name: "scythe_jackolantern"
+    permission: scythe_jackolantern
+    resource:
+      material: STONE_SWORD
+      model_id: 2053
+      generate: false
+      model_path: jackolantern_model/scythe_jackolantern
+  icon_drift:
+    display_name: "icon_drift"
+    permission: icon_drift
+    resource:
+      material: COAL
+      model_id: 2167
+      generate: false
+      model_path: jackolantern_model/icon_drift
+  icon_midnight_crows:
+    display_name: "icon_midnight_crows"
+    permission: icon_midnight_crows
+    resource:
+      material: COAL
+      model_id: 2168
+      generate: false
+      model_path: jackolantern_model/icon_midnight_crows
+  icon_nightmare:
+    display_name: "icon_nightmare"
+    permission: icon_nightmare
+    resource:
+      material: COAL
+      model_id: 2169
+      generate: false
+      model_path: jackolantern_model/icon_nightmare
+  icon_pumpkin_bombs:
+    display_name: "icon_pumpkin_bombs"
+    permission: icon_pumpkin_bombs
+    resource:
+      material: COAL
+      model_id: 2170
+      generate: false
+      model_path: jackolantern_model/icon_pumpkin_bombs
+  icon_summon_scarecrow:
+    display_name: "icon_summon_scarecrow"
+    permission: icon_summon_scarecrow
+    resource:
+      material: COAL
+      model_id: 2171
+      generate: false
+      model_path: jackolantern_model/icon_summon_scarecrow
+  

@@ -1,0 +1,161 @@
+info:
+  namespace: infernoset
+items:
+  inferno_axe:
+    display_name: Inferno Axe
+    permission: inferno.axe
+    resource:
+      generate: false
+      material: IRON_AXE
+      model_path: axe
+  inferno_bow:
+    display_name: Inferno Bow
+    permission: inferno.bow
+    resource:
+      generate: false
+      material: BOW
+      model_path: bow
+  inferno_chest:
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+    display_name: Inferno Chest
+    permission: inferno.chest
+    resource:
+      generate: false
+      material: SEA_LANTERN
+      model_path: chest
+
+  inferno_crossbow:
+    display_name: Inferno Crossbow
+    permission: inferno.crossbow
+    resource:
+      generate: false
+      material: CROSSBOW
+      model_path: crossbow
+  inferno_fishing_rod:
+    display_name: Inferno Fishing Rod
+    permission: inferno.fishing_rod
+    resource:
+      generate: false
+      material: FISHING_ROD
+      model_path: fishing_rod
+  inferno_knife:
+    display_name: Inferno Knife
+    permission: inferno.knife
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: knife
+  inferno_hammer:
+    display_name: Inferno Hammer
+    permission: inferno.hammer
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: hammer
+  inferno_hoe:
+    display_name: Inferno Hoe
+    permission: inferno.hoe
+    resource:
+      generate: false
+      material: IRON_HOE
+      model_path: hoe
+  inferno_key:
+    display_name: Inferno Key
+    permission: inferno.key
+    resource:
+      generate: false
+      material: PAPER
+      model_path: key
+  inferno_pickaxe:
+    display_name: Inferno Pickaxe
+    permission: inferno.pickaxe
+    resource:
+      generate: false
+      material: IRON_PICKAXE
+      model_path: pickaxe
+  inferno_scythe:
+    display_name: Inferno Scythe
+    permission: inferno.scythe
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: scythe
+  inferno_shield:
+    display_name: Inferno Shield
+    permission: inferno.shield
+    resource:
+      generate: false
+      material: SHIELD
+      model_path: shield
+  inferno_shovel:
+    display_name: Inferno Shovel
+    permission: inferno.shovel
+    resource:
+      generate: false
+      material: IRON_SHOVEL
+      model_path: shovel
+  inferno_spear:
+    display_name: Inferno Spear
+    permission: inferno.spear
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: spear
+  inferno_staff:
+    display_name: Inferno Staff
+    permission: inferno.staff
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: staff
+  inferno_sword:
+    display_name: Inferno Sword
+    permission: inferno.sword
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: sword
+  inferno_trident:
+    display_name: Inferno Trident
+    permission: inferno.trident
+    resource:
+      generate: false
+      material: IRON_SWORD
+      model_path: trident
+  inferno_backpack:
+    display_name: Inferno Backpack
+    permission: inferno.backpack
+    resource:
+      generate: false
+      material: PAPER
+      model_path: backpack
+  inferno_wings:
+    display_name: Inferno Wing
+    permission: inferno.cape
+    resource:
+      generate: false
+      material: PAPER
+      model_path: wings
+  inferno_head:
+    behaviours:
+      hat: true
+    display_name: Inferno Helmet
+    permission: inferno.head
+    resource:
+      generate: false
+      material: PAPER
+      model_path: helmet

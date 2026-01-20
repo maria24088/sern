@@ -1,0 +1,679 @@
+menu_title: ':offset_-52: :fondo_medieval:'
+open_command:
+  - kits
+  - kit
+open_commands: []
+size: 27
+# as always, only cool people can open this menu :)
+items:
+  starter:
+    material: LEATHER_HELMET
+    slot: 9
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_starter%'
+          output: 'yes'
+    display_name: '&e&lStarter Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fThe most basic kit! Providing essential'
+    - '&fitems for your survival needs!'
+    - '&r'
+    - '&e◆ &fCooldown: &e2 days'
+    - '&e◆ &fAvailable in: &eNow'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&e&lLEFT CLICK &eto claim kit'
+    left_click_commands:
+    - '[player] kit starter'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit starter'
+  startercooldown:
+    material: LEATHER_HELMET
+    slot: 9
+    priority: 3
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&e&lStarter Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fThe most basic kit! Providing essential'
+    - '&fitems for your survival needs!'
+    - '&r'
+    - '&c◆ &fCooldown: &c2 days'
+    - '&c◆ &fAvailable in: &c%essentials_kit_time_until_available_starter%'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lKIT &cis currently on cooldown!'
+    left_click_commands:
+    - '[player] kit starter'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit starter'
+  starternoperm:
+    material: LEATHER_HELMET
+    slot: 9
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: '!has permission'
+          permission: essentials.kits.starter
+    display_name: '&e&lStarter Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fThe most basic kit! Providing essential'
+    - '&fitems for your survival needs!'
+    - '&r'
+    - '&c◆ &fCooldown: &c2 days'
+    - '&c◆ &fAvailable in: &cN/A'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lPURCHASE RANK &cfrom our &c&n/store&c!'
+    left_click_commands:
+    - '[message] &cYou do not have access to this kit!'
+    right_click_commands:
+    - '[player] previewkit starter'
+  
+  claim:
+    material: GOLDEN_SHOVEL
+    slot: 10
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_claiming%'
+          output: 'yes'
+    display_name: '&e&lClaiming Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fWant to get claiming? You''ll need'
+    - '&fone of these Golden Shovels!'
+    - '&r'
+    - '&e◆ &fCooldown: &e1 hour'
+    - '&e◆ &fAvailable in: &eNow'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&e&lLEFT CLICK &eto claim kit'
+    left_click_commands:
+    - '[player] kit claiming'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit claiming'
+  claimcooldown:
+    material: GOLDEN_SHOVEL
+    slot: 10
+    priority: 3
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&e&lClaiming Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fWant to get claiming? You''ll need'
+    - '&fone of these Golden Shovels!'
+    - '&r'
+    - '&c◆ &fCooldown: &c1 hour'
+    - '&c◆ &fAvailable in: &c%essentials_kit_time_until_available_claiming%'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lKIT &cis currently on cooldown!'
+    left_click_commands:
+    - '[player] kit claiming'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit claiming'
+  claimnoperm:
+    material: GOLDEN_SHOVEL
+    slot: 10
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: '!has permission'
+          permission: essentials.kits.claiming
+    display_name: '&e&lClaiming Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fWant to get claiming? You''ll need'
+    - '&fone of these Golden Shovels!'
+    - '&r'
+    - '&c◆ &fCooldown: &c1 hour'
+    - '&c◆ &fAvailable in: &cN/A'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lPURCHASE RANK &cfrom our &c&n/store&c!'
+    left_click_commands:
+    - '[message] &cYou do not have access to this kit!'
+    right_click_commands:
+    - '[player] previewkit claiming'
+  
+  stained_glass:
+    material: GRAY_STAINED_GLASS_PANE
+    slot: 11
+    priority: 1
+    display_name: '&r'
+  
+  chicken:
+    material: CHICKEN_SPAWN_EGG
+    slot: 12
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_chicken%'
+          output: 'yes'
+    display_name: '&#fbfbfb&lC&#ebedec&lH&#dae0dc&lI&#cad2cd&lC&#bac4bd&lK&#a9b7ae&lE&#99a99e&lN&#99a99e Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Chicken rank!'
+    - '&r'
+    - '&e◆ &fCooldown: &e2 days'
+    - '&e◆ &fAvailable in: &eNow'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&e&lLEFT CLICK &eto claim kit'
+    left_click_commands:
+    - '[player] kit chicken'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit chicken'
+  chickencooldown:
+    material: CHICKEN_SPAWN_EGG
+    slot: 12
+    priority: 3
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fbfbfb&lC&#ebedec&lH&#dae0dc&lI&#cad2cd&lC&#bac4bd&lK&#a9b7ae&lE&#99a99e&lN&#99a99e Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&#fbfbfbDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Chicken rank!'
+    - '&r'
+    - '&c◆ &fCooldown: &c2 days'
+    - '&c◆ &fAvailable in: &c%essentials_kit_time_until_available_chicken%'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lKIT &cis currently on cooldown!'
+    left_click_commands:
+    - '[player] kit chicken'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit chicken'
+  chickenperm:
+    material: CHICKEN_SPAWN_EGG
+    slot: 12
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: '!has permission'
+          permission: essentials.kits.chicken
+    display_name: '&#fbfbfb&lC&#ebedec&lH&#dae0dc&lI&#cad2cd&lC&#bac4bd&lK&#a9b7ae&lE&#99a99e&lN&#99a99e Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&cDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Chicken rank!'
+    - '&r'
+    - '&c◆ &fCooldown: &c2 days'
+    - '&c◆ &fAvailable in: &cN/A'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lPURCHASE RANK &cfrom our &c&n/store&c!'
+    left_click_commands:
+    - '[message] &cYou do not have access to this kit!'
+    right_click_commands:
+    - '[player] previewkit chicken'
+  
+  fox:
+    material: FOX_SPAWN_EGG
+    slot: 13
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_fox%'
+          output: 'yes'
+    display_name: '&#fd8900&lF&#fc9f00&lO&#fbb500&lX &#fbb500Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Fox rank!'
+    - '&r'
+    - '&e◆ &fCooldown: &e2 days'
+    - '&e◆ &fAvailable in: &eNow'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&e&lLEFT CLICK &eto claim kit'
+    left_click_commands:
+    - '[player] kit fox'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit fox'
+  foxcooldown:
+    material: FOX_SPAWN_EGG
+    slot: 13
+    priority: 3
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fd8900&lF&#fc9f00&lO&#fbb500&lX &#fbb500Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Fox rank!'
+    - '&r'
+    - '&c◆ &fCooldown: &c2 days'
+    - '&c◆ &fAvailable in: &c%essentials_kit_time_until_available_fox%'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lKIT &cis currently on cooldown!'
+    left_click_commands:
+    - '[player] kit fox'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit fox'
+  foxnoperm:
+    material: FOX_SPAWN_EGG
+    slot: 13
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: '!has permission'
+          permission: essentials.kits.fox
+    display_name: '&#fd8900&lF&#fc9f00&lO&#fbb500&lX &#fbb500Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&cDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Fox rank!'
+    - '&r'
+    - '&c◆ &fCooldown: &c2 days'
+    - '&c◆ &fAvailable in: &cN/A'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lPURCHASE RANK &cfrom our &c&n/store&c!'
+    left_click_commands:
+    - '[message] &cYou do not have access to this kit!'
+    right_click_commands:
+    - '[player] previewkit fox'
+  
+  witch:
+    material: WITCH_SPAWN_EGG
+    slot: 14
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_witch%'
+          output: 'yes'
+    display_name: '&#cc00fb&lW&#c300e7&lI&#ba00d2&lT&#b100be&lC&#a800a9&lH &#cc00fbKit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Witch rank!'
+    - '&r'
+    - '&e◆ &fCooldown: &e2 days'
+    - '&e◆ &fAvailable in: &eNow'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&e&lLEFT CLICK &eto claim kit'
+    left_click_commands:
+    - '[player] kit witch'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit witch'
+  witchcooldown:
+    material: WITCH_SPAWN_EGG
+    slot: 14
+    priority: 3
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#cc00fb&lW&#c300e7&lI&#ba00d2&lT&#b100be&lC&#a800a9&lH &#cc00fbKit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Witch rank!'
+    - '&r'
+    - '&c◆ &fCooldown: &c2 days'
+    - '&c◆ &fAvailable in: &c%essentials_kit_time_until_available_witch%'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lKIT &cis currently on cooldown!'
+    left_click_commands:
+    - '[player] kit witch'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit witch'
+  witchnoperm:
+    material: WITCH_SPAWN_EGG
+    slot: 14
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: '!has permission'
+          permission: essentials.kits.witch
+    display_name: '&#cc00fb&lW&#c300e7&lI&#ba00d2&lT&#b100be&lC&#a800a9&lH &#cc00fbKit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&cDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Witch rank!'
+    - '&r'
+    - '&c◆ &fCooldown: &c2 days'
+    - '&c◆ &fAvailable in: &cN/A'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lPURCHASE RANK &cfrom our &c&n/store&c!'
+    left_click_commands:
+    - '[message] &cYou do not have access to this kit!'
+    right_click_commands:
+    - '[player] previewkit witch'
+  
+  squid:
+    material: SQUID_SPAWN_EGG
+    slot: 15
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_squid%'
+          output: 'yes'
+    display_name: '&#00a2fd&lS&#009afd&lQ&#0093fc&lU&#008bfc&lI&#0083fb&lD&f &#0083fbKit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Squid rank!'
+    - '&r'
+    - '&e◆ &fCooldown: &e2 days'
+    - '&e◆ &fAvailable in: &eNow'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&e&lLEFT CLICK &eto claim kit'
+    left_click_commands:
+    - '[player] kit squid'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit squid'
+  squidcooldown:
+    material: SQUID_SPAWN_EGG
+    slot: 15
+    priority: 3
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00a2fd&lS&#009afd&lQ&#0093fc&lU&#008bfc&lI&#0083fb&lD&f &#0083fbKit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Squid rank!'
+    - '&r'
+    - '&c◆ &fCooldown: &c2 days'
+    - '&c◆ &fAvailable in: &c%essentials_kit_time_until_available_squid%'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lKIT &cis currently on cooldown!'
+    left_click_commands:
+    - '[player] kit squid'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit squid'
+  squidnoperm:
+    material: SQUID_SPAWN_EGG
+    slot: 15
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: '!has permission'
+          permission: essentials.kits.squid
+    display_name: '&#00a2fd&lS&#009afd&lQ&#0093fc&lU&#008bfc&lI&#0083fb&lD&f &#0083fbKit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&cDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Squid rank!'
+    - '&r'
+    - '&c◆ &fCooldown: &c2 days'
+    - '&c◆ &fAvailable in: &cN/A'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lPURCHASE RANK &cfrom our &c&n/store&c!'
+    left_click_commands:
+    - '[message] &cYou do not have access to this kit!'
+    right_click_commands:
+    - '[player] previewkit squid'
+  
+  creeper:
+    material: CREEPER_SPAWN_EGG
+    slot: 16
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_creeper%'
+          output: 'yes'
+    display_name: '&#20fb00&lC&#1bed0d&lR&#15e01b&lE&#10d228&lE&#0bc435&lP&#05b743&lE&#00a950&lR &#20fb00Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Creeper rank!'
+    - '&r'
+    - '&e◆ &fCooldown: &e2 days'
+    - '&e◆ &fAvailable in: &eNow'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&e&lLEFT CLICK &eto claim kit'
+    left_click_commands:
+    - '[player] kit creeper'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit creeper'
+  creepercooldown:
+    material: CREEPER_SPAWN_EGG
+    slot: 16
+    priority: 3
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#20fb00&lC&#1bed0d&lR&#15e01b&lE&#10d228&lE&#0bc435&lP&#05b743&lE&#00a950&lR &#20fb00Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Creeper rank!'
+    - '&r'
+    - '&c◆ &fCooldown: &c2 days'
+    - '&c◆ &fAvailable in: &c%essentials_kit_time_until_available_creeper%'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lKIT &cis currently on cooldown!'
+    left_click_commands:
+    - '[player] kit creeper'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit creeper'
+  creepernoperm:
+    material: CREEPER_SPAWN_EGG
+    slot: 16
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: '!has permission'
+          permission: essentials.kits.creeper
+    display_name: '&#20fb00&lC&#1bed0d&lR&#15e01b&lE&#10d228&lE&#0bc435&lP&#05b743&lE&#00a950&lR &#20fb00Kit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&cDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Creeper rank!'
+    - '&r'
+    - '&c◆ &fCooldown: &c2 days'
+    - '&c◆ &fAvailable in: &cN/A'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lPURCHASE RANK &cfrom our &c&n/store&c!'
+    left_click_commands:
+    - '[message] &cYou do not have access to this kit!'
+    right_click_commands:
+    - '[player] previewkit creeper'
+
+  goat:
+    material: GOAT_SPAWN_EGG
+    slot: 17
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_goat%'
+          output: 'yes'
+    display_name: '&#bae1fd&lG&#b5ddfc&lO&#b1d9fc&lA&#acd5fb&lT &#acd5fbKit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Goat rank!'
+    - '&r'
+    - '&e◆ &fCooldown: &e2 days'
+    - '&e◆ &fAvailable in: &eNow'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&e&lLEFT CLICK &eto claim kit'
+    left_click_commands:
+    - '[player] kit goat'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit goat'
+  goatcooldown:
+    material: GOAT_SPAWN_EGG
+    slot: 17
+    priority: 3
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#bae1fd&lG&#b5ddfc&lO&#b1d9fc&lA&#acd5fb&lT &#acd5fbKit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&eDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Goat rank!'
+    - '&r'
+    - '&c◆ &fCooldown: &c2 days'
+    - '&c◆ &fAvailable in: &c%essentials_kit_time_until_available_goat%'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lKIT &cis currently on cooldown!'
+    left_click_commands:
+    - '[player] kit goat'
+    - '[close]'
+    right_click_commands:
+    - '[player] previewkit goat'
+  goatnoperm:
+    material: GOAT_SPAWN_EGG
+    slot: 17
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: '!has permission'
+          permission: essentials.kits.goat
+    display_name: '&#bae1fd&lG&#b5ddfc&lO&#b1d9fc&lA&#acd5fb&lT &#acd5fbKit'
+    lore:
+    - '&8Server Kit'
+    - ''
+    - '&cDescription:'
+    - '&fThis a special kit, reserved for'
+    - '&fthose with the Goat rank!'
+    - '&r'
+    - '&c◆ &fCooldown: &c2 days'
+    - '&c◆ &fAvailable in: &cN/A'
+    - ''
+    - '&6&lRIGHT CLICK&6 to preview kit'
+    - '&c&lPURCHASE RANK &cfrom our &c&n/store&c!'
+    left_click_commands:
+    - '[message] &cYou do not have access to this kit!'
+    right_click_commands:
+    - '[player] previewkit goat'
+  
+  

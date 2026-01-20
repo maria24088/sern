@@ -1,0 +1,116 @@
+Id: Pet_Knight_Castle
+MythicMob: Pet_Knight_Castle
+Permission: mcpet.Pet_Knight_Castle
+Mountable: false
+Distance: 6
+DismountOnDamaged: false
+SpawnRange: 3
+ComingBackRange: 5
+Icon:
+  Name: §bCastle Knight
+  Material: BRICK
+  CustomModelData: 12012
+  Description:
+  - §fGet your pet Castle Knight!
+  - ''
+  - §f[§cThrust§f]
+  - §fYour Knight thrusts an enemy with its spear.
+  - ''
+  - '§7Level up: §a+Damage'
+Skins:
+  Pet_Knight_Castle:
+    MythicMob: Pet_Knight_Castle
+    Permission: skin.Pet_Knight_Castle
+    Icon:
+      Material: BRICK
+      CustomModelData: 12012
+      DisplayName: §bCastle Knight
+      Lore:
+      - §fGet your pet Castle Knight!
+  Pet_Knight_Glacial:
+    MythicMob: Pet_Knight_Glacial
+    Permission: skin.Pet_Knight_Glacial
+    Icon:
+      Material: BRICK
+      CustomModelData: 12014
+      DisplayName: §bGlacial Knight
+      Lore:
+      - §fGet your pet Castle Knight!
+  Pet_Knight_Holy:
+    MythicMob: Pet_Knight_Holy
+    Permission: skin.Pet_Knight_Holy
+    Icon:
+      Material: BRICK
+      CustomModelData: 12015
+      DisplayName: §bHoly Knight
+      Lore:
+      - §fGet your pet Holy Knight!
+  Pet_Knight_Ender:
+    MythicMob: Pet_Knight_Ender
+    Permission: skin.Pet_Knight_Ender
+    Icon:
+      Material: BRICK
+      CustomModelData: 12013
+      DisplayName: §bEnder Knight
+      Lore:
+      - §fGet your pet Ender Knight!
+Levels:
+  Lvl_Common:
+    Name: §fCommon
+    ExperienceThreshold: 0
+    MaxHealth: 100
+    Regeneration: 0.1
+    ResistanceModifier: 1
+    DamageModifier: 2
+    Power: 1
+    Cooldowns:
+      Respawn: 15
+      Revoke: 0
+    InventoryExtension: 0
+  Lvl_Rare:
+    Name: §aRare
+    ExperienceThreshold: 500
+    MaxHealth: 150
+    Regeneration: 0.12
+    ResistanceModifier: 1
+    DamageModifier: 4
+    Power: 1
+    Cooldowns:
+      Respawn: 14
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &aRare &6level!'
+      Type: CHAT
+  Lvl_Epic:
+    Name: §dEpic
+    ExperienceThreshold: 2000
+    MaxHealth: 200
+    Regeneration: 0.14
+    ResistanceModifier: 1
+    DamageModifier: 6
+    Power: 1
+    Cooldowns:
+      Respawn: 13
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &dEpic &6level!'
+      Type: CHAT
+  Lvl_Legendary:
+    Name: §eLegendary
+    ExperienceThreshold: 5000
+    MaxHealth: 300
+    Regeneration: 0.2
+    ResistanceModifier: 1
+    DamageModifier: 9
+    Power: 1
+    Cooldowns:
+      Respawn: 12
+      Revoke: 0
+    InventoryExtension: 0
+    Announcement:
+      Text: '&6Level up! Your pet is now &eLegendary &6level!'
+      Type: CHAT
+
+# AlZ3cDTSF1UZJHaRhXQyUUQrNTVyRXbSJlRxEmNC5GZUZUbXlmQtBTcpd1UVZEcRp3aWZXO

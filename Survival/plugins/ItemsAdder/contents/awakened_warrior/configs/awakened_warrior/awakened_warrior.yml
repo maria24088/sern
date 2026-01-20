@@ -1,0 +1,67 @@
+info:
+  namespace: awakened_warrior
+items:
+  awakened_warrior_brutesword:
+    display_name: "awakened_warrior_brutesword"
+    permission: awakened_warrior_brutesword
+    resource:
+      material: STONE_SWORD
+      model_id: 2086
+      generate: false
+      model_path: awakened_warrior_model/awakened_warrior_brutesword
+  icon_berserkers_leap:
+    display_name: "icon_berserkers_leap"
+    permission: icon_berserkers_leap
+    resource:
+      material: COAL
+      model_id: 2287
+      generate: false
+      model_path: awakened_warrior_model/icon_berserkers_leap
+  icon_bloodbound_barrier:
+    display_name: "icon_bloodbound_barrier"
+    permission: icon_bloodbound_barrier
+    resource:
+      material: COAL
+      model_id: 2288
+      generate: false
+      model_path: awakened_warrior_model/icon_bloodbound_barrier
+  icon_brutal_combo:
+    display_name: "icon_brutal_combo"
+    permission: icon_brutal_combo
+    resource:
+      material: COAL
+      model_id: 2289
+      generate: false
+      model_path: awakened_warrior_model/icon_brutal_combo
+  icon_bulwark_instinct:
+    display_name: "icon_bulwark_instinct"
+    permission: icon_bulwark_instinct
+    resource:
+      material: COAL
+      model_id: 2290
+      generate: false
+      model_path: awakened_warrior_model/icon_bulwark_instinct
+  icon_relentless_whirlwind:
+    display_name: "icon_relentless_whirlwind"
+    permission: icon_relentless_whirlwind
+    resource:
+      material: COAL
+      model_id: 2291
+      generate: false
+      model_path: awakened_warrior_model/icon_relentless_whirlwind
+  icon_strike_of_fury:
+    display_name: "icon_strike_of_fury"
+    permission: icon_strike_of_fury
+    resource:
+      material: COAL
+      model_id: 2292
+      generate: false
+      model_path: awakened_warrior_model/icon_strike_of_fury
+  icon_vicious_strike:
+    display_name: "icon_vicious_strike"
+    permission: icon_vicious_strike
+    resource:
+      material: COAL
+      model_id: 2293
+      generate: false
+      model_path: awakened_warrior_model/icon_vicious_strike

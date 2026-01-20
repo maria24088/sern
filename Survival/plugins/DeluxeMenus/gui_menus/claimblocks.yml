@@ -1,0 +1,268 @@
+# Guía de configuración avanzada de DeluxeMenus
+#=========================================================
+menu_title: 'Tienda de Monedas | Bloques de Reclamo'
+open_command:
+  - comprarbloquesdereclamo
+open_commands: []
+size: 36
+# Como siempre, solo la gente genial puede abrir este menú :)
+items:
+
+  # Opción 1: 10,000 Bloques de Reclamo (Comprable)
+  'c1_1':
+    material: grass_block # Bloque de pasto
+    slot: 10
+    priority: 0
+    amount: 10
+    update: true
+    item_flags: [HIDE_ENCHANTS] # Ocultar encantamientos
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    # Requisito de visualización: Comprueba si el saldo de monedas es mayor o igual a 1400
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1400"
+    display_name: '&a10,000 Bloques de Reclamo'
+    lore:
+      - '&8Bloques de Reclamo'
+      - '&r'
+      - '&bDescripción:'
+      - '&fCompra más bloques de reclamo para tu terreno.'
+      - ''
+      - '&e◆ &fPrecio: &e1,400 Monedas'
+      - '&e◆ &fTu Saldo de Monedas: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Compra monedas en'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &a¡Clic para comprar!'
+    left_click_commands:
+      - '[console] coins remove %player_name% 1400' # Quita 1400 monedas
+      - '[message] &eCoins &8| &f¡Has comprado &e10,000 Bloques de Reclamo&f!'
+      - '[console] adjustbonusclaimblocks %player_name% 10000' # Añade 10000 bloques de reclamo
+      - '[close]' # Cierra el menú
+
+  # Opción 1: 10,000 Bloques de Reclamo (Bloqueado/Sin Dinero)
+  'c1_2':
+    material: grass_block # Bloque de pasto
+    slot: 10
+    priority: 1
+    amount: 10
+    update: true
+    item_flags: [HIDE_ENCHANTS] # Ocultar encantamientos
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&a10,000 Bloques de Reclamo'
+    lore:
+      - '&8Bloques de Reclamo'
+      - '&r'
+      - '&bDescripción:'
+      - '&fCompra más bloques de reclamo para tu terreno.'
+      - ''
+      - '&e◆ &fPrecio: &e1,400 Monedas'
+      - '&e◆ &fTu Saldo de Monedas: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Compra monedas en'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &c¡No tienes suficientes Monedas!'
+    left_click_commands:
+      - '[message] &eCoins &8| &c¡No tienes suficientes monedas!'
+      - '[close]'
+
+  # Opción 2: 20,000 Bloques de Reclamo (Comprable)
+  'c2_1':
+    material: grass_block # Bloque de pasto
+    slot: 12
+    priority: 0
+    amount: 20
+    update: true
+    item_flags: [HIDE_ENCHANTS] # Ocultar encantamientos
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    # Requisito de visualización: Comprueba si el saldo de monedas es mayor o igual a 2300
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 2300"
+    display_name: '&a20,000 Bloques de Reclamo'
+    lore:
+      - '&8Bloques de Reclamo'
+      - '&r'
+      - '&bDescripción:'
+      - '&fCompra más bloques de reclamo para tu terreno.'
+      - ''
+      - '&e◆ &fPrecio: &e2,300 Monedas'
+      - '&e◆ &fTu Saldo de Monedas: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Compra monedas en'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &a¡Clic para comprar!'
+    left_click_commands:
+      - '[console] coins remove %player_name% 2300' # Quita 2300 monedas
+      - '[message] &eCoins &8| &f¡Has comprado &e20,000 Bloques de Reclamo&f!'
+      - '[console] adjustbonusclaimblocks %player_name% 20000' # Añade 20000 bloques de reclamo
+      - '[close]'
+
+  # Opción 2: 20,000 Bloques de Reclamo (Bloqueado/Sin Dinero)
+  'c2_2':
+    material: grass_block # Bloque de pasto
+    slot: 12
+    priority: 1
+    amount: 20
+    update: true
+    item_flags: [HIDE_ENCHANTS] # Ocultar encantamientos
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&a20,000 Bloques de Reclamo'
+    lore:
+      - '&8Bloques de Reclamo'
+      - '&r'
+      - '&bDescripción:'
+      - '&fCompra más bloques de reclamo para tu terreno.'
+      - ''
+      - '&e◆ &fPrecio: &e2,300 Monedas'
+      - '&e◆ &fTu Saldo de Monedas: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Compra monedas en'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &c¡No tienes suficientes Monedas!'
+    left_click_commands:
+      - '[message] &eCoins &8| &c¡No tienes suficientes monedas!'
+      - '[close]'
+
+  # Opción 3: 30,000 Bloques de Reclamo (Comprable)
+  'c3_1':
+    material: grass_block # Bloque de pasto
+    slot: 14
+    priority: 0
+    amount: 30
+    update: true
+    item_flags: [HIDE_ENCHANTS] # Ocultar encantamientos
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    # Requisito de visualización: Comprueba si el saldo de monedas es mayor o igual a 2800
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 2800"
+    display_name: '&a30,000 Bloques de Reclamo'
+    lore:
+      - '&8Bloques de Reclamo'
+      - '&r'
+      - '&bDescripción:'
+      - '&fCompra más bloques de reclamo para tu terreno.'
+      - ''
+      - '&e◆ &fPrecio: &e2,800 Monedas'
+      - '&e◆ &fTu Saldo de Monedas: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Compra monedas en'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &a¡Clic para comprar!'
+    left_click_commands:
+      - '[console] coins remove %player_name% 2800' # Quita 2800 monedas
+      - '[message] &eCoins &8| &f¡Has comprado &e30,000 Bloques de Reclamo&f!'
+      - '[console] adjustbonusclaimblocks %player_name% 30000' # Añade 30000 bloques de reclamo
+      - '[close]'
+
+  # Opción 3: 30,000 Bloques de Reclamo (Bloqueado/Sin Dinero)
+  'c3_2':
+    material: grass_block # Bloque de pasto
+    slot: 14
+    priority: 1
+    amount: 30
+    update: true
+    item_flags: [HIDE_ENCHANTS] # Ocultar encantamientos
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&a30,000 Bloques de Reclamo'
+    lore:
+      - '&8Bloques de Reclamo'
+      - '&r'
+      - '&bDescripción:'
+      - '&fCompra más bloques de reclamo para tu terreno.'
+      - ''
+      - '&e◆ &fPrecio: &e2,800 Monedas'
+      - '&e◆ &fTu Saldo de Monedas: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Compra monedas en'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &c¡No tienes suficientes Monedas!'
+    left_click_commands:
+      - '[message] &eCoins &8| &c¡No tienes suficientes monedas!'
+      - '[close]'
+
+  # Opción 4: 40,000 Bloques de Reclamo (Comprable)
+  'c4_1':
+    material: grass_block # Bloque de pasto
+    slot: 16
+    priority: 0
+    amount: 40
+    update: true
+    item_flags: [HIDE_ENCHANTS] # Ocultar encantamientos
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    # Requisito de visualización: Comprueba si el saldo de monedas es mayor o igual a 3200
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 3200"
+    display_name: '&a40,000 Bloques de Reclamo'
+    lore:
+      - '&8Bloques de Reclamo'
+      - '&r'
+      - '&bDescripción:'
+      - '&fCompra más bloques de reclamo para tu terreno.'
+      - ''
+      - '&e◆ &fPrecio: &e3,200 Monedas'
+      - '&e◆ &fTu Saldo de Monedas: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Compra monedas en'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &a¡Clic para comprar!'
+    left_click_commands:
+      - '[console] coins remove %player_name% 3200' # Quita 3200 monedas
+      - '[message] &eCoins &8| &f¡Has comprado &e40,000 Bloques de Reclamo&f!'
+      - '[console] adjustbonusclaimblocks %player_name% 40000' # Añade 40000 bloques de reclamo
+      - '[close]'
+
+  # Opción 4: 40,000 Bloques de Reclamo (Bloqueado/Sin Dinero)
+  'c4_2':
+    material: grass_block # Bloque de pasto
+    slot: 16
+    priority: 1
+    amount: 40
+    update: true
+    item_flags: [HIDE_ENCHANTS] # Ocultar encantamientos
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&a40,000 Bloques de Reclamo'
+    lore:
+      - '&8Bloques de Reclamo'
+      - '&r'
+      - '&bDescripción:'
+      - '&fCompra más bloques de reclamo para tu terreno.'
+      - ''
+      - '&e◆ &fPrecio: &e3,200 Monedas'
+      - '&e◆ &fTu Saldo de Monedas: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Compra monedas en'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &c¡No tienes suficientes Monedas!'
+    left_click_commands:
+      - '[message] &eCoins &8| &c¡No tienes suficientes monedas!'
+      - '[close]'
+
+  # Botón de Regreso
+  'back':
+    material: flower_banner_pattern # Diseño de estandarte de flor
+    slot: 31
+    hide_effects: true # Ocultar efectos (por si tiene alguno por defecto)
+    display_name: '&cVolver Atrás'
+    lore:
+      - '&fClic para volver al menú principal'
+    left_click_commands:
+      - '[openguimenu] coinshop' # Abre el menú llamado 'coinshop'

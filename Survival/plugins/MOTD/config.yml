@@ -1,0 +1,24 @@
+# This is the server motd.
+Server-MOTD:
+  Line-1: '         &6&m    &e&m    &f&m    &r &6&lSurvival Custom&r &f&m    &e&m    &6&m    &r'
+  Line-2: '&l  &r      &eBy Bruno240707 &8| &f'
+
+# The motd of the player when they join in.
+JoinGame-MOTD:
+  Enabled: false
+  # Check forum for placeholders.
+  # Supported for PlaceholderAPI placeholders.
+  Messages:
+  - '&eBienvenido al servidor.'
+
+# Server icon.
+Custom-Server-Icon:
+  # Set to true will load image from motd folder.
+  Enabled: true
+  # Make sure it's 64 x 64 pixels with png format.
+  Image: server-icon.png
+
+# The maximum players of the server.
+Server-Maximum-Players:
+  Modify: true
+  Maximum-Players: 100

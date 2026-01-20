@@ -1,0 +1,29 @@
+
+info:
+  namespace: fairyset
+items:
+  fairy_cosmeticscore_wing:
+    display_name: Fairy Wing Cosmeticscore
+    permission: fairy.wing_cosmeticscore
+    resource:
+      generate: false
+      material: POTION
+      model_path: wings_cosmeticscore
+      model_id: 2000001
+  fairy_cosmeticscore_wing_self:
+    display_name: Fairy Wing Cosmeticscore Self
+    permission: fairy.wing_cosmeticscore_self
+    resource:
+      generate: false
+      material: POTION
+      model_path: wings_cosmeticscore_self
+      model_id: 2000002
+
+  fairy_cosmeticscore_head:
+    display_name: Fairy Helmet Cosmeticscore
+    permission: fairy.helmet_cosmeticscore
+    resource:
+      generate: false
+      material: POTION
+      model_path: helmet
+      model_id: 2000003

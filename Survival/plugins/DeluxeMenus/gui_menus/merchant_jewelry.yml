@@ -1,0 +1,95 @@
+# Made by samus2002
+
+menu_title: '&8&lJewelry Shop'
+open_command:
+  - shop_jewelry
+size: 45
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: shop_jewelry.open
+      deny_commands:
+        - "[message] &cYou can't access the Jewelry Shop yet!"
+items:
+  'AMETHYST_SHARD':
+    material: AMETHYST_SHARD
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lAmethyst Shard'
+    lore:
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lClick Izquierdo&7 para comprar!"
+      - ""
+      - "&f❖ &6&lRequiere:"
+      - "&7- &ax1 Madera (Oak)"
+      - "&7- &ax1 Diamante"
+      - ""
+      - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      - ""
+      - "&f⏵ &c&lClick Derecho&7 para vender por &a$25!"
+      - ""
+      - "&f❖ &6&lRequiere:"
+      - "&7- &a1x Amethyst Shard"
+      - ""
+    
+    # --- CONFIGURACIÓN DE COMPRA (CLICK IZQUIERDO) ---
+    left_click_requirement:
+      requirements:
+        tiene_madera:
+          type: has item
+          material: OAK_PLANKS
+          amount: 1
+        tiene_diamante:
+          type: has item
+          material: DIAMOND
+          amount: 1
+      deny_commands:
+        - '[message] &cNo tienes suficiente madera o diamantes para comprar esto.'
+        - '[sound] BLOCK_ANVIL_LAND'
+
+    left_click_commands:
+      # Quitamos los items usando la consola (es lo más seguro)
+      - '[console] clear %player_name% oak_planks 1'
+      - '[console] clear %player_name% diamond 1'
+      # Damos el item comprado
+      - '[console] give %player_name% amethyst_shard 1'
+      - '[message] &a¡Has comprado un Fragmento de Amatista!'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[refresh]'
+
+    # --- CONFIGURACIÓN DE VENTA (CLICK DERECHO) ---
+    right_click_requirement:
+      requirements:
+        tiene_amatista:
+          type: has item
+          material: AMETHYST_SHARD
+          amount: 1
+      deny_commands:
+        - '[message] &cNo tienes Fragmentos de Amatista para vender.'
+        - '[sound] BLOCK_ANVIL_LAND'
+
+    right_click_commands:
+      # Quitamos el item
+      - '[console] clear %player_name% amethyst_shard 1'
+      # Damos el dinero (requiere Vault)
+      - '[givemoney] 25'
+      - '[message] &a¡Has vendido el fragmento por $25!'
+      - '[sound] BLOCK_NOTE_BLOCK_PLING'
+      - '[refresh]'
+      
+  'PLAYER':
+    material: ENDER_PEARL
+    slot: 4
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lBalance'
+    lore:
+      - "&a$%vault_eco_balance%"
+#24f35df792b6ddcf3baf6e41e84f2dde

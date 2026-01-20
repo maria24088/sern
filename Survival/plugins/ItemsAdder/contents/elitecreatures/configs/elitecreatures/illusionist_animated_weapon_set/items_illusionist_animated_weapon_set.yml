@@ -1,0 +1,191 @@
+info:
+  namespace: elitecreatures
+armors_rendering:
+  illusionist_animated_weapon_set:
+    color: "#8c1965"
+    layer_1: illusionist_animated_weapon_set/armor/illusionist_armor_layer_1
+    layer_2: illusionist_animated_weapon_set/armor/illusionist_armor_layer_2
+    use_color: false
+items:
+
+  illusionist_animated_weapon_set_helmet:
+    display_name: Illusionist Helmet
+    resource:
+      generate: true
+      textures:
+        - illusionist_animated_weapon_set/armor/illusionist_helmet.png
+    specific_properties:
+      armor:
+        slot: head
+        custom_armor: illusionist_animated_weapon_set
+  illusionist_animated_weapon_set_chestplate:
+    display_name: Illusionist Chestplate
+    resource:
+      generate: true
+      textures:
+        - illusionist_animated_weapon_set/armor/illusionist_chestplate.png
+    specific_properties:
+      armor:
+        slot: chest
+        custom_armor: illusionist_animated_weapon_set
+  illusionist_animated_weapon_set_leggings:
+    display_name: Illusionist Leggings
+    resource:
+      generate: true
+      textures:
+        - illusionist_animated_weapon_set/armor/illusionist_leggings.png
+    specific_properties:
+      armor:
+        slot: legs
+        custom_armor: illusionist_animated_weapon_set
+  illusionist_animated_weapon_set_boots:
+    display_name: Illusionist Boots
+    resource:
+      generate: true
+      textures:
+        - illusionist_animated_weapon_set/armor/illusionist_boots.png
+    specific_properties:
+      armor:
+        slot: FEET
+        custom_armor: illusionist_animated_weapon_set
+
+  illusionist_animated_weapon_set_axe:
+    display_name: Axe
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: illusionist_animated_weapon_set/axe
+  illusionist_animated_weapon_set_backpack:
+    display_name: Backpack
+    resource:
+      material: PAPER
+      generate: false
+      model_path: illusionist_animated_weapon_set/backpack
+  illusionist_animated_weapon_set_bow:
+    display_name: Bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: illusionist_animated_weapon_set/bow
+  illusionist_animated_weapon_set_chest:
+    display_name: Chest
+    resource:
+      material: PAPER
+      generate: false
+      model_path: illusionist_animated_weapon_set/chest
+    behaviours:
+      furniture:
+        solid: true
+        fixed_rotation: true
+        entity: armor_stand
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  illusionist_animated_weapon_set_crossbow:
+    display_name: Crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: illusionist_animated_weapon_set/crossbow
+  illusionist_animated_weapon_set_dagger:
+    display_name: Dagger
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: illusionist_animated_weapon_set/dagger
+  illusionist_animated_weapon_set_fishing_rod:
+    display_name: Fishing Rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: illusionist_animated_weapon_set/fishing_rod
+  illusionist_animated_weapon_set_greatsword:
+    display_name: Greatsword
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: illusionist_animated_weapon_set/greatsword
+  illusionist_animated_weapon_set_hammer:
+    display_name: Hammer
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: illusionist_animated_weapon_set/hammer
+  illusionist_animated_weapon_set_hat:
+    display_name: Hat
+    resource:
+      material: PAPER
+      generate: false
+      model_path: illusionist_animated_weapon_set/hat
+    behaviours:
+      hat: true
+  illusionist_animated_weapon_set_hoe:
+    display_name: Hoe
+    resource:
+      material: DIAMOND_HOE
+      generate: false
+      model_path: illusionist_animated_weapon_set/hoe
+  illusionist_animated_weapon_set_key:
+    display_name: Key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: illusionist_animated_weapon_set/key
+  illusionist_animated_weapon_set_mace:
+    display_name: Mace
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: illusionist_animated_weapon_set/mace
+  illusionist_animated_weapon_set_pickaxe:
+    display_name: Pickaxe
+    resource:
+      material: DIAMOND_PICKAXE
+      generate: false
+      model_path: illusionist_animated_weapon_set/pickaxe
+  illusionist_animated_weapon_set_shield:
+    display_name: Shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: illusionist_animated_weapon_set/shield
+  illusionist_animated_weapon_set_shovel:
+    display_name: Shovel
+    resource:
+      material: DIAMOND_SHOVEL
+      generate: false
+      model_path: illusionist_animated_weapon_set/shovel
+  illusionist_animated_weapon_set_spear:
+    display_name: Spear
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: illusionist_animated_weapon_set/spear
+  illusionist_animated_weapon_set_staff:
+    display_name: Staff
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: illusionist_animated_weapon_set/staff
+  illusionist_animated_weapon_set_sword:
+    display_name: Sword
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: illusionist_animated_weapon_set/sword
+  illusionist_animated_weapon_set_wing:
+    display_name: Wing
+    resource:
+      material: PAPER
+      generate: false
+      model_path: illusionist_animated_weapon_set/wing
+
+#IXVqRjTwQTZTFGbtpkTPpFanJTYEh3aVFGcxE1dOJTW6VFRkV0SQVlZCN0MIJ1YJBnWlxEO

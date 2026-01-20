@@ -1,0 +1,20 @@
+location: SpawnRPG:-23.500:91.000:93.500
+enabled: false
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:ENCHANTING_TABLE'
+    height: 0.6
+  - content: '&#F9CD40§lEncantamientos'
+    height: 0.3
+  - content: §f¡Artículos Oficiales de la Tienda!
+    height: 0.3
+  - content: §r
+    height: 0.3
+  - content: §7Haz clic para Abrir
+    height: 0.3
+  actions: {}

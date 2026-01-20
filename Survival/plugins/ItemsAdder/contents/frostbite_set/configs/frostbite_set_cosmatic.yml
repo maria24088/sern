@@ -1,0 +1,43 @@
+info:
+  namespace: frostbite_set
+items:
+  frostbite_cosmetics_helmet:
+    display_name: §fFrostbite Helmet Cosmetics
+    permission: frostbite_set.frostbite_cosmetics_helmet
+    resource:
+      generate: false
+      model_path: helmet
+      material: POTION
+      model_id: 9923482
+  frostbite_cosmetics_wings:
+    display_name: §fFrostbite Wings Cosmetics
+    permission: frostbite_set.frostbite_cosmetics_wings
+    resource:
+      generate: false
+      model_path: wings_cosmetic
+      material: POTION
+      model_id: 9923483
+  frostbite_cosmetics_wings_self:
+    display_name: §fFrostbite Wings Cosmetics Self
+    permission: frostbite_set.frostbite_cosmetics_wings_self
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self
+      material: POTION
+      model_id: 9923484
+  frostbite_cosmetics_wings_self_2:
+    display_name: §fFrostbite Wings Cosmetics Self 2
+    permission: frostbite_set.frostbite_cosmetics_wings_self_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_self_2
+      material: POTION
+      model_id: 9923485
+  frostbite_cosmetics_wings_normal_2:
+    display_name: §fFrostbite Wings Cosmetics Normal 2
+    permission: frostbite_set.frostbite_cosmetics_wings_normal_2
+    resource:
+      generate: false
+      model_path: wings_cosmetic_normal_2
+      material: POTION
+      model_id: 9923486

@@ -1,0 +1,115 @@
+info:
+  namespace: customcrops
+items:
+  water_effect:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/sprinklers/water_effect
+  sprinkler_1:
+    display_name: ""
+    resource:
+      material: PAPER
+      generate: false
+      model_path: 'item/sprinklers/sprinkler_1'
+    behaviours:
+      furniture:
+        entity: item_frame
+        solid: false
+        cancel_drop: true
+        shift_interact_rotate: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 0.6
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+    events:
+      placed_itemframe:
+        break:
+          drop_item:
+            item: sprinkler_1_item
+  sprinkler_1_item:
+    display_name: display-name-sprinkler_1_item
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/sprinklers/sprinkler_1_item
+  sprinkler_2:
+    display_name: ""
+    resource:
+      material: PAPER
+      generate: false
+      model_path: 'item/sprinklers/sprinkler_2'
+    behaviours:
+      furniture:
+        entity: item_frame
+        solid: false
+        shift_interact_rotate: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 0.6
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+    events:
+      placed_itemframe:
+        break:
+          drop_item:
+            item: sprinkler_2_item
+  sprinkler_2_item:
+    display_name: display-name-sprinkler_2_item
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/sprinklers/sprinkler_2_item
+  sprinkler_3:
+    display_name: ""
+    resource:
+      material: PAPER
+      generate: false
+      model_path: 'item/sprinklers/sprinkler_3'
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 0.6
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+    events:
+      placed_itemframe:
+        break:
+          drop_item:
+            item: sprinkler_3_item
+  sprinkler_3_item:
+    display_name: display-name-sprinkler_3_item
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/sprinklers/sprinkler_3_item
+categories:
+  customcrops_sprinklers:
+    enabled: true
+    icon: customcrops:sprinkler_3_item
+    name: 'display-category-customcrops_sprinklers'
+    items:
+      - customcrops:sprinkler_1
+      - customcrops:sprinkler_1_item
+      - customcrops:sprinkler_2
+      - customcrops:sprinkler_2_item
+      - customcrops:sprinkler_3
+      - customcrops:sprinkler_3_item
+      - customcrops:water_effect

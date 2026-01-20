@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  comfortablechairgreen:
+    display_name: "Comfortable Chair Green"
+    permission: livingroom.comfortablechairgreen
+    resource:
+      material: PAPER
+      generate: false
+      model_path: comfortablechairgreen
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.2

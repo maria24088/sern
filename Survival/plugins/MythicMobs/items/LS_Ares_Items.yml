@@ -1,0 +1,90 @@
+ARES_GREATSWORD:
+  Id: NETHERITE_SWORD
+  Model: 4211
+  Display: '&6Ares &fGreatSword'
+  Lore:
+  - ''
+  - '&eLeadership:'
+  - '&cShift + RMB'
+  - '&7Call upon your legion'
+  - '&7for temporary combat'
+  - '&7assistance'
+  - ''
+  - '&eGrandiose:'
+  - '&cShift + LMB'
+  - '&7Summon your heavenly'
+  - '&7weaponry. Calling down'
+  - '&7Grandiose, the GREATSWORD'
+  - ''
+  Skills:
+  - skill{s=Leadership} @self ~onUse ?crouching
+  - skill{s=Grandiose} @self ~onLeftClick ?crouching
+  Hide:
+  - ATTRIBUTES
+ARES_SHIELD:
+  Id: SHIELD
+  Model: 4211
+  Display: '&6Ares &fShield'
+  Lore:
+  - ""
+  - '&eRetribution:'
+  - '&cPassive'
+  - '&7Allow yourself to take damage'
+  - '&7bottling this damage within,'
+  - '&7and once completed, will send'
+  - '&7all of the recieved damage.'
+  - ''
+  - '&eShieldBash:'
+  - '&cRMB'
+  - '&7Launch yourself like'
+  - '&7an projectile, harming'
+  - '&7entities in your line of sight!'
+  - ''
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Retribution} @self ~onDamaged ?holding{m=ARES_SHIELD} 0.5
+  - skill{s=ShieldBash} @target ~onUse
+
+
+
+ARES_HELMET:
+  Id: PAPER
+  Model: 4211
+  Attributes:
+    Head:
+      Armor: 3
+  Display: '&6Ares &fHelmet'
+  Skills:
+  - effect:sound{s=item.armor.equip_generic} @self ~onUse
+  - equip{item=ARES_HELMET:4} @target ~onUse
+  - consumeslot{slot=HAND;amount=1} @self ~onUse
+ARES_CHESTPLATE:
+  Id: LEATHER_CHESTPLATE
+  Display: '&6Ares &fChestplate'
+  Options:
+    Color: 56,194,116
+  Model: 4211
+  Attributes:
+    Chest:
+      Armor: 5
+ARES_LEGGINGS:
+  Id: LEATHER_LEGGINGS
+  Display: '&6Ares &fLeggings'
+  Options:
+    Color: 56,194,116
+  Model: 4211
+  Attributes:
+    Legs:
+      Armor: 3
+ARES_BOOTS:
+  Id: LEATHER_BOOTS
+  Display: '&6Ares &fBoots'
+  Options:
+    Color: 56,194,116
+  Model: 4211
+  Attributes:
+    Feet:
+      Armor: 1
+
+# 1141079724375061690707531

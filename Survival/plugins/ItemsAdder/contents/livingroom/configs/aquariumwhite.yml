@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  aquariumwhite:
+    display_name: "Aquarium White"
+    permission: livingroom.aquariumwhite
+    resource:
+      material: PAPER
+      generate: false
+      model_path: aquariumwhite
+    behaviours:
+      furniture:
+        light_level: 13

@@ -1,0 +1,1206 @@
+# --- LISTA COMPLETA MATERIALS_2 (10342 - 10377) ---
+
+ASH_PILE:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Montón de Ceniza
+    custom-model-data: 10342
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Residuo de materia quemada.'
+
+BANNER_FABRIC:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Tela de Estandarte
+    custom-model-data: 10343
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Tejido para heráldica.'
+
+BATTERY:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Batería
+    custom-model-data: 10344
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Carga eléctrica almacenada.'
+
+CARVED_HANDLE:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Mango Tallado
+    custom-model-data: 10345
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Agarre ergonómico de madera.'
+
+CHARCOAL_DUST:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Polvo de Carbón
+    custom-model-data: 10346
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Polvo negro fino.'
+
+COPPER_FRAGMENT:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Fragmento de Cobre
+    custom-model-data: 10347
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Un trozo de cobre oxidado.'
+
+COTTON_TUFT:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Mechón de Algodón
+    custom-model-data: 10348
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Fibra suave y natural.'
+
+DRIED_LEAF:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Hoja Seca
+    custom-model-data: 10349
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Crujiente y frágil.'
+
+FEATHER_BUNDLE:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Manojo de Plumas
+    custom-model-data: 10350
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Una colección de plumaje.'
+
+GEAR_SMALL:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Engranaje Pequeño
+    custom-model-data: 10351
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Rueda dentada básica.'
+
+GLUE_BASIC:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Pegamento
+    custom-model-data: 10352
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Adhesivo pegajoso.'
+
+GOLD_FLAKES:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Copos de Oro
+    custom-model-data: 10353
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Oro puro conductivo.'
+
+HERB_BUNDLE:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Manojo de Hierbas
+    custom-model-data: 10354
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Hierbas medicinales'
+    - '&7aromáticas.'
+
+HONEY_DROP:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Gota de Miel
+    custom-model-data: 10355
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Ámbar perfectamente'
+    - '&7esférico.'
+
+IRON_SHARD:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Fragmento de Hierro
+    custom-model-data: 10356
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Pieza de metal dentada.'
+
+LEATHER_STRIP:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Tira de Cuero
+    custom-model-data: 10357
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Cortada para ataduras.'
+
+MOSS_CLUMP:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Grumo de Musgo
+    custom-model-data: 10358
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Vegetación húmeda.'
+
+NAIL:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Clavo
+    custom-model-data: 10359
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Sujetador de metal simple.'
+
+ORE_GRAINS:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Granos de Mineral
+    custom-model-data: 10360
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Polvo de metal sin refinar.'
+
+PLANT_FIBER:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Fibra Vegetal
+    custom-model-data: 10361
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Materia vegetal fibrosa.'
+
+ROOT_FIBER:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Fibra de Raíz
+    custom-model-data: 10362
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Raíces subterráneas duras.'
+
+ROPE:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Cuerda
+    custom-model-data: 10363
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Fibras trenzadas fuertes.'
+
+SAP_GLOB:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Glóbulo de Savia
+    custom-model-data: 10364
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Sangre de árbol pegajosa.'
+
+SLIME_GLOB_SMALL:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Glóbulo de Slime
+    custom-model-data: 10365
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Viscosidad concentrada.'
+
+SOFT_CLAY:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Arcilla Suave
+    custom-model-data: 10366
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Tierra maleable.'
+
+SOOT_LUMP:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Terrón de Hollín
+    custom-model-data: 10367
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Carbono compactado.'
+
+SPRING:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Resorte
+    custom-model-data: 10368
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Energía cinética potencial.'
+
+STICK_BUNDLE:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Manojo de Palos
+    custom-model-data: 10369
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Leña o mangos.'
+
+STONE_FRAGMENT:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Fragmento de Piedra
+    custom-model-data: 10370
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Una roca astillada.'
+
+STONE_POWDER:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Polvo de Piedra
+    custom-model-data: 10371
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Polvo de roca molida.'
+
+THREAD_SPOOL:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Carrete de Hilo
+    custom-model-data: 10372
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Esencial para costura.'
+
+TREE_RESIN:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Resina de Árbol
+    custom-model-data: 10373
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Savia endurecida como ámbar.'
+
+TWINE:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Cordel
+    custom-model-data: 10374
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Fino pero duradero.'
+
+WAX_CHUNK:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Trozo de Cera
+    custom-model-data: 10375
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Cera solidificada.'
+
+WOODEN_PEG:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Clavija de Madera
+    custom-model-data: 10376
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Carpintería simple.'
+
+WOOL_THREAD:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Hilo de Lana
+    custom-model-data: 10377
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Hilado de lana.'
+
+# --- LISTA COMPLETA MATERIALS_1 (10378 - 10449) ---
+
+ANCIENT_MUSHROOM:
+  base:
+    material: PAPER
+    name: <#915ace>Hongo Ancestral
+    custom-model-data: 10378
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Crecido durante siglos.'
+
+ANCIENT_NETHERITE:
+  base:
+    material: PAPER
+    name: <#915ace>Netherite Ancestral
+    custom-model-data: 10379
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Forjado en llamas antiguas.'
+
+ANCIENT_SLIME_STRING:
+  base:
+    material: PAPER
+    name: <#915ace>Cuerda de Slime Ancestral
+    custom-model-data: 10380
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Imbuida con magia vieja.'
+
+AQUAMARINE_SHARD:
+  base:
+    material: PAPER
+    name: <#E7D27C>Fragmento de Aguamarina
+    custom-model-data: 10381
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Gema de las profundidades.'
+
+BINDING_GEL_COMMON:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Gel Vinculante 
+    custom-model-data: 10382
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Un adhesivo alquímico simple.'
+
+BINDING_GEL_EPIC:
+  base:
+    material: PAPER
+    name: <#E7D27C>Gel Vinculante 
+    custom-model-data: 10383
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Vincula materiales a'
+    - '&7nivel molecular.'
+
+BINDING_GEL_LEGENDARY:
+  base:
+    material: PAPER
+    name: <#915ace>Gel Vinculante 
+    custom-model-data: 10384
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Fusión permanente'
+    - '&7e indestructible.'
+
+BINDING_GEL_RARE:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Gel Vinculante 
+    custom-model-data: 10385
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Un adhesivo fuerte y'
+    - '&7estable.'
+
+BINDING_GEL_UNCOMMON:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Gel Vinculante 
+    custom-model-data: 10386
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Adhesivo alquímico mejorado.'
+
+BOTTLE_OF_SOUL:
+  base:
+    material: PAPER
+    name: <#E7D27C>Botella de Alma
+    custom-model-data: 10387
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Contiene un espíritu perdido.'
+
+CLAM_BLUE:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Almeja Azul
+    custom-model-data: 10388
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Una concha marina azulada.'
+
+CLAM_PINK:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Almeja Rosa
+    custom-model-data: 10389
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Una concha marina rosada.'
+
+CLAM_WHITE:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Almeja Blanca
+    custom-model-data: 10390
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Una concha marina brillante.'
+
+COTTON_FABRIC:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Algodón Procesado
+    custom-model-data: 10391
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Textil refinado.'
+
+CROCODILE_TOOTH:
+  base:
+    material: PAPER
+    name: <#E7D27C>Diente de Cocodrilo
+    custom-model-data: 10392
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Trofeo de depredador alfa.'
+
+DUNGEON_KEY_AMETHYST:
+  base:
+    material: PAPER
+    name: <#915ace>Llave de Mazmorra (Amatista)
+    custom-model-data: 10393
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Abre las profundidades'
+    - '&7de amatista.'
+
+DUNGEON_KEY_CRIMSON:
+  base:
+    material: PAPER
+    name: <#915ace>Llave de Mazmorra (Carmesí)
+    custom-model-data: 10394
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Abre las profundidades'
+    - '&7carmesíes.'
+
+DUNGEON_KEY_GOLD:
+  base:
+    material: PAPER
+    name: <#915ace>Llave de Mazmorra (Oro)
+    custom-model-data: 10395
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Brilla con poder puro.'
+
+DUNGEON_SHARD:
+  base:
+    material: PAPER
+    name: <#915ace>Fragmento de Mazmorra
+    custom-model-data: 10396
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Fragmento de una entrada'
+    - '&7antigua.'
+
+EXOTIC_LEATHER_ASSORTED:
+  base:
+    material: PAPER
+    name: <#E7D27C>Cuero Exótico (Surtido)
+    custom-model-data: 10397
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Pieles raras variadas.'
+
+EXOTIC_LEATHER_BLUE:
+  base:
+    material: PAPER
+    name: <#E7D27C>Cuero Exótico (Azul)
+    custom-model-data: 10398
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Cuero teñido de azul'
+    - '&7profundo.'
+
+EXOTIC_LEATHER_BROWN:
+  base:
+    material: PAPER
+    name: <#E7D27C>Cuero Exótico (Marrón)
+    custom-model-data: 10399
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Cuero de calidad superior.'
+
+EXOTIC_LEATHER_CYAN:
+  base:
+    material: PAPER
+    name: <#E7D27C>Cuero Exótico (Cian)
+    custom-model-data: 10400
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Cuero de un tono ciánico.'
+
+EXOTIC_LEATHER_MAGENTA:
+  base:
+    material: PAPER
+    name: <#E7D27C>Cuero Exótico (Magenta)
+    custom-model-data: 10401
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Cuero de color vibrante.'
+
+EXOTIC_LEATHER_PURPLE:
+  base:
+    material: PAPER
+    name: <#E7D27C>Cuero Exótico (Púrpura)
+    custom-model-data: 10402
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Cuero digno de la realeza.'
+
+FINE_STRING:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Cuerda Fina
+    custom-model-data: 10403
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Hilo de alta calidad.'
+
+FORGE_CATALYST:
+  base:
+    material: PAPER
+    name: <#915ace>Catalizador de Forja
+    custom-model-data: 10404
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Potencia la forja de crafteo.'
+
+GEAR_REINFORCED:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Engranaje Reforzado
+    custom-model-data: 10405
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Pieza de maquinaria pesada.'
+
+GEAR_STICKY_COMMON:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Engranaje Pegajoso 
+    custom-model-data: 10406
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Engranaje recubierto de'
+    - '&7adhesivo simple.'
+
+GEAR_STICKY_EPIC:
+  base:
+    material: PAPER
+    name: <#E7D27C>Engranaje Pegajoso 
+    custom-model-data: 10407
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Engranaje de alta precisión'
+    - '&7y adherencia.'
+
+GEAR_STICKY_LEGENDARY:
+  base:
+    material: PAPER
+    name: <#915ace>Engranaje Pegajoso 
+    custom-model-data: 10408
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Maquinaria perfecta que'
+    - '&7nunca se atasca.'
+
+GEAR_STICKY_RARE:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Engranaje Pegajoso 
+    custom-model-data: 10409
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Funciona bajo presión.'
+
+GEAR_STICKY_UNCOMMON:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Engranaje Pegajoso 
+    custom-model-data: 10410
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Mejor tracción mecánica.'
+
+GLUE_INDUSTRIAL:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Pegamento Industrial
+    custom-model-data: 10411
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Une cualquier cosa'
+    - '&7permanentemente.'
+
+KEY_FRAGMENT_COMMON:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Fragmento de Llave 
+    custom-model-data: 10412
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Un trozo de llave oxidada.'
+
+KEY_FRAGMENT_EPIC:
+  base:
+    material: PAPER
+    name: <#915ace>Fragmento de Llave 
+    custom-model-data: 10413
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Parte de una llave maestra.'
+
+KEY_FRAGMENT_LEGENDARY:
+  base:
+    material: PAPER
+    name: <#915ace>Fragmento de Llave 
+    custom-model-data: 10414
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Irradia energía antigua.'
+
+KEY_FRAGMENT_RARE:
+  base:
+    material: PAPER
+    name: <#E7D27C>Fragmento de Llave 
+    custom-model-data: 10415
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Pieza de una llave valiosa.'
+
+KEY_FRAGMENT_UNCOMMON:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Fragmento de Llave 
+    custom-model-data: 10416
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Parte de una llave forjada.'
+
+KEY_GOLDEN:
+  base:
+    material: PAPER
+    name: <#915ace>Llave Dorada
+    custom-model-data: 10417
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Brilla con un aura dorada.'
+
+KEY_SILVER:
+  base:
+    material: PAPER
+    name: <#E7D27C>Llave Plateada
+    custom-model-data: 10418
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Refleja la luz de la luna.'
+
+LUCKY_HORSESHOE:
+  base:
+    material: PAPER
+    name: <#E7D27C>Herradura de la Suerte
+    custom-model-data: 10419
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Se siente afortunada.'
+
+LUCKY_HORSESHOE_ENCHANTED:
+  base:
+    material: PAPER
+    name: <#915ace>Herradura Encantada
+    custom-model-data: 10420
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Dobla el destino mismo.'
+
+MAGIC_MUSHROOM:
+  base:
+    material: PAPER
+    name: <#E7D27C>Hongo Mágico
+    custom-model-data: 10421
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Emite esporas brillantes.'
+
+MAGIC_MUSHROOM_ENCHANTED:
+  base:
+    material: PAPER
+    name: <#915ace>Hongo Encantado
+    custom-model-data: 10422
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Palpita con magia arcana.'
+
+PAINT_BUCKET:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Cubo de Pintura
+    custom-model-data: 10423
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Recubrimiento colorido.'
+
+PENCIL:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Lápiz
+    custom-model-data: 10424
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Para esquemas.'
+
+PLASTIC:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Plástico
+    custom-model-data: 10425
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Polímero sintético.'
+
+POWERSHARD_EPIC:
+  base:
+    material: PAPER
+    name: <#915ace>Fragmento de Poder 
+    custom-model-data: 10426
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Energía pura concentrada.'
+
+POWERSHARD_LEGENDARY:
+  base:
+    material: PAPER
+    name: <#915ace>Fragmento de Poder 
+    custom-model-data: 10427
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Poder inestable y divino.'
+
+POWERSHARD_RARE:
+  base:
+    material: PAPER
+    name: <#E7D27C>Fragmento de Poder 
+    custom-model-data: 10428
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Cristaliza la magia.'
+
+POWERSHARD_UNCOMMON:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Fragmento de Poder
+    custom-model-data: 10429
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Una pequeña fuente de poder.'
+
+ROCKS:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Rocas
+    custom-model-data: 10430
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Solo algunas rocas.'
+
+RUBBER_BANDS:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Bandas Elásticas
+    custom-model-data: 10431
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Bucles elásticos.'
+
+SCREW:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Tornillo
+    custom-model-data: 10432
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Sujetador de metal roscado.'
+
+SOUL_BLAZE:
+  base:
+    material: PAPER
+    name: <#E7D27C>Alma de Blaze
+    custom-model-data: 10433
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Esencia ardiente'
+    - '&7capturada.'
+
+SOUL_CHICKEN:
+  base:
+    material: PAPER
+    name: <#E7D27C>Alma de Pollo
+    custom-model-data: 10434
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Esencia ligera y asustadiza.'
+
+SOUL_MAGMACUBE:
+  base:
+    material: PAPER
+    name: <#E7D27C>Alma de Cubo de Magma
+    custom-model-data: 10435
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Esencia de lava viva.'
+
+SOUL_PIG:
+  base:
+    material: PAPER
+    name: <#E7D27C>Alma de Cerdo
+    custom-model-data: 10436
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Esencia común capturada.'
+
+SOUL_SHEEP:
+  base:
+    material: PAPER
+    name: <#E7D27C>Alma de Oveja
+    custom-model-data: 10437
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Esencia pacífica capturada.'
+
+SOUL_SKELETON:
+  base:
+    material: PAPER
+    name: <#E7D27C>Alma de Esqueleto
+    custom-model-data: 10438
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Esencia de huesos antiguos.'
+
+SOUL_SPIDER:
+  base:
+    material: PAPER
+    name: <#E7D27C>Alma de Araña
+    custom-model-data: 10439
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Esencia trepadora capturada.'
+
+SOUL_ZOMBIE:
+  base:
+    material: PAPER
+    name: <#E7D27C>Alma de Zombi
+    custom-model-data: 10440
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Esencia de no-muerto.'
+
+SPAWNER_FRAGMENT:
+  base:
+    material: PAPER
+    name: <#915ace>Fragmento de Spawner
+    custom-model-data: 10441
+    tier: MYTHIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Una pieza de una jaula que'
+    - '&7contiene vida.'
+
+STEEL_INGOT:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Lingote de Acero
+    custom-model-data: 10442
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Más fuerte que el hierro.'
+
+SULFUR_CRYSTAL:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Cristal de Azufre
+    custom-model-data: 10443
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Mineral volcánico.'
+
+TANGLED_YARN:
+  base:
+    material: PAPER
+    name: <#E7D27C>Hilo Enredado
+    custom-model-data: 10444
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Un lío difícil de desatar.'
+
+VIBRANT_FEATHER_1:
+  base:
+    material: PAPER
+    name: <#E7D27C>Pluma Vibrante I
+    custom-model-data: 10445
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Brilla con luz propia.'
+
+VIBRANT_FEATHER_2:
+  base:
+    material: PAPER
+    name: <#E7D27C>Pluma Vibrante II
+    custom-model-data: 10446
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Destella con colores vivos.'
+
+VIBRANT_FEATHER_3:
+  base:
+    material: PAPER
+    name: <#E7D27C>Pluma Vibrante III
+    custom-model-data: 10447
+    tier: LEGENDARY
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Una pluma legendaria.'
+
+WORN_CLOTH:
+  base:
+    material: PAPER
+    name: <#AEC6CF>Tela Gastada
+    custom-model-data: 10448
+    tier: RARE
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Vieja y andrajosa.'
+
+WRENCH:
+  base:
+    material: PAPER
+    name: <#FFC0CB>Llave Inglesa
+    custom-model-data: 10449
+    tier: EPIC
+    disable-crafting: true
+    disable-interaction: true
+    lore:
+    - '&7Herramienta esencial.'

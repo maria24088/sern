@@ -1,0 +1,42 @@
+info:
+  namespace: customcrops
+  dictionary-lang: "cn"
+dictionary:
+  display-category-customcrops_basics: 基础
+  display-category-customcrops_sprinklers: 洒水器
+  display-category-customcrops_fertilizers: 肥料
+  display-category-customcrops_wateringcans: 洒水壶
+  display-name-dry_pot: 种植盆
+  display-name-wet_pot: 种植盆
+  display-name-scarecrow: 稻草人
+  display-name-greenhouse_glass: 温室玻璃
+  display-name-speed_grow_1: 生长速度提升 I
+  display-name-speed_grow_2: 生长速度提升 II
+  display-name-speed_grow_3: 生长速度提升 III
+  display-name-soil_retain_1: 土地饱肥 I
+  display-name-soil_retain_2: 土地饱肥 II
+  display-name-soil_retain_3: 土地饱肥 III
+  display-name-quality_1: 肥料
+  display-name-quality_2: 优质肥料
+  display-name-quality_3: 金坷垃肥料
+  display-name-yield_increase_1: 产量提升
+  display-name-yield_increase_2: 优质产量提升
+  display-name-yield_increase_3: 产量超级加倍
+  display-name-variation_1: 魔瓶
+  display-name-variation_2: 中级魔瓶
+  display-name-variation_3: 高级魔瓶
+  display-name-watering_can_1: 铜制洒水壶
+  display-name-watering_can_2: 钢制洒水壶
+  display-name-watering_can_3: 金制洒水壶
+  display-name-watering_can_4: 铱制洒水壶
+  display-name-sprinkler_1_item: 洒水器
+  display-name-sprinkler_2_item: 高质量洒水器
+  display-name-sprinkler_3_item: 超级洒水器
+  # Tomato
+  display-name-tomato: 番茄
+  display-name-tomato_silver_star: 番茄 (银星)
+  display-name-tomato_golden_star: 番茄 (金星)
+  display-name-tomato_seeds: 番茄种子
+  display-name-gigantic_tomato: 巨型番茄
+  display-name-golden_tomato: 金番茄
+  display-name-soil_surveyor: 土质勘测器

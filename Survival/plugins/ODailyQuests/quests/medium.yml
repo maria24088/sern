@@ -1,0 +1,494 @@
+# ==============================================================
+#                       MEDIUM QUESTS FILE
+# ==============================================================
+# Las misiones deben estar numeradas e incrementar de 1 en 1.
+# Por favor, presta atencion a la indentacion.
+# ==============================================================
+quests:
+  1:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fsʟᴇɴᴅᴇʀᴍᴀɴ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Encuentra &f10 #a5d0e9endermans en el"
+      - " &fEnd #a5d0e9y &fmatalos."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: KILL
+    required_amount: 10
+    required_entity: ENDERMAN
+    reward:
+      reward_type: MONEY
+      amount: 500
+    required_worlds:
+      - world_the_end
+  2:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fᴅᴇᴍᴀsɪᴀᴅᴏ ᴄᴀʀʙᴏɴ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo #a5d0e9y"
+      - " #a5d0e9craftea &f15 &fBloques de Carbon."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: CRAFT
+    required_item: COAL_BLOCK
+    required_amount: 15
+    reward:
+      reward_type: MONEY
+      amount: 500
+  3:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fǫᴜᴇ ᴇs ᴅᴏʀᴍɪʀ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Encuentra &f6 #a5d0e9phantoms por la &fnoche"
+      - " #a5d0e9y #a5d0e9matalos."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: KILL
+    required_amount: 6
+    required_entity: PHANTOM
+    reward:
+      reward_type: MONEY
+      amount: 500
+  4:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fᴅᴇᴍᴀsɪᴀᴅᴏ ᴄᴀʟɪᴇɴᴛᴇ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve al &fNether #a5d0e9y encuentra"
+      - " &f15 #a5d0e9blazes y #a5d0e9matalos"
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: KILL
+    required_amount: 15
+    required_entity: BLAZE
+    reward:
+      reward_type: MONEY
+      amount: 500
+    required_worlds:
+      - world_nether
+  5:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fʜᴏᴍʙʀᴇ ᴅᴇ ʜɪᴇʀʀᴏ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Encuentra &f6 #a5d0e9Golems de Hierro"
+      - " #a5d0e9y #a5d0e9matalos"
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: KILL
+    required_amount: 6
+    required_entity: IRON_GOLEM
+    reward:
+      reward_type: MONEY
+      amount: 500
+  6:
+    name: "&8[#6e7987ғᴜɴᴅɪᴄɪᴏɴ&8] &fʙᴜsᴄᴀᴅᴏʀ ᴅᴇ ᴏʀᴏ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Consigue &f48 Oro Bruto #a5d0e9y"
+      - " #a5d0e9fundelo en un &fHorno"
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: COOK
+    required_amount: 48
+    required_item: GOLD_INGOT
+    reward:
+      reward_type: MONEY
+      amount: 500
+  7:
+    name: "&8[#6e7987ғᴜɴᴅɪᴄɪᴏɴ&8] &fʜᴇʀʀᴇʀᴏ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Consigue &f96 Hierro Bruto #a5d0e9y"
+      - " #a5d0e9fundelo en un &fHorno"
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: COOK
+    required_amount: 96
+    required_item: IRON_INGOT
+    reward:
+      reward_type: MONEY
+      amount: 500
+  8:
+    name: "&8[#99adceᴍɪɴᴇʀɪᴀ&8] &fᴛʀᴀʙᴀᴊᴏ ᴄᴀʟɪᴇɴᴛᴇ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve al &fNether #a5d0e9y"
+      - " #a5d0e9mina &f32 #a5d0e9Menas de Cuarzo"
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: BREAK
+    required_amount: 32
+    required_item: NETHER_QUARTZ_ORE
+    reward:
+      reward_type: MONEY
+      amount: 500
+  9:
+    name: "&8[#99adceᴍɪɴᴇʀɪᴀ&8] &fᴛᴇsᴏʀᴏ ᴘʀᴏғᴜɴᴅᴏ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve a una &fCueva #a5d0e9y"
+      - " #a5d0e9mina &f10 #a5d0e9Menas Profundas de Diamante"
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: BREAK
+    required_amount: 10
+    required_item: DEEPSLATE_DIAMOND_ORE
+    reward:
+      reward_type: MONEY
+      amount: 500
+  10:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fɪɴɢᴇɴɪᴇʀᴏ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo #a5d0e9y"
+      - " #a5d0e9craftea &f3 #a5d0e9Pistones Pegajosos."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: CRAFT
+    required_amount: 3
+    required_item: STICKY_PISTON
+    reward:
+      reward_type: MONEY
+      amount: 500
+  11:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fᴍᴇᴄᴀɴɪᴄᴏ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo #a5d0e9y"
+      - " #a5d0e9craftea &f8 #a5d0e9Pistones."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: CRAFT
+    required_amount: 8
+    required_item: PISTON
+    reward:
+      reward_type: MONEY
+      amount: 500
+  12:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fᴀʟᴍᴜᴇʀᴢᴏ ᴅᴏʀᴀᴅᴏ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo #a5d0e9y"
+      - " #a5d0e9craftea &f6 #a5d0e9Manzanas Doradas."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: CRAFT
+    required_amount: 6
+    required_item: GOLDEN_APPLE
+    reward:
+      reward_type: MONEY
+      amount: 500
+  13:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fᴀʟᴍᴜᴇʀᴢᴏ ᴅᴏʀᴀᴅᴏ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo #a5d0e9y"
+      - " #a5d0e9craftea &f6 #a5d0e9Manzanas Doradas."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: CRAFT
+    required_amount: 6
+    required_item: GOLDEN_APPLE
+    reward:
+      reward_type: MONEY
+      amount: 500
+  14:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fɴᴏᴄʜᴇ ᴄᴏʟᴏʀɪᴅᴀ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo #a5d0e9y"
+      - " #a5d0e9craftea &f8 #a5d0e9Estrellas de Fuegos Artificiales."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: CRAFT
+    required_amount: 8
+    required_item: FIREWORK_STAR
+    reward:
+      reward_type: MONEY
+      amount: 500
+  15:
+    name: "&8[#64c3ddᴘᴇsᴄᴀ&8] &fᴅᴇsᴀʏᴜɴᴏ ᴀʀʀᴜɪɴᴀᴅᴏ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Pesca &f3 #a5d0e9peces globo y"
+      - " &fconsumelos."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: CONSUME
+    required_amount: 3
+    required_item: PUFFERFISH
+    reward:
+      reward_type: MONEY
+      amount: 500
+  16:
+    name: "&8[#99adceᴍɪɴᴇʀɪᴀ&8] &fᴄᴏʙʀᴇ ᴘᴀʀᴀ ᴄᴏɴsᴛʀᴜɪʀ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve a una &fCueva #a5d0e9y"
+      - " #a5d0e9mina &f48 #a5d0e9Menas de Cobre."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: BREAK
+    required_amount: 48
+    required_item: COPPER_ORE
+    reward:
+      reward_type: MONEY
+      amount: 500
+  17:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fʜᴀʀʀʏ ᴘᴏᴛᴛᴇʀ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Encuentra &f3 #a5d0e9brujas"
+      - " #a5d0e9y #a5d0e9matalas."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: KILL
+    required_amount: 3
+    required_entity: WITCH
+    reward:
+      reward_type: MONEY
+      amount: 500
+  18:
+    name: "&8[#99adceᴍɪɴᴇʀɪᴀ&8] &fᴘɪᴇᴅʀᴀs ʙᴏɴɪᴛᴀs"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve al &fNether #a5d0e9y"
+      - " #a5d0e9mina &f10 #a5d0e9Piedras Negras Aureas."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: BREAK
+    required_amount: 10
+    required_item: GILDED_BLACKSTONE
+    reward:
+      reward_type: MONEY
+      amount: 500
+  19:
+    name: "&8[&cᴄᴏᴍʙᴀᴛᴇ&8] &fᴄᴏʀʀᴇ ᴏ ᴍᴜᴇʀᴇ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Ve al &fNether"
+      - " #a5d0e9y mata &f3 #a5d0e9hoglins."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: KILL
+    required_amount: 3
+    required_entity: HOGLIN
+    reward:
+      reward_type: MONEY
+      amount: 500
+  20:
+    name: "&8[#eed17aɢʀᴀɴᴊᴀ&8] &fᴀɴɪᴍᴀʟ ᴍᴀs ʟɪɴᴅᴏ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f1 &fajolote"
+      - " #a5d0e9y #a5d0e9crialo."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: BREED
+    required_entity: AXOLOTL
+    required_amount: 1
+    reward:
+      reward_type: MONEY
+      amount: 500
+  21:
+    name: "&8[#dba664ᴄʀᴀғᴛᴇᴏ&8] &fᴀʟᴍᴀᴄᴇɴ ᴘʀɪᴠᴀᴅᴏ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴏʙᴊᴇᴛɪᴠᴏ:"
+      - " #a5d0e9Busca una &fMesa de Crafteo #a5d0e9y"
+      - " #a5d0e9craftea &f1 #a5d0e9Cofre de Ender."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: CRAFT
+    required_amount: 1
+    required_item: ENDER_CHEST
+    reward:
+      reward_type: MONEY
+      amount: 500
+  22:
+    name: "&8[#eed17aɢʀᴀɴᴊᴀ&8] &fɴᴏ ᴇs ᴜɴ ᴄᴀʙᴀʟʟᴏ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f3 &fmulas"
+      - " #a5d0e9y #a5d0e9crialas."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: BREED
+    required_entity: MULE
+    required_amount: 3
+    reward:
+      reward_type: MONEY
+      amount: 500
+  23:
+    name: "&8[#eed17aɢʀᴀɴᴊᴀ&8] &fᴄʀᴏᴀᴄ ᴄʀᴏᴀᴄ"
+    menu_item: itemsadder:daily_quest:medium_quest
+    use_placeholders: true
+    description:
+      - "&8ɴɪᴠᴇʟ: ᴍᴇᴅɪᴏ"
+      - ""
+      - "&fᴅᴇsᴄʀɪᴘᴄɪᴏɴ:"
+      - " #a5d0e9Encuentra &f3 &franas"
+      - " #a5d0e9y #a5d0e9crialas."
+      - ""
+      - "#dc3333ᴇxᴘɪʀᴀ ᴇɴ: %odailyquests_drawin%"
+      - ""
+      - "&fʀᴇᴄᴏᴍᴘᴇɴsᴀ:"
+      - " &8• &f500 #ffc919Dinero"
+    quest_type: BREED
+    required_entity: FROG
+    required_amount: 3
+    reward:
+      reward_type: MONEY
+      amount: 500

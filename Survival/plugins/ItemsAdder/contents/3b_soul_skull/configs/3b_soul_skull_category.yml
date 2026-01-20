@@ -1,0 +1,29 @@
+info:
+  namespace: 3b_soul_skull
+categories:
+  3b_soul_skull:
+    name: Soul Skull Animated Weapons And Tools Set
+    enabled: true
+    icon: 3b_soul_skull:soul_skull_wings
+    permission: ia.menu.3b_soul_skull
+    items:
+    - 3b_soul_skull:soul_skullhelmet
+    - 3b_soul_skull:soul_skullchestplate
+    - 3b_soul_skull:soul_skullleggings
+    - 3b_soul_skull:soul_skullboots
+    - 3b_soul_skull:soul_skull_axe
+    - 3b_soul_skull:soul_skull_pickaxe
+    - 3b_soul_skull:soul_skull_shovel
+    - 3b_soul_skull:soul_skull_hoe
+    - 3b_soul_skull:soul_skull_sword
+    - 3b_soul_skull:soul_skull_shield
+    - 3b_soul_skull:soul_skull_crossbow
+    - 3b_soul_skull:soul_skull_bow
+    - 3b_soul_skull:soul_skull_staff
+    - 3b_soul_skull:soul_skull_spear
+    - 3b_soul_skull:soul_skull_chest
+    - 3b_soul_skull:soul_skull_key
+    - 3b_soul_skull:soul_skull_battle_axe
+    - 3b_soul_skull:soul_skull_fishingrod
+    - 3b_soul_skull:soul_skull_sickle
+    - 3b_soul_skull:soul_skull_wings

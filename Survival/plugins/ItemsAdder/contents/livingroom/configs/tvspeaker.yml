@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  tvspeaker:
+    display_name: "TV Speaker"
+    permission: livingroom.tvspeaker
+    resource:
+      material: PAPER
+      generate: false
+      model_path: tvspeaker
+    behaviours:
+      furniture:
+        light_level: 13

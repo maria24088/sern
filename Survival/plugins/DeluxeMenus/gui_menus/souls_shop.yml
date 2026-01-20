@@ -1,0 +1,1220 @@
+menu_title: "&0              Soul Shop"
+open_command:
+  - soulshop
+  - sshop
+  - soulsshop
+register_command: true
+size: 44
+update_interval: 1
+open_commands:
+  - "[meta] remove soulshop1 INTEGER null"
+  - "[refresh] <delay=3>"
+  - "[sound] BLOCK_CHEST_OPEN"
+items:
+  "me":
+    material: ender_pearl
+    priority: 25
+    slot: 8
+    display_name: "&#0073FBYour Souls: %bsoul_soul%"
+  souls:
+    material: NETHER_STAR
+    slot: 0
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        anythinghere:
+          type: string equals ignorecase
+          input: '%essentials_kit_is_available_soulsitems%'
+          output: 'yes'
+    display_name: 'Souls Items Preview'
+    lore:
+    - '&8Souls Shop'
+    - ''
+    - '&eDescription:'
+    - '&fSoul Items Preview'
+    - '&fThis is NOT a kit'
+    - '&r'
+    - ''
+    - '&6&l CLICK&6 to preview all items'
+    left_click_commands:
+    - '[player] previewkit soulsitems'
+    right_click_commands:
+    - '[player] previewkit soulsitems'
+  "pane1":
+    material: GRAY_STAINED_GLASS_PANE
+    priority: 1000
+    slots:
+      - 1-8
+      - 9
+      - 17
+      - 18
+      - 26
+      - 27
+      - 35
+  "pane2":
+    material: BLACK_STAINED_GLASS_PANE
+    priority: 1000
+    slots:
+      - 36-44
+  "list":
+    material: zombie_head
+    priority: 2
+    slot: 39
+    display_name: "&#0073FBMobs List"
+    click_commands:
+      - "[openguimenu] mobs_list"
+  "close":
+    material: BARRIER
+    priority: 2
+    slot: 41
+    display_name: "&4✘ Close &7(Click)"
+    left_click_commands:
+      - "[close]"
+      - "[sound] ENTITY_CHICKEN_EGG"
+    right_click_commands:
+      - "[close]"
+      - "[sound] ENTITY_CHICKEN_EGG"
+  "item1":
+    material: netherite_sword
+    slot: 10
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0d78fbS&#197dfco&#2682fcu&#3387fcl&#3f8cfds &#4c92fdS&#5897few&#659cfeo&#72a1fer&#7ea6ffd &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB15,000 ☠"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "15000"
+      deny_commands:
+        - "[meta] set soulshop1 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop1 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s1 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Netherite Sword!"
+      - "[console] soul remove soul %player_name% 15000"
+      - "[refresh]"
+  "item1-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 10
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop1"
+          meta_type: INTEGER
+          value: 1
+
+  "item2":
+    material: netherite_pickaxe
+    slot: 11
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0b77fbS&#157cfco&#2080fcu&#2b84fcl&#3589fds &#408dfdP&#4b91fdi&#5695fdc&#609afek&#6b9efea&#76a2fex&#80a7ffe &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB16,500 ☠"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "16500"
+      deny_commands:
+        - "[meta] set soulshop2 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop2 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s2 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Netherite Pickaxe!"
+      - "[console] soul remove soul %player_name% 16500"
+      - "[refresh]"
+  "item2-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 11
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop2"
+          meta_type: INTEGER
+          value: 1
+
+  "item3":
+    material: netherite_axe
+    slot: 12
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0f79fbS&#1f7ffco&#2e86fcu&#3e8cfdl&#4d92fds &#5d98feA&#6c9ffex&#7ca5ffe &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB15,200 ☠"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "15200"
+      deny_commands:
+        - "[meta] set soulshop3 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop3 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s3 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Netherite Axe!"
+      - "[console] soul remove soul %player_name% 15200"
+      - "[refresh]"
+  "item3-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 12
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop3"
+          meta_type: INTEGER
+          value: 1
+
+  "item4":
+    material: netherite_shovel
+    slot: 13
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0c78fbS&#177cfco&#2381fcu&#2e86fcl&#3a8afds &#468ffdS&#5194fdh&#5d98feo&#689dfev&#74a2fee&#7fa6ffl &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB13,000 ☠"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "13000"
+      deny_commands:
+        - "[meta] set soulshop4 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop4 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s4 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Netherite Shovel!"
+      - "[console] soul remove soul %player_name% 13000"
+      - "[refresh]"
+  "item4-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 13
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop4"
+          meta_type: INTEGER
+          value: 1
+
+  "item5":
+    material: netherite_hoe
+    slot: 14
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0f79fbS&#1f7ffco&#2e86fcu&#3e8cfdl&#4d92fds &#5d98feH&#6c9ffeo&#7ca5ffe &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB13,000 ☠"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "13000"
+      deny_commands:
+        - "[meta] set soulshop5 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop5 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s5 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Netherite Hoe!"
+      - "[console] soul remove soul %player_name% 13000"
+      - "[refresh]"
+  "item5-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 14
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop5"
+          meta_type: INTEGER
+          value: 1
+
+  "item6":
+    material: netherite_helmet
+    slot: 15
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0c78fbS&#177cfco&#2381fcu&#2e86fcl&#3a8afds &#468ffdH&#5194fde&#5d98fel&#689dfem&#74a2fee&#7fa6fft &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB17,000 ☠"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "17000"
+      deny_commands:
+        - "[meta] set soulshop6 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop6 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s6 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Netherite Helmet!"
+      - "[console] soul remove soul %player_name% 17000"
+      - "[refresh]"
+  "item6-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 15
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop6"
+          meta_type: INTEGER
+          value: 1
+
+  "item7":
+    material: netherite_chestplate
+    slot: 16
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0977fbS&#117afco&#1a7efcu&#2381fcl&#2b85fcs &#3488fdC&#3d8cfdh&#468ffde&#4e93fds&#5796fet&#609afep&#689dfel&#71a1fea&#7aa4fft&#82a8ffe &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB18,000 ☠"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "18000"
+      deny_commands:
+        - "[meta] set soulshop7 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop7 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s7 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Netherite Chestplate!"
+      - "[console] soul remove soul %player_name% 18000"
+      - "[refresh]"
+  "item7-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 16
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop7"
+          meta_type: INTEGER
+          value: 1
+
+  "item8":
+    material: netherite_leggings
+    slot: 19
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0a77fbS&#147bfco&#1e7ffcu&#2883fcl&#3287fcs &#3c8bfdL&#468ffde&#4f93fdg&#5997feg&#639bfei&#6d9ffen&#77a3feg&#81a7ffs &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB18,500 ☠"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "18500"
+      deny_commands:
+        - "[meta] set soulshop8 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop8 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s8 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Netherite Leggings!"
+      - "[console] soul remove soul %player_name% 18500"
+      - "[refresh]"
+  "item8-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 19
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop8"
+          meta_type: INTEGER
+          value: 1
+
+  "item9":
+    material: netherite_boots
+    slot: 20
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0d78fbS&#197dfco&#2682fcu&#3387fcl&#3f8cfds &#4c92fdB&#5897feo&#659cfeo&#72a1fet&#7ea6ffs &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB16,000 ☠"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "16000"
+      deny_commands:
+        - "[meta] set soulshop9 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop9 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s9 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Netherite Boots!"
+      - "[console] soul remove soul %player_name% 16000"
+      - "[refresh]"
+  "item9-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 20
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop9"
+          meta_type: INTEGER
+          value: 1
+  "item10":
+    material: crossbow
+    slot: 21
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0a77fbS&#147bfco&#1e7ffcu&#2883fcl&#3287fcs &#3c8bfdC&#468ffdr&#4f93fdo&#5997fes&#639bfes&#6d9ffeb&#77a3feo&#81a7ffw &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB15,300 ☠"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "15300"
+      deny_commands:
+        - "[meta] set soulshop10 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop10 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s10 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Crossbow!"
+      - "[console] soul remove soul %player_name% 15300"
+      - "[refresh]"
+  "item10-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 21
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop10"
+          meta_type: INTEGER
+          value: 1
+  "item11":
+    material: bow
+    slot: 22
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0f79fbS&#1f7ffco&#2e86fcu&#3e8cfdl&#4d92fds &#5d98feB&#6c9ffeo&#7ca5ffw &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB15,000 ☠"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "15000"
+      deny_commands:
+        - "[meta] set soulshop11 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop11 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s11 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Bow!"
+      - "[console] soul remove soul %player_name% 15000"
+      - "[refresh]"
+  "item11-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 22
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop11"
+          meta_type: INTEGER
+          value: 1
+  "item12":
+    material: trident
+    slot: 23
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0b77fbS&#157cfco&#2080fcu&#2b84fcl&#3589fds &#408dfdT&#4b91fdr&#5695fdi&#609afed&#6b9efee&#76a2fen&#80a7fft &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB14,000 ☠"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "14000"
+      deny_commands:
+        - "[meta] set soulshop12 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop12 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s12 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Trident!"
+      - "[console] soul remove soul %player_name% 14000"
+      - "[refresh]"
+  "item12-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 23
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop12"
+          meta_type: INTEGER
+          value: 1
+  "item13":
+    material: fishing_rod
+    slot: 24
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0977fbS&#117afco&#1a7efcu&#2381fcl&#2b85fcs &#3488fdF&#3d8cfdi&#468ffds&#4e93fdh&#5796fei&#609afen&#689dfeg &#71a1feR&#7aa4ffo&#82a8ffd &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB8,000"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "8000"
+      deny_commands:
+        - "[meta] set soulshop13 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop13 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s13 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Fishing Rod!"
+      - "[console] soul remove soul %player_name% 8000"
+      - "[refresh]"
+  "item13-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 24
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop13"
+          meta_type: INTEGER
+          value: 1
+  "item14":
+    material: elytra
+    slot: 25
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0c78fbS&#177cfco&#2381fcu&#2e86fcl&#3a8afds &#468ffdE&#5194fdl&#5d98fey&#689dfet&#74a2fer&#7fa6ffa &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB15,000"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "15000"
+      deny_commands:
+        - "[meta] set soulshop14 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop14 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s14 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Elytra!"
+      - "[console] soul remove soul %player_name% 15000"
+      - "[refresh]"
+  "item14-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 25
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop14"
+          meta_type: INTEGER
+          value: 1
+  "item15":
+    material: spawner
+    slot: 28
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0b77fbS&#157cfco&#2080fcu&#2b84fcl&#3589fds &#408dfdS&#4b91fdp&#5695fda&#609afew&#6b9efen&#76a2fee&#80a7ffr &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB10,000"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "10000"
+      deny_commands:
+        - "[meta] set soulshop15 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop14 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s15 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Spawner!"
+      - "[console] soul remove soul %player_name% 10000"
+      - "[refresh]"
+  "item15-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 28
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop15"
+          meta_type: INTEGER
+          value: 1
+  "item16":
+    material: cow_spawn_egg
+    slot: 29
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0c78fbS&#177cfco&#2381fcu&#2e86fcl&#3a8afds &#468ffdC&#5194fdo&#5d98few &#689dfeE&#74a2feg&#7fa6ffg &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB10,000"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "10000"
+      deny_commands:
+        - "[meta] set soulshop16 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop16 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s16 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Cow Egg!"
+      - "[console] soul remove soul %player_name% 10000"
+      - "[refresh]"
+  "item16-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 29
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop16"
+          meta_type: INTEGER
+          value: 1
+  "item17":
+    material: sheep_spawn_egg
+    slot: 30
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0a77fbS&#147bfco&#1e7ffcu&#2883fcl&#3287fcs &#3c8bfdS&#468ffdh&#4f93fde&#5997fee&#639bfep &#6d9ffeE&#77a3feg&#81a7ffg &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB10,000"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "10000"
+      deny_commands:
+        - "[meta] set soulshop17 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop17 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s17 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Sheep Egg!"
+      - "[console] soul remove soul %player_name% 10000"
+      - "[refresh]"
+  "item17-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 30
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop17"
+          meta_type: INTEGER
+          value: 1
+  "item18":
+    material: skeleton_spawn_egg
+    slot: 31
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0876fbS&#107afbo&#197dfcu&#2180fcl&#2983fcs &#3187fcS&#398afdk&#418dfde&#4a91fdl&#5294fde&#5a97fet&#629bfeo&#6a9efen &#72a1feE&#7ba4ffg&#83a8ffg &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB15,000"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "15000"
+      deny_commands:
+        - "[meta] set soulshop18 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop18 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s18 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Skeleton Egg!"
+      - "[console] soul remove soul %player_name% 15000"
+      - "[refresh]"
+  "item18-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 31
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop18"
+          meta_type: INTEGER
+          value: 1
+  "item19":
+    material: creeper_spawn_egg
+    slot: 32
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0977fbS&#117afco&#1a7efcu&#2381fcl&#2b85fcs &#3488fdC&#3d8cfdr&#468ffde&#4e93fde&#5796fep&#609afee&#689dfer &#71a1feE&#7aa4ffg&#82a8ffg &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB15,000"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "15000"
+      deny_commands:
+        - "[meta] set soulshop19 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop19 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s19 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Creeper Egg!"
+      - "[console] soul remove soul %player_name% 15000"
+      - "[refresh]"
+  "item19-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 32
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop19"
+          meta_type: INTEGER
+          value: 1
+  "item20":
+    material: slime_spawn_egg
+    slot: 33
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0a77fbS&#147bfco&#1e7ffcu&#2883fcl&#3287fcs &#3c8bfdS&#468ffdl&#4f93fdi&#5997fem&#639bfee &#6d9ffeE&#77a3feg&#81a7ffg &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB15,000"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "15000"
+      deny_commands:
+        - "[meta] set soulshop20 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop20 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s20 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Slime Egg!"
+      - "[console] soul remove soul %player_name% 15000"
+      - "[refresh]"
+  "item20-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 33
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop20"
+          meta_type: INTEGER
+          value: 1
+  "item21":
+    material: wither_skeleton_spawn_egg
+    slot: 34
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    item_flags: [HIDE_ENCHANTS]
+    enchantments:
+    - damage_all;1
+    display_name: "&#0073fb☠ &#0675fbS&#0c78fbo&#127afcu&#187dfcl&#1e7ffcs &#2482fcW&#2a84fci&#3086fct&#3689fdh&#3c8bfde&#428efdr &#4990fdS&#4f93fdk&#5595fde&#5b98fel&#619afee&#679cfet&#6d9ffeo&#73a1fen &#79a4feE&#7fa6ffg&#85a9ffg &#8babff☠"
+    lore:
+      - "&8Exclusive Item"
+      - ""
+      - "&#0073fb&lE&#0c78fb&lX&#177cfc&lC&#2381fc&lL&#2e86fc&lU&#3a8afd&lS&#468ffd&lI&#5194fd&lV&#5d98fe&lE &#689dfe&lI&#74a2fe&lT&#7fa6ff&lE&#8babff&lM"
+      - "&#fcfcfcThis item can only be obtained"
+      - "&#fcfcfcform the soul shop."
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcPrice: &#0073FB18,000"
+      - ""
+      - "&#f6eb33▶ Click to buy this!"
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: ">"
+          input: "%bsoul_soul%"
+          output: "18000"
+      deny_commands:
+        - "[meta] set soulshop21 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set soulshop21 INTEGER 1"
+        - "[message] &#0073FB» Souls: &#fcfcfcYou don't have enough souls for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] si give s21 1 %player_name% true"
+      - "[message] &#0073FB» Souls: &#fcfcfcYou have succesfully purchased Wither Skeleton Egg!"
+      - "[console] soul remove soul %player_name% 18000"
+      - "[refresh]"
+  "item21-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 34
+    update: true
+    display_name: "&cYou don't have enough souls"
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "soulshop21"
+          meta_type: INTEGER
+          value: 1

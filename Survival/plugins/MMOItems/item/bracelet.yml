@@ -1,0 +1,35 @@
+BRAZALETEDEFUEGO:
+  base:
+    material: PAPER
+    # Nombre con colores HEX
+    name: '<#ff4c4c>Brazalete De Fuego'
+    custom-model-data: 15154
+    lore-format: brazalete
+    unstackable: true
+    
+    # Stat pasivo de MMOItems
+    fire-damage-reduction: 10
+    
+    # Lore manual
+    lore:
+    - '&f 뀉 '
+    - ''
+    - '&fా ꜰᴜʀɪᴀ ɪɢɴᴇᴀ'
+    - '&7El calor despierta tu fuerza.'
+    - '&7Infliges &cDaño Extra &7mientras'
+    - '&7estás ardiendo en &c<#ff4c4c>llamas&7.'
+    - ''
+    - '&fా ᴩɪᴇʟ ᴅᴇ ᴍᴀɢᴍᴀ'
+    - '&7Tu piel se ha endurecido,'
+    - '&7otorgándote &c+10% Resistencia'
+    - '&7al &c<#ff4c4c>Daño de Fuego&7.'
+
+    tier: EPIC
+
+    ability:
+      ability1:
+        type: FURIA_IGNEA
+        mode: ON_HIT
+        damage: 10
+        cooldown: 0
+        mana: 0

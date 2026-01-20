@@ -1,0 +1,833 @@
+DERUNATOR:
+  base:
+    material: EMERALD
+    name: Derunator
+    tier: RARE
+    custom-model-data: 1000
+    lore:
+    - '&7Misterioso dispositivo de'
+    - '&7un reino oculto. Elimina'
+    - '&7las &3runas&7 de un objeto.'
+    random-unsocket: 100.0
+
+SMALL_HEALTH_POTION:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1026
+    name: <#F8C8DC>Poción de Salud Pequeña
+    restore-health: 20.0
+    cooldown-reference: health
+    item-cooldown: 60.0
+    max-consume: 3.0
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    tier: COMMON
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴄᴜʀᴀᴄɪóɴ'
+    - '&7Beber te cura y aplica'
+    - '&660s&7 de enfriamiento a'
+    - '&7las &cpociones de salud&7.'
+
+HEALTH_POTION:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1027
+    name: <#ff817b>Poción de Salud
+    restore-health: 40.0
+    cooldown-reference: health
+    item-cooldown: 60.0
+    max-consume: 3.0
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    tier: RARE
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴄᴜʀᴀᴄɪóɴ'
+    - '&7Beber te cura y aplica'
+    - '&660s&7 de enfriamiento a'
+    - '&7las &cpociones de salud&7.'
+
+LARGE_HEALTH_POTION:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1028
+    name: <#ff5148>Poción de Salud Grande
+    restore-health: 70.0
+    cooldown-reference: health
+    item-cooldown: 60.0
+    max-consume: 4.0
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    tier: EPIC
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴄᴜʀᴀᴄɪóɴ'
+    - '&7Beber te cura y aplica'
+    - '&660s&7 de enfriamiento a'
+    - '&7las &cpociones de salud&7.'
+
+SUPREME_HEALTH_POTION:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1029
+    name: <#ff2015>Poción de Salud Suprema
+    restore-health: 120.0
+    cooldown-reference: health
+    item-cooldown: 60.0
+    max-consume: 5.0
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    tier: LEGENDARY
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴄᴜʀᴀᴄɪóɴ'
+    - '&7Beber te cura y aplica'
+    - '&660s&7 de enfriamiento a'
+    - '&7las &cpociones de salud&7.'
+
+
+SMALL_MANA_POTION:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1030
+    name: <#00ffff>Poción de Maná Pequeña
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ʀᴇᴄᴀʀɢᴀ'
+    - '&7Restaura maná y pone'
+    - '&660s&7 de enfriamiento a'
+    - '&7las &9pociones de maná&7.'
+    restore-mana: 100.0
+    item-cooldown: 60.0
+    cooldown-reference: mana
+    max-consume: 3.0
+    tier: COMMON
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+
+MANA_POTION:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1031
+    name: <#00e6e6>Poción de Maná
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ʀᴇᴄᴀʀɢᴀ'
+    - '&7Restaura maná y pone'
+    - '&660s&7 de enfriamiento a'
+    - '&7las &9pociones de maná&7.'
+    restore-mana: 200.0
+    item-cooldown: 60.0
+    cooldown-reference: mana
+    max-consume: 3.0
+    tier: RARE
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+
+LARGE_MANA_POTION:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1032
+    name: <#00cccc>Poción de Maná Grande
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ʀᴇᴄᴀʀɢᴀ'
+    - '&7Restaura maná y pone'
+    - '&660s&7 de enfriamiento a'
+    - '&7las &9pociones de maná&7.'
+    restore-mana: 350.0
+    item-cooldown: 60.0
+    cooldown-reference: mana
+    max-consume: 4.0
+    tier: EPIC
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+
+SUPREME_MANA_POTION:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1033
+    name: <#00b3b3>Poción de Maná Suprema
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ʀᴇᴄᴀʀɢᴀ'
+    - '&7Restaura maná y pone'
+    - '&660s&7 de enfriamiento a'
+    - '&7las &9pociones de maná&7.'
+    restore-mana: 500.0
+    item-cooldown: 60.0
+    cooldown-reference: mana
+    max-consume: 5.0
+    tier: LEGENDARY
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+
+
+BOTTLED_STRENGTH_I:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1001
+    item-cooldown: 180.0
+    cooldown-reference: strength
+    max-consume: 3.0
+    tier: COMMON
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Fuerza Embotellada I
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ꜰᴜᴇʀᴢᴀ'
+    - '&7Sube &f᎓ <#FF5733>Daño de Arma&7 un'
+    - '&c5%&7. Pone &63 min&7 de'
+    - '&7espera a elixires.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% PHYSICAL_DAMAGE 5 3600
+        delay: 0.0
+        console: true
+BOTTLED_STRENGTH_II:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1002
+    item-cooldown: 180.0
+    cooldown-reference: strength
+    max-consume: 3.0
+    tier: RARE
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Fuerza Embotellada II
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ꜰᴜᴇʀᴢᴀ'
+    - '&7Sube &f᎓ <#FF5733>Daño de Arma&7 un'
+    - '&c15%&7. Pone &63 min&7 de'
+    - '&7espera a elixires.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% PHYSICAL_DAMAGE 15 3600
+        delay: 0.0
+        console: true
+BOTTLED_STRENGTH_III:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1003
+    item-cooldown: 180.0
+    cooldown-reference: strength
+    max-consume: 3.0
+    tier: EPIC
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Fuerza Embotellada III
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ꜰᴜᴇʀᴢᴀ'
+    - '&7Sube &f᎓ <#FF5733>Daño de Arma&7 un'
+    - '&c35%&7. Pone &63 min&7 de'
+    - '&7espera a elixires.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% PHYSICAL_DAMAGE 35 3600
+        delay: 0.0
+        console: true
+BOTTLED_STRENGTH_IV:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1004
+    item-cooldown: 180.0
+    cooldown-reference: strength
+    max-consume: 3.0
+    tier: LEGENDARY
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Fuerza Embotellada IV
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ꜰᴜᴇʀᴢᴀ'
+    - '&7Sube &f᎓ <#FF5733>Daño de Arma&7 un'
+    - '&c50%&7. Pone &63 min&7 de'
+    - '&7espera a elixires.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% PHYSICAL_DAMAGE 50 3600
+        delay: 0.0
+        console: true
+BOTTLED_STRENGTH_V:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1005
+    item-cooldown: 180.0
+    cooldown-reference: strength
+    max-consume: 3.0
+    tier: MYTHIC
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Fuerza Embotellada V
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ꜰᴜᴇʀᴢᴀ'
+    - '&7Sube &f᎓ <#FF5733>Daño de Arma&7 un'
+    - '&c100%&7. Pone &63 min&7 de'
+    - '&7espera a elixires.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% PHYSICAL_DAMAGE 100 3600
+        delay: 0.0
+        console: true
+
+BOTTLED_VAMPIRISM_I:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1006
+    item-cooldown: 180.0
+    cooldown-reference: lifesteal
+    max-consume: 3.0
+    tier: COMMON
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Vampirismo Embotellado <#F0CFCE>I
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ʀᴏʙᴏ ᴅᴇ ᴠɪᴅᴀ'
+    - '&7Sube &f᎐ <#800000>Robo Vida&7 y'
+    - '&f᎖ <#702963>Vamp. Hechizo&7 un'
+    - '&7<#800000>0.1%&7 y <#702963>5%&7. Pone'
+    - '&65 min&7 espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% LIFESTEAL 0.1 6000
+        delay: 0.0
+        console: true
+      cmd1:
+        format: mythiclib tempstat add %player_name% SPELL_VAMPIRISM 5 6000
+        delay: 0.0
+        console: true
+BOTTLED_VAMPIRISM_II:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1007
+    item-cooldown: 180.0
+    cooldown-reference: lifesteal
+    max-consume: 3.0
+    tier: RARE
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Vampirismo Embotellado <#E19F9C>II
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ʀᴏʙᴏ ᴅᴇ ᴠɪᴅᴀ'
+    - '&7Sube &f᎐ <#800000>Robo Vida&7 y'
+    - '&f᎖ <#702963>Vamp. Hechizo&7 un'
+    - '&7<#800000>0.2%&7 y <#702963>7.5%&7. Pone'
+    - '&65 min&7 espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% LIFESTEAL 0.2 6000
+        delay: 0.0
+        console: true
+      cmd1:
+        format: mythiclib tempstat add %player_name% SPELL_VAMPIRISM 7.5 6000
+        delay: 0.0
+        console: true
+BOTTLED_VAMPIRISM_III:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1008
+    item-cooldown: 180.0
+    cooldown-reference: lifesteal
+    max-consume: 3.0
+    tier: EPIC
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Vampirismo Embotellado <#C23E39>III
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ʀᴏʙᴏ ᴅᴇ ᴠɪᴅᴀ'
+    - '&7Sube &f᎐ <#800000>Robo Vida&7 y'
+    - '&f᎖ <#702963>Vamp. Hechizo&7 un'
+    - '&7<#800000>0.5%&7 y <#702963>10%&7. Pone'
+    - '&65 min&7 espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% LIFESTEAL 0.5 6000
+        delay: 0.0
+        console: true
+      cmd1:
+        format: mythiclib tempstat add %player_name% SPELL_VAMPIRISM 10 6000
+        delay: 0.0
+        console: true
+BOTTLED_VAMPIRISM_IV:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1009
+    item-cooldown: 180.0
+    cooldown-reference: lifesteal
+    max-consume: 3.0
+    tier: LEGENDARY
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Vampirismo Embotellado <#A92520>IV
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ʀᴏʙᴏ ᴅᴇ ᴠɪᴅᴀ'
+    - '&7Sube &f᎐ <#800000>Robo Vida&7 y'
+    - '&f᎖ <#702963>Vamp. Hechizo&7 un'
+    - '&7<#800000>1%&7 y <#702963>12.5%&7. Pone'
+    - '&65 min&7 espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% LIFESTEAL 1 6000
+        delay: 0.0
+        console: true
+      cmd1:
+        format: mythiclib tempstat add %player_name% SPELL_VAMPIRISM 12.5 6000
+        delay: 0.0
+        console: true
+BOTTLED_VAMPIRISM_V:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1010
+    item-cooldown: 180.0
+    cooldown-reference: lifesteal
+    max-consume: 3.0
+    tier: MYTHIC
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Vampirismo Embotellado <#6B0805>V
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ʀᴏʙᴏ ᴅᴇ ᴠɪᴅᴀ'
+    - '&7Sube &f᎐ <#800000>Robo Vida&7 y'
+    - '&f᎖ <#702963>Vamp. Hechizo&7 un'
+    - '&7<#800000>1.5%&7 y <#702963>15%&7. Pone'
+    - '&65 min&7 espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% LIFESTEAL 1.5 6000
+        delay: 0.0
+        console: true
+      cmd1:
+        format: mythiclib tempstat add %player_name% SPELL_VAMPIRISM 15 6000
+        delay: 0.0
+        console: true
+
+BOTTLED_SORCERY_I:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1011
+    item-cooldown: 180.0
+    cooldown-reference: sorcery
+    max-consume: 3.0
+    tier: COMMON
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Hechicería Embotellada <#D1C2D4>I
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴍáɢɪᴄᴀ'
+    - '&7Mejora &f᎕ <#D1C2D4>Daño Hab.&7 un'
+    - '&d25%&7 y pone &63 min&7 de'
+    - '&7espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% SKILL_DAMAGE 25 3600
+        delay: 0.0
+        console: true
+BOTTLED_SORCERY_II:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1012
+    item-cooldown: 180.0
+    cooldown-reference: sorcery
+    max-consume: 3.0
+    tier: RARE
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Hechicería Embotellada <#A384AA>II
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴍáɢɪᴄᴀ'
+    - '&7Mejora &f᎕ <#D1C2D4>Daño Hab.&7 un'
+    - '&d50%&7 y pone &63 min&7 de'
+    - '&7espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% SKILL_DAMAGE 50 3600
+        delay: 0.0
+        console: true
+BOTTLED_SORCERY_III:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1013
+    item-cooldown: 180.0
+    cooldown-reference: sorcery
+    max-consume: 3.0
+    tier: EPIC
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Hechicería Embotellada <#855B8D>III
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴍáɢɪᴄᴀ'
+    - '&7Mejora &f᎕ <#D1C2D4>Daño Hab.&7 un'
+    - '&d100%&7 y pone &63 min&7 de'
+    - '&7espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% SKILL_DAMAGE 100 3600
+        delay: 0.0
+        console: true
+BOTTLED_SORCERY_IV:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1014
+    item-cooldown: 180.0
+    cooldown-reference: sorcery
+    max-consume: 3.0
+    tier: LEGENDARY
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Hechicería Embotellada <#6B4274>IV
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴍáɢɪᴄᴀ'
+    - '&7Mejora &f᎕ <#D1C2D4>Daño Hab.&7 un'
+    - '&d150%&7 y pone &63 min&7 de'
+    - '&7espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% SKILL_DAMAGE 150 3600
+        delay: 0.0
+        console: true
+BOTTLED_SORCERY_V:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1015
+    item-cooldown: 180.0
+    cooldown-reference: sorcery
+    max-consume: 3.0
+    tier: MYTHIC
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Hechicería Embotellada <#3D1E44>V
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴍáɢɪᴄᴀ'
+    - '&7Mejora &f᎕ <#D1C2D4>Daño Hab.&7 un'
+    - '&d250%&7 y pone &63 min&7 de'
+    - '&7espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% SKILL_DAMAGE 250 3600
+        delay: 0.0
+        console: true
+
+BOTTLED_PRECISION_I:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1016
+    item-cooldown: 180.0
+    cooldown-reference: precision
+    max-consume: 3.0
+    tier: COMMON
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Precisión Embotellada <#C1D9DE>I
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ᴘʀᴇᴄɪꜱɪóɴ'
+    - '&7Mejora &fᎋ <#FBE7C6>Prob. Crít&7 y'
+    - '&fᎌ <#FBE7C6>Daño Crít&7 un <#FBE7C6>5%&7 y'
+    - '&7<#FBE7C6>10%&7. Pone &63 min&7'
+    - '&7de espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% CRITICAL_STRIKE_CHANCE 5 3600
+        delay: 0.0
+        console: true
+      cmd1:
+        format: mythiclib tempstat add %player_name% CRITICAL_STRIKE_POWER 10 3600
+        delay: 0.0
+        console: true
+BOTTLED_PRECISION_II:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1017
+    item-cooldown: 180.0
+    cooldown-reference: precision
+    max-consume: 3.0
+    tier: RARE
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Precisión Embotellada <#93BDC6>II
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ᴘʀᴇᴄɪꜱɪóɴ'
+    - '&7Mejora &fᎋ <#FBE7C6>Prob. Crít&7 y'
+    - '&fᎌ <#FBE7C6>Daño Crít&7 un <#FBE7C6>7.5%&7 y'
+    - '&7<#FBE7C6>15%&7. Pone &63 min&7'
+    - '&7de espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% CRITICAL_STRIKE_CHANCE 7.5 3600
+        delay: 0.0
+        console: true
+      cmd1:
+        format: mythiclib tempstat add %player_name% CRITICAL_STRIKE_POWER 15 3600
+        delay: 0.0
+        console: true
+BOTTLED_PRECISION_III:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1018
+    item-cooldown: 180.0
+    cooldown-reference: precision
+    max-consume: 3.0
+    tier: EPIC
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Precisión Embotellada <#6A9AA4>III
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ᴘʀᴇᴄɪꜱɪóɴ'
+    - '&7Mejora &fᎋ <#FBE7C6>Prob. Crít&7 y'
+    - '&fᎌ <#FBE7C6>Daño Crít&7 un <#FBE7C6>10%&7 y'
+    - '&7<#FBE7C6>25%&7. Pone &63 min&7'
+    - '&7de espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% CRITICAL_STRIKE_CHANCE 10 3600
+        delay: 0.0
+        console: true
+      cmd1:
+        format: mythiclib tempstat add %player_name% CRITICAL_STRIKE_POWER 25 3600
+        delay: 0.0
+        console: true
+BOTTLED_PRECISION_IV:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1019
+    item-cooldown: 180.0
+    cooldown-reference: precision
+    max-consume: 3.0
+    tier: LEGENDARY
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Precisión Embotellada <#477179>IV
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ᴘʀᴇᴄɪꜱɪóɴ'
+    - '&7Mejora &fᎋ <#FBE7C6>Prob. Crít&7 y'
+    - '&fᎌ <#FBE7C6>Daño Crít&7 un <#FBE7C6>15%&7 y'
+    - '&7<#FBE7C6>40%&7. Pone &63 min&7'
+    - '&7de espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% CRITICAL_STRIKE_CHANCE 15 3600
+        delay: 0.0
+        console: true
+      cmd1:
+        format: mythiclib tempstat add %player_name% CRITICAL_STRIKE_POWER 40 3600
+        delay: 0.0
+        console: true
+BOTTLED_PRECISION_V:
+  base:
+    material: GLASS_BOTTLE
+    custom-model-data: 1020
+    item-cooldown: 180.0
+    cooldown-reference: precision
+    max-consume: 3.0
+    tier: MYTHIC
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_DRINK
+        volume: 1.0
+        pitch: 1.0
+    name: Precisión Embotellada <#284045>V
+    lore:
+    - '&f 뀓'
+    - ''
+    - '&fｰ ᴍᴇᴊᴏʀᴀ ᴅᴇ ᴘʀᴇᴄɪꜱɪóɴ'
+    - '&7Mejora &fᎋ <#FBE7C6>Prob. Crít&7 y'
+    - '&fᎌ <#FBE7C6>Daño Crít&7 un <#FBE7C6>25%&7 y'
+    - '&7<#FBE7C6>100%&7. Pone &63 min&7'
+    - '&7de espera a pociones.'
+    commands:
+      cmd0:
+        format: mythiclib tempstat add %player_name% CRITICAL_STRIKE_CHANCE 25 3600
+        delay: 0.0
+        console: true
+      cmd1:
+        format: mythiclib tempstat add %player_name% CRITICAL_STRIKE_POWER 100 3600
+        delay: 0.0
+        console: true
+
+
+GRIMOIRE_OF_THE_DAMNED:
+  base:
+    material: GRAY_DYE
+    name: <#E7D27C>Grimorio de los Malditos
+    custom-model-data: 1001
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Mejora estos objetos,'
+    - '&7subiendo la &omayoría&7 de'
+    - '&7stats un &65%&7 (máx &f5&7).'
+    - ''
+    - <#E7D27C> Armadura Apocalipsis
+    - '&8 (variaciones)'
+    - <#E7D27C> La Calamidad
+    - <#E7D27C> El Cataclismo
+    - <#E7D27C> La Catástrofe
+    - ''
+    - '&7Stats afectadas: &c🗡 &9☠ &f🛡 &c❤ <#9966cc>۞'
+    - '                     &6🏹 &4🗡'
+    - ''
+    - '&8> Arrastrar y soltar <'
+    tier: LEGENDARY
+    unstackable: true
+    upgrade:
+      reference: damned
+
+GRIMOIRE_OF_THE_LOYAL:
+  base:
+    material: GRAY_DYE
+    name: <#FFC0CB>Grimorio de los Leales
+    custom-model-data: 1002
+    disable-crafting: true
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - '&7Mejora estos objetos,'
+    - '&7subiendo la &omayoría&7 de'
+    - '&7stats un &d2%&7 (máx &f5&7).'
+    - ''
+    - <#C3B1E1> Armadura Fuego Infernal
+    - <#C3B1E1> Armadura Guardián
+    - <#C3B1E1> Armadura Apolo
+    - <#C3B1E1> Armadura Muerte
+    - ''
+    - '&7Stats afectadas: &c🗡 &9☠ &f🛡 &c❤ <#9966cc>۞'
+    - '                     &6🏹 &4🗡'
+    - ''
+    - '&8> Arrastrar y soltar <'
+    tier: EPIC
+    unstackable: true
+    upgrade:
+      reference: loyal

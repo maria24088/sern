@@ -1,0 +1,22 @@
+######## created by samus2002 #########
+  
+awakened_assassin_duskblade:
+  Id: stone_sword
+  Display: "<gradient:#6a0000:#ff0202:#6a0000>&lDuskblade"
+  Model: 2083
+  Lore:
+  - '<gradient:#6a0000:#ff0202:#6a0000>The Duskblade of the Awakened Assassin'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Deadly_Calm} @self ~onTimer:10
+  - skill{s=Lethal_Combo} @self ~onSwing
+  - skill{s=Ravaging_Dash} @self ~onUse
+  - skill{s=Death_Bloom} @self ~onCrouch
+  - skill{s=Shadowquake} @self ~onTimer:10
+  - skill{s=Crimson_Arc} @self ~onUse
+  - skill{s=Last_Dance} @self ~onSwing
+#c2e71c936d493effd3763e056c8f1318

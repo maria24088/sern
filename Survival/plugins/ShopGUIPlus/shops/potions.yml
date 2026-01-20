@@ -1,0 +1,295 @@
+potions:
+  name: "&8&lTienda de Alquimia"
+  size: 54
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+
+  items:
+    # ================= FILA 2 (Slots 10-16) =================
+    # Salud (4 items) + Maná (3 items)
+    1:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: SMALL_HEALTH_POTION
+        quantity: 1
+      buyPrice: 500
+      slot: 10
+    
+    2:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: HEALTH_POTION
+        quantity: 1
+      buyPrice: 1000
+      slot: 11
+
+    3:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: LARGE_HEALTH_POTION
+        quantity: 1
+      buyPrice: 2500
+      slot: 12
+
+    4:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: SUPREME_HEALTH_POTION
+        quantity: 1
+      buyPrice: 5000
+      slot: 13
+
+    5:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: SMALL_MANA_POTION
+        quantity: 1
+      buyPrice: 500
+      slot: 14
+
+    6:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: MANA_POTION
+        quantity: 1
+      buyPrice: 1000
+      slot: 15
+
+    7:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: LARGE_MANA_POTION
+        quantity: 1
+      buyPrice: 2500
+      slot: 16
+
+    # ================= FILA 3 (Slots 19-25) =================
+    # Maná restante (1) + Fuerza (5) + Vampirismo (1)
+    8:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: SUPREME_MANA_POTION
+        quantity: 1
+      buyPrice: 5000
+      slot: 19
+
+    9:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_STRENGTH_I
+        quantity: 1
+      buyPrice: 1000
+      slot: 20
+    
+    10:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_STRENGTH_II
+        quantity: 1
+      buyPrice: 2000
+      slot: 21
+
+    11:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_STRENGTH_III
+        quantity: 1
+      buyPrice: 4000
+      slot: 22
+
+    12:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_STRENGTH_IV
+        quantity: 1
+      buyPrice: 8000
+      slot: 23
+
+    13:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_STRENGTH_V
+        quantity: 1
+      buyPrice: 16000
+      slot: 24
+
+    14:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_VAMPIRISM_I
+        quantity: 1
+      buyPrice: 500
+      slot: 25
+
+    # ================= FILA 4 (Slots 28-34) =================
+    # Vampirismo restante (4) + Hechicería (3)
+    15:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_VAMPIRISM_II
+        quantity: 1
+      buyPrice: 1000
+      slot: 28
+
+    16:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_VAMPIRISM_III
+        quantity: 1
+      buyPrice: 2000
+      slot: 29
+
+    17:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_VAMPIRISM_IV
+        quantity: 1
+      buyPrice: 4000
+      slot: 30
+
+    18:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_VAMPIRISM_V
+        quantity: 1
+      buyPrice: 7000
+      slot: 31
+
+    19:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_SORCERY_I
+        quantity: 1
+      buyPrice: 400
+      slot: 32
+
+    20:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_SORCERY_II
+        quantity: 1
+      buyPrice: 800
+      slot: 33
+
+    21:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_SORCERY_III
+        quantity: 1
+      buyPrice: 1600
+      slot: 34
+
+    # ================= FILA 5 (Slots 37-43) =================
+    # Hechicería restante (2) + Precisión (5)
+    22:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_SORCERY_IV
+        quantity: 1
+      buyPrice: 3200
+      slot: 37
+
+    23:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_SORCERY_V
+        quantity: 1
+      buyPrice: 6400
+      slot: 38
+
+    24:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_PRECISION_I
+        quantity: 1
+      buyPrice: 400
+      slot: 39
+
+    25:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_PRECISION_II
+        quantity: 1
+      buyPrice: 800
+      slot: 40
+
+    26:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_PRECISION_III
+        quantity: 1
+      buyPrice: 1600
+      slot: 41
+
+    27:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_PRECISION_IV
+        quantity: 1
+      buyPrice: 3200
+      slot: 42
+
+    28:
+      type: item
+      item:
+        mmoItems:
+          type: CONSUMABLE
+          id: BOTTLED_PRECISION_V
+        quantity: 1
+      buyPrice: 6400
+      slot: 43

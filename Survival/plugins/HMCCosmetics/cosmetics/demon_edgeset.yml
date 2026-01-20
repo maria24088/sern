@@ -1,0 +1,63 @@
+demon_edge_cosmetics_backpack:
+  height: 4
+  permission: cosmetics.demon_edge_cosmetics_backpack
+  dyeable: false
+  slot: BACKPACK
+  item:
+    material: POTION
+    model-data: 8400004
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+  firstperson-item:
+    material: POTION
+    model-data: 8400003
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+demon_edge_cosmetics_wings:
+  height: 4
+  permission: cosmetics.demon_edge_cosmetics_wings
+  dyeable: false
+  slot: BACKPACK
+  item:
+    material: POTION
+    model-data: 8400009
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+  firstperson-item:
+    material: POTION
+    model-data: 8400008
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+demon_edge_cosmetics_helmet:
+  height: 0
+  permission: cosmetics.demon_edge_cosmetics_helmet
+  dyeable: false
+  slot: HELMET
+  item:
+    material: POTION
+    model-data: 8400005
+    color: '#ffffff'
+    unbreakable: true
+    glow: false
+    amount: 1
+    item-flags:
+    - HIDE_ATTRIBUTES
+
+
+# 842AGZ

@@ -1,0 +1,34 @@
+info:
+    namespace: ender_dragonset
+categories:
+    ender_dragonset:
+        name: Ender Dragon Animated Weapons And Tools Set
+        enabled: true
+        icon: ender_dragonset:ender_dragon_wings
+        permission: ia.menu.ender_dragonset
+        items:
+        - ender_dragonset:ender_dragonhelmet
+        - ender_dragonset:ender_dragonchestplate
+        - ender_dragonset:ender_dragonleggings
+        - ender_dragonset:ender_dragonboots
+        - ender_dragonset:ender_dragon_helmet
+        - ender_dragonset:ender_dragon_axe
+        - ender_dragonset:ender_dragon_pickaxe
+        - ender_dragonset:ender_dragon_shovel
+        - ender_dragonset:ender_dragon_hoe
+        - ender_dragonset:ender_dragon_fishing_rod
+        - ender_dragonset:ender_dragon_sword
+        - ender_dragonset:ender_dragon_shield
+        - ender_dragonset:ender_dragon_crossbow
+        - ender_dragonset:ender_dragon_bow
+        - ender_dragonset:ender_dragon_staff
+        - ender_dragonset:ender_dragon_trident
+        - ender_dragonset:ender_dragon_hammer
+        - ender_dragonset:ender_dragon_spear
+        - ender_dragonset:ender_dragon_scythe
+        - ender_dragonset:ender_dragon_chest
+        - ender_dragonset:ender_dragon_key
+        - ender_dragonset:ender_dragon_gauntlet
+        - ender_dragonset:ender_dragon_wings
+
+#g0Yw5EN0onePFGd6tkRQRTUZRVW3VERONTQE5keVRUT6FkRjdXerRmV6hVY3FlbYBzdDJnN

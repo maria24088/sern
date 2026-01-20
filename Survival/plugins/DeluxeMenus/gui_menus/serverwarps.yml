@@ -1,0 +1,249 @@
+# Guía de configuración avanzada de DeluxeMenus
+#=========================================================
+menu_title: ':offset_-52: :fondo_medieval:'
+open_command:
+  - warps
+  - warp
+open_commands: []
+size: 45
+# Como siempre, solo la gente genial puede abrir este menú :)
+items:
+  # Warps de Jugadores (Player Warps)
+  'playerwarps':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmRjNGJhZmM5ZjY3ODE5MWQxN2I4YTIyYzkxYzQ3MTU4Nzg4MTIwZTk0OWE4YmUzMjM5NDAwOWQ3ZGYyYmY4YyJ9fX0= # Cabeza de jugador personalizada
+    slot: 11
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&bWarps de Jugadores'
+    lore:
+      - '&8Warp del Servidor'
+      - '&r'
+      - '&bDescripción:'
+      - '&fVisita ubicaciones creadas'
+      - '&fpor otros jugadores.'
+      - ''
+      - '&e→ &lCLIC &r&epara Teletransportarte!'
+    left_click_commands:
+      - '[player] pwarp' # Comando para abrir el menú de Player Warps
+      - '[close]'
+
+  # Spawn del Servidor (Server Spawn)
+  'spawn':
+    material: END_CRYSTAL # Cristal del End
+    slot: 13
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&5Spawn del Servidor'
+    lore:
+      - '&8Warp del Servidor'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Teletranspórtate de vuelta al área'
+      - '&fprincipal de spawn para información general!'
+      - ''
+      - '&e→ &lCLIC &r&epara Teletransportarte!'
+    left_click_commands:
+      - '[player] spawn' # Comando para ir al spawn
+      - '[close]'
+
+  # Cajas de Recompensa (Crates)
+  'crates':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzhmY2EzNDVlNGZkOWM0MjJiNzNjNGMxYzUwNTZmMzc5ZGU5MjUxMGZjOTRiNGNjOTA3ZmIyMGNlNzUwZGM5MCJ9fX0= # Cabeza de jugador personalizada
+    slot: 14
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&6Cajas de Recompensa'
+    lore:
+      - '&8Warp del Servidor'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Usa tus llaves de caja'
+      - '&fen esta área para obtener recompensas!'
+      - ''
+      - '&e→ &lCLIC &r&epara Teletransportarte!'
+    left_click_commands:
+      - '[player] essentials:warp crates' # Comando para ir al warp 'crates'
+      - '[close]'
+
+  # Clasificaciones (Leaderboards)
+  'leaderboards':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdmNTdlN2FhOGRlODY1OTFiYjBiYzUyY2JhMzBhNDlkOTMxYmZhYmJkNDdiYmM4MGJkZDY2MjI1MTM5MjE2MSJ9fX0= # Cabeza de jugador personalizada
+    slot: 15
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&eClasificaciones'
+    lore:
+      - '&8Warp del Servidor'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Revisa nuestra clasificación!'
+      - '&f¡Puedes ver a los mejores jugadores!'
+      - ''
+      - '&e→ &lCLIC &r&epara Teletransportarte!'
+    left_click_commands:
+      - '[player] essentials:warp leaderboard' # Comando para ir al warp 'leaderboard'
+      - '[close]'
+
+  # Teletransportación al Mundo Principal (Overworld Teleportation)
+  'overworld':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc5ZTU0Y2JlODc4NjdkMTRiMmZiZGYzZjE4NzA4OTQzNTIwNDhkZmVjZDk2Mjg0NmRlYTg5M2IyMTU0Yzg1In19fQ== # Cabeza de jugador personalizada
+    slot: 21
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&aTeletransportación al Mundo Principal'
+    lore:
+      - '&8Warp del Servidor'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Teletranspórtate aleatoriamente'
+      - '&fal Mundo Principal!'
+      - ''
+      - '&e→ &lCLIC &r&epara Teletransportarte!'
+    left_click_commands:
+      - '[player] rtp' # Comando para Teletransporte Aleatorio (Random TP)
+      - '[close]'
+
+  # Área de Magia (Enchanting Area)
+  'enchant':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzY1MDViMWJlZmJhMjQyMTcwYTQ2ZTg5NDdiNTJhZWE1NGE1OTA2MGYzZTFjMzZmMjFjZWJiNDQ2OTBmOGIwYyJ9fX0= # Cabeza de jugador personalizada
+    slot: 12
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&5Área de Magia'
+    lore:
+      - '&8Warp del Servidor'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Encuentra Items'
+      - '&fMagicos en esta área!'
+      - ''
+      - '&e→ &lCLIC &r&epara Teletransportarte!'
+    left_click_commands:
+      - '[player] essentials:warp magia' # Comando para ir al warp 'Enchant'
+      - '[close]'
+
+  # Arena PvP (PvP Arena)
+  'pvp':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjlkYTEzYmY0MzU5OWRkNDJmNzViNmU2NTQ4ZWFkNDBjN2ZmNDg4YjIyZWYzZDkzMWU2YzAwNGRlMWZhOTc4aiJ9fX0= # Cabeza de jugador personalizada
+    slot: 23
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&cArena PvP'
+    lore:
+      - '&8Warp del Servidor'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Teletranspórtate a la Arena PvP'
+      - '&fpara enfrentarte a'
+      - '&fotros jugadores!'
+      - ''
+      - '#ff9a9aAdvertencia, perderas tus cosas'      
+      - ''
+      - '&e→ &lCLIC &r&epara Teletransportarte!'
+    left_click_commands:
+      - '[player] essentials:warp PvP' # Comando para ir al warp 'PvP'
+      - '[close]'
+
+  # Mina (Mine)
+  'mina':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg4ZTBlODEyZDRmZDk2YmQxOTQ1ZWMxYWNjNWFiNGRiMjAwOGI3MjBlZmNjYTlkMDdkZWVhYmEyN2M4ZGQ5ZiJ9fX0= # Cabeza de jugador personalizada
+    slot: 22
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&cMina'
+    lore:
+      - '&8Warp del Servidor'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Teletranspórtate a la Mina!'
+      - ''
+      - '&e→ &lCLIC &r&epara Teletransportarte!'
+    left_click_commands:
+      - '[player] essentials:warp mina' # Comando para ir al warp 'mina'
+      - '[close]'
+
+    # Mascotas
+  'Mascotas':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGJmYzQ2NzZmNWFiMTQ0ZTY3NDhiY2FiNjFhMzRlODgzYzYxMmRkMmI2MWUwZWZmNWNhNGM1MjllMTJhYWM4In19fQ== # Cabeza de jugador personalizada
+    slot: 20
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&aTienda de Mascotas'
+    lore:
+      - '&8Warp del Servidor'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Teletranspórtate a la Tienda'
+      - '&fde Mascotas!'
+      - ''
+      - '&e→ &lCLIC &r&epara Teletransportarte!'
+    left_click_commands:
+      - '[player] essentials:warp Mascotas'
+      - '[close]'
+
+  'Pesca':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmEzOGY2NzM4MDhjZTNjZTc5NTdlYzUxOTlmNTAyZDFmZTFkYWJkMDNlODExZDY4NzZmZjI5NTFlZGUxNGU2NiJ9fX0=
+    slot: 24
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&aVenta de Peces'
+    lore:
+      - '&8Warp del Servidor'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Vende y evalua tus Peces!'
+      - ''
+      - '&e→ &lCLIC &r&epara Teletransportarte!'
+    left_click_commands:
+      - '[player] essentials:warp Pesca'
+      - '[close]'
+
+  'Casino':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU4OTJmYjc1Nzc2NmUzMjhkODlhMmVmODU5MmE5MjQ4ODFiZDA3ZjIzYmRhNGNiYmRjZmY3OWE4ZGJmOTgxNSJ9fX0=
+    slot: 10
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&aCasino'
+    lore:
+      - '&8Warp del Servidor'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Gana Dinero Apostando!'
+      - ''
+      - '&e→ &lCLIC &r&epara Teletransportarte!'
+    left_click_commands:
+      - '[player] essentials:warp casino'
+      - '[close]'
+  
+  'pvpSeguro':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjlkYTEzYmY0MzU5OWRkNDJmNzViNmU2NTQ4ZWFkNDBjN2ZmNDg4YjIyZWYzZDkzMWU2YzAwNGRlMWZhOTc4aiJ9fX0= # Cabeza de jugador personalizada
+    slot: 16
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&cArena PvP Segura'
+    lore:
+      - '&8Warp del Servidor'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¡Teletranspórtate a la Arena PvP'
+      - '&fpara enfrentarte a'
+      - '&fotros jugadores!'
+      - ''
+      - '&fAqui no perderas tus cosas!'
+      - ''
+      - '&e→ &lCLIC &r&epara Teletransportarte!'
+    left_click_commands:
+      - '[player] essentials:warp pvpSeguro' # Comando para ir al warp 'PvP'
+      - '[close]'

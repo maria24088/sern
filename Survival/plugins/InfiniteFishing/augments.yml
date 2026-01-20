@@ -1,0 +1,243 @@
+# Custom Augments Configuration
+# This file defines all the custom augments that can be crafted for fishing rods using a cauldron.
+
+custom-augments:
+  # Everlasting Bait: Bait has a chance not to be consumed upon use.
+  augment-everlastingbait:
+    required-items:
+      - gold_ingot
+      - iron_ingot
+    give-enchant:
+      - everlastingbait:1:85
+      - everlastingbait:2:15
+
+  # Long Cast: Makes your cast land further away.
+  augment-longcast:
+    required-items:
+      - gold_ingot
+      - redstone
+    give-enchant:
+      - longcast:1:75
+      - longcast:2:25
+
+  # Quick Reel: Reel in fish faster.
+  augment-quickreel:
+    required-items:
+      - sugar
+      - string
+    give-enchant:
+      - quickreel:1:80
+      - quickreel:2:20
+
+  # Swift Cast: Decreases the time it takes to cast and reel in the line.
+  augment-swift-cast:
+    required-items:
+      - sugar
+      - diamond
+      - redstone
+    give-enchant:
+      - swiftcast:1:66
+      - swiftcast:2:33
+      - swiftcast:3:1
+
+  # Storm Fisher: Increases chances of catching rare fish during rainy weather.
+  augment-storm-fisher:
+    required-items:
+      - emerald
+      - ender_pearl
+    give-enchant:
+      - stormfisher:1:60
+      - stormfisher:2:35
+      - stormfisher:3:5
+
+  # Bountiful Lure: Increases the chance of catching rare fish.
+  augment-bountiful-lure:
+    required-items:
+      - emerald
+      - lapis_lazuli
+    give-enchant:
+      - bountifullure:1:70
+      - bountifullure:2:25
+      - bountifullure:3:5
+
+  # Powerful Reel: Increases the chances of successfully reeling in bigger and stronger fish.
+  augment-powerful-reel:
+    required-items:
+      - diamond
+      - lapis_lazuli
+    give-enchant:
+      - powerfulreel:1:65
+      - powerfulreel:2:30
+      - powerfulreel:3:5
+
+  # Fisher's Bond: Increases effectiveness when fishing in a group.
+  augment-fishers-bond:
+    required-items:
+      - emerald
+      - diamond
+      - lapis_lazuli
+    give-enchant:
+      - fishersbond:1:70
+      - fishersbond:2:25
+      - fishersbond:3:5
+
+  # Shared Bounty: Shares the bounty with nearby players.
+  augment-shared-bounty:
+    required-items:
+      - emerald
+      - gold_ingot
+      - netherite_ingot
+    give-enchant:
+      - sharedbounty:1:75
+      - sharedbounty:2:25
+
+  # Auto Bait: Automatically attaches a new bait from the inventory when the current bait is used up.
+  augment-autobait:
+    required-items:
+      - gold_ingot
+      - redstone
+      - sugar
+    give-enchant:
+      - autobait:1:90
+      - autobait:2:10
+
+  # Line Mender: Repairs the line of the fishing rod.
+  augment-linemender:
+    required-items:
+      - gold_ingot
+      - iron_ingot
+      - string
+    give-enchant:
+      - linemender:1:85
+      - linemender:2:15
+
+  # Versatile Bait: Bait has a chance to attract different types of fish.
+  augment-versatile-bait:
+    required-items:
+      - sugar
+      - lapis_lazuli
+      - wheat_seeds
+    give-enchant:
+      - versatilebait:1:80
+      - versatilebait:2:20
+
+  # Magnetic Lure: Attracts fish from wider radius.
+  augment-magnetic-lure:
+    required-items:
+      - iron_ingot
+      - redstone
+      - string
+    give-enchant:
+      - magneticlure:1:75
+      - magneticlure:2:25
+
+  # Mystic Bite: Increases the chance of catching rare items.
+  augment-mystic-bite:
+    required-items:
+      - ender_pearl
+      - lapis_lazuli
+      - glowstone_dust
+    give-enchant:
+      - mysticbite:1:70
+      - mysticbite:2:30
+
+  # Monster Repellent: Repels monsters from attacking you.
+  augment-monster-repellent:
+    required-items:
+      - blaze_powder
+      - spider_eye
+      - bone
+    give-enchant:
+      - monsterrepellent:1:85
+      - monsterrepellent:2:15
+
+  # Treasure Hunter: Increases the chances of finding treasure.
+  augment-treasure-hunter:
+    required-items:
+      - gold_ingot
+      - diamond
+      - emerald
+    give-enchant:
+      - treasurehunter:1:75
+      - treasurehunter:2:25
+
+  # Magnetic Storm Fisher
+  augment-magnetic-storm-fisher:
+    required-items:
+      - emerald
+      - ender_pearl
+      - iron_ingot
+      - redstone
+    give-enchant:
+      - magneticlure:1:40
+      - magneticlure:2:10
+      - stormfisher:1:40
+      - stormfisher:2:10
+
+  # Mystic Treasure Hunter
+  augment-mystic-treasure-hunter:
+    required-items:
+      - diamond
+      - lapis_lazuli
+      - gold_ingot
+      - glowstone_dust
+    give-enchant:
+      - mysticbite:1:45
+      - mysticbite:2:5
+      - treasurehunter:1:45
+      - treasurehunter:2:5
+
+  # Versatile Bountiful Fisher
+  augment-versatile-bountiful-fisher:
+    required-items:
+      - emerald
+      - lapis_lazuli
+      - sugar
+      - wheat_seeds
+    give-enchant:
+      - versatilebait:1:40
+      - versatilebait:2:10
+      - bountifullure:1:40
+      - bountifullure:2:10
+
+  # Swift Powerful Fisher
+  augment-swift-powerful-fisher:
+    required-items:
+      - diamond
+      - sugar
+      - redstone
+      - lapis_lazuli
+    give-enchant:
+      - swiftcast:1:30
+      - swiftcast:2:20
+      - powerfulreel:1:30
+      - powerfulreel:2:20
+
+  # Long Cast Treasure Hunter
+  augment-longcast-treasure-hunter:
+    required-items:
+      - gold_ingot
+      - redstone
+      - diamond
+      - emerald
+    give-enchant:
+      - longcast:1:40
+      - longcast:2:10
+      - treasurehunter:1:40
+      - treasurehunter:2:10
+
+  # Everlasting Auto Bait
+  augment-everlasting-auto-bait:
+    required-items:
+      - gold_ingot
+      - iron_ingot
+      - redstone
+      - sugar
+    give-enchant:
+      - everlastingbait:1:45
+      - everlastingbait:2:5
+      - autobait:1:45
+      - autobait:2:5
+
+# Note: The format for enchants is "enchant_name:level:chance_percentage"
+# Multiple enchants can be given for a single augment with different probabilities.

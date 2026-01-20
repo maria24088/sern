@@ -1,0 +1,32 @@
+info:
+    namespace: little_unicorn_set
+categories:
+    little_unicorn_set:
+        name: Little Unicorn Animated Weapons And Tools Set
+        enabled: true
+        icon: little_unicorn_set:little_unicorn_wings
+        permission: ia.menu.little_unicorn_set
+        items:
+        - little_unicorn_set:little_unicornhelmet
+        - little_unicorn_set:little_unicornchestplate
+        - little_unicorn_set:little_unicornleggings
+        - little_unicorn_set:little_unicornboots
+        - little_unicorn_set:little_unicorn_helmet
+        - little_unicorn_set:little_unicorn_axe
+        - little_unicorn_set:little_unicorn_pickaxe
+        - little_unicorn_set:little_unicorn_shovel
+        - little_unicorn_set:little_unicorn_hoe
+        - little_unicorn_set:little_unicorn_fishing_rod
+        - little_unicorn_set:little_unicorn_sword
+        - little_unicorn_set:little_unicorn_shield
+        - little_unicorn_set:little_unicorn_crossbow
+        - little_unicorn_set:little_unicorn_bow
+        - little_unicorn_set:little_unicorn_staff
+        - little_unicorn_set:little_unicorn_trident
+        - little_unicorn_set:little_unicorn_hammer
+        - little_unicorn_set:little_unicorn_spear
+        - little_unicorn_set:little_unicorn_scythe
+        - little_unicorn_set:little_unicorn_knife
+        - little_unicorn_set:little_unicorn_chest
+        - little_unicorn_set:little_unicorn_key
+        - little_unicorn_set:little_unicorn_wings

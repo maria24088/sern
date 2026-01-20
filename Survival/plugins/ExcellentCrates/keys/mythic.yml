@@ -1,0 +1,11 @@
+Name: <c:#FF4C4C>Llave Mitica󎀀
+Virtual: false
+ItemData:
+  Provider: vanilla
+  Data:
+    Value: '{components:{"minecraft:attribute_modifiers":[{amount:0.0d,id:"mmoitems:decoy",operation:"add_value",type:"minecraft:attack_speed"}],"minecraft:custom_data":{HSTRY_NAME:''{"Stat":"NAME","OGStory":[{"MMOITEMS_NAME_ñstr":"<#ff4c4c>Llave Mitica"}]}'',MMOITEMS_CUSTOM_MODEL_DATA:10005,MMOITEMS_DYNAMIC_LORE:''["&f&f ㈺ 󎀀","&f&f ㈺ #ffd1dc      ◇ Llave Mística ◇󎀀","&f&f ㈺ &7Se utiliza para abrir󎀀","&f&f ㈺ &7una crate en /warp crates.󎀀","&f&f ㈺ 󎀀","&f&f ㈺ &8(Click derecho
+      en el cofre)󎀀","&f&f ㈺ &8⚠ Un solo uso.󎀀","&f&f ㈺ 󎀀","&f&f 뀂 󎀀"]'',MMOITEMS_ENCHANTS:"[]",MMOITEMS_ITEM_ID:"MYTHIC_KEY",MMOITEMS_ITEM_TYPE:"KEYS",MMOITEMS_LORE_FORMAT:"key",MMOITEMS_NAME:"<#ff4c4c>Llave Mitica",MMOITEMS_TIER:"MYTHIC",MMOITEMS_TOOLTIP:"MYTHIC",MMOITEMS_UNSTACKABLE:1b,MMOITEMS_UNSTACKABLE_UUID:"88d5d272-7921-4776-a812-feb271ce5868"},"minecraft:custom_model_data":{floats:[10005.0f]},"minecraft:custom_name":{extra:[{color:"white",italic:0b,text:" 뀀 󐀪"},{bold:0b,color:"#FF4C4C",italic:0b,obfuscated:0b,strikethrough:0b,text:"Llave
+      Mitica󎀀",underlined:0b}],text:""},"minecraft:lore":[{extra:[{color:"white",italic:0b,text:" ㈺ 󎀀"}],text:""},{extra:[{color:"white",italic:0b,text:" ㈺ "},{bold:0b,color:"#FFD1DC",italic:0b,obfuscated:0b,strikethrough:0b,text:"      ◇ Llave Mística ◇󎀀",underlined:0b}],text:""},{extra:[{color:"white",italic:0b,text:" ㈺ "},{color:"gray",italic:0b,text:"Se utiliza para abrir󎀀"}],text:""},{extra:[{color:"white",italic:0b,text:" ㈺ "},{color:"gray",italic:0b,text:"una crate en /warp crates.󎀀"}],text:""},{extra:[{color:"white",italic:0b,text:"
+      ㈺ 󎀀"}],text:""},{extra:[{color:"white",italic:0b,text:" ㈺ "},{color:"dark_gray",italic:0b,text:"(Click derecho en el cofre)󎀀"}],text:""},{extra:[{color:"white",italic:0b,text:" ㈺ "},{color:"dark_gray",italic:0b,text:"⚠ Un solo uso.󎀀"}],text:""},{extra:[{color:"white",italic:0b,text:" ㈺ 󎀀"}],text:""},{extra:[{color:"white",italic:0b,text:" 뀂 󎀀"}],text:""}],"minecraft:tooltip_display":{hidden_components:["minecraft:attribute_modifiers"]}},count:1,id:"minecraft:tripwire_hook"}'
+    DataVersion: 4440
+ItemStackable: true

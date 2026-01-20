@@ -1,0 +1,18 @@
+rogue_class_dualdaggers:
+  Id: stone_sword
+  Display: "<gradient:#e0f0f0:#8eb1bc:#4e576d>Rogue Dualdaggers"
+  Model: 4587
+  Lore:
+  - '<gradient:#e0f0f0:#8eb1bc:#4e576d>Rogue Dualdaggers'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  # - skill{s=rogue_vicious_cuts} @self ~onTimer:20 <--- DESACTIVADO PORQUE FALTA LA SKILL
+  - skill{s=rogue_slice_and_dice} @self ~onSwing
+  - skill{s=rogue_cutthroat_combo} @self ~onUse
+  - skill{s=rogue_smokebomb} @self ~onCrouch
+  - skill{s=rogue_grappling_hook} @self ~onSwing
+  - skill{s=rogue_mark_of_death} @self ~onUse

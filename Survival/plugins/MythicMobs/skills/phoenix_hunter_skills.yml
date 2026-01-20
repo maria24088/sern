@@ -1,0 +1,867 @@
+######## created by samus2002 #########
+
+# Flameborn #
+
+Flameborn:
+  Cooldown: 0
+  Skills:
+  - Aura{auraName=Flameborn;duration=20} @self
+  - potion{type=FIRE_RESISTANCE;duration=40;level=0;hasParticles=false} @self
+  - particles{p=small_flame;amount=15;hS=0.3;vS=0.1;y=0.1;size=1;speed=0.02} @self
+  - particles{p=smoke;amount=5;hS=0.3;vS=0.1;y=0.1;size=1;speed=0.03} @self
+
+Flameborn_BURN:
+  Conditions:
+  - hasaura{n=Flameborn} true
+  TargetConditions:
+  - hasaura{aura=Phoenix_BURN} false
+  - mythicmobtype{t=VFX_Phoenix_Totem} false
+  Skills:
+  #burn
+  - effect:sound{s=entity.player.hurt_on_fire;volume=0.6;pitch=1;repeat=<skill.duration> - 1;repeati=20}
+  - effect:sound{s=entity.generic.burn;volume=0.5;pitch=1.4;repeat=<skill.duration> - 1;repeati=20}
+  - aura{auraName=Phoenix_BURN;duration=<skill.duration> * 20}
+  - damage{a=<skill.damage>;pkb=true;hnp=true;hp=true;repeat=<skill.duration> - 1;repeati=20}
+  - ignite{ticks=<skill.duration> * 20}
+  - particles{p=small_flame;amount=10;hS=0.3;vS=0.7;y=1;size=1;speed=0.03;repeat=<skill.duration> - 1;repeati=20}
+  
+# Blazing Feathers #
+
+Blazing_Feathers:
+  Cooldown: 0.5
+  Conditions:
+  - crouching false
+  Skills:
+  - skill{s=Blazing_Feathers_NORMAL} ?!hasaura{n=PHOENIX_REBIRTH_AURA}
+  - skill{s=Blazing_Feathers_REBIRTH} ?hasaura{n=PHOENIX_REBIRTH_AURA}
+
+
+
+
+Blazing_Feathers_NORMAL:
+  Skills:
+  - auraremove{aura=Blazing_Feathers_STACK;delay=2} @self ?hasaurastacks{auraName=Blazing_Feathers_STACK;stacks=3}
+  - Aura{auraName=Blazing_Feathers_STACK;duration=400;maxStacks=3;delay=1} @self ?!hasaurastacks{auraName=Blazing_Feathers_STACK;stacks=3}
+  - skill{s=Blazing_Feathers_SHOOT}
+  
+Blazing_Feathers_SHOOT:
+  Skills:
+  - skill{s=Blazing_Feathers_SHOOT_FX;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}}  @forward{f=1.2;uel=true}
+  - skill{s=Blazing_Feathers_SHOOT_PRO;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=12;uel=true}
+Blazing_Feathers_SHOOT_FX:
+  Skills:
+  - summon{type=VFX_Phoenix_Shoot_Impact;amount=1;radius=0;yRadius=0;onSurface=true}
+Blazing_Feathers_SHOOT_PRO:
+  Skills:
+  - projectile{tickinterpolation=5;bulletType=MOB;mob=VFX_Phoenix_Feather;onHit=Blazing_Feathers_DAMAGE_D;v=23;i=10;hR=0.4;vR=0.4;mr=50;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} ?!hasaurastacks{auraName=Blazing_Feathers_STACK;stacks=3}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_feather_shoot;volume=0.6;pitch=<random.float.0.8to1.2>} @self ?!hasaurastacks{auraName=Blazing_Feathers_STACK;stacks=3}
+  - projectile{tickinterpolation=5;bulletType=MOB;mob=VFX_Phoenix_Fireball;onEnd=Blazing_Feathers_EXPLOSIVE_DAMAGE_SKILL;v=23;i=10;hR=0.4;vR=0.4;mr=50;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} ?hasaurastacks{auraName=Blazing_Feathers_STACK;stacks=3}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.explosion_small;volume=0.6;pitch=0.8;repeat=2;repeati=2} @self ?hasaurastacks{auraName=Blazing_Feathers_STACK;stacks=3}
+
+Blazing_Feathers_DAMAGE_D:
+  Skills:
+  - skill{s=Blazing_Feathers_DAMAGE} @EntitiesNearOrigin{r=2.5;limit=1;sort=NEAREST;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} false ]}
+  - skill{s=Flameborn_BURN;duration=4;damage=1} @EntitiesNearOrigin{r=2.5;limit=1;sort=NEAREST}
+  
+  - signal{s=ENDTOT} @EntitiesNearOrigin{r=2.5;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+  - signal{s=TOTEM;delay=1} @EntitiesNearOrigin{r=2.5;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+
+Blazing_Feathers_DAMAGE:
+  Cooldown: 0.01
+  TargetConditions:
+  - isLiving true
+  - hasaura{aura=immunedelay} false
+  Skills:
+  - aura{auraname=immunedelay;d=1;ma=true}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_impact;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - summon{type=VFX_Phoenix_Impact;amount=1;radius=0;yRadius=0;onSurface=true} @origin{y=0}
+  - damage{a=3;pkb=true;hnp=true;hp=true}
+
+  
+
+Blazing_Feathers_EXPLOSIVE_DAMAGE_SKILL:
+  Skills:
+  - skill{s=Blazing_Feathers_EXPLOSIVE_DAMAGE;origin=@origin} @projectileforward{f=-0.05}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.explosion_big;volume=0.8;pitch=1;repeat=2;repeati=3} @origin
+Blazing_Feathers_EXPLOSIVE_DAMAGE:
+  Skills:
+  #horiz explosion
+  - projectile{oT=Blazing_Feathers_EXPLOSION_SUMMON1;onHit=Blazing_Feathers_EXPLOSIVE_DAMAGE_D;v=7;i=10;hR=0.5;vR=0.5;mr=4;hnp=true;hO=90;sE=false;sB=false;hs=false;hfs=0;sfo=0.1;syo=0;tyo=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+  - projectile{oT=Blazing_Feathers_EXPLOSION_SUMMON2;onHit=Blazing_Feathers_EXPLOSIVE_DAMAGE_D;v=7;i=10;hR=0.5;vR=0.5;mr=4;hnp=true;hO=-90;sE=false;sB=false;hs=false;hfs=0;sfo=0.1;syo=0;tyo=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+  
+Blazing_Feathers_EXPLOSION_SUMMON1:
+  Cooldown: 0.2
+  Skills:
+  - summon{type=VFX_Phoenix_Explosion_SMALL;amount=1;radius=0;yRadius=0;onSurface=true}
+Blazing_Feathers_EXPLOSION_SUMMON2:
+  Cooldown: 0.2
+  Skills:
+  - summon{type=VFX_Phoenix_Explosion_SMALL;amount=1;radius=0;yRadius=0;onSurface=true}
+Blazing_Feathers_EXPLOSIVE_DAMAGE_D:
+  Skills:
+  - skill{s=Blazing_Feathers_EXPLOSIVE_DAMAGE_D_D} @EntitiesNearOrigin{r=3;limit=3;sort=NEAREST;conditions=[  - hasaura{aura=Blazing_Feathers_AURA} false  - mythicmobtype{t=VFX_Phoenix_Totem} false ]}
+  - skill{s=Flameborn_BURN;duration=5;damage=1} @EntitiesNearOrigin{r=3;limit=3;sort=NEAREST}
+  
+  - signal{s=ENDTOT} @EntitiesNearOrigin{r=5;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+  - signal{s=TOTEM;delay=1} @EntitiesNearOrigin{r=5;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+
+Blazing_Feathers_EXPLOSIVE_DAMAGE_D_D:
+  Cooldown: 0.01
+  TargetConditions:
+  - isLiving true
+  - hasaura{aura=immunedelay} false
+  Skills:
+  - aura{auraname=immunedelay;d=1;ma=true}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_impact;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - summon{type=VFX_Phoenix_Impact2;amount=1;radius=0;yRadius=0;onSurface=false}
+  - damage{a=3;pkb=true;hnp=true;hp=true}
+  - aura{auraName=Blazing_Feathers_AURA;duration=20}
+  
+
+
+Blazing_Feathers_REBIRTH:
+  Skills:
+  - auraremove{aura=Blazing_Feathers_Rebirth_STACK;delay=2} @self ?hasaurastacks{auraName=Blazing_Feathers_Rebirth_STACK;stacks=3}
+  - Aura{auraName=Blazing_Feathers_Rebirth_STACK;duration=400;maxStacks=3;delay=1} @self ?!hasaurastacks{auraName=Blazing_Feathers_Rebirth_STACK;stacks=3}
+  - skill{s=Blazing_Feathers_Rebirth_SHOOT}
+  
+Blazing_Feathers_Rebirth_SHOOT:
+  Skills:
+  - skill{s=Blazing_Feathers_Rebirth_SHOOT_FX;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}}  @forward{f=1.2;uel=true}
+  - skill{s=Blazing_Feathers_Rebirth_SHOOT_PRO;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=12;uel=true}
+Blazing_Feathers_Rebirth_SHOOT_FX:
+  Skills:
+  - summon{type=VFX_Phoenix_Shoot_Impact;amount=1;radius=0;yRadius=0;onSurface=true}
+Blazing_Feathers_Rebirth_SHOOT_PRO:
+  Skills:
+  - projectile{tickinterpolation=5;bulletType=MOB;mob=VFX_Phoenix_Feather;onHit=Blazing_Feathers_Rebirth_DAMAGE_D;v=23;i=10;hR=0.4;vR=0.4;mr=50;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true;repeat=2;repeati=3} ?!hasaurastacks{auraName=Blazing_Feathers_Rebirth_STACK;stacks=3}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_feather_shoot;volume=0.6;pitch=<random.float.0.8to1.2>;repeat=2;repeati=3} @self ?!hasaurastacks{auraName=Blazing_Feathers_Rebirth_STACK;stacks=3}
+  - projectile{tickinterpolation=5;bulletType=MOB;mob=VFX_Phoenix_Fireball;onEnd=Blazing_Feathers_Rebirth_EXPLOSIVE_DAMAGE_SKILL;v=23;i=10;hR=0.4;vR=0.4;mr=50;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true} ?hasaurastacks{auraName=Blazing_Feathers_Rebirth_STACK;stacks=3}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.explosion_small;volume=0.6;pitch=0.8;repeat=2;repeati=2} @self ?hasaurastacks{auraName=Blazing_Feathers_Rebirth_STACK;stacks=3}
+
+Blazing_Feathers_Rebirth_DAMAGE_D:
+  Skills:
+  - skill{s=Blazing_Feathers_Rebirth_DAMAGE} @EntitiesNearOrigin{r=3;limit=3;sort=NEAREST;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} false ]}
+  - skill{s=Flameborn_BURN;duration=6;damage=1} @EntitiesNearOrigin{r=3;limit=3;sort=NEAREST}
+  - summon{type=VFX_Phoenix_Explosion_SMALL;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+
+  - signal{s=ENDTOT} @EntitiesNearOrigin{r=3;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+  - signal{s=TOTEM;delay=1} @EntitiesNearOrigin{r=3;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+
+Blazing_Feathers_Rebirth_DAMAGE:
+  Cooldown: 0.01
+  TargetConditions:
+  - isLiving true
+  - hasaura{aura=immunedelay} false
+  Skills:
+  - aura{auraname=immunedelay;d=1;ma=true}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_impact;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - summon{type=VFX_Phoenix_Impact;amount=1;radius=0;yRadius=0;onSurface=true} @origin{y=0}
+  - damage{a=4;pkb=true;hnp=true;hp=true}
+
+  
+
+Blazing_Feathers_Rebirth_EXPLOSIVE_DAMAGE_SKILL:
+  Skills:
+  - skill{s=Blazing_Feathers_Rebirth_EXPLOSIVE_DAMAGE;origin=@origin} @projectileforward{f=-0.05}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.explosion_big;volume=0.8;pitch=1;repeat=2;repeati=3} @origin
+Blazing_Feathers_Rebirth_EXPLOSIVE_DAMAGE:
+  Skills:
+  #X explosion
+  - projectile{oT=Blazing_Feathers_Rebirth_EXPLOSION_SUMMON1;onHit=Blazing_Feathers_Rebirth_EXPLOSIVE_DAMAGE_D;v=7;i=10;hR=0.5;vR=0.5;mr=4;hnp=true;hO=45;sE=false;sB=false;hs=false;hfs=0;sfo=0.1;syo=0;tyo=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+  - projectile{oT=Blazing_Feathers_Rebirth_EXPLOSION_SUMMON2;onHit=Blazing_Feathers_Rebirth_EXPLOSIVE_DAMAGE_D;v=7;i=10;hR=0.5;vR=0.5;mr=4;hnp=true;hO=135;sE=false;sB=false;hs=false;hfs=0;sfo=0.1;syo=0;tyo=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+  - projectile{oT=Blazing_Feathers_Rebirth_EXPLOSION_SUMMON3;onHit=Blazing_Feathers_Rebirth_EXPLOSIVE_DAMAGE_D;v=7;i=10;hR=0.5;vR=0.5;mr=4;hnp=true;hO=225;sE=false;sB=false;hs=false;hfs=0;sfo=0.1;syo=0;tyo=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+  - projectile{oT=Blazing_Feathers_Rebirth_EXPLOSION_SUMMON4;onHit=Blazing_Feathers_Rebirth_EXPLOSIVE_DAMAGE_D;v=7;i=10;hR=0.5;vR=0.5;mr=4;hnp=true;hO=315;sE=false;sB=false;hs=false;hfs=0;sfo=0.1;syo=0;tyo=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+  
+Blazing_Feathers_Rebirth_EXPLOSION_SUMMON1:
+  Cooldown: 0.2
+  Skills:
+  - summon{type=VFX_Phoenix_Explosion_SMALL;amount=1;radius=0;yRadius=0;onSurface=true}
+Blazing_Feathers_Rebirth_EXPLOSION_SUMMON2:
+  Cooldown: 0.2
+  Skills:
+  - summon{type=VFX_Phoenix_Explosion_SMALL;amount=1;radius=0;yRadius=0;onSurface=true}
+Blazing_Feathers_Rebirth_EXPLOSION_SUMMON3:
+  Cooldown: 0.2
+  Skills:
+  - summon{type=VFX_Phoenix_Explosion_SMALL;amount=1;radius=0;yRadius=0;onSurface=true}
+Blazing_Feathers_Rebirth_EXPLOSION_SUMMON4:
+  Cooldown: 0.2
+  Skills:
+  - summon{type=VFX_Phoenix_Explosion_SMALL;amount=1;radius=0;yRadius=0;onSurface=true}
+Blazing_Feathers_Rebirth_EXPLOSIVE_DAMAGE_D:
+  Skills:
+  - skill{s=Blazing_Feathers_Rebirth_EXPLOSIVE_DAMAGE_D_D} @EntitiesNearOrigin{r=3;limit=3;sort=NEAREST;conditions=[  - hasaura{aura=Blazing_Feathers_Rebirth_AURA} false  - mythicmobtype{t=VFX_Phoenix_Totem} false ]}
+  - skill{s=Flameborn_BURN;duration=7;damage=1} @EntitiesNearOrigin{r=3;limit=3;sort=NEAREST}
+  
+  - signal{s=ENDTOT} @EntitiesNearOrigin{r=3;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+  - signal{s=TOTEM;delay=1} @EntitiesNearOrigin{r=3;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+
+Blazing_Feathers_Rebirth_EXPLOSIVE_DAMAGE_D_D:
+  Cooldown: 0.01
+  TargetConditions:
+  - isLiving true
+  - hasaura{aura=immunedelay} false
+  Skills:
+  - aura{auraname=immunedelay;d=1;ma=true}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_impact;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - summon{type=VFX_Phoenix_Impact2;amount=1;radius=0;yRadius=0;onSurface=false}
+  - damage{a=6;pkb=true;hnp=true;hp=true}
+  - aura{auraName=Blazing_Feathers_Rebirth_AURA;duration=20}
+
+
+
+
+
+VFX_Phoenix_Explosion_RAN:
+  Skills:
+  - randomskill{skills=VFX_Phoenix_Explosion_1,VFX_Phoenix_Explosion_2,VFX_Phoenix_Explosion_3}
+VFX_Phoenix_Explosion_1:
+  Skills:
+  - state{s=skill} @self
+VFX_Phoenix_Explosion_2:
+  Skills:
+  - state{s=skill2} @self
+VFX_Phoenix_Explosion_3:
+  Skills:
+  - state{s=skill3} @self
+
+# Ashdance #
+
+Ashdance:
+  Cooldown: 2
+  Conditions:
+  - crouching false
+  Skills:
+  - skill{s=Ashdance_NORMAL} ?!hasaura{n=PHOENIX_REBIRTH_AURA}
+  - skill{s=Ashdance_REBIRTH} ?hasaura{n=PHOENIX_REBIRTH_AURA}
+
+
+Ashdance_NORMAL:
+  Skills:
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.4} @self
+  - effect:sound{s=entity.blaze.shoot;volume=0.6;pitch=0.7} @self
+  - lunge{velocity=1;velocityY=-0.1;repeat=5;repeati=10} @Forward{f=-6;y=-1;lockpitch=true}
+  - summon{type=VFX_Phoenix_Dash;amount=1;radius=0;yRadius=0;onSurface=true} @SelfLocation{y=1.2}
+  
+  - delay 7
+
+  - effect:sound{s=entity.blaze.shoot;volume=0.3;pitch=<random.float.1.1to1.4>;delay=2} @self
+  - effect:sound{s=entity.blaze.shoot;volume=0.3;pitch=<random.float.1.1to1.4>;delay=4} @self
+  - effect:sound{s=entity.blaze.shoot;volume=0.3;pitch=<random.float.1.1to1.4>;delay=6} @self
+  - effect:sound{s=entity.blaze.shoot;volume=0.3;pitch=<random.float.1.1to1.4>;delay=8} @self
+  - effect:sound{s=entity.blaze.shoot;volume=0.3;pitch=<random.float.1.1to1.4>;delay=10} @self
+  - effect:sound{s=entity.blaze.shoot;volume=0.3;pitch=<random.float.1.1to1.4>;delay=12} @self
+
+  - skill{s=Ashdance_Missiles;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @EntitiesNearOrigin{r=20;limit=1;sort=NEAREST;conditions=[  - isLiving true ]}
+  
+  - delay 5
+
+  - effect:sound{s=block.fire.extinguish;volume=0.5;pitch=0.7} @self
+Ashdance_Missiles:
+  Skills:
+  - missile{oT=Ashdance_Missiles_TICK;onHit=Ashdance_PRO_DAMAGE_D;in=0.5;v=3;i=10;hR=0.3;vR=0.3;md=80;mr=30;hnp=true;hO=0;vo=0;sso=<random.float.-1to1>;eso=<random.float.-0.25to0.25>;sE=true;sB=true;hs=false;hfs=0;syo=<random.float.-1to1>;tyo=<random.float.0.9to1.7>;fo=true;byo=0;drawhitbox=false;ham=true}
+  - missile{oT=Ashdance_Missiles_TICK;onHit=Ashdance_PRO_DAMAGE_D;in=0.5;v=3;i=10;hR=0.3;vR=0.3;md=80;mr=30;hnp=true;hO=0;vo=0;sso=<random.float.-1to1>;eso=<random.float.-0.25to0.25>;sE=true;sB=true;hs=false;hfs=0;syo=<random.float.-1to1>;tyo=<random.float.0.9to1.7>;fo=true;byo=0;drawhitbox=false;ham=true;delay=2}
+  - missile{oT=Ashdance_Missiles_TICK;onHit=Ashdance_PRO_DAMAGE_D;in=0.5;v=3;i=10;hR=0.3;vR=0.3;md=80;mr=30;hnp=true;hO=0;vo=0;sso=<random.float.-1to1>;eso=<random.float.-0.25to0.25>;sE=true;sB=true;hs=false;hfs=0;syo=<random.float.-1to1>;tyo=<random.float.0.9to1.7>;fo=true;byo=0;drawhitbox=false;ham=true;delay=4}
+  - missile{oT=Ashdance_Missiles_TICK;onHit=Ashdance_PRO_DAMAGE_D;in=0.5;v=3;i=10;hR=0.3;vR=0.3;md=80;mr=30;hnp=true;hO=0;vo=0;sso=<random.float.-1to1>;eso=<random.float.-0.25to0.25>;sE=true;sB=true;hs=false;hfs=0;syo=<random.float.-1to1>;tyo=<random.float.0.9to1.7>;fo=true;byo=0;drawhitbox=false;ham=true;delay=6}
+  - missile{oT=Ashdance_Missiles_TICK;onHit=Ashdance_PRO_DAMAGE_D;in=0.5;v=3;i=10;hR=0.3;vR=0.3;md=80;mr=30;hnp=true;hO=0;vo=0;sso=<random.float.-1to1>;eso=<random.float.-0.25to0.25>;sE=true;sB=true;hs=false;hfs=0;syo=<random.float.-1to1>;tyo=<random.float.0.9to1.7>;fo=true;byo=0;drawhitbox=false;ham=true;delay=8}
+  - missile{oT=Ashdance_Missiles_TICK;onHit=Ashdance_PRO_DAMAGE_D;in=0.5;v=3;i=10;hR=0.3;vR=0.3;md=80;mr=30;hnp=true;hO=0;vo=0;sso=<random.float.-1to1>;eso=<random.float.-0.25to0.25>;sE=true;sB=true;hs=false;hfs=0;syo=<random.float.-1to1>;tyo=<random.float.0.9to1.7>;fo=true;byo=0;drawhitbox=false;ham=true;delay=10}
+
+  
+Ashdance_PRO_DAMAGE_D:
+  Skills:
+  - skill{s=Ashdance_PRO_DAMAGE} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} false ]}
+  - skill{s=Flameborn_BURN;duration=3;damage=1} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+  
+  - signal{s=ENDTOT;cooldown=0.1} @EntitiesNearOrigin{r=3;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+  - signal{s=TOTEM;delay=1;cooldown=0.1} @EntitiesNearOrigin{r=3;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+
+Ashdance_PRO_DAMAGE:
+  Cooldown: 0.01
+  TargetConditions:
+  - mythicmobtype{t=VFX_Phoenix_Totem} cast TOTEMAURA
+  - isLiving true
+  - hasaura{aura=immunedelay} false
+  Skills:
+  - aura{auraname=immunedelay;d=1;ma=true}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_impact;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - summon{type=VFX_Phoenix_Impact;amount=1;radius=0;yRadius=0;onSurface=true} @origin{y=0}
+  - damage{a=3;pkb=true;hnp=true;hp=true}
+Ashdance_Missiles_TICK:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.1}
+  - effect:particles{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;amount=1;hS=0;vS=0;y=0;size=0.4;speed=0.01} @origin
+  - effect:particles{p=dust_color_transition;color1=#4a0200;color2=#1c0000;amount=1;hS=0;vS=0;y=0;size=0.4;speed=0.01} @origin
+
+
+Ashdance_REBIRTH:
+  Skills:
+  #charge
+  - sound{sound=entity.phantom.ambient;volume=1.1;pitch=1.1} @self
+  - sound{sound=entity.breeze.idle_ground;volume=0.8;pitch=1.2} @self
+  - skill{s=Ashdance_REBIRTH_RING} @selflocation{y=1}
+  - potion{type=SLOW;duration=19;level=50;hasParticles=false} @self
+
+  - delay 20
+  
+  - lunge{velocity=1.55;velocityY=-0.1;delay=2} @Forward{f=-6;y=-1;lockpitch=true}
+  #blaze wave
+  - effect:sound{s=block.trial_spawner.ominous_activate;volume=0.7;pitch=<random.float.0.5to0.6>} @self
+  - effect:sound{s=entity.generic.extinguish_fire;volume=0.6;pitch=<random.float.0.7to0.8>} @self
+  - effect:sound{s=entity.wither.hurt;volume=0.6;pitch=<random.float.0.5to0.6>} @self
+  - effect:sound{s=entity.generic.explode;volume=0.6;pitch=<random.float.0.7to0.8>} @self
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.explosion_big;volume=0.8;pitch=0.8} @self
+  - summon{type=VFX_Phoenix_Blaze_Wave_1_SHOOTER;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation{y=1} ?hasaura{n=Ashdance_Rebirth_COUNT}
+  - summon{type=VFX_Phoenix_Blaze_Wave_2_SHOOTER;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation{y=1} ?!hasaura{n=Ashdance_Rebirth_COUNT}
+  - skill{s=Ashdance_Rebirth_PRO;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=12;uel=true}
+
+
+Ashdance_Rebirth_PRO_VS1:
+  Skills:
+  - skill{s=Ashdance_Rebirth_PRO_VISUALSHOOT1;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2};delay=0} @forward{f=30;uel=true;ofowner=true}
+  - auraremove{aura=Ashdance_Rebirth_COUNT} @owner
+Ashdance_Rebirth_PRO_VS2:
+  Skills:
+  - skill{s=Ashdance_Rebirth_PRO_VISUALSHOOT2;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2};delay=0} @forward{f=30;uel=true;ofowner=true}
+  - aura{auraName=Ashdance_Rebirth_COUNT;duration=100} @owner
+
+Ashdance_Rebirth_PRO_VISUALSHOOT1:
+  Skills:
+  #visuals
+  - projectile{oT=Ashdance_Rebirth_SUMMON1;tickinterpolation=5;v=25;i=10;hR=1;vR=1;mr=25;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0;syo=0.8;tyo=0.8;sso=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+Ashdance_Rebirth_PRO_VISUALSHOOT2:
+  Skills:
+  #visuals
+  - projectile{oT=Ashdance_Rebirth_SUMMON2;tickinterpolation=5;v=25;i=10;hR=1;vR=1;mr=25;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0;syo=0.8;tyo=0.8;sso=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+Ashdance_Rebirth_PRO:
+  Skills:
+  #actual
+  - projectile{tickinterpolation=5;onHit=Ashdance_Rebirth_DAMAGE_D;v=25;i=10;hR=1.5;vR=1.5;mr=25;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0;syo=0;tyo=0;sso=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+Ashdance_Rebirth_SUMMON1:
+  Cooldown: 0.1
+  Skills:
+  - summon{type=VFX_Phoenix_Blaze_Wave_1;amount=1;radius=0;yRadius=0;onSurface=false} @origin
+Ashdance_Rebirth_SUMMON2:
+  Cooldown: 0.1
+  Skills:
+  - summon{type=VFX_Phoenix_Blaze_Wave_2;amount=1;radius=0;yRadius=0;onSurface=false} @origin
+Ashdance_Rebirth_DAMAGE_D:
+  Skills:
+  - skill{s=Ashdance_Rebirth_DAMAGE} @EntitiesNearOrigin{r=4;limit=5;sort=NEAREST;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} false ]}
+  - skill{s=Flameborn_BURN;duration=6;damage=1} @EntitiesNearOrigin{r=4;limit=5;sort=NEAREST}
+  
+  - signal{s=ENDTOT} @EntitiesNearOrigin{r=4;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+  - signal{s=TOTEM;delay=1} @EntitiesNearOrigin{r=4;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+Ashdance_Rebirth_DAMAGE:
+  Cooldown: 0.01
+  TargetConditions:
+  - isLiving true
+  - hasaura{aura=immunedelay} false
+  - hasaura{aura=ASHRBHIT} false
+  Skills:
+  - aura{auraname=immunedelay;d=1;ma=true}
+  - aura{auraname=ASHRBHIT;d=10;ma=true}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_impact;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - summon{type=VFX_Phoenix_Impact2;amount=1;radius=0;yRadius=0;onSurface=false}
+  - damage{a=5;pkb=true;hnp=true;hp=true}
+  - throw{velocity=13;velocityY=0}
+
+
+Ashdance_REBIRTH_RING:
+  Skills:
+  - effect:particlering{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=5;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.5;delay=0}
+  - effect:particlering{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=4.5;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.5;delay=2}
+  - effect:particlering{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=4;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.5;delay=4}
+  - effect:particlering{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=3.5;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.5;delay=6}
+  - effect:particlering{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=3;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.5;delay=7}
+  - effect:particlering{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=2.5;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.5;delay=8}
+  - effect:particlering{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=2;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.5;delay=9}
+  - effect:particlering{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=1.5;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.5;delay=10}
+  - effect:particlering{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=1;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0;size=0.5;delay=11}
+
+
+# Flameburst Convergence #
+
+Flameburst_Convergence:
+  Conditions:
+  - hasaurastacks{auraName=Flameburst_Convergence_aura} castinstead Flameburst_Convergence_SKILL
+  Skills:
+  - Aura{auraName=Flameburst_Convergence_aura;interval=1;duration=5} @self
+  
+Flameburst_Convergence_SKILL:
+  Cooldown: 3
+  Skills:
+  - aura{auraName=CONVERGE;duration=17} @self
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_feather_shoot;volume=0.6;pitch=0.8;repeat=2;repeati=2} @self
+  - skill{s=Blazing_Feathers_SHOOT_FX;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=1.2;uel=true}
+  - skill{s=Blazing_Feathers_SHOOT_FX2;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=1.2;uel=true;rot=30}
+  - skill{s=Blazing_Feathers_SHOOT_FX3;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=1.2;uel=true;rot=-30}
+  - skill{s=Flameburst_Convergence_SHOOT_PRO;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=12;uel=true}
+Blazing_Feathers_SHOOT_FX2:
+  Skills:
+  - summon{type=VFX_Phoenix_Shoot_Impact2;amount=1;radius=0;yRadius=0;onSurface=true}
+Blazing_Feathers_SHOOT_FX3:
+  Skills:
+  - summon{type=VFX_Phoenix_Shoot_Impact3;amount=1;radius=0;yRadius=0;onSurface=true}
+Flameburst_Convergence_SHOOT_PRO:
+  Skills:
+  - projectile{tickinterpolation=5;bulletType=MOB;mob=VFX_Phoenix_Feather_NOTRAIL;onHit=Flameburst_Convergence_DAMAGE_D;oE=Flameburst_Convergence_END;v=18;i=10;hR=0.4;vR=0.4;mr=15;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0.3;syo=0;tyo=0;sso=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+  - projectile{oS=Flameburst_Convergence_T1;tickinterpolation=5;bulletType=MOB;mob=VFX_Phoenix_Feather_NOTRAIL1;onHit=Flameburst_Convergence_DAMAGE_D;v=20;i=10;hR=0.4;vR=0.4;mr=16;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0.3;syo=0;tyo=0;sso=-0.7;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+  - projectile{oS=Flameburst_Convergence_T2;tickinterpolation=5;bulletType=MOB;mob=VFX_Phoenix_Feather_NOTRAIL2;onHit=Flameburst_Convergence_DAMAGE_D;v=20;i=10;hR=0.4;vR=0.4;mr=16;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0.3;syo=0;tyo=0;sso=0.7;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+Flameburst_Convergence_T1:
+  Skills:
+  - setprojectiledirection{delay=0} @ProjectileForward{f=3;rot=-20}
+  - setprojectiledirection{delay=3} @ProjectileForward{f=3;rot=-10}
+  - setprojectiledirection{delay=6} @ProjectileForward{f=3;rot=0}
+  - setprojectiledirection{delay=8} @ProjectileForward{f=3;rot=10}
+  - setprojectiledirection{delay=10} @ProjectileForward{f=3;rot=20}
+  - setprojectiledirection{delay=12} @ProjectileForward{f=3;rot=30}
+Flameburst_Convergence_T2:
+  Skills:
+  - setprojectiledirection{delay=0} @ProjectileForward{f=3;rot=20}
+  - setprojectiledirection{delay=3} @ProjectileForward{f=3;rot=10}
+  - setprojectiledirection{delay=6} @ProjectileForward{f=3;rot=0}
+  - setprojectiledirection{delay=8} @ProjectileForward{f=3;rot=-10}
+  - setprojectiledirection{delay=10} @ProjectileForward{f=3;rot=-20}
+  - setprojectiledirection{delay=12} @ProjectileForward{f=3;rot=-30}
+
+Flameburst_Convergence_DAMAGE_D:
+  Skills:
+  - skill{s=Flameburst_Convergence_DAMAGE} @EntitiesNearOrigin{r=2.5;limit=1;sort=NEAREST;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} false ]}
+  - skill{s=Flameborn_BURN;duration=4;damage=1} @EntitiesNearOrigin{r=2.5;limit=1;sort=NEAREST}
+
+  - signal{s=ENDTOT} @EntitiesNearOrigin{r=2.5;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+  - signal{s=TOTEM;delay=1} @EntitiesNearOrigin{r=2.5;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+
+Flameburst_Convergence_DAMAGE:
+  Cooldown: 0.01
+  TargetConditions:
+  - mythicmobtype{t=VFX_Phoenix_Totem} cast TOTEMAURA
+  - isLiving true
+  - hasaura{aura=immunedelay} false
+  Skills:
+  - aura{auraname=immunedelay;d=1;ma=true}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_impact;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - summon{type=VFX_Phoenix_Impact;amount=1;radius=0;yRadius=0;onSurface=true} @origin{y=0}
+  - damage{a=3;pkb=true;hnp=true;hp=true}
+
+Flameburst_Convergence_END:
+  Conditions:
+  - hasaura{n=CONVERGE} false
+  Skills:
+  - skill{s=Flameburst_Convergence_DAMAGE_END} @EntitiesNearOrigin{r=5;limit=7;sort=NEAREST;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} false ]}
+  - skill{s=Flameborn_BURN;duration=4;damage=1} @EntitiesNearOrigin{r=5;limit=7;sort=NEAREST}
+  - summon{type=VFX_Phoenix_Explosion_BIG;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.explosion_big;volume=1.2;pitch=0.8} @origin
+
+  - signal{s=ENDTOT} @EntitiesNearOrigin{r=5;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+  - signal{s=TOTEM;delay=1} @EntitiesNearOrigin{r=5;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+
+Flameburst_Convergence_DAMAGE_END:
+  Cooldown: 0.01
+  TargetConditions:
+  - mythicmobtype{t=VFX_Phoenix_Totem} cast TOTEMAURA
+  - isLiving true
+  - hasaura{aura=immunedelay} false
+  Skills:
+  - aura{auraname=immunedelay;d=1;ma=true}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_impact;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - summon{type=VFX_Phoenix_Impact2;amount=1;radius=0;yRadius=0;onSurface=false}
+  - damage{a=7;pkb=true;hnp=true;hp=true}
+  - throw{velocity=15;velocityY=10}
+
+
+# Phoenix Totem #
+
+Phoenix_Totem:
+  Cooldown: 0
+  Conditions:
+  - crouching castinstead Phoenix_Totem_STACK
+  Skills:
+  - auraremove{aura=Phoenix_Totem_STACK} @self
+Phoenix_Totem_STACK:
+  Conditions:
+  - hasaurastacks{auraName=Phoenix_Totem_STACK;stacks=2} castinstead Phoenix_Totem_Skill
+  Skills:
+  - Aura{auraName=Phoenix_Totem_STACK;duration=120;maxStacks=2} @self
+  
+
+
+Phoenix_Totem_Skill:
+  Cooldown: 11
+  Skills:
+  - auraremove{aura=Phoenix_Totem_STACK} @self
+  #summon totem
+  - auraremove{aura=TOTEMACTIVA;delay=1} @self
+  - auraremove{aura=TOTEM_HIT_COUNT;delay=1} @self
+  - effect:sound{s=block.trial_spawner.spawn_mob;volume=0.6;pitch=0.7} @self
+  - skill{s=Phoenix_Totem_SUMMON_PRO;origin=@SelfEyeLocation{fo=-0.5;yo=0}} @targetblock
+
+Phoenix_Totem_SUMMON_PRO:
+  Skills:
+  - projectile{tickinterpolation=5;ohb=Phoenix_Totem_SUMMON;v=35;i=10;hR=0.4;vR=0.4;mr=25;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0;syo=0.5;tyo=0.5;sso=0;fo=true;byo=0;drawhitbox=false;ham=true}
+Phoenix_Totem_SUMMON:
+  Cooldown: 1
+  Skills:
+  - summon{type=VFX_Phoenix_Totem;amount=1;radius=0;yRadius=0;onSurface=true} @origin{y=0.5}
+  - totem{md=200;oT=Phoenix_Totem_DMG_Aura;hnp=true;hp=true;hR=1;vR=1;i=10} @origin
+
+Phoenix_Totem_DMG_Aura:
+  Skills:
+  - skill{s=Phoenix_Totem_DMG_Aura_D} ?hasaura{n=TOTEMACTIVA}
+  
+Phoenix_Totem_DMG_Aura_D:
+  Cooldown: 0.2
+  Skills:
+  - skill{s=Phoenix_Totem_DMG_Aura_EXPLODE} ?hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+
+  - delay 1
+
+  - aura{auraName=TOTEM_HIT_COUNT;duration=200;maxStacks=4;delay=1} @self ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+  - skill{s=Phoenix_Totem_DMG_Aura_DAMAGE} @EntitiesNearOrigin{r=6;limit=5;sort=NEAREST;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} false ]} ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+  - skill{s=Flameborn_BURN;duration=4;damage=1} @EntitiesNearOrigin{r=6;limit=4;sort=NEAREST} ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+  
+  - effect:sound{s=item.trident.return;volume=0.8;pitch=0.7} @origin
+  - effect:sound{s=entity.ender_dragon.hurt;volume=0.8;pitch=1.3} @origin
+  - effect:sound{s=entity.blaze.shoot;volume=0.6;pitch=0.7;delay=3} @origin
+  - effect:sound{s=entity.generic.extinguish_fire;volume=0.6;pitch=0.7;delay=3} @origin
+  
+  - skill{s=PT_Sphere_Spread} @origin ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+
+Phoenix_Totem_DMG_Aura_REMOVE:
+  Cooldown: 2
+  TargetConditions:
+  - hasaura{n=REMOVER} true
+  Skills:
+  - remove{delay=5} @self
+Phoenix_Totem_DMG_Aura_EXPLODE:
+  Cooldown: 1
+  Skills:
+  - skill{s=Phoenix_Totem_DMG_Aura_DAMAGE2} @EntitiesNearOrigin{r=9;limit=10;sort=NEAREST;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} false ]}
+  - skill{s=Flameborn_BURN;duration=4;damage=1} @EntitiesNearOrigin{r=9;limit=10;sort=NEAREST}
+  - aura{auraName=REMOVER;duration=10} @self
+
+  - effect:sound{s=entity.wither.hurt;volume=0.6;pitch=0.6} @origin
+  - effect:sound{s=entity.ender_dragon.hurt;volume=0.8;pitch=1.3} @origin
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.explosion_big;volume=0.7;pitch=1.4;delay=2} @origin
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.explosion_big;volume=0.7;pitch=1.1;delay=6} @origin
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.explosion_big;volume=0.8;pitch=0.7;delay=10} @origin
+
+  - summon{type=VFX_Phoenix_Rupture;amount=1;radius=0;yRadius=0;onSurface=true} @origin{y=-1}
+  - skill{s=PT_Sphere_Spread} @origin
+  - summon{type=VFX_Phoenix_Explosion_SMALL;amount=1;radius=0;yRadius=0;onSurface=true;delay=0} @ringaroundorigin{r=1;p=6}
+  - summon{type=VFX_Phoenix_Explosion_SMALL;amount=1;radius=0;yRadius=0;onSurface=true;delay=2} @ringaroundorigin{r=2;p=6}
+  - summon{type=VFX_Phoenix_Explosion_SMALL;amount=1;radius=0;yRadius=0;onSurface=true;delay=4} @ringaroundorigin{r=3;p=6}
+  - summon{type=VFX_Phoenix_Explosion_SMALL;amount=1;radius=0;yRadius=0;onSurface=true;delay=6} @ringaroundorigin{r=4;p=6}
+  - summon{type=VFX_Phoenix_Explosion_SMALL;amount=1;radius=0;yRadius=0;onSurface=true;delay=8} @ringaroundorigin{r=5;p=6}
+  - auraremove{aura=TOTEM_HIT_COUNT;delay=7} @self
+Phoenix_Totem_DMG_Aura_DAMAGE:
+  Cooldown: 0.01
+  TargetConditions:
+  - isLiving true
+  - hasaura{aura=immunedelay} false
+  Skills:
+  - aura{auraname=immunedelay;d=1;ma=true}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_impact;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - summon{type=VFX_Phoenix_Impact2;amount=1;radius=0;yRadius=0;onSurface=false}
+  - damage{a=3;pkb=true;hnp=true;hp=true}
+Phoenix_Totem_DMG_Aura_DAMAGE2:
+  Cooldown: 0.01
+  TargetConditions:
+  - isLiving true
+  - hasaura{aura=immunedelay} false
+  Skills:
+  - aura{auraname=immunedelay;d=1;ma=true}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_impact;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - summon{type=VFX_Phoenix_Impact2;amount=1;radius=0;yRadius=0;onSurface=false}
+  - damage{a=7;pkb=true;hnp=true;hp=true}
+  - throw{velocity=10;velocityY=6}
+
+PT_Sphere_Spread:
+  Skills:
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=1;amount=20;y=0.1;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=1.5;amount=40;delay=1;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=2;amount=60;delay=2;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=2.5;amount=80;delay=3;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=3;amount=100;delay=4;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=3.5;amount=120;delay=5;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=4;amount=140;delay=6;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=4.5;amount=170;delay=7;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=5;amount=200;delay=8;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=5.5;amount=230;delay=9;speed=0.01;size=0.6}
+  
+  - effect:particlesphere{p=dust_color_transition;color1=#4a0200;color2=#1c0000;radius=1;amount=20;y=0.1;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#4a0200;color2=#1c0000;radius=1.5;amount=40;delay=1;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#4a0200;color2=#1c0000;radius=2;amount=60;delay=2;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#4a0200;color2=#1c0000;radius=2.5;amount=80;delay=3;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#4a0200;color2=#1c0000;radius=3;amount=100;delay=4;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#4a0200;color2=#1c0000;radius=3.5;amount=120;delay=5;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#4a0200;color2=#1c0000;radius=4;amount=140;delay=6;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#4a0200;color2=#1c0000;radius=4.5;amount=170;delay=7;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#4a0200;color2=#1c0000;radius=5;amount=200;delay=8;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#4a0200;color2=#1c0000;radius=5.5;amount=230;delay=9;speed=0.01;size=0.6}
+
+
+SUDO_TOTEM: 
+  Skills:
+  - aura{auraName=TOTEM<caster.uuid>;duration=200} @trigger
+
+
+# Pyroclasmic Barrage #
+
+Pyroclasmic_Barrage:
+  Cooldown: 5
+  Conditions:
+  - crouching true
+  Skills:
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=<random.float.0.8to1.1>} @self
+  - lunge{velocity=2.5;velocityY=0.6} @forward{f=-4;y=4}
+
+  - effect:sound{delay=5;s=block.trial_spawner.spawn_item;volume=0.8;pitch=<random.float.0.8to1.1>;repeat=4;repeati=2} @self
+  - orbital{delay=5;auraName=VFX_Phoenix_Feather_Spread;bulletType=MOB;mob=VFX_Phoenix_Feather_Spread;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=80;oy=2.8;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  
+  - delay 9
+
+  #- stun{d=39;f=true;CancelOnTakeDamage=false;CancelOnDeath=true} @self
+  - potion{type=LEVITATION;duration=39;level=-1;hasParticles=false} @self
+
+  - delay 11
+
+  #shoot 1
+  - randomskill{skills=Pyroclasmic_Barrage_BARRAGE1,Pyroclasmic_Barrage_BARRAGE2,Pyroclasmic_Barrage_BARRAGE3,Pyroclasmic_Barrage_BARRAGE4,Pyroclasmic_Barrage_BARRAGE5,Pyroclasmic_Barrage_BARRAGE6,Pyroclasmic_Barrage_BARRAGE7}
+  - delay 3
+
+  #shoot 2
+  - randomskill{skills=Pyroclasmic_Barrage_BARRAGE1,Pyroclasmic_Barrage_BARRAGE2,Pyroclasmic_Barrage_BARRAGE3,Pyroclasmic_Barrage_BARRAGE4,Pyroclasmic_Barrage_BARRAGE5,Pyroclasmic_Barrage_BARRAGE6,Pyroclasmic_Barrage_BARRAGE7}
+  - delay 3
+
+  #shoot 3
+  - randomskill{skills=Pyroclasmic_Barrage_BARRAGE1,Pyroclasmic_Barrage_BARRAGE2,Pyroclasmic_Barrage_BARRAGE3,Pyroclasmic_Barrage_BARRAGE4,Pyroclasmic_Barrage_BARRAGE5,Pyroclasmic_Barrage_BARRAGE6,Pyroclasmic_Barrage_BARRAGE7}
+  - delay 3
+
+  #shoot 4
+  - randomskill{skills=Pyroclasmic_Barrage_BARRAGE1,Pyroclasmic_Barrage_BARRAGE2,Pyroclasmic_Barrage_BARRAGE3,Pyroclasmic_Barrage_BARRAGE4,Pyroclasmic_Barrage_BARRAGE5,Pyroclasmic_Barrage_BARRAGE6,Pyroclasmic_Barrage_BARRAGE7}
+  - delay 3
+
+  #shoot 5
+  - randomskill{skills=Pyroclasmic_Barrage_BARRAGE1,Pyroclasmic_Barrage_BARRAGE2,Pyroclasmic_Barrage_BARRAGE3,Pyroclasmic_Barrage_BARRAGE4,Pyroclasmic_Barrage_BARRAGE5,Pyroclasmic_Barrage_BARRAGE6,Pyroclasmic_Barrage_BARRAGE7}
+  - delay 3
+
+  #shoot 6
+  - randomskill{skills=Pyroclasmic_Barrage_BARRAGE1,Pyroclasmic_Barrage_BARRAGE2,Pyroclasmic_Barrage_BARRAGE3,Pyroclasmic_Barrage_BARRAGE4,Pyroclasmic_Barrage_BARRAGE5,Pyroclasmic_Barrage_BARRAGE6,Pyroclasmic_Barrage_BARRAGE7}
+  - delay 3
+
+  #shoot 7
+  - randomskill{skills=Pyroclasmic_Barrage_BARRAGE1,Pyroclasmic_Barrage_BARRAGE2,Pyroclasmic_Barrage_BARRAGE3,Pyroclasmic_Barrage_BARRAGE4,Pyroclasmic_Barrage_BARRAGE5,Pyroclasmic_Barrage_BARRAGE6,Pyroclasmic_Barrage_BARRAGE7}
+  
+  - delay 11
+
+  - lunge{velocity=0;velocityY=-1} @forward{f=0;y=-4}
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=<random.float.0.8to1.1>} @self
+  - onDamaged{auraName=BARRAGEINVINC;cE=true;d=8;delay=3} @self
+
+  - delay 5
+  
+  - effect:sound{s=item.mace.smash_ground_heavy;volume=0.8;pitch=0.6} @self
+  - effect:sound{s=entity.generic.burn;volume=0.6;pitch=0.7} @self
+
+  - skill{s=Pyroclasmic_Barrage_RING_DAMAGE} @EIR{r=7;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} false ]}
+  - skill{s=Flameborn_BURN;duration=4;damage=1} @EIR{r=7}
+
+  - signal{s=ENDTOT} @EIR{r=7;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+  - signal{s=TOTEM;delay=1} @EIR{r=7;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+
+  - skill{s=Pyroclasmic_Barrage_RING} @selflocation
+
+Pyroclasmic_Barrage_RING_DAMAGE:
+  Cooldown: 0.01
+  TargetConditions:
+  - isLiving true
+  - hasaura{aura=immunedelay} false
+  Skills:
+  - aura{auraname=immunedelay;d=1;ma=true}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_impact;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - summon{type=VFX_Phoenix_Impact2;amount=1;radius=0;yRadius=0;onSurface=false}
+  - damage{a=3;pkb=true;hnp=true;hp=true}
+  - throw{velocity=9;velocityY=0.5}
+Pyroclasmic_Barrage_RING:
+  Skills:
+  - effect:particlering{p=small_flame;radius=1;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0.01}
+  - effect:particlering{p=small_flame;radius=2;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0.01;delay=1}
+  - effect:particlering{p=small_flame;radius=3;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0.01;delay=2}
+  - effect:particlering{p=small_flame;radius=4;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0.01;delay=3}
+  - effect:particlering{p=small_flame;radius=5;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0.01;delay=4}
+  - effect:particlering{p=small_flame;radius=6;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0.01;delay=5}
+  - effect:particlering{p=small_flame;radius=6.5;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0.01;delay=6}
+  - effect:particlering{p=small_flame;radius=7;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0.01;delay=7}
+  - effect:particlering{p=small_flame;radius=7.4;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0.01;delay=8}
+  - effect:particlering{p=small_flame;radius=7.7;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0.01;delay=10}
+  - effect:particlering{p=small_flame;radius=7.9;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0.01;delay=12}
+  - effect:particlering{p=small_flame;radius=8;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0.01;delay=15}
+  - effect:particlering{p=small_flame;radius=8.1;points=80;amount=1;hS=0;vS=0;y=0.1;speed=0.01;delay=18}
+  
+
+
+
+
+Pyroclasmic_Barrage_BARRAGE1:
+  Cooldown: 3
+  Skills:
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_feather_shoot;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - skill{s=Pyroclasmic_Barrage_SHOOT_PRO_1;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=12;uel=true}
+  - partvis{m=vfx_phoenix_feather_spread;p=body3;v=false;em=true;child=true} @MobsInRadius{r=3;limit=1;sort=NEAREST;types=VFX_Phoenix_Feather_Spread}
+Pyroclasmic_Barrage_BARRAGE2:
+  Cooldown: 3
+  Skills:
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_feather_shoot;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - skill{s=Pyroclasmic_Barrage_SHOOT_PRO_2;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=12;uel=true}
+  - partvis{m=vfx_phoenix_feather_spread;p=body5;v=false;em=true;child=true} @MobsInRadius{r=3;limit=1;sort=NEAREST;types=VFX_Phoenix_Feather_Spread}
+
+Pyroclasmic_Barrage_BARRAGE3:
+  Cooldown: 3
+  Skills:
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_feather_shoot;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - skill{s=Pyroclasmic_Barrage_SHOOT_PRO_3;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=12;uel=true}
+  - partvis{m=vfx_phoenix_feather_spread;p=body2;v=false;em=true;child=true} @MobsInRadius{r=3;limit=1;sort=NEAREST;types=VFX_Phoenix_Feather_Spread}
+
+Pyroclasmic_Barrage_BARRAGE4:
+  Cooldown: 3
+  Skills:
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_feather_shoot;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - skill{s=Pyroclasmic_Barrage_SHOOT_PRO_4;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=12;uel=true}
+  - partvis{m=vfx_phoenix_feather_spread;p=body6;v=false;em=true;child=true} @MobsInRadius{r=3;limit=1;sort=NEAREST;types=VFX_Phoenix_Feather_Spread}
+
+Pyroclasmic_Barrage_BARRAGE5:
+  Cooldown: 3
+  Skills:
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_feather_shoot;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - skill{s=Pyroclasmic_Barrage_SHOOT_PRO_5;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=12;uel=true}
+  - partvis{m=vfx_phoenix_feather_spread;p=body;v=false;em=true;child=true} @MobsInRadius{r=3;limit=1;sort=NEAREST;types=VFX_Phoenix_Feather_Spread}
+
+Pyroclasmic_Barrage_BARRAGE6:
+  Cooldown: 3
+  Skills:
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_feather_shoot;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - skill{s=Pyroclasmic_Barrage_SHOOT_PRO_6;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=12;uel=true}
+  - partvis{m=vfx_phoenix_feather_spread;p=body7;v=false;em=true;child=true} @MobsInRadius{r=3;limit=1;sort=NEAREST;types=VFX_Phoenix_Feather_Spread}
+
+Pyroclasmic_Barrage_BARRAGE7:
+  Cooldown: 3
+  Skills:
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_feather_shoot;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - skill{s=Pyroclasmic_Barrage_SHOOT_PRO_7;origin=@SelfEyeLocation{fo=-0.5;yo=-0.2}} @forward{f=12;uel=true}
+  - partvis{m=vfx_phoenix_feather_spread;p=body4;v=false;em=true;child=true} @MobsInRadius{r=3;limit=1;sort=NEAREST;types=VFX_Phoenix_Feather_Spread}
+
+
+
+  
+Pyroclasmic_Barrage_SHOOT_PRO_1:
+  Skills:
+  - projectile{oS=Blazing_Feathers_SHOOT_FX;tickinterpolation=5;bulletType=MOB;mob=VFX_Phoenix_Feather1;onHit=Pyroclasmic_Barrage_DAMAGE_D;v=23;i=10;hR=0.4;vR=0.4;mr=50;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0;syo=0.6;tyo=0.1;sso=0.9;eso=0.5;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+Pyroclasmic_Barrage_SHOOT_PRO_2:
+  Skills:
+  - projectile{oS=Blazing_Feathers_SHOOT_FX;tickinterpolation=5;bulletType=MOB;mob=VFX_Phoenix_Feather2;onHit=Pyroclasmic_Barrage_DAMAGE_D;v=23;i=10;hR=0.4;vR=0.4;mr=50;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0;syo=0.6;tyo=0.1;sso=-0.9;eso=-0.5;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+
+Pyroclasmic_Barrage_SHOOT_PRO_3:
+  Skills:
+  - projectile{oS=Blazing_Feathers_SHOOT_FX;tickinterpolation=5;bulletType=MOB;mob=VFX_Phoenix_Feather3;onHit=Pyroclasmic_Barrage_DAMAGE_D;v=23;i=10;hR=0.4;vR=0.4;mr=50;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0;syo=-0.1;tyo=-0.1;sso=1.2;eso=0.6;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+Pyroclasmic_Barrage_SHOOT_PRO_4:
+  Skills:
+  - projectile{oS=Blazing_Feathers_SHOOT_FX;tickinterpolation=5;bulletType=MOB;mob=VFX_Phoenix_Feather4;onHit=Pyroclasmic_Barrage_DAMAGE_D;v=23;i=10;hR=0.4;vR=0.4;mr=50;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0;syo=-0.1;tyo=-0.1;sso=-1.2;eso=-0.6;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+
+Pyroclasmic_Barrage_SHOOT_PRO_5:
+  Skills:
+  - projectile{oS=Blazing_Feathers_SHOOT_FX;tickinterpolation=5;bulletType=MOB;mob=VFX_Phoenix_Feather5;onHit=Pyroclasmic_Barrage_DAMAGE_D;v=23;i=10;hR=0.4;vR=0.4;mr=50;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0;syo=-1.1;tyo=-0.5;sso=0.9;eso=0.5;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+Pyroclasmic_Barrage_SHOOT_PRO_6:
+  Skills:
+  - projectile{oS=Blazing_Feathers_SHOOT_FX;tickinterpolation=5;bulletType=MOB;mob=VFX_Phoenix_Feather6;onHit=Pyroclasmic_Barrage_DAMAGE_D;v=23;i=10;hR=0.4;vR=0.4;mr=50;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0;syo=-1.1;tyo=-0.5;sso=-0.9;eso=-0.5;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+
+Pyroclasmic_Barrage_SHOOT_PRO_7:
+  Skills:
+  - projectile{oS=Blazing_Feathers_SHOOT_FX;tickinterpolation=5;bulletType=MOB;mob=VFX_Phoenix_Feather7;onHit=Pyroclasmic_Barrage_DAMAGE_D;v=23;i=10;hR=0.4;vR=0.4;mr=50;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0;syo=1.15;tyo=0.5;sso=0;eso=0;fo=true;hitConditions=[- isLiving true];byo=0;drawhitbox=false;ham=true}
+
+
+Pyroclasmic_Barrage_DAMAGE_D:
+  Skills:
+  - skill{s=Pyroclasmic_Barrage_DAMAGE} @EntitiesNearOrigin{r=2.5;limit=1;sort=NEAREST;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} false ]}
+  - skill{s=Flameborn_BURN;duration=4;damage=1} @EntitiesNearOrigin{r=2.5;limit=1;sort=NEAREST}
+  
+  - signal{s=ENDTOT} @EntitiesNearOrigin{r=2.5;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+  - signal{s=TOTEM;delay=1} @EntitiesNearOrigin{r=2.5;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+Pyroclasmic_Barrage_DAMAGE:
+  Cooldown: 0.01
+  TargetConditions:
+  - isLiving true
+  - hasaura{aura=immunedelay} false
+  Skills:
+  - aura{auraname=immunedelay;d=1;ma=true}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_impact;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - summon{type=VFX_Phoenix_Impact;amount=1;radius=0;yRadius=0;onSurface=true} @origin{y=0}
+  - damage{a=3;pkb=true;hnp=true;hp=true}
+
+  
+# Phoenix Rebirth #
+
+Phoenix_Rebirth:
+  Cooldown: 12
+  Conditions:
+  - crouching true
+  Skills:
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_form;volume=0.9;pitch=1} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.9;pitch=0.6;repeat=1;repeati=3} @self
+  - orbital{auraName=VFX_Phoenix_Wings;bulletType=MOB;mob=VFX_Phoenix_Wings;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=10;duration=200;oy=2.8;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  
+  - potion{type=JUMP;duration=200;level=1;hasParticles=false} @self
+  - potion{type=SLOW_FALLING;duration=200;level=0;hasParticles=false} @self
+  - aura{auraName=PHOENIX_REBIRTH_AURA;duration=200} @self
+  - particles{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;amount=30;hS=0.4;vS=0.5;y=1;size=0.6;speed=0;repeat=39;repeati=5} @self
+  - particles{p=small_flame;amount=20;hS=0.4;vS=0.5;y=1;speed=0.03;repeat=39;repeati=5} @self
+  
+  - changepart{m=vfx_phoenix_wings_1;p=bone;nm=vfx_phoenix_wings_3;np=bone;delay=194} @MobsInRadius{r=4;sort=NEAREST;limit=1;types=VFX_Phoenix_Wings}
+  - changepart{m=vfx_phoenix_wings_1;p=bone;nm=vfx_phoenix_wings_2;np=bone;delay=196} @MobsInRadius{r=4;sort=NEAREST;limit=1;types=VFX_Phoenix_Wings}
+  - changepart{m=vfx_phoenix_wings_1;p=bone;nm=vfx_phoenix_wings_1;np=bone;delay=198} @MobsInRadius{r=4;sort=NEAREST;limit=1;types=VFX_Phoenix_Wings}
+
+  #spread fire
+  - skill{s=Phoenix_Rebirth_Sphere_Spread} @selflocation
+  - skill{s=Phoenix_Rebirth_DAMAGE;delay=1} @EIR{r=8;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} false ]}
+  - skill{s=Flameborn_BURN;duration=4;damage=1;delay=1} @EIR{r=8}
+  
+  - signal{s=ENDTOT;delay=1} @EIR{r=8;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+  - signal{s=TOTEM;delay=2} @EIR{r=8;conditions=[  - mythicmobtype{t=VFX_Phoenix_Totem} true ]} ?!hasaurastacks{n=TOTEM_HIT_COUNT;s=4}
+Phoenix_Rebirth_DAMAGE:
+  Cooldown: 0.01
+  TargetConditions:
+  - isLiving true
+  - hasaura{aura=immunedelay} false
+  Skills:
+  - aura{auraname=immunedelay;d=1;ma=true}
+  - effect:sound{s=phoenix_hunter_sounds:samus.phoenix_hunter.phoenix_impact;volume=0.6;pitch=<random.float.0.8to1.2>} @self
+  - summon{type=VFX_Phoenix_Impact2;amount=1;radius=0;yRadius=0;onSurface=false}
+  - damage{a=3;pkb=true;hnp=true;hp=true}
+  - throw{velocity=11;velocityY=0}
+
+
+Phoenix_Rebirth_Sphere_Spread:
+  Skills:
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=1;amount=20;y=0.1;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=1.5;amount=40;delay=1;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=2;amount=60;delay=2;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=2.5;amount=80;delay=3;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=3;amount=100;delay=4;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=3.5;amount=120;delay=5;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=4;amount=140;delay=6;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=4.5;amount=170;delay=7;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=5;amount=200;delay=8;speed=0.01;size=0.6}
+  - effect:particlesphere{p=dust_color_transition;color1=#ffcd17;color2=#fa2707;radius=5.5;amount=230;delay=9;speed=0.01;size=0.6}
+  
+  - effect:particlesphere{p=small_flame;radius=1;amount=20;y=0.1;speed=0.07;size=0.6}
+  - effect:particlesphere{p=small_flame;radius=1.5;amount=40;delay=1;speed=0.07;size=0.6}
+  - effect:particlesphere{p=small_flame;radius=2;amount=60;delay=2;speed=0.07;size=0.6}
+  - effect:particlesphere{p=small_flame;radius=2.5;amount=80;delay=3;speed=0.07;size=0.6}
+  - effect:particlesphere{p=small_flame;radius=3;amount=100;delay=4;speed=0.07;size=0.6}
+  - effect:particlesphere{p=small_flame;radius=3.5;amount=120;delay=5;speed=0.07;size=0.6}
+  - effect:particlesphere{p=small_flame;radius=4;amount=140;delay=6;speed=0.07;size=0.6}
+  - effect:particlesphere{p=small_flame;radius=4.5;amount=170;delay=7;speed=0.07;size=0.6}
+  - effect:particlesphere{p=small_flame;radius=5;amount=200;delay=8;speed=0.07;size=0.6}
+  - effect:particlesphere{p=small_flame;radius=5.5;amount=230;delay=9;speed=0.07;size=0.6}
+#sEU5BFW1skQwIFZupka1QEMzVVW31kaOVTT65kMJRlT4l1aXhzMTh0STpndpRVREh0ZqVzM

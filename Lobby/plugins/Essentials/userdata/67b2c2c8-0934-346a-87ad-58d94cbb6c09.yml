@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.128.19.74
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1767658824563
+  login: 1767658779954
+money: '0'
+last-account-name: GrayVzf
+lastlocation:
+  world: f9f42665-d084-4921-862b-ce7d2039b3ff
+  world-name: Lobby
+  x: -319.5
+  y: 62.0
+  z: -340.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: f9f42665-d084-4921-862b-ce7d2039b3ff
+  world-name: Lobby
+  x: -316.5
+  y: 64.0
+  z: -340.5
+  yaw: 89.24998474121094
+  pitch: 5.25

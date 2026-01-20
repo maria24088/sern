@@ -1,0 +1,13 @@
+info:
+  namespace: schoolfurnitures
+items:
+  doubletable:
+    display_name: "Double Table"
+    permission: schoolfurnitures.doubletable
+    resource:
+      material: PAPER
+      generate: false
+      model_path: doubletable
+    behaviours:
+      furniture:
+        light_level: 13

@@ -1,0 +1,5 @@
+name: Bruno240707
+events:
+  rookie:
+    one_time: true
+    cooldown: 0

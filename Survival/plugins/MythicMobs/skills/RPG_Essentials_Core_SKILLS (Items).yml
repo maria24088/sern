@@ -1,0 +1,34 @@
+######## created by samus2002 #########
+
+# ITEMS #
+
+
+# Coins #
+
+ITEM_COIN_DEPOSIT_1:
+  Cooldown: 0.1
+  Skills:
+  - removeHeldItem{amount=1} @self
+  - currencygive{amount=1} @self
+  - sound{sound=entity.experience_orb.pickup;volume=0.8;pitch=1.4} @self
+  - sound{sound=item.armor.equip_netherite;volume=1;pitch=1.5} @self
+  - message{m="&fSuccessfully deposited &a$1!"} @self
+ITEM_COIN_DEPOSIT_2:
+  Cooldown: 0.1
+  Skills:
+  - removeHeldItem{amount=1} @self
+  - currencygive{amount=64} @self
+  - sound{sound=entity.experience_orb.pickup;volume=0.8;pitch=1.4} @self
+  - sound{sound=item.armor.equip_netherite;volume=1;pitch=1.5} @self
+  - message{m="&fSuccessfully deposited &a$64!"} @self
+ITEM_COIN_DEPOSIT_3:
+  Cooldown: 0.1
+  Skills:
+  - removeHeldItem{amount=1} @self
+  - currencygive{amount=4096} @self
+  - sound{sound=entity.experience_orb.pickup;volume=0.8;pitch=1.4} @self
+  - sound{sound=item.armor.equip_netherite;volume=1;pitch=1.5} @self
+  - message{m="&fSuccessfully deposited &a$4096!"} @self
+
+
+#24f35df792b6ddcf3baf6e41e84f2dde

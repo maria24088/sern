@@ -1,0 +1,35 @@
+info:
+  namespace: elitecreatures
+categories:
+  reddragon_animated_weapon_v1:
+    enabled: true
+    icon: "elitecreatures:reddragon_animated_weapon_v1_axe"
+    name: "Reddragon Animated Weapon v1"
+    permission: "ia.menu.reddragon_animated_weapon_v1"
+    items:
+      - "elitecreatures:reddragon_animated_weapon_v1_axe"
+      - "elitecreatures:reddragon_animated_weapon_v1_bow"
+      - "elitecreatures:reddragon_animated_weapon_v1_chest"
+      - "elitecreatures:reddragon_animated_weapon_v1_club"
+      - "elitecreatures:reddragon_animated_weapon_v1_crossbow"
+      - "elitecreatures:reddragon_animated_weapon_v1_dagger"
+      - "elitecreatures:reddragon_animated_weapon_v1_fishing_rod"
+      - "elitecreatures:reddragon_animated_weapon_v1_greatsword"
+      - "elitecreatures:reddragon_animated_weapon_v1_hammer"
+      - "elitecreatures:reddragon_animated_weapon_v1_helmet"
+      - "elitecreatures:reddragon_animated_weapon_v1_chestplate"
+      - "elitecreatures:reddragon_animated_weapon_v1_leggings"
+      - "elitecreatures:reddragon_animated_weapon_v1_boots"
+      - "elitecreatures:reddragon_animated_weapon_v1_hoe"
+      - "elitecreatures:reddragon_animated_weapon_v1_key"
+      - "elitecreatures:reddragon_animated_weapon_v1_mace"
+      - "elitecreatures:reddragon_animated_weapon_v1_pickaxe"
+      - "elitecreatures:reddragon_animated_weapon_v1_scythe"
+      - "elitecreatures:reddragon_animated_weapon_v1_shield"
+      - "elitecreatures:reddragon_animated_weapon_v1_shovel"
+      - "elitecreatures:reddragon_animated_weapon_v1_spear"
+      - "elitecreatures:reddragon_animated_weapon_v1_staff"
+      - "elitecreatures:reddragon_animated_weapon_v1_sword"
+      - "elitecreatures:reddragon_animated_weapon_v1_wing"
+
+

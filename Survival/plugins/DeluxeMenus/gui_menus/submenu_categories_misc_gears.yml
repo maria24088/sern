@@ -1,0 +1,82 @@
+size: 45
+menu_title: '&f%img_offset_-8%%img_submenu_categories_misc_gears%%img_offset_-155%
+%utils_parse_changeoutput_>=_input:{servervariables_value_marketplace_level}_matcher:3_ifmatch:{changeoutput_>=_input:{vault_eco_balance}_matcher:1000_ifmatch:{img_indicator_gray_row_1}_else:{img_indicator_red_row_1}}_else:&f%'
+items:
+  'close':
+    material: itemsadder-invisible_item
+    slot: 16
+    display_name: '&#da5240&lCERRAR'
+    click_commands:
+      - "[openguimenu] marketplace"
+
+  'category_fertilizers':
+    material: itemsadder-invisible_item
+    slot: 10
+    display_name: '&#c6985d&lFERTILIZANTES'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_misc_fertilizers"
+
+  'category_gears':
+    material: itemsadder-invisible_item
+    slot: 11
+    display_name: '&#acacac&lMECANISMOS'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_misc_gears"
+
+
+  'item_scarecrow_locked':
+    material: itemsadder-scarecrow
+    slot: 28
+    priority: 2
+    display_name: '&fEspantapájaros'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e21000$"
+      - "&#e7c86bPrecio por stack: &#e1e1e264000$"
+      - ""
+      - "&#e45838❌ No tienes suficiente dinero"
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '3'
+
+  'item_scarecrow_unlocked':
+    material: itemsadder-scarecrow
+    slot: 28
+    priority: 1
+    display_name: '&fEspantapájaros'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de compra: &#e1e1e21000$"
+      - "&#e7c86bPrecio por stack: &#e1e1e264000$"
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para comprar uno"
+      - "&f%img_shift_icon% %img_shift_left_click_icon% &#709ed3Shift + Click-izq para comprar stack"
+    left_click_commands:
+      - "[takemoney] 1000"
+      - "[console] iagive %player_name% redstone_labs:scarecrow 1 silent"
+      - "[openguimenu] submenu_categories_misc_gears"
+    shift_left_click_commands:
+      - "[takemoney] 64000"
+      - "[console] iagive %player_name% redstone_labs:scarecrow 64 silent"
+      - "[openguimenu] submenu_categories_misc_gears"
+    view_requirement:
+      requirements:
+        money:
+          type: '>='
+          input: '%vault_eco_balance%'
+          output: '1000'
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '3'

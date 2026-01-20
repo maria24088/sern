@@ -1,0 +1,417 @@
+Item_Pet_Cacti_Desert:
+  Id: BRICK
+  Display: '&6Huevo de Desert Cacti'
+  CustomModelData: 12000
+  Lore:
+  - '&7Un huevo mágico de Desert Cacti.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_Pet_Cacti_Desert} @Self ~onUse
+
+Item_Pet_Fire_Dragon_Fire:
+  Id: BRICK
+  Display: '&6Huevo de Fire Dragon'
+  CustomModelData: 12003
+  Lore:
+  - '&7Un huevo mágico de Fire Dragon.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_Pet_Fire_Dragon_Fire} @Self ~onUse
+
+Item_Pet_Frog_Green:
+  Id: BRICK
+  Display: '&6Huevo de Green Frog'
+  CustomModelData: 12008
+  Lore:
+  - '&7Un huevo mágico de Green Frog.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_Pet_Frog_Green} @Self ~onUse
+
+Item_A_Pet_Griffon_Griffon:
+  Id: BRICK
+  Display: '&6Huevo de Griffon'
+  CustomModelData: 12034
+  Lore:
+  - '&7Un huevo mágico de Griffon.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_A_Pet_Griffon_Griffon} @Self ~onUse
+
+Item_A_Pet_Griffon_Khonsu:
+  Id: BRICK
+  Display: '&6Huevo de Khonsu Griffon'
+  CustomModelData: 12035
+  Lore:
+  - '&7Un huevo mágico de Khonsu Griffon.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_A_Pet_Griffon_Khonsu} @Self ~onUse
+
+Item_A_Pet_Griffon_Phoenix:
+  Id: BRICK
+  Display: '&6Huevo de Phoenix Griffon'
+  CustomModelData: 12036
+  Lore:
+  - '&7Un huevo mágico de Phoenix Griffon.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_A_Pet_Griffon_Phoenix} @Self ~onUse
+
+Item_A_Pet_Griffon_Ra:
+  Id: BRICK
+  Display: '&6Huevo de Ra Griffon'
+  CustomModelData: 12037
+  Lore:
+  - '&7Un huevo mágico de Ra Griffon.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_A_Pet_Griffon_Ra} @Self ~onUse
+
+Item_A_Pet_Griffon_Rockstar:
+  Id: BRICK
+  Display: '&6Huevo de Rockstar Griffon'
+  CustomModelData: 12038
+  Lore:
+  - '&7Un huevo mágico de Rockstar Griffon.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_A_Pet_Griffon_Rockstar} @Self ~onUse
+
+Item_Pet_Knight_Castle:
+  Id: BRICK
+  Display: '&6Huevo de Castle Knight'
+  CustomModelData: 12012
+  Lore:
+  - '&7Un huevo mágico de Castle Knight.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_Pet_Knight_Castle} @Self ~onUse
+
+Item_B_Pet_Necromancer_Cat_Fire_Mage:
+  Id: BRICK
+  Display: '&6Huevo de Fire Mage Necromancer Cat'
+  CustomModelData: 12039
+  Lore:
+  - '&7Un huevo mágico de Fire Mage Necromancer Cat.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_B_Pet_Necromancer_Cat_Fire_Mage} @Self ~onUse
+
+Item_B_Pet_Necromancer_Cat_Ice_Mage:
+  Id: BRICK
+  Display: '&6Huevo de Ice Mage Necromancer Cat'
+  CustomModelData: 12040
+  Lore:
+  - '&7Un huevo mágico de Ice Mage Necromancer Cat.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_B_Pet_Necromancer_Cat_Ice_Mage} @Self ~onUse
+
+Item_B_Pet_Necromancer_Cat_Necromancer:
+  Id: BRICK
+  Display: '&6Huevo de Necromancer Cat'
+  CustomModelData: 12041
+  Lore:
+  - '&7Un huevo mágico de Necromancer Cat.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_B_Pet_Necromancer_Cat_Necromancer} @Self ~onUse
+
+Item_B_Pet_Necromancer_Cat_Santa:
+  Id: BRICK
+  Display: '&6Huevo de Santa Necromancer Cat'
+  CustomModelData: 12042
+  Lore:
+  - '&7Un huevo mágico de Santa Necromancer Cat.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_B_Pet_Necromancer_Cat_Santa} @Self ~onUse
+
+Item_C_Pet_Outlaw_Cyborg:
+  Id: BRICK
+  Display: '&6Huevo de Cyborg Outlaw'
+  CustomModelData: 12043
+  Lore:
+  - '&7Un huevo mágico de Cyborg Outlaw.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_C_Pet_Outlaw_Cyborg} @Self ~onUse
+
+Item_C_Pet_Outlaw_Officer:
+  Id: BRICK
+  Display: '&6Huevo de Officer Outlaw'
+  CustomModelData: 12044
+  Lore:
+  - '&7Un huevo mágico de Officer Outlaw.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_C_Pet_Outlaw_Officer} @Self ~onUse
+
+Item_C_Pet_Outlaw_Steampunk:
+  Id: BRICK
+  Display: '&6Huevo de Steampunk Outlaw'
+  CustomModelData: 12045
+  Lore:
+  - '&7Un huevo mágico de Steampunk Outlaw.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_C_Pet_Outlaw_Steampunk} @Self ~onUse
+
+Item_C_Pet_Outlaw_Wild_West:
+  Id: BRICK
+  Display: '&6Huevo de Wild West Outlaw'
+  CustomModelData: 12046
+  Lore:
+  - '&7Un huevo mágico de Wild West Outlaw.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_C_Pet_Outlaw_Wild_West} @Self ~onUse
+
+Item_D_Pet_Samurai_Shiba_Samurai_Bamboo:
+  Id: BRICK
+  Display: '&6Huevo de Bamboo Samurai Shiba'
+  CustomModelData: 12047
+  Lore:
+  - '&7Un huevo mágico de Bamboo Samurai Shiba.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_D_Pet_Samurai_Shiba_Samurai_Bamboo} @Self ~onUse
+
+Item_D_Pet_Samurai_Shiba_Samurai_New_Year:
+  Id: BRICK
+  Display: '&6Huevo de New Year Samurai Shiba'
+  CustomModelData: 12048
+  Lore:
+  - '&7Un huevo mágico de New Year Samurai Shiba.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_D_Pet_Samurai_Shiba_Samurai_New_Year} @Self ~onUse
+
+Item_D_Pet_Samurai_Shiba_Samurai_Pirate:
+  Id: BRICK
+  Display: '&6Huevo de Pirate Samurai Shiba'
+  CustomModelData: 12049
+  Lore:
+  - '&7Un huevo mágico de Pirate Samurai Shiba.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_D_Pet_Samurai_Shiba_Samurai_Pirate} @Self ~onUse
+
+Item_D_Pet_Samurai_Shiba_Samurai:
+  Id: BRICK
+  Display: '&6Huevo de Samurai Shiba'
+  CustomModelData: 12050
+  Lore:
+  - '&7Un huevo mágico de Samurai Shiba.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_D_Pet_Samurai_Shiba_Samurai} @Self ~onUse
+
+Item_E_Pet_Shark_Baby_Shark:
+  Id: BRICK
+  Display: '&6Huevo de Baby Shark'
+  CustomModelData: 12051
+  Lore:
+  - '&7Un huevo mágico de Baby Shark.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_E_Pet_Shark_Baby_Shark} @Self ~onUse
+
+Item_E_Pet_Shark_Chef:
+  Id: BRICK
+  Display: '&6Huevo de Chef Shark'
+  CustomModelData: 12052
+  Lore:
+  - '&7Un huevo mágico de Chef Shark.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_E_Pet_Shark_Chef} @Self ~onUse
+
+Item_E_Pet_Shark_Dragonborn:
+  Id: BRICK
+  Display: '&6Huevo de Dragonborn Shark'
+  CustomModelData: 12053
+  Lore:
+  - '&7Un huevo mágico de Dragonborn Shark.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_E_Pet_Shark_Dragonborn} @Self ~onUse
+
+Item_E_Pet_Shark_Oceanic:
+  Id: BRICK
+  Display: '&6Huevo de Oceanic Shark'
+  CustomModelData: 12054
+  Lore:
+  - '&7Un huevo mágico de Oceanic Shark.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_E_Pet_Shark_Oceanic} @Self ~onUse
+
+Item_Pet_Unicorn_Heavenly:
+  Id: BRICK
+  Display: '&6Huevo de Heavenly Unicorn'
+  CustomModelData: 12016
+  Lore:
+  - '&7Un huevo mágico de Heavenly Unicorn.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_Pet_Unicorn_Heavenly} @Self ~onUse
+
+Item_cubee-ebony_cat:
+  Id: GOLDEN_HORSE_ARMOR
+  Display: '&6Huevo de 75ccce Ebony Cat Cubee'
+  CustomModelData: 7191157
+  Lore:
+  - '&7Un huevo mágico de 75ccce Ebony Cat Cubee.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_cubee-ebony_cat} @Self ~onUse
+
+Item_cubee-gothic_hag:
+  Id: GOLDEN_HORSE_ARMOR
+  Display: '&6Huevo de 75ccce Gothic Hag Cubee'
+  CustomModelData: 7191159
+  Lore:
+  - '&7Un huevo mágico de 75ccce Gothic Hag Cubee.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_cubee-gothic_hag} @Self ~onUse
+
+Item_cubee-skelly_warlock:
+  Id: GOLDEN_HORSE_ARMOR
+  Display: '&6Huevo de 75ccce Skelly Warlock Cubee'
+  CustomModelData: 7191161
+  Lore:
+  - '&7Un huevo mágico de 75ccce Skelly Warlock Cubee.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_cubee-skelly_warlock} @Self ~onUse
+
+Item_cubee-soul_weaver:
+  Id: GOLDEN_HORSE_ARMOR
+  Display: '&6Huevo de 75ccce Soul Weaver Cubee'
+  CustomModelData: 7191162
+  Lore:
+  - '&7Un huevo mágico de 75ccce Soul Weaver Cubee.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_cubee-soul_weaver} @Self ~onUse
+
+Item_cubee-air_dragon:
+  Id: GOLDEN_HORSE_ARMOR
+  Display: '&6Huevo de 75ccce Air Dragon Cubee'
+  CustomModelData: 7191281
+  Lore:
+  - '&7Un huevo mágico de 75ccce Air Dragon Cubee.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_cubee-air_dragon} @Self ~onUse
+
+Item_cubee-darkness_dragon:
+  Id: GOLDEN_HORSE_ARMOR
+  Display: '&6Huevo de ff6df8 Darkness Dragon Cubee'
+  CustomModelData: 7191282
+  Lore:
+  - '&7Un huevo mágico de ff6df8 Darkness Dragon Cubee.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_cubee-darkness_dragon} @Self ~onUse
+
+Item_cubee-earth_dragon:
+  Id: GOLDEN_HORSE_ARMOR
+  Display: '&6Huevo de eca46f Earth Guard Cubee'
+  CustomModelData: 7191142
+  Lore:
+  - '&7Un huevo mágico de eca46f Earth Guard Cubee.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_cubee-earth_dragon} @Self ~onUse
+
+Item_cubee-fire_dragon:
+  Id: GOLDEN_HORSE_ARMOR
+  Display: '&6Huevo de 983737 Fire Dragon Cubee'
+  CustomModelData: 7191143
+  Lore:
+  - '&7Un huevo mágico de 983737 Fire Dragon Cubee.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_cubee-fire_dragon} @Self ~onUse
+
+Item_cubee-galaxy_dragon:
+  Id: GOLDEN_HORSE_ARMOR
+  Display: '&6Huevo de ffe3f7 Galaxy Dragon Cubee'
+  CustomModelData: 7191144
+  Lore:
+  - '&7Un huevo mágico de ffe3f7 Galaxy Dragon Cubee.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_cubee-galaxy_dragon} @Self ~onUse
+
+Item_cubee-ice_dragon:
+  Id: GOLDEN_HORSE_ARMOR
+  Display: '&6Huevo de 74dff5 Ice Dragon Cubee'
+  CustomModelData: 7191145
+  Lore:
+  - '&7Un huevo mágico de 74dff5 Ice Dragon Cubee.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_cubee-ice_dragon} @Self ~onUse
+
+Item_cubee-light_dragon:
+  Id: GOLDEN_HORSE_ARMOR
+  Display: '&6Huevo de edea96 Light Dragon Cubee'
+  CustomModelData: 7191146
+  Lore:
+  - '&7Un huevo mágico de edea96 Light Dragon Cubee.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_cubee-light_dragon} @Self ~onUse
+
+Item_cubee-nature_dragon:
+  Id: GOLDEN_HORSE_ARMOR
+  Display: '&6Huevo de 517c43 Nature Dragon Cubee'
+  CustomModelData: 7191147
+  Lore:
+  - '&7Un huevo mágico de 517c43 Nature Dragon Cubee.'
+  - ''
+  - '&e➤ Click Derecho para desbloquear'
+  Skills:
+  - skill{s=Unlock_Pet_cubee-nature_dragon} @Self ~onUse

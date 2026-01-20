@@ -1,0 +1,17 @@
+Id: cubee-basalt_delta
+MythicMob: cubee-basalt_delta
+Permission: mcpet.cubee-basalt_delta
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §x§4§F§4§B§4§FB§x§7§2§5§F§4§Ba§x§9§5§7§2§4§8s§x§B§9§8§6§4§4a§x§D§C§9§9§4§1l§x§F§F§A§D§3§Dt
+    §x§F§F§9§F§3§1D§x§F§F§9§0§2§5e§x§F§F§8§2§1§8l§x§F§F§7§3§0§Ct§x§F§F§6§5§0§0a §x§D§C§6§0§1§0C§x§B§9§5§B§2§0u§x§9§5§5§5§2§Fb§x§7§2§5§0§3§Fe§x§4§F§4§B§4§Fe
+  Description:
+  - §fAshes and Fire of the nether,
+  - §fCondensed into this cubee!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191044
+
+# 4c55fedd7b128b210d38f1779cf09ee2

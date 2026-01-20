@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  smalltabledark:
+    display_name: "Small Table Dark"
+    permission: livingroom.smalltabledark
+    resource:
+      material: PAPER
+      generate: false
+      model_path: smalltabledark
+    behaviours:
+      furniture:
+        light_level: 13

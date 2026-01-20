@@ -1,0 +1,27 @@
+tournaments:
+  first-tournament:
+    active-days: # Days at which the tournament is active
+      - MONDAY
+      - THURSDAY
+    active-times: # Times at which the tournament is active
+      - "14:00"
+      - "18:00"
+    duration: 600 # Duration of the tournament in seconds
+    min-players: 2 # Minimum number of players required to start the tournament
+    goal: COUNT # Goal of the tournament
+                # COUNT: Player with most caught fish wins
+                # SIZE: Player with biggest caught fish wins
+                # SCORE: Player with the most valuable caught fish wins
+                # WEIGHT: Player with the heaviest caught fish wins
+                # TOTAL_SIZE: Player with the most total size of caught fish wins
+                # SMALLEST: Player with the smallest caught fish wins
+                # RANDOM: Random player wins
+    rewards: # Rewards for the winners
+      1:
+        - "give %player% diamond 1"
+      2:
+        - "give %player% gold_ingot 1"
+      3:
+        - "give %player% iron_ingot 1"
+    start-sound: ENTITY_ENDER_DRAGON_GROWL # "none" for no sound
+    end-sound: UI_TOAST_CHALLENGE_COMPLETE

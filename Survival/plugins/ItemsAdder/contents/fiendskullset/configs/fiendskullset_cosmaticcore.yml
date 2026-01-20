@@ -1,0 +1,46 @@
+  
+info:
+  namespace: fiendskullset
+items:
+  fiendskull_cosmeticscore_cape:
+    display_name: Fiend Skull Cape Cosmeticscore
+    permission: fiendskull.cape_cosmeticscore
+    resource:
+      generate: false
+      material: POTION
+      model_path: cape_cosmeticscore
+      model_id: 3200001
+  fiendskull_cosmeticscore_cape_self:
+    display_name: Fiend Skull Cape Cosmeticscore Self
+    permission: fiendskull.cape_cosmeticscore_self
+    resource:
+      generate: false
+      material: POTION
+      model_path: cape_cosmeticscore_self
+      model_id: 3200002
+  fiendskull_cosmeticscore_head:
+    display_name: Fiend Skull Head Cosmeticscore
+    permission: fiendskull.head_cosmeticscore
+    resource:
+      generate: false
+      material: POTION
+      model_path: helmet
+      model_id: 3200003
+  fiendskull_cosmeticscore_backpack:
+    display_name: Fiend Skull Backpack Cosmeticscore
+    permission: fiendskull.backpack_cosmeticscore
+    resource:
+      generate: false
+      material: POTION
+      model_path: backpack_cosmeticscore
+      model_id: 3200004
+  fiendskull_cosmeticscore_backpack_self:
+    display_name: Fiend Skull Wing Cosmeticscore Self
+    permission: fiendskull.backpack_cosmeticscore_self
+    resource:
+      generate: false
+      material: POTION
+      model_path: backpack_cosmeticscore_self
+      model_id: 3200005      
+
+# 97510SVZ

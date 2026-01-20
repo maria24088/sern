@@ -1,0 +1,37 @@
+plny_eternal_bones_set_cosmetics_helmet:
+  dyeable: false
+  height: 0
+  item:
+    amount: 1
+    color: '#ffffff'
+    glow: false
+    item-flags:
+    - HIDE_ATTRIBUTES
+    material: POTION
+    model-data: 9926726
+    unbreakable: true
+  permission: cosmetics.plny_eternal_bones_set_cosmetics_helmet
+  slot: HELMET
+plny_eternal_bones_set_cosmetics_wings:
+  dyeable: false
+  firstperson-item:
+    amount: 1
+    color: '#ffffff'
+    glow: false
+    item-flags:
+    - HIDE_ATTRIBUTES
+    material: POTION
+    model-data: 9926729
+    unbreakable: true
+  height: 4
+  item:
+    amount: 1
+    color: '#ffffff'
+    glow: false
+    item-flags:
+    - HIDE_ATTRIBUTES
+    material: POTION
+    model-data: 9926730
+    unbreakable: true
+  permission: cosmetics.plny_eternal_bones_set_cosmetics_wings
+  slot: BACKPACK

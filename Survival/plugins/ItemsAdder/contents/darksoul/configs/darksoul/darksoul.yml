@@ -1,0 +1,299 @@
+info:
+  namespace: darksoul
+categories:
+  darksoul:
+    enabled: true
+    skip_if_already: false
+    icon: darksoul:soul
+    name: 'Dark Soul Weapons and Items'
+    items:
+    - darksoularmor:helmet
+    - darksoularmor:chestplate
+    - darksoularmor:leggings
+    - darksoularmor:boots
+    - darksoul:axe
+    - darksoul:hoe
+    - darksoul:pickaxe
+    - darksoul:shovel
+    - darksoul:sword
+    - darksoul:bow
+    - darksoul:fishingrod
+    - darksoul:shield
+    - darksoul:ring
+    - darksoul:necklace
+    - darksoul:feather
+    - darksoul:heart
+    - darksoul:soul
+    - darksoul:flame
+    - darksoul:ingot
+recipes:
+  crafting_table:
+    helmet:
+      enabled: true
+      pattern:
+      - BBB
+      - BXB
+      - XXX
+      ingredients:
+        B: darksoul:ingot
+      result:
+        item: darksoularmor:helmet
+        amount: 1
+    chestplate:
+      enabled: true
+      pattern:
+      - BXB
+      - BAB
+      - BBB
+      ingredients:
+        A: darksoul:heart
+        B: darksoul:ingot
+      result:
+        item: darksoularmor:chestplate
+        amount: 1
+    leggings:
+      enabled: true
+      pattern:
+      - BBB
+      - BXB
+      - BXB
+      ingredients:
+        B: darksoul:ingot
+      result:
+        item: darksoularmor:leggings
+        amount: 1
+    boots:
+      enabled: true
+      pattern:
+      - XXX
+      - BXB
+      - BXB
+      ingredients:
+        B: darksoul:ingot
+      result:
+        item: darksoularmor:boots
+        amount: 1
+    ring:
+      enabled: true
+      pattern:
+      - ABB
+      - BXB
+      - BBB
+      ingredients:
+        A: darksoul:soul
+        B: darksoul:ingot
+      result:
+        item: darksoul:ring
+        amount: 1
+    necklace:
+      enabled: true
+      pattern:
+      - XBB
+      - BXB
+      - ABX
+      ingredients:
+        A: darksoul:soul
+        B: darksoul:feather
+      result:
+        item: darksoul:necklace
+        amount: 1
+    rod:
+      enabled: true
+      pattern:
+      - XAB
+      - AXB
+      - XAB
+      ingredients:
+        A: darksoul:soul
+        B: darksoul:feather
+      result:
+        item: darksoul:fishingrod
+        amount: 1
+    bow:
+      enabled: true
+      pattern:
+      - XXA
+      - XAB
+      - AXB
+      ingredients:
+        A: darksoul:soul
+        B: darksoul:feather
+      result:
+        item: darksoul:bow
+        amount: 1
+    shield:
+      enabled: true
+      pattern:
+      - AAA
+      - ABA
+      - XAX
+      ingredients:
+        A: darksoul:ingot
+        B: darksoul:flame
+      result:
+        item: darksoul:shield
+        amount: 1
+    sword:
+      enabled: true
+      pattern:
+      - XAX
+      - XAX
+      - XBX
+      ingredients:
+        A: darksoul:ingot
+        B: darksoul:flame
+      result:
+        item: darksoul:sword
+        amount: 1
+    axe:
+      enabled: true
+      pattern1:
+      - XAA
+      - XBA
+      - XBX
+      ingredients:
+        A: darksoul:ingot
+        B: darksoul:flame
+      result:
+        item: darksoul:axe
+        amount: 1
+    pickaxe:
+      enabled: true
+      pattern:
+      - AAA
+      - XBX
+      - XBX
+      ingredients:
+        A: darksoul:ingot
+        B: darksoul:flame
+      result:
+        item: darksoul:pickaxe
+        amount: 1
+    shovel:
+      enabled: true
+      pattern:
+      - XAX
+      - XBX
+      - XBX
+      ingredients:
+        A: darksoul:ingot
+        B: darksoul:flame
+      result:
+        item: darksoul:shovel
+        amount: 1
+    hoe:
+      enabled: true
+      pattern1:
+      - XAA
+      - XBX
+      - XBX
+      ingredients:
+        A: darksoul:ingot
+        B: darksoul:flame
+      result:
+        item: darksoul:hoe
+        amount: 1
+items:
+  axe:
+    display_name: '&#604EC9&lD&#6A55CC&la&#745CCE&lr&#7E62D1&lk &#9270D7&lS&#9D76DA&lo&#A77DDE&lu&#B183E1&ll &#8969D5&lA&#745BCF&lx&#604EC9&le'
+    resource:
+      generate: false
+      material: NETHERITE_AXE
+      model_path: darksoul/soul_axe
+  hoe:
+    display_name: '&#604EC9&lD&#6A55CC&la&#745CCE&lr&#7E62D1&lk &#9270D7&lS&#9D76DA&lo&#A77DDE&lu&#B183E1&ll &#8969D5&lH&#745BCF&lo&#604EC9&le'
+    resource:
+      generate: false
+      material: NETHERITE_HOE
+      model_path: darksoul/soul_hoe
+  pickaxe:
+    display_name: '&#604EC9&lD&#6853CB&la&#7059CD&lr&#785ECF&lk &#8869D3&lS&#8F6DD5&lo&#9672D8&lu&#9D76DA&ll &#AA7FDF&lP&#B183E1&li&#A178DC&lc&#916ED7&lk&#8063D3&la&#7059CE&lx&#604EC9&le'
+    resource:
+      generate: false
+      material: NETHERITE_PICKAXE
+      model_path: darksoul/soul_pickaxe
+  shovel:
+    display_name: '&#604EC9&lD&#6853CB&la&#7059CD&lr&#785ECF&lk &#8869D3&lS&#906ED6&lo&#9873D9&lu&#A179DB&ll &#B183E1&lS&#A178DC&lh&#916ED7&lo&#8063D3&lv&#7059CE&le&#604EC9&ll'
+    resource:
+      generate: false
+      material: NETHERITE_SHOVEL
+      model_path: darksoul/soul_shovel
+  sword:
+    display_name: '&#604EC9&lD&#6853CB&la&#7059CD&lr&#785ECF&lk &#8869D3&lS&#9270D7&lo&#9D76DA&lu&#A77DDE&ll &#A178DC&lS&#916ED7&lw&#8063D3&lo&#7059CE&lr&#604EC9&ld'
+    resource:
+      generate: false
+      material: NETHERITE_SWORD
+      model_path: darksoul/soul_sword
+  fishingrod:
+    display_name: '&#604EC9&lD&#6E57CD&la&#7B60D1&lr&#8969D5&lk &#A47ADD&lS&#B183E1&lo&#A47ADD&lu&#9671D9&ll &#7B60D1&lB&#6E57CD&lo&#604EC9&lw'
+    resource:
+      generate: false
+      material: FISHING_ROD
+      model_path: darksoul/soul_fishingrod
+  bow:
+    display_name: '&#604EC9&lD&#6E57CD&la&#7B60D1&lr&#8969D5&lk &#A47ADD&lS&#B183E1&lo&#A47ADD&lu&#9671D9&ll &#7B60D1&lB&#6E57CD&lo&#604EC9&lw'
+    resource:
+      generate: false
+      material: BOW
+      model_path: darksoul/soul_bow
+  shield:
+    display_name: '&#604EC9&lD&#6A55CC&la&#745BCF&lr&#7E62D2&lk &#936FD8&lS&#9D76DB&lo&#A77CDE&lu&#B183E1&ll &#9A74DA&lS&#8E6CD7&lh&#8365D3&li&#775DD0&le&#6C56CC&ll&#604EC9&ld'
+    resource:
+      generate: false
+      material: SHIELD
+      model_path: darksoul/soul_shield
+  wings:
+    display_name: '&#604EC9&lD&#6C56CC&la&#775DD0&lr&#8365D3&lk &#9A74DA&lS&#A57BDE&lo&#B183E1&lu&#A57BDE&ll &#8E6CD7&lW&#8365D3&li&#775DD0&ln&#6C56CC&lg&#604EC9&ls'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: darksoul/soul_wing
+  ring:
+    display_name: '&#604EC9&lD&#6C56CC&la&#775DD0&lr&#8365D3&lk &#9A74DA&lS&#A57BDE&lo&#B183E1&lu&#A47ADD&ll &#8969D5&lR&#7B60D1&li&#6E57CD&ln&#604EC9&lg'
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - darksoul/darksoul_ring.png
+  necklace:
+    display_name: '&#604EC9&lD&#6954CC&la&#725ACE&lr&#7B60D1&lk &#8D6BD6&lS&#9671D9&lo&#9F77DC&lu&#A87DDE&ll &#A77CDE&lN&#9D76DB&le&#936FD8&lc&#8969D5&lk&#7E62D2&ll&#745BCF&la&#6A55CC&lc&#604EC9&le'
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - darksoul/darksoul_necklace.png
+  feather:
+    display_name: '&#604EC9&lD&#6A55CC&la&#745BCF&lr&#7E62D2&lk &#936FD8&lS&#9D76DB&lo&#A77CDE&lu&#B183E1&ll &#9D76DB&lF&#936FD8&le&#8969D5&la&#7E62D2&lt&#745BCF&lh&#6A55CC&le&#604EC9&lr'
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - darksoul/darksoul_feather
+  soul:
+    display_name: '&#604EC9&lD&#745BCF&la&#8969D5&lr&#9D76DB&lk &#9D76DB&lS&#8969D5&lo&#745BCF&lu&#604EC9&ll'
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - darksoul/darksoul_soul.png
+  heart:
+    display_name: '&#604EC9&lD&#6C56CC&la&#775DD0&lr&#8365D3&lk &#9A74DA&lS&#A57BDE&lo&#B183E1&lu&#A57BDE&ll &#8E6CD7&lH&#8365D3&le&#775DD0&la&#6C56CC&lr&#604EC9&lt'
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - darksoul/darksoul_heart.png
+  flame:
+    display_name: '&#604EC9&lD&#6A55CC&la&#745BCF&lr&#7E62D2&lk &#936FD8&lS&#9D76DB&lo&#A77CDE&lu&#B183E1&ll &#9D76DB&lF&#936FD8&le&#8969D5&la&#7E62D2&lt&#745BCF&lh&#6A55CC&le&#604EC9&lr'
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - darksoul/darksoul_flame
+  ingot:
+    display_name: '&#604EC9&lD&#6C56CC&la&#775DD0&lr&#8365D3&lk &#9A74DA&lS&#A57BDE&lo&#B183E1&lu&#A57BDE&ll &#8E6CD7&lI&#8365D3&ln&#775DD0&lg&#6C56CC&lo&#604EC9&lt'
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - darksoul/darksoul_ingot

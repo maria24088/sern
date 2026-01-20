@@ -1,0 +1,61 @@
+title: <white>
+rows: 6
+items:
+  ender_dragon_cosmetics_wings:
+    slots:
+    - 0
+    item:
+      name: <white>Ender Dragon Wings
+      material: POTION
+      model-data: 9723001
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_ender_dragon_cosmetics_wings%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_ender_dragon_cosmetics_wings%'
+    type: cosmetic
+    cosmetic: ender_dragon_cosmetics_wings
+    locked-item:
+      name: <white>Ender Dragon Wings <red><b>(LOCK)
+      material: POTION
+      model-data: 9723001
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+  ender_dragon_cosmetics_helmet:
+    slots:
+    - 1
+    item:
+      name: <white>Ender Dragon Helmet
+      material: POTION
+      model-data: 9723000
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_ender_dragon_cosmetics_helmet%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_ender_dragon_cosmetics_helmet%'
+    type: cosmetic
+    cosmetic: ender_dragon_cosmetics_helmet
+    locked-item:
+      name: <white>Ender Dragon Helmet <red><b>(LOCK)
+      material: POTION
+      model-data: 9723000
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available

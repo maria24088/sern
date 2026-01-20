@@ -1,0 +1,63 @@
+# Made by samus2002
+
+menu_title: '&8&lPortal'
+open_command:
+  - portal
+size: 27
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: portal.open
+      deny_commands:
+        - "[message] &cYou can't access Portals yet!"
+items:
+  'WILD':
+    material: TALL_GRASS
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lWild'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to travel to &b&lWild!"
+      - ""
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s OBJ_PORTAL_BASIC_WILDS";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[close]'
+  'NETHER':
+    material: NETHERRACK
+    slot: 11
+    priority: 1
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&b&lNether'
+    lore:
+      - ""
+      - "&f⏵ &c&lLeft-click&7 to travel to &b&lNether!"
+      - ""
+    view_requirement:
+      requirements:
+        portal_perm:
+          type: has permission
+          permission: portal.nether
+    left_click_commands:
+      - '[console] mm t mechanic -s - command{c="mm t cast -s OBJ_PORTAL_BASIC_NETHER";at=true;op=true} @playerByName{name=%player_name%}'
+      - '[close]'
+  'NETHER_LOCKED':
+    material: RED_STAINED_GLASS_PANE
+    slot: 11
+    priority: 2
+    update: true
+    item_flags:
+      - HIDE_ATTRIBUTES
+    display_name: '&c&lNether'
+    lore:
+      - "&4&lLOCKED"
+    left_click_commands:
+      - "[message] &4You haven't unlocked &b&lNether &4yet!"
+      - '[sound] ENTITY_ITEM_BREAK'
+#24f35df792b6ddcf3baf6e41e84f2dde

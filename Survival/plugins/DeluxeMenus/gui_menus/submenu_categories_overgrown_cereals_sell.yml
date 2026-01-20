@@ -1,0 +1,131 @@
+size: 45
+menu_title: '&f%img_offset_-8%%img_submenu_categories_cereals%%img_offset_-155%
+%utils_parse_changeoutput_>=_input:{servervariables_value_marketplace_level}_matcher:3_ifmatch:{changeoutput_>=_input:{checkitem_amount_mat:paper,custommodeldata:21001}_matcher:1_ifmatch:{img_indicator_gray_row_1}_else:{img_indicator_red_row_1}}_else:&f%'
+items:
+  'close':
+    material: itemsadder-invisible_item
+    slot: 16
+    display_name: '&#da5240&lCERRAR'
+    click_commands:
+      - "[openguimenu] marketplace"
+
+  'category_vegetables':
+    material: itemsadder-invisible_item
+    slot: 10
+    display_name: '&#5ed034&lVEGETALES'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_overgrown_vegetables_sell"
+
+  'category_fruits':
+    material: itemsadder-invisible_item
+    slot: 11
+    display_name: '&#e32f1f&lFRUTAS'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_overgrown_fruits_sell"
+
+  'category_cereals':
+    material: itemsadder-invisible_item
+    slot: 12
+    display_name: '&#f3bf46&lCEREALES'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_overgrown_cereals_sell"
+
+  'category_trees':
+    material: itemsadder-invisible_item
+    slot: 13
+    display_name: '&#9a7041&lARBOLES'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_overgrown_trees_sell"
+
+  'category_bushes':
+    material: itemsadder-invisible_item
+    slot: 14
+    display_name: '&#96c531&lARBUSTOS'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_overgrown_bushes_sell"
+
+  'category_flowers':
+    material: itemsadder-invisible_item
+    slot: 15
+    display_name: '&#e9c1de&lFLORES'
+    lore:
+      - '&8ᴄᴀᴛᴇɢᴏʀɪᴀs'
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para abrir menú"
+    click_commands:
+      - "[openguimenu] submenu_categories_overgrown_flowers_sell"
+
+  'item_overgrown_corn_locked':
+    material: itemsadder-overgrown_corn
+    slot: 28
+    priority: 2
+    display_name: '&fMaíz Gigante'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de venta: &#e1e1e275$"
+      - "&#e7c86bPrecio venta stack: &#e1e1e24800$"
+      - ""
+      - "&#e45838❌ No tienes suficientes items"
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '3'
+
+  'item_overgrown_corn_unlocked':
+    material: itemsadder-overgrown_corn
+    slot: 28
+    priority: 1
+    display_name: '&fMaíz Gigante'
+    lore:
+      - ""
+      - "&#e7c86bPrecio de venta: &#e1e1e275$"
+      - "&#e7c86bPrecio venta stack: &#e1e1e24800$"
+      - ""
+      - "&f%img_left_click_icon% &#64ba3fClick-izquierdo para vender uno"
+      - "&f%img_shift_icon% %img_shift_left_click_icon% &#709ed3Shift + Click-izq para vender stack"
+    left_click_commands:
+      - "[givemoney] 75"
+      - "[console] iaremove %player_name% redstone_labs:overgrown_corn 1 silent"
+      - "[openguimenu] submenu_categories_overgrown_cereals_sell"
+    shift_left_click_requirement:
+      requirements:
+        check_item:
+          type: '>='
+          input: '%checkitem_amount_mat:paper,custommodeldata:21001%'
+          output: '64'
+    shift_left_click_commands:
+      - "[givemoney] 4800"
+      - "[console] iaremove %player_name% redstone_labs:overgrown_corn 64 silent"
+      - "[openguimenu] submenu_categories_overgrown_cereals_sell"
+    view_requirement:
+      requirements:
+        item:
+          type: '>='
+          input: '%checkitem_amount_mat:paper,custommodeldata:21001%'
+          output: '1'
+        level:
+          type: '>='
+          input: '%servervariables_value_marketplace_level%'
+          output: '3'

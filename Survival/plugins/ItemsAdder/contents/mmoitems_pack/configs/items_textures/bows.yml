@@ -1,0 +1,103 @@
+# For textures only!!!
+info:
+  namespace: mmoitems_pack
+items:
+
+  bow1:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1001
+      material: BOW
+      textures:
+      - hyronic_pack/items/bow/catastrophe
+
+  bow2:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1002
+      material: BOW
+      textures:
+      - hyronic_pack/items/bow/divenetto
+
+  bow3:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1003
+      material: BOW
+      textures:
+      - hyronic_pack/items/bow/hospitality
+
+  bow6:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1004
+      material: BOW
+      textures:
+      - hyronic_pack/items/bow/the_hunt
+
+  bow7:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1005
+      material: BOW
+      textures:
+      - hyronic_pack/items/bow/the_predator
+
+  bow8:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1006
+      material: BOW
+      textures:
+      - hyronic_pack/items/bow/starflame
+
+  bow9:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1007
+      material: BOW
+      textures:
+      - hyronic_pack/items/bow/sniper_sight
+
+  bow10:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1008
+      material: BOW
+      textures:
+      - hyronic_pack/items/bow/inferno
+
+  bow10x:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1009
+      material: BOW
+      textures:
+      - hyronic_pack/items/bow/platinum_bow
+
+  bow11:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1010
+      material: BOW
+      textures:
+      - hyronic_pack/items/bow/mythril_bow
+
+  bow12:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1011
+      material: BOW
+      textures:
+      - hyronic_pack/items/bow/orichalcum_bow

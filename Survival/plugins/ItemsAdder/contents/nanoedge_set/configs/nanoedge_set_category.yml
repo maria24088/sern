@@ -1,0 +1,32 @@
+info:
+    namespace: nanoedge_set
+categories:
+    nanoedge_set:
+        name: Nano Edge Weapons And Tools Set
+        enabled: true
+        icon: nanoedge_set:nanoedge_wings
+        permission: ia.menu.nanoedge_set
+        items:
+        - nanoedge_set:nanoedgehelmet
+        - nanoedge_set:nanoedgechestplate
+        - nanoedge_set:nanoedgeleggings
+        - nanoedge_set:nanoedgeboots
+        - nanoedge_set:nanoedge_helmet
+        - nanoedge_set:nanoedge_axe
+        - nanoedge_set:nanoedge_pickaxe
+        - nanoedge_set:nanoedge_shovel
+        - nanoedge_set:nanoedge_hoe
+        - nanoedge_set:nanoedge_fishing_rod
+        - nanoedge_set:nanoedge_greatsword
+        - nanoedge_set:nanoedge_sword
+        - nanoedge_set:nanoedge_shield
+        - nanoedge_set:nanoedge_crossbow
+        - nanoedge_set:nanoedge_bow
+        - nanoedge_set:nanoedge_staff
+        - nanoedge_set:nanoedge_trident
+        - nanoedge_set:nanoedge_hammer
+        - nanoedge_set:nanoedge_spear
+        - nanoedge_set:nanoedge_scythe
+        - nanoedge_set:nanoedge_chest
+        - nanoedge_set:nanoedge_key
+        - nanoedge_set:nanoedge_wings

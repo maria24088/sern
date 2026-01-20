@@ -1,0 +1,20 @@
+  
+awakened_archer_galebow:
+  Id: stone_sword
+  Display: "<gradient:#00ff2a:#e1ff75:#00ff2a>&lGalebow"
+  Model: 2087
+  Lore:
+  - '<gradient:#00ff2a:#e1ff75:#00ff2a>The Galebow of the Awakened Archer'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Ambush} @self ~onTimer:10
+  - skill{s=Blasting_Combo} @self ~onSwing
+  - skill{s=Evasive_Shot} @self ~onUse
+  - skill{s=Volley_Of_Arrows} @self ~onCrouch
+  - skill{s=Piercing_Skyfall} @self ~onTimer:10
+  - skill{s=Rapid_Arrows} @self ~onUse
+  - skill{s=Shot_Of_Destruction} @self ~onSwing

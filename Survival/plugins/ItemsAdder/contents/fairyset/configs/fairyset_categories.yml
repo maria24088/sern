@@ -1,0 +1,34 @@
+info:
+  namespace: fairyset
+categories:
+  fairyset:
+    enabled: true
+    skip_if_already: false
+    icon: "fairyset:fairy_sword"
+    name: Fairy Weapons & Tools Set
+    permission: fairyset.menu
+    items:
+      - "fairyset:fairy_sword"
+      - "fairyset:fairy_greatsword"
+      - "fairyset:fairy_spear"
+      - "fairyset:fairy_trident"
+      - "fairyset:fairy_hammer"
+      - "fairyset:fairy_scythe"
+      - "fairyset:fairy_staff"
+      - "fairyset:fairy_bow"
+      - "fairyset:fairy_crossbow"
+      - "fairyset:fairy_axe"
+      - "fairyset:fairy_hoe"
+      - "fairyset:fairy_pickaxe"
+      - "fairyset:fairy_shovel"
+      - "fairyset:fairy_fishing_rod"
+      - "fairyset:fairy_shield"
+      - "fairyset:fairy_chest"
+      - "fairyset:fairy_chest_opening"
+      - "fairyset:fairy_key"
+      - "fairyset:fairychestplate"
+      - "fairyset:fairyleggings"
+      - "fairyset:fairyboots"
+      - "fairyset:fairyhelmet"
+      - "fairyset:fairy_head"
+      - "fairyset:fairy_wing"

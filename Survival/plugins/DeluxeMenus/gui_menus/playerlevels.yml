@@ -1,0 +1,2518 @@
+#  A DeluxeMenus advanced configuration guide
+#=========================================================
+menu_title: ':offset_-52: :fondo_medieval:'
+open_command:
+  - levels
+open_commands: []
+register_command: true
+size: 45
+# as always, only cool people can open this menu :)
+items:
+
+  'info':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmFkYzA0OGE3Y2U3OGY3ZGFkNzJhMDdkYTI3ZDg1YzA5MTY4ODFlNTUyMmVlZWQxZTNkYWYyMTdhMzhjMWEifX19
+    slot: 16
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f8af32Levels Info'
+    lore:
+      - '&8Information'
+      - '&r'
+      - '&7Description:'
+      - '&fStay online and vote for the server'
+      - '&fto progress through the player levels!'
+      - '&r'
+      - '&#f8af32◆ &fYour Playtime: &#f8af32%statistic_time_played%'
+      - '&#f8af32◆ &fYour Votes: &#f8af32%VotingPlugin_alltimetotal%'
+
+# Level 1
+
+  '1_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFiYzJiY2ZiMmJkMzc1OWU2YjFlODZmYzdhNzk1ODVlMTEyN2RkMzU3ZmMyMDI4OTNmOWRlMjQxYmM5ZTUzMCJ9fX0=
+    slot: 10
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00f8b5Level 1&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a10'
+      - '&a✔ &fPlaytime Needed: &a12 Hours'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$10,000'
+      - '&#F9CD40◆ &fVote Keys: &a2'
+      - '&#F9CD40◆ &fPremium Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+500'
+      - '&#F9CD40◆ &fNew Prefix: &#00f8b5[&l1&#00f8b5]'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+  '1_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFiYzJiY2ZiMmJkMzc1OWU2YjFlODZmYzdhNzk1ODVlMTEyN2RkMzU3ZmMyMDI4OTNmOWRlMjQxYmM5ZTUzMCJ9fX0=
+    slot: 10
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 10"
+        playtime:
+          type: javascript
+          expression: "%statistic_hours_played% >= 12"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00f8b5Level 1'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a10'
+      - '&a✔ &fPlaytime Needed: &a12 Hours'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$10,000'
+      - '&#F9CD40◆ &fVote Keys: &a2'
+      - '&#F9CD40◆ &fPremium Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+500'
+      - '&#F9CD40◆ &fNew Prefix: &#00f8b5[&l1&#00f8b5]'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.1 true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#00f8b5[&l1&#00f8b5]&7!'
+      - '[console] eco give %player_name% 10000'
+      - '[console] crates key give %player_name% premium 2'
+      - '[console] crates key give %player_name% vote 2'
+      - '[console] adjustbonusclaimblocks %player_name% 500'
+      - '[console] lp user %player_name% permission set "suffix.0.&#00f8b5[&l1&#00f8b5] &7" true'
+    
+  '1_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFiYzJiY2ZiMmJkMzc1OWU2YjFlODZmYzdhNzk1ODVlMTEyN2RkMzU3ZmMyMDI4OTNmOWRlMjQxYmM5ZTUzMCJ9fX0=
+    slot: 10
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 10"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00f8b5Level 1'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a10'
+      - '&c❌ &fPlaytime Needed: &c12 Hours'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$10,000'
+      - '&#F9CD40◆ &fVote Keys: &a2'
+      - '&#F9CD40◆ &fPremium Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+500'
+      - '&#F9CD40◆ &fNew Prefix: &#00f8b5[&l1&#00f8b5]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#00f8b5[&l1&#00f8b5]&r&c!'
+      - '[close]'
+  
+  '1_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFiYzJiY2ZiMmJkMzc1OWU2YjFlODZmYzdhNzk1ODVlMTEyN2RkMzU3ZmMyMDI4OTNmOWRlMjQxYmM5ZTUzMCJ9fX0=
+    slot: 10
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_hours_played% >= 12"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00f8b5Level 1'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c10'
+      - '&a✔ &fPlaytime Needed: &a12 Hours'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$10,000'
+      - '&#F9CD40◆ &fVote Keys: &a2'
+      - '&#F9CD40◆ &fPremium Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+500'
+      - '&#F9CD40◆ &fNew Prefix: &#00f8b5[&l1&#00f8b5]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#00f8b5[&l1&#00f8b5]&r&c!'
+      - '[close]'
+  
+  '1_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFiYzJiY2ZiMmJkMzc1OWU2YjFlODZmYzdhNzk1ODVlMTEyN2RkMzU3ZmMyMDI4OTNmOWRlMjQxYmM5ZTUzMCJ9fX0=
+    slot: 10
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00f8b5Level 1'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c10'
+      - '&c❌ &fPlaytime Needed: &c12 Hours'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$10,000'
+      - '&#F9CD40◆ &fVote Keys: &a2'
+      - '&#F9CD40◆ &fPremium Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+500'
+      - '&#F9CD40◆ &fNew Prefix: &#00f8b5[&l1&#00f8b5]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#00f8b5[&l1&#00f8b5]&r&c!'
+      - '[close]'
+      
+# Level 2
+
+  '2_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNkOWVlZWU4ODM0Njg4ODFkODM4NDhhNDZiZjMwMTI0ODVjMjNmNzU3NTNiOGZiZTg0ODczNDE0MTk4NDcifX19
+    slot: 11
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00f8e1Level 2&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a20'
+      - '&a✔ &fPlaytime Needed: &a1 Day'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$30,000'
+      - '&#F9CD40◆ &fVote Keys: &a4'
+      - '&#F9CD40◆ &fPremium Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+1,000'
+      - '&#F9CD40◆ &fNew Prefix: &#00f8e1[&l2&#00f8e1]'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+  '2_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNkOWVlZWU4ODM0Njg4ODFkODM4NDhhNDZiZjMwMTI0ODVjMjNmNzU3NTNiOGZiZTg0ODczNDE0MTk4NDcifX19
+    slot: 11
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 20"
+        playtime:
+          type: javascript
+          expression: "%statistic_days_played% >= 1"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00f8e1Level 2'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a20'
+      - '&a✔ &fPlaytime Needed: &a1 Day'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$30,000'
+      - '&#F9CD40◆ &fVote Keys: &a4'
+      - '&#F9CD40◆ &fPremium Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+1,000'
+      - '&#F9CD40◆ &fNew Prefix: &#00f8e1[&l2&#00f8e1]'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.2 true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#00f8e1[&l2&#00f8e1]&7!'
+      - '[console] eco give %player_name% 30000'
+      - '[console] crates key give %player_name% vote 4'
+      - '[console] crates key give %player_name% premium 3'
+      - '[console] adjustbonusclaimblocks %player_name% 1000'
+      - '[console] lp user %player_name% permission unset "suffix.0.&#00f8b5[&l1&#00f8b5] &7"'
+      - '[console] lp user %player_name% permission set "suffix.0.&#00f8e1[&l2&#00f8e1] &7" true'
+
+    
+  '2_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNkOWVlZWU4ODM0Njg4ODFkODM4NDhhNDZiZjMwMTI0ODVjMjNmNzU3NTNiOGZiZTg0ODczNDE0MTk4NDcifX19
+    slot: 11
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 20"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00f8e1Level 2'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a20'
+      - '&c❌ &fPlaytime Needed: &c1 Day'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$30,000'
+      - '&#F9CD40◆ &fVote Keys: &a4'
+      - '&#F9CD40◆ &fPremium Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+1,000'
+      - '&#F9CD40◆ &fNew Prefix: &#00f8e1[&l2&#00f8e1]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#00f8e1[&l2&#00f8e1]&r&c!'
+      - '[close]'
+  
+  '2_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNkOWVlZWU4ODM0Njg4ODFkODM4NDhhNDZiZjMwMTI0ODVjMjNmNzU3NTNiOGZiZTg0ODczNDE0MTk4NDcifX19
+    slot: 11
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_days_played% >= 1"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00f8e1Level 2'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c20'
+      - '&a✔ &fPlaytime Needed: &a1 Day'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$30,000'
+      - '&#F9CD40◆ &fVote Keys: &a4'
+      - '&#F9CD40◆ &fPremium Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+1,000'
+      - '&#F9CD40◆ &fNew Prefix: &#00f8e1[&l2&#00f8e1]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#00f8e1[&l2&#00f8e1]&r&c!'
+      - '[close]'
+  
+  '2_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNkOWVlZWU4ODM0Njg4ODFkODM4NDhhNDZiZjMwMTI0ODVjMjNmNzU3NTNiOGZiZTg0ODczNDE0MTk4NDcifX19
+    slot: 11
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#00f8e1Level 2'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c20'
+      - '&c❌ &fPlaytime Needed: &c1 Day'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$30,000'
+      - '&#F9CD40◆ &fVote Keys: &a4'
+      - '&#F9CD40◆ &fPremium Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+1,000'
+      - '&#F9CD40◆ &fNew Prefix: &#00f8e1[&l2&#00f8e1]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#00f8e1[&l2&#00f8e1]&r&c!'
+      - '[close]'
+
+# Level 3
+
+  '3_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWQ0ZWFlMTM5MzM4NjBhNmRmNWU4ZTk1NTY5M2I5NWE4YzNiMTVjMzZiOGI1ODc1MzJhYzA5OTZiYzM3ZTUifX19
+    slot: 12
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.3
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#7de5f8Level 3&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a40'
+      - '&a✔ &fPlaytime Needed: &a2 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$50,000'
+      - '&#F9CD40◆ &fVote Keys: &a5'
+      - '&#F9CD40◆ &fPremium Keys: &a4'
+      - '&#F9CD40◆ &fUltimate Keys: &a1'
+      - '&#F9CD40◆ &fClaim Blocks: &a+2,500'
+      - '&#F9CD40◆ &fNew Prefix: &#7de5f8[&l3&#7de5f8]'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+  '3_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWQ0ZWFlMTM5MzM4NjBhNmRmNWU4ZTk1NTY5M2I5NWE4YzNiMTVjMzZiOGI1ODc1MzJhYzA5OTZiYzM3ZTUifX19
+    slot: 12
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 40"
+        playtime:
+          type: javascript
+          expression: "%statistic_days_played% >= 2"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#7de5f8Level 3'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a40'
+      - '&a✔ &fPlaytime Needed: &a2 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$50,000'
+      - '&#F9CD40◆ &fVote Keys: &a5'
+      - '&#F9CD40◆ &fPremium Keys: &a4'
+      - '&#F9CD40◆ &fUltimate Keys: &a1'
+      - '&#F9CD40◆ &fClaim Blocks: &a+2,500'
+      - '&#F9CD40◆ &fNew Prefix: &#7de5f8[&l3&#7de5f8]'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.3 true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#7de5f8[&l3&#7de5f8]&7!'
+      - '[console] eco give %player_name% 50000'
+      - '[console] crates key give %player_name% vote 5'
+      - '[console] crates key give %player_name% premium 4'
+      - '[console] crates key give %player_name% ultimate 1'
+      - '[console] adjustbonusclaimblocks %player_name% 2500'
+      - '[console] lp user %player_name% permission set "suffix.0.&#7de5f8[&l3&#7de5f8] &7" true'
+      - '[console] lp user %player_name% permission unset "suffix.0.&#00f8e1[&l2&#00f8e1] &7"'
+    
+  '3_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWQ0ZWFlMTM5MzM4NjBhNmRmNWU4ZTk1NTY5M2I5NWE4YzNiMTVjMzZiOGI1ODc1MzJhYzA5OTZiYzM3ZTUifX19
+    slot: 12
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 40"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#7de5f8Level 3'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a40'
+      - '&c❌ &fPlaytime Needed: &c2 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$50,000'
+      - '&#F9CD40◆ &fVote Keys: &a5'
+      - '&#F9CD40◆ &fPremium Keys: &a4'
+      - '&#F9CD40◆ &fUltimate Keys: &a1'
+      - '&#F9CD40◆ &fClaim Blocks: &a+2,500'
+      - '&#F9CD40◆ &fNew Prefix: &#7de5f8[&l3&#7de5f8]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#7de5f8[&l3&#7de5f8]&r&c!'
+      - '[close]'
+  
+  '3_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWQ0ZWFlMTM5MzM4NjBhNmRmNWU4ZTk1NTY5M2I5NWE4YzNiMTVjMzZiOGI1ODc1MzJhYzA5OTZiYzM3ZTUifX19
+    slot: 12
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_days_played% >= 2"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#7de5f8Level 3'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c40'
+      - '&a✔ &fPlaytime Needed: &a2 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$50,000'
+      - '&#F9CD40◆ &fVote Keys: &a5'
+      - '&#F9CD40◆ &fPremium Keys: &a4'
+      - '&#F9CD40◆ &fUltimate Keys: &a1'
+      - '&#F9CD40◆ &fClaim Blocks: &a+2,500'
+      - '&#F9CD40◆ &fNew Prefix: &#7de5f8[&l3&#7de5f8]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#7de5f8[&l3&#7de5f8]&r&c!'
+      - '[close]'
+  
+  '3_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWQ0ZWFlMTM5MzM4NjBhNmRmNWU4ZTk1NTY5M2I5NWE4YzNiMTVjMzZiOGI1ODc1MzJhYzA5OTZiYzM3ZTUifX19
+    slot: 12
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#7de5f8Level 3'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c40'
+      - '&c❌ &fPlaytime Needed: &c2 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$50,000'
+      - '&#F9CD40◆ &fVote Keys: &a5'
+      - '&#F9CD40◆ &fPremium Keys: &a4'
+      - '&#F9CD40◆ &fUltimate Keys: &a1'
+      - '&#F9CD40◆ &fClaim Blocks: &a+2,500'
+      - '&#F9CD40◆ &fNew Prefix: &#7de5f8[&l3&#7de5f8]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#7de5f8[&l3&#7de5f8]&r&c!'
+      - '[close]'
+
+# Level 4
+
+  '4_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDJlNzhmYjIyNDI0MjMyZGMyN2I4MWZiY2I0N2ZkMjRjMWFjZjc2MDk4NzUzZjJkOWMyODU5ODI4N2RiNSJ9fX0=
+    slot: 13
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.4
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#baf88eLevel 4&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a80'
+      - '&a✔ &fPlaytime Needed: &a4 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$70,000'
+      - '&#F9CD40◆ &fVote Keys: &a6'
+      - '&#F9CD40◆ &fPremium Keys: &a5'
+      - '&#F9CD40◆ &fUltimate Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+5,000'
+      - '&#F9CD40◆ &fNew Prefix: &#baf88e[&l4&#baf88e]'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+  '4_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDJlNzhmYjIyNDI0MjMyZGMyN2I4MWZiY2I0N2ZkMjRjMWFjZjc2MDk4NzUzZjJkOWMyODU5ODI4N2RiNSJ9fX0=
+    slot: 13
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 80"
+        playtime:
+          type: javascript
+          expression: "%statistic_days_played% >= 4"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#baf88eLevel 4'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a80'
+      - '&a✔ &fPlaytime Needed: &a4 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$70,000'
+      - '&#F9CD40◆ &fVote Keys: &a6'
+      - '&#F9CD40◆ &fPremium Keys: &a5'
+      - '&#F9CD40◆ &fUltimate Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+5,000'
+      - '&#F9CD40◆ &fNew Prefix: &#baf88e[&l4&#baf88e]'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.4 true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#baf88e[&l4&#baf88e]&7!'
+      - '[console] eco give %player_name% 70000'
+      - '[console] crates key give %player_name% vote 6'
+      - '[console] crates key give %player_name% premium 5'
+      - '[console] crates key give %player_name% ultimate 2'
+      - '[console] adjustbonusclaimblocks %player_name% 5000'
+      - '[console] lp user %player_name% permission set "suffix.0.&#baf88e[&l4&#baf88e] &7" true'
+      - '[console] lp user %player_name% permission unset "suffix.0.&#7de5f8[&l3&#7de5f8] &7"'
+    
+  '4_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDJlNzhmYjIyNDI0MjMyZGMyN2I4MWZiY2I0N2ZkMjRjMWFjZjc2MDk4NzUzZjJkOWMyODU5ODI4N2RiNSJ9fX0=
+    slot: 13
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 80"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#baf88eLevel 4'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a80'
+      - '&c❌ &fPlaytime Needed: &c4 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$70,000'
+      - '&#F9CD40◆ &fVote Keys: &a6'
+      - '&#F9CD40◆ &fPremium Keys: &a5'
+      - '&#F9CD40◆ &fUltimate Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+5,000'
+      - '&#F9CD40◆ &fNew Prefix: &#baf88e[&l4&#baf88e]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#baf88e[&l4&#baf88e]&r&c!'
+      - '[close]'
+  
+  '4_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDJlNzhmYjIyNDI0MjMyZGMyN2I4MWZiY2I0N2ZkMjRjMWFjZjc2MDk4NzUzZjJkOWMyODU5ODI4N2RiNSJ9fX0=
+    slot: 13
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_days_played% >= 4"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#baf88eLevel 4'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c80'
+      - '&a✔ &fPlaytime Needed: &a4 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$70,000'
+      - '&#F9CD40◆ &fVote Keys: &a6'
+      - '&#F9CD40◆ &fPremium Keys: &a5'
+      - '&#F9CD40◆ &fUltimate Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+5,000'
+      - '&#F9CD40◆ &fNew Prefix: &#baf88e[&l4&#baf88e]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#baf88e[&l4&#baf88e]&r&c!'
+      - '[close]'
+  
+  '4_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDJlNzhmYjIyNDI0MjMyZGMyN2I4MWZiY2I0N2ZkMjRjMWFjZjc2MDk4NzUzZjJkOWMyODU5ODI4N2RiNSJ9fX0=
+    slot: 13
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#baf88eLevel 4'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c80'
+      - '&c❌ &fPlaytime Needed: &c4 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$70,000'
+      - '&#F9CD40◆ &fVote Keys: &a6'
+      - '&#F9CD40◆ &fPremium Keys: &a5'
+      - '&#F9CD40◆ &fUltimate Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+5,000'
+      - '&#F9CD40◆ &fNew Prefix: &#baf88e[&l4&#baf88e]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#baf88e[&l4&#baf88e]&r&c!'
+      - '[close]'
+
+# Level 5
+
+  '5_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ1N2UzYmM4OGE2NTczMGUzMWExNGUzZjQxZTAzOGE1ZWNmMDg5MWE2YzI0MzY0M2I4ZTU0NzZhZTIifX19
+    slot: 14
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#def862Level 5&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a125'
+      - '&a✔ &fPlaytime Needed: &a8 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$100,000'
+      - '&#F9CD40◆ &fPremium Keys: &a5'
+      - '&#F9CD40◆ &fUltimate Keys: &a3'
+      - '&#F9CD40◆ &fSeasonal Keys: &a1'
+      - '&#F9CD40◆ &fClaim Blocks: &a+7,500'
+      - '&#F9CD40◆ &fNew Prefix: &#def862[&l5&#def862]'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+  '5_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ1N2UzYmM4OGE2NTczMGUzMWExNGUzZjQxZTAzOGE1ZWNmMDg5MWE2YzI0MzY0M2I4ZTU0NzZhZTIifX19
+    slot: 14
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 125"
+        playtime:
+          type: javascript
+          expression: "%statistic_days_played% >= 8"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#def862Level 5'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a125'
+      - '&a✔ &fPlaytime Needed: &a8 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$100,000'
+      - '&#F9CD40◆ &fPremium Keys: &a5'
+      - '&#F9CD40◆ &fUltimate Keys: &a3'
+      - '&#F9CD40◆ &fSeasonal Keys: &a1'
+      - '&#F9CD40◆ &fClaim Blocks: &a+7,500'
+      - '&#F9CD40◆ &fNew Prefix: &#def862[&l5&#def862]'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.5 true'
+      - '[console] lp user %player_name% permission set dailyreward.weekly true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#def862[&l5&#def862]&7!'
+      - '[console] eco give %player_name% 100000'
+      - '[console] crates key give %player_name% premium 5'
+      - '[console] crates key give %player_name% ultimate 3'
+      - '[console] crates key give %player_name% seasonal 1'
+      - '[console] adjustbonusclaimblocks %player_name% 7500'
+      - '[console] lp user %player_name% permission set "suffix.0.&#def862[&l5&#def862] &7" true'
+      - '[console] lp user %player_name% permission unset "suffix.0.&#baf88e[&l4&#baf88e] &7"'
+    
+  '5_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ1N2UzYmM4OGE2NTczMGUzMWExNGUzZjQxZTAzOGE1ZWNmMDg5MWE2YzI0MzY0M2I4ZTU0NzZhZTIifX19
+    slot: 14
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 125"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#def862Level 5'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a125'
+      - '&c❌ &fPlaytime Needed: &c8 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$100,000'
+      - '&#F9CD40◆ &fPremium Keys: &a5'
+      - '&#F9CD40◆ &fUltimate Keys: &a3'
+      - '&#F9CD40◆ &fSeasonal Keys: &a1'
+      - '&#F9CD40◆ &fClaim Blocks: &a+7,500'
+      - '&#F9CD40◆ &fNew Prefix: &#def862[&l5&#def862]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#def862[&l5&#def862]&r&c!'
+      - '[close]'
+  
+  '5_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ1N2UzYmM4OGE2NTczMGUzMWExNGUzZjQxZTAzOGE1ZWNmMDg5MWE2YzI0MzY0M2I4ZTU0NzZhZTIifX19
+    slot: 14
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_days_played% >= 8"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#def862Level 5'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c125'
+      - '&a✔ &fPlaytime Needed: &a8 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$100,000'
+      - '&#F9CD40◆ &fPremium Keys: &a5'
+      - '&#F9CD40◆ &fUltimate Keys: &a3'
+      - '&#F9CD40◆ &fSeasonal Keys: &a1'
+      - '&#F9CD40◆ &fClaim Blocks: &a+7,500'
+      - '&#F9CD40◆ &fNew Prefix: &#def862[&l5&#def862]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#def862[&l5&#def862]&r&c!'
+      - '[close]'
+  
+  '5_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ1N2UzYmM4OGE2NTczMGUzMWExNGUzZjQxZTAzOGE1ZWNmMDg5MWE2YzI0MzY0M2I4ZTU0NzZhZTIifX19
+    slot: 14
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#def862Level 5'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c125'
+      - '&c❌ &fPlaytime Needed: &c8 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$100,000'
+      - '&#F9CD40◆ &fPremium Keys: &a5'
+      - '&#F9CD40◆ &fUltimate Keys: &a3'
+      - '&#F9CD40◆ &fSeasonal Keys: &a1'
+      - '&#F9CD40◆ &fClaim Blocks: &a+7,500'
+      - '&#F9CD40◆ &fNew Prefix: &#def862[&l5&#def862]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#def862[&l5&#def862]&r&c!'
+      - '[close]'
+
+# Level 6
+
+  '6_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzM0YjM2ZGU3ZDY3OWI4YmJjNzI1NDk5YWRhZWYyNGRjNTE4ZjVhZTIzZTcxNjk4MWUxZGNjNmIyNzIwYWIifX19
+    slot: 19
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.6
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f8af32Level 6&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a150'
+      - '&a✔ &fPlaytime Needed: &a15 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$125,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a4'
+      - '&#F9CD40◆ &fSeasonal Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+10,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f8af32[&l6&#f8af32]'
+      - '&r'
+      - '&5🌟 &dUnlocks Weekly /Rewards!'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+  '6_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzM0YjM2ZGU3ZDY3OWI4YmJjNzI1NDk5YWRhZWYyNGRjNTE4ZjVhZTIzZTcxNjk4MWUxZGNjNmIyNzIwYWIifX19
+    slot: 19
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 150"
+        playtime:
+          type: javascript
+          expression: "%statistic_days_played% >= 15"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f8af32Level 6'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a150'
+      - '&a✔ &fPlaytime Needed: &a15 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$125,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a4'
+      - '&#F9CD40◆ &fSeasonal Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+10,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f8af32[&l6&#f8af32]'
+      - ''
+      - '&5🌟 &dUnlocks Weekly /Rewards!'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.6 true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#f8af32[&l6&#f8af32]&7!'
+      - '[console] eco give %player_name% 125000'
+      - '[console] crates key give %player_name% premium 6'
+      - '[console] crates key give %player_name% ultimate 4'
+      - '[console] crates key give %player_name% seasonal 2'
+      - '[console] adjustbonusclaimblocks %player_name% 10000'
+      - '[console] lp user %player_name% permission set "suffix.0.&#f8af32[&l6&#f8af32] &7" true'
+      - '[console] lp user %player_name% permission unset "suffix.0.&#def862[&l5&#def862] &7"'
+    
+  '6_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzM0YjM2ZGU3ZDY3OWI4YmJjNzI1NDk5YWRhZWYyNGRjNTE4ZjVhZTIzZTcxNjk4MWUxZGNjNmIyNzIwYWIifX19
+    slot: 19
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 150"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f8af32Level 6'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a150'
+      - '&c❌ &fPlaytime Needed: &c15 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$125,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a4'
+      - '&#F9CD40◆ &fSeasonal Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+10,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f8af32[&l6&#f8af32]'
+      - '&r'
+      - '&5🌟 &dUnlocks Weekly /Rewards!'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#f8af32[&l6&#f8af32]&r&c!'
+      - '[close]'
+  
+  '6_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzM0YjM2ZGU3ZDY3OWI4YmJjNzI1NDk5YWRhZWYyNGRjNTE4ZjVhZTIzZTcxNjk4MWUxZGNjNmIyNzIwYWIifX19
+    slot: 19
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_days_played% >= 15"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f8af32Level 6'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c150'
+      - '&a✔ &fPlaytime Needed: &a15 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$125,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a4'
+      - '&#F9CD40◆ &fSeasonal Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+10,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f8af32[&l6&#f8af32]'
+      - '&r'
+      - '&5🌟 &dUnlocks Weekly /Rewards!'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#f8af32[&l6&#f8af32]&r&c!'
+      - '[close]'
+  
+  '6_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzM0YjM2ZGU3ZDY3OWI4YmJjNzI1NDk5YWRhZWYyNGRjNTE4ZjVhZTIzZTcxNjk4MWUxZGNjNmIyNzIwYWIifX19
+    slot: 19
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f8af32Level 6'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c150'
+      - '&c❌ &fPlaytime Needed: &c15 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$125,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a4'
+      - '&#F9CD40◆ &fSeasonal Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+10,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f8af32[&l6&#f8af32]'
+      - '&r'
+      - '&5🌟 &dUnlocks Weekly /Rewards!'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#f8af32[&l6&#f8af32]&r&c!'
+      - '[close]'
+
+# Level 7
+
+  '7_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmRiNmViMjVkMWZhYWJlMzBjZjQ0NGRjNjMzYjU4MzI0NzVlMzgwOTZiN2UyNDAyYTNlYzQ3NmRkN2I5In19fQ==
+    slot: 20
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.7
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f8a7a7Level 7&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a175'
+      - '&a✔ &fPlaytime Needed: &a20 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$150,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a5'
+      - '&#F9CD40◆ &fSeasonal Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+15,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f8a7a7[&l7&#f8a7a7]'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+  '7_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmRiNmViMjVkMWZhYWJlMzBjZjQ0NGRjNjMzYjU4MzI0NzVlMzgwOTZiN2UyNDAyYTNlYzQ3NmRkN2I5In19fQ==
+    slot: 20
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 175"
+        playtime:
+          type: javascript
+          expression: "%statistic_days_played% >= 20"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f8a7a7Level 7'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a175'
+      - '&a✔ &fPlaytime Needed: &a20 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$150,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a5'
+      - '&#F9CD40◆ &fSeasonal Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+15,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f8a7a7[&l7&#f8a7a7]'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.7 true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#f8a7a7[&l7&#f8a7a7]&7!'
+      - '[console] eco give %player_name% 150000'
+      - '[console] crates key give %player_name% premium 6'
+      - '[console] crates key give %player_name% ultimate 5'
+      - '[console] crates key give %player_name% seasonal 2'
+      - '[console] adjustbonusclaimblocks %player_name% 15000'
+      - '[console] lp user %player_name% permission set "suffix.0.&#f8a7a7[&l7&#f8a7a7] &7" true'
+      - '[console] lp user %player_name% permission unset "suffix.0.&#f8af32[&l6&#f8af32] &7"'
+    
+  '7_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmRiNmViMjVkMWZhYWJlMzBjZjQ0NGRjNjMzYjU4MzI0NzVlMzgwOTZiN2UyNDAyYTNlYzQ3NmRkN2I5In19fQ==
+    slot: 20
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 175"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f8a7a7Level 7'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a175'
+      - '&c❌ &fPlaytime Needed: &c20 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$150,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a5'
+      - '&#F9CD40◆ &fSeasonal Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+15,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f8a7a7[&l7&#f8a7a7]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#f8a7a7[&l7&#f8a7a7]&r&c!'
+      - '[close]'
+  
+  '7_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmRiNmViMjVkMWZhYWJlMzBjZjQ0NGRjNjMzYjU4MzI0NzVlMzgwOTZiN2UyNDAyYTNlYzQ3NmRkN2I5In19fQ==
+    slot: 20
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_days_played% >= 20"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f8a7a7Level 7'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c175'
+      - '&a✔ &fPlaytime Needed: &a20 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$150,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a5'
+      - '&#F9CD40◆ &fSeasonal Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+15,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f8a7a7[&l7&#f8a7a7]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#f8a7a7[&l7&#f8a7a7]&r&c!'
+      - '[close]'
+  
+  '7_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmRiNmViMjVkMWZhYWJlMzBjZjQ0NGRjNjMzYjU4MzI0NzVlMzgwOTZiN2UyNDAyYTNlYzQ3NmRkN2I5In19fQ==
+    slot: 20
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f8a7a7Level 7'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c175'
+      - '&c❌ &fPlaytime Needed: &c20 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$150,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a5'
+      - '&#F9CD40◆ &fSeasonal Keys: &a2'
+      - '&#F9CD40◆ &fClaim Blocks: &a+15,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f8a7a7[&l7&#f8a7a7]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#f8a7a7[&l7&#f8a7a7]&r&c!'
+      - '[close]'
+
+# Level 8
+
+  '8_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTkxOTQ5NzNhM2YxN2JkYTk5NzhlZDYyNzMzODM5OTcyMjI3NzRiNDU0Mzg2YzgzMTljMDRmMWY0Zjc0YzJiNSJ9fX0=
+    slot: 21
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.8
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f85555Level 8&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a200'
+      - '&a✔ &fPlaytime Needed: &a30 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$250,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a6'
+      - '&#F9CD40◆ &fSeasonal Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+20,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f85555[&l8&#f85555]'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+  '8_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTkxOTQ5NzNhM2YxN2JkYTk5NzhlZDYyNzMzODM5OTcyMjI3NzRiNDU0Mzg2YzgzMTljMDRmMWY0Zjc0YzJiNSJ9fX0=
+    slot: 21
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 200"
+        playtime:
+          type: javascript
+          expression: "%statistic_days_played% >= 30"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f85555Level 8'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a200'
+      - '&a✔ &fPlaytime Needed: &a30 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$250,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a6'
+      - '&#F9CD40◆ &fSeasonal Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+20,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f85555[&l8&#f85555]'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.8 true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#f85555[&l8&#f85555]&7!'
+      - '[console] eco give %player_name% 250000'
+      - '[console] crates key give %player_name% premium 6'
+      - '[console] crates key give %player_name% ultimate 6'
+      - '[console] crates key give %player_name% seasonal 3'
+      - '[console] adjustbonusclaimblocks %player_name% 20000'
+      - '[console] lp user %player_name% permission set "suffix.0.&#f85555[&l8&#f85555] &7" true'
+      - '[console] lp user %player_name% permission unset "suffix.0.&#f8a7a7[&l7&#f8a7a7] &7"'
+    
+  '8_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTkxOTQ5NzNhM2YxN2JkYTk5NzhlZDYyNzMzODM5OTcyMjI3NzRiNDU0Mzg2YzgzMTljMDRmMWY0Zjc0YzJiNSJ9fX0=
+    slot: 21
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 200"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f85555Level 8'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a200'
+      - '&c❌ &fPlaytime Needed: &c30 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$250,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a6'
+      - '&#F9CD40◆ &fSeasonal Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+20,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f85555[&l8&#f85555]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#f85555[&l8&#f85555]&r&c!'
+      - '[close]'
+  
+  '8_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTkxOTQ5NzNhM2YxN2JkYTk5NzhlZDYyNzMzODM5OTcyMjI3NzRiNDU0Mzg2YzgzMTljMDRmMWY0Zjc0YzJiNSJ9fX0=
+    slot: 21
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_days_played% >= 30"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f85555Level 8'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c200'
+      - '&a✔ &fPlaytime Needed: &a30 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$250,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a6'
+      - '&#F9CD40◆ &fSeasonal Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+20,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f85555[&l8&#f85555]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#f85555[&l8&#f85555]&r&c!'
+      - '[close]'
+  
+  '8_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTkxOTQ5NzNhM2YxN2JkYTk5NzhlZDYyNzMzODM5OTcyMjI3NzRiNDU0Mzg2YzgzMTljMDRmMWY0Zjc0YzJiNSJ9fX0=
+    slot: 21
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#f85555Level 8'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c200'
+      - '&c❌ &fPlaytime Needed: &c30 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$250,000'
+      - '&#F9CD40◆ &fPremium Keys: &a6'
+      - '&#F9CD40◆ &fUltimate Keys: &a6'
+      - '&#F9CD40◆ &fSeasonal Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+20,000'
+      - '&#F9CD40◆ &fNew Prefix: &#f85555[&l8&#f85555]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#f85555[&l8&#f85555]&r&c!'
+      - '[close]'
+
+# Level 9
+
+  '9_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY3Y2FmNzU5MWIzOGUxMjVhODAxN2Q1OGNmYzY0MzNiZmFmODRjZDQ5OWQ3OTRmNDFkMTBiZmYyZTViODQwIn19fQ==
+    slot: 22
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.9
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#cd9bf8Level 9&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a250'
+      - '&a✔ &fPlaytime Needed: &a40 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a7'
+      - '&#F9CD40◆ &fUltimate Keys: &a7'
+      - '&#F9CD40◆ &fSeasonal Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+30,000'
+      - '&#F9CD40◆ &fNew Prefix: &#cd9bf8[&l9&#cd9bf8]'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+  '9_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY3Y2FmNzU5MWIzOGUxMjVhODAxN2Q1OGNmYzY0MzNiZmFmODRjZDQ5OWQ3OTRmNDFkMTBiZmYyZTViODQwIn19fQ==
+    slot: 22
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 250"
+        playtime:
+          type: javascript
+          expression: "%statistic_days_played% >= 40"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#cd9bf8Level 9'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a250'
+      - '&a✔ &fPlaytime Needed: &a40 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a7'
+      - '&#F9CD40◆ &fUltimate Keys: &a7'
+      - '&#F9CD40◆ &fSeasonal Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+30,000'
+      - '&#F9CD40◆ &fNew Prefix: &#cd9bf8[&l9&#cd9bf8]'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.9 true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#cd9bf8[&l9&#cd9bf8]&7!'
+      - '[console] eco give %player_name% 500000'
+      - '[console] crates key give %player_name% premium 7'
+      - '[console] crates key give %player_name% ultimate 7'
+      - '[console] crates key give %player_name% seasonal 3'
+      - '[console] adjustbonusclaimblocks %player_name% 30000'
+      - '[console] lp user %player_name% permission set "suffix.0.&#cd9bf8[&l9&#cd9bf8] &7" true'
+      - '[console] lp user %player_name% permission unset "suffix.0.&#f85555[&l8&#f85555] &7"'
+    
+  '9_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY3Y2FmNzU5MWIzOGUxMjVhODAxN2Q1OGNmYzY0MzNiZmFmODRjZDQ5OWQ3OTRmNDFkMTBiZmYyZTViODQwIn19fQ==
+    slot: 22
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 250"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#cd9bf8Level 9'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a250'
+      - '&c❌ &fPlaytime Needed: &c40 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a7'
+      - '&#F9CD40◆ &fUltimate Keys: &a7'
+      - '&#F9CD40◆ &fSeasonal Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+30,000'
+      - '&#F9CD40◆ &fNew Prefix: &#cd9bf8[&l9&#cd9bf8]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#cd9bf8[&l9&#cd9bf8]&r&c!'
+      - '[close]'
+  
+  '9_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY3Y2FmNzU5MWIzOGUxMjVhODAxN2Q1OGNmYzY0MzNiZmFmODRjZDQ5OWQ3OTRmNDFkMTBiZmYyZTViODQwIn19fQ==
+    slot: 22
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_days_played% >= 40"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#cd9bf8Level 9'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c250'
+      - '&a✔ &fPlaytime Needed: &a40 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a7'
+      - '&#F9CD40◆ &fUltimate Keys: &a7'
+      - '&#F9CD40◆ &fSeasonal Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+30,000'
+      - '&#F9CD40◆ &fNew Prefix: &#cd9bf8[&l9&#cd9bf8]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#cd9bf8[&l9&#cd9bf8]&r&c!'
+      - '[close]'
+  
+  '9_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY3Y2FmNzU5MWIzOGUxMjVhODAxN2Q1OGNmYzY0MzNiZmFmODRjZDQ5OWQ3OTRmNDFkMTBiZmYyZTViODQwIn19fQ==
+    slot: 22
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#cd9bf8Level 9'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c250'
+      - '&c❌ &fPlaytime Needed: &c40 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a7'
+      - '&#F9CD40◆ &fUltimate Keys: &a7'
+      - '&#F9CD40◆ &fSeasonal Keys: &a3'
+      - '&#F9CD40◆ &fClaim Blocks: &a+30,000'
+      - '&#F9CD40◆ &fNew Prefix: &#cd9bf8[&l9&#cd9bf8]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#cd9bf8[&l9&#cd9bf8]&r&c!'
+      - '[close]'
+
+# Level 10
+
+  '10_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDlkZDM2NzU5MzA3ZGI4ZTJkOWY0YjBjMmFlZDI1NTZkYjFkZGNmM2Y2N2ZhMTljYzgyNmFjYmQ5NjVmZSJ9fX0=
+    slot: 23
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.10
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#bc4bf8Level 10&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a300'
+      - '&a✔ &fPlaytime Needed: &a50 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$1,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a8'
+      - '&#F9CD40◆ &fUltimate Keys: &a8'
+      - '&#F9CD40◆ &fSeasonal Keys: &a5'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#bc4bf8[&l10&#bc4bf8]'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+  '10_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDlkZDM2NzU5MzA3ZGI4ZTJkOWY0YjBjMmFlZDI1NTZkYjFkZGNmM2Y2N2ZhMTljYzgyNmFjYmQ5NjVmZSJ9fX0=
+    slot: 23
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 300"
+        playtime:
+          type: javascript
+          expression: "%statistic_days_played% >= 50"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#bc4bf8Level 10'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a300'
+      - '&a✔ &fPlaytime Needed: &a50 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$1,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a8'
+      - '&#F9CD40◆ &fUltimate Keys: &a8'
+      - '&#F9CD40◆ &fSeasonal Keys: &a5'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#bc4bf8[&l10&#bc4bf8]'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.10 true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#bc4bf8[&l10&#bc4bf8]&7!'
+      - '[console] eco give %player_name% 1000000'
+      - '[console] crates key give %player_name% premium 8'
+      - '[console] crates key give %player_name% ultimate 8'
+      - '[console] crates key give %player_name% seasonal 5'
+      - '[console] adjustbonusclaimblocks %player_name% 50000'
+      - '[console] lp user %player_name% permission set "suffix.0.&#bc4bf8[&l10&#bc4bf8] &7" true'
+      - '[console] lp user %player_name% permission unset "suffix.0.&#cd9bf8[&l9&#cd9bf8] &7"'
+    
+  '10_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDlkZDM2NzU5MzA3ZGI4ZTJkOWY0YjBjMmFlZDI1NTZkYjFkZGNmM2Y2N2ZhMTljYzgyNmFjYmQ5NjVmZSJ9fX0=
+    slot: 23
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 300"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#bc4bf8Level 10'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a300'
+      - '&c❌ &fPlaytime Needed: &c50 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$1,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a8'
+      - '&#F9CD40◆ &fUltimate Keys: &a8'
+      - '&#F9CD40◆ &fSeasonal Keys: &a5'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#bc4bf8[&l10&#bc4bf8]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#bc4bf8[&l10&#bc4bf8]&r&c!'
+      - '[close]'
+  
+  '10_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDlkZDM2NzU5MzA3ZGI4ZTJkOWY0YjBjMmFlZDI1NTZkYjFkZGNmM2Y2N2ZhMTljYzgyNmFjYmQ5NjVmZSJ9fX0=
+    slot: 23
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_days_played% >= 50"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#bc4bf8Level 10'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c300'
+      - '&a✔ &fPlaytime Needed: &a50 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$1,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a8'
+      - '&#F9CD40◆ &fUltimate Keys: &a8'
+      - '&#F9CD40◆ &fSeasonal Keys: &a5'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#bc4bf8[&l10&#bc4bf8]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#bc4bf8[&l10&#bc4bf8]&r&c!'
+      - '[close]'
+  
+  '10_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDlkZDM2NzU5MzA3ZGI4ZTJkOWY0YjBjMmFlZDI1NTZkYjFkZGNmM2Y2N2ZhMTljYzgyNmFjYmQ5NjVmZSJ9fX0=
+    slot: 23
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#bc4bf8Level 10'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c300'
+      - '&c❌ &fPlaytime Needed: &c50 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$1,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a8'
+      - '&#F9CD40◆ &fUltimate Keys: &a8'
+      - '&#F9CD40◆ &fSeasonal Keys: &a5'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#bc4bf8[&l10&#bc4bf8]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#bc4bf8[&l10&#bc4bf8]&r&c!'
+      - '[close]'
+
+# Level 11
+
+  '11_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDU5NzNiMTFkZjcyNmMyNDk5YjRkOWY5OWQ3ZGU4ZjVmOTgxNjNjZjQ1MWFlOTVhZGY1N2NlODQzOGIxMjgifX19
+    slot: 28
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.11
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fc1061Level 11&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a350'
+      - '&a✔ &fPlaytime Needed: &a60 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$2,500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a10'
+      - '&#F9CD40◆ &fUltimate Keys: &a10'
+      - '&#F9CD40◆ &fSeasonal Keys: &a6'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#fc1061[&l11&#fc1061]'
+      - '&r'
+      - '&3🌟 &bUnlocks Monthly /Rewards!'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+  '11_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDU5NzNiMTFkZjcyNmMyNDk5YjRkOWY5OWQ3ZGU4ZjVmOTgxNjNjZjQ1MWFlOTVhZGY1N2NlODQzOGIxMjgifX19
+    slot: 28
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 350"
+        playtime:
+          type: javascript
+          expression: "%statistic_days_played% >= 60"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fc1061Level 11'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a350'
+      - '&a✔ &fPlaytime Needed: &a60 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$2,500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a10'
+      - '&#F9CD40◆ &fUltimate Keys: &a10'
+      - '&#F9CD40◆ &fSeasonal Keys: &a6'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#fc1061[&l11&#fc1061]'
+      - '&r'
+      - '&3🌟 &bUnlocks Monthly /Rewards!'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.11 true'
+      - '[console] lp user %player_name% permission set dailyreward.monthly true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#fc1061[&l11&#fc1061]&7!'
+      - '[console] eco give %player_name% 2500000'
+      - '[console] crates key give %player_name% premium 10'
+      - '[console] crates key give %player_name% ultimate 10'
+      - '[console] crates key give %player_name% seasonal 6'
+      - '[console] adjustbonusclaimblocks %player_name% 50000'
+      - '[console] lp user %player_name% permission set "suffix.0.&#fc1061[&l11&#fc1061] &7" true'
+      - '[console] lp user %player_name% permission unset "suffix.0.&#bc4bf8[&l10&#bc4bf8] &7"'
+    
+  '11_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDU5NzNiMTFkZjcyNmMyNDk5YjRkOWY5OWQ3ZGU4ZjVmOTgxNjNjZjQ1MWFlOTVhZGY1N2NlODQzOGIxMjgifX19
+    slot: 28
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 350"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fc1061Level 11'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a350'
+      - '&c❌ &fPlaytime Needed: &c60 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$2,500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a10'
+      - '&#F9CD40◆ &fUltimate Keys: &a10'
+      - '&#F9CD40◆ &fSeasonal Keys: &a6'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#fc1061[&l11&#fc1061]'
+      - '&r'
+      - '&3🌟 &bUnlocks Monthly /Rewards!'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#fc1061[&l11&#fc1061]&r&c!'
+      - '[close]'
+  
+  '11_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDU5NzNiMTFkZjcyNmMyNDk5YjRkOWY5OWQ3ZGU4ZjVmOTgxNjNjZjQ1MWFlOTVhZGY1N2NlODQzOGIxMjgifX19
+    slot: 28
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_days_played% >= 60"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fc1061Level 11'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c350'
+      - '&a✔ &fPlaytime Needed: &a60 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$2,500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a10'
+      - '&#F9CD40◆ &fUltimate Keys: &a10'
+      - '&#F9CD40◆ &fSeasonal Keys: &a6'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#fc1061[&l11&#fc1061]'
+      - '&r'
+      - '&3🌟 &bUnlocks Monthly /Rewards!'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#fc1061[&l11&#fc1061]&r&c!'
+      - '[close]'
+  
+  '11_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDU5NzNiMTFkZjcyNmMyNDk5YjRkOWY5OWQ3ZGU4ZjVmOTgxNjNjZjQ1MWFlOTVhZGY1N2NlODQzOGIxMjgifX19
+    slot: 28
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fc1061Level 11'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c350'
+      - '&c❌ &fPlaytime Needed: &c60 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$2,500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a10'
+      - '&#F9CD40◆ &fUltimate Keys: &a10'
+      - '&#F9CD40◆ &fSeasonal Keys: &a6'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#fc1061[&l11&#fc1061]'
+      - '&r'
+      - '&3🌟 &bUnlocks Monthly /Rewards!'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#fc1061[&l11&#fc1061]&r&c!'
+      - '[close]'
+
+# Level 12
+
+  '12_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTE2YTdiOGJhNzlhMmVmZTVkOTcxMWY5ZjM2Y2M2YjI4ZTMxYjQ3NGFjNWE0OTI0YjRhZGY5ZmU5ZWExOWEifX19
+    slot: 29
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.12
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fc1818Level 12&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a400'
+      - '&a✔ &fPlaytime Needed: &a70 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$5,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a12'
+      - '&#F9CD40◆ &fUltimate Keys: &a12'
+      - '&#F9CD40◆ &fSeasonal Keys: &a8'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#fc1818[&l12&#fc1818]'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+  '12_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTE2YTdiOGJhNzlhMmVmZTVkOTcxMWY5ZjM2Y2M2YjI4ZTMxYjQ3NGFjNWE0OTI0YjRhZGY5ZmU5ZWExOWEifX19
+    slot: 29
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 400"
+        playtime:
+          type: javascript
+          expression: "%statistic_days_played% >= 70"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fc1818Level 12'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a400'
+      - '&a✔ &fPlaytime Needed: &a70 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$5,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a12'
+      - '&#F9CD40◆ &fUltimate Keys: &a12'
+      - '&#F9CD40◆ &fSeasonal Keys: &a8'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#fc1818[&l12&#fc1818]'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.12 true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#fc1818[&l12&#fc1818]&7!'
+      - '[console] eco give %player_name% 5000000'
+      - '[console] crates key give %player_name% premium 12'
+      - '[console] crates key give %player_name% ultimate 12'
+      - '[console] crates key give %player_name% seasonal 8'
+      - '[console] adjustbonusclaimblocks %player_name% 50000'
+      - '[console] lp user %player_name% permission set "suffix.0.&#fc1818[&l12&#fc1818] &7" true'
+      - '[console] lp user %player_name% permission unset "suffix.0.&#fc1061[&l11&#fc1061] &7"'
+    
+  '12_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTE2YTdiOGJhNzlhMmVmZTVkOTcxMWY5ZjM2Y2M2YjI4ZTMxYjQ3NGFjNWE0OTI0YjRhZGY5ZmU5ZWExOWEifX19
+    slot: 29
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 400"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fc1818Level 12'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a400'
+      - '&c❌ &fPlaytime Needed: &c70 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$5,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a12'
+      - '&#F9CD40◆ &fUltimate Keys: &a12'
+      - '&#F9CD40◆ &fSeasonal Keys: &a8'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#fc1818[&l12&#fc1818]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#fc1818[&l12&#fc1818]&r&c!'
+      - '[close]'
+  
+  '12_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTE2YTdiOGJhNzlhMmVmZTVkOTcxMWY5ZjM2Y2M2YjI4ZTMxYjQ3NGFjNWE0OTI0YjRhZGY5ZmU5ZWExOWEifX19
+    slot: 29
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_days_played% >= 70"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fc1818Level 12'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c400'
+      - '&a✔ &fPlaytime Needed: &a70 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$5,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a12'
+      - '&#F9CD40◆ &fUltimate Keys: &a12'
+      - '&#F9CD40◆ &fSeasonal Keys: &a8'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#fc1818[&l12&#fc1818]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#fc1818[&l12&#fc1818]&r&c!'
+      - '[close]'
+  
+  '12_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTE2YTdiOGJhNzlhMmVmZTVkOTcxMWY5ZjM2Y2M2YjI4ZTMxYjQ3NGFjNWE0OTI0YjRhZGY5ZmU5ZWExOWEifX19
+    slot: 29
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#fc1818Level 12'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c400'
+      - '&c❌ &fPlaytime Needed: &c70 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$5,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a12'
+      - '&#F9CD40◆ &fUltimate Keys: &a12'
+      - '&#F9CD40◆ &fSeasonal Keys: &a8'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#fc1818[&l12&#fc1818]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#fc1818[&l12&#fc1818]&r&c!'
+      - '[close]'
+
+# Level 13
+
+  '13_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q5OWZkNTE2YjUxOWE4ZTk2ZmY5OGNkNzA1MzJhNWQ1ODFhNjYwOTBhZTY1ZTI3Y2I5ZTUzYTZjM2Q1YzUyIn19fQ==
+    slot: 30
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.13
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#980000Level 13&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a450'
+      - '&a✔ &fPlaytime Needed: &a80 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$10,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a14'
+      - '&#F9CD40◆ &fUltimate Keys: &a14'
+      - '&#F9CD40◆ &fSeasonal Keys: &a9'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#980000[&l13&#980000]'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+  '13_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q5OWZkNTE2YjUxOWE4ZTk2ZmY5OGNkNzA1MzJhNWQ1ODFhNjYwOTBhZTY1ZTI3Y2I5ZTUzYTZjM2Q1YzUyIn19fQ==
+    slot: 30
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 450"
+        playtime:
+          type: javascript
+          expression: "%statistic_days_played% >= 80"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#980000Level 13'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a450'
+      - '&a✔ &fPlaytime Needed: &a80 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$10,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a14'
+      - '&#F9CD40◆ &fUltimate Keys: &a14'
+      - '&#F9CD40◆ &fSeasonal Keys: &a9'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#980000[&l13&#980000]'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.13 true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#980000[&l13&#980000]&7!'
+      - '[console] eco give %player_name% 10000000'
+      - '[console] crates key give %player_name% premium 14'
+      - '[console] crates key give %player_name% ultimate 14'
+      - '[console] crates key give %player_name% seasonal 9'
+      - '[console] adjustbonusclaimblocks %player_name% 50000'
+      - '[console] lp user %player_name% permission set "suffix.0.&#980000[&l13&#980000] &7" true'
+      - '[console] lp user %player_name% permission unset "suffix.0.&#fc1818[&l12&#fc1818] &7"'
+    
+  '13_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q5OWZkNTE2YjUxOWE4ZTk2ZmY5OGNkNzA1MzJhNWQ1ODFhNjYwOTBhZTY1ZTI3Y2I5ZTUzYTZjM2Q1YzUyIn19fQ==
+    slot: 30
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 450"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#980000Level 13'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a450'
+      - '&c❌ &fPlaytime Needed: &c80 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$10,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a14'
+      - '&#F9CD40◆ &fUltimate Keys: &a14'
+      - '&#F9CD40◆ &fSeasonal Keys: &a9'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#980000[&l13&#980000]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#980000[&l13&#980000]&r&c!'
+      - '[close]'
+  
+  '13_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q5OWZkNTE2YjUxOWE4ZTk2ZmY5OGNkNzA1MzJhNWQ1ODFhNjYwOTBhZTY1ZTI3Y2I5ZTUzYTZjM2Q1YzUyIn19fQ==
+    slot: 30
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_days_played% >= 80"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#980000Level 13'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c450'
+      - '&a✔ &fPlaytime Needed: &a80 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$10,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a14'
+      - '&#F9CD40◆ &fUltimate Keys: &a14'
+      - '&#F9CD40◆ &fSeasonal Keys: &a9'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#980000[&l13&#980000]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#980000[&l13&#980000]&r&c!'
+      - '[close]'
+  
+  '13_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q5OWZkNTE2YjUxOWE4ZTk2ZmY5OGNkNzA1MzJhNWQ1ODFhNjYwOTBhZTY1ZTI3Y2I5ZTUzYTZjM2Q1YzUyIn19fQ==
+    slot: 30
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#980000Level 13'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c450'
+      - '&c❌ &fPlaytime Needed: &c80 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$10,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a14'
+      - '&#F9CD40◆ &fUltimate Keys: &a14'
+      - '&#F9CD40◆ &fSeasonal Keys: &a9'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#980000[&l13&#980000]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#980000[&l13&#980000]&r&c!'
+      - '[close]'
+
+# Level 14
+
+  '14_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhjYzk1MTkzOTZjMWIyMWU0ZWFjYmM3NzUyMjQxYmRlYmIzMmE4NmQ2MzhlMzlhOTg3OGY0NzA4MzI5NWIifX19
+    slot: 31
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.14
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#4d5898Level 14&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a500'
+      - '&a✔ &fPlaytime Needed: &a90 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$12,500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a15'
+      - '&#F9CD40◆ &fUltimate Keys: &a15'
+      - '&#F9CD40◆ &fSeasonal Keys: &a10'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#4d5898[&l14&#4d5898]'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+  '14_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhjYzk1MTkzOTZjMWIyMWU0ZWFjYmM3NzUyMjQxYmRlYmIzMmE4NmQ2MzhlMzlhOTg3OGY0NzA4MzI5NWIifX19
+    slot: 31
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 500"
+        playtime:
+          type: javascript
+          expression: "%statistic_days_played% >= 90"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#4d5898Level 14'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a500'
+      - '&a✔ &fPlaytime Needed: &a90 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$12,500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a15'
+      - '&#F9CD40◆ &fUltimate Keys: &a15'
+      - '&#F9CD40◆ &fSeasonal Keys: &a10'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#4d5898[&l14&#4d5898]'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.14 true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#4d5898[&l14&#4d5898]&7!'
+      - '[console] eco give %player_name% 12500000'
+      - '[console] crates key give %player_name% premium 15'
+      - '[console] crates key give %player_name% ultimate 15'
+      - '[console] crates key give %player_name% seasonal 10'
+      - '[console] adjustbonusclaimblocks %player_name% 50000'
+      - '[console] lp user %player_name% permission set "suffix.0.&#4d5898[&l14&#4d5898] &7" true'
+      - '[console] lp user %player_name% permission unset "suffix.0.&#980000[&l13&#980000] &7"'
+    
+  '14_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhjYzk1MTkzOTZjMWIyMWU0ZWFjYmM3NzUyMjQxYmRlYmIzMmE4NmQ2MzhlMzlhOTg3OGY0NzA4MzI5NWIifX19
+    slot: 31
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 500"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#4d5898Level 14'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a500'
+      - '&c❌ &fPlaytime Needed: &c90 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$12,500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a15'
+      - '&#F9CD40◆ &fUltimate Keys: &a15'
+      - '&#F9CD40◆ &fSeasonal Keys: &a10'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#4d5898[&l14&#4d5898]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#4d5898[&l14&#4d5898]&r&c!'
+      - '[close]'
+  
+  '14_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhjYzk1MTkzOTZjMWIyMWU0ZWFjYmM3NzUyMjQxYmRlYmIzMmE4NmQ2MzhlMzlhOTg3OGY0NzA4MzI5NWIifX19
+    slot: 31
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_days_played% >= 90"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#4d5898Level 14'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c500'
+      - '&a✔ &fPlaytime Needed: &a90 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$12,500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a15'
+      - '&#F9CD40◆ &fUltimate Keys: &a15'
+      - '&#F9CD40◆ &fSeasonal Keys: &a10'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#4d5898[&l14&#4d5898]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#4d5898[&l14&#4d5898]&r&c!'
+      - '[close]'
+  
+  '14_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhjYzk1MTkzOTZjMWIyMWU0ZWFjYmM3NzUyMjQxYmRlYmIzMmE4NmQ2MzhlMzlhOTg3OGY0NzA4MzI5NWIifX19
+    slot: 31
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#4d5898Level 14'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c500'
+      - '&c❌ &fPlaytime Needed: &c90 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$12,500,000'
+      - '&#F9CD40◆ &fPremium Keys: &a15'
+      - '&#F9CD40◆ &fUltimate Keys: &a15'
+      - '&#F9CD40◆ &fSeasonal Keys: &a10'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#4d5898[&l14&#4d5898]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#4d5898[&l14&#4d5898]&r&c!'
+      - '[close]'
+
+# Level 15
+
+  '15_unlocked':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjhmYjZmNzI0NTYzZmY4MmE4M2FiMTdlZGI5YjhhYmExZDI4YjViMzI0NDQ0MDU3ZmVjZGE1YjE2N2NkMiJ9fX0=
+    slot: 32
+    priority: 1
+    view_requirement:
+      requirements:
+        getperm:
+          type: has permission
+          permission: playerlevels.15
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#207d12Level 15&r &7(&aUnlocked&7)'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a550'
+      - '&a✔ &fPlaytime Needed: &a100 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$15,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a17'
+      - '&#F9CD40◆ &fUltimate Keys: &a17'
+      - '&#F9CD40◆ &fSeasonal Keys: &a12'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#207d12[&l15&#207d12]'
+      - ''
+      - '&6→ &eYou have already unlocked this level!'
+
+# true
+# 90775
+# 164339
+# 35763
+# %%__FILEHASH__%%
+
+  '15_1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjhmYjZmNzI0NTYzZmY4MmE4M2FiMTdlZGI5YjhhYmExZDI4YjViMzI0NDQ0MDU3ZmVjZGE1YjE2N2NkMiJ9fX0=
+    slot: 32
+    priority: 2
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 550"
+        playtime:
+          type: javascript
+          expression: "%statistic_days_played% >= 100"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#207d12Level 15'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a550'
+      - '&a✔ &fPlaytime Needed: &a100 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$15,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a17'
+      - '&#F9CD40◆ &fUltimate Keys: &a17'
+      - '&#F9CD40◆ &fSeasonal Keys: &a12'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#207d12[&l15&#207d12]'
+      - ''
+      - '&2→ &aClick to rank up!'
+    left_click_commands:
+      - '[close]'
+      - '[console] lp user %player_name% permission set playerlevels.15 true'
+      - '[broadcast] &3⛏ &bLevels &8| &f%player_name% &7has just reached Level &#207d12[&l15&#207d12]&7!'
+      - '[console] eco give %player_name% 15000000'
+      - '[console] crates key give %player_name% premium 17'
+      - '[console] crates key give %player_name% ultimate 17'
+      - '[console] crates key give %player_name% seasonal 12'
+      - '[console] adjustbonusclaimblocks %player_name% 50000'
+      - '[console] lp user %player_name% permission set "suffix.0.&#207d12[&l15&#207d12] &7" true'
+      - '[console] lp user %player_name% permission unset "suffix.0.&#4d5898[&l14&#4d5898] &7"'
+    
+  '15_2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjhmYjZmNzI0NTYzZmY4MmE4M2FiMTdlZGI5YjhhYmExZDI4YjViMzI0NDQ0MDU3ZmVjZGE1YjE2N2NkMiJ9fX0=
+    slot: 32
+    priority: 3
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%VotingPlugin_alltimetotal% >= 550"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#207d12Level 15'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&a✔ &fVotes Needed: &a550'
+      - '&c❌ &fPlaytime Needed: &c100 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$15,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a17'
+      - '&#F9CD40◆ &fUltimate Keys: &a17'
+      - '&#F9CD40◆ &fSeasonal Keys: &a12'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#207d12[&l15&#207d12]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#207d12[&l15&#207d12]&r&c!'
+      - '[close]'
+  
+  '15_3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjhmYjZmNzI0NTYzZmY4MmE4M2FiMTdlZGI5YjhhYmExZDI4YjViMzI0NDQ0MDU3ZmVjZGE1YjE2N2NkMiJ9fX0=
+    slot: 32
+    priority: 4
+    view_requirement:
+      requirements:
+        votes:
+          type: javascript
+          expression: "%statistic_days_played% >= 100"
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#207d12Level 15'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c550'
+      - '&a✔ &fPlaytime Needed: &a100 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$15,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a17'
+      - '&#F9CD40◆ &fUltimate Keys: &a17'
+      - '&#F9CD40◆ &fSeasonal Keys: &a12'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#207d12[&l15&#207d12]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#207d12[&l15&#207d12]&r&c!'
+      - '[close]'
+  
+  '15_4':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjhmYjZmNzI0NTYzZmY4MmE4M2FiMTdlZGI5YjhhYmExZDI4YjViMzI0NDQ0MDU3ZmVjZGE1YjE2N2NkMiJ9fX0=
+    slot: 32
+    priority: 5
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#207d12Level 15'
+    lore:
+      - '&8Playtime Level'
+      - '&r'
+      - '&7Requirements:'
+      - '&c❌ &fVotes Needed: &c550'
+      - '&c❌ &fPlaytime Needed: &c100 Days'
+      - '&r'
+      - '&#F9CD40Rewards:'
+      - '&#F9CD40◆ &fMoney: &a$15,000,000'
+      - '&#F9CD40◆ &fPremium Keys: &a17'
+      - '&#F9CD40◆ &fUltimate Keys: &a17'
+      - '&#F9CD40◆ &fSeasonal Keys: &a12'
+      - '&#F9CD40◆ &fClaim Blocks: &a+50,000'
+      - '&#F9CD40◆ &fNew Prefix: &#207d12[&l15&#207d12]'
+      - ''
+      - '&4→ &cYou do not meet the requirements!'
+    left_click_commands:
+      - '[message] &4&l❌ &8| &cYou do not meet the requirements for Level &#207d12[&l15&#207d12]&r&c!'
+      - '[close]'

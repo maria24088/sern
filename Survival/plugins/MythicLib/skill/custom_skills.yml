@@ -1,0 +1,14 @@
+FURIA_IGNEA:
+    mythicmobs-skill-id: BerserkerScript
+    modifiers:
+    - damage
+
+    extra-skills:
+        BerserkerScript:
+            Conditions:
+            - burning{t=self} true
+            Skills:
+            # Usamos mmodamage
+            - mmodamage{amount="<modifier.damage>";types=SKILL,PHYSICAL} @Target
+            # Mensaje de debug (bórralo cuando funcione)
+            - message{msg="&a[TEST] &f¡Furia Activada! Daño:<modifier.damage>";actionbar=true} @Self

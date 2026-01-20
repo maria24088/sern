@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  curtaingreen:
+    display_name: "Curtain Green"
+    permission: livingroom.curtaingreen
+    resource:
+      material: PAPER
+      generate: false
+      model_path: curtaingreen
+    behaviours:
+      furniture:
+        light_level: 13

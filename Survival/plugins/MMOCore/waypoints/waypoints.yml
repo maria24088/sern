@@ -1,0 +1,38 @@
+
+waypoint_1:
+
+  name: 'Waypoint 1'
+
+  location: 'world 2276 52 2488 178 0'
+
+  radius: 0.0
+
+  lore: {}
+
+  cost:
+
+    dynamic-use: 0
+
+  option:
+
+    unlockable: true
+
+    enable-menu: true
+
+    dynamic: true
+
+    default: false
+    
+    
+waypoint_2:
+  name: 'Waypoint 2'
+  location: 'world -2955 131 -202 142 0'
+  radius: 0.0
+  lore: {}
+  cost:
+    dynamic-use: 0
+  option:
+    unlockable: true
+    enable-menu: true
+    dynamic: true
+    default: false

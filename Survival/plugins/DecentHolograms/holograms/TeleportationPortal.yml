@@ -1,0 +1,26 @@
+location: SpawnRPG:-8.500:92.000:153.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:END_CRYSTAL'
+    height: 0.6
+  - content: '&dPortal de Teletransporte'
+    height: 0.3
+  - content: '&7¡Explora el mundo!'
+    height: 0.3
+  - content: '&f'
+    height: 0.3
+  - content: '&fEste portal abrirá la GUI /rtp,'
+    height: 0.3
+  - content: '&f¡permitiéndote teletransportarte a todos los mundos!'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&b¡Usa &n/SpawnRPG&b para volver!'
+    height: 0.3
+  actions: {}

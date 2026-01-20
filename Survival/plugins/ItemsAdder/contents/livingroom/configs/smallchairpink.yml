@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  smallchairpink:
+    display_name: "Small Chair Pink"
+    permission: livingroom.smallchairpink
+    resource:
+      material: PAPER
+      generate: false
+      model_path: smallchairpink
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.1

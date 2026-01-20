@@ -1,0 +1,101 @@
+garlic:
+  type: FURNITURE
+  pot-whitelist:
+  - default
+  seed: customcrops:garlic_seeds
+  random-rotation: true
+  max-points: 3
+  events:
+    plant:
+      action_1:
+        type: sound
+        value:
+          source: player
+          key: minecraft:item.hoe.till
+          volume: 1
+          pitch: 1
+    break:
+      action_1:
+        type: sound
+        value:
+          source: player
+          key: minecraft:block.crop.break
+          volume: 1
+          pitch: 1
+  points:
+    '0':
+      model: customcrops:garlic_stage_1
+      hologram-offset-correction: -0.4
+    '1':
+      model: customcrops:garlic_stage_2
+      hologram-offset-correction: -0.4
+    '2':
+      model: customcrops:garlic_stage_3
+      hologram-offset-correction: -0.4
+    '3':
+      model: customcrops:garlic_stage_4
+      hologram-offset-correction: -0.4
+      events:
+        break:
+          action_1:
+            type: quality-crops
+            value:
+              min: 4
+              max: 4
+              items:
+                '1': customcrops:garlic
+                '2': customcrops:garlic_silver_star
+                '3': customcrops:garlic_golden_star
+          action_2:
+            type: drop-item
+            value:
+              item: customcrops:garlic_seeds
+              min: 1
+              max: 2
+            chance: 1
+        interact:
+          empty_hand_action:
+            type: conditional
+            value:
+              conditions:
+                requirement_empty_hand:
+                  type: item-in-hand
+                  value:
+                    item: AIR
+              actions:
+                action_0:
+                  type: swing-hand
+                  value: true
+                action_1:
+                  type: break
+                  value: true
+  grow-conditions: {}
+  death-conditions: {}
+  custom-bone-meal:
+    bone_meal_1:
+      item: BONE_MEAL
+      chance:
+        '2': 0.2
+        '1': 0.6
+      actions:
+        swing_action:
+          type: swing-hand
+          value: true
+        particle_action:
+          type: particle
+          value:
+            particle: VILLAGER_HAPPY
+            count: 5
+            x: 0.5
+            y: 0.5
+            z: 0.5
+            offset-x: 0.3
+            offset-y: 0.3
+            offset-z: 0.3
+        sound_action:
+          type: sound
+          value:
+            key: minecraft:item.bone_meal.use
+            source: player
+            volume: 1
+            pitch: 1

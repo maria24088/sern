@@ -1,0 +1,238 @@
+# For textures only!!!
+info:
+  namespace: mmoitems_pack
+items:
+
+  derunator:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1000
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/derunator
+
+  rune1:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1001
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/vitality_1
+
+  rune2:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1002
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/vitality_2
+
+  rune3:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1003
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/vitality_3
+
+  rune4:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1004
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/vitality_4
+
+  rune5:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1005
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/vitality_5
+
+  rune6:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1006
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/precision_1
+
+  rune7:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1007
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/precision_2
+
+  rune8:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1008
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/precision_3
+
+  rune9:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1009
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/precision_4
+
+  rune10:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1010
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/precision_5
+
+  rune11:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1011
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/sorcery_1
+
+  rune12:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1012
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/sorcery_2
+
+  rune13:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1013
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/sorcery_3
+
+  rune14:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1014
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/sorcery_4
+
+  rune15:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1015
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/sorcery_5
+
+  rune16:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1016
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/agility_1
+
+  rune17:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1017
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/agility_2
+
+  rune18:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1018
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/agility_3
+
+  rune19:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1019
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/agility_4
+
+  rune20:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1020
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/agility_5
+
+  rune21:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1021
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/time_1
+
+  rune22:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1022
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/time_2
+
+  rune23:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1023
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/time_3
+
+  rune24:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1024
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/time_4
+
+  rune25:
+    enabled: true
+    resource:
+      generate: true
+      model_id: 1025
+      material: EMERALD
+      textures:
+      - hyronic_pack/items/rune/time_5

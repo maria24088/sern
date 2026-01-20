@@ -1,0 +1,191 @@
+info:
+  namespace: elitecreatures
+armors_rendering:
+  flower_garden_animated_weapon_set:
+    color: "#8c1968"
+    layer_1: flower_garden_animated_weapon_set/armor/flowergarden_armor_layer_1
+    layer_2: flower_garden_animated_weapon_set/armor/flowergarden_armor_layer_2
+    use_color: false
+items:
+
+  flower_garden_animated_weapon_set_helmet:
+    display_name: Flower Garden Helmet
+    resource:
+      generate: true
+      textures:
+        - flower_garden_animated_weapon_set/armor/flowergarden_helmet.png
+    specific_properties:
+      armor:
+        slot: head
+        custom_armor: flower_garden_animated_weapon_set
+  flower_garden_animated_weapon_set_chestplate:
+    display_name: Flower Garden Chestplate
+    resource:
+      generate: true
+      textures:
+        - flower_garden_animated_weapon_set/armor/flowergarden_chestplate.png
+    specific_properties:
+      armor:
+        slot: chest
+        custom_armor: flower_garden_animated_weapon_set
+  flower_garden_animated_weapon_set_leggings:
+    display_name: Flower Garden Leggings
+    resource:
+      generate: true
+      textures:
+        - flower_garden_animated_weapon_set/armor/flowergarden_leggings.png
+    specific_properties:
+      armor:
+        slot: legs
+        custom_armor: flower_garden_animated_weapon_set
+  flower_garden_animated_weapon_set_boots:
+    display_name: Flower Garden Boots
+    resource:
+      generate: true
+      textures:
+        - flower_garden_animated_weapon_set/armor/flowergarden_boots.png
+    specific_properties:
+      armor:
+        slot: FEET
+        custom_armor: flower_garden_animated_weapon_set
+
+  flower_garden_animated_weapon_set_axe:
+    display_name: Axe
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: flower_garden_animated_weapon_set/axe
+  flower_garden_animated_weapon_set_bow:
+    display_name: Bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: flower_garden_animated_weapon_set/bow
+  flower_garden_animated_weapon_set_chest:
+    display_name: Chest
+    resource:
+      material: PAPER
+      generate: false
+      model_path: flower_garden_animated_weapon_set/chest
+    behaviours:
+      furniture:
+        solid: true
+        fixed_rotation: true
+        entity: armor_stand
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  flower_garden_animated_weapon_set_crossbow:
+    display_name: Crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: flower_garden_animated_weapon_set/crossbow
+  flower_garden_animated_weapon_set_dagger:
+    display_name: Dagger
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: flower_garden_animated_weapon_set/dagger
+  flower_garden_animated_weapon_set_fishing_rod:
+    display_name: Fishing Rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: flower_garden_animated_weapon_set/fishing_rod
+  flower_garden_animated_weapon_set_glove:
+    display_name: Glove
+    resource:
+      material: PAPER
+      generate: false
+      model_path: flower_garden_animated_weapon_set/glove
+  flower_garden_animated_weapon_set_hammer:
+    display_name: Hammer
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: flower_garden_animated_weapon_set/hammer
+  flower_garden_animated_weapon_set_hat:
+    display_name: Hat
+    resource:
+      material: PAPER
+      generate: false
+      model_path: flower_garden_animated_weapon_set/hat
+    behaviours:
+      hat: true
+  flower_garden_animated_weapon_set_hoe:
+    display_name: Hoe
+    resource:
+      material: DIAMOND_HOE
+      generate: false
+      model_path: flower_garden_animated_weapon_set/hoe
+  flower_garden_animated_weapon_set_key:
+    display_name: Key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: flower_garden_animated_weapon_set/key
+  flower_garden_animated_weapon_set_pickaxe:
+    display_name: Pickaxe
+    resource:
+      material: DIAMOND_PICKAXE
+      generate: false
+      model_path: flower_garden_animated_weapon_set/pickaxe
+  flower_garden_animated_weapon_set_scythe:
+    display_name: Scythe
+    resource:
+      material: DIAMOND_HOE
+      generate: false
+      model_path: flower_garden_animated_weapon_set/scythe
+  flower_garden_animated_weapon_set_shield:
+    display_name: Shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: flower_garden_animated_weapon_set/shield
+  flower_garden_animated_weapon_set_shovel:
+    display_name: Shovel
+    resource:
+      material: DIAMOND_SHOVEL
+      generate: false
+      model_path: flower_garden_animated_weapon_set/shovel
+  flower_garden_animated_weapon_set_spear:
+    display_name: Spear
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: flower_garden_animated_weapon_set/spear
+  flower_garden_animated_weapon_set_staff:
+    display_name: Staff
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: flower_garden_animated_weapon_set/staff
+  flower_garden_animated_weapon_set_sword:
+    display_name: Sword
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: flower_garden_animated_weapon_set/sword
+  flower_garden_animated_weapon_set_trident:
+    display_name: Trident
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: flower_garden_animated_weapon_set/trident
+  flower_garden_animated_weapon_set_wing:
+    display_name: Wing
+    resource:
+      material: PAPER
+      generate: false
+      model_path: flower_garden_animated_weapon_set/wing
+
+#02MDRDW5hXQhZnR2dUWxdWaRRlWphXRTJFewMleNRkWNZ1MRtUVtZUS4tESslzMRxEWiR2M

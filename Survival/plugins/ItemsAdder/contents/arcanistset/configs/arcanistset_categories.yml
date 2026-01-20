@@ -1,0 +1,37 @@
+info:
+  namespace: arcanistset
+categories:
+  arcanistset:
+    enabled: true
+    skip_if_already: false
+    icon: "arcanistset:arcanist_sword"
+    name: Arcanist Weapons & Tools Set
+    permission: ia.menu
+    items:
+      - "arcanistset:arcanist_sword"
+      - "arcanistset:arcanist_greatsword"
+      - "arcanistset:arcanist_spear"
+      - "arcanistset:arcanist_trident"
+      - "arcanistset:arcanist_hammer"
+      - "arcanistset:arcanist_scythe"
+      - "arcanistset:arcanist_staff"
+      - "arcanistset:arcanist_bow"
+      - "arcanistset:arcanist_crossbow"
+      - "arcanistset:arcanist_axe"
+      - "arcanistset:arcanist_hoe"
+      - "arcanistset:arcanist_pickaxe"
+      - "arcanistset:arcanist_shovel"
+      - "arcanistset:arcanist_fishing_rod"
+      - "arcanistset:arcanist_shield"
+      - "arcanistset:arcanist_chest"
+      - "arcanistset:arcanist_key"
+      - "arcanistset:arcanisthelmet"
+      - "arcanistset:arcanistchestplate"
+      - "arcanistset:arcanistleggings"
+      - "arcanistset:arcanistboots"
+      - "arcanistset:arcanist_hat"
+      - "arcanistset:arcanist_wings"
+      - "arcanistset:arcanist_backpack"
+
+
+# 304FNGZQ

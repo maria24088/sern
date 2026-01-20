@@ -1,0 +1,7 @@
+BerserkerScript:
+  Conditions:
+  - burning{t=self} true
+  Skills:
+  - mmodamage{amount="<modifier.damage>";types=SKILL,PHYSICAL} @Target
+  # AGREGAMOS ESTO: <modifier.damage> nos dirá el número exacto
+  - message{msg="&eDEBUG: El script recibió &c<modifier.damage> &fde daño."} @Self

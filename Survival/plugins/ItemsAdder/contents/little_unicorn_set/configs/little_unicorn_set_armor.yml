@@ -1,0 +1,76 @@
+armors_rendering:
+  little_unicornarmor:
+    color: '#fffbe5'
+    layer_1: armor/little_unicorn_armor_layer_1
+    layer_2: armor/little_unicorn_armor_layer_2
+    use_color: false
+    animation:
+      speed: 30
+      interpolation: true
+info:
+  namespace: little_unicorn_set
+items:
+  little_unicornhelmet:
+    display_name: §fLittle Unicorn Helmet
+    permission: little_unicorn_set.helmet
+    resource:
+      generate: true
+      textures:
+      - armor/little_unicorn_helmet_icon.png
+    specific_properties:
+      armor:
+        custom_armor: little_unicornarmor
+        slot: head
+    durability:
+      max_custom_durability: 165
+    attribute_modifiers:
+      head:
+        armor: 2
+  little_unicornchestplate:
+    display_name: §fLittle Unicorn Chestplate
+    permission: little_unicorn_set.chestplate
+    resource:
+      generate: true
+      textures:
+      - armor/little_unicorn_chestplate_icon.png
+    specific_properties:
+      armor:
+        custom_armor: little_unicornarmor
+        slot: chest
+    durability:
+      max_custom_durability: 240
+    attribute_modifiers:
+      chest:
+        armor: 6
+  little_unicornleggings:
+    display_name: §fLittle Unicorn Leggings
+    permission: little_unicorn_set.leggings
+    resource:
+      generate: true
+      textures:
+      - armor/little_unicorn_leggings_icon.png
+    specific_properties:
+      armor:
+        custom_armor: little_unicornarmor
+        slot: legs
+    attribute_modifiers:
+      legs:
+        armor: 5
+  little_unicornboots:
+    display_name: §fLittle Unicorn Boots
+    permission: little_unicorn_set.boots
+    resource:
+      generate: true
+      textures:
+      - armor/little_unicorn_boots_icon.png
+    specific_properties:
+      armor:
+        custom_armor: little_unicornarmor
+        slot: feet
+    durability:
+      max_custom_durability: 165
+    attribute_modifiers:
+      feet:
+        armor: 2
+
+#YHd4E3YzUnMw4UV0FjNGV2a31WZ3lEVPlXWU1EejRUTwsGSPNzU5wEMJRmWZVjdWRmWshFO

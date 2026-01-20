@@ -1,0 +1,28 @@
+info:
+  namespace: iavegastables
+categories:
+  vegas_tables:
+    enabled: true
+    name: 'Vegas Tables'
+    icon: iavegastables:races
+    permission: vegas.*
+    items:
+      - iavegastables:roulette
+      - iavegastables:darts
+      - iavegastables:drums
+      - iavegastables:races
+      - iavegastables:pyramid
+      - iavegastables:stairs
+      - iavegastables:lottery
+      - iavegastables:crash
+      - iavegastables:classic
+      - iavegastables:blackjack
+      - iavegastables:rockpaperscissors
+      - iavegastables:tictactoe
+      - iavegastables:deadmanschest
+      - iavegastables:poker
+      - iavegastables:dice
+      - iavegastables:minesweeper
+      - iavegastables:doubleroulette
+
+#UEW3tGOM9USB9Ua61kcw4mdjBDVMx2aUxkQzM1T1sGVqZUMUp3VL9UeKh2SJJlTYNmRwFnM

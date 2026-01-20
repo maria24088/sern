@@ -1,0 +1,15 @@
+info:
+  namespace: livingroom
+items:
+  lcouchbeige:
+    display_name: "L Couch Beige"
+    permission: livingroom.lcouchbeige
+    resource:
+      material: PAPER
+      generate: false
+      model_path: lcouchbeige
+    behaviours:
+      furniture:
+        light_level: 13
+      furniture_sit:
+        sit_height: 1.1

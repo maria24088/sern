@@ -1,0 +1,75 @@
+armors_rendering:
+  necrosarmor:
+    color: '#8f9ebf'
+    layer_1: armor/necros_armor_layer_1
+    layer_2: armor/necros_armor_layer_2
+    use_color: false
+    emissive_1: armor/necros_armor_layer_1_e
+    emissive_2: armor/necros_armor_layer_2_e
+info:
+  namespace: necros_set
+items:
+  necroshelmet:
+    display_name: Necros Helmet
+    permission: necros_set.helmet
+    resource:
+      generate: true
+      textures:
+      - armor/necros_helmet_icon.png
+    specific_properties:
+      armor:
+        custom_armor: necrosarmor
+        slot: head
+    durability:
+      max_custom_durability: 165
+    attribute_modifiers:
+      head:
+        armor: 2
+  necroschestplate:
+    display_name: Necros Chestplate
+    permission: necros_set.chestplate
+    resource:
+      generate: true
+      textures:
+      - armor/necros_chestplate_icon.png
+    specific_properties:
+      armor:
+        custom_armor: necrosarmor
+        slot: chest
+    durability:
+      max_custom_durability: 240
+    attribute_modifiers:
+      chest:
+        armor: 6
+  necrosleggings:
+    display_name: Necros Leggings
+    permission: necros_set.leggings
+    resource:
+      generate: true
+      textures:
+      - armor/necros_leggings_icon.png
+    specific_properties:
+      armor:
+        custom_armor: necrosarmor
+        slot: legs
+    attribute_modifiers:
+      legs:
+        armor: 5
+  necrosboots:
+    display_name: Necros Boots
+    permission: necros_set.boots
+    resource:
+      generate: true
+      textures:
+      - armor/necros_boots_icon.png
+    specific_properties:
+      armor:
+        custom_armor: necrosarmor
+        slot: feet
+    durability:
+      max_custom_durability: 165
+    attribute_modifiers:
+      feet:
+        armor: 2
+
+#30d4610397b833f341e6d8c0581961d8

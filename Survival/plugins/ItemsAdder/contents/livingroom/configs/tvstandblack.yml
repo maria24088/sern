@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  tvstandblack:
+    display_name: "TV Stand Black"
+    permission: livingroom.tvstandblack
+    resource:
+      material: PAPER
+      generate: false
+      model_path: tvstandblack
+    behaviours:
+      furniture:
+        light_level: 13

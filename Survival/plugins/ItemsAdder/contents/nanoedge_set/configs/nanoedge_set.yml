@@ -1,0 +1,166 @@
+info:
+  namespace: nanoedge_set
+items:
+  nanoedge_axe:
+    display_name: §fNano Edge Axe
+    permission: nanoedge_set.axe
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: axe
+  nanoedge_bow:
+    display_name: §fNano Edge Bow
+    permission: nanoedge_set.bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+  nanoedge_chest:
+    display_name: §fNano Edge Chest
+    permission: nanoedge_set.chest
+    resource:
+      material: PAPER
+      generate: false
+      model_path: chest
+    behaviours:
+      furniture:
+        entity: item_frame
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+  nanoedge_crossbow:
+    display_name: §fNano Edge Crossbow
+    permission: nanoedge_set.crossbow
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: crossbow
+  nanoedge_fishing_rod:
+    display_name: §fNano Edge Fishing Rod
+    permission: nanoedge_set.fishing_rod
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+  nanoedge_greatsword:
+    display_name: §fNano Edge Greatsword
+    permission: nanoedge_set.greatsword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: greatsword
+  nanoedge_hammer:
+    display_name: §fNano Edge Hammer
+    permission: nanoedge_set.hammer
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: hammer
+  nanoedge_helmet:
+    display_name: §fNano Edge Helmet
+    permission: nanoedge_set.helmet
+    resource:
+      material: PAPER
+      generate: false
+      model_path: helmet
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165
+  nanoedge_hoe:
+    display_name: §fNano Edge Hoe
+    permission: nanoedge_set.hoe
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: hoe
+  nanoedge_key:
+    display_name: §fNano Edge Key
+    permission: nanoedge_set.key
+    resource:
+      material: PAPER
+      generate: false
+      model_path: key
+  nanoedge_pickaxe:
+    display_name: §fNano Edge Pickaxe
+    permission: nanoedge_set.pickaxe
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: pickaxe
+  nanoedge_scythe:
+    display_name: §fNano Edge Scythe
+    permission: nanoedge_set.scythe
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: scythe
+  nanoedge_shield:
+    display_name: §fNano Edge Shield
+    permission: nanoedge_set.shield
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+  nanoedge_shovel:
+    display_name: §fNano Edge Shovel
+    permission: nanoedge_set.shovel
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: shovel
+  nanoedge_spear:
+    display_name: §fNano Edge Spear
+    permission: nanoedge_set.spear
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: spear
+  nanoedge_staff:
+    display_name: §fNano Edge Staff
+    permission: nanoedge_set.staff
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: staff
+  nanoedge_sword:
+    display_name: §fNano Edge Sword
+    permission: nanoedge_set.sword
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: sword
+  nanoedge_trident:
+    display_name: §fNano Edge Trident
+    permission: nanoedge_set.trident
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: trident
+  nanoedge_wings:
+    display_name: §fNano Edge Wings
+    permission: nanoedge_set.wings
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wings
+    attribute_modifiers:
+      head:
+        armor: 2
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 165

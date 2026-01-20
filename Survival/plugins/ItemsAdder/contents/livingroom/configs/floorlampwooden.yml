@@ -1,0 +1,13 @@
+info:
+  namespace: livingroom
+items:
+  floorlampwooden:
+    display_name: "Floor Lamp Wooden"
+    permission: livingroom.floorlampwooden
+    resource:
+      material: PAPER
+      generate: false
+      model_path: floorlampwooden
+    behaviours:
+      furniture:
+        light_level: 13

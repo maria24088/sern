@@ -1,0 +1,15 @@
+Id: cubee-reddit
+MythicMob: cubee-reddit
+Permission: mcpet.cubee-reddit
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §6Reddit §fCubee
+  Description:
+  - §fThis cubee has a LOT of stories to share!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191037
+
+# c1d8afcb98ec728e8f78149f12543142

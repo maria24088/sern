@@ -1,0 +1,161 @@
+info:
+  namespace: customcrops
+items:
+  redpacket_stage_1:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/redpacket/stage_1
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  redpacket_stage_2:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/redpacket/stage_2
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  redpacket_stage_3:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/redpacket/stage_3
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  redpacket_stage_4:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/redpacket/stage_4
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  redpacket_stage_5:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/redpacket/stage_5
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  redpacket_stage_6:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/redpacket/stage_6
+    behaviours:
+      furniture:
+        entity: item_frame
+        shift_interact_rotate: false
+        solid: false
+        cancel_drop: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  redpacket_seeds:
+    display_name: "Red Packet Tree Seed"
+    #display_name: 摇钱树种子
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/redpacket/redpacket_seeds
+  redpacket:
+    display_name: "Red Packet"
+    #display_name: 红包
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/redpacket/redpacket
+    events:
+      interact:
+        right:
+          execute_commands:
+            cmd1:
+              command: 'money give {player} 5'
+              as_console: true
+              delay: 0
+          decrement_amount:
+            amount: 1 
+categories:
+  customcrops_redpacket:
+    enabled: true
+    icon: customcrops:redpacket
+    name: 'Redpacket Tree'
+    items:
+      - customcrops:redpacket
+      - customcrops:redpacket_seeds
+      - customcrops:redpacket_stage_1
+      - customcrops:redpacket_stage_2
+      - customcrops:redpacket_stage_3
+      - customcrops:redpacket_stage_4
+      - customcrops:redpacket_stage_5
+      - customcrops:redpacket_stage_6

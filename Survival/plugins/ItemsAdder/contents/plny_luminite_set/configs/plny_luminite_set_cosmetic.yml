@@ -1,0 +1,43 @@
+info:
+  namespace: plny_luminite_set
+items:
+  luminite_set_cosmetics_helmet:
+    display_name: Helmet Cosmetics
+    permission: plny_luminite_set.luminite_set_cosmetics_helmet
+    resource:
+      generate: false
+      material: POTION
+      model_id: 9926721
+      model_path: helmet
+  luminite_set_cosmetics_wings:
+    display_name: Wings Cosmetics
+    permission: plny_luminite_set.luminite_set_cosmetics_wings
+    resource:
+      generate: false
+      material: POTION
+      model_id: 9926722
+      model_path: wings_cosmetic
+  luminite_set_cosmetics_wings_normal_2:
+    display_name: Wings Cosmetics Normal 2
+    permission: plny_luminite_set.luminite_set_cosmetics_wings_normal_2
+    resource:
+      generate: false
+      material: POTION
+      model_id: 9926725
+      model_path: wings_cosmetic_normal_2
+  luminite_set_cosmetics_wings_self:
+    display_name: Wings Cosmetics Self
+    permission: plny_luminite_set.luminite_set_cosmetics_wings_self
+    resource:
+      generate: false
+      material: POTION
+      model_id: 9926723
+      model_path: wings_cosmetic_self
+  luminite_set_cosmetics_wings_self_2:
+    display_name: Wings Cosmetics Self 2
+    permission: plny_luminite_set.luminite_set_cosmetics_wings_self_2
+    resource:
+      generate: false
+      material: POTION
+      model_id: 9926724
+      model_path: wings_cosmetic_self_2

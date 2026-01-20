@@ -1,0 +1,38 @@
+frostveil_genesis_hat:
+  slot: HELMET
+  permission: hmccosmetics.hat
+  item:
+    material: PAPER
+    model-data: 19206
+    name: <rainbow>Frostveil_genesis Hat</rainbow>
+    lore:
+    - ''
+    - <gray>Frostveil_genesis Hat!
+    amount: 1
+  dyeable: true
+frostveil_genesis_wing_1:
+  slot: BACKPACK
+  permission: hmccosmetics.wing.wing.1
+  item:
+    material: PAPER
+    model-data: 20670
+    name: <gradient:#FFB6C1:#87CEEB>Frostveil_genesis Wing 1</gradient:#FFB6C1:#87CEEB>
+    lore:
+    - ''
+    - <gray>Frostveil_genesis Wing 1!
+    amount: 1
+  dyeable: true
+frostveil_genesis_wing_2:
+  slot: BACKPACK
+  permission: hmccosmetics.wing.wing.2
+  item:
+    material: PAPER
+    model-data: 21987
+    name: <gradient:#FFB6C1:#87CEEB>Frostveil_genesis Wing 2</gradient:#FFB6C1:#87CEEB>
+    lore:
+    - ''
+    - <gray>Frostveil_genesis Wing 2!
+    amount: 1
+  dyeable: true
+
+#QTQTpkUrhVb5I1aYhTQIZVewUVZhhGMZpGcrd1SCpXW51ESPlVQoFTQqhkMYFHMap0NJNWO

@@ -1,0 +1,15 @@
+Id: cubee-facebook
+MythicMob: cubee-facebook
+Permission: mcpet.cubee-facebook
+Mountable: false
+Distance: 6
+SpawnRange: 3
+ComingBackRange: 4
+Icon:
+  Name: §3Facebook §fCubee
+  Description:
+  - §fYou can share you best meme with this cubee!
+  Material: GOLDEN_HORSE_ARMOR
+  CustomModelData: 7191034
+
+# c1d8afcb98ec728e8f78149f12543142

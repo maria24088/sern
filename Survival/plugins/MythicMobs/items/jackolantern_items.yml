@@ -1,0 +1,19 @@
+######## created by samus2002 #########
+  
+scythe_jackolantern:
+  Id: stone_sword
+  Display: "<gradient:#9c3710:#400404:#9c3710>&lScythe of Jack-O-Lantern"
+  Model: 2053
+  Lore:
+  - '<gradient:#9c3710:#400404:#9c3710>The scythe of the Jack-O-Lantern'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Pumpkin_Bombs} @self ~onSwing
+  - skill{s=Drift} @self ~onUse
+  - skill{s=Summon_Scarecrow} @self ~onCrouch
+  - skill{s=Midnight_Crows} @self ~onUse
+  - skill{s=Nightmare} @self ~onSwing
